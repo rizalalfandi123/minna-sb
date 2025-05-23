@@ -1,0 +1,32 @@
+{
+  "name": "minna-sb",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "supabase": "supabase start",
+    "dev": "bun run --hot ./src/hono.ts",
+    "db:seed": "prisma db seed",
+    "db:types": "supabase gen types typescript --local > ../minna/database.types.ts",
+    "db:backup": "bun ./backup.ts && prettier --write data/backup",
+    "db:restore": "bun ./restore.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prisma": "^6.8.2",
+    "supabase": "^2.23.4"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.8.2",
+    "hono": "^4.7.10",
+    "prettier": "^3.5.3",
+    "uuid": "^11.1.0",
+    "zod": "^3.24.4"
+  },
+  "prisma": {
+    "seed": "bun ./seed.ts"
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "basic",
+    "description": "",
+    "id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "deleted": false
+  },
+  {
+    "name": "dakuten",
+    "description": "",
+    "id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "deleted": false
+  },
+  {
+    "name": "handakuten",
+    "description": "",
+    "id": "974c27f1-ac9e-4be7-b857-758af466be2c",
+    "deleted": false
+  },
+  {
+    "name": "yoon",
+    "description": "",
+    "id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "deleted": false
+  },
+  {
+    "name": "sokuon",
+    "description": "",
+    "id": "6daf83b3-454f-4fb2-a1df-f82c7ea667a6",
+    "deleted": false
+  },
+  {
+    "name": "choon",
+    "description": "",
+    "id": "6686daa2-2ed1-4109-b0d6-706890f7bb01",
+    "deleted": false
+  }
+]

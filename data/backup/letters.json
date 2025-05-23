@@ -1,0 +1,2072 @@
+[
+  {
+    "deleted": false,
+    "name": "a",
+    "symbol": "あ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "80087171-7f6a-4b6b-8f3d-fd30c59ad478",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "df2937b5-8100-4493-99ea-35a850509700"
+  },
+  {
+    "deleted": false,
+    "name": "i",
+    "symbol": "い",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "480506c8-abfe-42b8-a3bf-a4c7c2e7cfa7",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "2ffc5865-ac8b-4ecb-8ccb-7aa2b7341dd4"
+  },
+  {
+    "deleted": false,
+    "name": "u",
+    "symbol": "う",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "24050225-9a4c-420e-b841-d8af0029421a",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "b9242f42-bd28-43bc-86b2-3cb12d493c94"
+  },
+  {
+    "deleted": false,
+    "name": "e",
+    "symbol": "え",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "ef9fd928-6aad-49a7-af0c-c861a4775c21",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "776eeaf5-410d-43f2-96b9-9316716ce984"
+  },
+  {
+    "deleted": false,
+    "name": "o",
+    "symbol": "お",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "169bb0c5-8c77-4471-93f1-e8b43a772bb9",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "989ac076-1abf-4cc9-ab07-08bf486d3cea"
+  },
+  {
+    "deleted": false,
+    "name": "ka",
+    "symbol": "か",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "21de172a-fb95-4269-a600-8731ded6db3c",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "92f03a40-05f5-4f7a-ad3f-ff83d29f73ec"
+  },
+  {
+    "deleted": false,
+    "name": "ki",
+    "symbol": "き",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "8c8593e3-7693-4ddd-a903-482972efd5c9",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "df63e496-98e9-49ed-9256-225b59f7bdfd"
+  },
+  {
+    "deleted": false,
+    "name": "ku",
+    "symbol": "く",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "35f6a4cf-6ae1-4971-b895-858568091cf2",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "9910e4fc-1f66-43af-ba1d-52713db3c2dd"
+  },
+  {
+    "deleted": false,
+    "name": "ke",
+    "symbol": "け",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "e7117b64-db91-42be-9f02-16f295acd544",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "47c3b1ba-f0ff-438e-bcd6-ae79c259b1c5"
+  },
+  {
+    "deleted": false,
+    "name": "ko",
+    "symbol": "こ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "a274723d-63dc-497b-b3b5-a0165640c971",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "8e682a23-2087-4754-896c-893855eab292"
+  },
+  {
+    "deleted": false,
+    "name": "sa",
+    "symbol": "さ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "79204b7d-a13a-4775-9bec-bc74b3dffa71",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "f48d942e-0733-4181-aaf2-4566a6e11d85"
+  },
+  {
+    "deleted": false,
+    "name": "shi",
+    "symbol": "し",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "83986971-123a-4014-be19-cb0fc421fa77",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "570d3bb6-39cb-40cd-aa70-4a651e0f2611"
+  },
+  {
+    "deleted": false,
+    "name": "su",
+    "symbol": "す",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "fb21d5c0-6e31-4ee4-9521-264b2cc1518c",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "a80271ce-8238-4b11-aab2-e459803a3bc6"
+  },
+  {
+    "deleted": false,
+    "name": "se",
+    "symbol": "せ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "edb47018-d93d-477e-88ca-9ec8228954d8",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "21098da0-119d-4df7-adcf-bae88f3e6ccb"
+  },
+  {
+    "deleted": false,
+    "name": "so",
+    "symbol": "そ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "e136bdf0-d638-45d1-918a-2226c0482f7b",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "c97e8d0e-55a9-4d87-ae8e-6fb91f75a827"
+  },
+  {
+    "deleted": false,
+    "name": "ta",
+    "symbol": "た",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "5f40098c-369f-4033-be6a-94080d7fc11f",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "c61dfdec-e7ba-47fe-8d07-72e586f8f605"
+  },
+  {
+    "deleted": false,
+    "name": "chi",
+    "symbol": "ち",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "671a922a-cc00-41d4-a400-6199a4d6083c",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "a898191b-04cb-4baa-bc89-3ddc9288dc6c"
+  },
+  {
+    "deleted": false,
+    "name": "tsu",
+    "symbol": "つ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "13ab273d-556b-4658-b25e-bd40e433f703",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "0d23fdfb-c31d-4690-9a9e-aff585ca3779"
+  },
+  {
+    "deleted": false,
+    "name": "te",
+    "symbol": "て",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "e9efe3a8-be42-478c-8c40-2748a2723daf",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "cd9d193e-0931-4506-9f54-b1aef42bd9fe"
+  },
+  {
+    "deleted": false,
+    "name": "to",
+    "symbol": "と",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "76f61515-70b7-41aa-b972-d29f7248dbc5",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "327adfda-29a6-4bce-9420-f6cce469f752"
+  },
+  {
+    "deleted": false,
+    "name": "na",
+    "symbol": "な",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "62e9b12b-d541-42b0-9703-3499dd75d03a",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "bd663439-b1e9-4c28-9702-49879f602b35"
+  },
+  {
+    "deleted": false,
+    "name": "ni",
+    "symbol": "に",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "fca9e1f6-e4ed-4415-8598-48b642f9f15b",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "211cd9b8-c941-405e-9c06-f9e6cb309060"
+  },
+  {
+    "deleted": false,
+    "name": "nu",
+    "symbol": "ぬ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "263480f2-0ed5-4019-b89b-a5df0323fb0d",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "e12d209e-8300-4692-a606-aaba4c7c09a9"
+  },
+  {
+    "deleted": false,
+    "name": "ne",
+    "symbol": "ね",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "4676b3e5-7a2e-4fb9-a421-72147b9ca9c8",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "b111407e-3970-42c5-8799-ae12413da43a"
+  },
+  {
+    "deleted": false,
+    "name": "no",
+    "symbol": "の",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "56878473-6a2f-4203-956b-0b187c3f56b0",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "2362f1b3-24fa-4760-b19e-dbf7730d3d60"
+  },
+  {
+    "deleted": false,
+    "name": "ha",
+    "symbol": "は",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "8d4a7c82-0f9b-4e7a-9fd1-723a2c0b2d7e",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "7b35c407-e085-454c-9517-c5ba10a860bc"
+  },
+  {
+    "deleted": false,
+    "name": "hi",
+    "symbol": "ひ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "e32ba359-d348-49d7-af09-177e9d30877a",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "d8b4de16-e948-4882-8fec-a6d795f5f711"
+  },
+  {
+    "deleted": false,
+    "name": "fu",
+    "symbol": "ふ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "345a2e6e-5f5e-4d38-a57e-5ab97e811fab",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "92bc21c2-5bfe-4fa1-ae32-eb52a197e80e"
+  },
+  {
+    "deleted": false,
+    "name": "he",
+    "symbol": "へ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "64620f19-942f-43d4-b77a-06a8ec6950a1",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "d9a23954-1c93-48e3-b08b-579b5bd7acff"
+  },
+  {
+    "deleted": false,
+    "name": "ho",
+    "symbol": "ほ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "daa57a38-9ce2-4240-94c7-7dac9eda3f36",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "123d7515-f9b1-4069-86c9-65fc96841978"
+  },
+  {
+    "deleted": false,
+    "name": "ma",
+    "symbol": "ま",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "2d1bda11-4993-4b06-a035-7c26f5d24a6f",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "786f784c-f351-49c7-91c8-4eeae129ee75"
+  },
+  {
+    "deleted": false,
+    "name": "mi",
+    "symbol": "み",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "59b8ec04-41eb-4082-9456-e339ac8eb060",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "5bd9af82-b5ec-4019-8d36-e08a7769db23"
+  },
+  {
+    "deleted": false,
+    "name": "mu",
+    "symbol": "む",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "72acad1b-464d-4ca0-96ba-efb0cb9ae271",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "6577d3f6-5ab6-4983-93ae-639acc7ba869"
+  },
+  {
+    "deleted": false,
+    "name": "me",
+    "symbol": "め",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "ca50a9d8-81d8-42df-98dc-49cc41c3e842",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "d93fda74-58fc-460e-822a-952f758cf50f"
+  },
+  {
+    "deleted": false,
+    "name": "mo",
+    "symbol": "も",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "9678cfac-3eea-4441-8599-a8f2ab8f234c",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "b2e10981-f220-41b8-bbbd-6decd9164021"
+  },
+  {
+    "deleted": false,
+    "name": "ya",
+    "symbol": "や",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "8fffbdf4-1547-4722-82d1-983282df3e97",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "59709700-a267-4cf2-9c68-247faef85771"
+  },
+  {
+    "deleted": false,
+    "name": "yu",
+    "symbol": "ゆ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "afaddc75-81ef-46a7-87dd-ace5195afd22",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "c0d9f221-7f2e-4844-8c49-ad667bb544fa"
+  },
+  {
+    "deleted": false,
+    "name": "yo",
+    "symbol": "よ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "a2d99d35-e6c8-4d0b-a5d3-b4b103bac401",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "eaefbf4e-2602-4dc9-a668-2afa6f2a9702"
+  },
+  {
+    "deleted": false,
+    "name": "ra",
+    "symbol": "ら",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "4f8d938d-382a-43b3-b1eb-6aff63d0b83a",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "3bb5a665-f333-45c7-9b78-1b7d622db870"
+  },
+  {
+    "deleted": false,
+    "name": "ri",
+    "symbol": "り",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "b130bde3-ab0e-4a7f-85e3-640a36c1d4f5",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "8f30d0ac-b09b-4aeb-b1f9-56ba4aed75f2"
+  },
+  {
+    "deleted": false,
+    "name": "ru",
+    "symbol": "る",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "ebff4496-42dd-4190-a648-e8c641e4aa3d",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "6336eaad-d676-46c0-87e9-c37671a74d28"
+  },
+  {
+    "deleted": false,
+    "name": "re",
+    "symbol": "れ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "95b24d5d-2c9f-4348-9a96-92df5740408d",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "bf9e5056-0b0b-4c48-81f4-6519303b4177"
+  },
+  {
+    "deleted": false,
+    "name": "ro",
+    "symbol": "ろ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "1657f608-5e93-4976-aeef-112dd7e48156",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "95ce5533-4c76-464d-ba43-96cb2dd6f277"
+  },
+  {
+    "deleted": false,
+    "name": "wa",
+    "symbol": "わ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "a5e18985-947f-461e-847d-491ba43593f4",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "fa688028-c4d1-4bee-b41f-174246fcfb93"
+  },
+  {
+    "deleted": false,
+    "name": "o",
+    "symbol": "を",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "b6a896c8-64b5-403f-baed-4c1093f254f8",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "13a8c7d7-1e91-48a2-9489-047991419b4f"
+  },
+  {
+    "deleted": false,
+    "name": "n",
+    "symbol": "ん",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "b6d95cce-ee04-4b88-8d11-0542655bede3",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "a2e5e92f-af18-4d8d-a2b1-eeff01181402"
+  },
+  {
+    "deleted": false,
+    "name": "ga",
+    "symbol": "が",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "80087171-7f6a-4b6b-8f3d-fd30c59ad478",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "784d6318-9910-4eb0-ab75-4187b1b40ec0"
+  },
+  {
+    "deleted": false,
+    "name": "gi",
+    "symbol": "ぎ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "480506c8-abfe-42b8-a3bf-a4c7c2e7cfa7",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "610f6fdf-f473-4369-8f28-44da883f4d13"
+  },
+  {
+    "deleted": false,
+    "name": "gu",
+    "symbol": "ぐ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "24050225-9a4c-420e-b841-d8af0029421a",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "a5da3dba-e171-4b0b-99f7-d0979267f65e"
+  },
+  {
+    "deleted": false,
+    "name": "ge",
+    "symbol": "げ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "ef9fd928-6aad-49a7-af0c-c861a4775c21",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "b591a83f-2e4a-4b86-9f7e-81e96b191416"
+  },
+  {
+    "deleted": false,
+    "name": "go",
+    "symbol": "ご",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "169bb0c5-8c77-4471-93f1-e8b43a772bb9",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "1fa8d58d-2eed-471d-ad4e-8f5dd0a7c380"
+  },
+  {
+    "deleted": false,
+    "name": "za",
+    "symbol": "ざ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "21de172a-fb95-4269-a600-8731ded6db3c",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "42cc1912-1873-45a7-a975-d72f257b57d6"
+  },
+  {
+    "deleted": false,
+    "name": "ji",
+    "symbol": "じ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "8c8593e3-7693-4ddd-a903-482972efd5c9",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "6eb23c4d-8a1e-49d1-b1d6-49d3d07b3fa7"
+  },
+  {
+    "deleted": false,
+    "name": "zu",
+    "symbol": "ず",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "35f6a4cf-6ae1-4971-b895-858568091cf2",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "77bacc5f-0f4f-4553-bb8a-2ad53cae766d"
+  },
+  {
+    "deleted": false,
+    "name": "ze",
+    "symbol": "ぜ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "e7117b64-db91-42be-9f02-16f295acd544",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "620f2c80-4a87-4633-a655-7563dac4b35b"
+  },
+  {
+    "deleted": false,
+    "name": "zo",
+    "symbol": "ぞ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "a274723d-63dc-497b-b3b5-a0165640c971",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "f43a5777-9a5a-4006-970a-4b0dc0202cb7"
+  },
+  {
+    "deleted": false,
+    "name": "da",
+    "symbol": "だ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "79204b7d-a13a-4775-9bec-bc74b3dffa71",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "fa54a536-ebac-4e24-aa27-c73f4af18508"
+  },
+  {
+    "deleted": false,
+    "name": "ji",
+    "symbol": "ぢ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "83986971-123a-4014-be19-cb0fc421fa77",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "39c36c2a-f370-4fdf-b9d1-8646a4ab20ff"
+  },
+  {
+    "deleted": false,
+    "name": "zu",
+    "symbol": "づ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "fb21d5c0-6e31-4ee4-9521-264b2cc1518c",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "6ba8a291-014b-450c-af2b-5ce6140d8a0f"
+  },
+  {
+    "deleted": false,
+    "name": "de",
+    "symbol": "で",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "edb47018-d93d-477e-88ca-9ec8228954d8",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "bb5b9470-c332-49d7-9ecb-a3378b815580"
+  },
+  {
+    "deleted": false,
+    "name": "do",
+    "symbol": "ど",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "e136bdf0-d638-45d1-918a-2226c0482f7b",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "bc24c3e4-4a50-49bb-af48-54944a9fa344"
+  },
+  {
+    "deleted": false,
+    "name": "ba",
+    "symbol": "ば",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "5f40098c-369f-4033-be6a-94080d7fc11f",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "54b7d0f4-e845-4185-b3cb-ce08f1c45cfe"
+  },
+  {
+    "deleted": false,
+    "name": "bi",
+    "symbol": "び",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "671a922a-cc00-41d4-a400-6199a4d6083c",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "7df6a7bf-8e85-4142-a88d-f835a8abca37"
+  },
+  {
+    "deleted": false,
+    "name": "bu",
+    "symbol": "ぶ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "13ab273d-556b-4658-b25e-bd40e433f703",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "013e9f6a-03c3-41a1-b104-9ea7b9cdeecb"
+  },
+  {
+    "deleted": false,
+    "name": "be",
+    "symbol": "べ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "e9efe3a8-be42-478c-8c40-2748a2723daf",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "f64397b3-2e39-4733-a38e-4b87680d5a7c"
+  },
+  {
+    "deleted": false,
+    "name": "bo",
+    "symbol": "ぼ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "76f61515-70b7-41aa-b972-d29f7248dbc5",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "abbfb08d-49ea-4120-909f-a5998693d9d9"
+  },
+  {
+    "deleted": false,
+    "name": "pa",
+    "symbol": "ぱ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "80087171-7f6a-4b6b-8f3d-fd30c59ad478",
+    "block_id": "974c27f1-ac9e-4be7-b857-758af466be2c",
+    "id": "fa361f78-1dc0-4296-9f40-ad0cf0701db8"
+  },
+  {
+    "deleted": false,
+    "name": "pi",
+    "symbol": "ぴ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "480506c8-abfe-42b8-a3bf-a4c7c2e7cfa7",
+    "block_id": "974c27f1-ac9e-4be7-b857-758af466be2c",
+    "id": "f7ccf8dd-b6f8-42e9-9d4f-9306cd43bc98"
+  },
+  {
+    "deleted": false,
+    "name": "pu",
+    "symbol": "ぷ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "24050225-9a4c-420e-b841-d8af0029421a",
+    "block_id": "974c27f1-ac9e-4be7-b857-758af466be2c",
+    "id": "5d5633db-ddab-4731-9547-6226e1e082dc"
+  },
+  {
+    "deleted": false,
+    "name": "pe",
+    "symbol": "ぺ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "ef9fd928-6aad-49a7-af0c-c861a4775c21",
+    "block_id": "974c27f1-ac9e-4be7-b857-758af466be2c",
+    "id": "0adae1ff-d4ac-48f1-93ad-beefcc0ee929"
+  },
+  {
+    "deleted": false,
+    "name": "po",
+    "symbol": "ぽ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "169bb0c5-8c77-4471-93f1-e8b43a772bb9",
+    "block_id": "974c27f1-ac9e-4be7-b857-758af466be2c",
+    "id": "7c395644-cb56-460f-974f-1703d956d40d"
+  },
+  {
+    "deleted": false,
+    "name": "kya",
+    "symbol": "きゃ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "80087171-7f6a-4b6b-8f3d-fd30c59ad478",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "a15aac9b-2c48-46d4-a1ca-0d35953eb59b"
+  },
+  {
+    "deleted": false,
+    "name": "kyu",
+    "symbol": "きゅ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "480506c8-abfe-42b8-a3bf-a4c7c2e7cfa7",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "03f9eb58-26d1-442a-a988-1ebe73a61787"
+  },
+  {
+    "deleted": false,
+    "name": "kyo",
+    "symbol": "きょ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "24050225-9a4c-420e-b841-d8af0029421a",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "d13f13bf-1e4c-4b5d-bb48-49daa5256c31"
+  },
+  {
+    "deleted": false,
+    "name": "gya",
+    "symbol": "ぎゃ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "21de172a-fb95-4269-a600-8731ded6db3c",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "ed8f6269-4e3c-48c0-a77b-84d9d117f4c4"
+  },
+  {
+    "deleted": false,
+    "name": "gyu",
+    "symbol": "ぎゅ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "8c8593e3-7693-4ddd-a903-482972efd5c9",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "0b552943-6507-47b3-90d3-49f829d2bcc3"
+  },
+  {
+    "deleted": false,
+    "name": "gyo",
+    "symbol": "ぎょ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "35f6a4cf-6ae1-4971-b895-858568091cf2",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "f3aa3b26-9690-4a8d-8677-9242d23ba39a"
+  },
+  {
+    "deleted": false,
+    "name": "sha",
+    "symbol": "しゃ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "79204b7d-a13a-4775-9bec-bc74b3dffa71",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "10347dc2-b5a6-466b-a2eb-dc7e4b104943"
+  },
+  {
+    "deleted": false,
+    "name": "shu",
+    "symbol": "しゅ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "83986971-123a-4014-be19-cb0fc421fa77",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "6ebd192f-4cab-426c-88da-0232a7e19fe9"
+  },
+  {
+    "deleted": false,
+    "name": "sho",
+    "symbol": "しょ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "fb21d5c0-6e31-4ee4-9521-264b2cc1518c",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "056e8352-18ea-44be-bdb3-1c1588032280"
+  },
+  {
+    "deleted": false,
+    "name": "ja",
+    "symbol": "じゃ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "5f40098c-369f-4033-be6a-94080d7fc11f",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "24259d85-b25e-40ab-a51e-0b06153afb00"
+  },
+  {
+    "deleted": false,
+    "name": "ju",
+    "symbol": "じゅ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "671a922a-cc00-41d4-a400-6199a4d6083c",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "d47652f2-7906-4e00-8356-bb1f646e9c1e"
+  },
+  {
+    "deleted": false,
+    "name": "jo",
+    "symbol": "じょ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "13ab273d-556b-4658-b25e-bd40e433f703",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "9aca91fd-a1d6-4115-8a3b-b7b9f05a78fc"
+  },
+  {
+    "deleted": false,
+    "name": "cha",
+    "symbol": "ちゃ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "62e9b12b-d541-42b0-9703-3499dd75d03a",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "e88a5e0b-2835-4a8b-81f3-339f9814aa81"
+  },
+  {
+    "deleted": false,
+    "name": "chu",
+    "symbol": "ちゅ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "fca9e1f6-e4ed-4415-8598-48b642f9f15b",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "a85b1241-1165-439f-a86f-baee8ed60709"
+  },
+  {
+    "deleted": false,
+    "name": "cho",
+    "symbol": "ちょ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "263480f2-0ed5-4019-b89b-a5df0323fb0d",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "ee2b52ef-226b-4b90-8929-479ea951b800"
+  },
+  {
+    "deleted": false,
+    "name": "nya",
+    "symbol": "にゃ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "8d4a7c82-0f9b-4e7a-9fd1-723a2c0b2d7e",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "054c7f9c-481a-4203-95d0-835de7a535fa"
+  },
+  {
+    "deleted": false,
+    "name": "nyu",
+    "symbol": "にゅ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "e32ba359-d348-49d7-af09-177e9d30877a",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "c9e38cc0-349d-4b81-bb13-0faa530ef4b8"
+  },
+  {
+    "deleted": false,
+    "name": "nyo",
+    "symbol": "にょ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "345a2e6e-5f5e-4d38-a57e-5ab97e811fab",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "e5821203-f2ca-48d4-b033-b53924058cf6"
+  },
+  {
+    "deleted": false,
+    "name": "hya",
+    "symbol": "ひゃ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "2d1bda11-4993-4b06-a035-7c26f5d24a6f",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "3fe52b62-0e87-483e-a01c-effd0f933447"
+  },
+  {
+    "deleted": false,
+    "name": "hyu",
+    "symbol": "ひゅ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "59b8ec04-41eb-4082-9456-e339ac8eb060",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "5ff13f67-bbee-4cd1-b6d8-7e6e37790588"
+  },
+  {
+    "deleted": false,
+    "name": "hyo",
+    "symbol": "ひょ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "72acad1b-464d-4ca0-96ba-efb0cb9ae271",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "e02f7951-a8c4-425a-84fe-9e8aeb3e4229"
+  },
+  {
+    "deleted": false,
+    "name": "bya",
+    "symbol": "びゃ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "8fffbdf4-1547-4722-82d1-983282df3e97",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "77c9906a-ab6c-4f91-85ab-116c6491f44a"
+  },
+  {
+    "deleted": false,
+    "name": "byu",
+    "symbol": "びゅ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "c3191a4d-5d8a-4565-8c34-e391d6c33a65",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "45c6d04f-6bd0-4757-bec6-80e1438b4c62"
+  },
+  {
+    "deleted": false,
+    "name": "byo",
+    "symbol": "びょ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "afaddc75-81ef-46a7-87dd-ace5195afd22",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "09c95d27-e4ac-4f44-93a9-4dbcb961ce2f"
+  },
+  {
+    "deleted": false,
+    "name": "pya",
+    "symbol": "ぴゃ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "4f8d938d-382a-43b3-b1eb-6aff63d0b83a",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "bd3f7505-37bc-460c-a5dc-8c0aaee7a46c"
+  },
+  {
+    "deleted": false,
+    "name": "pyu",
+    "symbol": "ぴゅ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "b130bde3-ab0e-4a7f-85e3-640a36c1d4f5",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "c143a450-db93-4261-a065-d008644e7add"
+  },
+  {
+    "deleted": false,
+    "name": "pyo",
+    "symbol": "ぴょ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "ebff4496-42dd-4190-a648-e8c641e4aa3d",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "e42df3af-4270-4a5e-9c4b-feb13de69baa"
+  },
+  {
+    "deleted": false,
+    "name": "mya",
+    "symbol": "みゃ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "a5e18985-947f-461e-847d-491ba43593f4",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "33ddf438-acab-4947-8d41-9a5556629238"
+  },
+  {
+    "deleted": false,
+    "name": "myu",
+    "symbol": "みゅ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "104c76a4-6b9f-41b5-8c59-789fad2efae9",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "220b626e-6542-47de-a14f-d93a521cd5c2"
+  },
+  {
+    "deleted": false,
+    "name": "myo",
+    "symbol": "みょ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "6e671990-3e48-458f-bd28-71f4f9e5bc39",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "de05d6f3-f143-4a65-9a92-e536c3293d9f"
+  },
+  {
+    "deleted": false,
+    "name": "rya",
+    "symbol": "りゃ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "b6d95cce-ee04-4b88-8d11-0542655bede3",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "90780c5f-d199-44c1-88ce-55e87a324225"
+  },
+  {
+    "deleted": false,
+    "name": "ryu",
+    "symbol": "りゅ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "6f84f79a-bfb0-4c49-ad1a-064e0abdc848",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "57eafa6f-631c-4d1d-8839-292aa62eda20"
+  },
+  {
+    "deleted": false,
+    "name": "ryo",
+    "symbol": "りょ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "6e502efc-e147-41a6-99f1-a7db1f32c32e",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "5168915f-6d68-4d6a-b873-6e85706af0c5"
+  },
+  {
+    "deleted": false,
+    "name": "kk",
+    "symbol": "っ+k",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "80087171-7f6a-4b6b-8f3d-fd30c59ad478",
+    "block_id": "6daf83b3-454f-4fb2-a1df-f82c7ea667a6",
+    "id": "681baa99-3949-40d2-a206-90ad8d8ed008"
+  },
+  {
+    "deleted": false,
+    "name": "ss",
+    "symbol": "っ+s",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "480506c8-abfe-42b8-a3bf-a4c7c2e7cfa7",
+    "block_id": "6daf83b3-454f-4fb2-a1df-f82c7ea667a6",
+    "id": "9ce8a254-f600-44a2-8cec-774f694e09e2"
+  },
+  {
+    "deleted": false,
+    "name": "tt",
+    "symbol": "っ+t",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "24050225-9a4c-420e-b841-d8af0029421a",
+    "block_id": "6daf83b3-454f-4fb2-a1df-f82c7ea667a6",
+    "id": "1317cd98-fcc8-4d43-900f-4a9da075d6d8"
+  },
+  {
+    "deleted": false,
+    "name": "pp",
+    "symbol": "っ+p",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "ef9fd928-6aad-49a7-af0c-c861a4775c21",
+    "block_id": "6daf83b3-454f-4fb2-a1df-f82c7ea667a6",
+    "id": "5e8740d3-e626-4928-ba02-835ef69136ef"
+  },
+  {
+    "deleted": false,
+    "name": "aa",
+    "symbol": "ああ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "80087171-7f6a-4b6b-8f3d-fd30c59ad478",
+    "block_id": "6686daa2-2ed1-4109-b0d6-706890f7bb01",
+    "id": "adc99330-bea6-4766-877f-3c46a509e379"
+  },
+  {
+    "deleted": false,
+    "name": "ii",
+    "symbol": "いい",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "480506c8-abfe-42b8-a3bf-a4c7c2e7cfa7",
+    "block_id": "6686daa2-2ed1-4109-b0d6-706890f7bb01",
+    "id": "f18f1929-9206-4785-bcc7-922e9f2ff201"
+  },
+  {
+    "deleted": false,
+    "name": "uu",
+    "symbol": "うう",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "24050225-9a4c-420e-b841-d8af0029421a",
+    "block_id": "6686daa2-2ed1-4109-b0d6-706890f7bb01",
+    "id": "11f7505a-937c-4c9c-9113-c454aea4af54"
+  },
+  {
+    "deleted": false,
+    "name": "ee",
+    "symbol": "ええ",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "ef9fd928-6aad-49a7-af0c-c861a4775c21",
+    "block_id": "6686daa2-2ed1-4109-b0d6-706890f7bb01",
+    "id": "8afd274e-c54e-4544-bdea-7ac1df7b925b"
+  },
+  {
+    "deleted": false,
+    "name": "oo",
+    "symbol": "おお",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "169bb0c5-8c77-4471-93f1-e8b43a772bb9",
+    "block_id": "6686daa2-2ed1-4109-b0d6-706890f7bb01",
+    "id": "71a348c9-bbd1-4f54-853f-0f17303732a2"
+  },
+  {
+    "deleted": false,
+    "name": "ei",
+    "symbol": "えい",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "21de172a-fb95-4269-a600-8731ded6db3c",
+    "block_id": "6686daa2-2ed1-4109-b0d6-706890f7bb01",
+    "id": "99a85b12-bc63-450b-95a3-9c4c07fc590c"
+  },
+  {
+    "deleted": false,
+    "name": "ou",
+    "symbol": "おう",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "8c8593e3-7693-4ddd-a903-482972efd5c9",
+    "block_id": "6686daa2-2ed1-4109-b0d6-706890f7bb01",
+    "id": "62e8ac2d-4dd7-4032-ba44-701b771aecd3"
+  },
+  {
+    "deleted": false,
+    "name": "a",
+    "symbol": "ア",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "80087171-7f6a-4b6b-8f3d-fd30c59ad478",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "5f223316-7a3c-4ea8-bdd8-a600d2663ea8"
+  },
+  {
+    "deleted": false,
+    "name": "i",
+    "symbol": "イ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "480506c8-abfe-42b8-a3bf-a4c7c2e7cfa7",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "4d576994-0a02-48dc-85d4-26c8c73c69f8"
+  },
+  {
+    "deleted": false,
+    "name": "u",
+    "symbol": "ウ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "24050225-9a4c-420e-b841-d8af0029421a",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "64d732da-83f1-4623-97f5-2ef9470d1308"
+  },
+  {
+    "deleted": false,
+    "name": "e",
+    "symbol": "エ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "ef9fd928-6aad-49a7-af0c-c861a4775c21",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "b7c58d9b-b9da-4799-a5eb-7ac197157d60"
+  },
+  {
+    "deleted": false,
+    "name": "o",
+    "symbol": "オ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "169bb0c5-8c77-4471-93f1-e8b43a772bb9",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "b61b0a7a-3c8a-49c0-9276-47cd47e2269f"
+  },
+  {
+    "deleted": false,
+    "name": "ka",
+    "symbol": "カ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "21de172a-fb95-4269-a600-8731ded6db3c",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "1654eaba-fa8e-4fd9-a415-b6450ada9946"
+  },
+  {
+    "deleted": false,
+    "name": "ki",
+    "symbol": "キ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "8c8593e3-7693-4ddd-a903-482972efd5c9",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "c62458d3-66a3-44a8-9e53-935da0dcdb93"
+  },
+  {
+    "deleted": false,
+    "name": "ku",
+    "symbol": "ク",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "35f6a4cf-6ae1-4971-b895-858568091cf2",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "76449380-acd9-4e82-8810-79586d6d5679"
+  },
+  {
+    "deleted": false,
+    "name": "ke",
+    "symbol": "ケ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "e7117b64-db91-42be-9f02-16f295acd544",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "199a925b-8377-4906-9b42-cd53e60202ee"
+  },
+  {
+    "deleted": false,
+    "name": "ko",
+    "symbol": "コ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "a274723d-63dc-497b-b3b5-a0165640c971",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "13b0c481-0b94-4141-a842-d319fba746ff"
+  },
+  {
+    "deleted": false,
+    "name": "sa",
+    "symbol": "サ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "79204b7d-a13a-4775-9bec-bc74b3dffa71",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "6054ef8b-6605-489e-bc7e-9386c6a8c25d"
+  },
+  {
+    "deleted": false,
+    "name": "shi",
+    "symbol": "シ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "83986971-123a-4014-be19-cb0fc421fa77",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "8ed4607c-b9f9-433e-8f2c-098b817fc3d0"
+  },
+  {
+    "deleted": false,
+    "name": "su",
+    "symbol": "ス",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "fb21d5c0-6e31-4ee4-9521-264b2cc1518c",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "55658d5b-0cd1-493f-858e-14c3a619e78e"
+  },
+  {
+    "deleted": false,
+    "name": "se",
+    "symbol": "セ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "edb47018-d93d-477e-88ca-9ec8228954d8",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "23af21cc-13aa-4589-a02f-aaf0ee396e39"
+  },
+  {
+    "deleted": false,
+    "name": "so",
+    "symbol": "ソ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "e136bdf0-d638-45d1-918a-2226c0482f7b",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "0dd1aedc-a4de-41f1-b420-d22599622b1e"
+  },
+  {
+    "deleted": false,
+    "name": "ta",
+    "symbol": "タ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "5f40098c-369f-4033-be6a-94080d7fc11f",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "9f2ec98b-84c8-473a-98da-eefee1adad01"
+  },
+  {
+    "deleted": false,
+    "name": "chi",
+    "symbol": "チ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "671a922a-cc00-41d4-a400-6199a4d6083c",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "63d9f75f-2392-4225-9990-bdf6cbdd3627"
+  },
+  {
+    "deleted": false,
+    "name": "tsu",
+    "symbol": "ツ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "13ab273d-556b-4658-b25e-bd40e433f703",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "81237943-c681-40a5-a345-f1c3ddf06ae3"
+  },
+  {
+    "deleted": false,
+    "name": "te",
+    "symbol": "テ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "e9efe3a8-be42-478c-8c40-2748a2723daf",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "c711d91c-b92a-4b52-9fab-3c987949ed2a"
+  },
+  {
+    "deleted": false,
+    "name": "to",
+    "symbol": "ト",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "76f61515-70b7-41aa-b972-d29f7248dbc5",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "1fc52d0b-bb6d-47a8-bf0d-fa006a682ec7"
+  },
+  {
+    "deleted": false,
+    "name": "na",
+    "symbol": "ナ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "62e9b12b-d541-42b0-9703-3499dd75d03a",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "67c2bf4e-9ea3-4994-8db2-dd236fcd369f"
+  },
+  {
+    "deleted": false,
+    "name": "ni",
+    "symbol": "ニ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "fca9e1f6-e4ed-4415-8598-48b642f9f15b",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "5ad1b913-3f9a-4c5e-b4d7-1d158f6fef30"
+  },
+  {
+    "deleted": false,
+    "name": "nu",
+    "symbol": "ヌ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "263480f2-0ed5-4019-b89b-a5df0323fb0d",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "e03d3e87-14e5-464c-8e24-4cf0fcf72ea1"
+  },
+  {
+    "deleted": false,
+    "name": "ne",
+    "symbol": "ネ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "4676b3e5-7a2e-4fb9-a421-72147b9ca9c8",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "bfdaf9ce-aa37-4083-bda5-cbdc503eaa9e"
+  },
+  {
+    "deleted": false,
+    "name": "no",
+    "symbol": "ノ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "56878473-6a2f-4203-956b-0b187c3f56b0",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "cd255641-bd53-4463-8baa-6516bbf7ae3c"
+  },
+  {
+    "deleted": false,
+    "name": "ha",
+    "symbol": "ハ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "8d4a7c82-0f9b-4e7a-9fd1-723a2c0b2d7e",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "fed3c5e5-ec78-4597-ac95-d98861ca465b"
+  },
+  {
+    "deleted": false,
+    "name": "hi",
+    "symbol": "ヒ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "e32ba359-d348-49d7-af09-177e9d30877a",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "de676c85-5dac-465e-a1f9-e8d4b2dcf5f1"
+  },
+  {
+    "deleted": false,
+    "name": "fu",
+    "symbol": "フ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "345a2e6e-5f5e-4d38-a57e-5ab97e811fab",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "dae04a50-9c45-48cf-a1b4-3419f0d4aa7d"
+  },
+  {
+    "deleted": false,
+    "name": "he",
+    "symbol": "ヘ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "64620f19-942f-43d4-b77a-06a8ec6950a1",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "2667e4d1-26eb-4d5a-a13d-f7b74d77e36b"
+  },
+  {
+    "deleted": false,
+    "name": "ho",
+    "symbol": "ホ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "daa57a38-9ce2-4240-94c7-7dac9eda3f36",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "39de985f-4f26-48ed-bce4-6fb5c3dc44fe"
+  },
+  {
+    "deleted": false,
+    "name": "ma",
+    "symbol": "マ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "2d1bda11-4993-4b06-a035-7c26f5d24a6f",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "2d1fd64b-e136-4690-94e3-87091c267dec"
+  },
+  {
+    "deleted": false,
+    "name": "mi",
+    "symbol": "ミ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "59b8ec04-41eb-4082-9456-e339ac8eb060",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "b32c8aaf-09b9-4d65-b269-6c84794f358b"
+  },
+  {
+    "deleted": false,
+    "name": "mu",
+    "symbol": "ム",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "72acad1b-464d-4ca0-96ba-efb0cb9ae271",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "87bbafd7-8d5b-4666-ad1d-297dd3a3ee7c"
+  },
+  {
+    "deleted": false,
+    "name": "me",
+    "symbol": "メ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "ca50a9d8-81d8-42df-98dc-49cc41c3e842",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "86f01676-9fdf-417a-8418-83b714bf18d2"
+  },
+  {
+    "deleted": false,
+    "name": "mo",
+    "symbol": "モ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "9678cfac-3eea-4441-8599-a8f2ab8f234c",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "4d4796d8-5577-4472-bd61-06e57a8a5aac"
+  },
+  {
+    "deleted": false,
+    "name": "ya",
+    "symbol": "ヤ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "8fffbdf4-1547-4722-82d1-983282df3e97",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "59bb414b-4e45-4a45-bb61-941acba613a2"
+  },
+  {
+    "deleted": false,
+    "name": "yu",
+    "symbol": "ユ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "afaddc75-81ef-46a7-87dd-ace5195afd22",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "e7bdef2c-446d-49b7-8d6d-9a86710d33ef"
+  },
+  {
+    "deleted": false,
+    "name": "yo",
+    "symbol": "ヨ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "a2d99d35-e6c8-4d0b-a5d3-b4b103bac401",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "5bfce009-72b5-47cb-af04-f8de6d560068"
+  },
+  {
+    "deleted": false,
+    "name": "ra",
+    "symbol": "ラ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "4f8d938d-382a-43b3-b1eb-6aff63d0b83a",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "f5d0a193-7725-468a-b37a-f52d9679f789"
+  },
+  {
+    "deleted": false,
+    "name": "ri",
+    "symbol": "リ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "b130bde3-ab0e-4a7f-85e3-640a36c1d4f5",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "8df9b8be-f839-496a-a539-e892d9124915"
+  },
+  {
+    "deleted": false,
+    "name": "ru",
+    "symbol": "ル",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "ebff4496-42dd-4190-a648-e8c641e4aa3d",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "cf062569-f219-4ebd-8987-d34ab58a35bf"
+  },
+  {
+    "deleted": false,
+    "name": "re",
+    "symbol": "レ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "95b24d5d-2c9f-4348-9a96-92df5740408d",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "8961807a-2e3f-4a54-b769-f085fed9cc74"
+  },
+  {
+    "deleted": false,
+    "name": "ro",
+    "symbol": "ロ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "1657f608-5e93-4976-aeef-112dd7e48156",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "26c746fc-0c37-456f-b537-6339010c864c"
+  },
+  {
+    "deleted": false,
+    "name": "wa",
+    "symbol": "ワ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "a5e18985-947f-461e-847d-491ba43593f4",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "fad6e25f-00d7-44f3-9878-f54af0f468df"
+  },
+  {
+    "deleted": false,
+    "name": "o",
+    "symbol": "ヲ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "b6a896c8-64b5-403f-baed-4c1093f254f8",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "eca0411e-83a6-4fe8-be5b-9ff24c214ba0"
+  },
+  {
+    "deleted": false,
+    "name": "n",
+    "symbol": "ン",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "b6d95cce-ee04-4b88-8d11-0542655bede3",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "78b7c36c-bb04-4bee-a626-49bfc847b149"
+  },
+  {
+    "deleted": false,
+    "name": "ga",
+    "symbol": "ガ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "80087171-7f6a-4b6b-8f3d-fd30c59ad478",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "cd7eeb13-d3ea-4007-977b-a830b38872e0"
+  },
+  {
+    "deleted": false,
+    "name": "gi",
+    "symbol": "ギ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "480506c8-abfe-42b8-a3bf-a4c7c2e7cfa7",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "2c4a6dcf-5a96-43a2-9e43-80b5ab68050b"
+  },
+  {
+    "deleted": false,
+    "name": "gu",
+    "symbol": "グ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "24050225-9a4c-420e-b841-d8af0029421a",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "6b672c09-e029-4ceb-b460-f0c5ccc803f8"
+  },
+  {
+    "deleted": false,
+    "name": "ge",
+    "symbol": "ゲ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "ef9fd928-6aad-49a7-af0c-c861a4775c21",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "ae082da3-afed-4915-9459-8ebad196d268"
+  },
+  {
+    "deleted": false,
+    "name": "go",
+    "symbol": "ゴ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "169bb0c5-8c77-4471-93f1-e8b43a772bb9",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "6158a112-2545-4a0e-be40-aec38d947acc"
+  },
+  {
+    "deleted": false,
+    "name": "za",
+    "symbol": "ザ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "21de172a-fb95-4269-a600-8731ded6db3c",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "baf8f7b7-7dc0-40f1-85a6-5f1be6f3faea"
+  },
+  {
+    "deleted": false,
+    "name": "ji",
+    "symbol": "ジ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "8c8593e3-7693-4ddd-a903-482972efd5c9",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "a5cf6d38-5b67-4acb-9e18-7a16d9449b05"
+  },
+  {
+    "deleted": false,
+    "name": "zu",
+    "symbol": "ズ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "35f6a4cf-6ae1-4971-b895-858568091cf2",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "a5ec80df-9f7d-4feb-8930-a9ea2b6783bd"
+  },
+  {
+    "deleted": false,
+    "name": "ze",
+    "symbol": "ゼ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "e7117b64-db91-42be-9f02-16f295acd544",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "7634ef12-6381-4ccd-9670-9463b13544bb"
+  },
+  {
+    "deleted": false,
+    "name": "zo",
+    "symbol": "ゾ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "a274723d-63dc-497b-b3b5-a0165640c971",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "8bfd7a41-46e1-4163-ae10-5be2b1b2e5a2"
+  },
+  {
+    "deleted": false,
+    "name": "da",
+    "symbol": "ダ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "79204b7d-a13a-4775-9bec-bc74b3dffa71",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "e7e3ea27-2235-42fb-b8b5-2dc92e7d51e4"
+  },
+  {
+    "deleted": false,
+    "name": "ji",
+    "symbol": "ヂ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "83986971-123a-4014-be19-cb0fc421fa77",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "1e39c2d3-3ac7-4aa9-a9db-88b000098f51"
+  },
+  {
+    "deleted": false,
+    "name": "zu",
+    "symbol": "ヅ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "fb21d5c0-6e31-4ee4-9521-264b2cc1518c",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "c3927e6a-b6f5-4e9c-904c-9f5a821ead3a"
+  },
+  {
+    "deleted": false,
+    "name": "de",
+    "symbol": "デ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "edb47018-d93d-477e-88ca-9ec8228954d8",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "9c0fabf4-ad38-45d8-896a-62393047618c"
+  },
+  {
+    "deleted": false,
+    "name": "do",
+    "symbol": "ド",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "e136bdf0-d638-45d1-918a-2226c0482f7b",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "826f7f77-6e97-4134-a40f-8274583bd281"
+  },
+  {
+    "deleted": false,
+    "name": "ba",
+    "symbol": "バ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "5f40098c-369f-4033-be6a-94080d7fc11f",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "99d5079e-4bac-43b4-a6d4-fbe2fd1aaaf1"
+  },
+  {
+    "deleted": false,
+    "name": "bi",
+    "symbol": "ビ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "671a922a-cc00-41d4-a400-6199a4d6083c",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "e7e16334-d22b-4880-bd2e-d20ee52418cb"
+  },
+  {
+    "deleted": false,
+    "name": "bu",
+    "symbol": "ブ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "13ab273d-556b-4658-b25e-bd40e433f703",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "700b8133-fb4d-4643-80d1-c461bd7a0fb9"
+  },
+  {
+    "deleted": false,
+    "name": "be",
+    "symbol": "ベ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "e9efe3a8-be42-478c-8c40-2748a2723daf",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "667692e8-be09-4676-b489-a3bd1c0966eb"
+  },
+  {
+    "deleted": false,
+    "name": "bo",
+    "symbol": "ボ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "76f61515-70b7-41aa-b972-d29f7248dbc5",
+    "block_id": "ffb2e2fd-94f6-4dcb-8faf-4901b8f1744b",
+    "id": "aaec2bf1-ba2f-4951-88b0-ceccb6030fda"
+  },
+  {
+    "deleted": false,
+    "name": "pa",
+    "symbol": "パ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "80087171-7f6a-4b6b-8f3d-fd30c59ad478",
+    "block_id": "974c27f1-ac9e-4be7-b857-758af466be2c",
+    "id": "054d0ea8-6c6d-48d2-873d-954515457768"
+  },
+  {
+    "deleted": false,
+    "name": "pi",
+    "symbol": "ピ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "480506c8-abfe-42b8-a3bf-a4c7c2e7cfa7",
+    "block_id": "974c27f1-ac9e-4be7-b857-758af466be2c",
+    "id": "6bb3dd90-c24c-4161-bd64-fe58568081d5"
+  },
+  {
+    "deleted": false,
+    "name": "pu",
+    "symbol": "プ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "24050225-9a4c-420e-b841-d8af0029421a",
+    "block_id": "974c27f1-ac9e-4be7-b857-758af466be2c",
+    "id": "0dcbe4ce-0891-44c0-a675-85f72fcd0571"
+  },
+  {
+    "deleted": false,
+    "name": "pe",
+    "symbol": "ペ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "ef9fd928-6aad-49a7-af0c-c861a4775c21",
+    "block_id": "974c27f1-ac9e-4be7-b857-758af466be2c",
+    "id": "11eda3b0-d6e2-41da-9165-b38a2b6b2310"
+  },
+  {
+    "deleted": false,
+    "name": "po",
+    "symbol": "ポ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "169bb0c5-8c77-4471-93f1-e8b43a772bb9",
+    "block_id": "974c27f1-ac9e-4be7-b857-758af466be2c",
+    "id": "f1ef6ffa-5e99-4ecd-96d3-81aa48a6d664"
+  },
+  {
+    "deleted": false,
+    "name": "kya",
+    "symbol": "キャ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "80087171-7f6a-4b6b-8f3d-fd30c59ad478",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "e3dbbd14-e717-41d8-b71d-8acd516e6813"
+  },
+  {
+    "deleted": false,
+    "name": "kyu",
+    "symbol": "キュ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "480506c8-abfe-42b8-a3bf-a4c7c2e7cfa7",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "84fba5e9-a781-49ed-9fe3-ded525f65f7b"
+  },
+  {
+    "deleted": false,
+    "name": "kyo",
+    "symbol": "キョ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "24050225-9a4c-420e-b841-d8af0029421a",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "804501e4-ec00-4b9c-b3a8-80a0d6a03abe"
+  },
+  {
+    "deleted": false,
+    "name": "gya",
+    "symbol": "ギャ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "21de172a-fb95-4269-a600-8731ded6db3c",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "904dfda4-92de-4a7f-b7bd-362cc2bc2c83"
+  },
+  {
+    "deleted": false,
+    "name": "gyu",
+    "symbol": "ギュ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "8c8593e3-7693-4ddd-a903-482972efd5c9",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "044e611d-3dce-44d5-961e-c05fe57e66ab"
+  },
+  {
+    "deleted": false,
+    "name": "gyo",
+    "symbol": "ギョ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "35f6a4cf-6ae1-4971-b895-858568091cf2",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "e0d6b8f6-78be-4c38-ad10-0df7729d25e7"
+  },
+  {
+    "deleted": false,
+    "name": "sha",
+    "symbol": "シャ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "79204b7d-a13a-4775-9bec-bc74b3dffa71",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "d9d46810-1df7-47bf-aec6-cab1fe08cd56"
+  },
+  {
+    "deleted": false,
+    "name": "shu",
+    "symbol": "シュ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "83986971-123a-4014-be19-cb0fc421fa77",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "fd2e1d4d-6112-42d1-ae09-b7e7b9df5919"
+  },
+  {
+    "deleted": false,
+    "name": "sho",
+    "symbol": "ショ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "fb21d5c0-6e31-4ee4-9521-264b2cc1518c",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "f46504d7-450f-43a3-9619-dabef906b344"
+  },
+  {
+    "deleted": false,
+    "name": "ja",
+    "symbol": "ジャ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "5f40098c-369f-4033-be6a-94080d7fc11f",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "f25c1955-0729-460c-9707-e58053d71b11"
+  },
+  {
+    "deleted": false,
+    "name": "ju",
+    "symbol": "ジュ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "671a922a-cc00-41d4-a400-6199a4d6083c",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "416db2bd-c071-4468-b6fd-823054b77348"
+  },
+  {
+    "deleted": false,
+    "name": "jo",
+    "symbol": "ジョ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "13ab273d-556b-4658-b25e-bd40e433f703",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "71632c9d-fdc3-4a5a-a8f1-a1529142e320"
+  },
+  {
+    "deleted": false,
+    "name": "cha",
+    "symbol": "チャ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "62e9b12b-d541-42b0-9703-3499dd75d03a",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "34999b0b-451c-4945-bbce-9cb3b43c70be"
+  },
+  {
+    "deleted": false,
+    "name": "chu",
+    "symbol": "チュ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "fca9e1f6-e4ed-4415-8598-48b642f9f15b",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "620728ab-5c92-4096-aca4-b9b9e09bf1b0"
+  },
+  {
+    "deleted": false,
+    "name": "cho",
+    "symbol": "チョ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "263480f2-0ed5-4019-b89b-a5df0323fb0d",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "ae612ee0-416f-46b9-a945-4eb6463860af"
+  },
+  {
+    "deleted": false,
+    "name": "nya",
+    "symbol": "ニャ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "8d4a7c82-0f9b-4e7a-9fd1-723a2c0b2d7e",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "95c4cb79-c1ad-4f6f-94fc-ff5c5569b289"
+  },
+  {
+    "deleted": false,
+    "name": "nyu",
+    "symbol": "ニュ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "e32ba359-d348-49d7-af09-177e9d30877a",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "49c40581-3eca-48ba-a564-bacdd75ded51"
+  },
+  {
+    "deleted": false,
+    "name": "nyo",
+    "symbol": "ニョ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "345a2e6e-5f5e-4d38-a57e-5ab97e811fab",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "2fdce727-4dff-4955-b72f-10b9daf0574e"
+  },
+  {
+    "deleted": false,
+    "name": "hya",
+    "symbol": "ヒャ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "2d1bda11-4993-4b06-a035-7c26f5d24a6f",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "cdc63dbc-9188-4c7e-862e-f23b9de1a29f"
+  },
+  {
+    "deleted": false,
+    "name": "hyu",
+    "symbol": "ヒュ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "59b8ec04-41eb-4082-9456-e339ac8eb060",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "b067559f-1f5d-4329-897e-a248febfb489"
+  },
+  {
+    "deleted": false,
+    "name": "hyo",
+    "symbol": "ヒョ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "72acad1b-464d-4ca0-96ba-efb0cb9ae271",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "48c1fd29-cad7-475f-bd43-49f7fdf4333e"
+  },
+  {
+    "deleted": false,
+    "name": "bya",
+    "symbol": "ビャ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "8fffbdf4-1547-4722-82d1-983282df3e97",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "bf177764-8ed8-4812-adca-0f91e39de836"
+  },
+  {
+    "deleted": false,
+    "name": "byu",
+    "symbol": "ビュ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "c3191a4d-5d8a-4565-8c34-e391d6c33a65",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "4abf23fa-d6b8-42fa-9c76-85197765bf9d"
+  },
+  {
+    "deleted": false,
+    "name": "byo",
+    "symbol": "ビョ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "afaddc75-81ef-46a7-87dd-ace5195afd22",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "8fd0ddb9-d640-4f01-9c08-58c67fdc0203"
+  },
+  {
+    "deleted": false,
+    "name": "pya",
+    "symbol": "ピャ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "4f8d938d-382a-43b3-b1eb-6aff63d0b83a",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "6624a9fd-7b6e-4979-8427-c5941f004882"
+  },
+  {
+    "deleted": false,
+    "name": "pyu",
+    "symbol": "ピュ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "b130bde3-ab0e-4a7f-85e3-640a36c1d4f5",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "8fb39fe1-032b-4684-9ad9-2355399ce0e5"
+  },
+  {
+    "deleted": false,
+    "name": "pyo",
+    "symbol": "ピョ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "ebff4496-42dd-4190-a648-e8c641e4aa3d",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "4b99d7de-a547-405f-8a85-7f2428d2718e"
+  },
+  {
+    "deleted": false,
+    "name": "mya",
+    "symbol": "ミャ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "a5e18985-947f-461e-847d-491ba43593f4",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "06166dcc-05ed-42d7-9bff-51d9dceb0f04"
+  },
+  {
+    "deleted": false,
+    "name": "myu",
+    "symbol": "ミュ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "104c76a4-6b9f-41b5-8c59-789fad2efae9",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "555171df-f901-4e5a-a9b7-439d75810e53"
+  },
+  {
+    "deleted": false,
+    "name": "myo",
+    "symbol": "ミョ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "6e671990-3e48-458f-bd28-71f4f9e5bc39",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "2fc7ed2d-c52c-496f-8f39-fe8ed1aa8219"
+  },
+  {
+    "deleted": false,
+    "name": "rya",
+    "symbol": "リャ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "b6d95cce-ee04-4b88-8d11-0542655bede3",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "8f3942b8-7052-43e2-91d2-dd3711718a78"
+  },
+  {
+    "deleted": false,
+    "name": "ryu",
+    "symbol": "リュ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "6f84f79a-bfb0-4c49-ad1a-064e0abdc848",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "c034167e-1efa-474f-958a-da7068aaa6e1"
+  },
+  {
+    "deleted": false,
+    "name": "ryo",
+    "symbol": "リョ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "6e502efc-e147-41a6-99f1-a7db1f32c32e",
+    "block_id": "cd5e92ad-ae44-4183-8a02-4d436a30da5b",
+    "id": "9d69cec5-8e79-4364-9c2f-2de122d774cf"
+  },
+  {
+    "deleted": false,
+    "name": "kk",
+    "symbol": "ッ+k",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "80087171-7f6a-4b6b-8f3d-fd30c59ad478",
+    "block_id": "6daf83b3-454f-4fb2-a1df-f82c7ea667a6",
+    "id": "c0464e90-db26-4545-a7be-472c66d38ae4"
+  },
+  {
+    "deleted": false,
+    "name": "ss",
+    "symbol": "ッ+s",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "480506c8-abfe-42b8-a3bf-a4c7c2e7cfa7",
+    "block_id": "6daf83b3-454f-4fb2-a1df-f82c7ea667a6",
+    "id": "8e08122a-62a4-4fe7-bcec-dad10650ccaf"
+  },
+  {
+    "deleted": false,
+    "name": "tt",
+    "symbol": "ッ+t",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "24050225-9a4c-420e-b841-d8af0029421a",
+    "block_id": "6daf83b3-454f-4fb2-a1df-f82c7ea667a6",
+    "id": "640c51cf-bfbe-4313-b0bd-49902e591e6e"
+  },
+  {
+    "deleted": false,
+    "name": "pp",
+    "symbol": "ッ+p",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "ef9fd928-6aad-49a7-af0c-c861a4775c21",
+    "block_id": "6daf83b3-454f-4fb2-a1df-f82c7ea667a6",
+    "id": "287bf067-467c-4f50-9557-830a6871fcdd"
+  },
+  {
+    "deleted": false,
+    "name": "aa",
+    "symbol": "アア",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "80087171-7f6a-4b6b-8f3d-fd30c59ad478",
+    "block_id": "6686daa2-2ed1-4109-b0d6-706890f7bb01",
+    "id": "7018394b-3399-489f-aaed-768584e7d997"
+  },
+  {
+    "deleted": false,
+    "name": "ii",
+    "symbol": "イイ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "480506c8-abfe-42b8-a3bf-a4c7c2e7cfa7",
+    "block_id": "6686daa2-2ed1-4109-b0d6-706890f7bb01",
+    "id": "8a7b81ee-1a42-4b99-82b5-59a2d3e20eb9"
+  },
+  {
+    "deleted": false,
+    "name": "uu",
+    "symbol": "ウウ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "24050225-9a4c-420e-b841-d8af0029421a",
+    "block_id": "6686daa2-2ed1-4109-b0d6-706890f7bb01",
+    "id": "3086a3aa-7563-40de-950a-8072d1d45bf0"
+  },
+  {
+    "deleted": false,
+    "name": "ee",
+    "symbol": "エエ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "ef9fd928-6aad-49a7-af0c-c861a4775c21",
+    "block_id": "6686daa2-2ed1-4109-b0d6-706890f7bb01",
+    "id": "2f78cdeb-b148-41b8-a187-75ae35277606"
+  },
+  {
+    "deleted": false,
+    "name": "oo",
+    "symbol": "オオ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "169bb0c5-8c77-4471-93f1-e8b43a772bb9",
+    "block_id": "6686daa2-2ed1-4109-b0d6-706890f7bb01",
+    "id": "4e21c5f7-8e56-428c-af1f-e35163825e8b"
+  },
+  {
+    "deleted": false,
+    "name": "ei",
+    "symbol": "エイ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "21de172a-fb95-4269-a600-8731ded6db3c",
+    "block_id": "6686daa2-2ed1-4109-b0d6-706890f7bb01",
+    "id": "e90bd3da-55b4-4471-a111-8de960513fc6"
+  },
+  {
+    "deleted": false,
+    "name": "ou",
+    "symbol": "オウ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "8c8593e3-7693-4ddd-a903-482972efd5c9",
+    "block_id": "6686daa2-2ed1-4109-b0d6-706890f7bb01",
+    "id": "60bc2575-57ee-4bc5-a1b0-74cc03e59882"
+  }
+]

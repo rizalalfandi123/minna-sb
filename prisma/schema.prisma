@@ -1,0 +1,115 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model letter_blocks {
+  created_at  DateTime  @default(now()) @db.Timestamptz(6)
+  updated_at  DateTime  @default(now()) @db.Timestamptz(6)
+  name        String    @unique @default("")
+  description String    @default("")
+  id          String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  deleted     Boolean   @default(false)
+  letters     letters[]
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model letter_levels {
+  created_at                        DateTime                            @default(now()) @db.Timestamptz(6)
+  updated_at                        DateTime                            @default(now()) @db.Timestamptz(6)
+  number                            Int                                 @unique
+  letter_type_id                    String                              @db.Uuid
+  deleted                           Boolean                             @default(false)
+  id                                String                              @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  letter_types                      letter_types                        @relation(fields: [letter_type_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  letter_progress                   letter_progress[]
+  letter_questions_to_letter_levels letter_questions_to_letter_levels[]
+  letters_to_letter_levels          letters_to_letter_levels[]
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model letter_positions {
+  id         String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  created_at DateTime  @default(now()) @db.Timestamptz(6)
+  updated_at DateTime  @default(now()) @db.Timestamptz(6)
+  row        Int
+  column     Int
+  deleted    Boolean   @default(false)
+  letters    letters[]
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model letter_progress {
+  id              String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  created_at      DateTime      @default(now()) @db.Timestamptz(6)
+  updated_at      DateTime      @default(now()) @db.Timestamptz(6)
+  deleted         Boolean       @default(false)
+  is_completed    Boolean
+  letter_level_id String        @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  letter_levels   letter_levels @relation(fields: [letter_level_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model letter_questions {
+  created_at                        DateTime                            @default(now()) @db.Timestamptz(6)
+  updated_at                        DateTime                            @default(now()) @db.Timestamptz(6)
+  question                          Json
+  deleted                           Boolean                             @default(false)
+  id                                String                              @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  letter_questions_to_letter_levels letter_questions_to_letter_levels[]
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model letter_questions_to_letter_levels {
+  letter_question_id String           @db.Uuid
+  letter_level_id    String           @db.Uuid
+  number             Int              @default(1)
+  letter_levels      letter_levels    @relation(fields: [letter_level_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  letter_questions   letter_questions @relation(fields: [letter_question_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@id([letter_question_id, letter_level_id])
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model letter_types {
+  id            String          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  created_at    DateTime        @default(now()) @db.Timestamptz(6)
+  updated_at    DateTime        @default(now()) @db.Timestamptz(6)
+  name          String          @unique @default("")
+  deleted       Boolean         @default(false)
+  letter_levels letter_levels[]
+  letters       letters[]
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model letters {
+  created_at               DateTime                   @default(now()) @db.Timestamptz(6)
+  updated_at               DateTime                   @default(now()) @db.Timestamptz(6)
+  deleted                  Boolean                    @default(false)
+  name                     String
+  symbol                   String
+  type_id                  String                     @db.Uuid
+  position_id              String                     @db.Uuid
+  block_id                 String                     @db.Uuid
+  id                       String                     @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  letter_blocks            letter_blocks              @relation(fields: [block_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  letter_positions         letter_positions           @relation(fields: [position_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  letter_types             letter_types               @relation(fields: [type_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  letters_to_letter_levels letters_to_letter_levels[]
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model letters_to_letter_levels {
+  letter_id       String        @db.Uuid
+  letter_level_id String        @db.Uuid
+  letters         letters       @relation(fields: [letter_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  letter_levels   letter_levels @relation(fields: [letter_level_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@id([letter_id, letter_level_id])
+}

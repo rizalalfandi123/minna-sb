@@ -1,0 +1,93 @@
+Guide :
+
+Types of Questions
+
+GUESS_THE_LETTER
+Guess the romaji from a Japanese character (hiragana/katakana/kanji).
+Example:
+
+json
+{
+    "type": "GUESS_THE_LETTER",
+    "data": {
+        "question": "い",
+        "options": ["a", "i", "u", "e", "o"],
+        "answer": "i"
+    }
+}
+GUESS_THE_SYMBOL
+Guess the Japanese character (hiragana/katakana/kanji) from romaji.
+Example:
+
+json
+{
+    "type": "GUESS_THE_SYMBOL",
+    "data": {
+        "question": "a",
+        "options": ["あ", "い", "う", "え", "お"],
+        "answer": "あ"
+    }
+}
+GUESS_THE_LETTER_SOUND
+Guess the Japanese character (hiragana/katakana/kanji) from its sound.
+The sound is generated via text-to-speech (e.g., expo-speech).
+Example:
+
+json
+{
+    "type": "GUESS_THE_LETTER_SOUND",
+    "data": {
+        "question": "あ",
+        "options": ["あ", "い", "う", "え", "お"],
+        "answer": "あ"
+    }
+}
+MATCHING_TEXT_BY_TEXT
+Match Japanese characters (hiragana/katakana/kanji) with their corresponding romaji.
+Example:
+
+json
+{
+    "type": "MATCHING_TEXT_BY_TEXT",
+    "data": {
+        "question": [
+            { "rightSide": "あ", "leftSide": "i" },
+            { "rightSide": "お", "leftSide": "a" },
+            { "rightSide": "う", "leftSide": "e" },
+            { "rightSide": "え", "leftSide": "u" },
+            { "rightSide": "い", "leftSide": "o" }
+        ],
+        "answer": [
+            { "rightSide": "あ", "leftSide": "a" },
+            { "rightSide": "お", "leftSide": "o" },
+            { "rightSide": "う", "leftSide": "u" },
+            { "rightSide": "え", "leftSide": "e" },
+            { "rightSide": "い", "leftSide": "i" }
+        ]
+    }
+}
+SORT_THE_ITEMS_BY_SOUND
+Guess and arrange Japanese characters (hiragana/katakana/kanji) based on sound.
+The sound is a Japanese word or phrase.
+
+Example:
+
+json
+{
+    "type": "SORT_THE_ITEMS_BY_SOUND",
+    "data": {
+        "answer": "あおい",
+        "mean": "blue", // mean of あおい in english
+        "options": [
+            { "number": 0, "value": "お" },
+            { "number": 1, "value": "あ" },
+            { "number": 2, "value": "い" },
+            { "number": 3, "value": "え" }
+        ]
+    }
+}
+
+Request:
+Please create questions base on this hiragana block
+["あ", "い", "う", "え", "お"]
+5 questions for each of question type

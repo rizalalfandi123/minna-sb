@@ -1,0 +1,17 @@
+[
+  {
+    "id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "name": "hiragana",
+    "deleted": false
+  },
+  {
+    "id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "name": "katakana",
+    "deleted": false
+  },
+  {
+    "id": "b18b5f5d-95f9-44d3-adb0-cd6a54c83f90",
+    "name": "kanji",
+    "deleted": false
+  }
+]

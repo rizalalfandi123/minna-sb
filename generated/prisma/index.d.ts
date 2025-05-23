@@ -1,0 +1,15452 @@
+
+/**
+ * Client
+**/
+
+import * as runtime from './runtime/library.js';
+import $Types = runtime.Types // general types
+import $Public = runtime.Types.Public
+import $Utils = runtime.Types.Utils
+import $Extensions = runtime.Types.Extensions
+import $Result = runtime.Types.Result
+
+export type PrismaPromise<T> = $Public.PrismaPromise<T>
+
+
+/**
+ * Model letter_blocks
+ * This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+ */
+export type letter_blocks = $Result.DefaultSelection<Prisma.$letter_blocksPayload>
+/**
+ * Model letter_levels
+ * This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+ */
+export type letter_levels = $Result.DefaultSelection<Prisma.$letter_levelsPayload>
+/**
+ * Model letter_positions
+ * This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+ */
+export type letter_positions = $Result.DefaultSelection<Prisma.$letter_positionsPayload>
+/**
+ * Model letter_progress
+ * This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+ */
+export type letter_progress = $Result.DefaultSelection<Prisma.$letter_progressPayload>
+/**
+ * Model letter_questions
+ * This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+ */
+export type letter_questions = $Result.DefaultSelection<Prisma.$letter_questionsPayload>
+/**
+ * Model letter_questions_to_letter_levels
+ * This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+ */
+export type letter_questions_to_letter_levels = $Result.DefaultSelection<Prisma.$letter_questions_to_letter_levelsPayload>
+/**
+ * Model letter_types
+ * This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+ */
+export type letter_types = $Result.DefaultSelection<Prisma.$letter_typesPayload>
+/**
+ * Model letters
+ * This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+ */
+export type letters = $Result.DefaultSelection<Prisma.$lettersPayload>
+/**
+ * Model letters_to_letter_levels
+ * This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+ */
+export type letters_to_letter_levels = $Result.DefaultSelection<Prisma.$letters_to_letter_levelsPayload>
+
+/**
+ * ##  Prisma Client ʲˢ
+ *
+ * Type-safe database client for TypeScript & Node.js
+ * @example
+ * ```
+ * const prisma = new PrismaClient()
+ * // Fetch zero or more Letter_blocks
+ * const letter_blocks = await prisma.letter_blocks.findMany()
+ * ```
+ *
+ *
+ * Read more in our [docs](https://www.prisma.io/docs/reference/tools-and-interfaces/prisma-client).
+ */
+export class PrismaClient<
+  ClientOptions extends Prisma.PrismaClientOptions = Prisma.PrismaClientOptions,
+  U = 'log' extends keyof ClientOptions ? ClientOptions['log'] extends Array<Prisma.LogLevel | Prisma.LogDefinition> ? Prisma.GetEvents<ClientOptions['log']> : never : never,
+  ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs
+> {
+  [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['other'] }
+
+    /**
+   * ##  Prisma Client ʲˢ
+   *
+   * Type-safe database client for TypeScript & Node.js
+   * @example
+   * ```
+   * const prisma = new PrismaClient()
+   * // Fetch zero or more Letter_blocks
+   * const letter_blocks = await prisma.letter_blocks.findMany()
+   * ```
+   *
+   *
+   * Read more in our [docs](https://www.prisma.io/docs/reference/tools-and-interfaces/prisma-client).
+   */
+
+  constructor(optionsArg ?: Prisma.Subset<ClientOptions, Prisma.PrismaClientOptions>);
+  $on<V extends U>(eventType: V, callback: (event: V extends 'query' ? Prisma.QueryEvent : Prisma.LogEvent) => void): PrismaClient;
+
+  /**
+   * Connect with the database
+   */
+  $connect(): $Utils.JsPromise<void>;
+
+  /**
+   * Disconnect from the database
+   */
+  $disconnect(): $Utils.JsPromise<void>;
+
+  /**
+   * Add a middleware
+   * @deprecated since 4.16.0. For new code, prefer client extensions instead.
+   * @see https://pris.ly/d/extensions
+   */
+  $use(cb: Prisma.Middleware): void
+
+/**
+   * Executes a prepared raw query and returns the number of affected rows.
+   * @example
+   * ```
+   * const result = await prisma.$executeRaw`UPDATE User SET cool = ${true} WHERE email = ${'user@email.com'};`
+   * ```
+   *
+   * Read more in our [docs](https://www.prisma.io/docs/reference/tools-and-interfaces/prisma-client/raw-database-access).
+   */
+  $executeRaw<T = unknown>(query: TemplateStringsArray | Prisma.Sql, ...values: any[]): Prisma.PrismaPromise<number>;
+
+  /**
+   * Executes a raw query and returns the number of affected rows.
+   * Susceptible to SQL injections, see documentation.
+   * @example
+   * ```
+   * const result = await prisma.$executeRawUnsafe('UPDATE User SET cool = $1 WHERE email = $2 ;', true, 'user@email.com')
+   * ```
+   *
+   * Read more in our [docs](https://www.prisma.io/docs/reference/tools-and-interfaces/prisma-client/raw-database-access).
+   */
+  $executeRawUnsafe<T = unknown>(query: string, ...values: any[]): Prisma.PrismaPromise<number>;
+
+  /**
+   * Performs a prepared raw query and returns the `SELECT` data.
+   * @example
+   * ```
+   * const result = await prisma.$queryRaw`SELECT * FROM User WHERE id = ${1} OR email = ${'user@email.com'};`
+   * ```
+   *
+   * Read more in our [docs](https://www.prisma.io/docs/reference/tools-and-interfaces/prisma-client/raw-database-access).
+   */
+  $queryRaw<T = unknown>(query: TemplateStringsArray | Prisma.Sql, ...values: any[]): Prisma.PrismaPromise<T>;
+
+  /**
+   * Performs a raw query and returns the `SELECT` data.
+   * Susceptible to SQL injections, see documentation.
+   * @example
+   * ```
+   * const result = await prisma.$queryRawUnsafe('SELECT * FROM User WHERE id = $1 OR email = $2;', 1, 'user@email.com')
+   * ```
+   *
+   * Read more in our [docs](https://www.prisma.io/docs/reference/tools-and-interfaces/prisma-client/raw-database-access).
+   */
+  $queryRawUnsafe<T = unknown>(query: string, ...values: any[]): Prisma.PrismaPromise<T>;
+
+
+  /**
+   * Allows the running of a sequence of read/write operations that are guaranteed to either succeed or fail as a whole.
+   * @example
+   * ```
+   * const [george, bob, alice] = await prisma.$transaction([
+   *   prisma.user.create({ data: { name: 'George' } }),
+   *   prisma.user.create({ data: { name: 'Bob' } }),
+   *   prisma.user.create({ data: { name: 'Alice' } }),
+   * ])
+   * ```
+   * 
+   * Read more in our [docs](https://www.prisma.io/docs/concepts/components/prisma-client/transactions).
+   */
+  $transaction<P extends Prisma.PrismaPromise<any>[]>(arg: [...P], options?: { isolationLevel?: Prisma.TransactionIsolationLevel }): $Utils.JsPromise<runtime.Types.Utils.UnwrapTuple<P>>
+
+  $transaction<R>(fn: (prisma: Omit<PrismaClient, runtime.ITXClientDenyList>) => $Utils.JsPromise<R>, options?: { maxWait?: number, timeout?: number, isolationLevel?: Prisma.TransactionIsolationLevel }): $Utils.JsPromise<R>
+
+
+  $extends: $Extensions.ExtendsHook<"extends", Prisma.TypeMapCb<ClientOptions>, ExtArgs, $Utils.Call<Prisma.TypeMapCb<ClientOptions>, {
+    extArgs: ExtArgs
+  }>>
+
+      /**
+   * `prisma.letter_blocks`: Exposes CRUD operations for the **letter_blocks** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more Letter_blocks
+    * const letter_blocks = await prisma.letter_blocks.findMany()
+    * ```
+    */
+  get letter_blocks(): Prisma.letter_blocksDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.letter_levels`: Exposes CRUD operations for the **letter_levels** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more Letter_levels
+    * const letter_levels = await prisma.letter_levels.findMany()
+    * ```
+    */
+  get letter_levels(): Prisma.letter_levelsDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.letter_positions`: Exposes CRUD operations for the **letter_positions** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more Letter_positions
+    * const letter_positions = await prisma.letter_positions.findMany()
+    * ```
+    */
+  get letter_positions(): Prisma.letter_positionsDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.letter_progress`: Exposes CRUD operations for the **letter_progress** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more Letter_progresses
+    * const letter_progresses = await prisma.letter_progress.findMany()
+    * ```
+    */
+  get letter_progress(): Prisma.letter_progressDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.letter_questions`: Exposes CRUD operations for the **letter_questions** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more Letter_questions
+    * const letter_questions = await prisma.letter_questions.findMany()
+    * ```
+    */
+  get letter_questions(): Prisma.letter_questionsDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.letter_questions_to_letter_levels`: Exposes CRUD operations for the **letter_questions_to_letter_levels** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more Letter_questions_to_letter_levels
+    * const letter_questions_to_letter_levels = await prisma.letter_questions_to_letter_levels.findMany()
+    * ```
+    */
+  get letter_questions_to_letter_levels(): Prisma.letter_questions_to_letter_levelsDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.letter_types`: Exposes CRUD operations for the **letter_types** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more Letter_types
+    * const letter_types = await prisma.letter_types.findMany()
+    * ```
+    */
+  get letter_types(): Prisma.letter_typesDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.letters`: Exposes CRUD operations for the **letters** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more Letters
+    * const letters = await prisma.letters.findMany()
+    * ```
+    */
+  get letters(): Prisma.lettersDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.letters_to_letter_levels`: Exposes CRUD operations for the **letters_to_letter_levels** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more Letters_to_letter_levels
+    * const letters_to_letter_levels = await prisma.letters_to_letter_levels.findMany()
+    * ```
+    */
+  get letters_to_letter_levels(): Prisma.letters_to_letter_levelsDelegate<ExtArgs, ClientOptions>;
+}
+
+export namespace Prisma {
+  export import DMMF = runtime.DMMF
+
+  export type PrismaPromise<T> = $Public.PrismaPromise<T>
+
+  /**
+   * Validator
+   */
+  export import validator = runtime.Public.validator
+
+  /**
+   * Prisma Errors
+   */
+  export import PrismaClientKnownRequestError = runtime.PrismaClientKnownRequestError
+  export import PrismaClientUnknownRequestError = runtime.PrismaClientUnknownRequestError
+  export import PrismaClientRustPanicError = runtime.PrismaClientRustPanicError
+  export import PrismaClientInitializationError = runtime.PrismaClientInitializationError
+  export import PrismaClientValidationError = runtime.PrismaClientValidationError
+
+  /**
+   * Re-export of sql-template-tag
+   */
+  export import sql = runtime.sqltag
+  export import empty = runtime.empty
+  export import join = runtime.join
+  export import raw = runtime.raw
+  export import Sql = runtime.Sql
+
+
+
+  /**
+   * Decimal.js
+   */
+  export import Decimal = runtime.Decimal
+
+  export type DecimalJsLike = runtime.DecimalJsLike
+
+  /**
+   * Metrics
+   */
+  export type Metrics = runtime.Metrics
+  export type Metric<T> = runtime.Metric<T>
+  export type MetricHistogram = runtime.MetricHistogram
+  export type MetricHistogramBucket = runtime.MetricHistogramBucket
+
+  /**
+  * Extensions
+  */
+  export import Extension = $Extensions.UserArgs
+  export import getExtensionContext = runtime.Extensions.getExtensionContext
+  export import Args = $Public.Args
+  export import Payload = $Public.Payload
+  export import Result = $Public.Result
+  export import Exact = $Public.Exact
+
+  /**
+   * Prisma Client JS version: 6.8.2
+   * Query Engine version: 2060c79ba17c6bb9f5823312b6f6b7f4a845738e
+   */
+  export type PrismaVersion = {
+    client: string
+  }
+
+  export const prismaVersion: PrismaVersion
+
+  /**
+   * Utility Types
+   */
+
+
+  export import JsonObject = runtime.JsonObject
+  export import JsonArray = runtime.JsonArray
+  export import JsonValue = runtime.JsonValue
+  export import InputJsonObject = runtime.InputJsonObject
+  export import InputJsonArray = runtime.InputJsonArray
+  export import InputJsonValue = runtime.InputJsonValue
+
+  /**
+   * Types of the values used to represent different kinds of `null` values when working with JSON fields.
+   *
+   * @see https://www.prisma.io/docs/concepts/components/prisma-client/working-with-fields/working-with-json-fields#filtering-on-a-json-field
+   */
+  namespace NullTypes {
+    /**
+    * Type of `Prisma.DbNull`.
+    *
+    * You cannot use other instances of this class. Please use the `Prisma.DbNull` value.
+    *
+    * @see https://www.prisma.io/docs/concepts/components/prisma-client/working-with-fields/working-with-json-fields#filtering-on-a-json-field
+    */
+    class DbNull {
+      private DbNull: never
+      private constructor()
+    }
+
+    /**
+    * Type of `Prisma.JsonNull`.
+    *
+    * You cannot use other instances of this class. Please use the `Prisma.JsonNull` value.
+    *
+    * @see https://www.prisma.io/docs/concepts/components/prisma-client/working-with-fields/working-with-json-fields#filtering-on-a-json-field
+    */
+    class JsonNull {
+      private JsonNull: never
+      private constructor()
+    }
+
+    /**
+    * Type of `Prisma.AnyNull`.
+    *
+    * You cannot use other instances of this class. Please use the `Prisma.AnyNull` value.
+    *
+    * @see https://www.prisma.io/docs/concepts/components/prisma-client/working-with-fields/working-with-json-fields#filtering-on-a-json-field
+    */
+    class AnyNull {
+      private AnyNull: never
+      private constructor()
+    }
+  }
+
+  /**
+   * Helper for filtering JSON entries that have `null` on the database (empty on the db)
+   *
+   * @see https://www.prisma.io/docs/concepts/components/prisma-client/working-with-fields/working-with-json-fields#filtering-on-a-json-field
+   */
+  export const DbNull: NullTypes.DbNull
+
+  /**
+   * Helper for filtering JSON entries that have JSON `null` values (not empty on the db)
+   *
+   * @see https://www.prisma.io/docs/concepts/components/prisma-client/working-with-fields/working-with-json-fields#filtering-on-a-json-field
+   */
+  export const JsonNull: NullTypes.JsonNull
+
+  /**
+   * Helper for filtering JSON entries that are `Prisma.DbNull` or `Prisma.JsonNull`
+   *
+   * @see https://www.prisma.io/docs/concepts/components/prisma-client/working-with-fields/working-with-json-fields#filtering-on-a-json-field
+   */
+  export const AnyNull: NullTypes.AnyNull
+
+  type SelectAndInclude = {
+    select: any
+    include: any
+  }
+
+  type SelectAndOmit = {
+    select: any
+    omit: any
+  }
+
+  /**
+   * Get the type of the value, that the Promise holds.
+   */
+  export type PromiseType<T extends PromiseLike<any>> = T extends PromiseLike<infer U> ? U : T;
+
+  /**
+   * Get the return type of a function which returns a Promise.
+   */
+  export type PromiseReturnType<T extends (...args: any) => $Utils.JsPromise<any>> = PromiseType<ReturnType<T>>
+
+  /**
+   * From T, pick a set of properties whose keys are in the union K
+   */
+  type Prisma__Pick<T, K extends keyof T> = {
+      [P in K]: T[P];
+  };
+
+
+  export type Enumerable<T> = T | Array<T>;
+
+  export type RequiredKeys<T> = {
+    [K in keyof T]-?: {} extends Prisma__Pick<T, K> ? never : K
+  }[keyof T]
+
+  export type TruthyKeys<T> = keyof {
+    [K in keyof T as T[K] extends false | undefined | null ? never : K]: K
+  }
+
+  export type TrueKeys<T> = TruthyKeys<Prisma__Pick<T, RequiredKeys<T>>>
+
+  /**
+   * Subset
+   * @desc From `T` pick properties that exist in `U`. Simple version of Intersection
+   */
+  export type Subset<T, U> = {
+    [key in keyof T]: key extends keyof U ? T[key] : never;
+  };
+
+  /**
+   * SelectSubset
+   * @desc From `T` pick properties that exist in `U`. Simple version of Intersection.
+   * Additionally, it validates, if both select and include are present. If the case, it errors.
+   */
+  export type SelectSubset<T, U> = {
+    [key in keyof T]: key extends keyof U ? T[key] : never
+  } &
+    (T extends SelectAndInclude
+      ? 'Please either choose `select` or `include`.'
+      : T extends SelectAndOmit
+        ? 'Please either choose `select` or `omit`.'
+        : {})
+
+  /**
+   * Subset + Intersection
+   * @desc From `T` pick properties that exist in `U` and intersect `K`
+   */
+  export type SubsetIntersection<T, U, K> = {
+    [key in keyof T]: key extends keyof U ? T[key] : never
+  } &
+    K
+
+  type Without<T, U> = { [P in Exclude<keyof T, keyof U>]?: never };
+
+  /**
+   * XOR is needed to have a real mutually exclusive union type
+   * https://stackoverflow.com/questions/42123407/does-typescript-support-mutually-exclusive-types
+   */
+  type XOR<T, U> =
+    T extends object ?
+    U extends object ?
+      (Without<T, U> & U) | (Without<U, T> & T)
+    : U : T
+
+
+  /**
+   * Is T a Record?
+   */
+  type IsObject<T extends any> = T extends Array<any>
+  ? False
+  : T extends Date
+  ? False
+  : T extends Uint8Array
+  ? False
+  : T extends BigInt
+  ? False
+  : T extends object
+  ? True
+  : False
+
+
+  /**
+   * If it's T[], return T
+   */
+  export type UnEnumerate<T extends unknown> = T extends Array<infer U> ? U : T
+
+  /**
+   * From ts-toolbelt
+   */
+
+  type __Either<O extends object, K extends Key> = Omit<O, K> &
+    {
+      // Merge all but K
+      [P in K]: Prisma__Pick<O, P & keyof O> // With K possibilities
+    }[K]
+
+  type EitherStrict<O extends object, K extends Key> = Strict<__Either<O, K>>
+
+  type EitherLoose<O extends object, K extends Key> = ComputeRaw<__Either<O, K>>
+
+  type _Either<
+    O extends object,
+    K extends Key,
+    strict extends Boolean
+  > = {
+    1: EitherStrict<O, K>
+    0: EitherLoose<O, K>
+  }[strict]
+
+  type Either<
+    O extends object,
+    K extends Key,
+    strict extends Boolean = 1
+  > = O extends unknown ? _Either<O, K, strict> : never
+
+  export type Union = any
+
+  type PatchUndefined<O extends object, O1 extends object> = {
+    [K in keyof O]: O[K] extends undefined ? At<O1, K> : O[K]
+  } & {}
+
+  /** Helper Types for "Merge" **/
+  export type IntersectOf<U extends Union> = (
+    U extends unknown ? (k: U) => void : never
+  ) extends (k: infer I) => void
+    ? I
+    : never
+
+  export type Overwrite<O extends object, O1 extends object> = {
+      [K in keyof O]: K extends keyof O1 ? O1[K] : O[K];
+  } & {};
+
+  type _Merge<U extends object> = IntersectOf<Overwrite<U, {
+      [K in keyof U]-?: At<U, K>;
+  }>>;
+
+  type Key = string | number | symbol;
+  type AtBasic<O extends object, K extends Key> = K extends keyof O ? O[K] : never;
+  type AtStrict<O extends object, K extends Key> = O[K & keyof O];
+  type AtLoose<O extends object, K extends Key> = O extends unknown ? AtStrict<O, K> : never;
+  export type At<O extends object, K extends Key, strict extends Boolean = 1> = {
+      1: AtStrict<O, K>;
+      0: AtLoose<O, K>;
+  }[strict];
+
+  export type ComputeRaw<A extends any> = A extends Function ? A : {
+    [K in keyof A]: A[K];
+  } & {};
+
+  export type OptionalFlat<O> = {
+    [K in keyof O]?: O[K];
+  } & {};
+
+  type _Record<K extends keyof any, T> = {
+    [P in K]: T;
+  };
+
+  // cause typescript not to expand types and preserve names
+  type NoExpand<T> = T extends unknown ? T : never;
+
+  // this type assumes the passed object is entirely optional
+  type AtLeast<O extends object, K extends string> = NoExpand<
+    O extends unknown
+    ? | (K extends keyof O ? { [P in K]: O[P] } & O : O)
+      | {[P in keyof O as P extends K ? P : never]-?: O[P]} & O
+    : never>;
+
+  type _Strict<U, _U = U> = U extends unknown ? U & OptionalFlat<_Record<Exclude<Keys<_U>, keyof U>, never>> : never;
+
+  export type Strict<U extends object> = ComputeRaw<_Strict<U>>;
+  /** End Helper Types for "Merge" **/
+
+  export type Merge<U extends object> = ComputeRaw<_Merge<Strict<U>>>;
+
+  /**
+  A [[Boolean]]
+  */
+  export type Boolean = True | False
+
+  // /**
+  // 1
+  // */
+  export type True = 1
+
+  /**
+  0
+  */
+  export type False = 0
+
+  export type Not<B extends Boolean> = {
+    0: 1
+    1: 0
+  }[B]
+
+  export type Extends<A1 extends any, A2 extends any> = [A1] extends [never]
+    ? 0 // anything `never` is false
+    : A1 extends A2
+    ? 1
+    : 0
+
+  export type Has<U extends Union, U1 extends Union> = Not<
+    Extends<Exclude<U1, U>, U1>
+  >
+
+  export type Or<B1 extends Boolean, B2 extends Boolean> = {
+    0: {
+      0: 0
+      1: 1
+    }
+    1: {
+      0: 1
+      1: 1
+    }
+  }[B1][B2]
+
+  export type Keys<U extends Union> = U extends unknown ? keyof U : never
+
+  type Cast<A, B> = A extends B ? A : B;
+
+  export const type: unique symbol;
+
+
+
+  /**
+   * Used by group by
+   */
+
+  export type GetScalarType<T, O> = O extends object ? {
+    [P in keyof T]: P extends keyof O
+      ? O[P]
+      : never
+  } : never
+
+  type FieldPaths<
+    T,
+    U = Omit<T, '_avg' | '_sum' | '_count' | '_min' | '_max'>
+  > = IsObject<T> extends True ? U : T
+
+  type GetHavingFields<T> = {
+    [K in keyof T]: Or<
+      Or<Extends<'OR', K>, Extends<'AND', K>>,
+      Extends<'NOT', K>
+    > extends True
+      ? // infer is only needed to not hit TS limit
+        // based on the brilliant idea of Pierre-Antoine Mills
+        // https://github.com/microsoft/TypeScript/issues/30188#issuecomment-478938437
+        T[K] extends infer TK
+        ? GetHavingFields<UnEnumerate<TK> extends object ? Merge<UnEnumerate<TK>> : never>
+        : never
+      : {} extends FieldPaths<T[K]>
+      ? never
+      : K
+  }[keyof T]
+
+  /**
+   * Convert tuple to union
+   */
+  type _TupleToUnion<T> = T extends (infer E)[] ? E : never
+  type TupleToUnion<K extends readonly any[]> = _TupleToUnion<K>
+  type MaybeTupleToUnion<T> = T extends any[] ? TupleToUnion<T> : T
+
+  /**
+   * Like `Pick`, but additionally can also accept an array of keys
+   */
+  type PickEnumerable<T, K extends Enumerable<keyof T> | keyof T> = Prisma__Pick<T, MaybeTupleToUnion<K>>
+
+  /**
+   * Exclude all keys with underscores
+   */
+  type ExcludeUnderscoreKeys<T extends string> = T extends `_${string}` ? never : T
+
+
+  export type FieldRef<Model, FieldType> = runtime.FieldRef<Model, FieldType>
+
+  type FieldRefInputType<Model, FieldType> = Model extends never ? never : FieldRef<Model, FieldType>
+
+
+  export const ModelName: {
+    letter_blocks: 'letter_blocks',
+    letter_levels: 'letter_levels',
+    letter_positions: 'letter_positions',
+    letter_progress: 'letter_progress',
+    letter_questions: 'letter_questions',
+    letter_questions_to_letter_levels: 'letter_questions_to_letter_levels',
+    letter_types: 'letter_types',
+    letters: 'letters',
+    letters_to_letter_levels: 'letters_to_letter_levels'
+  };
+
+  export type ModelName = (typeof ModelName)[keyof typeof ModelName]
+
+
+  export type Datasources = {
+    db?: Datasource
+  }
+
+  interface TypeMapCb<ClientOptions = {}> extends $Utils.Fn<{extArgs: $Extensions.InternalArgs }, $Utils.Record<string, any>> {
+    returns: Prisma.TypeMap<this['params']['extArgs'], ClientOptions extends { omit: infer OmitOptions } ? OmitOptions : {}>
+  }
+
+  export type TypeMap<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> = {
+    globalOmitOptions: {
+      omit: GlobalOmitOptions
+    }
+    meta: {
+      modelProps: "letter_blocks" | "letter_levels" | "letter_positions" | "letter_progress" | "letter_questions" | "letter_questions_to_letter_levels" | "letter_types" | "letters" | "letters_to_letter_levels"
+      txIsolationLevel: Prisma.TransactionIsolationLevel
+    }
+    model: {
+      letter_blocks: {
+        payload: Prisma.$letter_blocksPayload<ExtArgs>
+        fields: Prisma.letter_blocksFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.letter_blocksFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_blocksPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.letter_blocksFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_blocksPayload>
+          }
+          findFirst: {
+            args: Prisma.letter_blocksFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_blocksPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.letter_blocksFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_blocksPayload>
+          }
+          findMany: {
+            args: Prisma.letter_blocksFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_blocksPayload>[]
+          }
+          create: {
+            args: Prisma.letter_blocksCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_blocksPayload>
+          }
+          createMany: {
+            args: Prisma.letter_blocksCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.letter_blocksCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_blocksPayload>[]
+          }
+          delete: {
+            args: Prisma.letter_blocksDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_blocksPayload>
+          }
+          update: {
+            args: Prisma.letter_blocksUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_blocksPayload>
+          }
+          deleteMany: {
+            args: Prisma.letter_blocksDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.letter_blocksUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.letter_blocksUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_blocksPayload>[]
+          }
+          upsert: {
+            args: Prisma.letter_blocksUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_blocksPayload>
+          }
+          aggregate: {
+            args: Prisma.Letter_blocksAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateLetter_blocks>
+          }
+          groupBy: {
+            args: Prisma.letter_blocksGroupByArgs<ExtArgs>
+            result: $Utils.Optional<Letter_blocksGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.letter_blocksCountArgs<ExtArgs>
+            result: $Utils.Optional<Letter_blocksCountAggregateOutputType> | number
+          }
+        }
+      }
+      letter_levels: {
+        payload: Prisma.$letter_levelsPayload<ExtArgs>
+        fields: Prisma.letter_levelsFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.letter_levelsFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_levelsPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.letter_levelsFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_levelsPayload>
+          }
+          findFirst: {
+            args: Prisma.letter_levelsFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_levelsPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.letter_levelsFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_levelsPayload>
+          }
+          findMany: {
+            args: Prisma.letter_levelsFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_levelsPayload>[]
+          }
+          create: {
+            args: Prisma.letter_levelsCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_levelsPayload>
+          }
+          createMany: {
+            args: Prisma.letter_levelsCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.letter_levelsCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_levelsPayload>[]
+          }
+          delete: {
+            args: Prisma.letter_levelsDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_levelsPayload>
+          }
+          update: {
+            args: Prisma.letter_levelsUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_levelsPayload>
+          }
+          deleteMany: {
+            args: Prisma.letter_levelsDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.letter_levelsUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.letter_levelsUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_levelsPayload>[]
+          }
+          upsert: {
+            args: Prisma.letter_levelsUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_levelsPayload>
+          }
+          aggregate: {
+            args: Prisma.Letter_levelsAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateLetter_levels>
+          }
+          groupBy: {
+            args: Prisma.letter_levelsGroupByArgs<ExtArgs>
+            result: $Utils.Optional<Letter_levelsGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.letter_levelsCountArgs<ExtArgs>
+            result: $Utils.Optional<Letter_levelsCountAggregateOutputType> | number
+          }
+        }
+      }
+      letter_positions: {
+        payload: Prisma.$letter_positionsPayload<ExtArgs>
+        fields: Prisma.letter_positionsFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.letter_positionsFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_positionsPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.letter_positionsFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_positionsPayload>
+          }
+          findFirst: {
+            args: Prisma.letter_positionsFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_positionsPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.letter_positionsFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_positionsPayload>
+          }
+          findMany: {
+            args: Prisma.letter_positionsFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_positionsPayload>[]
+          }
+          create: {
+            args: Prisma.letter_positionsCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_positionsPayload>
+          }
+          createMany: {
+            args: Prisma.letter_positionsCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.letter_positionsCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_positionsPayload>[]
+          }
+          delete: {
+            args: Prisma.letter_positionsDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_positionsPayload>
+          }
+          update: {
+            args: Prisma.letter_positionsUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_positionsPayload>
+          }
+          deleteMany: {
+            args: Prisma.letter_positionsDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.letter_positionsUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.letter_positionsUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_positionsPayload>[]
+          }
+          upsert: {
+            args: Prisma.letter_positionsUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_positionsPayload>
+          }
+          aggregate: {
+            args: Prisma.Letter_positionsAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateLetter_positions>
+          }
+          groupBy: {
+            args: Prisma.letter_positionsGroupByArgs<ExtArgs>
+            result: $Utils.Optional<Letter_positionsGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.letter_positionsCountArgs<ExtArgs>
+            result: $Utils.Optional<Letter_positionsCountAggregateOutputType> | number
+          }
+        }
+      }
+      letter_progress: {
+        payload: Prisma.$letter_progressPayload<ExtArgs>
+        fields: Prisma.letter_progressFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.letter_progressFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_progressPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.letter_progressFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_progressPayload>
+          }
+          findFirst: {
+            args: Prisma.letter_progressFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_progressPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.letter_progressFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_progressPayload>
+          }
+          findMany: {
+            args: Prisma.letter_progressFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_progressPayload>[]
+          }
+          create: {
+            args: Prisma.letter_progressCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_progressPayload>
+          }
+          createMany: {
+            args: Prisma.letter_progressCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.letter_progressCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_progressPayload>[]
+          }
+          delete: {
+            args: Prisma.letter_progressDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_progressPayload>
+          }
+          update: {
+            args: Prisma.letter_progressUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_progressPayload>
+          }
+          deleteMany: {
+            args: Prisma.letter_progressDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.letter_progressUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.letter_progressUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_progressPayload>[]
+          }
+          upsert: {
+            args: Prisma.letter_progressUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_progressPayload>
+          }
+          aggregate: {
+            args: Prisma.Letter_progressAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateLetter_progress>
+          }
+          groupBy: {
+            args: Prisma.letter_progressGroupByArgs<ExtArgs>
+            result: $Utils.Optional<Letter_progressGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.letter_progressCountArgs<ExtArgs>
+            result: $Utils.Optional<Letter_progressCountAggregateOutputType> | number
+          }
+        }
+      }
+      letter_questions: {
+        payload: Prisma.$letter_questionsPayload<ExtArgs>
+        fields: Prisma.letter_questionsFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.letter_questionsFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questionsPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.letter_questionsFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questionsPayload>
+          }
+          findFirst: {
+            args: Prisma.letter_questionsFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questionsPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.letter_questionsFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questionsPayload>
+          }
+          findMany: {
+            args: Prisma.letter_questionsFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questionsPayload>[]
+          }
+          create: {
+            args: Prisma.letter_questionsCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questionsPayload>
+          }
+          createMany: {
+            args: Prisma.letter_questionsCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.letter_questionsCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questionsPayload>[]
+          }
+          delete: {
+            args: Prisma.letter_questionsDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questionsPayload>
+          }
+          update: {
+            args: Prisma.letter_questionsUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questionsPayload>
+          }
+          deleteMany: {
+            args: Prisma.letter_questionsDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.letter_questionsUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.letter_questionsUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questionsPayload>[]
+          }
+          upsert: {
+            args: Prisma.letter_questionsUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questionsPayload>
+          }
+          aggregate: {
+            args: Prisma.Letter_questionsAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateLetter_questions>
+          }
+          groupBy: {
+            args: Prisma.letter_questionsGroupByArgs<ExtArgs>
+            result: $Utils.Optional<Letter_questionsGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.letter_questionsCountArgs<ExtArgs>
+            result: $Utils.Optional<Letter_questionsCountAggregateOutputType> | number
+          }
+        }
+      }
+      letter_questions_to_letter_levels: {
+        payload: Prisma.$letter_questions_to_letter_levelsPayload<ExtArgs>
+        fields: Prisma.letter_questions_to_letter_levelsFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.letter_questions_to_letter_levelsFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questions_to_letter_levelsPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.letter_questions_to_letter_levelsFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questions_to_letter_levelsPayload>
+          }
+          findFirst: {
+            args: Prisma.letter_questions_to_letter_levelsFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questions_to_letter_levelsPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.letter_questions_to_letter_levelsFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questions_to_letter_levelsPayload>
+          }
+          findMany: {
+            args: Prisma.letter_questions_to_letter_levelsFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questions_to_letter_levelsPayload>[]
+          }
+          create: {
+            args: Prisma.letter_questions_to_letter_levelsCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questions_to_letter_levelsPayload>
+          }
+          createMany: {
+            args: Prisma.letter_questions_to_letter_levelsCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.letter_questions_to_letter_levelsCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questions_to_letter_levelsPayload>[]
+          }
+          delete: {
+            args: Prisma.letter_questions_to_letter_levelsDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questions_to_letter_levelsPayload>
+          }
+          update: {
+            args: Prisma.letter_questions_to_letter_levelsUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questions_to_letter_levelsPayload>
+          }
+          deleteMany: {
+            args: Prisma.letter_questions_to_letter_levelsDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.letter_questions_to_letter_levelsUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.letter_questions_to_letter_levelsUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questions_to_letter_levelsPayload>[]
+          }
+          upsert: {
+            args: Prisma.letter_questions_to_letter_levelsUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_questions_to_letter_levelsPayload>
+          }
+          aggregate: {
+            args: Prisma.Letter_questions_to_letter_levelsAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateLetter_questions_to_letter_levels>
+          }
+          groupBy: {
+            args: Prisma.letter_questions_to_letter_levelsGroupByArgs<ExtArgs>
+            result: $Utils.Optional<Letter_questions_to_letter_levelsGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.letter_questions_to_letter_levelsCountArgs<ExtArgs>
+            result: $Utils.Optional<Letter_questions_to_letter_levelsCountAggregateOutputType> | number
+          }
+        }
+      }
+      letter_types: {
+        payload: Prisma.$letter_typesPayload<ExtArgs>
+        fields: Prisma.letter_typesFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.letter_typesFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_typesPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.letter_typesFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_typesPayload>
+          }
+          findFirst: {
+            args: Prisma.letter_typesFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_typesPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.letter_typesFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_typesPayload>
+          }
+          findMany: {
+            args: Prisma.letter_typesFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_typesPayload>[]
+          }
+          create: {
+            args: Prisma.letter_typesCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_typesPayload>
+          }
+          createMany: {
+            args: Prisma.letter_typesCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.letter_typesCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_typesPayload>[]
+          }
+          delete: {
+            args: Prisma.letter_typesDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_typesPayload>
+          }
+          update: {
+            args: Prisma.letter_typesUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_typesPayload>
+          }
+          deleteMany: {
+            args: Prisma.letter_typesDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.letter_typesUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.letter_typesUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_typesPayload>[]
+          }
+          upsert: {
+            args: Prisma.letter_typesUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letter_typesPayload>
+          }
+          aggregate: {
+            args: Prisma.Letter_typesAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateLetter_types>
+          }
+          groupBy: {
+            args: Prisma.letter_typesGroupByArgs<ExtArgs>
+            result: $Utils.Optional<Letter_typesGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.letter_typesCountArgs<ExtArgs>
+            result: $Utils.Optional<Letter_typesCountAggregateOutputType> | number
+          }
+        }
+      }
+      letters: {
+        payload: Prisma.$lettersPayload<ExtArgs>
+        fields: Prisma.lettersFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.lettersFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$lettersPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.lettersFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$lettersPayload>
+          }
+          findFirst: {
+            args: Prisma.lettersFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$lettersPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.lettersFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$lettersPayload>
+          }
+          findMany: {
+            args: Prisma.lettersFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$lettersPayload>[]
+          }
+          create: {
+            args: Prisma.lettersCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$lettersPayload>
+          }
+          createMany: {
+            args: Prisma.lettersCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.lettersCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$lettersPayload>[]
+          }
+          delete: {
+            args: Prisma.lettersDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$lettersPayload>
+          }
+          update: {
+            args: Prisma.lettersUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$lettersPayload>
+          }
+          deleteMany: {
+            args: Prisma.lettersDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.lettersUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.lettersUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$lettersPayload>[]
+          }
+          upsert: {
+            args: Prisma.lettersUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$lettersPayload>
+          }
+          aggregate: {
+            args: Prisma.LettersAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateLetters>
+          }
+          groupBy: {
+            args: Prisma.lettersGroupByArgs<ExtArgs>
+            result: $Utils.Optional<LettersGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.lettersCountArgs<ExtArgs>
+            result: $Utils.Optional<LettersCountAggregateOutputType> | number
+          }
+        }
+      }
+      letters_to_letter_levels: {
+        payload: Prisma.$letters_to_letter_levelsPayload<ExtArgs>
+        fields: Prisma.letters_to_letter_levelsFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.letters_to_letter_levelsFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letters_to_letter_levelsPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.letters_to_letter_levelsFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letters_to_letter_levelsPayload>
+          }
+          findFirst: {
+            args: Prisma.letters_to_letter_levelsFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letters_to_letter_levelsPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.letters_to_letter_levelsFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letters_to_letter_levelsPayload>
+          }
+          findMany: {
+            args: Prisma.letters_to_letter_levelsFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letters_to_letter_levelsPayload>[]
+          }
+          create: {
+            args: Prisma.letters_to_letter_levelsCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letters_to_letter_levelsPayload>
+          }
+          createMany: {
+            args: Prisma.letters_to_letter_levelsCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.letters_to_letter_levelsCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letters_to_letter_levelsPayload>[]
+          }
+          delete: {
+            args: Prisma.letters_to_letter_levelsDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letters_to_letter_levelsPayload>
+          }
+          update: {
+            args: Prisma.letters_to_letter_levelsUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letters_to_letter_levelsPayload>
+          }
+          deleteMany: {
+            args: Prisma.letters_to_letter_levelsDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.letters_to_letter_levelsUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.letters_to_letter_levelsUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letters_to_letter_levelsPayload>[]
+          }
+          upsert: {
+            args: Prisma.letters_to_letter_levelsUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$letters_to_letter_levelsPayload>
+          }
+          aggregate: {
+            args: Prisma.Letters_to_letter_levelsAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateLetters_to_letter_levels>
+          }
+          groupBy: {
+            args: Prisma.letters_to_letter_levelsGroupByArgs<ExtArgs>
+            result: $Utils.Optional<Letters_to_letter_levelsGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.letters_to_letter_levelsCountArgs<ExtArgs>
+            result: $Utils.Optional<Letters_to_letter_levelsCountAggregateOutputType> | number
+          }
+        }
+      }
+    }
+  } & {
+    other: {
+      payload: any
+      operations: {
+        $executeRaw: {
+          args: [query: TemplateStringsArray | Prisma.Sql, ...values: any[]],
+          result: any
+        }
+        $executeRawUnsafe: {
+          args: [query: string, ...values: any[]],
+          result: any
+        }
+        $queryRaw: {
+          args: [query: TemplateStringsArray | Prisma.Sql, ...values: any[]],
+          result: any
+        }
+        $queryRawUnsafe: {
+          args: [query: string, ...values: any[]],
+          result: any
+        }
+      }
+    }
+  }
+  export const defineExtension: $Extensions.ExtendsHook<"define", Prisma.TypeMapCb, $Extensions.DefaultArgs>
+  export type DefaultPrismaClient = PrismaClient
+  export type ErrorFormat = 'pretty' | 'colorless' | 'minimal'
+  export interface PrismaClientOptions {
+    /**
+     * Overwrites the datasource url from your schema.prisma file
+     */
+    datasources?: Datasources
+    /**
+     * Overwrites the datasource url from your schema.prisma file
+     */
+    datasourceUrl?: string
+    /**
+     * @default "colorless"
+     */
+    errorFormat?: ErrorFormat
+    /**
+     * @example
+     * ```
+     * // Defaults to stdout
+     * log: ['query', 'info', 'warn', 'error']
+     * 
+     * // Emit as events
+     * log: [
+     *   { emit: 'stdout', level: 'query' },
+     *   { emit: 'stdout', level: 'info' },
+     *   { emit: 'stdout', level: 'warn' }
+     *   { emit: 'stdout', level: 'error' }
+     * ]
+     * ```
+     * Read more in our [docs](https://www.prisma.io/docs/reference/tools-and-interfaces/prisma-client/logging#the-log-option).
+     */
+    log?: (LogLevel | LogDefinition)[]
+    /**
+     * The default values for transactionOptions
+     * maxWait ?= 2000
+     * timeout ?= 5000
+     */
+    transactionOptions?: {
+      maxWait?: number
+      timeout?: number
+      isolationLevel?: Prisma.TransactionIsolationLevel
+    }
+    /**
+     * Global configuration for omitting model fields by default.
+     * 
+     * @example
+     * ```
+     * const prisma = new PrismaClient({
+     *   omit: {
+     *     user: {
+     *       password: true
+     *     }
+     *   }
+     * })
+     * ```
+     */
+    omit?: Prisma.GlobalOmitConfig
+  }
+  export type GlobalOmitConfig = {
+    letter_blocks?: letter_blocksOmit
+    letter_levels?: letter_levelsOmit
+    letter_positions?: letter_positionsOmit
+    letter_progress?: letter_progressOmit
+    letter_questions?: letter_questionsOmit
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsOmit
+    letter_types?: letter_typesOmit
+    letters?: lettersOmit
+    letters_to_letter_levels?: letters_to_letter_levelsOmit
+  }
+
+  /* Types for Logging */
+  export type LogLevel = 'info' | 'query' | 'warn' | 'error'
+  export type LogDefinition = {
+    level: LogLevel
+    emit: 'stdout' | 'event'
+  }
+
+  export type GetLogType<T extends LogLevel | LogDefinition> = T extends LogDefinition ? T['emit'] extends 'event' ? T['level'] : never : never
+  export type GetEvents<T extends any> = T extends Array<LogLevel | LogDefinition> ?
+    GetLogType<T[0]> | GetLogType<T[1]> | GetLogType<T[2]> | GetLogType<T[3]>
+    : never
+
+  export type QueryEvent = {
+    timestamp: Date
+    query: string
+    params: string
+    duration: number
+    target: string
+  }
+
+  export type LogEvent = {
+    timestamp: Date
+    message: string
+    target: string
+  }
+  /* End Types for Logging */
+
+
+  export type PrismaAction =
+    | 'findUnique'
+    | 'findUniqueOrThrow'
+    | 'findMany'
+    | 'findFirst'
+    | 'findFirstOrThrow'
+    | 'create'
+    | 'createMany'
+    | 'createManyAndReturn'
+    | 'update'
+    | 'updateMany'
+    | 'updateManyAndReturn'
+    | 'upsert'
+    | 'delete'
+    | 'deleteMany'
+    | 'executeRaw'
+    | 'queryRaw'
+    | 'aggregate'
+    | 'count'
+    | 'runCommandRaw'
+    | 'findRaw'
+    | 'groupBy'
+
+  /**
+   * These options are being passed into the middleware as "params"
+   */
+  export type MiddlewareParams = {
+    model?: ModelName
+    action: PrismaAction
+    args: any
+    dataPath: string[]
+    runInTransaction: boolean
+  }
+
+  /**
+   * The `T` type makes sure, that the `return proceed` is not forgotten in the middleware implementation
+   */
+  export type Middleware<T = any> = (
+    params: MiddlewareParams,
+    next: (params: MiddlewareParams) => $Utils.JsPromise<T>,
+  ) => $Utils.JsPromise<T>
+
+  // tested in getLogLevel.test.ts
+  export function getLogLevel(log: Array<LogLevel | LogDefinition>): LogLevel | undefined;
+
+  /**
+   * `PrismaClient` proxy available in interactive transactions.
+   */
+  export type TransactionClient = Omit<Prisma.DefaultPrismaClient, runtime.ITXClientDenyList>
+
+  export type Datasource = {
+    url?: string
+  }
+
+  /**
+   * Count Types
+   */
+
+
+  /**
+   * Count Type Letter_blocksCountOutputType
+   */
+
+  export type Letter_blocksCountOutputType = {
+    letters: number
+  }
+
+  export type Letter_blocksCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letters?: boolean | Letter_blocksCountOutputTypeCountLettersArgs
+  }
+
+  // Custom InputTypes
+  /**
+   * Letter_blocksCountOutputType without action
+   */
+  export type Letter_blocksCountOutputTypeDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Letter_blocksCountOutputType
+     */
+    select?: Letter_blocksCountOutputTypeSelect<ExtArgs> | null
+  }
+
+  /**
+   * Letter_blocksCountOutputType without action
+   */
+  export type Letter_blocksCountOutputTypeCountLettersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: lettersWhereInput
+  }
+
+
+  /**
+   * Count Type Letter_levelsCountOutputType
+   */
+
+  export type Letter_levelsCountOutputType = {
+    letter_progress: number
+    letter_questions_to_letter_levels: number
+    letters_to_letter_levels: number
+  }
+
+  export type Letter_levelsCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letter_progress?: boolean | Letter_levelsCountOutputTypeCountLetter_progressArgs
+    letter_questions_to_letter_levels?: boolean | Letter_levelsCountOutputTypeCountLetter_questions_to_letter_levelsArgs
+    letters_to_letter_levels?: boolean | Letter_levelsCountOutputTypeCountLetters_to_letter_levelsArgs
+  }
+
+  // Custom InputTypes
+  /**
+   * Letter_levelsCountOutputType without action
+   */
+  export type Letter_levelsCountOutputTypeDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Letter_levelsCountOutputType
+     */
+    select?: Letter_levelsCountOutputTypeSelect<ExtArgs> | null
+  }
+
+  /**
+   * Letter_levelsCountOutputType without action
+   */
+  export type Letter_levelsCountOutputTypeCountLetter_progressArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: letter_progressWhereInput
+  }
+
+  /**
+   * Letter_levelsCountOutputType without action
+   */
+  export type Letter_levelsCountOutputTypeCountLetter_questions_to_letter_levelsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: letter_questions_to_letter_levelsWhereInput
+  }
+
+  /**
+   * Letter_levelsCountOutputType without action
+   */
+  export type Letter_levelsCountOutputTypeCountLetters_to_letter_levelsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: letters_to_letter_levelsWhereInput
+  }
+
+
+  /**
+   * Count Type Letter_positionsCountOutputType
+   */
+
+  export type Letter_positionsCountOutputType = {
+    letters: number
+  }
+
+  export type Letter_positionsCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letters?: boolean | Letter_positionsCountOutputTypeCountLettersArgs
+  }
+
+  // Custom InputTypes
+  /**
+   * Letter_positionsCountOutputType without action
+   */
+  export type Letter_positionsCountOutputTypeDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Letter_positionsCountOutputType
+     */
+    select?: Letter_positionsCountOutputTypeSelect<ExtArgs> | null
+  }
+
+  /**
+   * Letter_positionsCountOutputType without action
+   */
+  export type Letter_positionsCountOutputTypeCountLettersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: lettersWhereInput
+  }
+
+
+  /**
+   * Count Type Letter_questionsCountOutputType
+   */
+
+  export type Letter_questionsCountOutputType = {
+    letter_questions_to_letter_levels: number
+  }
+
+  export type Letter_questionsCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letter_questions_to_letter_levels?: boolean | Letter_questionsCountOutputTypeCountLetter_questions_to_letter_levelsArgs
+  }
+
+  // Custom InputTypes
+  /**
+   * Letter_questionsCountOutputType without action
+   */
+  export type Letter_questionsCountOutputTypeDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Letter_questionsCountOutputType
+     */
+    select?: Letter_questionsCountOutputTypeSelect<ExtArgs> | null
+  }
+
+  /**
+   * Letter_questionsCountOutputType without action
+   */
+  export type Letter_questionsCountOutputTypeCountLetter_questions_to_letter_levelsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: letter_questions_to_letter_levelsWhereInput
+  }
+
+
+  /**
+   * Count Type Letter_typesCountOutputType
+   */
+
+  export type Letter_typesCountOutputType = {
+    letter_levels: number
+    letters: number
+  }
+
+  export type Letter_typesCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letter_levels?: boolean | Letter_typesCountOutputTypeCountLetter_levelsArgs
+    letters?: boolean | Letter_typesCountOutputTypeCountLettersArgs
+  }
+
+  // Custom InputTypes
+  /**
+   * Letter_typesCountOutputType without action
+   */
+  export type Letter_typesCountOutputTypeDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Letter_typesCountOutputType
+     */
+    select?: Letter_typesCountOutputTypeSelect<ExtArgs> | null
+  }
+
+  /**
+   * Letter_typesCountOutputType without action
+   */
+  export type Letter_typesCountOutputTypeCountLetter_levelsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: letter_levelsWhereInput
+  }
+
+  /**
+   * Letter_typesCountOutputType without action
+   */
+  export type Letter_typesCountOutputTypeCountLettersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: lettersWhereInput
+  }
+
+
+  /**
+   * Count Type LettersCountOutputType
+   */
+
+  export type LettersCountOutputType = {
+    letters_to_letter_levels: number
+  }
+
+  export type LettersCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letters_to_letter_levels?: boolean | LettersCountOutputTypeCountLetters_to_letter_levelsArgs
+  }
+
+  // Custom InputTypes
+  /**
+   * LettersCountOutputType without action
+   */
+  export type LettersCountOutputTypeDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the LettersCountOutputType
+     */
+    select?: LettersCountOutputTypeSelect<ExtArgs> | null
+  }
+
+  /**
+   * LettersCountOutputType without action
+   */
+  export type LettersCountOutputTypeCountLetters_to_letter_levelsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: letters_to_letter_levelsWhereInput
+  }
+
+
+  /**
+   * Models
+   */
+
+  /**
+   * Model letter_blocks
+   */
+
+  export type AggregateLetter_blocks = {
+    _count: Letter_blocksCountAggregateOutputType | null
+    _min: Letter_blocksMinAggregateOutputType | null
+    _max: Letter_blocksMaxAggregateOutputType | null
+  }
+
+  export type Letter_blocksMinAggregateOutputType = {
+    created_at: Date | null
+    updated_at: Date | null
+    name: string | null
+    description: string | null
+    id: string | null
+    deleted: boolean | null
+  }
+
+  export type Letter_blocksMaxAggregateOutputType = {
+    created_at: Date | null
+    updated_at: Date | null
+    name: string | null
+    description: string | null
+    id: string | null
+    deleted: boolean | null
+  }
+
+  export type Letter_blocksCountAggregateOutputType = {
+    created_at: number
+    updated_at: number
+    name: number
+    description: number
+    id: number
+    deleted: number
+    _all: number
+  }
+
+
+  export type Letter_blocksMinAggregateInputType = {
+    created_at?: true
+    updated_at?: true
+    name?: true
+    description?: true
+    id?: true
+    deleted?: true
+  }
+
+  export type Letter_blocksMaxAggregateInputType = {
+    created_at?: true
+    updated_at?: true
+    name?: true
+    description?: true
+    id?: true
+    deleted?: true
+  }
+
+  export type Letter_blocksCountAggregateInputType = {
+    created_at?: true
+    updated_at?: true
+    name?: true
+    description?: true
+    id?: true
+    deleted?: true
+    _all?: true
+  }
+
+  export type Letter_blocksAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which letter_blocks to aggregate.
+     */
+    where?: letter_blocksWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_blocks to fetch.
+     */
+    orderBy?: letter_blocksOrderByWithRelationInput | letter_blocksOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: letter_blocksWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_blocks from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_blocks.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned letter_blocks
+    **/
+    _count?: true | Letter_blocksCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: Letter_blocksMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: Letter_blocksMaxAggregateInputType
+  }
+
+  export type GetLetter_blocksAggregateType<T extends Letter_blocksAggregateArgs> = {
+        [P in keyof T & keyof AggregateLetter_blocks]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateLetter_blocks[P]>
+      : GetScalarType<T[P], AggregateLetter_blocks[P]>
+  }
+
+
+
+
+  export type letter_blocksGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: letter_blocksWhereInput
+    orderBy?: letter_blocksOrderByWithAggregationInput | letter_blocksOrderByWithAggregationInput[]
+    by: Letter_blocksScalarFieldEnum[] | Letter_blocksScalarFieldEnum
+    having?: letter_blocksScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: Letter_blocksCountAggregateInputType | true
+    _min?: Letter_blocksMinAggregateInputType
+    _max?: Letter_blocksMaxAggregateInputType
+  }
+
+  export type Letter_blocksGroupByOutputType = {
+    created_at: Date
+    updated_at: Date
+    name: string
+    description: string
+    id: string
+    deleted: boolean
+    _count: Letter_blocksCountAggregateOutputType | null
+    _min: Letter_blocksMinAggregateOutputType | null
+    _max: Letter_blocksMaxAggregateOutputType | null
+  }
+
+  type GetLetter_blocksGroupByPayload<T extends letter_blocksGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<Letter_blocksGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof Letter_blocksGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], Letter_blocksGroupByOutputType[P]>
+            : GetScalarType<T[P], Letter_blocksGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type letter_blocksSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    created_at?: boolean
+    updated_at?: boolean
+    name?: boolean
+    description?: boolean
+    id?: boolean
+    deleted?: boolean
+    letters?: boolean | letter_blocks$lettersArgs<ExtArgs>
+    _count?: boolean | Letter_blocksCountOutputTypeDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["letter_blocks"]>
+
+  export type letter_blocksSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    created_at?: boolean
+    updated_at?: boolean
+    name?: boolean
+    description?: boolean
+    id?: boolean
+    deleted?: boolean
+  }, ExtArgs["result"]["letter_blocks"]>
+
+  export type letter_blocksSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    created_at?: boolean
+    updated_at?: boolean
+    name?: boolean
+    description?: boolean
+    id?: boolean
+    deleted?: boolean
+  }, ExtArgs["result"]["letter_blocks"]>
+
+  export type letter_blocksSelectScalar = {
+    created_at?: boolean
+    updated_at?: boolean
+    name?: boolean
+    description?: boolean
+    id?: boolean
+    deleted?: boolean
+  }
+
+  export type letter_blocksOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"created_at" | "updated_at" | "name" | "description" | "id" | "deleted", ExtArgs["result"]["letter_blocks"]>
+  export type letter_blocksInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letters?: boolean | letter_blocks$lettersArgs<ExtArgs>
+    _count?: boolean | Letter_blocksCountOutputTypeDefaultArgs<ExtArgs>
+  }
+  export type letter_blocksIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
+  export type letter_blocksIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
+
+  export type $letter_blocksPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "letter_blocks"
+    objects: {
+      letters: Prisma.$lettersPayload<ExtArgs>[]
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      created_at: Date
+      updated_at: Date
+      name: string
+      description: string
+      id: string
+      deleted: boolean
+    }, ExtArgs["result"]["letter_blocks"]>
+    composites: {}
+  }
+
+  type letter_blocksGetPayload<S extends boolean | null | undefined | letter_blocksDefaultArgs> = $Result.GetResult<Prisma.$letter_blocksPayload, S>
+
+  type letter_blocksCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<letter_blocksFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: Letter_blocksCountAggregateInputType | true
+    }
+
+  export interface letter_blocksDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['letter_blocks'], meta: { name: 'letter_blocks' } }
+    /**
+     * Find zero or one Letter_blocks that matches the filter.
+     * @param {letter_blocksFindUniqueArgs} args - Arguments to find a Letter_blocks
+     * @example
+     * // Get one Letter_blocks
+     * const letter_blocks = await prisma.letter_blocks.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends letter_blocksFindUniqueArgs>(args: SelectSubset<T, letter_blocksFindUniqueArgs<ExtArgs>>): Prisma__letter_blocksClient<$Result.GetResult<Prisma.$letter_blocksPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one Letter_blocks that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {letter_blocksFindUniqueOrThrowArgs} args - Arguments to find a Letter_blocks
+     * @example
+     * // Get one Letter_blocks
+     * const letter_blocks = await prisma.letter_blocks.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends letter_blocksFindUniqueOrThrowArgs>(args: SelectSubset<T, letter_blocksFindUniqueOrThrowArgs<ExtArgs>>): Prisma__letter_blocksClient<$Result.GetResult<Prisma.$letter_blocksPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Letter_blocks that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_blocksFindFirstArgs} args - Arguments to find a Letter_blocks
+     * @example
+     * // Get one Letter_blocks
+     * const letter_blocks = await prisma.letter_blocks.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends letter_blocksFindFirstArgs>(args?: SelectSubset<T, letter_blocksFindFirstArgs<ExtArgs>>): Prisma__letter_blocksClient<$Result.GetResult<Prisma.$letter_blocksPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Letter_blocks that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_blocksFindFirstOrThrowArgs} args - Arguments to find a Letter_blocks
+     * @example
+     * // Get one Letter_blocks
+     * const letter_blocks = await prisma.letter_blocks.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends letter_blocksFindFirstOrThrowArgs>(args?: SelectSubset<T, letter_blocksFindFirstOrThrowArgs<ExtArgs>>): Prisma__letter_blocksClient<$Result.GetResult<Prisma.$letter_blocksPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more Letter_blocks that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_blocksFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all Letter_blocks
+     * const letter_blocks = await prisma.letter_blocks.findMany()
+     * 
+     * // Get first 10 Letter_blocks
+     * const letter_blocks = await prisma.letter_blocks.findMany({ take: 10 })
+     * 
+     * // Only select the `created_at`
+     * const letter_blocksWithCreated_atOnly = await prisma.letter_blocks.findMany({ select: { created_at: true } })
+     * 
+     */
+    findMany<T extends letter_blocksFindManyArgs>(args?: SelectSubset<T, letter_blocksFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_blocksPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a Letter_blocks.
+     * @param {letter_blocksCreateArgs} args - Arguments to create a Letter_blocks.
+     * @example
+     * // Create one Letter_blocks
+     * const Letter_blocks = await prisma.letter_blocks.create({
+     *   data: {
+     *     // ... data to create a Letter_blocks
+     *   }
+     * })
+     * 
+     */
+    create<T extends letter_blocksCreateArgs>(args: SelectSubset<T, letter_blocksCreateArgs<ExtArgs>>): Prisma__letter_blocksClient<$Result.GetResult<Prisma.$letter_blocksPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many Letter_blocks.
+     * @param {letter_blocksCreateManyArgs} args - Arguments to create many Letter_blocks.
+     * @example
+     * // Create many Letter_blocks
+     * const letter_blocks = await prisma.letter_blocks.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends letter_blocksCreateManyArgs>(args?: SelectSubset<T, letter_blocksCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many Letter_blocks and returns the data saved in the database.
+     * @param {letter_blocksCreateManyAndReturnArgs} args - Arguments to create many Letter_blocks.
+     * @example
+     * // Create many Letter_blocks
+     * const letter_blocks = await prisma.letter_blocks.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Letter_blocks and only return the `created_at`
+     * const letter_blocksWithCreated_atOnly = await prisma.letter_blocks.createManyAndReturn({
+     *   select: { created_at: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends letter_blocksCreateManyAndReturnArgs>(args?: SelectSubset<T, letter_blocksCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_blocksPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a Letter_blocks.
+     * @param {letter_blocksDeleteArgs} args - Arguments to delete one Letter_blocks.
+     * @example
+     * // Delete one Letter_blocks
+     * const Letter_blocks = await prisma.letter_blocks.delete({
+     *   where: {
+     *     // ... filter to delete one Letter_blocks
+     *   }
+     * })
+     * 
+     */
+    delete<T extends letter_blocksDeleteArgs>(args: SelectSubset<T, letter_blocksDeleteArgs<ExtArgs>>): Prisma__letter_blocksClient<$Result.GetResult<Prisma.$letter_blocksPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one Letter_blocks.
+     * @param {letter_blocksUpdateArgs} args - Arguments to update one Letter_blocks.
+     * @example
+     * // Update one Letter_blocks
+     * const letter_blocks = await prisma.letter_blocks.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends letter_blocksUpdateArgs>(args: SelectSubset<T, letter_blocksUpdateArgs<ExtArgs>>): Prisma__letter_blocksClient<$Result.GetResult<Prisma.$letter_blocksPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more Letter_blocks.
+     * @param {letter_blocksDeleteManyArgs} args - Arguments to filter Letter_blocks to delete.
+     * @example
+     * // Delete a few Letter_blocks
+     * const { count } = await prisma.letter_blocks.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends letter_blocksDeleteManyArgs>(args?: SelectSubset<T, letter_blocksDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Letter_blocks.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_blocksUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many Letter_blocks
+     * const letter_blocks = await prisma.letter_blocks.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends letter_blocksUpdateManyArgs>(args: SelectSubset<T, letter_blocksUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Letter_blocks and returns the data updated in the database.
+     * @param {letter_blocksUpdateManyAndReturnArgs} args - Arguments to update many Letter_blocks.
+     * @example
+     * // Update many Letter_blocks
+     * const letter_blocks = await prisma.letter_blocks.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Letter_blocks and only return the `created_at`
+     * const letter_blocksWithCreated_atOnly = await prisma.letter_blocks.updateManyAndReturn({
+     *   select: { created_at: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends letter_blocksUpdateManyAndReturnArgs>(args: SelectSubset<T, letter_blocksUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_blocksPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one Letter_blocks.
+     * @param {letter_blocksUpsertArgs} args - Arguments to update or create a Letter_blocks.
+     * @example
+     * // Update or create a Letter_blocks
+     * const letter_blocks = await prisma.letter_blocks.upsert({
+     *   create: {
+     *     // ... data to create a Letter_blocks
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the Letter_blocks we want to update
+     *   }
+     * })
+     */
+    upsert<T extends letter_blocksUpsertArgs>(args: SelectSubset<T, letter_blocksUpsertArgs<ExtArgs>>): Prisma__letter_blocksClient<$Result.GetResult<Prisma.$letter_blocksPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of Letter_blocks.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_blocksCountArgs} args - Arguments to filter Letter_blocks to count.
+     * @example
+     * // Count the number of Letter_blocks
+     * const count = await prisma.letter_blocks.count({
+     *   where: {
+     *     // ... the filter for the Letter_blocks we want to count
+     *   }
+     * })
+    **/
+    count<T extends letter_blocksCountArgs>(
+      args?: Subset<T, letter_blocksCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], Letter_blocksCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a Letter_blocks.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {Letter_blocksAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends Letter_blocksAggregateArgs>(args: Subset<T, Letter_blocksAggregateArgs>): Prisma.PrismaPromise<GetLetter_blocksAggregateType<T>>
+
+    /**
+     * Group by Letter_blocks.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_blocksGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends letter_blocksGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: letter_blocksGroupByArgs['orderBy'] }
+        : { orderBy?: letter_blocksGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, letter_blocksGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetLetter_blocksGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the letter_blocks model
+   */
+  readonly fields: letter_blocksFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for letter_blocks.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__letter_blocksClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    letters<T extends letter_blocks$lettersArgs<ExtArgs> = {}>(args?: Subset<T, letter_blocks$lettersArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$lettersPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the letter_blocks model
+   */
+  interface letter_blocksFieldRefs {
+    readonly created_at: FieldRef<"letter_blocks", 'DateTime'>
+    readonly updated_at: FieldRef<"letter_blocks", 'DateTime'>
+    readonly name: FieldRef<"letter_blocks", 'String'>
+    readonly description: FieldRef<"letter_blocks", 'String'>
+    readonly id: FieldRef<"letter_blocks", 'String'>
+    readonly deleted: FieldRef<"letter_blocks", 'Boolean'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * letter_blocks findUnique
+   */
+  export type letter_blocksFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_blocks
+     */
+    select?: letter_blocksSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_blocks
+     */
+    omit?: letter_blocksOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_blocksInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_blocks to fetch.
+     */
+    where: letter_blocksWhereUniqueInput
+  }
+
+  /**
+   * letter_blocks findUniqueOrThrow
+   */
+  export type letter_blocksFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_blocks
+     */
+    select?: letter_blocksSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_blocks
+     */
+    omit?: letter_blocksOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_blocksInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_blocks to fetch.
+     */
+    where: letter_blocksWhereUniqueInput
+  }
+
+  /**
+   * letter_blocks findFirst
+   */
+  export type letter_blocksFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_blocks
+     */
+    select?: letter_blocksSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_blocks
+     */
+    omit?: letter_blocksOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_blocksInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_blocks to fetch.
+     */
+    where?: letter_blocksWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_blocks to fetch.
+     */
+    orderBy?: letter_blocksOrderByWithRelationInput | letter_blocksOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for letter_blocks.
+     */
+    cursor?: letter_blocksWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_blocks from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_blocks.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of letter_blocks.
+     */
+    distinct?: Letter_blocksScalarFieldEnum | Letter_blocksScalarFieldEnum[]
+  }
+
+  /**
+   * letter_blocks findFirstOrThrow
+   */
+  export type letter_blocksFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_blocks
+     */
+    select?: letter_blocksSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_blocks
+     */
+    omit?: letter_blocksOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_blocksInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_blocks to fetch.
+     */
+    where?: letter_blocksWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_blocks to fetch.
+     */
+    orderBy?: letter_blocksOrderByWithRelationInput | letter_blocksOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for letter_blocks.
+     */
+    cursor?: letter_blocksWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_blocks from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_blocks.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of letter_blocks.
+     */
+    distinct?: Letter_blocksScalarFieldEnum | Letter_blocksScalarFieldEnum[]
+  }
+
+  /**
+   * letter_blocks findMany
+   */
+  export type letter_blocksFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_blocks
+     */
+    select?: letter_blocksSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_blocks
+     */
+    omit?: letter_blocksOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_blocksInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_blocks to fetch.
+     */
+    where?: letter_blocksWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_blocks to fetch.
+     */
+    orderBy?: letter_blocksOrderByWithRelationInput | letter_blocksOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing letter_blocks.
+     */
+    cursor?: letter_blocksWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_blocks from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_blocks.
+     */
+    skip?: number
+    distinct?: Letter_blocksScalarFieldEnum | Letter_blocksScalarFieldEnum[]
+  }
+
+  /**
+   * letter_blocks create
+   */
+  export type letter_blocksCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_blocks
+     */
+    select?: letter_blocksSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_blocks
+     */
+    omit?: letter_blocksOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_blocksInclude<ExtArgs> | null
+    /**
+     * The data needed to create a letter_blocks.
+     */
+    data?: XOR<letter_blocksCreateInput, letter_blocksUncheckedCreateInput>
+  }
+
+  /**
+   * letter_blocks createMany
+   */
+  export type letter_blocksCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many letter_blocks.
+     */
+    data: letter_blocksCreateManyInput | letter_blocksCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * letter_blocks createManyAndReturn
+   */
+  export type letter_blocksCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_blocks
+     */
+    select?: letter_blocksSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_blocks
+     */
+    omit?: letter_blocksOmit<ExtArgs> | null
+    /**
+     * The data used to create many letter_blocks.
+     */
+    data: letter_blocksCreateManyInput | letter_blocksCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * letter_blocks update
+   */
+  export type letter_blocksUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_blocks
+     */
+    select?: letter_blocksSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_blocks
+     */
+    omit?: letter_blocksOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_blocksInclude<ExtArgs> | null
+    /**
+     * The data needed to update a letter_blocks.
+     */
+    data: XOR<letter_blocksUpdateInput, letter_blocksUncheckedUpdateInput>
+    /**
+     * Choose, which letter_blocks to update.
+     */
+    where: letter_blocksWhereUniqueInput
+  }
+
+  /**
+   * letter_blocks updateMany
+   */
+  export type letter_blocksUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update letter_blocks.
+     */
+    data: XOR<letter_blocksUpdateManyMutationInput, letter_blocksUncheckedUpdateManyInput>
+    /**
+     * Filter which letter_blocks to update
+     */
+    where?: letter_blocksWhereInput
+    /**
+     * Limit how many letter_blocks to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * letter_blocks updateManyAndReturn
+   */
+  export type letter_blocksUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_blocks
+     */
+    select?: letter_blocksSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_blocks
+     */
+    omit?: letter_blocksOmit<ExtArgs> | null
+    /**
+     * The data used to update letter_blocks.
+     */
+    data: XOR<letter_blocksUpdateManyMutationInput, letter_blocksUncheckedUpdateManyInput>
+    /**
+     * Filter which letter_blocks to update
+     */
+    where?: letter_blocksWhereInput
+    /**
+     * Limit how many letter_blocks to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * letter_blocks upsert
+   */
+  export type letter_blocksUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_blocks
+     */
+    select?: letter_blocksSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_blocks
+     */
+    omit?: letter_blocksOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_blocksInclude<ExtArgs> | null
+    /**
+     * The filter to search for the letter_blocks to update in case it exists.
+     */
+    where: letter_blocksWhereUniqueInput
+    /**
+     * In case the letter_blocks found by the `where` argument doesn't exist, create a new letter_blocks with this data.
+     */
+    create: XOR<letter_blocksCreateInput, letter_blocksUncheckedCreateInput>
+    /**
+     * In case the letter_blocks was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<letter_blocksUpdateInput, letter_blocksUncheckedUpdateInput>
+  }
+
+  /**
+   * letter_blocks delete
+   */
+  export type letter_blocksDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_blocks
+     */
+    select?: letter_blocksSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_blocks
+     */
+    omit?: letter_blocksOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_blocksInclude<ExtArgs> | null
+    /**
+     * Filter which letter_blocks to delete.
+     */
+    where: letter_blocksWhereUniqueInput
+  }
+
+  /**
+   * letter_blocks deleteMany
+   */
+  export type letter_blocksDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which letter_blocks to delete
+     */
+    where?: letter_blocksWhereInput
+    /**
+     * Limit how many letter_blocks to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * letter_blocks.letters
+   */
+  export type letter_blocks$lettersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters
+     */
+    select?: lettersSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters
+     */
+    omit?: lettersOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: lettersInclude<ExtArgs> | null
+    where?: lettersWhereInput
+    orderBy?: lettersOrderByWithRelationInput | lettersOrderByWithRelationInput[]
+    cursor?: lettersWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: LettersScalarFieldEnum | LettersScalarFieldEnum[]
+  }
+
+  /**
+   * letter_blocks without action
+   */
+  export type letter_blocksDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_blocks
+     */
+    select?: letter_blocksSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_blocks
+     */
+    omit?: letter_blocksOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_blocksInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Model letter_levels
+   */
+
+  export type AggregateLetter_levels = {
+    _count: Letter_levelsCountAggregateOutputType | null
+    _avg: Letter_levelsAvgAggregateOutputType | null
+    _sum: Letter_levelsSumAggregateOutputType | null
+    _min: Letter_levelsMinAggregateOutputType | null
+    _max: Letter_levelsMaxAggregateOutputType | null
+  }
+
+  export type Letter_levelsAvgAggregateOutputType = {
+    number: number | null
+  }
+
+  export type Letter_levelsSumAggregateOutputType = {
+    number: number | null
+  }
+
+  export type Letter_levelsMinAggregateOutputType = {
+    created_at: Date | null
+    updated_at: Date | null
+    number: number | null
+    letter_type_id: string | null
+    deleted: boolean | null
+    id: string | null
+  }
+
+  export type Letter_levelsMaxAggregateOutputType = {
+    created_at: Date | null
+    updated_at: Date | null
+    number: number | null
+    letter_type_id: string | null
+    deleted: boolean | null
+    id: string | null
+  }
+
+  export type Letter_levelsCountAggregateOutputType = {
+    created_at: number
+    updated_at: number
+    number: number
+    letter_type_id: number
+    deleted: number
+    id: number
+    _all: number
+  }
+
+
+  export type Letter_levelsAvgAggregateInputType = {
+    number?: true
+  }
+
+  export type Letter_levelsSumAggregateInputType = {
+    number?: true
+  }
+
+  export type Letter_levelsMinAggregateInputType = {
+    created_at?: true
+    updated_at?: true
+    number?: true
+    letter_type_id?: true
+    deleted?: true
+    id?: true
+  }
+
+  export type Letter_levelsMaxAggregateInputType = {
+    created_at?: true
+    updated_at?: true
+    number?: true
+    letter_type_id?: true
+    deleted?: true
+    id?: true
+  }
+
+  export type Letter_levelsCountAggregateInputType = {
+    created_at?: true
+    updated_at?: true
+    number?: true
+    letter_type_id?: true
+    deleted?: true
+    id?: true
+    _all?: true
+  }
+
+  export type Letter_levelsAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which letter_levels to aggregate.
+     */
+    where?: letter_levelsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_levels to fetch.
+     */
+    orderBy?: letter_levelsOrderByWithRelationInput | letter_levelsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: letter_levelsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_levels from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_levels.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned letter_levels
+    **/
+    _count?: true | Letter_levelsCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: Letter_levelsAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: Letter_levelsSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: Letter_levelsMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: Letter_levelsMaxAggregateInputType
+  }
+
+  export type GetLetter_levelsAggregateType<T extends Letter_levelsAggregateArgs> = {
+        [P in keyof T & keyof AggregateLetter_levels]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateLetter_levels[P]>
+      : GetScalarType<T[P], AggregateLetter_levels[P]>
+  }
+
+
+
+
+  export type letter_levelsGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: letter_levelsWhereInput
+    orderBy?: letter_levelsOrderByWithAggregationInput | letter_levelsOrderByWithAggregationInput[]
+    by: Letter_levelsScalarFieldEnum[] | Letter_levelsScalarFieldEnum
+    having?: letter_levelsScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: Letter_levelsCountAggregateInputType | true
+    _avg?: Letter_levelsAvgAggregateInputType
+    _sum?: Letter_levelsSumAggregateInputType
+    _min?: Letter_levelsMinAggregateInputType
+    _max?: Letter_levelsMaxAggregateInputType
+  }
+
+  export type Letter_levelsGroupByOutputType = {
+    created_at: Date
+    updated_at: Date
+    number: number
+    letter_type_id: string
+    deleted: boolean
+    id: string
+    _count: Letter_levelsCountAggregateOutputType | null
+    _avg: Letter_levelsAvgAggregateOutputType | null
+    _sum: Letter_levelsSumAggregateOutputType | null
+    _min: Letter_levelsMinAggregateOutputType | null
+    _max: Letter_levelsMaxAggregateOutputType | null
+  }
+
+  type GetLetter_levelsGroupByPayload<T extends letter_levelsGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<Letter_levelsGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof Letter_levelsGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], Letter_levelsGroupByOutputType[P]>
+            : GetScalarType<T[P], Letter_levelsGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type letter_levelsSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    created_at?: boolean
+    updated_at?: boolean
+    number?: boolean
+    letter_type_id?: boolean
+    deleted?: boolean
+    id?: boolean
+    letter_types?: boolean | letter_typesDefaultArgs<ExtArgs>
+    letter_progress?: boolean | letter_levels$letter_progressArgs<ExtArgs>
+    letter_questions_to_letter_levels?: boolean | letter_levels$letter_questions_to_letter_levelsArgs<ExtArgs>
+    letters_to_letter_levels?: boolean | letter_levels$letters_to_letter_levelsArgs<ExtArgs>
+    _count?: boolean | Letter_levelsCountOutputTypeDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["letter_levels"]>
+
+  export type letter_levelsSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    created_at?: boolean
+    updated_at?: boolean
+    number?: boolean
+    letter_type_id?: boolean
+    deleted?: boolean
+    id?: boolean
+    letter_types?: boolean | letter_typesDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["letter_levels"]>
+
+  export type letter_levelsSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    created_at?: boolean
+    updated_at?: boolean
+    number?: boolean
+    letter_type_id?: boolean
+    deleted?: boolean
+    id?: boolean
+    letter_types?: boolean | letter_typesDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["letter_levels"]>
+
+  export type letter_levelsSelectScalar = {
+    created_at?: boolean
+    updated_at?: boolean
+    number?: boolean
+    letter_type_id?: boolean
+    deleted?: boolean
+    id?: boolean
+  }
+
+  export type letter_levelsOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"created_at" | "updated_at" | "number" | "letter_type_id" | "deleted" | "id", ExtArgs["result"]["letter_levels"]>
+  export type letter_levelsInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letter_types?: boolean | letter_typesDefaultArgs<ExtArgs>
+    letter_progress?: boolean | letter_levels$letter_progressArgs<ExtArgs>
+    letter_questions_to_letter_levels?: boolean | letter_levels$letter_questions_to_letter_levelsArgs<ExtArgs>
+    letters_to_letter_levels?: boolean | letter_levels$letters_to_letter_levelsArgs<ExtArgs>
+    _count?: boolean | Letter_levelsCountOutputTypeDefaultArgs<ExtArgs>
+  }
+  export type letter_levelsIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letter_types?: boolean | letter_typesDefaultArgs<ExtArgs>
+  }
+  export type letter_levelsIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letter_types?: boolean | letter_typesDefaultArgs<ExtArgs>
+  }
+
+  export type $letter_levelsPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "letter_levels"
+    objects: {
+      letter_types: Prisma.$letter_typesPayload<ExtArgs>
+      letter_progress: Prisma.$letter_progressPayload<ExtArgs>[]
+      letter_questions_to_letter_levels: Prisma.$letter_questions_to_letter_levelsPayload<ExtArgs>[]
+      letters_to_letter_levels: Prisma.$letters_to_letter_levelsPayload<ExtArgs>[]
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      created_at: Date
+      updated_at: Date
+      number: number
+      letter_type_id: string
+      deleted: boolean
+      id: string
+    }, ExtArgs["result"]["letter_levels"]>
+    composites: {}
+  }
+
+  type letter_levelsGetPayload<S extends boolean | null | undefined | letter_levelsDefaultArgs> = $Result.GetResult<Prisma.$letter_levelsPayload, S>
+
+  type letter_levelsCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<letter_levelsFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: Letter_levelsCountAggregateInputType | true
+    }
+
+  export interface letter_levelsDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['letter_levels'], meta: { name: 'letter_levels' } }
+    /**
+     * Find zero or one Letter_levels that matches the filter.
+     * @param {letter_levelsFindUniqueArgs} args - Arguments to find a Letter_levels
+     * @example
+     * // Get one Letter_levels
+     * const letter_levels = await prisma.letter_levels.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends letter_levelsFindUniqueArgs>(args: SelectSubset<T, letter_levelsFindUniqueArgs<ExtArgs>>): Prisma__letter_levelsClient<$Result.GetResult<Prisma.$letter_levelsPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one Letter_levels that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {letter_levelsFindUniqueOrThrowArgs} args - Arguments to find a Letter_levels
+     * @example
+     * // Get one Letter_levels
+     * const letter_levels = await prisma.letter_levels.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends letter_levelsFindUniqueOrThrowArgs>(args: SelectSubset<T, letter_levelsFindUniqueOrThrowArgs<ExtArgs>>): Prisma__letter_levelsClient<$Result.GetResult<Prisma.$letter_levelsPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Letter_levels that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_levelsFindFirstArgs} args - Arguments to find a Letter_levels
+     * @example
+     * // Get one Letter_levels
+     * const letter_levels = await prisma.letter_levels.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends letter_levelsFindFirstArgs>(args?: SelectSubset<T, letter_levelsFindFirstArgs<ExtArgs>>): Prisma__letter_levelsClient<$Result.GetResult<Prisma.$letter_levelsPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Letter_levels that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_levelsFindFirstOrThrowArgs} args - Arguments to find a Letter_levels
+     * @example
+     * // Get one Letter_levels
+     * const letter_levels = await prisma.letter_levels.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends letter_levelsFindFirstOrThrowArgs>(args?: SelectSubset<T, letter_levelsFindFirstOrThrowArgs<ExtArgs>>): Prisma__letter_levelsClient<$Result.GetResult<Prisma.$letter_levelsPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more Letter_levels that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_levelsFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all Letter_levels
+     * const letter_levels = await prisma.letter_levels.findMany()
+     * 
+     * // Get first 10 Letter_levels
+     * const letter_levels = await prisma.letter_levels.findMany({ take: 10 })
+     * 
+     * // Only select the `created_at`
+     * const letter_levelsWithCreated_atOnly = await prisma.letter_levels.findMany({ select: { created_at: true } })
+     * 
+     */
+    findMany<T extends letter_levelsFindManyArgs>(args?: SelectSubset<T, letter_levelsFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_levelsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a Letter_levels.
+     * @param {letter_levelsCreateArgs} args - Arguments to create a Letter_levels.
+     * @example
+     * // Create one Letter_levels
+     * const Letter_levels = await prisma.letter_levels.create({
+     *   data: {
+     *     // ... data to create a Letter_levels
+     *   }
+     * })
+     * 
+     */
+    create<T extends letter_levelsCreateArgs>(args: SelectSubset<T, letter_levelsCreateArgs<ExtArgs>>): Prisma__letter_levelsClient<$Result.GetResult<Prisma.$letter_levelsPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many Letter_levels.
+     * @param {letter_levelsCreateManyArgs} args - Arguments to create many Letter_levels.
+     * @example
+     * // Create many Letter_levels
+     * const letter_levels = await prisma.letter_levels.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends letter_levelsCreateManyArgs>(args?: SelectSubset<T, letter_levelsCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many Letter_levels and returns the data saved in the database.
+     * @param {letter_levelsCreateManyAndReturnArgs} args - Arguments to create many Letter_levels.
+     * @example
+     * // Create many Letter_levels
+     * const letter_levels = await prisma.letter_levels.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Letter_levels and only return the `created_at`
+     * const letter_levelsWithCreated_atOnly = await prisma.letter_levels.createManyAndReturn({
+     *   select: { created_at: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends letter_levelsCreateManyAndReturnArgs>(args?: SelectSubset<T, letter_levelsCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_levelsPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a Letter_levels.
+     * @param {letter_levelsDeleteArgs} args - Arguments to delete one Letter_levels.
+     * @example
+     * // Delete one Letter_levels
+     * const Letter_levels = await prisma.letter_levels.delete({
+     *   where: {
+     *     // ... filter to delete one Letter_levels
+     *   }
+     * })
+     * 
+     */
+    delete<T extends letter_levelsDeleteArgs>(args: SelectSubset<T, letter_levelsDeleteArgs<ExtArgs>>): Prisma__letter_levelsClient<$Result.GetResult<Prisma.$letter_levelsPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one Letter_levels.
+     * @param {letter_levelsUpdateArgs} args - Arguments to update one Letter_levels.
+     * @example
+     * // Update one Letter_levels
+     * const letter_levels = await prisma.letter_levels.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends letter_levelsUpdateArgs>(args: SelectSubset<T, letter_levelsUpdateArgs<ExtArgs>>): Prisma__letter_levelsClient<$Result.GetResult<Prisma.$letter_levelsPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more Letter_levels.
+     * @param {letter_levelsDeleteManyArgs} args - Arguments to filter Letter_levels to delete.
+     * @example
+     * // Delete a few Letter_levels
+     * const { count } = await prisma.letter_levels.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends letter_levelsDeleteManyArgs>(args?: SelectSubset<T, letter_levelsDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Letter_levels.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_levelsUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many Letter_levels
+     * const letter_levels = await prisma.letter_levels.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends letter_levelsUpdateManyArgs>(args: SelectSubset<T, letter_levelsUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Letter_levels and returns the data updated in the database.
+     * @param {letter_levelsUpdateManyAndReturnArgs} args - Arguments to update many Letter_levels.
+     * @example
+     * // Update many Letter_levels
+     * const letter_levels = await prisma.letter_levels.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Letter_levels and only return the `created_at`
+     * const letter_levelsWithCreated_atOnly = await prisma.letter_levels.updateManyAndReturn({
+     *   select: { created_at: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends letter_levelsUpdateManyAndReturnArgs>(args: SelectSubset<T, letter_levelsUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_levelsPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one Letter_levels.
+     * @param {letter_levelsUpsertArgs} args - Arguments to update or create a Letter_levels.
+     * @example
+     * // Update or create a Letter_levels
+     * const letter_levels = await prisma.letter_levels.upsert({
+     *   create: {
+     *     // ... data to create a Letter_levels
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the Letter_levels we want to update
+     *   }
+     * })
+     */
+    upsert<T extends letter_levelsUpsertArgs>(args: SelectSubset<T, letter_levelsUpsertArgs<ExtArgs>>): Prisma__letter_levelsClient<$Result.GetResult<Prisma.$letter_levelsPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of Letter_levels.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_levelsCountArgs} args - Arguments to filter Letter_levels to count.
+     * @example
+     * // Count the number of Letter_levels
+     * const count = await prisma.letter_levels.count({
+     *   where: {
+     *     // ... the filter for the Letter_levels we want to count
+     *   }
+     * })
+    **/
+    count<T extends letter_levelsCountArgs>(
+      args?: Subset<T, letter_levelsCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], Letter_levelsCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a Letter_levels.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {Letter_levelsAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends Letter_levelsAggregateArgs>(args: Subset<T, Letter_levelsAggregateArgs>): Prisma.PrismaPromise<GetLetter_levelsAggregateType<T>>
+
+    /**
+     * Group by Letter_levels.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_levelsGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends letter_levelsGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: letter_levelsGroupByArgs['orderBy'] }
+        : { orderBy?: letter_levelsGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, letter_levelsGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetLetter_levelsGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the letter_levels model
+   */
+  readonly fields: letter_levelsFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for letter_levels.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__letter_levelsClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    letter_types<T extends letter_typesDefaultArgs<ExtArgs> = {}>(args?: Subset<T, letter_typesDefaultArgs<ExtArgs>>): Prisma__letter_typesClient<$Result.GetResult<Prisma.$letter_typesPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    letter_progress<T extends letter_levels$letter_progressArgs<ExtArgs> = {}>(args?: Subset<T, letter_levels$letter_progressArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_progressPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    letter_questions_to_letter_levels<T extends letter_levels$letter_questions_to_letter_levelsArgs<ExtArgs> = {}>(args?: Subset<T, letter_levels$letter_questions_to_letter_levelsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_questions_to_letter_levelsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    letters_to_letter_levels<T extends letter_levels$letters_to_letter_levelsArgs<ExtArgs> = {}>(args?: Subset<T, letter_levels$letters_to_letter_levelsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letters_to_letter_levelsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the letter_levels model
+   */
+  interface letter_levelsFieldRefs {
+    readonly created_at: FieldRef<"letter_levels", 'DateTime'>
+    readonly updated_at: FieldRef<"letter_levels", 'DateTime'>
+    readonly number: FieldRef<"letter_levels", 'Int'>
+    readonly letter_type_id: FieldRef<"letter_levels", 'String'>
+    readonly deleted: FieldRef<"letter_levels", 'Boolean'>
+    readonly id: FieldRef<"letter_levels", 'String'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * letter_levels findUnique
+   */
+  export type letter_levelsFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_levels
+     */
+    select?: letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_levels
+     */
+    omit?: letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_levelsInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_levels to fetch.
+     */
+    where: letter_levelsWhereUniqueInput
+  }
+
+  /**
+   * letter_levels findUniqueOrThrow
+   */
+  export type letter_levelsFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_levels
+     */
+    select?: letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_levels
+     */
+    omit?: letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_levelsInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_levels to fetch.
+     */
+    where: letter_levelsWhereUniqueInput
+  }
+
+  /**
+   * letter_levels findFirst
+   */
+  export type letter_levelsFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_levels
+     */
+    select?: letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_levels
+     */
+    omit?: letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_levelsInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_levels to fetch.
+     */
+    where?: letter_levelsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_levels to fetch.
+     */
+    orderBy?: letter_levelsOrderByWithRelationInput | letter_levelsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for letter_levels.
+     */
+    cursor?: letter_levelsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_levels from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_levels.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of letter_levels.
+     */
+    distinct?: Letter_levelsScalarFieldEnum | Letter_levelsScalarFieldEnum[]
+  }
+
+  /**
+   * letter_levels findFirstOrThrow
+   */
+  export type letter_levelsFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_levels
+     */
+    select?: letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_levels
+     */
+    omit?: letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_levelsInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_levels to fetch.
+     */
+    where?: letter_levelsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_levels to fetch.
+     */
+    orderBy?: letter_levelsOrderByWithRelationInput | letter_levelsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for letter_levels.
+     */
+    cursor?: letter_levelsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_levels from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_levels.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of letter_levels.
+     */
+    distinct?: Letter_levelsScalarFieldEnum | Letter_levelsScalarFieldEnum[]
+  }
+
+  /**
+   * letter_levels findMany
+   */
+  export type letter_levelsFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_levels
+     */
+    select?: letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_levels
+     */
+    omit?: letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_levelsInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_levels to fetch.
+     */
+    where?: letter_levelsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_levels to fetch.
+     */
+    orderBy?: letter_levelsOrderByWithRelationInput | letter_levelsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing letter_levels.
+     */
+    cursor?: letter_levelsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_levels from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_levels.
+     */
+    skip?: number
+    distinct?: Letter_levelsScalarFieldEnum | Letter_levelsScalarFieldEnum[]
+  }
+
+  /**
+   * letter_levels create
+   */
+  export type letter_levelsCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_levels
+     */
+    select?: letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_levels
+     */
+    omit?: letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_levelsInclude<ExtArgs> | null
+    /**
+     * The data needed to create a letter_levels.
+     */
+    data: XOR<letter_levelsCreateInput, letter_levelsUncheckedCreateInput>
+  }
+
+  /**
+   * letter_levels createMany
+   */
+  export type letter_levelsCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many letter_levels.
+     */
+    data: letter_levelsCreateManyInput | letter_levelsCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * letter_levels createManyAndReturn
+   */
+  export type letter_levelsCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_levels
+     */
+    select?: letter_levelsSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_levels
+     */
+    omit?: letter_levelsOmit<ExtArgs> | null
+    /**
+     * The data used to create many letter_levels.
+     */
+    data: letter_levelsCreateManyInput | letter_levelsCreateManyInput[]
+    skipDuplicates?: boolean
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_levelsIncludeCreateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * letter_levels update
+   */
+  export type letter_levelsUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_levels
+     */
+    select?: letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_levels
+     */
+    omit?: letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_levelsInclude<ExtArgs> | null
+    /**
+     * The data needed to update a letter_levels.
+     */
+    data: XOR<letter_levelsUpdateInput, letter_levelsUncheckedUpdateInput>
+    /**
+     * Choose, which letter_levels to update.
+     */
+    where: letter_levelsWhereUniqueInput
+  }
+
+  /**
+   * letter_levels updateMany
+   */
+  export type letter_levelsUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update letter_levels.
+     */
+    data: XOR<letter_levelsUpdateManyMutationInput, letter_levelsUncheckedUpdateManyInput>
+    /**
+     * Filter which letter_levels to update
+     */
+    where?: letter_levelsWhereInput
+    /**
+     * Limit how many letter_levels to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * letter_levels updateManyAndReturn
+   */
+  export type letter_levelsUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_levels
+     */
+    select?: letter_levelsSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_levels
+     */
+    omit?: letter_levelsOmit<ExtArgs> | null
+    /**
+     * The data used to update letter_levels.
+     */
+    data: XOR<letter_levelsUpdateManyMutationInput, letter_levelsUncheckedUpdateManyInput>
+    /**
+     * Filter which letter_levels to update
+     */
+    where?: letter_levelsWhereInput
+    /**
+     * Limit how many letter_levels to update.
+     */
+    limit?: number
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_levelsIncludeUpdateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * letter_levels upsert
+   */
+  export type letter_levelsUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_levels
+     */
+    select?: letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_levels
+     */
+    omit?: letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_levelsInclude<ExtArgs> | null
+    /**
+     * The filter to search for the letter_levels to update in case it exists.
+     */
+    where: letter_levelsWhereUniqueInput
+    /**
+     * In case the letter_levels found by the `where` argument doesn't exist, create a new letter_levels with this data.
+     */
+    create: XOR<letter_levelsCreateInput, letter_levelsUncheckedCreateInput>
+    /**
+     * In case the letter_levels was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<letter_levelsUpdateInput, letter_levelsUncheckedUpdateInput>
+  }
+
+  /**
+   * letter_levels delete
+   */
+  export type letter_levelsDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_levels
+     */
+    select?: letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_levels
+     */
+    omit?: letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_levelsInclude<ExtArgs> | null
+    /**
+     * Filter which letter_levels to delete.
+     */
+    where: letter_levelsWhereUniqueInput
+  }
+
+  /**
+   * letter_levels deleteMany
+   */
+  export type letter_levelsDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which letter_levels to delete
+     */
+    where?: letter_levelsWhereInput
+    /**
+     * Limit how many letter_levels to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * letter_levels.letter_progress
+   */
+  export type letter_levels$letter_progressArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_progress
+     */
+    select?: letter_progressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_progress
+     */
+    omit?: letter_progressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_progressInclude<ExtArgs> | null
+    where?: letter_progressWhereInput
+    orderBy?: letter_progressOrderByWithRelationInput | letter_progressOrderByWithRelationInput[]
+    cursor?: letter_progressWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: Letter_progressScalarFieldEnum | Letter_progressScalarFieldEnum[]
+  }
+
+  /**
+   * letter_levels.letter_questions_to_letter_levels
+   */
+  export type letter_levels$letter_questions_to_letter_levelsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions_to_letter_levels
+     */
+    select?: letter_questions_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions_to_letter_levels
+     */
+    omit?: letter_questions_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questions_to_letter_levelsInclude<ExtArgs> | null
+    where?: letter_questions_to_letter_levelsWhereInput
+    orderBy?: letter_questions_to_letter_levelsOrderByWithRelationInput | letter_questions_to_letter_levelsOrderByWithRelationInput[]
+    cursor?: letter_questions_to_letter_levelsWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: Letter_questions_to_letter_levelsScalarFieldEnum | Letter_questions_to_letter_levelsScalarFieldEnum[]
+  }
+
+  /**
+   * letter_levels.letters_to_letter_levels
+   */
+  export type letter_levels$letters_to_letter_levelsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters_to_letter_levels
+     */
+    select?: letters_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters_to_letter_levels
+     */
+    omit?: letters_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letters_to_letter_levelsInclude<ExtArgs> | null
+    where?: letters_to_letter_levelsWhereInput
+    orderBy?: letters_to_letter_levelsOrderByWithRelationInput | letters_to_letter_levelsOrderByWithRelationInput[]
+    cursor?: letters_to_letter_levelsWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: Letters_to_letter_levelsScalarFieldEnum | Letters_to_letter_levelsScalarFieldEnum[]
+  }
+
+  /**
+   * letter_levels without action
+   */
+  export type letter_levelsDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_levels
+     */
+    select?: letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_levels
+     */
+    omit?: letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_levelsInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Model letter_positions
+   */
+
+  export type AggregateLetter_positions = {
+    _count: Letter_positionsCountAggregateOutputType | null
+    _avg: Letter_positionsAvgAggregateOutputType | null
+    _sum: Letter_positionsSumAggregateOutputType | null
+    _min: Letter_positionsMinAggregateOutputType | null
+    _max: Letter_positionsMaxAggregateOutputType | null
+  }
+
+  export type Letter_positionsAvgAggregateOutputType = {
+    row: number | null
+    column: number | null
+  }
+
+  export type Letter_positionsSumAggregateOutputType = {
+    row: number | null
+    column: number | null
+  }
+
+  export type Letter_positionsMinAggregateOutputType = {
+    id: string | null
+    created_at: Date | null
+    updated_at: Date | null
+    row: number | null
+    column: number | null
+    deleted: boolean | null
+  }
+
+  export type Letter_positionsMaxAggregateOutputType = {
+    id: string | null
+    created_at: Date | null
+    updated_at: Date | null
+    row: number | null
+    column: number | null
+    deleted: boolean | null
+  }
+
+  export type Letter_positionsCountAggregateOutputType = {
+    id: number
+    created_at: number
+    updated_at: number
+    row: number
+    column: number
+    deleted: number
+    _all: number
+  }
+
+
+  export type Letter_positionsAvgAggregateInputType = {
+    row?: true
+    column?: true
+  }
+
+  export type Letter_positionsSumAggregateInputType = {
+    row?: true
+    column?: true
+  }
+
+  export type Letter_positionsMinAggregateInputType = {
+    id?: true
+    created_at?: true
+    updated_at?: true
+    row?: true
+    column?: true
+    deleted?: true
+  }
+
+  export type Letter_positionsMaxAggregateInputType = {
+    id?: true
+    created_at?: true
+    updated_at?: true
+    row?: true
+    column?: true
+    deleted?: true
+  }
+
+  export type Letter_positionsCountAggregateInputType = {
+    id?: true
+    created_at?: true
+    updated_at?: true
+    row?: true
+    column?: true
+    deleted?: true
+    _all?: true
+  }
+
+  export type Letter_positionsAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which letter_positions to aggregate.
+     */
+    where?: letter_positionsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_positions to fetch.
+     */
+    orderBy?: letter_positionsOrderByWithRelationInput | letter_positionsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: letter_positionsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_positions from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_positions.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned letter_positions
+    **/
+    _count?: true | Letter_positionsCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: Letter_positionsAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: Letter_positionsSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: Letter_positionsMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: Letter_positionsMaxAggregateInputType
+  }
+
+  export type GetLetter_positionsAggregateType<T extends Letter_positionsAggregateArgs> = {
+        [P in keyof T & keyof AggregateLetter_positions]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateLetter_positions[P]>
+      : GetScalarType<T[P], AggregateLetter_positions[P]>
+  }
+
+
+
+
+  export type letter_positionsGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: letter_positionsWhereInput
+    orderBy?: letter_positionsOrderByWithAggregationInput | letter_positionsOrderByWithAggregationInput[]
+    by: Letter_positionsScalarFieldEnum[] | Letter_positionsScalarFieldEnum
+    having?: letter_positionsScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: Letter_positionsCountAggregateInputType | true
+    _avg?: Letter_positionsAvgAggregateInputType
+    _sum?: Letter_positionsSumAggregateInputType
+    _min?: Letter_positionsMinAggregateInputType
+    _max?: Letter_positionsMaxAggregateInputType
+  }
+
+  export type Letter_positionsGroupByOutputType = {
+    id: string
+    created_at: Date
+    updated_at: Date
+    row: number
+    column: number
+    deleted: boolean
+    _count: Letter_positionsCountAggregateOutputType | null
+    _avg: Letter_positionsAvgAggregateOutputType | null
+    _sum: Letter_positionsSumAggregateOutputType | null
+    _min: Letter_positionsMinAggregateOutputType | null
+    _max: Letter_positionsMaxAggregateOutputType | null
+  }
+
+  type GetLetter_positionsGroupByPayload<T extends letter_positionsGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<Letter_positionsGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof Letter_positionsGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], Letter_positionsGroupByOutputType[P]>
+            : GetScalarType<T[P], Letter_positionsGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type letter_positionsSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    created_at?: boolean
+    updated_at?: boolean
+    row?: boolean
+    column?: boolean
+    deleted?: boolean
+    letters?: boolean | letter_positions$lettersArgs<ExtArgs>
+    _count?: boolean | Letter_positionsCountOutputTypeDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["letter_positions"]>
+
+  export type letter_positionsSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    created_at?: boolean
+    updated_at?: boolean
+    row?: boolean
+    column?: boolean
+    deleted?: boolean
+  }, ExtArgs["result"]["letter_positions"]>
+
+  export type letter_positionsSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    created_at?: boolean
+    updated_at?: boolean
+    row?: boolean
+    column?: boolean
+    deleted?: boolean
+  }, ExtArgs["result"]["letter_positions"]>
+
+  export type letter_positionsSelectScalar = {
+    id?: boolean
+    created_at?: boolean
+    updated_at?: boolean
+    row?: boolean
+    column?: boolean
+    deleted?: boolean
+  }
+
+  export type letter_positionsOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "created_at" | "updated_at" | "row" | "column" | "deleted", ExtArgs["result"]["letter_positions"]>
+  export type letter_positionsInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letters?: boolean | letter_positions$lettersArgs<ExtArgs>
+    _count?: boolean | Letter_positionsCountOutputTypeDefaultArgs<ExtArgs>
+  }
+  export type letter_positionsIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
+  export type letter_positionsIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
+
+  export type $letter_positionsPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "letter_positions"
+    objects: {
+      letters: Prisma.$lettersPayload<ExtArgs>[]
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      id: string
+      created_at: Date
+      updated_at: Date
+      row: number
+      column: number
+      deleted: boolean
+    }, ExtArgs["result"]["letter_positions"]>
+    composites: {}
+  }
+
+  type letter_positionsGetPayload<S extends boolean | null | undefined | letter_positionsDefaultArgs> = $Result.GetResult<Prisma.$letter_positionsPayload, S>
+
+  type letter_positionsCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<letter_positionsFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: Letter_positionsCountAggregateInputType | true
+    }
+
+  export interface letter_positionsDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['letter_positions'], meta: { name: 'letter_positions' } }
+    /**
+     * Find zero or one Letter_positions that matches the filter.
+     * @param {letter_positionsFindUniqueArgs} args - Arguments to find a Letter_positions
+     * @example
+     * // Get one Letter_positions
+     * const letter_positions = await prisma.letter_positions.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends letter_positionsFindUniqueArgs>(args: SelectSubset<T, letter_positionsFindUniqueArgs<ExtArgs>>): Prisma__letter_positionsClient<$Result.GetResult<Prisma.$letter_positionsPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one Letter_positions that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {letter_positionsFindUniqueOrThrowArgs} args - Arguments to find a Letter_positions
+     * @example
+     * // Get one Letter_positions
+     * const letter_positions = await prisma.letter_positions.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends letter_positionsFindUniqueOrThrowArgs>(args: SelectSubset<T, letter_positionsFindUniqueOrThrowArgs<ExtArgs>>): Prisma__letter_positionsClient<$Result.GetResult<Prisma.$letter_positionsPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Letter_positions that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_positionsFindFirstArgs} args - Arguments to find a Letter_positions
+     * @example
+     * // Get one Letter_positions
+     * const letter_positions = await prisma.letter_positions.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends letter_positionsFindFirstArgs>(args?: SelectSubset<T, letter_positionsFindFirstArgs<ExtArgs>>): Prisma__letter_positionsClient<$Result.GetResult<Prisma.$letter_positionsPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Letter_positions that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_positionsFindFirstOrThrowArgs} args - Arguments to find a Letter_positions
+     * @example
+     * // Get one Letter_positions
+     * const letter_positions = await prisma.letter_positions.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends letter_positionsFindFirstOrThrowArgs>(args?: SelectSubset<T, letter_positionsFindFirstOrThrowArgs<ExtArgs>>): Prisma__letter_positionsClient<$Result.GetResult<Prisma.$letter_positionsPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more Letter_positions that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_positionsFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all Letter_positions
+     * const letter_positions = await prisma.letter_positions.findMany()
+     * 
+     * // Get first 10 Letter_positions
+     * const letter_positions = await prisma.letter_positions.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const letter_positionsWithIdOnly = await prisma.letter_positions.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends letter_positionsFindManyArgs>(args?: SelectSubset<T, letter_positionsFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_positionsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a Letter_positions.
+     * @param {letter_positionsCreateArgs} args - Arguments to create a Letter_positions.
+     * @example
+     * // Create one Letter_positions
+     * const Letter_positions = await prisma.letter_positions.create({
+     *   data: {
+     *     // ... data to create a Letter_positions
+     *   }
+     * })
+     * 
+     */
+    create<T extends letter_positionsCreateArgs>(args: SelectSubset<T, letter_positionsCreateArgs<ExtArgs>>): Prisma__letter_positionsClient<$Result.GetResult<Prisma.$letter_positionsPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many Letter_positions.
+     * @param {letter_positionsCreateManyArgs} args - Arguments to create many Letter_positions.
+     * @example
+     * // Create many Letter_positions
+     * const letter_positions = await prisma.letter_positions.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends letter_positionsCreateManyArgs>(args?: SelectSubset<T, letter_positionsCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many Letter_positions and returns the data saved in the database.
+     * @param {letter_positionsCreateManyAndReturnArgs} args - Arguments to create many Letter_positions.
+     * @example
+     * // Create many Letter_positions
+     * const letter_positions = await prisma.letter_positions.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Letter_positions and only return the `id`
+     * const letter_positionsWithIdOnly = await prisma.letter_positions.createManyAndReturn({
+     *   select: { id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends letter_positionsCreateManyAndReturnArgs>(args?: SelectSubset<T, letter_positionsCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_positionsPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a Letter_positions.
+     * @param {letter_positionsDeleteArgs} args - Arguments to delete one Letter_positions.
+     * @example
+     * // Delete one Letter_positions
+     * const Letter_positions = await prisma.letter_positions.delete({
+     *   where: {
+     *     // ... filter to delete one Letter_positions
+     *   }
+     * })
+     * 
+     */
+    delete<T extends letter_positionsDeleteArgs>(args: SelectSubset<T, letter_positionsDeleteArgs<ExtArgs>>): Prisma__letter_positionsClient<$Result.GetResult<Prisma.$letter_positionsPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one Letter_positions.
+     * @param {letter_positionsUpdateArgs} args - Arguments to update one Letter_positions.
+     * @example
+     * // Update one Letter_positions
+     * const letter_positions = await prisma.letter_positions.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends letter_positionsUpdateArgs>(args: SelectSubset<T, letter_positionsUpdateArgs<ExtArgs>>): Prisma__letter_positionsClient<$Result.GetResult<Prisma.$letter_positionsPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more Letter_positions.
+     * @param {letter_positionsDeleteManyArgs} args - Arguments to filter Letter_positions to delete.
+     * @example
+     * // Delete a few Letter_positions
+     * const { count } = await prisma.letter_positions.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends letter_positionsDeleteManyArgs>(args?: SelectSubset<T, letter_positionsDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Letter_positions.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_positionsUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many Letter_positions
+     * const letter_positions = await prisma.letter_positions.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends letter_positionsUpdateManyArgs>(args: SelectSubset<T, letter_positionsUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Letter_positions and returns the data updated in the database.
+     * @param {letter_positionsUpdateManyAndReturnArgs} args - Arguments to update many Letter_positions.
+     * @example
+     * // Update many Letter_positions
+     * const letter_positions = await prisma.letter_positions.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Letter_positions and only return the `id`
+     * const letter_positionsWithIdOnly = await prisma.letter_positions.updateManyAndReturn({
+     *   select: { id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends letter_positionsUpdateManyAndReturnArgs>(args: SelectSubset<T, letter_positionsUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_positionsPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one Letter_positions.
+     * @param {letter_positionsUpsertArgs} args - Arguments to update or create a Letter_positions.
+     * @example
+     * // Update or create a Letter_positions
+     * const letter_positions = await prisma.letter_positions.upsert({
+     *   create: {
+     *     // ... data to create a Letter_positions
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the Letter_positions we want to update
+     *   }
+     * })
+     */
+    upsert<T extends letter_positionsUpsertArgs>(args: SelectSubset<T, letter_positionsUpsertArgs<ExtArgs>>): Prisma__letter_positionsClient<$Result.GetResult<Prisma.$letter_positionsPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of Letter_positions.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_positionsCountArgs} args - Arguments to filter Letter_positions to count.
+     * @example
+     * // Count the number of Letter_positions
+     * const count = await prisma.letter_positions.count({
+     *   where: {
+     *     // ... the filter for the Letter_positions we want to count
+     *   }
+     * })
+    **/
+    count<T extends letter_positionsCountArgs>(
+      args?: Subset<T, letter_positionsCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], Letter_positionsCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a Letter_positions.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {Letter_positionsAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends Letter_positionsAggregateArgs>(args: Subset<T, Letter_positionsAggregateArgs>): Prisma.PrismaPromise<GetLetter_positionsAggregateType<T>>
+
+    /**
+     * Group by Letter_positions.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_positionsGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends letter_positionsGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: letter_positionsGroupByArgs['orderBy'] }
+        : { orderBy?: letter_positionsGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, letter_positionsGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetLetter_positionsGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the letter_positions model
+   */
+  readonly fields: letter_positionsFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for letter_positions.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__letter_positionsClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    letters<T extends letter_positions$lettersArgs<ExtArgs> = {}>(args?: Subset<T, letter_positions$lettersArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$lettersPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the letter_positions model
+   */
+  interface letter_positionsFieldRefs {
+    readonly id: FieldRef<"letter_positions", 'String'>
+    readonly created_at: FieldRef<"letter_positions", 'DateTime'>
+    readonly updated_at: FieldRef<"letter_positions", 'DateTime'>
+    readonly row: FieldRef<"letter_positions", 'Int'>
+    readonly column: FieldRef<"letter_positions", 'Int'>
+    readonly deleted: FieldRef<"letter_positions", 'Boolean'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * letter_positions findUnique
+   */
+  export type letter_positionsFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_positions
+     */
+    select?: letter_positionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_positions
+     */
+    omit?: letter_positionsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_positionsInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_positions to fetch.
+     */
+    where: letter_positionsWhereUniqueInput
+  }
+
+  /**
+   * letter_positions findUniqueOrThrow
+   */
+  export type letter_positionsFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_positions
+     */
+    select?: letter_positionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_positions
+     */
+    omit?: letter_positionsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_positionsInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_positions to fetch.
+     */
+    where: letter_positionsWhereUniqueInput
+  }
+
+  /**
+   * letter_positions findFirst
+   */
+  export type letter_positionsFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_positions
+     */
+    select?: letter_positionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_positions
+     */
+    omit?: letter_positionsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_positionsInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_positions to fetch.
+     */
+    where?: letter_positionsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_positions to fetch.
+     */
+    orderBy?: letter_positionsOrderByWithRelationInput | letter_positionsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for letter_positions.
+     */
+    cursor?: letter_positionsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_positions from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_positions.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of letter_positions.
+     */
+    distinct?: Letter_positionsScalarFieldEnum | Letter_positionsScalarFieldEnum[]
+  }
+
+  /**
+   * letter_positions findFirstOrThrow
+   */
+  export type letter_positionsFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_positions
+     */
+    select?: letter_positionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_positions
+     */
+    omit?: letter_positionsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_positionsInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_positions to fetch.
+     */
+    where?: letter_positionsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_positions to fetch.
+     */
+    orderBy?: letter_positionsOrderByWithRelationInput | letter_positionsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for letter_positions.
+     */
+    cursor?: letter_positionsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_positions from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_positions.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of letter_positions.
+     */
+    distinct?: Letter_positionsScalarFieldEnum | Letter_positionsScalarFieldEnum[]
+  }
+
+  /**
+   * letter_positions findMany
+   */
+  export type letter_positionsFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_positions
+     */
+    select?: letter_positionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_positions
+     */
+    omit?: letter_positionsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_positionsInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_positions to fetch.
+     */
+    where?: letter_positionsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_positions to fetch.
+     */
+    orderBy?: letter_positionsOrderByWithRelationInput | letter_positionsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing letter_positions.
+     */
+    cursor?: letter_positionsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_positions from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_positions.
+     */
+    skip?: number
+    distinct?: Letter_positionsScalarFieldEnum | Letter_positionsScalarFieldEnum[]
+  }
+
+  /**
+   * letter_positions create
+   */
+  export type letter_positionsCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_positions
+     */
+    select?: letter_positionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_positions
+     */
+    omit?: letter_positionsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_positionsInclude<ExtArgs> | null
+    /**
+     * The data needed to create a letter_positions.
+     */
+    data: XOR<letter_positionsCreateInput, letter_positionsUncheckedCreateInput>
+  }
+
+  /**
+   * letter_positions createMany
+   */
+  export type letter_positionsCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many letter_positions.
+     */
+    data: letter_positionsCreateManyInput | letter_positionsCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * letter_positions createManyAndReturn
+   */
+  export type letter_positionsCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_positions
+     */
+    select?: letter_positionsSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_positions
+     */
+    omit?: letter_positionsOmit<ExtArgs> | null
+    /**
+     * The data used to create many letter_positions.
+     */
+    data: letter_positionsCreateManyInput | letter_positionsCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * letter_positions update
+   */
+  export type letter_positionsUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_positions
+     */
+    select?: letter_positionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_positions
+     */
+    omit?: letter_positionsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_positionsInclude<ExtArgs> | null
+    /**
+     * The data needed to update a letter_positions.
+     */
+    data: XOR<letter_positionsUpdateInput, letter_positionsUncheckedUpdateInput>
+    /**
+     * Choose, which letter_positions to update.
+     */
+    where: letter_positionsWhereUniqueInput
+  }
+
+  /**
+   * letter_positions updateMany
+   */
+  export type letter_positionsUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update letter_positions.
+     */
+    data: XOR<letter_positionsUpdateManyMutationInput, letter_positionsUncheckedUpdateManyInput>
+    /**
+     * Filter which letter_positions to update
+     */
+    where?: letter_positionsWhereInput
+    /**
+     * Limit how many letter_positions to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * letter_positions updateManyAndReturn
+   */
+  export type letter_positionsUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_positions
+     */
+    select?: letter_positionsSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_positions
+     */
+    omit?: letter_positionsOmit<ExtArgs> | null
+    /**
+     * The data used to update letter_positions.
+     */
+    data: XOR<letter_positionsUpdateManyMutationInput, letter_positionsUncheckedUpdateManyInput>
+    /**
+     * Filter which letter_positions to update
+     */
+    where?: letter_positionsWhereInput
+    /**
+     * Limit how many letter_positions to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * letter_positions upsert
+   */
+  export type letter_positionsUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_positions
+     */
+    select?: letter_positionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_positions
+     */
+    omit?: letter_positionsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_positionsInclude<ExtArgs> | null
+    /**
+     * The filter to search for the letter_positions to update in case it exists.
+     */
+    where: letter_positionsWhereUniqueInput
+    /**
+     * In case the letter_positions found by the `where` argument doesn't exist, create a new letter_positions with this data.
+     */
+    create: XOR<letter_positionsCreateInput, letter_positionsUncheckedCreateInput>
+    /**
+     * In case the letter_positions was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<letter_positionsUpdateInput, letter_positionsUncheckedUpdateInput>
+  }
+
+  /**
+   * letter_positions delete
+   */
+  export type letter_positionsDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_positions
+     */
+    select?: letter_positionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_positions
+     */
+    omit?: letter_positionsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_positionsInclude<ExtArgs> | null
+    /**
+     * Filter which letter_positions to delete.
+     */
+    where: letter_positionsWhereUniqueInput
+  }
+
+  /**
+   * letter_positions deleteMany
+   */
+  export type letter_positionsDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which letter_positions to delete
+     */
+    where?: letter_positionsWhereInput
+    /**
+     * Limit how many letter_positions to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * letter_positions.letters
+   */
+  export type letter_positions$lettersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters
+     */
+    select?: lettersSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters
+     */
+    omit?: lettersOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: lettersInclude<ExtArgs> | null
+    where?: lettersWhereInput
+    orderBy?: lettersOrderByWithRelationInput | lettersOrderByWithRelationInput[]
+    cursor?: lettersWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: LettersScalarFieldEnum | LettersScalarFieldEnum[]
+  }
+
+  /**
+   * letter_positions without action
+   */
+  export type letter_positionsDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_positions
+     */
+    select?: letter_positionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_positions
+     */
+    omit?: letter_positionsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_positionsInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Model letter_progress
+   */
+
+  export type AggregateLetter_progress = {
+    _count: Letter_progressCountAggregateOutputType | null
+    _min: Letter_progressMinAggregateOutputType | null
+    _max: Letter_progressMaxAggregateOutputType | null
+  }
+
+  export type Letter_progressMinAggregateOutputType = {
+    id: string | null
+    created_at: Date | null
+    updated_at: Date | null
+    deleted: boolean | null
+    is_completed: boolean | null
+    letter_level_id: string | null
+  }
+
+  export type Letter_progressMaxAggregateOutputType = {
+    id: string | null
+    created_at: Date | null
+    updated_at: Date | null
+    deleted: boolean | null
+    is_completed: boolean | null
+    letter_level_id: string | null
+  }
+
+  export type Letter_progressCountAggregateOutputType = {
+    id: number
+    created_at: number
+    updated_at: number
+    deleted: number
+    is_completed: number
+    letter_level_id: number
+    _all: number
+  }
+
+
+  export type Letter_progressMinAggregateInputType = {
+    id?: true
+    created_at?: true
+    updated_at?: true
+    deleted?: true
+    is_completed?: true
+    letter_level_id?: true
+  }
+
+  export type Letter_progressMaxAggregateInputType = {
+    id?: true
+    created_at?: true
+    updated_at?: true
+    deleted?: true
+    is_completed?: true
+    letter_level_id?: true
+  }
+
+  export type Letter_progressCountAggregateInputType = {
+    id?: true
+    created_at?: true
+    updated_at?: true
+    deleted?: true
+    is_completed?: true
+    letter_level_id?: true
+    _all?: true
+  }
+
+  export type Letter_progressAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which letter_progress to aggregate.
+     */
+    where?: letter_progressWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_progresses to fetch.
+     */
+    orderBy?: letter_progressOrderByWithRelationInput | letter_progressOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: letter_progressWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_progresses from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_progresses.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned letter_progresses
+    **/
+    _count?: true | Letter_progressCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: Letter_progressMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: Letter_progressMaxAggregateInputType
+  }
+
+  export type GetLetter_progressAggregateType<T extends Letter_progressAggregateArgs> = {
+        [P in keyof T & keyof AggregateLetter_progress]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateLetter_progress[P]>
+      : GetScalarType<T[P], AggregateLetter_progress[P]>
+  }
+
+
+
+
+  export type letter_progressGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: letter_progressWhereInput
+    orderBy?: letter_progressOrderByWithAggregationInput | letter_progressOrderByWithAggregationInput[]
+    by: Letter_progressScalarFieldEnum[] | Letter_progressScalarFieldEnum
+    having?: letter_progressScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: Letter_progressCountAggregateInputType | true
+    _min?: Letter_progressMinAggregateInputType
+    _max?: Letter_progressMaxAggregateInputType
+  }
+
+  export type Letter_progressGroupByOutputType = {
+    id: string
+    created_at: Date
+    updated_at: Date
+    deleted: boolean
+    is_completed: boolean
+    letter_level_id: string
+    _count: Letter_progressCountAggregateOutputType | null
+    _min: Letter_progressMinAggregateOutputType | null
+    _max: Letter_progressMaxAggregateOutputType | null
+  }
+
+  type GetLetter_progressGroupByPayload<T extends letter_progressGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<Letter_progressGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof Letter_progressGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], Letter_progressGroupByOutputType[P]>
+            : GetScalarType<T[P], Letter_progressGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type letter_progressSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    created_at?: boolean
+    updated_at?: boolean
+    deleted?: boolean
+    is_completed?: boolean
+    letter_level_id?: boolean
+    letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["letter_progress"]>
+
+  export type letter_progressSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    created_at?: boolean
+    updated_at?: boolean
+    deleted?: boolean
+    is_completed?: boolean
+    letter_level_id?: boolean
+    letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["letter_progress"]>
+
+  export type letter_progressSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    created_at?: boolean
+    updated_at?: boolean
+    deleted?: boolean
+    is_completed?: boolean
+    letter_level_id?: boolean
+    letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["letter_progress"]>
+
+  export type letter_progressSelectScalar = {
+    id?: boolean
+    created_at?: boolean
+    updated_at?: boolean
+    deleted?: boolean
+    is_completed?: boolean
+    letter_level_id?: boolean
+  }
+
+  export type letter_progressOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "created_at" | "updated_at" | "deleted" | "is_completed" | "letter_level_id", ExtArgs["result"]["letter_progress"]>
+  export type letter_progressInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+  }
+  export type letter_progressIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+  }
+  export type letter_progressIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+  }
+
+  export type $letter_progressPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "letter_progress"
+    objects: {
+      letter_levels: Prisma.$letter_levelsPayload<ExtArgs>
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      id: string
+      created_at: Date
+      updated_at: Date
+      deleted: boolean
+      is_completed: boolean
+      letter_level_id: string
+    }, ExtArgs["result"]["letter_progress"]>
+    composites: {}
+  }
+
+  type letter_progressGetPayload<S extends boolean | null | undefined | letter_progressDefaultArgs> = $Result.GetResult<Prisma.$letter_progressPayload, S>
+
+  type letter_progressCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<letter_progressFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: Letter_progressCountAggregateInputType | true
+    }
+
+  export interface letter_progressDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['letter_progress'], meta: { name: 'letter_progress' } }
+    /**
+     * Find zero or one Letter_progress that matches the filter.
+     * @param {letter_progressFindUniqueArgs} args - Arguments to find a Letter_progress
+     * @example
+     * // Get one Letter_progress
+     * const letter_progress = await prisma.letter_progress.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends letter_progressFindUniqueArgs>(args: SelectSubset<T, letter_progressFindUniqueArgs<ExtArgs>>): Prisma__letter_progressClient<$Result.GetResult<Prisma.$letter_progressPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one Letter_progress that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {letter_progressFindUniqueOrThrowArgs} args - Arguments to find a Letter_progress
+     * @example
+     * // Get one Letter_progress
+     * const letter_progress = await prisma.letter_progress.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends letter_progressFindUniqueOrThrowArgs>(args: SelectSubset<T, letter_progressFindUniqueOrThrowArgs<ExtArgs>>): Prisma__letter_progressClient<$Result.GetResult<Prisma.$letter_progressPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Letter_progress that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_progressFindFirstArgs} args - Arguments to find a Letter_progress
+     * @example
+     * // Get one Letter_progress
+     * const letter_progress = await prisma.letter_progress.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends letter_progressFindFirstArgs>(args?: SelectSubset<T, letter_progressFindFirstArgs<ExtArgs>>): Prisma__letter_progressClient<$Result.GetResult<Prisma.$letter_progressPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Letter_progress that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_progressFindFirstOrThrowArgs} args - Arguments to find a Letter_progress
+     * @example
+     * // Get one Letter_progress
+     * const letter_progress = await prisma.letter_progress.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends letter_progressFindFirstOrThrowArgs>(args?: SelectSubset<T, letter_progressFindFirstOrThrowArgs<ExtArgs>>): Prisma__letter_progressClient<$Result.GetResult<Prisma.$letter_progressPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more Letter_progresses that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_progressFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all Letter_progresses
+     * const letter_progresses = await prisma.letter_progress.findMany()
+     * 
+     * // Get first 10 Letter_progresses
+     * const letter_progresses = await prisma.letter_progress.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const letter_progressWithIdOnly = await prisma.letter_progress.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends letter_progressFindManyArgs>(args?: SelectSubset<T, letter_progressFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_progressPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a Letter_progress.
+     * @param {letter_progressCreateArgs} args - Arguments to create a Letter_progress.
+     * @example
+     * // Create one Letter_progress
+     * const Letter_progress = await prisma.letter_progress.create({
+     *   data: {
+     *     // ... data to create a Letter_progress
+     *   }
+     * })
+     * 
+     */
+    create<T extends letter_progressCreateArgs>(args: SelectSubset<T, letter_progressCreateArgs<ExtArgs>>): Prisma__letter_progressClient<$Result.GetResult<Prisma.$letter_progressPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many Letter_progresses.
+     * @param {letter_progressCreateManyArgs} args - Arguments to create many Letter_progresses.
+     * @example
+     * // Create many Letter_progresses
+     * const letter_progress = await prisma.letter_progress.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends letter_progressCreateManyArgs>(args?: SelectSubset<T, letter_progressCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many Letter_progresses and returns the data saved in the database.
+     * @param {letter_progressCreateManyAndReturnArgs} args - Arguments to create many Letter_progresses.
+     * @example
+     * // Create many Letter_progresses
+     * const letter_progress = await prisma.letter_progress.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Letter_progresses and only return the `id`
+     * const letter_progressWithIdOnly = await prisma.letter_progress.createManyAndReturn({
+     *   select: { id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends letter_progressCreateManyAndReturnArgs>(args?: SelectSubset<T, letter_progressCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_progressPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a Letter_progress.
+     * @param {letter_progressDeleteArgs} args - Arguments to delete one Letter_progress.
+     * @example
+     * // Delete one Letter_progress
+     * const Letter_progress = await prisma.letter_progress.delete({
+     *   where: {
+     *     // ... filter to delete one Letter_progress
+     *   }
+     * })
+     * 
+     */
+    delete<T extends letter_progressDeleteArgs>(args: SelectSubset<T, letter_progressDeleteArgs<ExtArgs>>): Prisma__letter_progressClient<$Result.GetResult<Prisma.$letter_progressPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one Letter_progress.
+     * @param {letter_progressUpdateArgs} args - Arguments to update one Letter_progress.
+     * @example
+     * // Update one Letter_progress
+     * const letter_progress = await prisma.letter_progress.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends letter_progressUpdateArgs>(args: SelectSubset<T, letter_progressUpdateArgs<ExtArgs>>): Prisma__letter_progressClient<$Result.GetResult<Prisma.$letter_progressPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more Letter_progresses.
+     * @param {letter_progressDeleteManyArgs} args - Arguments to filter Letter_progresses to delete.
+     * @example
+     * // Delete a few Letter_progresses
+     * const { count } = await prisma.letter_progress.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends letter_progressDeleteManyArgs>(args?: SelectSubset<T, letter_progressDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Letter_progresses.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_progressUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many Letter_progresses
+     * const letter_progress = await prisma.letter_progress.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends letter_progressUpdateManyArgs>(args: SelectSubset<T, letter_progressUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Letter_progresses and returns the data updated in the database.
+     * @param {letter_progressUpdateManyAndReturnArgs} args - Arguments to update many Letter_progresses.
+     * @example
+     * // Update many Letter_progresses
+     * const letter_progress = await prisma.letter_progress.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Letter_progresses and only return the `id`
+     * const letter_progressWithIdOnly = await prisma.letter_progress.updateManyAndReturn({
+     *   select: { id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends letter_progressUpdateManyAndReturnArgs>(args: SelectSubset<T, letter_progressUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_progressPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one Letter_progress.
+     * @param {letter_progressUpsertArgs} args - Arguments to update or create a Letter_progress.
+     * @example
+     * // Update or create a Letter_progress
+     * const letter_progress = await prisma.letter_progress.upsert({
+     *   create: {
+     *     // ... data to create a Letter_progress
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the Letter_progress we want to update
+     *   }
+     * })
+     */
+    upsert<T extends letter_progressUpsertArgs>(args: SelectSubset<T, letter_progressUpsertArgs<ExtArgs>>): Prisma__letter_progressClient<$Result.GetResult<Prisma.$letter_progressPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of Letter_progresses.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_progressCountArgs} args - Arguments to filter Letter_progresses to count.
+     * @example
+     * // Count the number of Letter_progresses
+     * const count = await prisma.letter_progress.count({
+     *   where: {
+     *     // ... the filter for the Letter_progresses we want to count
+     *   }
+     * })
+    **/
+    count<T extends letter_progressCountArgs>(
+      args?: Subset<T, letter_progressCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], Letter_progressCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a Letter_progress.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {Letter_progressAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends Letter_progressAggregateArgs>(args: Subset<T, Letter_progressAggregateArgs>): Prisma.PrismaPromise<GetLetter_progressAggregateType<T>>
+
+    /**
+     * Group by Letter_progress.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_progressGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends letter_progressGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: letter_progressGroupByArgs['orderBy'] }
+        : { orderBy?: letter_progressGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, letter_progressGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetLetter_progressGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the letter_progress model
+   */
+  readonly fields: letter_progressFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for letter_progress.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__letter_progressClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    letter_levels<T extends letter_levelsDefaultArgs<ExtArgs> = {}>(args?: Subset<T, letter_levelsDefaultArgs<ExtArgs>>): Prisma__letter_levelsClient<$Result.GetResult<Prisma.$letter_levelsPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the letter_progress model
+   */
+  interface letter_progressFieldRefs {
+    readonly id: FieldRef<"letter_progress", 'String'>
+    readonly created_at: FieldRef<"letter_progress", 'DateTime'>
+    readonly updated_at: FieldRef<"letter_progress", 'DateTime'>
+    readonly deleted: FieldRef<"letter_progress", 'Boolean'>
+    readonly is_completed: FieldRef<"letter_progress", 'Boolean'>
+    readonly letter_level_id: FieldRef<"letter_progress", 'String'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * letter_progress findUnique
+   */
+  export type letter_progressFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_progress
+     */
+    select?: letter_progressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_progress
+     */
+    omit?: letter_progressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_progressInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_progress to fetch.
+     */
+    where: letter_progressWhereUniqueInput
+  }
+
+  /**
+   * letter_progress findUniqueOrThrow
+   */
+  export type letter_progressFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_progress
+     */
+    select?: letter_progressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_progress
+     */
+    omit?: letter_progressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_progressInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_progress to fetch.
+     */
+    where: letter_progressWhereUniqueInput
+  }
+
+  /**
+   * letter_progress findFirst
+   */
+  export type letter_progressFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_progress
+     */
+    select?: letter_progressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_progress
+     */
+    omit?: letter_progressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_progressInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_progress to fetch.
+     */
+    where?: letter_progressWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_progresses to fetch.
+     */
+    orderBy?: letter_progressOrderByWithRelationInput | letter_progressOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for letter_progresses.
+     */
+    cursor?: letter_progressWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_progresses from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_progresses.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of letter_progresses.
+     */
+    distinct?: Letter_progressScalarFieldEnum | Letter_progressScalarFieldEnum[]
+  }
+
+  /**
+   * letter_progress findFirstOrThrow
+   */
+  export type letter_progressFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_progress
+     */
+    select?: letter_progressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_progress
+     */
+    omit?: letter_progressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_progressInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_progress to fetch.
+     */
+    where?: letter_progressWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_progresses to fetch.
+     */
+    orderBy?: letter_progressOrderByWithRelationInput | letter_progressOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for letter_progresses.
+     */
+    cursor?: letter_progressWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_progresses from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_progresses.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of letter_progresses.
+     */
+    distinct?: Letter_progressScalarFieldEnum | Letter_progressScalarFieldEnum[]
+  }
+
+  /**
+   * letter_progress findMany
+   */
+  export type letter_progressFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_progress
+     */
+    select?: letter_progressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_progress
+     */
+    omit?: letter_progressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_progressInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_progresses to fetch.
+     */
+    where?: letter_progressWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_progresses to fetch.
+     */
+    orderBy?: letter_progressOrderByWithRelationInput | letter_progressOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing letter_progresses.
+     */
+    cursor?: letter_progressWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_progresses from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_progresses.
+     */
+    skip?: number
+    distinct?: Letter_progressScalarFieldEnum | Letter_progressScalarFieldEnum[]
+  }
+
+  /**
+   * letter_progress create
+   */
+  export type letter_progressCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_progress
+     */
+    select?: letter_progressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_progress
+     */
+    omit?: letter_progressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_progressInclude<ExtArgs> | null
+    /**
+     * The data needed to create a letter_progress.
+     */
+    data: XOR<letter_progressCreateInput, letter_progressUncheckedCreateInput>
+  }
+
+  /**
+   * letter_progress createMany
+   */
+  export type letter_progressCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many letter_progresses.
+     */
+    data: letter_progressCreateManyInput | letter_progressCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * letter_progress createManyAndReturn
+   */
+  export type letter_progressCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_progress
+     */
+    select?: letter_progressSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_progress
+     */
+    omit?: letter_progressOmit<ExtArgs> | null
+    /**
+     * The data used to create many letter_progresses.
+     */
+    data: letter_progressCreateManyInput | letter_progressCreateManyInput[]
+    skipDuplicates?: boolean
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_progressIncludeCreateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * letter_progress update
+   */
+  export type letter_progressUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_progress
+     */
+    select?: letter_progressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_progress
+     */
+    omit?: letter_progressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_progressInclude<ExtArgs> | null
+    /**
+     * The data needed to update a letter_progress.
+     */
+    data: XOR<letter_progressUpdateInput, letter_progressUncheckedUpdateInput>
+    /**
+     * Choose, which letter_progress to update.
+     */
+    where: letter_progressWhereUniqueInput
+  }
+
+  /**
+   * letter_progress updateMany
+   */
+  export type letter_progressUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update letter_progresses.
+     */
+    data: XOR<letter_progressUpdateManyMutationInput, letter_progressUncheckedUpdateManyInput>
+    /**
+     * Filter which letter_progresses to update
+     */
+    where?: letter_progressWhereInput
+    /**
+     * Limit how many letter_progresses to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * letter_progress updateManyAndReturn
+   */
+  export type letter_progressUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_progress
+     */
+    select?: letter_progressSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_progress
+     */
+    omit?: letter_progressOmit<ExtArgs> | null
+    /**
+     * The data used to update letter_progresses.
+     */
+    data: XOR<letter_progressUpdateManyMutationInput, letter_progressUncheckedUpdateManyInput>
+    /**
+     * Filter which letter_progresses to update
+     */
+    where?: letter_progressWhereInput
+    /**
+     * Limit how many letter_progresses to update.
+     */
+    limit?: number
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_progressIncludeUpdateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * letter_progress upsert
+   */
+  export type letter_progressUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_progress
+     */
+    select?: letter_progressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_progress
+     */
+    omit?: letter_progressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_progressInclude<ExtArgs> | null
+    /**
+     * The filter to search for the letter_progress to update in case it exists.
+     */
+    where: letter_progressWhereUniqueInput
+    /**
+     * In case the letter_progress found by the `where` argument doesn't exist, create a new letter_progress with this data.
+     */
+    create: XOR<letter_progressCreateInput, letter_progressUncheckedCreateInput>
+    /**
+     * In case the letter_progress was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<letter_progressUpdateInput, letter_progressUncheckedUpdateInput>
+  }
+
+  /**
+   * letter_progress delete
+   */
+  export type letter_progressDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_progress
+     */
+    select?: letter_progressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_progress
+     */
+    omit?: letter_progressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_progressInclude<ExtArgs> | null
+    /**
+     * Filter which letter_progress to delete.
+     */
+    where: letter_progressWhereUniqueInput
+  }
+
+  /**
+   * letter_progress deleteMany
+   */
+  export type letter_progressDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which letter_progresses to delete
+     */
+    where?: letter_progressWhereInput
+    /**
+     * Limit how many letter_progresses to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * letter_progress without action
+   */
+  export type letter_progressDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_progress
+     */
+    select?: letter_progressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_progress
+     */
+    omit?: letter_progressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_progressInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Model letter_questions
+   */
+
+  export type AggregateLetter_questions = {
+    _count: Letter_questionsCountAggregateOutputType | null
+    _min: Letter_questionsMinAggregateOutputType | null
+    _max: Letter_questionsMaxAggregateOutputType | null
+  }
+
+  export type Letter_questionsMinAggregateOutputType = {
+    created_at: Date | null
+    updated_at: Date | null
+    deleted: boolean | null
+    id: string | null
+  }
+
+  export type Letter_questionsMaxAggregateOutputType = {
+    created_at: Date | null
+    updated_at: Date | null
+    deleted: boolean | null
+    id: string | null
+  }
+
+  export type Letter_questionsCountAggregateOutputType = {
+    created_at: number
+    updated_at: number
+    question: number
+    deleted: number
+    id: number
+    _all: number
+  }
+
+
+  export type Letter_questionsMinAggregateInputType = {
+    created_at?: true
+    updated_at?: true
+    deleted?: true
+    id?: true
+  }
+
+  export type Letter_questionsMaxAggregateInputType = {
+    created_at?: true
+    updated_at?: true
+    deleted?: true
+    id?: true
+  }
+
+  export type Letter_questionsCountAggregateInputType = {
+    created_at?: true
+    updated_at?: true
+    question?: true
+    deleted?: true
+    id?: true
+    _all?: true
+  }
+
+  export type Letter_questionsAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which letter_questions to aggregate.
+     */
+    where?: letter_questionsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_questions to fetch.
+     */
+    orderBy?: letter_questionsOrderByWithRelationInput | letter_questionsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: letter_questionsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_questions from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_questions.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned letter_questions
+    **/
+    _count?: true | Letter_questionsCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: Letter_questionsMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: Letter_questionsMaxAggregateInputType
+  }
+
+  export type GetLetter_questionsAggregateType<T extends Letter_questionsAggregateArgs> = {
+        [P in keyof T & keyof AggregateLetter_questions]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateLetter_questions[P]>
+      : GetScalarType<T[P], AggregateLetter_questions[P]>
+  }
+
+
+
+
+  export type letter_questionsGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: letter_questionsWhereInput
+    orderBy?: letter_questionsOrderByWithAggregationInput | letter_questionsOrderByWithAggregationInput[]
+    by: Letter_questionsScalarFieldEnum[] | Letter_questionsScalarFieldEnum
+    having?: letter_questionsScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: Letter_questionsCountAggregateInputType | true
+    _min?: Letter_questionsMinAggregateInputType
+    _max?: Letter_questionsMaxAggregateInputType
+  }
+
+  export type Letter_questionsGroupByOutputType = {
+    created_at: Date
+    updated_at: Date
+    question: JsonValue
+    deleted: boolean
+    id: string
+    _count: Letter_questionsCountAggregateOutputType | null
+    _min: Letter_questionsMinAggregateOutputType | null
+    _max: Letter_questionsMaxAggregateOutputType | null
+  }
+
+  type GetLetter_questionsGroupByPayload<T extends letter_questionsGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<Letter_questionsGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof Letter_questionsGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], Letter_questionsGroupByOutputType[P]>
+            : GetScalarType<T[P], Letter_questionsGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type letter_questionsSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    created_at?: boolean
+    updated_at?: boolean
+    question?: boolean
+    deleted?: boolean
+    id?: boolean
+    letter_questions_to_letter_levels?: boolean | letter_questions$letter_questions_to_letter_levelsArgs<ExtArgs>
+    _count?: boolean | Letter_questionsCountOutputTypeDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["letter_questions"]>
+
+  export type letter_questionsSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    created_at?: boolean
+    updated_at?: boolean
+    question?: boolean
+    deleted?: boolean
+    id?: boolean
+  }, ExtArgs["result"]["letter_questions"]>
+
+  export type letter_questionsSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    created_at?: boolean
+    updated_at?: boolean
+    question?: boolean
+    deleted?: boolean
+    id?: boolean
+  }, ExtArgs["result"]["letter_questions"]>
+
+  export type letter_questionsSelectScalar = {
+    created_at?: boolean
+    updated_at?: boolean
+    question?: boolean
+    deleted?: boolean
+    id?: boolean
+  }
+
+  export type letter_questionsOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"created_at" | "updated_at" | "question" | "deleted" | "id", ExtArgs["result"]["letter_questions"]>
+  export type letter_questionsInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letter_questions_to_letter_levels?: boolean | letter_questions$letter_questions_to_letter_levelsArgs<ExtArgs>
+    _count?: boolean | Letter_questionsCountOutputTypeDefaultArgs<ExtArgs>
+  }
+  export type letter_questionsIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
+  export type letter_questionsIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
+
+  export type $letter_questionsPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "letter_questions"
+    objects: {
+      letter_questions_to_letter_levels: Prisma.$letter_questions_to_letter_levelsPayload<ExtArgs>[]
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      created_at: Date
+      updated_at: Date
+      question: Prisma.JsonValue
+      deleted: boolean
+      id: string
+    }, ExtArgs["result"]["letter_questions"]>
+    composites: {}
+  }
+
+  type letter_questionsGetPayload<S extends boolean | null | undefined | letter_questionsDefaultArgs> = $Result.GetResult<Prisma.$letter_questionsPayload, S>
+
+  type letter_questionsCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<letter_questionsFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: Letter_questionsCountAggregateInputType | true
+    }
+
+  export interface letter_questionsDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['letter_questions'], meta: { name: 'letter_questions' } }
+    /**
+     * Find zero or one Letter_questions that matches the filter.
+     * @param {letter_questionsFindUniqueArgs} args - Arguments to find a Letter_questions
+     * @example
+     * // Get one Letter_questions
+     * const letter_questions = await prisma.letter_questions.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends letter_questionsFindUniqueArgs>(args: SelectSubset<T, letter_questionsFindUniqueArgs<ExtArgs>>): Prisma__letter_questionsClient<$Result.GetResult<Prisma.$letter_questionsPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one Letter_questions that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {letter_questionsFindUniqueOrThrowArgs} args - Arguments to find a Letter_questions
+     * @example
+     * // Get one Letter_questions
+     * const letter_questions = await prisma.letter_questions.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends letter_questionsFindUniqueOrThrowArgs>(args: SelectSubset<T, letter_questionsFindUniqueOrThrowArgs<ExtArgs>>): Prisma__letter_questionsClient<$Result.GetResult<Prisma.$letter_questionsPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Letter_questions that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_questionsFindFirstArgs} args - Arguments to find a Letter_questions
+     * @example
+     * // Get one Letter_questions
+     * const letter_questions = await prisma.letter_questions.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends letter_questionsFindFirstArgs>(args?: SelectSubset<T, letter_questionsFindFirstArgs<ExtArgs>>): Prisma__letter_questionsClient<$Result.GetResult<Prisma.$letter_questionsPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Letter_questions that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_questionsFindFirstOrThrowArgs} args - Arguments to find a Letter_questions
+     * @example
+     * // Get one Letter_questions
+     * const letter_questions = await prisma.letter_questions.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends letter_questionsFindFirstOrThrowArgs>(args?: SelectSubset<T, letter_questionsFindFirstOrThrowArgs<ExtArgs>>): Prisma__letter_questionsClient<$Result.GetResult<Prisma.$letter_questionsPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more Letter_questions that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_questionsFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all Letter_questions
+     * const letter_questions = await prisma.letter_questions.findMany()
+     * 
+     * // Get first 10 Letter_questions
+     * const letter_questions = await prisma.letter_questions.findMany({ take: 10 })
+     * 
+     * // Only select the `created_at`
+     * const letter_questionsWithCreated_atOnly = await prisma.letter_questions.findMany({ select: { created_at: true } })
+     * 
+     */
+    findMany<T extends letter_questionsFindManyArgs>(args?: SelectSubset<T, letter_questionsFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_questionsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a Letter_questions.
+     * @param {letter_questionsCreateArgs} args - Arguments to create a Letter_questions.
+     * @example
+     * // Create one Letter_questions
+     * const Letter_questions = await prisma.letter_questions.create({
+     *   data: {
+     *     // ... data to create a Letter_questions
+     *   }
+     * })
+     * 
+     */
+    create<T extends letter_questionsCreateArgs>(args: SelectSubset<T, letter_questionsCreateArgs<ExtArgs>>): Prisma__letter_questionsClient<$Result.GetResult<Prisma.$letter_questionsPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many Letter_questions.
+     * @param {letter_questionsCreateManyArgs} args - Arguments to create many Letter_questions.
+     * @example
+     * // Create many Letter_questions
+     * const letter_questions = await prisma.letter_questions.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends letter_questionsCreateManyArgs>(args?: SelectSubset<T, letter_questionsCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many Letter_questions and returns the data saved in the database.
+     * @param {letter_questionsCreateManyAndReturnArgs} args - Arguments to create many Letter_questions.
+     * @example
+     * // Create many Letter_questions
+     * const letter_questions = await prisma.letter_questions.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Letter_questions and only return the `created_at`
+     * const letter_questionsWithCreated_atOnly = await prisma.letter_questions.createManyAndReturn({
+     *   select: { created_at: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends letter_questionsCreateManyAndReturnArgs>(args?: SelectSubset<T, letter_questionsCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_questionsPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a Letter_questions.
+     * @param {letter_questionsDeleteArgs} args - Arguments to delete one Letter_questions.
+     * @example
+     * // Delete one Letter_questions
+     * const Letter_questions = await prisma.letter_questions.delete({
+     *   where: {
+     *     // ... filter to delete one Letter_questions
+     *   }
+     * })
+     * 
+     */
+    delete<T extends letter_questionsDeleteArgs>(args: SelectSubset<T, letter_questionsDeleteArgs<ExtArgs>>): Prisma__letter_questionsClient<$Result.GetResult<Prisma.$letter_questionsPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one Letter_questions.
+     * @param {letter_questionsUpdateArgs} args - Arguments to update one Letter_questions.
+     * @example
+     * // Update one Letter_questions
+     * const letter_questions = await prisma.letter_questions.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends letter_questionsUpdateArgs>(args: SelectSubset<T, letter_questionsUpdateArgs<ExtArgs>>): Prisma__letter_questionsClient<$Result.GetResult<Prisma.$letter_questionsPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more Letter_questions.
+     * @param {letter_questionsDeleteManyArgs} args - Arguments to filter Letter_questions to delete.
+     * @example
+     * // Delete a few Letter_questions
+     * const { count } = await prisma.letter_questions.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends letter_questionsDeleteManyArgs>(args?: SelectSubset<T, letter_questionsDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Letter_questions.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_questionsUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many Letter_questions
+     * const letter_questions = await prisma.letter_questions.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends letter_questionsUpdateManyArgs>(args: SelectSubset<T, letter_questionsUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Letter_questions and returns the data updated in the database.
+     * @param {letter_questionsUpdateManyAndReturnArgs} args - Arguments to update many Letter_questions.
+     * @example
+     * // Update many Letter_questions
+     * const letter_questions = await prisma.letter_questions.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Letter_questions and only return the `created_at`
+     * const letter_questionsWithCreated_atOnly = await prisma.letter_questions.updateManyAndReturn({
+     *   select: { created_at: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends letter_questionsUpdateManyAndReturnArgs>(args: SelectSubset<T, letter_questionsUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_questionsPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one Letter_questions.
+     * @param {letter_questionsUpsertArgs} args - Arguments to update or create a Letter_questions.
+     * @example
+     * // Update or create a Letter_questions
+     * const letter_questions = await prisma.letter_questions.upsert({
+     *   create: {
+     *     // ... data to create a Letter_questions
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the Letter_questions we want to update
+     *   }
+     * })
+     */
+    upsert<T extends letter_questionsUpsertArgs>(args: SelectSubset<T, letter_questionsUpsertArgs<ExtArgs>>): Prisma__letter_questionsClient<$Result.GetResult<Prisma.$letter_questionsPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of Letter_questions.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_questionsCountArgs} args - Arguments to filter Letter_questions to count.
+     * @example
+     * // Count the number of Letter_questions
+     * const count = await prisma.letter_questions.count({
+     *   where: {
+     *     // ... the filter for the Letter_questions we want to count
+     *   }
+     * })
+    **/
+    count<T extends letter_questionsCountArgs>(
+      args?: Subset<T, letter_questionsCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], Letter_questionsCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a Letter_questions.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {Letter_questionsAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends Letter_questionsAggregateArgs>(args: Subset<T, Letter_questionsAggregateArgs>): Prisma.PrismaPromise<GetLetter_questionsAggregateType<T>>
+
+    /**
+     * Group by Letter_questions.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_questionsGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends letter_questionsGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: letter_questionsGroupByArgs['orderBy'] }
+        : { orderBy?: letter_questionsGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, letter_questionsGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetLetter_questionsGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the letter_questions model
+   */
+  readonly fields: letter_questionsFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for letter_questions.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__letter_questionsClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    letter_questions_to_letter_levels<T extends letter_questions$letter_questions_to_letter_levelsArgs<ExtArgs> = {}>(args?: Subset<T, letter_questions$letter_questions_to_letter_levelsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_questions_to_letter_levelsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the letter_questions model
+   */
+  interface letter_questionsFieldRefs {
+    readonly created_at: FieldRef<"letter_questions", 'DateTime'>
+    readonly updated_at: FieldRef<"letter_questions", 'DateTime'>
+    readonly question: FieldRef<"letter_questions", 'Json'>
+    readonly deleted: FieldRef<"letter_questions", 'Boolean'>
+    readonly id: FieldRef<"letter_questions", 'String'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * letter_questions findUnique
+   */
+  export type letter_questionsFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions
+     */
+    select?: letter_questionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions
+     */
+    omit?: letter_questionsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questionsInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_questions to fetch.
+     */
+    where: letter_questionsWhereUniqueInput
+  }
+
+  /**
+   * letter_questions findUniqueOrThrow
+   */
+  export type letter_questionsFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions
+     */
+    select?: letter_questionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions
+     */
+    omit?: letter_questionsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questionsInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_questions to fetch.
+     */
+    where: letter_questionsWhereUniqueInput
+  }
+
+  /**
+   * letter_questions findFirst
+   */
+  export type letter_questionsFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions
+     */
+    select?: letter_questionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions
+     */
+    omit?: letter_questionsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questionsInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_questions to fetch.
+     */
+    where?: letter_questionsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_questions to fetch.
+     */
+    orderBy?: letter_questionsOrderByWithRelationInput | letter_questionsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for letter_questions.
+     */
+    cursor?: letter_questionsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_questions from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_questions.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of letter_questions.
+     */
+    distinct?: Letter_questionsScalarFieldEnum | Letter_questionsScalarFieldEnum[]
+  }
+
+  /**
+   * letter_questions findFirstOrThrow
+   */
+  export type letter_questionsFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions
+     */
+    select?: letter_questionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions
+     */
+    omit?: letter_questionsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questionsInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_questions to fetch.
+     */
+    where?: letter_questionsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_questions to fetch.
+     */
+    orderBy?: letter_questionsOrderByWithRelationInput | letter_questionsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for letter_questions.
+     */
+    cursor?: letter_questionsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_questions from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_questions.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of letter_questions.
+     */
+    distinct?: Letter_questionsScalarFieldEnum | Letter_questionsScalarFieldEnum[]
+  }
+
+  /**
+   * letter_questions findMany
+   */
+  export type letter_questionsFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions
+     */
+    select?: letter_questionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions
+     */
+    omit?: letter_questionsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questionsInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_questions to fetch.
+     */
+    where?: letter_questionsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_questions to fetch.
+     */
+    orderBy?: letter_questionsOrderByWithRelationInput | letter_questionsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing letter_questions.
+     */
+    cursor?: letter_questionsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_questions from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_questions.
+     */
+    skip?: number
+    distinct?: Letter_questionsScalarFieldEnum | Letter_questionsScalarFieldEnum[]
+  }
+
+  /**
+   * letter_questions create
+   */
+  export type letter_questionsCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions
+     */
+    select?: letter_questionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions
+     */
+    omit?: letter_questionsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questionsInclude<ExtArgs> | null
+    /**
+     * The data needed to create a letter_questions.
+     */
+    data: XOR<letter_questionsCreateInput, letter_questionsUncheckedCreateInput>
+  }
+
+  /**
+   * letter_questions createMany
+   */
+  export type letter_questionsCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many letter_questions.
+     */
+    data: letter_questionsCreateManyInput | letter_questionsCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * letter_questions createManyAndReturn
+   */
+  export type letter_questionsCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions
+     */
+    select?: letter_questionsSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions
+     */
+    omit?: letter_questionsOmit<ExtArgs> | null
+    /**
+     * The data used to create many letter_questions.
+     */
+    data: letter_questionsCreateManyInput | letter_questionsCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * letter_questions update
+   */
+  export type letter_questionsUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions
+     */
+    select?: letter_questionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions
+     */
+    omit?: letter_questionsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questionsInclude<ExtArgs> | null
+    /**
+     * The data needed to update a letter_questions.
+     */
+    data: XOR<letter_questionsUpdateInput, letter_questionsUncheckedUpdateInput>
+    /**
+     * Choose, which letter_questions to update.
+     */
+    where: letter_questionsWhereUniqueInput
+  }
+
+  /**
+   * letter_questions updateMany
+   */
+  export type letter_questionsUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update letter_questions.
+     */
+    data: XOR<letter_questionsUpdateManyMutationInput, letter_questionsUncheckedUpdateManyInput>
+    /**
+     * Filter which letter_questions to update
+     */
+    where?: letter_questionsWhereInput
+    /**
+     * Limit how many letter_questions to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * letter_questions updateManyAndReturn
+   */
+  export type letter_questionsUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions
+     */
+    select?: letter_questionsSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions
+     */
+    omit?: letter_questionsOmit<ExtArgs> | null
+    /**
+     * The data used to update letter_questions.
+     */
+    data: XOR<letter_questionsUpdateManyMutationInput, letter_questionsUncheckedUpdateManyInput>
+    /**
+     * Filter which letter_questions to update
+     */
+    where?: letter_questionsWhereInput
+    /**
+     * Limit how many letter_questions to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * letter_questions upsert
+   */
+  export type letter_questionsUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions
+     */
+    select?: letter_questionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions
+     */
+    omit?: letter_questionsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questionsInclude<ExtArgs> | null
+    /**
+     * The filter to search for the letter_questions to update in case it exists.
+     */
+    where: letter_questionsWhereUniqueInput
+    /**
+     * In case the letter_questions found by the `where` argument doesn't exist, create a new letter_questions with this data.
+     */
+    create: XOR<letter_questionsCreateInput, letter_questionsUncheckedCreateInput>
+    /**
+     * In case the letter_questions was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<letter_questionsUpdateInput, letter_questionsUncheckedUpdateInput>
+  }
+
+  /**
+   * letter_questions delete
+   */
+  export type letter_questionsDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions
+     */
+    select?: letter_questionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions
+     */
+    omit?: letter_questionsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questionsInclude<ExtArgs> | null
+    /**
+     * Filter which letter_questions to delete.
+     */
+    where: letter_questionsWhereUniqueInput
+  }
+
+  /**
+   * letter_questions deleteMany
+   */
+  export type letter_questionsDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which letter_questions to delete
+     */
+    where?: letter_questionsWhereInput
+    /**
+     * Limit how many letter_questions to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * letter_questions.letter_questions_to_letter_levels
+   */
+  export type letter_questions$letter_questions_to_letter_levelsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions_to_letter_levels
+     */
+    select?: letter_questions_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions_to_letter_levels
+     */
+    omit?: letter_questions_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questions_to_letter_levelsInclude<ExtArgs> | null
+    where?: letter_questions_to_letter_levelsWhereInput
+    orderBy?: letter_questions_to_letter_levelsOrderByWithRelationInput | letter_questions_to_letter_levelsOrderByWithRelationInput[]
+    cursor?: letter_questions_to_letter_levelsWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: Letter_questions_to_letter_levelsScalarFieldEnum | Letter_questions_to_letter_levelsScalarFieldEnum[]
+  }
+
+  /**
+   * letter_questions without action
+   */
+  export type letter_questionsDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions
+     */
+    select?: letter_questionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions
+     */
+    omit?: letter_questionsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questionsInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Model letter_questions_to_letter_levels
+   */
+
+  export type AggregateLetter_questions_to_letter_levels = {
+    _count: Letter_questions_to_letter_levelsCountAggregateOutputType | null
+    _avg: Letter_questions_to_letter_levelsAvgAggregateOutputType | null
+    _sum: Letter_questions_to_letter_levelsSumAggregateOutputType | null
+    _min: Letter_questions_to_letter_levelsMinAggregateOutputType | null
+    _max: Letter_questions_to_letter_levelsMaxAggregateOutputType | null
+  }
+
+  export type Letter_questions_to_letter_levelsAvgAggregateOutputType = {
+    number: number | null
+  }
+
+  export type Letter_questions_to_letter_levelsSumAggregateOutputType = {
+    number: number | null
+  }
+
+  export type Letter_questions_to_letter_levelsMinAggregateOutputType = {
+    letter_question_id: string | null
+    letter_level_id: string | null
+    number: number | null
+  }
+
+  export type Letter_questions_to_letter_levelsMaxAggregateOutputType = {
+    letter_question_id: string | null
+    letter_level_id: string | null
+    number: number | null
+  }
+
+  export type Letter_questions_to_letter_levelsCountAggregateOutputType = {
+    letter_question_id: number
+    letter_level_id: number
+    number: number
+    _all: number
+  }
+
+
+  export type Letter_questions_to_letter_levelsAvgAggregateInputType = {
+    number?: true
+  }
+
+  export type Letter_questions_to_letter_levelsSumAggregateInputType = {
+    number?: true
+  }
+
+  export type Letter_questions_to_letter_levelsMinAggregateInputType = {
+    letter_question_id?: true
+    letter_level_id?: true
+    number?: true
+  }
+
+  export type Letter_questions_to_letter_levelsMaxAggregateInputType = {
+    letter_question_id?: true
+    letter_level_id?: true
+    number?: true
+  }
+
+  export type Letter_questions_to_letter_levelsCountAggregateInputType = {
+    letter_question_id?: true
+    letter_level_id?: true
+    number?: true
+    _all?: true
+  }
+
+  export type Letter_questions_to_letter_levelsAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which letter_questions_to_letter_levels to aggregate.
+     */
+    where?: letter_questions_to_letter_levelsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_questions_to_letter_levels to fetch.
+     */
+    orderBy?: letter_questions_to_letter_levelsOrderByWithRelationInput | letter_questions_to_letter_levelsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: letter_questions_to_letter_levelsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_questions_to_letter_levels from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_questions_to_letter_levels.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned letter_questions_to_letter_levels
+    **/
+    _count?: true | Letter_questions_to_letter_levelsCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: Letter_questions_to_letter_levelsAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: Letter_questions_to_letter_levelsSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: Letter_questions_to_letter_levelsMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: Letter_questions_to_letter_levelsMaxAggregateInputType
+  }
+
+  export type GetLetter_questions_to_letter_levelsAggregateType<T extends Letter_questions_to_letter_levelsAggregateArgs> = {
+        [P in keyof T & keyof AggregateLetter_questions_to_letter_levels]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateLetter_questions_to_letter_levels[P]>
+      : GetScalarType<T[P], AggregateLetter_questions_to_letter_levels[P]>
+  }
+
+
+
+
+  export type letter_questions_to_letter_levelsGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: letter_questions_to_letter_levelsWhereInput
+    orderBy?: letter_questions_to_letter_levelsOrderByWithAggregationInput | letter_questions_to_letter_levelsOrderByWithAggregationInput[]
+    by: Letter_questions_to_letter_levelsScalarFieldEnum[] | Letter_questions_to_letter_levelsScalarFieldEnum
+    having?: letter_questions_to_letter_levelsScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: Letter_questions_to_letter_levelsCountAggregateInputType | true
+    _avg?: Letter_questions_to_letter_levelsAvgAggregateInputType
+    _sum?: Letter_questions_to_letter_levelsSumAggregateInputType
+    _min?: Letter_questions_to_letter_levelsMinAggregateInputType
+    _max?: Letter_questions_to_letter_levelsMaxAggregateInputType
+  }
+
+  export type Letter_questions_to_letter_levelsGroupByOutputType = {
+    letter_question_id: string
+    letter_level_id: string
+    number: number
+    _count: Letter_questions_to_letter_levelsCountAggregateOutputType | null
+    _avg: Letter_questions_to_letter_levelsAvgAggregateOutputType | null
+    _sum: Letter_questions_to_letter_levelsSumAggregateOutputType | null
+    _min: Letter_questions_to_letter_levelsMinAggregateOutputType | null
+    _max: Letter_questions_to_letter_levelsMaxAggregateOutputType | null
+  }
+
+  type GetLetter_questions_to_letter_levelsGroupByPayload<T extends letter_questions_to_letter_levelsGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<Letter_questions_to_letter_levelsGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof Letter_questions_to_letter_levelsGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], Letter_questions_to_letter_levelsGroupByOutputType[P]>
+            : GetScalarType<T[P], Letter_questions_to_letter_levelsGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type letter_questions_to_letter_levelsSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    letter_question_id?: boolean
+    letter_level_id?: boolean
+    number?: boolean
+    letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+    letter_questions?: boolean | letter_questionsDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["letter_questions_to_letter_levels"]>
+
+  export type letter_questions_to_letter_levelsSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    letter_question_id?: boolean
+    letter_level_id?: boolean
+    number?: boolean
+    letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+    letter_questions?: boolean | letter_questionsDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["letter_questions_to_letter_levels"]>
+
+  export type letter_questions_to_letter_levelsSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    letter_question_id?: boolean
+    letter_level_id?: boolean
+    number?: boolean
+    letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+    letter_questions?: boolean | letter_questionsDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["letter_questions_to_letter_levels"]>
+
+  export type letter_questions_to_letter_levelsSelectScalar = {
+    letter_question_id?: boolean
+    letter_level_id?: boolean
+    number?: boolean
+  }
+
+  export type letter_questions_to_letter_levelsOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"letter_question_id" | "letter_level_id" | "number", ExtArgs["result"]["letter_questions_to_letter_levels"]>
+  export type letter_questions_to_letter_levelsInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+    letter_questions?: boolean | letter_questionsDefaultArgs<ExtArgs>
+  }
+  export type letter_questions_to_letter_levelsIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+    letter_questions?: boolean | letter_questionsDefaultArgs<ExtArgs>
+  }
+  export type letter_questions_to_letter_levelsIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+    letter_questions?: boolean | letter_questionsDefaultArgs<ExtArgs>
+  }
+
+  export type $letter_questions_to_letter_levelsPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "letter_questions_to_letter_levels"
+    objects: {
+      letter_levels: Prisma.$letter_levelsPayload<ExtArgs>
+      letter_questions: Prisma.$letter_questionsPayload<ExtArgs>
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      letter_question_id: string
+      letter_level_id: string
+      number: number
+    }, ExtArgs["result"]["letter_questions_to_letter_levels"]>
+    composites: {}
+  }
+
+  type letter_questions_to_letter_levelsGetPayload<S extends boolean | null | undefined | letter_questions_to_letter_levelsDefaultArgs> = $Result.GetResult<Prisma.$letter_questions_to_letter_levelsPayload, S>
+
+  type letter_questions_to_letter_levelsCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<letter_questions_to_letter_levelsFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: Letter_questions_to_letter_levelsCountAggregateInputType | true
+    }
+
+  export interface letter_questions_to_letter_levelsDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['letter_questions_to_letter_levels'], meta: { name: 'letter_questions_to_letter_levels' } }
+    /**
+     * Find zero or one Letter_questions_to_letter_levels that matches the filter.
+     * @param {letter_questions_to_letter_levelsFindUniqueArgs} args - Arguments to find a Letter_questions_to_letter_levels
+     * @example
+     * // Get one Letter_questions_to_letter_levels
+     * const letter_questions_to_letter_levels = await prisma.letter_questions_to_letter_levels.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends letter_questions_to_letter_levelsFindUniqueArgs>(args: SelectSubset<T, letter_questions_to_letter_levelsFindUniqueArgs<ExtArgs>>): Prisma__letter_questions_to_letter_levelsClient<$Result.GetResult<Prisma.$letter_questions_to_letter_levelsPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one Letter_questions_to_letter_levels that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {letter_questions_to_letter_levelsFindUniqueOrThrowArgs} args - Arguments to find a Letter_questions_to_letter_levels
+     * @example
+     * // Get one Letter_questions_to_letter_levels
+     * const letter_questions_to_letter_levels = await prisma.letter_questions_to_letter_levels.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends letter_questions_to_letter_levelsFindUniqueOrThrowArgs>(args: SelectSubset<T, letter_questions_to_letter_levelsFindUniqueOrThrowArgs<ExtArgs>>): Prisma__letter_questions_to_letter_levelsClient<$Result.GetResult<Prisma.$letter_questions_to_letter_levelsPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Letter_questions_to_letter_levels that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_questions_to_letter_levelsFindFirstArgs} args - Arguments to find a Letter_questions_to_letter_levels
+     * @example
+     * // Get one Letter_questions_to_letter_levels
+     * const letter_questions_to_letter_levels = await prisma.letter_questions_to_letter_levels.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends letter_questions_to_letter_levelsFindFirstArgs>(args?: SelectSubset<T, letter_questions_to_letter_levelsFindFirstArgs<ExtArgs>>): Prisma__letter_questions_to_letter_levelsClient<$Result.GetResult<Prisma.$letter_questions_to_letter_levelsPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Letter_questions_to_letter_levels that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_questions_to_letter_levelsFindFirstOrThrowArgs} args - Arguments to find a Letter_questions_to_letter_levels
+     * @example
+     * // Get one Letter_questions_to_letter_levels
+     * const letter_questions_to_letter_levels = await prisma.letter_questions_to_letter_levels.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends letter_questions_to_letter_levelsFindFirstOrThrowArgs>(args?: SelectSubset<T, letter_questions_to_letter_levelsFindFirstOrThrowArgs<ExtArgs>>): Prisma__letter_questions_to_letter_levelsClient<$Result.GetResult<Prisma.$letter_questions_to_letter_levelsPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more Letter_questions_to_letter_levels that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_questions_to_letter_levelsFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all Letter_questions_to_letter_levels
+     * const letter_questions_to_letter_levels = await prisma.letter_questions_to_letter_levels.findMany()
+     * 
+     * // Get first 10 Letter_questions_to_letter_levels
+     * const letter_questions_to_letter_levels = await prisma.letter_questions_to_letter_levels.findMany({ take: 10 })
+     * 
+     * // Only select the `letter_question_id`
+     * const letter_questions_to_letter_levelsWithLetter_question_idOnly = await prisma.letter_questions_to_letter_levels.findMany({ select: { letter_question_id: true } })
+     * 
+     */
+    findMany<T extends letter_questions_to_letter_levelsFindManyArgs>(args?: SelectSubset<T, letter_questions_to_letter_levelsFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_questions_to_letter_levelsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a Letter_questions_to_letter_levels.
+     * @param {letter_questions_to_letter_levelsCreateArgs} args - Arguments to create a Letter_questions_to_letter_levels.
+     * @example
+     * // Create one Letter_questions_to_letter_levels
+     * const Letter_questions_to_letter_levels = await prisma.letter_questions_to_letter_levels.create({
+     *   data: {
+     *     // ... data to create a Letter_questions_to_letter_levels
+     *   }
+     * })
+     * 
+     */
+    create<T extends letter_questions_to_letter_levelsCreateArgs>(args: SelectSubset<T, letter_questions_to_letter_levelsCreateArgs<ExtArgs>>): Prisma__letter_questions_to_letter_levelsClient<$Result.GetResult<Prisma.$letter_questions_to_letter_levelsPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many Letter_questions_to_letter_levels.
+     * @param {letter_questions_to_letter_levelsCreateManyArgs} args - Arguments to create many Letter_questions_to_letter_levels.
+     * @example
+     * // Create many Letter_questions_to_letter_levels
+     * const letter_questions_to_letter_levels = await prisma.letter_questions_to_letter_levels.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends letter_questions_to_letter_levelsCreateManyArgs>(args?: SelectSubset<T, letter_questions_to_letter_levelsCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many Letter_questions_to_letter_levels and returns the data saved in the database.
+     * @param {letter_questions_to_letter_levelsCreateManyAndReturnArgs} args - Arguments to create many Letter_questions_to_letter_levels.
+     * @example
+     * // Create many Letter_questions_to_letter_levels
+     * const letter_questions_to_letter_levels = await prisma.letter_questions_to_letter_levels.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Letter_questions_to_letter_levels and only return the `letter_question_id`
+     * const letter_questions_to_letter_levelsWithLetter_question_idOnly = await prisma.letter_questions_to_letter_levels.createManyAndReturn({
+     *   select: { letter_question_id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends letter_questions_to_letter_levelsCreateManyAndReturnArgs>(args?: SelectSubset<T, letter_questions_to_letter_levelsCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_questions_to_letter_levelsPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a Letter_questions_to_letter_levels.
+     * @param {letter_questions_to_letter_levelsDeleteArgs} args - Arguments to delete one Letter_questions_to_letter_levels.
+     * @example
+     * // Delete one Letter_questions_to_letter_levels
+     * const Letter_questions_to_letter_levels = await prisma.letter_questions_to_letter_levels.delete({
+     *   where: {
+     *     // ... filter to delete one Letter_questions_to_letter_levels
+     *   }
+     * })
+     * 
+     */
+    delete<T extends letter_questions_to_letter_levelsDeleteArgs>(args: SelectSubset<T, letter_questions_to_letter_levelsDeleteArgs<ExtArgs>>): Prisma__letter_questions_to_letter_levelsClient<$Result.GetResult<Prisma.$letter_questions_to_letter_levelsPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one Letter_questions_to_letter_levels.
+     * @param {letter_questions_to_letter_levelsUpdateArgs} args - Arguments to update one Letter_questions_to_letter_levels.
+     * @example
+     * // Update one Letter_questions_to_letter_levels
+     * const letter_questions_to_letter_levels = await prisma.letter_questions_to_letter_levels.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends letter_questions_to_letter_levelsUpdateArgs>(args: SelectSubset<T, letter_questions_to_letter_levelsUpdateArgs<ExtArgs>>): Prisma__letter_questions_to_letter_levelsClient<$Result.GetResult<Prisma.$letter_questions_to_letter_levelsPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more Letter_questions_to_letter_levels.
+     * @param {letter_questions_to_letter_levelsDeleteManyArgs} args - Arguments to filter Letter_questions_to_letter_levels to delete.
+     * @example
+     * // Delete a few Letter_questions_to_letter_levels
+     * const { count } = await prisma.letter_questions_to_letter_levels.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends letter_questions_to_letter_levelsDeleteManyArgs>(args?: SelectSubset<T, letter_questions_to_letter_levelsDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Letter_questions_to_letter_levels.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_questions_to_letter_levelsUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many Letter_questions_to_letter_levels
+     * const letter_questions_to_letter_levels = await prisma.letter_questions_to_letter_levels.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends letter_questions_to_letter_levelsUpdateManyArgs>(args: SelectSubset<T, letter_questions_to_letter_levelsUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Letter_questions_to_letter_levels and returns the data updated in the database.
+     * @param {letter_questions_to_letter_levelsUpdateManyAndReturnArgs} args - Arguments to update many Letter_questions_to_letter_levels.
+     * @example
+     * // Update many Letter_questions_to_letter_levels
+     * const letter_questions_to_letter_levels = await prisma.letter_questions_to_letter_levels.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Letter_questions_to_letter_levels and only return the `letter_question_id`
+     * const letter_questions_to_letter_levelsWithLetter_question_idOnly = await prisma.letter_questions_to_letter_levels.updateManyAndReturn({
+     *   select: { letter_question_id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends letter_questions_to_letter_levelsUpdateManyAndReturnArgs>(args: SelectSubset<T, letter_questions_to_letter_levelsUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_questions_to_letter_levelsPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one Letter_questions_to_letter_levels.
+     * @param {letter_questions_to_letter_levelsUpsertArgs} args - Arguments to update or create a Letter_questions_to_letter_levels.
+     * @example
+     * // Update or create a Letter_questions_to_letter_levels
+     * const letter_questions_to_letter_levels = await prisma.letter_questions_to_letter_levels.upsert({
+     *   create: {
+     *     // ... data to create a Letter_questions_to_letter_levels
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the Letter_questions_to_letter_levels we want to update
+     *   }
+     * })
+     */
+    upsert<T extends letter_questions_to_letter_levelsUpsertArgs>(args: SelectSubset<T, letter_questions_to_letter_levelsUpsertArgs<ExtArgs>>): Prisma__letter_questions_to_letter_levelsClient<$Result.GetResult<Prisma.$letter_questions_to_letter_levelsPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of Letter_questions_to_letter_levels.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_questions_to_letter_levelsCountArgs} args - Arguments to filter Letter_questions_to_letter_levels to count.
+     * @example
+     * // Count the number of Letter_questions_to_letter_levels
+     * const count = await prisma.letter_questions_to_letter_levels.count({
+     *   where: {
+     *     // ... the filter for the Letter_questions_to_letter_levels we want to count
+     *   }
+     * })
+    **/
+    count<T extends letter_questions_to_letter_levelsCountArgs>(
+      args?: Subset<T, letter_questions_to_letter_levelsCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], Letter_questions_to_letter_levelsCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a Letter_questions_to_letter_levels.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {Letter_questions_to_letter_levelsAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends Letter_questions_to_letter_levelsAggregateArgs>(args: Subset<T, Letter_questions_to_letter_levelsAggregateArgs>): Prisma.PrismaPromise<GetLetter_questions_to_letter_levelsAggregateType<T>>
+
+    /**
+     * Group by Letter_questions_to_letter_levels.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_questions_to_letter_levelsGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends letter_questions_to_letter_levelsGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: letter_questions_to_letter_levelsGroupByArgs['orderBy'] }
+        : { orderBy?: letter_questions_to_letter_levelsGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, letter_questions_to_letter_levelsGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetLetter_questions_to_letter_levelsGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the letter_questions_to_letter_levels model
+   */
+  readonly fields: letter_questions_to_letter_levelsFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for letter_questions_to_letter_levels.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__letter_questions_to_letter_levelsClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    letter_levels<T extends letter_levelsDefaultArgs<ExtArgs> = {}>(args?: Subset<T, letter_levelsDefaultArgs<ExtArgs>>): Prisma__letter_levelsClient<$Result.GetResult<Prisma.$letter_levelsPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    letter_questions<T extends letter_questionsDefaultArgs<ExtArgs> = {}>(args?: Subset<T, letter_questionsDefaultArgs<ExtArgs>>): Prisma__letter_questionsClient<$Result.GetResult<Prisma.$letter_questionsPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the letter_questions_to_letter_levels model
+   */
+  interface letter_questions_to_letter_levelsFieldRefs {
+    readonly letter_question_id: FieldRef<"letter_questions_to_letter_levels", 'String'>
+    readonly letter_level_id: FieldRef<"letter_questions_to_letter_levels", 'String'>
+    readonly number: FieldRef<"letter_questions_to_letter_levels", 'Int'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * letter_questions_to_letter_levels findUnique
+   */
+  export type letter_questions_to_letter_levelsFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions_to_letter_levels
+     */
+    select?: letter_questions_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions_to_letter_levels
+     */
+    omit?: letter_questions_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questions_to_letter_levelsInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_questions_to_letter_levels to fetch.
+     */
+    where: letter_questions_to_letter_levelsWhereUniqueInput
+  }
+
+  /**
+   * letter_questions_to_letter_levels findUniqueOrThrow
+   */
+  export type letter_questions_to_letter_levelsFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions_to_letter_levels
+     */
+    select?: letter_questions_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions_to_letter_levels
+     */
+    omit?: letter_questions_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questions_to_letter_levelsInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_questions_to_letter_levels to fetch.
+     */
+    where: letter_questions_to_letter_levelsWhereUniqueInput
+  }
+
+  /**
+   * letter_questions_to_letter_levels findFirst
+   */
+  export type letter_questions_to_letter_levelsFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions_to_letter_levels
+     */
+    select?: letter_questions_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions_to_letter_levels
+     */
+    omit?: letter_questions_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questions_to_letter_levelsInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_questions_to_letter_levels to fetch.
+     */
+    where?: letter_questions_to_letter_levelsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_questions_to_letter_levels to fetch.
+     */
+    orderBy?: letter_questions_to_letter_levelsOrderByWithRelationInput | letter_questions_to_letter_levelsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for letter_questions_to_letter_levels.
+     */
+    cursor?: letter_questions_to_letter_levelsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_questions_to_letter_levels from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_questions_to_letter_levels.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of letter_questions_to_letter_levels.
+     */
+    distinct?: Letter_questions_to_letter_levelsScalarFieldEnum | Letter_questions_to_letter_levelsScalarFieldEnum[]
+  }
+
+  /**
+   * letter_questions_to_letter_levels findFirstOrThrow
+   */
+  export type letter_questions_to_letter_levelsFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions_to_letter_levels
+     */
+    select?: letter_questions_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions_to_letter_levels
+     */
+    omit?: letter_questions_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questions_to_letter_levelsInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_questions_to_letter_levels to fetch.
+     */
+    where?: letter_questions_to_letter_levelsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_questions_to_letter_levels to fetch.
+     */
+    orderBy?: letter_questions_to_letter_levelsOrderByWithRelationInput | letter_questions_to_letter_levelsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for letter_questions_to_letter_levels.
+     */
+    cursor?: letter_questions_to_letter_levelsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_questions_to_letter_levels from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_questions_to_letter_levels.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of letter_questions_to_letter_levels.
+     */
+    distinct?: Letter_questions_to_letter_levelsScalarFieldEnum | Letter_questions_to_letter_levelsScalarFieldEnum[]
+  }
+
+  /**
+   * letter_questions_to_letter_levels findMany
+   */
+  export type letter_questions_to_letter_levelsFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions_to_letter_levels
+     */
+    select?: letter_questions_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions_to_letter_levels
+     */
+    omit?: letter_questions_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questions_to_letter_levelsInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_questions_to_letter_levels to fetch.
+     */
+    where?: letter_questions_to_letter_levelsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_questions_to_letter_levels to fetch.
+     */
+    orderBy?: letter_questions_to_letter_levelsOrderByWithRelationInput | letter_questions_to_letter_levelsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing letter_questions_to_letter_levels.
+     */
+    cursor?: letter_questions_to_letter_levelsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_questions_to_letter_levels from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_questions_to_letter_levels.
+     */
+    skip?: number
+    distinct?: Letter_questions_to_letter_levelsScalarFieldEnum | Letter_questions_to_letter_levelsScalarFieldEnum[]
+  }
+
+  /**
+   * letter_questions_to_letter_levels create
+   */
+  export type letter_questions_to_letter_levelsCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions_to_letter_levels
+     */
+    select?: letter_questions_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions_to_letter_levels
+     */
+    omit?: letter_questions_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questions_to_letter_levelsInclude<ExtArgs> | null
+    /**
+     * The data needed to create a letter_questions_to_letter_levels.
+     */
+    data: XOR<letter_questions_to_letter_levelsCreateInput, letter_questions_to_letter_levelsUncheckedCreateInput>
+  }
+
+  /**
+   * letter_questions_to_letter_levels createMany
+   */
+  export type letter_questions_to_letter_levelsCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many letter_questions_to_letter_levels.
+     */
+    data: letter_questions_to_letter_levelsCreateManyInput | letter_questions_to_letter_levelsCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * letter_questions_to_letter_levels createManyAndReturn
+   */
+  export type letter_questions_to_letter_levelsCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions_to_letter_levels
+     */
+    select?: letter_questions_to_letter_levelsSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions_to_letter_levels
+     */
+    omit?: letter_questions_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * The data used to create many letter_questions_to_letter_levels.
+     */
+    data: letter_questions_to_letter_levelsCreateManyInput | letter_questions_to_letter_levelsCreateManyInput[]
+    skipDuplicates?: boolean
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questions_to_letter_levelsIncludeCreateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * letter_questions_to_letter_levels update
+   */
+  export type letter_questions_to_letter_levelsUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions_to_letter_levels
+     */
+    select?: letter_questions_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions_to_letter_levels
+     */
+    omit?: letter_questions_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questions_to_letter_levelsInclude<ExtArgs> | null
+    /**
+     * The data needed to update a letter_questions_to_letter_levels.
+     */
+    data: XOR<letter_questions_to_letter_levelsUpdateInput, letter_questions_to_letter_levelsUncheckedUpdateInput>
+    /**
+     * Choose, which letter_questions_to_letter_levels to update.
+     */
+    where: letter_questions_to_letter_levelsWhereUniqueInput
+  }
+
+  /**
+   * letter_questions_to_letter_levels updateMany
+   */
+  export type letter_questions_to_letter_levelsUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update letter_questions_to_letter_levels.
+     */
+    data: XOR<letter_questions_to_letter_levelsUpdateManyMutationInput, letter_questions_to_letter_levelsUncheckedUpdateManyInput>
+    /**
+     * Filter which letter_questions_to_letter_levels to update
+     */
+    where?: letter_questions_to_letter_levelsWhereInput
+    /**
+     * Limit how many letter_questions_to_letter_levels to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * letter_questions_to_letter_levels updateManyAndReturn
+   */
+  export type letter_questions_to_letter_levelsUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions_to_letter_levels
+     */
+    select?: letter_questions_to_letter_levelsSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions_to_letter_levels
+     */
+    omit?: letter_questions_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * The data used to update letter_questions_to_letter_levels.
+     */
+    data: XOR<letter_questions_to_letter_levelsUpdateManyMutationInput, letter_questions_to_letter_levelsUncheckedUpdateManyInput>
+    /**
+     * Filter which letter_questions_to_letter_levels to update
+     */
+    where?: letter_questions_to_letter_levelsWhereInput
+    /**
+     * Limit how many letter_questions_to_letter_levels to update.
+     */
+    limit?: number
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questions_to_letter_levelsIncludeUpdateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * letter_questions_to_letter_levels upsert
+   */
+  export type letter_questions_to_letter_levelsUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions_to_letter_levels
+     */
+    select?: letter_questions_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions_to_letter_levels
+     */
+    omit?: letter_questions_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questions_to_letter_levelsInclude<ExtArgs> | null
+    /**
+     * The filter to search for the letter_questions_to_letter_levels to update in case it exists.
+     */
+    where: letter_questions_to_letter_levelsWhereUniqueInput
+    /**
+     * In case the letter_questions_to_letter_levels found by the `where` argument doesn't exist, create a new letter_questions_to_letter_levels with this data.
+     */
+    create: XOR<letter_questions_to_letter_levelsCreateInput, letter_questions_to_letter_levelsUncheckedCreateInput>
+    /**
+     * In case the letter_questions_to_letter_levels was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<letter_questions_to_letter_levelsUpdateInput, letter_questions_to_letter_levelsUncheckedUpdateInput>
+  }
+
+  /**
+   * letter_questions_to_letter_levels delete
+   */
+  export type letter_questions_to_letter_levelsDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions_to_letter_levels
+     */
+    select?: letter_questions_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions_to_letter_levels
+     */
+    omit?: letter_questions_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questions_to_letter_levelsInclude<ExtArgs> | null
+    /**
+     * Filter which letter_questions_to_letter_levels to delete.
+     */
+    where: letter_questions_to_letter_levelsWhereUniqueInput
+  }
+
+  /**
+   * letter_questions_to_letter_levels deleteMany
+   */
+  export type letter_questions_to_letter_levelsDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which letter_questions_to_letter_levels to delete
+     */
+    where?: letter_questions_to_letter_levelsWhereInput
+    /**
+     * Limit how many letter_questions_to_letter_levels to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * letter_questions_to_letter_levels without action
+   */
+  export type letter_questions_to_letter_levelsDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_questions_to_letter_levels
+     */
+    select?: letter_questions_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_questions_to_letter_levels
+     */
+    omit?: letter_questions_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_questions_to_letter_levelsInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Model letter_types
+   */
+
+  export type AggregateLetter_types = {
+    _count: Letter_typesCountAggregateOutputType | null
+    _min: Letter_typesMinAggregateOutputType | null
+    _max: Letter_typesMaxAggregateOutputType | null
+  }
+
+  export type Letter_typesMinAggregateOutputType = {
+    id: string | null
+    created_at: Date | null
+    updated_at: Date | null
+    name: string | null
+    deleted: boolean | null
+  }
+
+  export type Letter_typesMaxAggregateOutputType = {
+    id: string | null
+    created_at: Date | null
+    updated_at: Date | null
+    name: string | null
+    deleted: boolean | null
+  }
+
+  export type Letter_typesCountAggregateOutputType = {
+    id: number
+    created_at: number
+    updated_at: number
+    name: number
+    deleted: number
+    _all: number
+  }
+
+
+  export type Letter_typesMinAggregateInputType = {
+    id?: true
+    created_at?: true
+    updated_at?: true
+    name?: true
+    deleted?: true
+  }
+
+  export type Letter_typesMaxAggregateInputType = {
+    id?: true
+    created_at?: true
+    updated_at?: true
+    name?: true
+    deleted?: true
+  }
+
+  export type Letter_typesCountAggregateInputType = {
+    id?: true
+    created_at?: true
+    updated_at?: true
+    name?: true
+    deleted?: true
+    _all?: true
+  }
+
+  export type Letter_typesAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which letter_types to aggregate.
+     */
+    where?: letter_typesWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_types to fetch.
+     */
+    orderBy?: letter_typesOrderByWithRelationInput | letter_typesOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: letter_typesWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_types from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_types.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned letter_types
+    **/
+    _count?: true | Letter_typesCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: Letter_typesMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: Letter_typesMaxAggregateInputType
+  }
+
+  export type GetLetter_typesAggregateType<T extends Letter_typesAggregateArgs> = {
+        [P in keyof T & keyof AggregateLetter_types]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateLetter_types[P]>
+      : GetScalarType<T[P], AggregateLetter_types[P]>
+  }
+
+
+
+
+  export type letter_typesGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: letter_typesWhereInput
+    orderBy?: letter_typesOrderByWithAggregationInput | letter_typesOrderByWithAggregationInput[]
+    by: Letter_typesScalarFieldEnum[] | Letter_typesScalarFieldEnum
+    having?: letter_typesScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: Letter_typesCountAggregateInputType | true
+    _min?: Letter_typesMinAggregateInputType
+    _max?: Letter_typesMaxAggregateInputType
+  }
+
+  export type Letter_typesGroupByOutputType = {
+    id: string
+    created_at: Date
+    updated_at: Date
+    name: string
+    deleted: boolean
+    _count: Letter_typesCountAggregateOutputType | null
+    _min: Letter_typesMinAggregateOutputType | null
+    _max: Letter_typesMaxAggregateOutputType | null
+  }
+
+  type GetLetter_typesGroupByPayload<T extends letter_typesGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<Letter_typesGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof Letter_typesGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], Letter_typesGroupByOutputType[P]>
+            : GetScalarType<T[P], Letter_typesGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type letter_typesSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    created_at?: boolean
+    updated_at?: boolean
+    name?: boolean
+    deleted?: boolean
+    letter_levels?: boolean | letter_types$letter_levelsArgs<ExtArgs>
+    letters?: boolean | letter_types$lettersArgs<ExtArgs>
+    _count?: boolean | Letter_typesCountOutputTypeDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["letter_types"]>
+
+  export type letter_typesSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    created_at?: boolean
+    updated_at?: boolean
+    name?: boolean
+    deleted?: boolean
+  }, ExtArgs["result"]["letter_types"]>
+
+  export type letter_typesSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    created_at?: boolean
+    updated_at?: boolean
+    name?: boolean
+    deleted?: boolean
+  }, ExtArgs["result"]["letter_types"]>
+
+  export type letter_typesSelectScalar = {
+    id?: boolean
+    created_at?: boolean
+    updated_at?: boolean
+    name?: boolean
+    deleted?: boolean
+  }
+
+  export type letter_typesOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "created_at" | "updated_at" | "name" | "deleted", ExtArgs["result"]["letter_types"]>
+  export type letter_typesInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letter_levels?: boolean | letter_types$letter_levelsArgs<ExtArgs>
+    letters?: boolean | letter_types$lettersArgs<ExtArgs>
+    _count?: boolean | Letter_typesCountOutputTypeDefaultArgs<ExtArgs>
+  }
+  export type letter_typesIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
+  export type letter_typesIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
+
+  export type $letter_typesPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "letter_types"
+    objects: {
+      letter_levels: Prisma.$letter_levelsPayload<ExtArgs>[]
+      letters: Prisma.$lettersPayload<ExtArgs>[]
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      id: string
+      created_at: Date
+      updated_at: Date
+      name: string
+      deleted: boolean
+    }, ExtArgs["result"]["letter_types"]>
+    composites: {}
+  }
+
+  type letter_typesGetPayload<S extends boolean | null | undefined | letter_typesDefaultArgs> = $Result.GetResult<Prisma.$letter_typesPayload, S>
+
+  type letter_typesCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<letter_typesFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: Letter_typesCountAggregateInputType | true
+    }
+
+  export interface letter_typesDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['letter_types'], meta: { name: 'letter_types' } }
+    /**
+     * Find zero or one Letter_types that matches the filter.
+     * @param {letter_typesFindUniqueArgs} args - Arguments to find a Letter_types
+     * @example
+     * // Get one Letter_types
+     * const letter_types = await prisma.letter_types.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends letter_typesFindUniqueArgs>(args: SelectSubset<T, letter_typesFindUniqueArgs<ExtArgs>>): Prisma__letter_typesClient<$Result.GetResult<Prisma.$letter_typesPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one Letter_types that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {letter_typesFindUniqueOrThrowArgs} args - Arguments to find a Letter_types
+     * @example
+     * // Get one Letter_types
+     * const letter_types = await prisma.letter_types.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends letter_typesFindUniqueOrThrowArgs>(args: SelectSubset<T, letter_typesFindUniqueOrThrowArgs<ExtArgs>>): Prisma__letter_typesClient<$Result.GetResult<Prisma.$letter_typesPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Letter_types that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_typesFindFirstArgs} args - Arguments to find a Letter_types
+     * @example
+     * // Get one Letter_types
+     * const letter_types = await prisma.letter_types.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends letter_typesFindFirstArgs>(args?: SelectSubset<T, letter_typesFindFirstArgs<ExtArgs>>): Prisma__letter_typesClient<$Result.GetResult<Prisma.$letter_typesPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Letter_types that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_typesFindFirstOrThrowArgs} args - Arguments to find a Letter_types
+     * @example
+     * // Get one Letter_types
+     * const letter_types = await prisma.letter_types.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends letter_typesFindFirstOrThrowArgs>(args?: SelectSubset<T, letter_typesFindFirstOrThrowArgs<ExtArgs>>): Prisma__letter_typesClient<$Result.GetResult<Prisma.$letter_typesPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more Letter_types that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_typesFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all Letter_types
+     * const letter_types = await prisma.letter_types.findMany()
+     * 
+     * // Get first 10 Letter_types
+     * const letter_types = await prisma.letter_types.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const letter_typesWithIdOnly = await prisma.letter_types.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends letter_typesFindManyArgs>(args?: SelectSubset<T, letter_typesFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_typesPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a Letter_types.
+     * @param {letter_typesCreateArgs} args - Arguments to create a Letter_types.
+     * @example
+     * // Create one Letter_types
+     * const Letter_types = await prisma.letter_types.create({
+     *   data: {
+     *     // ... data to create a Letter_types
+     *   }
+     * })
+     * 
+     */
+    create<T extends letter_typesCreateArgs>(args: SelectSubset<T, letter_typesCreateArgs<ExtArgs>>): Prisma__letter_typesClient<$Result.GetResult<Prisma.$letter_typesPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many Letter_types.
+     * @param {letter_typesCreateManyArgs} args - Arguments to create many Letter_types.
+     * @example
+     * // Create many Letter_types
+     * const letter_types = await prisma.letter_types.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends letter_typesCreateManyArgs>(args?: SelectSubset<T, letter_typesCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many Letter_types and returns the data saved in the database.
+     * @param {letter_typesCreateManyAndReturnArgs} args - Arguments to create many Letter_types.
+     * @example
+     * // Create many Letter_types
+     * const letter_types = await prisma.letter_types.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Letter_types and only return the `id`
+     * const letter_typesWithIdOnly = await prisma.letter_types.createManyAndReturn({
+     *   select: { id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends letter_typesCreateManyAndReturnArgs>(args?: SelectSubset<T, letter_typesCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_typesPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a Letter_types.
+     * @param {letter_typesDeleteArgs} args - Arguments to delete one Letter_types.
+     * @example
+     * // Delete one Letter_types
+     * const Letter_types = await prisma.letter_types.delete({
+     *   where: {
+     *     // ... filter to delete one Letter_types
+     *   }
+     * })
+     * 
+     */
+    delete<T extends letter_typesDeleteArgs>(args: SelectSubset<T, letter_typesDeleteArgs<ExtArgs>>): Prisma__letter_typesClient<$Result.GetResult<Prisma.$letter_typesPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one Letter_types.
+     * @param {letter_typesUpdateArgs} args - Arguments to update one Letter_types.
+     * @example
+     * // Update one Letter_types
+     * const letter_types = await prisma.letter_types.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends letter_typesUpdateArgs>(args: SelectSubset<T, letter_typesUpdateArgs<ExtArgs>>): Prisma__letter_typesClient<$Result.GetResult<Prisma.$letter_typesPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more Letter_types.
+     * @param {letter_typesDeleteManyArgs} args - Arguments to filter Letter_types to delete.
+     * @example
+     * // Delete a few Letter_types
+     * const { count } = await prisma.letter_types.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends letter_typesDeleteManyArgs>(args?: SelectSubset<T, letter_typesDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Letter_types.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_typesUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many Letter_types
+     * const letter_types = await prisma.letter_types.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends letter_typesUpdateManyArgs>(args: SelectSubset<T, letter_typesUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Letter_types and returns the data updated in the database.
+     * @param {letter_typesUpdateManyAndReturnArgs} args - Arguments to update many Letter_types.
+     * @example
+     * // Update many Letter_types
+     * const letter_types = await prisma.letter_types.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Letter_types and only return the `id`
+     * const letter_typesWithIdOnly = await prisma.letter_types.updateManyAndReturn({
+     *   select: { id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends letter_typesUpdateManyAndReturnArgs>(args: SelectSubset<T, letter_typesUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_typesPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one Letter_types.
+     * @param {letter_typesUpsertArgs} args - Arguments to update or create a Letter_types.
+     * @example
+     * // Update or create a Letter_types
+     * const letter_types = await prisma.letter_types.upsert({
+     *   create: {
+     *     // ... data to create a Letter_types
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the Letter_types we want to update
+     *   }
+     * })
+     */
+    upsert<T extends letter_typesUpsertArgs>(args: SelectSubset<T, letter_typesUpsertArgs<ExtArgs>>): Prisma__letter_typesClient<$Result.GetResult<Prisma.$letter_typesPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of Letter_types.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_typesCountArgs} args - Arguments to filter Letter_types to count.
+     * @example
+     * // Count the number of Letter_types
+     * const count = await prisma.letter_types.count({
+     *   where: {
+     *     // ... the filter for the Letter_types we want to count
+     *   }
+     * })
+    **/
+    count<T extends letter_typesCountArgs>(
+      args?: Subset<T, letter_typesCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], Letter_typesCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a Letter_types.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {Letter_typesAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends Letter_typesAggregateArgs>(args: Subset<T, Letter_typesAggregateArgs>): Prisma.PrismaPromise<GetLetter_typesAggregateType<T>>
+
+    /**
+     * Group by Letter_types.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letter_typesGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends letter_typesGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: letter_typesGroupByArgs['orderBy'] }
+        : { orderBy?: letter_typesGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, letter_typesGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetLetter_typesGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the letter_types model
+   */
+  readonly fields: letter_typesFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for letter_types.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__letter_typesClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    letter_levels<T extends letter_types$letter_levelsArgs<ExtArgs> = {}>(args?: Subset<T, letter_types$letter_levelsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letter_levelsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    letters<T extends letter_types$lettersArgs<ExtArgs> = {}>(args?: Subset<T, letter_types$lettersArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$lettersPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the letter_types model
+   */
+  interface letter_typesFieldRefs {
+    readonly id: FieldRef<"letter_types", 'String'>
+    readonly created_at: FieldRef<"letter_types", 'DateTime'>
+    readonly updated_at: FieldRef<"letter_types", 'DateTime'>
+    readonly name: FieldRef<"letter_types", 'String'>
+    readonly deleted: FieldRef<"letter_types", 'Boolean'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * letter_types findUnique
+   */
+  export type letter_typesFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_types
+     */
+    select?: letter_typesSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_types
+     */
+    omit?: letter_typesOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_typesInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_types to fetch.
+     */
+    where: letter_typesWhereUniqueInput
+  }
+
+  /**
+   * letter_types findUniqueOrThrow
+   */
+  export type letter_typesFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_types
+     */
+    select?: letter_typesSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_types
+     */
+    omit?: letter_typesOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_typesInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_types to fetch.
+     */
+    where: letter_typesWhereUniqueInput
+  }
+
+  /**
+   * letter_types findFirst
+   */
+  export type letter_typesFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_types
+     */
+    select?: letter_typesSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_types
+     */
+    omit?: letter_typesOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_typesInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_types to fetch.
+     */
+    where?: letter_typesWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_types to fetch.
+     */
+    orderBy?: letter_typesOrderByWithRelationInput | letter_typesOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for letter_types.
+     */
+    cursor?: letter_typesWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_types from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_types.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of letter_types.
+     */
+    distinct?: Letter_typesScalarFieldEnum | Letter_typesScalarFieldEnum[]
+  }
+
+  /**
+   * letter_types findFirstOrThrow
+   */
+  export type letter_typesFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_types
+     */
+    select?: letter_typesSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_types
+     */
+    omit?: letter_typesOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_typesInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_types to fetch.
+     */
+    where?: letter_typesWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_types to fetch.
+     */
+    orderBy?: letter_typesOrderByWithRelationInput | letter_typesOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for letter_types.
+     */
+    cursor?: letter_typesWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_types from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_types.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of letter_types.
+     */
+    distinct?: Letter_typesScalarFieldEnum | Letter_typesScalarFieldEnum[]
+  }
+
+  /**
+   * letter_types findMany
+   */
+  export type letter_typesFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_types
+     */
+    select?: letter_typesSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_types
+     */
+    omit?: letter_typesOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_typesInclude<ExtArgs> | null
+    /**
+     * Filter, which letter_types to fetch.
+     */
+    where?: letter_typesWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letter_types to fetch.
+     */
+    orderBy?: letter_typesOrderByWithRelationInput | letter_typesOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing letter_types.
+     */
+    cursor?: letter_typesWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letter_types from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letter_types.
+     */
+    skip?: number
+    distinct?: Letter_typesScalarFieldEnum | Letter_typesScalarFieldEnum[]
+  }
+
+  /**
+   * letter_types create
+   */
+  export type letter_typesCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_types
+     */
+    select?: letter_typesSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_types
+     */
+    omit?: letter_typesOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_typesInclude<ExtArgs> | null
+    /**
+     * The data needed to create a letter_types.
+     */
+    data?: XOR<letter_typesCreateInput, letter_typesUncheckedCreateInput>
+  }
+
+  /**
+   * letter_types createMany
+   */
+  export type letter_typesCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many letter_types.
+     */
+    data: letter_typesCreateManyInput | letter_typesCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * letter_types createManyAndReturn
+   */
+  export type letter_typesCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_types
+     */
+    select?: letter_typesSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_types
+     */
+    omit?: letter_typesOmit<ExtArgs> | null
+    /**
+     * The data used to create many letter_types.
+     */
+    data: letter_typesCreateManyInput | letter_typesCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * letter_types update
+   */
+  export type letter_typesUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_types
+     */
+    select?: letter_typesSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_types
+     */
+    omit?: letter_typesOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_typesInclude<ExtArgs> | null
+    /**
+     * The data needed to update a letter_types.
+     */
+    data: XOR<letter_typesUpdateInput, letter_typesUncheckedUpdateInput>
+    /**
+     * Choose, which letter_types to update.
+     */
+    where: letter_typesWhereUniqueInput
+  }
+
+  /**
+   * letter_types updateMany
+   */
+  export type letter_typesUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update letter_types.
+     */
+    data: XOR<letter_typesUpdateManyMutationInput, letter_typesUncheckedUpdateManyInput>
+    /**
+     * Filter which letter_types to update
+     */
+    where?: letter_typesWhereInput
+    /**
+     * Limit how many letter_types to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * letter_types updateManyAndReturn
+   */
+  export type letter_typesUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_types
+     */
+    select?: letter_typesSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_types
+     */
+    omit?: letter_typesOmit<ExtArgs> | null
+    /**
+     * The data used to update letter_types.
+     */
+    data: XOR<letter_typesUpdateManyMutationInput, letter_typesUncheckedUpdateManyInput>
+    /**
+     * Filter which letter_types to update
+     */
+    where?: letter_typesWhereInput
+    /**
+     * Limit how many letter_types to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * letter_types upsert
+   */
+  export type letter_typesUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_types
+     */
+    select?: letter_typesSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_types
+     */
+    omit?: letter_typesOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_typesInclude<ExtArgs> | null
+    /**
+     * The filter to search for the letter_types to update in case it exists.
+     */
+    where: letter_typesWhereUniqueInput
+    /**
+     * In case the letter_types found by the `where` argument doesn't exist, create a new letter_types with this data.
+     */
+    create: XOR<letter_typesCreateInput, letter_typesUncheckedCreateInput>
+    /**
+     * In case the letter_types was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<letter_typesUpdateInput, letter_typesUncheckedUpdateInput>
+  }
+
+  /**
+   * letter_types delete
+   */
+  export type letter_typesDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_types
+     */
+    select?: letter_typesSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_types
+     */
+    omit?: letter_typesOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_typesInclude<ExtArgs> | null
+    /**
+     * Filter which letter_types to delete.
+     */
+    where: letter_typesWhereUniqueInput
+  }
+
+  /**
+   * letter_types deleteMany
+   */
+  export type letter_typesDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which letter_types to delete
+     */
+    where?: letter_typesWhereInput
+    /**
+     * Limit how many letter_types to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * letter_types.letter_levels
+   */
+  export type letter_types$letter_levelsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_levels
+     */
+    select?: letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_levels
+     */
+    omit?: letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_levelsInclude<ExtArgs> | null
+    where?: letter_levelsWhereInput
+    orderBy?: letter_levelsOrderByWithRelationInput | letter_levelsOrderByWithRelationInput[]
+    cursor?: letter_levelsWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: Letter_levelsScalarFieldEnum | Letter_levelsScalarFieldEnum[]
+  }
+
+  /**
+   * letter_types.letters
+   */
+  export type letter_types$lettersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters
+     */
+    select?: lettersSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters
+     */
+    omit?: lettersOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: lettersInclude<ExtArgs> | null
+    where?: lettersWhereInput
+    orderBy?: lettersOrderByWithRelationInput | lettersOrderByWithRelationInput[]
+    cursor?: lettersWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: LettersScalarFieldEnum | LettersScalarFieldEnum[]
+  }
+
+  /**
+   * letter_types without action
+   */
+  export type letter_typesDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letter_types
+     */
+    select?: letter_typesSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letter_types
+     */
+    omit?: letter_typesOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letter_typesInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Model letters
+   */
+
+  export type AggregateLetters = {
+    _count: LettersCountAggregateOutputType | null
+    _min: LettersMinAggregateOutputType | null
+    _max: LettersMaxAggregateOutputType | null
+  }
+
+  export type LettersMinAggregateOutputType = {
+    created_at: Date | null
+    updated_at: Date | null
+    deleted: boolean | null
+    name: string | null
+    symbol: string | null
+    type_id: string | null
+    position_id: string | null
+    block_id: string | null
+    id: string | null
+  }
+
+  export type LettersMaxAggregateOutputType = {
+    created_at: Date | null
+    updated_at: Date | null
+    deleted: boolean | null
+    name: string | null
+    symbol: string | null
+    type_id: string | null
+    position_id: string | null
+    block_id: string | null
+    id: string | null
+  }
+
+  export type LettersCountAggregateOutputType = {
+    created_at: number
+    updated_at: number
+    deleted: number
+    name: number
+    symbol: number
+    type_id: number
+    position_id: number
+    block_id: number
+    id: number
+    _all: number
+  }
+
+
+  export type LettersMinAggregateInputType = {
+    created_at?: true
+    updated_at?: true
+    deleted?: true
+    name?: true
+    symbol?: true
+    type_id?: true
+    position_id?: true
+    block_id?: true
+    id?: true
+  }
+
+  export type LettersMaxAggregateInputType = {
+    created_at?: true
+    updated_at?: true
+    deleted?: true
+    name?: true
+    symbol?: true
+    type_id?: true
+    position_id?: true
+    block_id?: true
+    id?: true
+  }
+
+  export type LettersCountAggregateInputType = {
+    created_at?: true
+    updated_at?: true
+    deleted?: true
+    name?: true
+    symbol?: true
+    type_id?: true
+    position_id?: true
+    block_id?: true
+    id?: true
+    _all?: true
+  }
+
+  export type LettersAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which letters to aggregate.
+     */
+    where?: lettersWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letters to fetch.
+     */
+    orderBy?: lettersOrderByWithRelationInput | lettersOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: lettersWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letters from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letters.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned letters
+    **/
+    _count?: true | LettersCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: LettersMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: LettersMaxAggregateInputType
+  }
+
+  export type GetLettersAggregateType<T extends LettersAggregateArgs> = {
+        [P in keyof T & keyof AggregateLetters]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateLetters[P]>
+      : GetScalarType<T[P], AggregateLetters[P]>
+  }
+
+
+
+
+  export type lettersGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: lettersWhereInput
+    orderBy?: lettersOrderByWithAggregationInput | lettersOrderByWithAggregationInput[]
+    by: LettersScalarFieldEnum[] | LettersScalarFieldEnum
+    having?: lettersScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: LettersCountAggregateInputType | true
+    _min?: LettersMinAggregateInputType
+    _max?: LettersMaxAggregateInputType
+  }
+
+  export type LettersGroupByOutputType = {
+    created_at: Date
+    updated_at: Date
+    deleted: boolean
+    name: string
+    symbol: string
+    type_id: string
+    position_id: string
+    block_id: string
+    id: string
+    _count: LettersCountAggregateOutputType | null
+    _min: LettersMinAggregateOutputType | null
+    _max: LettersMaxAggregateOutputType | null
+  }
+
+  type GetLettersGroupByPayload<T extends lettersGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<LettersGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof LettersGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], LettersGroupByOutputType[P]>
+            : GetScalarType<T[P], LettersGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type lettersSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    created_at?: boolean
+    updated_at?: boolean
+    deleted?: boolean
+    name?: boolean
+    symbol?: boolean
+    type_id?: boolean
+    position_id?: boolean
+    block_id?: boolean
+    id?: boolean
+    letter_blocks?: boolean | letter_blocksDefaultArgs<ExtArgs>
+    letter_positions?: boolean | letter_positionsDefaultArgs<ExtArgs>
+    letter_types?: boolean | letter_typesDefaultArgs<ExtArgs>
+    letters_to_letter_levels?: boolean | letters$letters_to_letter_levelsArgs<ExtArgs>
+    _count?: boolean | LettersCountOutputTypeDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["letters"]>
+
+  export type lettersSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    created_at?: boolean
+    updated_at?: boolean
+    deleted?: boolean
+    name?: boolean
+    symbol?: boolean
+    type_id?: boolean
+    position_id?: boolean
+    block_id?: boolean
+    id?: boolean
+    letter_blocks?: boolean | letter_blocksDefaultArgs<ExtArgs>
+    letter_positions?: boolean | letter_positionsDefaultArgs<ExtArgs>
+    letter_types?: boolean | letter_typesDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["letters"]>
+
+  export type lettersSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    created_at?: boolean
+    updated_at?: boolean
+    deleted?: boolean
+    name?: boolean
+    symbol?: boolean
+    type_id?: boolean
+    position_id?: boolean
+    block_id?: boolean
+    id?: boolean
+    letter_blocks?: boolean | letter_blocksDefaultArgs<ExtArgs>
+    letter_positions?: boolean | letter_positionsDefaultArgs<ExtArgs>
+    letter_types?: boolean | letter_typesDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["letters"]>
+
+  export type lettersSelectScalar = {
+    created_at?: boolean
+    updated_at?: boolean
+    deleted?: boolean
+    name?: boolean
+    symbol?: boolean
+    type_id?: boolean
+    position_id?: boolean
+    block_id?: boolean
+    id?: boolean
+  }
+
+  export type lettersOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"created_at" | "updated_at" | "deleted" | "name" | "symbol" | "type_id" | "position_id" | "block_id" | "id", ExtArgs["result"]["letters"]>
+  export type lettersInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letter_blocks?: boolean | letter_blocksDefaultArgs<ExtArgs>
+    letter_positions?: boolean | letter_positionsDefaultArgs<ExtArgs>
+    letter_types?: boolean | letter_typesDefaultArgs<ExtArgs>
+    letters_to_letter_levels?: boolean | letters$letters_to_letter_levelsArgs<ExtArgs>
+    _count?: boolean | LettersCountOutputTypeDefaultArgs<ExtArgs>
+  }
+  export type lettersIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letter_blocks?: boolean | letter_blocksDefaultArgs<ExtArgs>
+    letter_positions?: boolean | letter_positionsDefaultArgs<ExtArgs>
+    letter_types?: boolean | letter_typesDefaultArgs<ExtArgs>
+  }
+  export type lettersIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letter_blocks?: boolean | letter_blocksDefaultArgs<ExtArgs>
+    letter_positions?: boolean | letter_positionsDefaultArgs<ExtArgs>
+    letter_types?: boolean | letter_typesDefaultArgs<ExtArgs>
+  }
+
+  export type $lettersPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "letters"
+    objects: {
+      letter_blocks: Prisma.$letter_blocksPayload<ExtArgs>
+      letter_positions: Prisma.$letter_positionsPayload<ExtArgs>
+      letter_types: Prisma.$letter_typesPayload<ExtArgs>
+      letters_to_letter_levels: Prisma.$letters_to_letter_levelsPayload<ExtArgs>[]
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      created_at: Date
+      updated_at: Date
+      deleted: boolean
+      name: string
+      symbol: string
+      type_id: string
+      position_id: string
+      block_id: string
+      id: string
+    }, ExtArgs["result"]["letters"]>
+    composites: {}
+  }
+
+  type lettersGetPayload<S extends boolean | null | undefined | lettersDefaultArgs> = $Result.GetResult<Prisma.$lettersPayload, S>
+
+  type lettersCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<lettersFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: LettersCountAggregateInputType | true
+    }
+
+  export interface lettersDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['letters'], meta: { name: 'letters' } }
+    /**
+     * Find zero or one Letters that matches the filter.
+     * @param {lettersFindUniqueArgs} args - Arguments to find a Letters
+     * @example
+     * // Get one Letters
+     * const letters = await prisma.letters.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends lettersFindUniqueArgs>(args: SelectSubset<T, lettersFindUniqueArgs<ExtArgs>>): Prisma__lettersClient<$Result.GetResult<Prisma.$lettersPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one Letters that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {lettersFindUniqueOrThrowArgs} args - Arguments to find a Letters
+     * @example
+     * // Get one Letters
+     * const letters = await prisma.letters.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends lettersFindUniqueOrThrowArgs>(args: SelectSubset<T, lettersFindUniqueOrThrowArgs<ExtArgs>>): Prisma__lettersClient<$Result.GetResult<Prisma.$lettersPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Letters that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {lettersFindFirstArgs} args - Arguments to find a Letters
+     * @example
+     * // Get one Letters
+     * const letters = await prisma.letters.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends lettersFindFirstArgs>(args?: SelectSubset<T, lettersFindFirstArgs<ExtArgs>>): Prisma__lettersClient<$Result.GetResult<Prisma.$lettersPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Letters that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {lettersFindFirstOrThrowArgs} args - Arguments to find a Letters
+     * @example
+     * // Get one Letters
+     * const letters = await prisma.letters.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends lettersFindFirstOrThrowArgs>(args?: SelectSubset<T, lettersFindFirstOrThrowArgs<ExtArgs>>): Prisma__lettersClient<$Result.GetResult<Prisma.$lettersPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more Letters that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {lettersFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all Letters
+     * const letters = await prisma.letters.findMany()
+     * 
+     * // Get first 10 Letters
+     * const letters = await prisma.letters.findMany({ take: 10 })
+     * 
+     * // Only select the `created_at`
+     * const lettersWithCreated_atOnly = await prisma.letters.findMany({ select: { created_at: true } })
+     * 
+     */
+    findMany<T extends lettersFindManyArgs>(args?: SelectSubset<T, lettersFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$lettersPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a Letters.
+     * @param {lettersCreateArgs} args - Arguments to create a Letters.
+     * @example
+     * // Create one Letters
+     * const Letters = await prisma.letters.create({
+     *   data: {
+     *     // ... data to create a Letters
+     *   }
+     * })
+     * 
+     */
+    create<T extends lettersCreateArgs>(args: SelectSubset<T, lettersCreateArgs<ExtArgs>>): Prisma__lettersClient<$Result.GetResult<Prisma.$lettersPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many Letters.
+     * @param {lettersCreateManyArgs} args - Arguments to create many Letters.
+     * @example
+     * // Create many Letters
+     * const letters = await prisma.letters.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends lettersCreateManyArgs>(args?: SelectSubset<T, lettersCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many Letters and returns the data saved in the database.
+     * @param {lettersCreateManyAndReturnArgs} args - Arguments to create many Letters.
+     * @example
+     * // Create many Letters
+     * const letters = await prisma.letters.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Letters and only return the `created_at`
+     * const lettersWithCreated_atOnly = await prisma.letters.createManyAndReturn({
+     *   select: { created_at: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends lettersCreateManyAndReturnArgs>(args?: SelectSubset<T, lettersCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$lettersPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a Letters.
+     * @param {lettersDeleteArgs} args - Arguments to delete one Letters.
+     * @example
+     * // Delete one Letters
+     * const Letters = await prisma.letters.delete({
+     *   where: {
+     *     // ... filter to delete one Letters
+     *   }
+     * })
+     * 
+     */
+    delete<T extends lettersDeleteArgs>(args: SelectSubset<T, lettersDeleteArgs<ExtArgs>>): Prisma__lettersClient<$Result.GetResult<Prisma.$lettersPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one Letters.
+     * @param {lettersUpdateArgs} args - Arguments to update one Letters.
+     * @example
+     * // Update one Letters
+     * const letters = await prisma.letters.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends lettersUpdateArgs>(args: SelectSubset<T, lettersUpdateArgs<ExtArgs>>): Prisma__lettersClient<$Result.GetResult<Prisma.$lettersPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more Letters.
+     * @param {lettersDeleteManyArgs} args - Arguments to filter Letters to delete.
+     * @example
+     * // Delete a few Letters
+     * const { count } = await prisma.letters.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends lettersDeleteManyArgs>(args?: SelectSubset<T, lettersDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Letters.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {lettersUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many Letters
+     * const letters = await prisma.letters.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends lettersUpdateManyArgs>(args: SelectSubset<T, lettersUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Letters and returns the data updated in the database.
+     * @param {lettersUpdateManyAndReturnArgs} args - Arguments to update many Letters.
+     * @example
+     * // Update many Letters
+     * const letters = await prisma.letters.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Letters and only return the `created_at`
+     * const lettersWithCreated_atOnly = await prisma.letters.updateManyAndReturn({
+     *   select: { created_at: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends lettersUpdateManyAndReturnArgs>(args: SelectSubset<T, lettersUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$lettersPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one Letters.
+     * @param {lettersUpsertArgs} args - Arguments to update or create a Letters.
+     * @example
+     * // Update or create a Letters
+     * const letters = await prisma.letters.upsert({
+     *   create: {
+     *     // ... data to create a Letters
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the Letters we want to update
+     *   }
+     * })
+     */
+    upsert<T extends lettersUpsertArgs>(args: SelectSubset<T, lettersUpsertArgs<ExtArgs>>): Prisma__lettersClient<$Result.GetResult<Prisma.$lettersPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of Letters.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {lettersCountArgs} args - Arguments to filter Letters to count.
+     * @example
+     * // Count the number of Letters
+     * const count = await prisma.letters.count({
+     *   where: {
+     *     // ... the filter for the Letters we want to count
+     *   }
+     * })
+    **/
+    count<T extends lettersCountArgs>(
+      args?: Subset<T, lettersCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], LettersCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a Letters.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {LettersAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends LettersAggregateArgs>(args: Subset<T, LettersAggregateArgs>): Prisma.PrismaPromise<GetLettersAggregateType<T>>
+
+    /**
+     * Group by Letters.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {lettersGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends lettersGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: lettersGroupByArgs['orderBy'] }
+        : { orderBy?: lettersGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, lettersGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetLettersGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the letters model
+   */
+  readonly fields: lettersFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for letters.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__lettersClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    letter_blocks<T extends letter_blocksDefaultArgs<ExtArgs> = {}>(args?: Subset<T, letter_blocksDefaultArgs<ExtArgs>>): Prisma__letter_blocksClient<$Result.GetResult<Prisma.$letter_blocksPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    letter_positions<T extends letter_positionsDefaultArgs<ExtArgs> = {}>(args?: Subset<T, letter_positionsDefaultArgs<ExtArgs>>): Prisma__letter_positionsClient<$Result.GetResult<Prisma.$letter_positionsPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    letter_types<T extends letter_typesDefaultArgs<ExtArgs> = {}>(args?: Subset<T, letter_typesDefaultArgs<ExtArgs>>): Prisma__letter_typesClient<$Result.GetResult<Prisma.$letter_typesPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    letters_to_letter_levels<T extends letters$letters_to_letter_levelsArgs<ExtArgs> = {}>(args?: Subset<T, letters$letters_to_letter_levelsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letters_to_letter_levelsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the letters model
+   */
+  interface lettersFieldRefs {
+    readonly created_at: FieldRef<"letters", 'DateTime'>
+    readonly updated_at: FieldRef<"letters", 'DateTime'>
+    readonly deleted: FieldRef<"letters", 'Boolean'>
+    readonly name: FieldRef<"letters", 'String'>
+    readonly symbol: FieldRef<"letters", 'String'>
+    readonly type_id: FieldRef<"letters", 'String'>
+    readonly position_id: FieldRef<"letters", 'String'>
+    readonly block_id: FieldRef<"letters", 'String'>
+    readonly id: FieldRef<"letters", 'String'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * letters findUnique
+   */
+  export type lettersFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters
+     */
+    select?: lettersSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters
+     */
+    omit?: lettersOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: lettersInclude<ExtArgs> | null
+    /**
+     * Filter, which letters to fetch.
+     */
+    where: lettersWhereUniqueInput
+  }
+
+  /**
+   * letters findUniqueOrThrow
+   */
+  export type lettersFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters
+     */
+    select?: lettersSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters
+     */
+    omit?: lettersOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: lettersInclude<ExtArgs> | null
+    /**
+     * Filter, which letters to fetch.
+     */
+    where: lettersWhereUniqueInput
+  }
+
+  /**
+   * letters findFirst
+   */
+  export type lettersFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters
+     */
+    select?: lettersSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters
+     */
+    omit?: lettersOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: lettersInclude<ExtArgs> | null
+    /**
+     * Filter, which letters to fetch.
+     */
+    where?: lettersWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letters to fetch.
+     */
+    orderBy?: lettersOrderByWithRelationInput | lettersOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for letters.
+     */
+    cursor?: lettersWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letters from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letters.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of letters.
+     */
+    distinct?: LettersScalarFieldEnum | LettersScalarFieldEnum[]
+  }
+
+  /**
+   * letters findFirstOrThrow
+   */
+  export type lettersFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters
+     */
+    select?: lettersSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters
+     */
+    omit?: lettersOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: lettersInclude<ExtArgs> | null
+    /**
+     * Filter, which letters to fetch.
+     */
+    where?: lettersWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letters to fetch.
+     */
+    orderBy?: lettersOrderByWithRelationInput | lettersOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for letters.
+     */
+    cursor?: lettersWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letters from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letters.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of letters.
+     */
+    distinct?: LettersScalarFieldEnum | LettersScalarFieldEnum[]
+  }
+
+  /**
+   * letters findMany
+   */
+  export type lettersFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters
+     */
+    select?: lettersSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters
+     */
+    omit?: lettersOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: lettersInclude<ExtArgs> | null
+    /**
+     * Filter, which letters to fetch.
+     */
+    where?: lettersWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letters to fetch.
+     */
+    orderBy?: lettersOrderByWithRelationInput | lettersOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing letters.
+     */
+    cursor?: lettersWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letters from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letters.
+     */
+    skip?: number
+    distinct?: LettersScalarFieldEnum | LettersScalarFieldEnum[]
+  }
+
+  /**
+   * letters create
+   */
+  export type lettersCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters
+     */
+    select?: lettersSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters
+     */
+    omit?: lettersOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: lettersInclude<ExtArgs> | null
+    /**
+     * The data needed to create a letters.
+     */
+    data: XOR<lettersCreateInput, lettersUncheckedCreateInput>
+  }
+
+  /**
+   * letters createMany
+   */
+  export type lettersCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many letters.
+     */
+    data: lettersCreateManyInput | lettersCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * letters createManyAndReturn
+   */
+  export type lettersCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters
+     */
+    select?: lettersSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters
+     */
+    omit?: lettersOmit<ExtArgs> | null
+    /**
+     * The data used to create many letters.
+     */
+    data: lettersCreateManyInput | lettersCreateManyInput[]
+    skipDuplicates?: boolean
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: lettersIncludeCreateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * letters update
+   */
+  export type lettersUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters
+     */
+    select?: lettersSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters
+     */
+    omit?: lettersOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: lettersInclude<ExtArgs> | null
+    /**
+     * The data needed to update a letters.
+     */
+    data: XOR<lettersUpdateInput, lettersUncheckedUpdateInput>
+    /**
+     * Choose, which letters to update.
+     */
+    where: lettersWhereUniqueInput
+  }
+
+  /**
+   * letters updateMany
+   */
+  export type lettersUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update letters.
+     */
+    data: XOR<lettersUpdateManyMutationInput, lettersUncheckedUpdateManyInput>
+    /**
+     * Filter which letters to update
+     */
+    where?: lettersWhereInput
+    /**
+     * Limit how many letters to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * letters updateManyAndReturn
+   */
+  export type lettersUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters
+     */
+    select?: lettersSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters
+     */
+    omit?: lettersOmit<ExtArgs> | null
+    /**
+     * The data used to update letters.
+     */
+    data: XOR<lettersUpdateManyMutationInput, lettersUncheckedUpdateManyInput>
+    /**
+     * Filter which letters to update
+     */
+    where?: lettersWhereInput
+    /**
+     * Limit how many letters to update.
+     */
+    limit?: number
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: lettersIncludeUpdateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * letters upsert
+   */
+  export type lettersUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters
+     */
+    select?: lettersSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters
+     */
+    omit?: lettersOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: lettersInclude<ExtArgs> | null
+    /**
+     * The filter to search for the letters to update in case it exists.
+     */
+    where: lettersWhereUniqueInput
+    /**
+     * In case the letters found by the `where` argument doesn't exist, create a new letters with this data.
+     */
+    create: XOR<lettersCreateInput, lettersUncheckedCreateInput>
+    /**
+     * In case the letters was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<lettersUpdateInput, lettersUncheckedUpdateInput>
+  }
+
+  /**
+   * letters delete
+   */
+  export type lettersDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters
+     */
+    select?: lettersSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters
+     */
+    omit?: lettersOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: lettersInclude<ExtArgs> | null
+    /**
+     * Filter which letters to delete.
+     */
+    where: lettersWhereUniqueInput
+  }
+
+  /**
+   * letters deleteMany
+   */
+  export type lettersDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which letters to delete
+     */
+    where?: lettersWhereInput
+    /**
+     * Limit how many letters to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * letters.letters_to_letter_levels
+   */
+  export type letters$letters_to_letter_levelsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters_to_letter_levels
+     */
+    select?: letters_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters_to_letter_levels
+     */
+    omit?: letters_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letters_to_letter_levelsInclude<ExtArgs> | null
+    where?: letters_to_letter_levelsWhereInput
+    orderBy?: letters_to_letter_levelsOrderByWithRelationInput | letters_to_letter_levelsOrderByWithRelationInput[]
+    cursor?: letters_to_letter_levelsWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: Letters_to_letter_levelsScalarFieldEnum | Letters_to_letter_levelsScalarFieldEnum[]
+  }
+
+  /**
+   * letters without action
+   */
+  export type lettersDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters
+     */
+    select?: lettersSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters
+     */
+    omit?: lettersOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: lettersInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Model letters_to_letter_levels
+   */
+
+  export type AggregateLetters_to_letter_levels = {
+    _count: Letters_to_letter_levelsCountAggregateOutputType | null
+    _min: Letters_to_letter_levelsMinAggregateOutputType | null
+    _max: Letters_to_letter_levelsMaxAggregateOutputType | null
+  }
+
+  export type Letters_to_letter_levelsMinAggregateOutputType = {
+    letter_id: string | null
+    letter_level_id: string | null
+  }
+
+  export type Letters_to_letter_levelsMaxAggregateOutputType = {
+    letter_id: string | null
+    letter_level_id: string | null
+  }
+
+  export type Letters_to_letter_levelsCountAggregateOutputType = {
+    letter_id: number
+    letter_level_id: number
+    _all: number
+  }
+
+
+  export type Letters_to_letter_levelsMinAggregateInputType = {
+    letter_id?: true
+    letter_level_id?: true
+  }
+
+  export type Letters_to_letter_levelsMaxAggregateInputType = {
+    letter_id?: true
+    letter_level_id?: true
+  }
+
+  export type Letters_to_letter_levelsCountAggregateInputType = {
+    letter_id?: true
+    letter_level_id?: true
+    _all?: true
+  }
+
+  export type Letters_to_letter_levelsAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which letters_to_letter_levels to aggregate.
+     */
+    where?: letters_to_letter_levelsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letters_to_letter_levels to fetch.
+     */
+    orderBy?: letters_to_letter_levelsOrderByWithRelationInput | letters_to_letter_levelsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: letters_to_letter_levelsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letters_to_letter_levels from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letters_to_letter_levels.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned letters_to_letter_levels
+    **/
+    _count?: true | Letters_to_letter_levelsCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: Letters_to_letter_levelsMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: Letters_to_letter_levelsMaxAggregateInputType
+  }
+
+  export type GetLetters_to_letter_levelsAggregateType<T extends Letters_to_letter_levelsAggregateArgs> = {
+        [P in keyof T & keyof AggregateLetters_to_letter_levels]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateLetters_to_letter_levels[P]>
+      : GetScalarType<T[P], AggregateLetters_to_letter_levels[P]>
+  }
+
+
+
+
+  export type letters_to_letter_levelsGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: letters_to_letter_levelsWhereInput
+    orderBy?: letters_to_letter_levelsOrderByWithAggregationInput | letters_to_letter_levelsOrderByWithAggregationInput[]
+    by: Letters_to_letter_levelsScalarFieldEnum[] | Letters_to_letter_levelsScalarFieldEnum
+    having?: letters_to_letter_levelsScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: Letters_to_letter_levelsCountAggregateInputType | true
+    _min?: Letters_to_letter_levelsMinAggregateInputType
+    _max?: Letters_to_letter_levelsMaxAggregateInputType
+  }
+
+  export type Letters_to_letter_levelsGroupByOutputType = {
+    letter_id: string
+    letter_level_id: string
+    _count: Letters_to_letter_levelsCountAggregateOutputType | null
+    _min: Letters_to_letter_levelsMinAggregateOutputType | null
+    _max: Letters_to_letter_levelsMaxAggregateOutputType | null
+  }
+
+  type GetLetters_to_letter_levelsGroupByPayload<T extends letters_to_letter_levelsGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<Letters_to_letter_levelsGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof Letters_to_letter_levelsGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], Letters_to_letter_levelsGroupByOutputType[P]>
+            : GetScalarType<T[P], Letters_to_letter_levelsGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type letters_to_letter_levelsSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    letter_id?: boolean
+    letter_level_id?: boolean
+    letters?: boolean | lettersDefaultArgs<ExtArgs>
+    letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["letters_to_letter_levels"]>
+
+  export type letters_to_letter_levelsSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    letter_id?: boolean
+    letter_level_id?: boolean
+    letters?: boolean | lettersDefaultArgs<ExtArgs>
+    letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["letters_to_letter_levels"]>
+
+  export type letters_to_letter_levelsSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    letter_id?: boolean
+    letter_level_id?: boolean
+    letters?: boolean | lettersDefaultArgs<ExtArgs>
+    letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["letters_to_letter_levels"]>
+
+  export type letters_to_letter_levelsSelectScalar = {
+    letter_id?: boolean
+    letter_level_id?: boolean
+  }
+
+  export type letters_to_letter_levelsOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"letter_id" | "letter_level_id", ExtArgs["result"]["letters_to_letter_levels"]>
+  export type letters_to_letter_levelsInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letters?: boolean | lettersDefaultArgs<ExtArgs>
+    letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+  }
+  export type letters_to_letter_levelsIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letters?: boolean | lettersDefaultArgs<ExtArgs>
+    letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+  }
+  export type letters_to_letter_levelsIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    letters?: boolean | lettersDefaultArgs<ExtArgs>
+    letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+  }
+
+  export type $letters_to_letter_levelsPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "letters_to_letter_levels"
+    objects: {
+      letters: Prisma.$lettersPayload<ExtArgs>
+      letter_levels: Prisma.$letter_levelsPayload<ExtArgs>
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      letter_id: string
+      letter_level_id: string
+    }, ExtArgs["result"]["letters_to_letter_levels"]>
+    composites: {}
+  }
+
+  type letters_to_letter_levelsGetPayload<S extends boolean | null | undefined | letters_to_letter_levelsDefaultArgs> = $Result.GetResult<Prisma.$letters_to_letter_levelsPayload, S>
+
+  type letters_to_letter_levelsCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<letters_to_letter_levelsFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: Letters_to_letter_levelsCountAggregateInputType | true
+    }
+
+  export interface letters_to_letter_levelsDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['letters_to_letter_levels'], meta: { name: 'letters_to_letter_levels' } }
+    /**
+     * Find zero or one Letters_to_letter_levels that matches the filter.
+     * @param {letters_to_letter_levelsFindUniqueArgs} args - Arguments to find a Letters_to_letter_levels
+     * @example
+     * // Get one Letters_to_letter_levels
+     * const letters_to_letter_levels = await prisma.letters_to_letter_levels.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends letters_to_letter_levelsFindUniqueArgs>(args: SelectSubset<T, letters_to_letter_levelsFindUniqueArgs<ExtArgs>>): Prisma__letters_to_letter_levelsClient<$Result.GetResult<Prisma.$letters_to_letter_levelsPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one Letters_to_letter_levels that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {letters_to_letter_levelsFindUniqueOrThrowArgs} args - Arguments to find a Letters_to_letter_levels
+     * @example
+     * // Get one Letters_to_letter_levels
+     * const letters_to_letter_levels = await prisma.letters_to_letter_levels.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends letters_to_letter_levelsFindUniqueOrThrowArgs>(args: SelectSubset<T, letters_to_letter_levelsFindUniqueOrThrowArgs<ExtArgs>>): Prisma__letters_to_letter_levelsClient<$Result.GetResult<Prisma.$letters_to_letter_levelsPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Letters_to_letter_levels that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letters_to_letter_levelsFindFirstArgs} args - Arguments to find a Letters_to_letter_levels
+     * @example
+     * // Get one Letters_to_letter_levels
+     * const letters_to_letter_levels = await prisma.letters_to_letter_levels.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends letters_to_letter_levelsFindFirstArgs>(args?: SelectSubset<T, letters_to_letter_levelsFindFirstArgs<ExtArgs>>): Prisma__letters_to_letter_levelsClient<$Result.GetResult<Prisma.$letters_to_letter_levelsPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Letters_to_letter_levels that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letters_to_letter_levelsFindFirstOrThrowArgs} args - Arguments to find a Letters_to_letter_levels
+     * @example
+     * // Get one Letters_to_letter_levels
+     * const letters_to_letter_levels = await prisma.letters_to_letter_levels.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends letters_to_letter_levelsFindFirstOrThrowArgs>(args?: SelectSubset<T, letters_to_letter_levelsFindFirstOrThrowArgs<ExtArgs>>): Prisma__letters_to_letter_levelsClient<$Result.GetResult<Prisma.$letters_to_letter_levelsPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more Letters_to_letter_levels that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letters_to_letter_levelsFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all Letters_to_letter_levels
+     * const letters_to_letter_levels = await prisma.letters_to_letter_levels.findMany()
+     * 
+     * // Get first 10 Letters_to_letter_levels
+     * const letters_to_letter_levels = await prisma.letters_to_letter_levels.findMany({ take: 10 })
+     * 
+     * // Only select the `letter_id`
+     * const letters_to_letter_levelsWithLetter_idOnly = await prisma.letters_to_letter_levels.findMany({ select: { letter_id: true } })
+     * 
+     */
+    findMany<T extends letters_to_letter_levelsFindManyArgs>(args?: SelectSubset<T, letters_to_letter_levelsFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letters_to_letter_levelsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a Letters_to_letter_levels.
+     * @param {letters_to_letter_levelsCreateArgs} args - Arguments to create a Letters_to_letter_levels.
+     * @example
+     * // Create one Letters_to_letter_levels
+     * const Letters_to_letter_levels = await prisma.letters_to_letter_levels.create({
+     *   data: {
+     *     // ... data to create a Letters_to_letter_levels
+     *   }
+     * })
+     * 
+     */
+    create<T extends letters_to_letter_levelsCreateArgs>(args: SelectSubset<T, letters_to_letter_levelsCreateArgs<ExtArgs>>): Prisma__letters_to_letter_levelsClient<$Result.GetResult<Prisma.$letters_to_letter_levelsPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many Letters_to_letter_levels.
+     * @param {letters_to_letter_levelsCreateManyArgs} args - Arguments to create many Letters_to_letter_levels.
+     * @example
+     * // Create many Letters_to_letter_levels
+     * const letters_to_letter_levels = await prisma.letters_to_letter_levels.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends letters_to_letter_levelsCreateManyArgs>(args?: SelectSubset<T, letters_to_letter_levelsCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many Letters_to_letter_levels and returns the data saved in the database.
+     * @param {letters_to_letter_levelsCreateManyAndReturnArgs} args - Arguments to create many Letters_to_letter_levels.
+     * @example
+     * // Create many Letters_to_letter_levels
+     * const letters_to_letter_levels = await prisma.letters_to_letter_levels.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Letters_to_letter_levels and only return the `letter_id`
+     * const letters_to_letter_levelsWithLetter_idOnly = await prisma.letters_to_letter_levels.createManyAndReturn({
+     *   select: { letter_id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends letters_to_letter_levelsCreateManyAndReturnArgs>(args?: SelectSubset<T, letters_to_letter_levelsCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letters_to_letter_levelsPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a Letters_to_letter_levels.
+     * @param {letters_to_letter_levelsDeleteArgs} args - Arguments to delete one Letters_to_letter_levels.
+     * @example
+     * // Delete one Letters_to_letter_levels
+     * const Letters_to_letter_levels = await prisma.letters_to_letter_levels.delete({
+     *   where: {
+     *     // ... filter to delete one Letters_to_letter_levels
+     *   }
+     * })
+     * 
+     */
+    delete<T extends letters_to_letter_levelsDeleteArgs>(args: SelectSubset<T, letters_to_letter_levelsDeleteArgs<ExtArgs>>): Prisma__letters_to_letter_levelsClient<$Result.GetResult<Prisma.$letters_to_letter_levelsPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one Letters_to_letter_levels.
+     * @param {letters_to_letter_levelsUpdateArgs} args - Arguments to update one Letters_to_letter_levels.
+     * @example
+     * // Update one Letters_to_letter_levels
+     * const letters_to_letter_levels = await prisma.letters_to_letter_levels.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends letters_to_letter_levelsUpdateArgs>(args: SelectSubset<T, letters_to_letter_levelsUpdateArgs<ExtArgs>>): Prisma__letters_to_letter_levelsClient<$Result.GetResult<Prisma.$letters_to_letter_levelsPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more Letters_to_letter_levels.
+     * @param {letters_to_letter_levelsDeleteManyArgs} args - Arguments to filter Letters_to_letter_levels to delete.
+     * @example
+     * // Delete a few Letters_to_letter_levels
+     * const { count } = await prisma.letters_to_letter_levels.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends letters_to_letter_levelsDeleteManyArgs>(args?: SelectSubset<T, letters_to_letter_levelsDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Letters_to_letter_levels.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letters_to_letter_levelsUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many Letters_to_letter_levels
+     * const letters_to_letter_levels = await prisma.letters_to_letter_levels.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends letters_to_letter_levelsUpdateManyArgs>(args: SelectSubset<T, letters_to_letter_levelsUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Letters_to_letter_levels and returns the data updated in the database.
+     * @param {letters_to_letter_levelsUpdateManyAndReturnArgs} args - Arguments to update many Letters_to_letter_levels.
+     * @example
+     * // Update many Letters_to_letter_levels
+     * const letters_to_letter_levels = await prisma.letters_to_letter_levels.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Letters_to_letter_levels and only return the `letter_id`
+     * const letters_to_letter_levelsWithLetter_idOnly = await prisma.letters_to_letter_levels.updateManyAndReturn({
+     *   select: { letter_id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends letters_to_letter_levelsUpdateManyAndReturnArgs>(args: SelectSubset<T, letters_to_letter_levelsUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$letters_to_letter_levelsPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one Letters_to_letter_levels.
+     * @param {letters_to_letter_levelsUpsertArgs} args - Arguments to update or create a Letters_to_letter_levels.
+     * @example
+     * // Update or create a Letters_to_letter_levels
+     * const letters_to_letter_levels = await prisma.letters_to_letter_levels.upsert({
+     *   create: {
+     *     // ... data to create a Letters_to_letter_levels
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the Letters_to_letter_levels we want to update
+     *   }
+     * })
+     */
+    upsert<T extends letters_to_letter_levelsUpsertArgs>(args: SelectSubset<T, letters_to_letter_levelsUpsertArgs<ExtArgs>>): Prisma__letters_to_letter_levelsClient<$Result.GetResult<Prisma.$letters_to_letter_levelsPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of Letters_to_letter_levels.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letters_to_letter_levelsCountArgs} args - Arguments to filter Letters_to_letter_levels to count.
+     * @example
+     * // Count the number of Letters_to_letter_levels
+     * const count = await prisma.letters_to_letter_levels.count({
+     *   where: {
+     *     // ... the filter for the Letters_to_letter_levels we want to count
+     *   }
+     * })
+    **/
+    count<T extends letters_to_letter_levelsCountArgs>(
+      args?: Subset<T, letters_to_letter_levelsCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], Letters_to_letter_levelsCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a Letters_to_letter_levels.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {Letters_to_letter_levelsAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends Letters_to_letter_levelsAggregateArgs>(args: Subset<T, Letters_to_letter_levelsAggregateArgs>): Prisma.PrismaPromise<GetLetters_to_letter_levelsAggregateType<T>>
+
+    /**
+     * Group by Letters_to_letter_levels.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {letters_to_letter_levelsGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends letters_to_letter_levelsGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: letters_to_letter_levelsGroupByArgs['orderBy'] }
+        : { orderBy?: letters_to_letter_levelsGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, letters_to_letter_levelsGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetLetters_to_letter_levelsGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the letters_to_letter_levels model
+   */
+  readonly fields: letters_to_letter_levelsFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for letters_to_letter_levels.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__letters_to_letter_levelsClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    letters<T extends lettersDefaultArgs<ExtArgs> = {}>(args?: Subset<T, lettersDefaultArgs<ExtArgs>>): Prisma__lettersClient<$Result.GetResult<Prisma.$lettersPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    letter_levels<T extends letter_levelsDefaultArgs<ExtArgs> = {}>(args?: Subset<T, letter_levelsDefaultArgs<ExtArgs>>): Prisma__letter_levelsClient<$Result.GetResult<Prisma.$letter_levelsPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the letters_to_letter_levels model
+   */
+  interface letters_to_letter_levelsFieldRefs {
+    readonly letter_id: FieldRef<"letters_to_letter_levels", 'String'>
+    readonly letter_level_id: FieldRef<"letters_to_letter_levels", 'String'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * letters_to_letter_levels findUnique
+   */
+  export type letters_to_letter_levelsFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters_to_letter_levels
+     */
+    select?: letters_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters_to_letter_levels
+     */
+    omit?: letters_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letters_to_letter_levelsInclude<ExtArgs> | null
+    /**
+     * Filter, which letters_to_letter_levels to fetch.
+     */
+    where: letters_to_letter_levelsWhereUniqueInput
+  }
+
+  /**
+   * letters_to_letter_levels findUniqueOrThrow
+   */
+  export type letters_to_letter_levelsFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters_to_letter_levels
+     */
+    select?: letters_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters_to_letter_levels
+     */
+    omit?: letters_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letters_to_letter_levelsInclude<ExtArgs> | null
+    /**
+     * Filter, which letters_to_letter_levels to fetch.
+     */
+    where: letters_to_letter_levelsWhereUniqueInput
+  }
+
+  /**
+   * letters_to_letter_levels findFirst
+   */
+  export type letters_to_letter_levelsFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters_to_letter_levels
+     */
+    select?: letters_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters_to_letter_levels
+     */
+    omit?: letters_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letters_to_letter_levelsInclude<ExtArgs> | null
+    /**
+     * Filter, which letters_to_letter_levels to fetch.
+     */
+    where?: letters_to_letter_levelsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letters_to_letter_levels to fetch.
+     */
+    orderBy?: letters_to_letter_levelsOrderByWithRelationInput | letters_to_letter_levelsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for letters_to_letter_levels.
+     */
+    cursor?: letters_to_letter_levelsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letters_to_letter_levels from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letters_to_letter_levels.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of letters_to_letter_levels.
+     */
+    distinct?: Letters_to_letter_levelsScalarFieldEnum | Letters_to_letter_levelsScalarFieldEnum[]
+  }
+
+  /**
+   * letters_to_letter_levels findFirstOrThrow
+   */
+  export type letters_to_letter_levelsFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters_to_letter_levels
+     */
+    select?: letters_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters_to_letter_levels
+     */
+    omit?: letters_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letters_to_letter_levelsInclude<ExtArgs> | null
+    /**
+     * Filter, which letters_to_letter_levels to fetch.
+     */
+    where?: letters_to_letter_levelsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letters_to_letter_levels to fetch.
+     */
+    orderBy?: letters_to_letter_levelsOrderByWithRelationInput | letters_to_letter_levelsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for letters_to_letter_levels.
+     */
+    cursor?: letters_to_letter_levelsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letters_to_letter_levels from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letters_to_letter_levels.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of letters_to_letter_levels.
+     */
+    distinct?: Letters_to_letter_levelsScalarFieldEnum | Letters_to_letter_levelsScalarFieldEnum[]
+  }
+
+  /**
+   * letters_to_letter_levels findMany
+   */
+  export type letters_to_letter_levelsFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters_to_letter_levels
+     */
+    select?: letters_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters_to_letter_levels
+     */
+    omit?: letters_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letters_to_letter_levelsInclude<ExtArgs> | null
+    /**
+     * Filter, which letters_to_letter_levels to fetch.
+     */
+    where?: letters_to_letter_levelsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of letters_to_letter_levels to fetch.
+     */
+    orderBy?: letters_to_letter_levelsOrderByWithRelationInput | letters_to_letter_levelsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing letters_to_letter_levels.
+     */
+    cursor?: letters_to_letter_levelsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` letters_to_letter_levels from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` letters_to_letter_levels.
+     */
+    skip?: number
+    distinct?: Letters_to_letter_levelsScalarFieldEnum | Letters_to_letter_levelsScalarFieldEnum[]
+  }
+
+  /**
+   * letters_to_letter_levels create
+   */
+  export type letters_to_letter_levelsCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters_to_letter_levels
+     */
+    select?: letters_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters_to_letter_levels
+     */
+    omit?: letters_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letters_to_letter_levelsInclude<ExtArgs> | null
+    /**
+     * The data needed to create a letters_to_letter_levels.
+     */
+    data: XOR<letters_to_letter_levelsCreateInput, letters_to_letter_levelsUncheckedCreateInput>
+  }
+
+  /**
+   * letters_to_letter_levels createMany
+   */
+  export type letters_to_letter_levelsCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many letters_to_letter_levels.
+     */
+    data: letters_to_letter_levelsCreateManyInput | letters_to_letter_levelsCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * letters_to_letter_levels createManyAndReturn
+   */
+  export type letters_to_letter_levelsCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters_to_letter_levels
+     */
+    select?: letters_to_letter_levelsSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters_to_letter_levels
+     */
+    omit?: letters_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * The data used to create many letters_to_letter_levels.
+     */
+    data: letters_to_letter_levelsCreateManyInput | letters_to_letter_levelsCreateManyInput[]
+    skipDuplicates?: boolean
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letters_to_letter_levelsIncludeCreateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * letters_to_letter_levels update
+   */
+  export type letters_to_letter_levelsUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters_to_letter_levels
+     */
+    select?: letters_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters_to_letter_levels
+     */
+    omit?: letters_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letters_to_letter_levelsInclude<ExtArgs> | null
+    /**
+     * The data needed to update a letters_to_letter_levels.
+     */
+    data: XOR<letters_to_letter_levelsUpdateInput, letters_to_letter_levelsUncheckedUpdateInput>
+    /**
+     * Choose, which letters_to_letter_levels to update.
+     */
+    where: letters_to_letter_levelsWhereUniqueInput
+  }
+
+  /**
+   * letters_to_letter_levels updateMany
+   */
+  export type letters_to_letter_levelsUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update letters_to_letter_levels.
+     */
+    data: XOR<letters_to_letter_levelsUpdateManyMutationInput, letters_to_letter_levelsUncheckedUpdateManyInput>
+    /**
+     * Filter which letters_to_letter_levels to update
+     */
+    where?: letters_to_letter_levelsWhereInput
+    /**
+     * Limit how many letters_to_letter_levels to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * letters_to_letter_levels updateManyAndReturn
+   */
+  export type letters_to_letter_levelsUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters_to_letter_levels
+     */
+    select?: letters_to_letter_levelsSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters_to_letter_levels
+     */
+    omit?: letters_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * The data used to update letters_to_letter_levels.
+     */
+    data: XOR<letters_to_letter_levelsUpdateManyMutationInput, letters_to_letter_levelsUncheckedUpdateManyInput>
+    /**
+     * Filter which letters_to_letter_levels to update
+     */
+    where?: letters_to_letter_levelsWhereInput
+    /**
+     * Limit how many letters_to_letter_levels to update.
+     */
+    limit?: number
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letters_to_letter_levelsIncludeUpdateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * letters_to_letter_levels upsert
+   */
+  export type letters_to_letter_levelsUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters_to_letter_levels
+     */
+    select?: letters_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters_to_letter_levels
+     */
+    omit?: letters_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letters_to_letter_levelsInclude<ExtArgs> | null
+    /**
+     * The filter to search for the letters_to_letter_levels to update in case it exists.
+     */
+    where: letters_to_letter_levelsWhereUniqueInput
+    /**
+     * In case the letters_to_letter_levels found by the `where` argument doesn't exist, create a new letters_to_letter_levels with this data.
+     */
+    create: XOR<letters_to_letter_levelsCreateInput, letters_to_letter_levelsUncheckedCreateInput>
+    /**
+     * In case the letters_to_letter_levels was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<letters_to_letter_levelsUpdateInput, letters_to_letter_levelsUncheckedUpdateInput>
+  }
+
+  /**
+   * letters_to_letter_levels delete
+   */
+  export type letters_to_letter_levelsDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters_to_letter_levels
+     */
+    select?: letters_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters_to_letter_levels
+     */
+    omit?: letters_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letters_to_letter_levelsInclude<ExtArgs> | null
+    /**
+     * Filter which letters_to_letter_levels to delete.
+     */
+    where: letters_to_letter_levelsWhereUniqueInput
+  }
+
+  /**
+   * letters_to_letter_levels deleteMany
+   */
+  export type letters_to_letter_levelsDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which letters_to_letter_levels to delete
+     */
+    where?: letters_to_letter_levelsWhereInput
+    /**
+     * Limit how many letters_to_letter_levels to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * letters_to_letter_levels without action
+   */
+  export type letters_to_letter_levelsDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the letters_to_letter_levels
+     */
+    select?: letters_to_letter_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the letters_to_letter_levels
+     */
+    omit?: letters_to_letter_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: letters_to_letter_levelsInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Enums
+   */
+
+  export const TransactionIsolationLevel: {
+    ReadUncommitted: 'ReadUncommitted',
+    ReadCommitted: 'ReadCommitted',
+    RepeatableRead: 'RepeatableRead',
+    Serializable: 'Serializable'
+  };
+
+  export type TransactionIsolationLevel = (typeof TransactionIsolationLevel)[keyof typeof TransactionIsolationLevel]
+
+
+  export const Letter_blocksScalarFieldEnum: {
+    created_at: 'created_at',
+    updated_at: 'updated_at',
+    name: 'name',
+    description: 'description',
+    id: 'id',
+    deleted: 'deleted'
+  };
+
+  export type Letter_blocksScalarFieldEnum = (typeof Letter_blocksScalarFieldEnum)[keyof typeof Letter_blocksScalarFieldEnum]
+
+
+  export const Letter_levelsScalarFieldEnum: {
+    created_at: 'created_at',
+    updated_at: 'updated_at',
+    number: 'number',
+    letter_type_id: 'letter_type_id',
+    deleted: 'deleted',
+    id: 'id'
+  };
+
+  export type Letter_levelsScalarFieldEnum = (typeof Letter_levelsScalarFieldEnum)[keyof typeof Letter_levelsScalarFieldEnum]
+
+
+  export const Letter_positionsScalarFieldEnum: {
+    id: 'id',
+    created_at: 'created_at',
+    updated_at: 'updated_at',
+    row: 'row',
+    column: 'column',
+    deleted: 'deleted'
+  };
+
+  export type Letter_positionsScalarFieldEnum = (typeof Letter_positionsScalarFieldEnum)[keyof typeof Letter_positionsScalarFieldEnum]
+
+
+  export const Letter_progressScalarFieldEnum: {
+    id: 'id',
+    created_at: 'created_at',
+    updated_at: 'updated_at',
+    deleted: 'deleted',
+    is_completed: 'is_completed',
+    letter_level_id: 'letter_level_id'
+  };
+
+  export type Letter_progressScalarFieldEnum = (typeof Letter_progressScalarFieldEnum)[keyof typeof Letter_progressScalarFieldEnum]
+
+
+  export const Letter_questionsScalarFieldEnum: {
+    created_at: 'created_at',
+    updated_at: 'updated_at',
+    question: 'question',
+    deleted: 'deleted',
+    id: 'id'
+  };
+
+  export type Letter_questionsScalarFieldEnum = (typeof Letter_questionsScalarFieldEnum)[keyof typeof Letter_questionsScalarFieldEnum]
+
+
+  export const Letter_questions_to_letter_levelsScalarFieldEnum: {
+    letter_question_id: 'letter_question_id',
+    letter_level_id: 'letter_level_id',
+    number: 'number'
+  };
+
+  export type Letter_questions_to_letter_levelsScalarFieldEnum = (typeof Letter_questions_to_letter_levelsScalarFieldEnum)[keyof typeof Letter_questions_to_letter_levelsScalarFieldEnum]
+
+
+  export const Letter_typesScalarFieldEnum: {
+    id: 'id',
+    created_at: 'created_at',
+    updated_at: 'updated_at',
+    name: 'name',
+    deleted: 'deleted'
+  };
+
+  export type Letter_typesScalarFieldEnum = (typeof Letter_typesScalarFieldEnum)[keyof typeof Letter_typesScalarFieldEnum]
+
+
+  export const LettersScalarFieldEnum: {
+    created_at: 'created_at',
+    updated_at: 'updated_at',
+    deleted: 'deleted',
+    name: 'name',
+    symbol: 'symbol',
+    type_id: 'type_id',
+    position_id: 'position_id',
+    block_id: 'block_id',
+    id: 'id'
+  };
+
+  export type LettersScalarFieldEnum = (typeof LettersScalarFieldEnum)[keyof typeof LettersScalarFieldEnum]
+
+
+  export const Letters_to_letter_levelsScalarFieldEnum: {
+    letter_id: 'letter_id',
+    letter_level_id: 'letter_level_id'
+  };
+
+  export type Letters_to_letter_levelsScalarFieldEnum = (typeof Letters_to_letter_levelsScalarFieldEnum)[keyof typeof Letters_to_letter_levelsScalarFieldEnum]
+
+
+  export const SortOrder: {
+    asc: 'asc',
+    desc: 'desc'
+  };
+
+  export type SortOrder = (typeof SortOrder)[keyof typeof SortOrder]
+
+
+  export const JsonNullValueInput: {
+    JsonNull: typeof JsonNull
+  };
+
+  export type JsonNullValueInput = (typeof JsonNullValueInput)[keyof typeof JsonNullValueInput]
+
+
+  export const QueryMode: {
+    default: 'default',
+    insensitive: 'insensitive'
+  };
+
+  export type QueryMode = (typeof QueryMode)[keyof typeof QueryMode]
+
+
+  export const JsonNullValueFilter: {
+    DbNull: typeof DbNull,
+    JsonNull: typeof JsonNull,
+    AnyNull: typeof AnyNull
+  };
+
+  export type JsonNullValueFilter = (typeof JsonNullValueFilter)[keyof typeof JsonNullValueFilter]
+
+
+  /**
+   * Field references
+   */
+
+
+  /**
+   * Reference to a field of type 'DateTime'
+   */
+  export type DateTimeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'DateTime'>
+    
+
+
+  /**
+   * Reference to a field of type 'DateTime[]'
+   */
+  export type ListDateTimeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'DateTime[]'>
+    
+
+
+  /**
+   * Reference to a field of type 'String'
+   */
+  export type StringFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'String'>
+    
+
+
+  /**
+   * Reference to a field of type 'String[]'
+   */
+  export type ListStringFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'String[]'>
+    
+
+
+  /**
+   * Reference to a field of type 'Boolean'
+   */
+  export type BooleanFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Boolean'>
+    
+
+
+  /**
+   * Reference to a field of type 'Int'
+   */
+  export type IntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Int'>
+    
+
+
+  /**
+   * Reference to a field of type 'Int[]'
+   */
+  export type ListIntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Int[]'>
+    
+
+
+  /**
+   * Reference to a field of type 'Json'
+   */
+  export type JsonFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Json'>
+    
+
+
+  /**
+   * Reference to a field of type 'QueryMode'
+   */
+  export type EnumQueryModeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'QueryMode'>
+    
+
+
+  /**
+   * Reference to a field of type 'Float'
+   */
+  export type FloatFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Float'>
+    
+
+
+  /**
+   * Reference to a field of type 'Float[]'
+   */
+  export type ListFloatFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Float[]'>
+    
+  /**
+   * Deep Input Types
+   */
+
+
+  export type letter_blocksWhereInput = {
+    AND?: letter_blocksWhereInput | letter_blocksWhereInput[]
+    OR?: letter_blocksWhereInput[]
+    NOT?: letter_blocksWhereInput | letter_blocksWhereInput[]
+    created_at?: DateTimeFilter<"letter_blocks"> | Date | string
+    updated_at?: DateTimeFilter<"letter_blocks"> | Date | string
+    name?: StringFilter<"letter_blocks"> | string
+    description?: StringFilter<"letter_blocks"> | string
+    id?: UuidFilter<"letter_blocks"> | string
+    deleted?: BoolFilter<"letter_blocks"> | boolean
+    letters?: LettersListRelationFilter
+  }
+
+  export type letter_blocksOrderByWithRelationInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    name?: SortOrder
+    description?: SortOrder
+    id?: SortOrder
+    deleted?: SortOrder
+    letters?: lettersOrderByRelationAggregateInput
+  }
+
+  export type letter_blocksWhereUniqueInput = Prisma.AtLeast<{
+    name?: string
+    id?: string
+    AND?: letter_blocksWhereInput | letter_blocksWhereInput[]
+    OR?: letter_blocksWhereInput[]
+    NOT?: letter_blocksWhereInput | letter_blocksWhereInput[]
+    created_at?: DateTimeFilter<"letter_blocks"> | Date | string
+    updated_at?: DateTimeFilter<"letter_blocks"> | Date | string
+    description?: StringFilter<"letter_blocks"> | string
+    deleted?: BoolFilter<"letter_blocks"> | boolean
+    letters?: LettersListRelationFilter
+  }, "id" | "name">
+
+  export type letter_blocksOrderByWithAggregationInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    name?: SortOrder
+    description?: SortOrder
+    id?: SortOrder
+    deleted?: SortOrder
+    _count?: letter_blocksCountOrderByAggregateInput
+    _max?: letter_blocksMaxOrderByAggregateInput
+    _min?: letter_blocksMinOrderByAggregateInput
+  }
+
+  export type letter_blocksScalarWhereWithAggregatesInput = {
+    AND?: letter_blocksScalarWhereWithAggregatesInput | letter_blocksScalarWhereWithAggregatesInput[]
+    OR?: letter_blocksScalarWhereWithAggregatesInput[]
+    NOT?: letter_blocksScalarWhereWithAggregatesInput | letter_blocksScalarWhereWithAggregatesInput[]
+    created_at?: DateTimeWithAggregatesFilter<"letter_blocks"> | Date | string
+    updated_at?: DateTimeWithAggregatesFilter<"letter_blocks"> | Date | string
+    name?: StringWithAggregatesFilter<"letter_blocks"> | string
+    description?: StringWithAggregatesFilter<"letter_blocks"> | string
+    id?: UuidWithAggregatesFilter<"letter_blocks"> | string
+    deleted?: BoolWithAggregatesFilter<"letter_blocks"> | boolean
+  }
+
+  export type letter_levelsWhereInput = {
+    AND?: letter_levelsWhereInput | letter_levelsWhereInput[]
+    OR?: letter_levelsWhereInput[]
+    NOT?: letter_levelsWhereInput | letter_levelsWhereInput[]
+    created_at?: DateTimeFilter<"letter_levels"> | Date | string
+    updated_at?: DateTimeFilter<"letter_levels"> | Date | string
+    number?: IntFilter<"letter_levels"> | number
+    letter_type_id?: UuidFilter<"letter_levels"> | string
+    deleted?: BoolFilter<"letter_levels"> | boolean
+    id?: UuidFilter<"letter_levels"> | string
+    letter_types?: XOR<Letter_typesScalarRelationFilter, letter_typesWhereInput>
+    letter_progress?: Letter_progressListRelationFilter
+    letter_questions_to_letter_levels?: Letter_questions_to_letter_levelsListRelationFilter
+    letters_to_letter_levels?: Letters_to_letter_levelsListRelationFilter
+  }
+
+  export type letter_levelsOrderByWithRelationInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    number?: SortOrder
+    letter_type_id?: SortOrder
+    deleted?: SortOrder
+    id?: SortOrder
+    letter_types?: letter_typesOrderByWithRelationInput
+    letter_progress?: letter_progressOrderByRelationAggregateInput
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsOrderByRelationAggregateInput
+    letters_to_letter_levels?: letters_to_letter_levelsOrderByRelationAggregateInput
+  }
+
+  export type letter_levelsWhereUniqueInput = Prisma.AtLeast<{
+    number?: number
+    id?: string
+    AND?: letter_levelsWhereInput | letter_levelsWhereInput[]
+    OR?: letter_levelsWhereInput[]
+    NOT?: letter_levelsWhereInput | letter_levelsWhereInput[]
+    created_at?: DateTimeFilter<"letter_levels"> | Date | string
+    updated_at?: DateTimeFilter<"letter_levels"> | Date | string
+    letter_type_id?: UuidFilter<"letter_levels"> | string
+    deleted?: BoolFilter<"letter_levels"> | boolean
+    letter_types?: XOR<Letter_typesScalarRelationFilter, letter_typesWhereInput>
+    letter_progress?: Letter_progressListRelationFilter
+    letter_questions_to_letter_levels?: Letter_questions_to_letter_levelsListRelationFilter
+    letters_to_letter_levels?: Letters_to_letter_levelsListRelationFilter
+  }, "id" | "number">
+
+  export type letter_levelsOrderByWithAggregationInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    number?: SortOrder
+    letter_type_id?: SortOrder
+    deleted?: SortOrder
+    id?: SortOrder
+    _count?: letter_levelsCountOrderByAggregateInput
+    _avg?: letter_levelsAvgOrderByAggregateInput
+    _max?: letter_levelsMaxOrderByAggregateInput
+    _min?: letter_levelsMinOrderByAggregateInput
+    _sum?: letter_levelsSumOrderByAggregateInput
+  }
+
+  export type letter_levelsScalarWhereWithAggregatesInput = {
+    AND?: letter_levelsScalarWhereWithAggregatesInput | letter_levelsScalarWhereWithAggregatesInput[]
+    OR?: letter_levelsScalarWhereWithAggregatesInput[]
+    NOT?: letter_levelsScalarWhereWithAggregatesInput | letter_levelsScalarWhereWithAggregatesInput[]
+    created_at?: DateTimeWithAggregatesFilter<"letter_levels"> | Date | string
+    updated_at?: DateTimeWithAggregatesFilter<"letter_levels"> | Date | string
+    number?: IntWithAggregatesFilter<"letter_levels"> | number
+    letter_type_id?: UuidWithAggregatesFilter<"letter_levels"> | string
+    deleted?: BoolWithAggregatesFilter<"letter_levels"> | boolean
+    id?: UuidWithAggregatesFilter<"letter_levels"> | string
+  }
+
+  export type letter_positionsWhereInput = {
+    AND?: letter_positionsWhereInput | letter_positionsWhereInput[]
+    OR?: letter_positionsWhereInput[]
+    NOT?: letter_positionsWhereInput | letter_positionsWhereInput[]
+    id?: UuidFilter<"letter_positions"> | string
+    created_at?: DateTimeFilter<"letter_positions"> | Date | string
+    updated_at?: DateTimeFilter<"letter_positions"> | Date | string
+    row?: IntFilter<"letter_positions"> | number
+    column?: IntFilter<"letter_positions"> | number
+    deleted?: BoolFilter<"letter_positions"> | boolean
+    letters?: LettersListRelationFilter
+  }
+
+  export type letter_positionsOrderByWithRelationInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    row?: SortOrder
+    column?: SortOrder
+    deleted?: SortOrder
+    letters?: lettersOrderByRelationAggregateInput
+  }
+
+  export type letter_positionsWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    AND?: letter_positionsWhereInput | letter_positionsWhereInput[]
+    OR?: letter_positionsWhereInput[]
+    NOT?: letter_positionsWhereInput | letter_positionsWhereInput[]
+    created_at?: DateTimeFilter<"letter_positions"> | Date | string
+    updated_at?: DateTimeFilter<"letter_positions"> | Date | string
+    row?: IntFilter<"letter_positions"> | number
+    column?: IntFilter<"letter_positions"> | number
+    deleted?: BoolFilter<"letter_positions"> | boolean
+    letters?: LettersListRelationFilter
+  }, "id">
+
+  export type letter_positionsOrderByWithAggregationInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    row?: SortOrder
+    column?: SortOrder
+    deleted?: SortOrder
+    _count?: letter_positionsCountOrderByAggregateInput
+    _avg?: letter_positionsAvgOrderByAggregateInput
+    _max?: letter_positionsMaxOrderByAggregateInput
+    _min?: letter_positionsMinOrderByAggregateInput
+    _sum?: letter_positionsSumOrderByAggregateInput
+  }
+
+  export type letter_positionsScalarWhereWithAggregatesInput = {
+    AND?: letter_positionsScalarWhereWithAggregatesInput | letter_positionsScalarWhereWithAggregatesInput[]
+    OR?: letter_positionsScalarWhereWithAggregatesInput[]
+    NOT?: letter_positionsScalarWhereWithAggregatesInput | letter_positionsScalarWhereWithAggregatesInput[]
+    id?: UuidWithAggregatesFilter<"letter_positions"> | string
+    created_at?: DateTimeWithAggregatesFilter<"letter_positions"> | Date | string
+    updated_at?: DateTimeWithAggregatesFilter<"letter_positions"> | Date | string
+    row?: IntWithAggregatesFilter<"letter_positions"> | number
+    column?: IntWithAggregatesFilter<"letter_positions"> | number
+    deleted?: BoolWithAggregatesFilter<"letter_positions"> | boolean
+  }
+
+  export type letter_progressWhereInput = {
+    AND?: letter_progressWhereInput | letter_progressWhereInput[]
+    OR?: letter_progressWhereInput[]
+    NOT?: letter_progressWhereInput | letter_progressWhereInput[]
+    id?: UuidFilter<"letter_progress"> | string
+    created_at?: DateTimeFilter<"letter_progress"> | Date | string
+    updated_at?: DateTimeFilter<"letter_progress"> | Date | string
+    deleted?: BoolFilter<"letter_progress"> | boolean
+    is_completed?: BoolFilter<"letter_progress"> | boolean
+    letter_level_id?: UuidFilter<"letter_progress"> | string
+    letter_levels?: XOR<Letter_levelsScalarRelationFilter, letter_levelsWhereInput>
+  }
+
+  export type letter_progressOrderByWithRelationInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+    is_completed?: SortOrder
+    letter_level_id?: SortOrder
+    letter_levels?: letter_levelsOrderByWithRelationInput
+  }
+
+  export type letter_progressWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    AND?: letter_progressWhereInput | letter_progressWhereInput[]
+    OR?: letter_progressWhereInput[]
+    NOT?: letter_progressWhereInput | letter_progressWhereInput[]
+    created_at?: DateTimeFilter<"letter_progress"> | Date | string
+    updated_at?: DateTimeFilter<"letter_progress"> | Date | string
+    deleted?: BoolFilter<"letter_progress"> | boolean
+    is_completed?: BoolFilter<"letter_progress"> | boolean
+    letter_level_id?: UuidFilter<"letter_progress"> | string
+    letter_levels?: XOR<Letter_levelsScalarRelationFilter, letter_levelsWhereInput>
+  }, "id">
+
+  export type letter_progressOrderByWithAggregationInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+    is_completed?: SortOrder
+    letter_level_id?: SortOrder
+    _count?: letter_progressCountOrderByAggregateInput
+    _max?: letter_progressMaxOrderByAggregateInput
+    _min?: letter_progressMinOrderByAggregateInput
+  }
+
+  export type letter_progressScalarWhereWithAggregatesInput = {
+    AND?: letter_progressScalarWhereWithAggregatesInput | letter_progressScalarWhereWithAggregatesInput[]
+    OR?: letter_progressScalarWhereWithAggregatesInput[]
+    NOT?: letter_progressScalarWhereWithAggregatesInput | letter_progressScalarWhereWithAggregatesInput[]
+    id?: UuidWithAggregatesFilter<"letter_progress"> | string
+    created_at?: DateTimeWithAggregatesFilter<"letter_progress"> | Date | string
+    updated_at?: DateTimeWithAggregatesFilter<"letter_progress"> | Date | string
+    deleted?: BoolWithAggregatesFilter<"letter_progress"> | boolean
+    is_completed?: BoolWithAggregatesFilter<"letter_progress"> | boolean
+    letter_level_id?: UuidWithAggregatesFilter<"letter_progress"> | string
+  }
+
+  export type letter_questionsWhereInput = {
+    AND?: letter_questionsWhereInput | letter_questionsWhereInput[]
+    OR?: letter_questionsWhereInput[]
+    NOT?: letter_questionsWhereInput | letter_questionsWhereInput[]
+    created_at?: DateTimeFilter<"letter_questions"> | Date | string
+    updated_at?: DateTimeFilter<"letter_questions"> | Date | string
+    question?: JsonFilter<"letter_questions">
+    deleted?: BoolFilter<"letter_questions"> | boolean
+    id?: UuidFilter<"letter_questions"> | string
+    letter_questions_to_letter_levels?: Letter_questions_to_letter_levelsListRelationFilter
+  }
+
+  export type letter_questionsOrderByWithRelationInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    question?: SortOrder
+    deleted?: SortOrder
+    id?: SortOrder
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsOrderByRelationAggregateInput
+  }
+
+  export type letter_questionsWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    AND?: letter_questionsWhereInput | letter_questionsWhereInput[]
+    OR?: letter_questionsWhereInput[]
+    NOT?: letter_questionsWhereInput | letter_questionsWhereInput[]
+    created_at?: DateTimeFilter<"letter_questions"> | Date | string
+    updated_at?: DateTimeFilter<"letter_questions"> | Date | string
+    question?: JsonFilter<"letter_questions">
+    deleted?: BoolFilter<"letter_questions"> | boolean
+    letter_questions_to_letter_levels?: Letter_questions_to_letter_levelsListRelationFilter
+  }, "id">
+
+  export type letter_questionsOrderByWithAggregationInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    question?: SortOrder
+    deleted?: SortOrder
+    id?: SortOrder
+    _count?: letter_questionsCountOrderByAggregateInput
+    _max?: letter_questionsMaxOrderByAggregateInput
+    _min?: letter_questionsMinOrderByAggregateInput
+  }
+
+  export type letter_questionsScalarWhereWithAggregatesInput = {
+    AND?: letter_questionsScalarWhereWithAggregatesInput | letter_questionsScalarWhereWithAggregatesInput[]
+    OR?: letter_questionsScalarWhereWithAggregatesInput[]
+    NOT?: letter_questionsScalarWhereWithAggregatesInput | letter_questionsScalarWhereWithAggregatesInput[]
+    created_at?: DateTimeWithAggregatesFilter<"letter_questions"> | Date | string
+    updated_at?: DateTimeWithAggregatesFilter<"letter_questions"> | Date | string
+    question?: JsonWithAggregatesFilter<"letter_questions">
+    deleted?: BoolWithAggregatesFilter<"letter_questions"> | boolean
+    id?: UuidWithAggregatesFilter<"letter_questions"> | string
+  }
+
+  export type letter_questions_to_letter_levelsWhereInput = {
+    AND?: letter_questions_to_letter_levelsWhereInput | letter_questions_to_letter_levelsWhereInput[]
+    OR?: letter_questions_to_letter_levelsWhereInput[]
+    NOT?: letter_questions_to_letter_levelsWhereInput | letter_questions_to_letter_levelsWhereInput[]
+    letter_question_id?: UuidFilter<"letter_questions_to_letter_levels"> | string
+    letter_level_id?: UuidFilter<"letter_questions_to_letter_levels"> | string
+    number?: IntFilter<"letter_questions_to_letter_levels"> | number
+    letter_levels?: XOR<Letter_levelsScalarRelationFilter, letter_levelsWhereInput>
+    letter_questions?: XOR<Letter_questionsScalarRelationFilter, letter_questionsWhereInput>
+  }
+
+  export type letter_questions_to_letter_levelsOrderByWithRelationInput = {
+    letter_question_id?: SortOrder
+    letter_level_id?: SortOrder
+    number?: SortOrder
+    letter_levels?: letter_levelsOrderByWithRelationInput
+    letter_questions?: letter_questionsOrderByWithRelationInput
+  }
+
+  export type letter_questions_to_letter_levelsWhereUniqueInput = Prisma.AtLeast<{
+    letter_question_id_letter_level_id?: letter_questions_to_letter_levelsLetter_question_idLetter_level_idCompoundUniqueInput
+    AND?: letter_questions_to_letter_levelsWhereInput | letter_questions_to_letter_levelsWhereInput[]
+    OR?: letter_questions_to_letter_levelsWhereInput[]
+    NOT?: letter_questions_to_letter_levelsWhereInput | letter_questions_to_letter_levelsWhereInput[]
+    letter_question_id?: UuidFilter<"letter_questions_to_letter_levels"> | string
+    letter_level_id?: UuidFilter<"letter_questions_to_letter_levels"> | string
+    number?: IntFilter<"letter_questions_to_letter_levels"> | number
+    letter_levels?: XOR<Letter_levelsScalarRelationFilter, letter_levelsWhereInput>
+    letter_questions?: XOR<Letter_questionsScalarRelationFilter, letter_questionsWhereInput>
+  }, "letter_question_id_letter_level_id">
+
+  export type letter_questions_to_letter_levelsOrderByWithAggregationInput = {
+    letter_question_id?: SortOrder
+    letter_level_id?: SortOrder
+    number?: SortOrder
+    _count?: letter_questions_to_letter_levelsCountOrderByAggregateInput
+    _avg?: letter_questions_to_letter_levelsAvgOrderByAggregateInput
+    _max?: letter_questions_to_letter_levelsMaxOrderByAggregateInput
+    _min?: letter_questions_to_letter_levelsMinOrderByAggregateInput
+    _sum?: letter_questions_to_letter_levelsSumOrderByAggregateInput
+  }
+
+  export type letter_questions_to_letter_levelsScalarWhereWithAggregatesInput = {
+    AND?: letter_questions_to_letter_levelsScalarWhereWithAggregatesInput | letter_questions_to_letter_levelsScalarWhereWithAggregatesInput[]
+    OR?: letter_questions_to_letter_levelsScalarWhereWithAggregatesInput[]
+    NOT?: letter_questions_to_letter_levelsScalarWhereWithAggregatesInput | letter_questions_to_letter_levelsScalarWhereWithAggregatesInput[]
+    letter_question_id?: UuidWithAggregatesFilter<"letter_questions_to_letter_levels"> | string
+    letter_level_id?: UuidWithAggregatesFilter<"letter_questions_to_letter_levels"> | string
+    number?: IntWithAggregatesFilter<"letter_questions_to_letter_levels"> | number
+  }
+
+  export type letter_typesWhereInput = {
+    AND?: letter_typesWhereInput | letter_typesWhereInput[]
+    OR?: letter_typesWhereInput[]
+    NOT?: letter_typesWhereInput | letter_typesWhereInput[]
+    id?: UuidFilter<"letter_types"> | string
+    created_at?: DateTimeFilter<"letter_types"> | Date | string
+    updated_at?: DateTimeFilter<"letter_types"> | Date | string
+    name?: StringFilter<"letter_types"> | string
+    deleted?: BoolFilter<"letter_types"> | boolean
+    letter_levels?: Letter_levelsListRelationFilter
+    letters?: LettersListRelationFilter
+  }
+
+  export type letter_typesOrderByWithRelationInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    name?: SortOrder
+    deleted?: SortOrder
+    letter_levels?: letter_levelsOrderByRelationAggregateInput
+    letters?: lettersOrderByRelationAggregateInput
+  }
+
+  export type letter_typesWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    name?: string
+    AND?: letter_typesWhereInput | letter_typesWhereInput[]
+    OR?: letter_typesWhereInput[]
+    NOT?: letter_typesWhereInput | letter_typesWhereInput[]
+    created_at?: DateTimeFilter<"letter_types"> | Date | string
+    updated_at?: DateTimeFilter<"letter_types"> | Date | string
+    deleted?: BoolFilter<"letter_types"> | boolean
+    letter_levels?: Letter_levelsListRelationFilter
+    letters?: LettersListRelationFilter
+  }, "id" | "name">
+
+  export type letter_typesOrderByWithAggregationInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    name?: SortOrder
+    deleted?: SortOrder
+    _count?: letter_typesCountOrderByAggregateInput
+    _max?: letter_typesMaxOrderByAggregateInput
+    _min?: letter_typesMinOrderByAggregateInput
+  }
+
+  export type letter_typesScalarWhereWithAggregatesInput = {
+    AND?: letter_typesScalarWhereWithAggregatesInput | letter_typesScalarWhereWithAggregatesInput[]
+    OR?: letter_typesScalarWhereWithAggregatesInput[]
+    NOT?: letter_typesScalarWhereWithAggregatesInput | letter_typesScalarWhereWithAggregatesInput[]
+    id?: UuidWithAggregatesFilter<"letter_types"> | string
+    created_at?: DateTimeWithAggregatesFilter<"letter_types"> | Date | string
+    updated_at?: DateTimeWithAggregatesFilter<"letter_types"> | Date | string
+    name?: StringWithAggregatesFilter<"letter_types"> | string
+    deleted?: BoolWithAggregatesFilter<"letter_types"> | boolean
+  }
+
+  export type lettersWhereInput = {
+    AND?: lettersWhereInput | lettersWhereInput[]
+    OR?: lettersWhereInput[]
+    NOT?: lettersWhereInput | lettersWhereInput[]
+    created_at?: DateTimeFilter<"letters"> | Date | string
+    updated_at?: DateTimeFilter<"letters"> | Date | string
+    deleted?: BoolFilter<"letters"> | boolean
+    name?: StringFilter<"letters"> | string
+    symbol?: StringFilter<"letters"> | string
+    type_id?: UuidFilter<"letters"> | string
+    position_id?: UuidFilter<"letters"> | string
+    block_id?: UuidFilter<"letters"> | string
+    id?: UuidFilter<"letters"> | string
+    letter_blocks?: XOR<Letter_blocksScalarRelationFilter, letter_blocksWhereInput>
+    letter_positions?: XOR<Letter_positionsScalarRelationFilter, letter_positionsWhereInput>
+    letter_types?: XOR<Letter_typesScalarRelationFilter, letter_typesWhereInput>
+    letters_to_letter_levels?: Letters_to_letter_levelsListRelationFilter
+  }
+
+  export type lettersOrderByWithRelationInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+    name?: SortOrder
+    symbol?: SortOrder
+    type_id?: SortOrder
+    position_id?: SortOrder
+    block_id?: SortOrder
+    id?: SortOrder
+    letter_blocks?: letter_blocksOrderByWithRelationInput
+    letter_positions?: letter_positionsOrderByWithRelationInput
+    letter_types?: letter_typesOrderByWithRelationInput
+    letters_to_letter_levels?: letters_to_letter_levelsOrderByRelationAggregateInput
+  }
+
+  export type lettersWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    AND?: lettersWhereInput | lettersWhereInput[]
+    OR?: lettersWhereInput[]
+    NOT?: lettersWhereInput | lettersWhereInput[]
+    created_at?: DateTimeFilter<"letters"> | Date | string
+    updated_at?: DateTimeFilter<"letters"> | Date | string
+    deleted?: BoolFilter<"letters"> | boolean
+    name?: StringFilter<"letters"> | string
+    symbol?: StringFilter<"letters"> | string
+    type_id?: UuidFilter<"letters"> | string
+    position_id?: UuidFilter<"letters"> | string
+    block_id?: UuidFilter<"letters"> | string
+    letter_blocks?: XOR<Letter_blocksScalarRelationFilter, letter_blocksWhereInput>
+    letter_positions?: XOR<Letter_positionsScalarRelationFilter, letter_positionsWhereInput>
+    letter_types?: XOR<Letter_typesScalarRelationFilter, letter_typesWhereInput>
+    letters_to_letter_levels?: Letters_to_letter_levelsListRelationFilter
+  }, "id">
+
+  export type lettersOrderByWithAggregationInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+    name?: SortOrder
+    symbol?: SortOrder
+    type_id?: SortOrder
+    position_id?: SortOrder
+    block_id?: SortOrder
+    id?: SortOrder
+    _count?: lettersCountOrderByAggregateInput
+    _max?: lettersMaxOrderByAggregateInput
+    _min?: lettersMinOrderByAggregateInput
+  }
+
+  export type lettersScalarWhereWithAggregatesInput = {
+    AND?: lettersScalarWhereWithAggregatesInput | lettersScalarWhereWithAggregatesInput[]
+    OR?: lettersScalarWhereWithAggregatesInput[]
+    NOT?: lettersScalarWhereWithAggregatesInput | lettersScalarWhereWithAggregatesInput[]
+    created_at?: DateTimeWithAggregatesFilter<"letters"> | Date | string
+    updated_at?: DateTimeWithAggregatesFilter<"letters"> | Date | string
+    deleted?: BoolWithAggregatesFilter<"letters"> | boolean
+    name?: StringWithAggregatesFilter<"letters"> | string
+    symbol?: StringWithAggregatesFilter<"letters"> | string
+    type_id?: UuidWithAggregatesFilter<"letters"> | string
+    position_id?: UuidWithAggregatesFilter<"letters"> | string
+    block_id?: UuidWithAggregatesFilter<"letters"> | string
+    id?: UuidWithAggregatesFilter<"letters"> | string
+  }
+
+  export type letters_to_letter_levelsWhereInput = {
+    AND?: letters_to_letter_levelsWhereInput | letters_to_letter_levelsWhereInput[]
+    OR?: letters_to_letter_levelsWhereInput[]
+    NOT?: letters_to_letter_levelsWhereInput | letters_to_letter_levelsWhereInput[]
+    letter_id?: UuidFilter<"letters_to_letter_levels"> | string
+    letter_level_id?: UuidFilter<"letters_to_letter_levels"> | string
+    letters?: XOR<LettersScalarRelationFilter, lettersWhereInput>
+    letter_levels?: XOR<Letter_levelsScalarRelationFilter, letter_levelsWhereInput>
+  }
+
+  export type letters_to_letter_levelsOrderByWithRelationInput = {
+    letter_id?: SortOrder
+    letter_level_id?: SortOrder
+    letters?: lettersOrderByWithRelationInput
+    letter_levels?: letter_levelsOrderByWithRelationInput
+  }
+
+  export type letters_to_letter_levelsWhereUniqueInput = Prisma.AtLeast<{
+    letter_id_letter_level_id?: letters_to_letter_levelsLetter_idLetter_level_idCompoundUniqueInput
+    AND?: letters_to_letter_levelsWhereInput | letters_to_letter_levelsWhereInput[]
+    OR?: letters_to_letter_levelsWhereInput[]
+    NOT?: letters_to_letter_levelsWhereInput | letters_to_letter_levelsWhereInput[]
+    letter_id?: UuidFilter<"letters_to_letter_levels"> | string
+    letter_level_id?: UuidFilter<"letters_to_letter_levels"> | string
+    letters?: XOR<LettersScalarRelationFilter, lettersWhereInput>
+    letter_levels?: XOR<Letter_levelsScalarRelationFilter, letter_levelsWhereInput>
+  }, "letter_id_letter_level_id">
+
+  export type letters_to_letter_levelsOrderByWithAggregationInput = {
+    letter_id?: SortOrder
+    letter_level_id?: SortOrder
+    _count?: letters_to_letter_levelsCountOrderByAggregateInput
+    _max?: letters_to_letter_levelsMaxOrderByAggregateInput
+    _min?: letters_to_letter_levelsMinOrderByAggregateInput
+  }
+
+  export type letters_to_letter_levelsScalarWhereWithAggregatesInput = {
+    AND?: letters_to_letter_levelsScalarWhereWithAggregatesInput | letters_to_letter_levelsScalarWhereWithAggregatesInput[]
+    OR?: letters_to_letter_levelsScalarWhereWithAggregatesInput[]
+    NOT?: letters_to_letter_levelsScalarWhereWithAggregatesInput | letters_to_letter_levelsScalarWhereWithAggregatesInput[]
+    letter_id?: UuidWithAggregatesFilter<"letters_to_letter_levels"> | string
+    letter_level_id?: UuidWithAggregatesFilter<"letters_to_letter_levels"> | string
+  }
+
+  export type letter_blocksCreateInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    name?: string
+    description?: string
+    id?: string
+    deleted?: boolean
+    letters?: lettersCreateNestedManyWithoutLetter_blocksInput
+  }
+
+  export type letter_blocksUncheckedCreateInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    name?: string
+    description?: string
+    id?: string
+    deleted?: boolean
+    letters?: lettersUncheckedCreateNestedManyWithoutLetter_blocksInput
+  }
+
+  export type letter_blocksUpdateInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    name?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    letters?: lettersUpdateManyWithoutLetter_blocksNestedInput
+  }
+
+  export type letter_blocksUncheckedUpdateInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    name?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    letters?: lettersUncheckedUpdateManyWithoutLetter_blocksNestedInput
+  }
+
+  export type letter_blocksCreateManyInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    name?: string
+    description?: string
+    id?: string
+    deleted?: boolean
+  }
+
+  export type letter_blocksUpdateManyMutationInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    name?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+  }
+
+  export type letter_blocksUncheckedUpdateManyInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    name?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+  }
+
+  export type letter_levelsCreateInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    number: number
+    deleted?: boolean
+    id?: string
+    letter_types: letter_typesCreateNestedOneWithoutLetter_levelsInput
+    letter_progress?: letter_progressCreateNestedManyWithoutLetter_levelsInput
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsCreateNestedManyWithoutLetter_levelsInput
+    letters_to_letter_levels?: letters_to_letter_levelsCreateNestedManyWithoutLetter_levelsInput
+  }
+
+  export type letter_levelsUncheckedCreateInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    number: number
+    letter_type_id: string
+    deleted?: boolean
+    id?: string
+    letter_progress?: letter_progressUncheckedCreateNestedManyWithoutLetter_levelsInput
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsUncheckedCreateNestedManyWithoutLetter_levelsInput
+    letters_to_letter_levels?: letters_to_letter_levelsUncheckedCreateNestedManyWithoutLetter_levelsInput
+  }
+
+  export type letter_levelsUpdateInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    number?: IntFieldUpdateOperationsInput | number
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+    letter_types?: letter_typesUpdateOneRequiredWithoutLetter_levelsNestedInput
+    letter_progress?: letter_progressUpdateManyWithoutLetter_levelsNestedInput
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsUpdateManyWithoutLetter_levelsNestedInput
+    letters_to_letter_levels?: letters_to_letter_levelsUpdateManyWithoutLetter_levelsNestedInput
+  }
+
+  export type letter_levelsUncheckedUpdateInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    number?: IntFieldUpdateOperationsInput | number
+    letter_type_id?: StringFieldUpdateOperationsInput | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+    letter_progress?: letter_progressUncheckedUpdateManyWithoutLetter_levelsNestedInput
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsUncheckedUpdateManyWithoutLetter_levelsNestedInput
+    letters_to_letter_levels?: letters_to_letter_levelsUncheckedUpdateManyWithoutLetter_levelsNestedInput
+  }
+
+  export type letter_levelsCreateManyInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    number: number
+    letter_type_id: string
+    deleted?: boolean
+    id?: string
+  }
+
+  export type letter_levelsUpdateManyMutationInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    number?: IntFieldUpdateOperationsInput | number
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type letter_levelsUncheckedUpdateManyInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    number?: IntFieldUpdateOperationsInput | number
+    letter_type_id?: StringFieldUpdateOperationsInput | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type letter_positionsCreateInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    row: number
+    column: number
+    deleted?: boolean
+    letters?: lettersCreateNestedManyWithoutLetter_positionsInput
+  }
+
+  export type letter_positionsUncheckedCreateInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    row: number
+    column: number
+    deleted?: boolean
+    letters?: lettersUncheckedCreateNestedManyWithoutLetter_positionsInput
+  }
+
+  export type letter_positionsUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    row?: IntFieldUpdateOperationsInput | number
+    column?: IntFieldUpdateOperationsInput | number
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    letters?: lettersUpdateManyWithoutLetter_positionsNestedInput
+  }
+
+  export type letter_positionsUncheckedUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    row?: IntFieldUpdateOperationsInput | number
+    column?: IntFieldUpdateOperationsInput | number
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    letters?: lettersUncheckedUpdateManyWithoutLetter_positionsNestedInput
+  }
+
+  export type letter_positionsCreateManyInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    row: number
+    column: number
+    deleted?: boolean
+  }
+
+  export type letter_positionsUpdateManyMutationInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    row?: IntFieldUpdateOperationsInput | number
+    column?: IntFieldUpdateOperationsInput | number
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+  }
+
+  export type letter_positionsUncheckedUpdateManyInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    row?: IntFieldUpdateOperationsInput | number
+    column?: IntFieldUpdateOperationsInput | number
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+  }
+
+  export type letter_progressCreateInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    is_completed: boolean
+    letter_levels?: letter_levelsCreateNestedOneWithoutLetter_progressInput
+  }
+
+  export type letter_progressUncheckedCreateInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    is_completed: boolean
+    letter_level_id?: string
+  }
+
+  export type letter_progressUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    is_completed?: BoolFieldUpdateOperationsInput | boolean
+    letter_levels?: letter_levelsUpdateOneRequiredWithoutLetter_progressNestedInput
+  }
+
+  export type letter_progressUncheckedUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    is_completed?: BoolFieldUpdateOperationsInput | boolean
+    letter_level_id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type letter_progressCreateManyInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    is_completed: boolean
+    letter_level_id?: string
+  }
+
+  export type letter_progressUpdateManyMutationInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    is_completed?: BoolFieldUpdateOperationsInput | boolean
+  }
+
+  export type letter_progressUncheckedUpdateManyInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    is_completed?: BoolFieldUpdateOperationsInput | boolean
+    letter_level_id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type letter_questionsCreateInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    question: JsonNullValueInput | InputJsonValue
+    deleted?: boolean
+    id?: string
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsCreateNestedManyWithoutLetter_questionsInput
+  }
+
+  export type letter_questionsUncheckedCreateInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    question: JsonNullValueInput | InputJsonValue
+    deleted?: boolean
+    id?: string
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsUncheckedCreateNestedManyWithoutLetter_questionsInput
+  }
+
+  export type letter_questionsUpdateInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    question?: JsonNullValueInput | InputJsonValue
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsUpdateManyWithoutLetter_questionsNestedInput
+  }
+
+  export type letter_questionsUncheckedUpdateInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    question?: JsonNullValueInput | InputJsonValue
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsUncheckedUpdateManyWithoutLetter_questionsNestedInput
+  }
+
+  export type letter_questionsCreateManyInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    question: JsonNullValueInput | InputJsonValue
+    deleted?: boolean
+    id?: string
+  }
+
+  export type letter_questionsUpdateManyMutationInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    question?: JsonNullValueInput | InputJsonValue
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type letter_questionsUncheckedUpdateManyInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    question?: JsonNullValueInput | InputJsonValue
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type letter_questions_to_letter_levelsCreateInput = {
+    number?: number
+    letter_levels: letter_levelsCreateNestedOneWithoutLetter_questions_to_letter_levelsInput
+    letter_questions: letter_questionsCreateNestedOneWithoutLetter_questions_to_letter_levelsInput
+  }
+
+  export type letter_questions_to_letter_levelsUncheckedCreateInput = {
+    letter_question_id: string
+    letter_level_id: string
+    number?: number
+  }
+
+  export type letter_questions_to_letter_levelsUpdateInput = {
+    number?: IntFieldUpdateOperationsInput | number
+    letter_levels?: letter_levelsUpdateOneRequiredWithoutLetter_questions_to_letter_levelsNestedInput
+    letter_questions?: letter_questionsUpdateOneRequiredWithoutLetter_questions_to_letter_levelsNestedInput
+  }
+
+  export type letter_questions_to_letter_levelsUncheckedUpdateInput = {
+    letter_question_id?: StringFieldUpdateOperationsInput | string
+    letter_level_id?: StringFieldUpdateOperationsInput | string
+    number?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type letter_questions_to_letter_levelsCreateManyInput = {
+    letter_question_id: string
+    letter_level_id: string
+    number?: number
+  }
+
+  export type letter_questions_to_letter_levelsUpdateManyMutationInput = {
+    number?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type letter_questions_to_letter_levelsUncheckedUpdateManyInput = {
+    letter_question_id?: StringFieldUpdateOperationsInput | string
+    letter_level_id?: StringFieldUpdateOperationsInput | string
+    number?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type letter_typesCreateInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    name?: string
+    deleted?: boolean
+    letter_levels?: letter_levelsCreateNestedManyWithoutLetter_typesInput
+    letters?: lettersCreateNestedManyWithoutLetter_typesInput
+  }
+
+  export type letter_typesUncheckedCreateInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    name?: string
+    deleted?: boolean
+    letter_levels?: letter_levelsUncheckedCreateNestedManyWithoutLetter_typesInput
+    letters?: lettersUncheckedCreateNestedManyWithoutLetter_typesInput
+  }
+
+  export type letter_typesUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    name?: StringFieldUpdateOperationsInput | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    letter_levels?: letter_levelsUpdateManyWithoutLetter_typesNestedInput
+    letters?: lettersUpdateManyWithoutLetter_typesNestedInput
+  }
+
+  export type letter_typesUncheckedUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    name?: StringFieldUpdateOperationsInput | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    letter_levels?: letter_levelsUncheckedUpdateManyWithoutLetter_typesNestedInput
+    letters?: lettersUncheckedUpdateManyWithoutLetter_typesNestedInput
+  }
+
+  export type letter_typesCreateManyInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    name?: string
+    deleted?: boolean
+  }
+
+  export type letter_typesUpdateManyMutationInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    name?: StringFieldUpdateOperationsInput | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+  }
+
+  export type letter_typesUncheckedUpdateManyInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    name?: StringFieldUpdateOperationsInput | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+  }
+
+  export type lettersCreateInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    name: string
+    symbol: string
+    id?: string
+    letter_blocks: letter_blocksCreateNestedOneWithoutLettersInput
+    letter_positions: letter_positionsCreateNestedOneWithoutLettersInput
+    letter_types: letter_typesCreateNestedOneWithoutLettersInput
+    letters_to_letter_levels?: letters_to_letter_levelsCreateNestedManyWithoutLettersInput
+  }
+
+  export type lettersUncheckedCreateInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    name: string
+    symbol: string
+    type_id: string
+    position_id: string
+    block_id: string
+    id?: string
+    letters_to_letter_levels?: letters_to_letter_levelsUncheckedCreateNestedManyWithoutLettersInput
+  }
+
+  export type lettersUpdateInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    name?: StringFieldUpdateOperationsInput | string
+    symbol?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+    letter_blocks?: letter_blocksUpdateOneRequiredWithoutLettersNestedInput
+    letter_positions?: letter_positionsUpdateOneRequiredWithoutLettersNestedInput
+    letter_types?: letter_typesUpdateOneRequiredWithoutLettersNestedInput
+    letters_to_letter_levels?: letters_to_letter_levelsUpdateManyWithoutLettersNestedInput
+  }
+
+  export type lettersUncheckedUpdateInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    name?: StringFieldUpdateOperationsInput | string
+    symbol?: StringFieldUpdateOperationsInput | string
+    type_id?: StringFieldUpdateOperationsInput | string
+    position_id?: StringFieldUpdateOperationsInput | string
+    block_id?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+    letters_to_letter_levels?: letters_to_letter_levelsUncheckedUpdateManyWithoutLettersNestedInput
+  }
+
+  export type lettersCreateManyInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    name: string
+    symbol: string
+    type_id: string
+    position_id: string
+    block_id: string
+    id?: string
+  }
+
+  export type lettersUpdateManyMutationInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    name?: StringFieldUpdateOperationsInput | string
+    symbol?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type lettersUncheckedUpdateManyInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    name?: StringFieldUpdateOperationsInput | string
+    symbol?: StringFieldUpdateOperationsInput | string
+    type_id?: StringFieldUpdateOperationsInput | string
+    position_id?: StringFieldUpdateOperationsInput | string
+    block_id?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type letters_to_letter_levelsCreateInput = {
+    letters: lettersCreateNestedOneWithoutLetters_to_letter_levelsInput
+    letter_levels: letter_levelsCreateNestedOneWithoutLetters_to_letter_levelsInput
+  }
+
+  export type letters_to_letter_levelsUncheckedCreateInput = {
+    letter_id: string
+    letter_level_id: string
+  }
+
+  export type letters_to_letter_levelsUpdateInput = {
+    letters?: lettersUpdateOneRequiredWithoutLetters_to_letter_levelsNestedInput
+    letter_levels?: letter_levelsUpdateOneRequiredWithoutLetters_to_letter_levelsNestedInput
+  }
+
+  export type letters_to_letter_levelsUncheckedUpdateInput = {
+    letter_id?: StringFieldUpdateOperationsInput | string
+    letter_level_id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type letters_to_letter_levelsCreateManyInput = {
+    letter_id: string
+    letter_level_id: string
+  }
+
+  export type letters_to_letter_levelsUpdateManyMutationInput = {
+
+  }
+
+  export type letters_to_letter_levelsUncheckedUpdateManyInput = {
+    letter_id?: StringFieldUpdateOperationsInput | string
+    letter_level_id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type DateTimeFilter<$PrismaModel = never> = {
+    equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
+    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
+    lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    not?: NestedDateTimeFilter<$PrismaModel> | Date | string
+  }
+
+  export type StringFilter<$PrismaModel = never> = {
+    equals?: string | StringFieldRefInput<$PrismaModel>
+    in?: string[] | ListStringFieldRefInput<$PrismaModel>
+    notIn?: string[] | ListStringFieldRefInput<$PrismaModel>
+    lt?: string | StringFieldRefInput<$PrismaModel>
+    lte?: string | StringFieldRefInput<$PrismaModel>
+    gt?: string | StringFieldRefInput<$PrismaModel>
+    gte?: string | StringFieldRefInput<$PrismaModel>
+    contains?: string | StringFieldRefInput<$PrismaModel>
+    startsWith?: string | StringFieldRefInput<$PrismaModel>
+    endsWith?: string | StringFieldRefInput<$PrismaModel>
+    mode?: QueryMode
+    not?: NestedStringFilter<$PrismaModel> | string
+  }
+
+  export type UuidFilter<$PrismaModel = never> = {
+    equals?: string | StringFieldRefInput<$PrismaModel>
+    in?: string[] | ListStringFieldRefInput<$PrismaModel>
+    notIn?: string[] | ListStringFieldRefInput<$PrismaModel>
+    lt?: string | StringFieldRefInput<$PrismaModel>
+    lte?: string | StringFieldRefInput<$PrismaModel>
+    gt?: string | StringFieldRefInput<$PrismaModel>
+    gte?: string | StringFieldRefInput<$PrismaModel>
+    mode?: QueryMode
+    not?: NestedUuidFilter<$PrismaModel> | string
+  }
+
+  export type BoolFilter<$PrismaModel = never> = {
+    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
+    not?: NestedBoolFilter<$PrismaModel> | boolean
+  }
+
+  export type LettersListRelationFilter = {
+    every?: lettersWhereInput
+    some?: lettersWhereInput
+    none?: lettersWhereInput
+  }
+
+  export type lettersOrderByRelationAggregateInput = {
+    _count?: SortOrder
+  }
+
+  export type letter_blocksCountOrderByAggregateInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    name?: SortOrder
+    description?: SortOrder
+    id?: SortOrder
+    deleted?: SortOrder
+  }
+
+  export type letter_blocksMaxOrderByAggregateInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    name?: SortOrder
+    description?: SortOrder
+    id?: SortOrder
+    deleted?: SortOrder
+  }
+
+  export type letter_blocksMinOrderByAggregateInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    name?: SortOrder
+    description?: SortOrder
+    id?: SortOrder
+    deleted?: SortOrder
+  }
+
+  export type DateTimeWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
+    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
+    lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    not?: NestedDateTimeWithAggregatesFilter<$PrismaModel> | Date | string
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedDateTimeFilter<$PrismaModel>
+    _max?: NestedDateTimeFilter<$PrismaModel>
+  }
+
+  export type StringWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: string | StringFieldRefInput<$PrismaModel>
+    in?: string[] | ListStringFieldRefInput<$PrismaModel>
+    notIn?: string[] | ListStringFieldRefInput<$PrismaModel>
+    lt?: string | StringFieldRefInput<$PrismaModel>
+    lte?: string | StringFieldRefInput<$PrismaModel>
+    gt?: string | StringFieldRefInput<$PrismaModel>
+    gte?: string | StringFieldRefInput<$PrismaModel>
+    contains?: string | StringFieldRefInput<$PrismaModel>
+    startsWith?: string | StringFieldRefInput<$PrismaModel>
+    endsWith?: string | StringFieldRefInput<$PrismaModel>
+    mode?: QueryMode
+    not?: NestedStringWithAggregatesFilter<$PrismaModel> | string
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedStringFilter<$PrismaModel>
+    _max?: NestedStringFilter<$PrismaModel>
+  }
+
+  export type UuidWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: string | StringFieldRefInput<$PrismaModel>
+    in?: string[] | ListStringFieldRefInput<$PrismaModel>
+    notIn?: string[] | ListStringFieldRefInput<$PrismaModel>
+    lt?: string | StringFieldRefInput<$PrismaModel>
+    lte?: string | StringFieldRefInput<$PrismaModel>
+    gt?: string | StringFieldRefInput<$PrismaModel>
+    gte?: string | StringFieldRefInput<$PrismaModel>
+    mode?: QueryMode
+    not?: NestedUuidWithAggregatesFilter<$PrismaModel> | string
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedStringFilter<$PrismaModel>
+    _max?: NestedStringFilter<$PrismaModel>
+  }
+
+  export type BoolWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
+    not?: NestedBoolWithAggregatesFilter<$PrismaModel> | boolean
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedBoolFilter<$PrismaModel>
+    _max?: NestedBoolFilter<$PrismaModel>
+  }
+
+  export type IntFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel>
+    in?: number[] | ListIntFieldRefInput<$PrismaModel>
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntFilter<$PrismaModel> | number
+  }
+
+  export type Letter_typesScalarRelationFilter = {
+    is?: letter_typesWhereInput
+    isNot?: letter_typesWhereInput
+  }
+
+  export type Letter_progressListRelationFilter = {
+    every?: letter_progressWhereInput
+    some?: letter_progressWhereInput
+    none?: letter_progressWhereInput
+  }
+
+  export type Letter_questions_to_letter_levelsListRelationFilter = {
+    every?: letter_questions_to_letter_levelsWhereInput
+    some?: letter_questions_to_letter_levelsWhereInput
+    none?: letter_questions_to_letter_levelsWhereInput
+  }
+
+  export type Letters_to_letter_levelsListRelationFilter = {
+    every?: letters_to_letter_levelsWhereInput
+    some?: letters_to_letter_levelsWhereInput
+    none?: letters_to_letter_levelsWhereInput
+  }
+
+  export type letter_progressOrderByRelationAggregateInput = {
+    _count?: SortOrder
+  }
+
+  export type letter_questions_to_letter_levelsOrderByRelationAggregateInput = {
+    _count?: SortOrder
+  }
+
+  export type letters_to_letter_levelsOrderByRelationAggregateInput = {
+    _count?: SortOrder
+  }
+
+  export type letter_levelsCountOrderByAggregateInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    number?: SortOrder
+    letter_type_id?: SortOrder
+    deleted?: SortOrder
+    id?: SortOrder
+  }
+
+  export type letter_levelsAvgOrderByAggregateInput = {
+    number?: SortOrder
+  }
+
+  export type letter_levelsMaxOrderByAggregateInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    number?: SortOrder
+    letter_type_id?: SortOrder
+    deleted?: SortOrder
+    id?: SortOrder
+  }
+
+  export type letter_levelsMinOrderByAggregateInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    number?: SortOrder
+    letter_type_id?: SortOrder
+    deleted?: SortOrder
+    id?: SortOrder
+  }
+
+  export type letter_levelsSumOrderByAggregateInput = {
+    number?: SortOrder
+  }
+
+  export type IntWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel>
+    in?: number[] | ListIntFieldRefInput<$PrismaModel>
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntWithAggregatesFilter<$PrismaModel> | number
+    _count?: NestedIntFilter<$PrismaModel>
+    _avg?: NestedFloatFilter<$PrismaModel>
+    _sum?: NestedIntFilter<$PrismaModel>
+    _min?: NestedIntFilter<$PrismaModel>
+    _max?: NestedIntFilter<$PrismaModel>
+  }
+
+  export type letter_positionsCountOrderByAggregateInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    row?: SortOrder
+    column?: SortOrder
+    deleted?: SortOrder
+  }
+
+  export type letter_positionsAvgOrderByAggregateInput = {
+    row?: SortOrder
+    column?: SortOrder
+  }
+
+  export type letter_positionsMaxOrderByAggregateInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    row?: SortOrder
+    column?: SortOrder
+    deleted?: SortOrder
+  }
+
+  export type letter_positionsMinOrderByAggregateInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    row?: SortOrder
+    column?: SortOrder
+    deleted?: SortOrder
+  }
+
+  export type letter_positionsSumOrderByAggregateInput = {
+    row?: SortOrder
+    column?: SortOrder
+  }
+
+  export type Letter_levelsScalarRelationFilter = {
+    is?: letter_levelsWhereInput
+    isNot?: letter_levelsWhereInput
+  }
+
+  export type letter_progressCountOrderByAggregateInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+    is_completed?: SortOrder
+    letter_level_id?: SortOrder
+  }
+
+  export type letter_progressMaxOrderByAggregateInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+    is_completed?: SortOrder
+    letter_level_id?: SortOrder
+  }
+
+  export type letter_progressMinOrderByAggregateInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+    is_completed?: SortOrder
+    letter_level_id?: SortOrder
+  }
+  export type JsonFilter<$PrismaModel = never> =
+    | PatchUndefined<
+        Either<Required<JsonFilterBase<$PrismaModel>>, Exclude<keyof Required<JsonFilterBase<$PrismaModel>>, 'path'>>,
+        Required<JsonFilterBase<$PrismaModel>>
+      >
+    | OptionalFlat<Omit<Required<JsonFilterBase<$PrismaModel>>, 'path'>>
+
+  export type JsonFilterBase<$PrismaModel = never> = {
+    equals?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+    path?: string[]
+    mode?: QueryMode | EnumQueryModeFieldRefInput<$PrismaModel>
+    string_contains?: string | StringFieldRefInput<$PrismaModel>
+    string_starts_with?: string | StringFieldRefInput<$PrismaModel>
+    string_ends_with?: string | StringFieldRefInput<$PrismaModel>
+    array_starts_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_ends_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_contains?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    lt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    lte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    not?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+  }
+
+  export type letter_questionsCountOrderByAggregateInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    question?: SortOrder
+    deleted?: SortOrder
+    id?: SortOrder
+  }
+
+  export type letter_questionsMaxOrderByAggregateInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+    id?: SortOrder
+  }
+
+  export type letter_questionsMinOrderByAggregateInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+    id?: SortOrder
+  }
+  export type JsonWithAggregatesFilter<$PrismaModel = never> =
+    | PatchUndefined<
+        Either<Required<JsonWithAggregatesFilterBase<$PrismaModel>>, Exclude<keyof Required<JsonWithAggregatesFilterBase<$PrismaModel>>, 'path'>>,
+        Required<JsonWithAggregatesFilterBase<$PrismaModel>>
+      >
+    | OptionalFlat<Omit<Required<JsonWithAggregatesFilterBase<$PrismaModel>>, 'path'>>
+
+  export type JsonWithAggregatesFilterBase<$PrismaModel = never> = {
+    equals?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+    path?: string[]
+    mode?: QueryMode | EnumQueryModeFieldRefInput<$PrismaModel>
+    string_contains?: string | StringFieldRefInput<$PrismaModel>
+    string_starts_with?: string | StringFieldRefInput<$PrismaModel>
+    string_ends_with?: string | StringFieldRefInput<$PrismaModel>
+    array_starts_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_ends_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_contains?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    lt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    lte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    not?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedJsonFilter<$PrismaModel>
+    _max?: NestedJsonFilter<$PrismaModel>
+  }
+
+  export type Letter_questionsScalarRelationFilter = {
+    is?: letter_questionsWhereInput
+    isNot?: letter_questionsWhereInput
+  }
+
+  export type letter_questions_to_letter_levelsLetter_question_idLetter_level_idCompoundUniqueInput = {
+    letter_question_id: string
+    letter_level_id: string
+  }
+
+  export type letter_questions_to_letter_levelsCountOrderByAggregateInput = {
+    letter_question_id?: SortOrder
+    letter_level_id?: SortOrder
+    number?: SortOrder
+  }
+
+  export type letter_questions_to_letter_levelsAvgOrderByAggregateInput = {
+    number?: SortOrder
+  }
+
+  export type letter_questions_to_letter_levelsMaxOrderByAggregateInput = {
+    letter_question_id?: SortOrder
+    letter_level_id?: SortOrder
+    number?: SortOrder
+  }
+
+  export type letter_questions_to_letter_levelsMinOrderByAggregateInput = {
+    letter_question_id?: SortOrder
+    letter_level_id?: SortOrder
+    number?: SortOrder
+  }
+
+  export type letter_questions_to_letter_levelsSumOrderByAggregateInput = {
+    number?: SortOrder
+  }
+
+  export type Letter_levelsListRelationFilter = {
+    every?: letter_levelsWhereInput
+    some?: letter_levelsWhereInput
+    none?: letter_levelsWhereInput
+  }
+
+  export type letter_levelsOrderByRelationAggregateInput = {
+    _count?: SortOrder
+  }
+
+  export type letter_typesCountOrderByAggregateInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    name?: SortOrder
+    deleted?: SortOrder
+  }
+
+  export type letter_typesMaxOrderByAggregateInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    name?: SortOrder
+    deleted?: SortOrder
+  }
+
+  export type letter_typesMinOrderByAggregateInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    name?: SortOrder
+    deleted?: SortOrder
+  }
+
+  export type Letter_blocksScalarRelationFilter = {
+    is?: letter_blocksWhereInput
+    isNot?: letter_blocksWhereInput
+  }
+
+  export type Letter_positionsScalarRelationFilter = {
+    is?: letter_positionsWhereInput
+    isNot?: letter_positionsWhereInput
+  }
+
+  export type lettersCountOrderByAggregateInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+    name?: SortOrder
+    symbol?: SortOrder
+    type_id?: SortOrder
+    position_id?: SortOrder
+    block_id?: SortOrder
+    id?: SortOrder
+  }
+
+  export type lettersMaxOrderByAggregateInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+    name?: SortOrder
+    symbol?: SortOrder
+    type_id?: SortOrder
+    position_id?: SortOrder
+    block_id?: SortOrder
+    id?: SortOrder
+  }
+
+  export type lettersMinOrderByAggregateInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+    name?: SortOrder
+    symbol?: SortOrder
+    type_id?: SortOrder
+    position_id?: SortOrder
+    block_id?: SortOrder
+    id?: SortOrder
+  }
+
+  export type LettersScalarRelationFilter = {
+    is?: lettersWhereInput
+    isNot?: lettersWhereInput
+  }
+
+  export type letters_to_letter_levelsLetter_idLetter_level_idCompoundUniqueInput = {
+    letter_id: string
+    letter_level_id: string
+  }
+
+  export type letters_to_letter_levelsCountOrderByAggregateInput = {
+    letter_id?: SortOrder
+    letter_level_id?: SortOrder
+  }
+
+  export type letters_to_letter_levelsMaxOrderByAggregateInput = {
+    letter_id?: SortOrder
+    letter_level_id?: SortOrder
+  }
+
+  export type letters_to_letter_levelsMinOrderByAggregateInput = {
+    letter_id?: SortOrder
+    letter_level_id?: SortOrder
+  }
+
+  export type lettersCreateNestedManyWithoutLetter_blocksInput = {
+    create?: XOR<lettersCreateWithoutLetter_blocksInput, lettersUncheckedCreateWithoutLetter_blocksInput> | lettersCreateWithoutLetter_blocksInput[] | lettersUncheckedCreateWithoutLetter_blocksInput[]
+    connectOrCreate?: lettersCreateOrConnectWithoutLetter_blocksInput | lettersCreateOrConnectWithoutLetter_blocksInput[]
+    createMany?: lettersCreateManyLetter_blocksInputEnvelope
+    connect?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+  }
+
+  export type lettersUncheckedCreateNestedManyWithoutLetter_blocksInput = {
+    create?: XOR<lettersCreateWithoutLetter_blocksInput, lettersUncheckedCreateWithoutLetter_blocksInput> | lettersCreateWithoutLetter_blocksInput[] | lettersUncheckedCreateWithoutLetter_blocksInput[]
+    connectOrCreate?: lettersCreateOrConnectWithoutLetter_blocksInput | lettersCreateOrConnectWithoutLetter_blocksInput[]
+    createMany?: lettersCreateManyLetter_blocksInputEnvelope
+    connect?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+  }
+
+  export type DateTimeFieldUpdateOperationsInput = {
+    set?: Date | string
+  }
+
+  export type StringFieldUpdateOperationsInput = {
+    set?: string
+  }
+
+  export type BoolFieldUpdateOperationsInput = {
+    set?: boolean
+  }
+
+  export type lettersUpdateManyWithoutLetter_blocksNestedInput = {
+    create?: XOR<lettersCreateWithoutLetter_blocksInput, lettersUncheckedCreateWithoutLetter_blocksInput> | lettersCreateWithoutLetter_blocksInput[] | lettersUncheckedCreateWithoutLetter_blocksInput[]
+    connectOrCreate?: lettersCreateOrConnectWithoutLetter_blocksInput | lettersCreateOrConnectWithoutLetter_blocksInput[]
+    upsert?: lettersUpsertWithWhereUniqueWithoutLetter_blocksInput | lettersUpsertWithWhereUniqueWithoutLetter_blocksInput[]
+    createMany?: lettersCreateManyLetter_blocksInputEnvelope
+    set?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    disconnect?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    delete?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    connect?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    update?: lettersUpdateWithWhereUniqueWithoutLetter_blocksInput | lettersUpdateWithWhereUniqueWithoutLetter_blocksInput[]
+    updateMany?: lettersUpdateManyWithWhereWithoutLetter_blocksInput | lettersUpdateManyWithWhereWithoutLetter_blocksInput[]
+    deleteMany?: lettersScalarWhereInput | lettersScalarWhereInput[]
+  }
+
+  export type lettersUncheckedUpdateManyWithoutLetter_blocksNestedInput = {
+    create?: XOR<lettersCreateWithoutLetter_blocksInput, lettersUncheckedCreateWithoutLetter_blocksInput> | lettersCreateWithoutLetter_blocksInput[] | lettersUncheckedCreateWithoutLetter_blocksInput[]
+    connectOrCreate?: lettersCreateOrConnectWithoutLetter_blocksInput | lettersCreateOrConnectWithoutLetter_blocksInput[]
+    upsert?: lettersUpsertWithWhereUniqueWithoutLetter_blocksInput | lettersUpsertWithWhereUniqueWithoutLetter_blocksInput[]
+    createMany?: lettersCreateManyLetter_blocksInputEnvelope
+    set?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    disconnect?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    delete?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    connect?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    update?: lettersUpdateWithWhereUniqueWithoutLetter_blocksInput | lettersUpdateWithWhereUniqueWithoutLetter_blocksInput[]
+    updateMany?: lettersUpdateManyWithWhereWithoutLetter_blocksInput | lettersUpdateManyWithWhereWithoutLetter_blocksInput[]
+    deleteMany?: lettersScalarWhereInput | lettersScalarWhereInput[]
+  }
+
+  export type letter_typesCreateNestedOneWithoutLetter_levelsInput = {
+    create?: XOR<letter_typesCreateWithoutLetter_levelsInput, letter_typesUncheckedCreateWithoutLetter_levelsInput>
+    connectOrCreate?: letter_typesCreateOrConnectWithoutLetter_levelsInput
+    connect?: letter_typesWhereUniqueInput
+  }
+
+  export type letter_progressCreateNestedManyWithoutLetter_levelsInput = {
+    create?: XOR<letter_progressCreateWithoutLetter_levelsInput, letter_progressUncheckedCreateWithoutLetter_levelsInput> | letter_progressCreateWithoutLetter_levelsInput[] | letter_progressUncheckedCreateWithoutLetter_levelsInput[]
+    connectOrCreate?: letter_progressCreateOrConnectWithoutLetter_levelsInput | letter_progressCreateOrConnectWithoutLetter_levelsInput[]
+    createMany?: letter_progressCreateManyLetter_levelsInputEnvelope
+    connect?: letter_progressWhereUniqueInput | letter_progressWhereUniqueInput[]
+  }
+
+  export type letter_questions_to_letter_levelsCreateNestedManyWithoutLetter_levelsInput = {
+    create?: XOR<letter_questions_to_letter_levelsCreateWithoutLetter_levelsInput, letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput> | letter_questions_to_letter_levelsCreateWithoutLetter_levelsInput[] | letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput[]
+    connectOrCreate?: letter_questions_to_letter_levelsCreateOrConnectWithoutLetter_levelsInput | letter_questions_to_letter_levelsCreateOrConnectWithoutLetter_levelsInput[]
+    createMany?: letter_questions_to_letter_levelsCreateManyLetter_levelsInputEnvelope
+    connect?: letter_questions_to_letter_levelsWhereUniqueInput | letter_questions_to_letter_levelsWhereUniqueInput[]
+  }
+
+  export type letters_to_letter_levelsCreateNestedManyWithoutLetter_levelsInput = {
+    create?: XOR<letters_to_letter_levelsCreateWithoutLetter_levelsInput, letters_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput> | letters_to_letter_levelsCreateWithoutLetter_levelsInput[] | letters_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput[]
+    connectOrCreate?: letters_to_letter_levelsCreateOrConnectWithoutLetter_levelsInput | letters_to_letter_levelsCreateOrConnectWithoutLetter_levelsInput[]
+    createMany?: letters_to_letter_levelsCreateManyLetter_levelsInputEnvelope
+    connect?: letters_to_letter_levelsWhereUniqueInput | letters_to_letter_levelsWhereUniqueInput[]
+  }
+
+  export type letter_progressUncheckedCreateNestedManyWithoutLetter_levelsInput = {
+    create?: XOR<letter_progressCreateWithoutLetter_levelsInput, letter_progressUncheckedCreateWithoutLetter_levelsInput> | letter_progressCreateWithoutLetter_levelsInput[] | letter_progressUncheckedCreateWithoutLetter_levelsInput[]
+    connectOrCreate?: letter_progressCreateOrConnectWithoutLetter_levelsInput | letter_progressCreateOrConnectWithoutLetter_levelsInput[]
+    createMany?: letter_progressCreateManyLetter_levelsInputEnvelope
+    connect?: letter_progressWhereUniqueInput | letter_progressWhereUniqueInput[]
+  }
+
+  export type letter_questions_to_letter_levelsUncheckedCreateNestedManyWithoutLetter_levelsInput = {
+    create?: XOR<letter_questions_to_letter_levelsCreateWithoutLetter_levelsInput, letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput> | letter_questions_to_letter_levelsCreateWithoutLetter_levelsInput[] | letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput[]
+    connectOrCreate?: letter_questions_to_letter_levelsCreateOrConnectWithoutLetter_levelsInput | letter_questions_to_letter_levelsCreateOrConnectWithoutLetter_levelsInput[]
+    createMany?: letter_questions_to_letter_levelsCreateManyLetter_levelsInputEnvelope
+    connect?: letter_questions_to_letter_levelsWhereUniqueInput | letter_questions_to_letter_levelsWhereUniqueInput[]
+  }
+
+  export type letters_to_letter_levelsUncheckedCreateNestedManyWithoutLetter_levelsInput = {
+    create?: XOR<letters_to_letter_levelsCreateWithoutLetter_levelsInput, letters_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput> | letters_to_letter_levelsCreateWithoutLetter_levelsInput[] | letters_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput[]
+    connectOrCreate?: letters_to_letter_levelsCreateOrConnectWithoutLetter_levelsInput | letters_to_letter_levelsCreateOrConnectWithoutLetter_levelsInput[]
+    createMany?: letters_to_letter_levelsCreateManyLetter_levelsInputEnvelope
+    connect?: letters_to_letter_levelsWhereUniqueInput | letters_to_letter_levelsWhereUniqueInput[]
+  }
+
+  export type IntFieldUpdateOperationsInput = {
+    set?: number
+    increment?: number
+    decrement?: number
+    multiply?: number
+    divide?: number
+  }
+
+  export type letter_typesUpdateOneRequiredWithoutLetter_levelsNestedInput = {
+    create?: XOR<letter_typesCreateWithoutLetter_levelsInput, letter_typesUncheckedCreateWithoutLetter_levelsInput>
+    connectOrCreate?: letter_typesCreateOrConnectWithoutLetter_levelsInput
+    upsert?: letter_typesUpsertWithoutLetter_levelsInput
+    connect?: letter_typesWhereUniqueInput
+    update?: XOR<XOR<letter_typesUpdateToOneWithWhereWithoutLetter_levelsInput, letter_typesUpdateWithoutLetter_levelsInput>, letter_typesUncheckedUpdateWithoutLetter_levelsInput>
+  }
+
+  export type letter_progressUpdateManyWithoutLetter_levelsNestedInput = {
+    create?: XOR<letter_progressCreateWithoutLetter_levelsInput, letter_progressUncheckedCreateWithoutLetter_levelsInput> | letter_progressCreateWithoutLetter_levelsInput[] | letter_progressUncheckedCreateWithoutLetter_levelsInput[]
+    connectOrCreate?: letter_progressCreateOrConnectWithoutLetter_levelsInput | letter_progressCreateOrConnectWithoutLetter_levelsInput[]
+    upsert?: letter_progressUpsertWithWhereUniqueWithoutLetter_levelsInput | letter_progressUpsertWithWhereUniqueWithoutLetter_levelsInput[]
+    createMany?: letter_progressCreateManyLetter_levelsInputEnvelope
+    set?: letter_progressWhereUniqueInput | letter_progressWhereUniqueInput[]
+    disconnect?: letter_progressWhereUniqueInput | letter_progressWhereUniqueInput[]
+    delete?: letter_progressWhereUniqueInput | letter_progressWhereUniqueInput[]
+    connect?: letter_progressWhereUniqueInput | letter_progressWhereUniqueInput[]
+    update?: letter_progressUpdateWithWhereUniqueWithoutLetter_levelsInput | letter_progressUpdateWithWhereUniqueWithoutLetter_levelsInput[]
+    updateMany?: letter_progressUpdateManyWithWhereWithoutLetter_levelsInput | letter_progressUpdateManyWithWhereWithoutLetter_levelsInput[]
+    deleteMany?: letter_progressScalarWhereInput | letter_progressScalarWhereInput[]
+  }
+
+  export type letter_questions_to_letter_levelsUpdateManyWithoutLetter_levelsNestedInput = {
+    create?: XOR<letter_questions_to_letter_levelsCreateWithoutLetter_levelsInput, letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput> | letter_questions_to_letter_levelsCreateWithoutLetter_levelsInput[] | letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput[]
+    connectOrCreate?: letter_questions_to_letter_levelsCreateOrConnectWithoutLetter_levelsInput | letter_questions_to_letter_levelsCreateOrConnectWithoutLetter_levelsInput[]
+    upsert?: letter_questions_to_letter_levelsUpsertWithWhereUniqueWithoutLetter_levelsInput | letter_questions_to_letter_levelsUpsertWithWhereUniqueWithoutLetter_levelsInput[]
+    createMany?: letter_questions_to_letter_levelsCreateManyLetter_levelsInputEnvelope
+    set?: letter_questions_to_letter_levelsWhereUniqueInput | letter_questions_to_letter_levelsWhereUniqueInput[]
+    disconnect?: letter_questions_to_letter_levelsWhereUniqueInput | letter_questions_to_letter_levelsWhereUniqueInput[]
+    delete?: letter_questions_to_letter_levelsWhereUniqueInput | letter_questions_to_letter_levelsWhereUniqueInput[]
+    connect?: letter_questions_to_letter_levelsWhereUniqueInput | letter_questions_to_letter_levelsWhereUniqueInput[]
+    update?: letter_questions_to_letter_levelsUpdateWithWhereUniqueWithoutLetter_levelsInput | letter_questions_to_letter_levelsUpdateWithWhereUniqueWithoutLetter_levelsInput[]
+    updateMany?: letter_questions_to_letter_levelsUpdateManyWithWhereWithoutLetter_levelsInput | letter_questions_to_letter_levelsUpdateManyWithWhereWithoutLetter_levelsInput[]
+    deleteMany?: letter_questions_to_letter_levelsScalarWhereInput | letter_questions_to_letter_levelsScalarWhereInput[]
+  }
+
+  export type letters_to_letter_levelsUpdateManyWithoutLetter_levelsNestedInput = {
+    create?: XOR<letters_to_letter_levelsCreateWithoutLetter_levelsInput, letters_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput> | letters_to_letter_levelsCreateWithoutLetter_levelsInput[] | letters_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput[]
+    connectOrCreate?: letters_to_letter_levelsCreateOrConnectWithoutLetter_levelsInput | letters_to_letter_levelsCreateOrConnectWithoutLetter_levelsInput[]
+    upsert?: letters_to_letter_levelsUpsertWithWhereUniqueWithoutLetter_levelsInput | letters_to_letter_levelsUpsertWithWhereUniqueWithoutLetter_levelsInput[]
+    createMany?: letters_to_letter_levelsCreateManyLetter_levelsInputEnvelope
+    set?: letters_to_letter_levelsWhereUniqueInput | letters_to_letter_levelsWhereUniqueInput[]
+    disconnect?: letters_to_letter_levelsWhereUniqueInput | letters_to_letter_levelsWhereUniqueInput[]
+    delete?: letters_to_letter_levelsWhereUniqueInput | letters_to_letter_levelsWhereUniqueInput[]
+    connect?: letters_to_letter_levelsWhereUniqueInput | letters_to_letter_levelsWhereUniqueInput[]
+    update?: letters_to_letter_levelsUpdateWithWhereUniqueWithoutLetter_levelsInput | letters_to_letter_levelsUpdateWithWhereUniqueWithoutLetter_levelsInput[]
+    updateMany?: letters_to_letter_levelsUpdateManyWithWhereWithoutLetter_levelsInput | letters_to_letter_levelsUpdateManyWithWhereWithoutLetter_levelsInput[]
+    deleteMany?: letters_to_letter_levelsScalarWhereInput | letters_to_letter_levelsScalarWhereInput[]
+  }
+
+  export type letter_progressUncheckedUpdateManyWithoutLetter_levelsNestedInput = {
+    create?: XOR<letter_progressCreateWithoutLetter_levelsInput, letter_progressUncheckedCreateWithoutLetter_levelsInput> | letter_progressCreateWithoutLetter_levelsInput[] | letter_progressUncheckedCreateWithoutLetter_levelsInput[]
+    connectOrCreate?: letter_progressCreateOrConnectWithoutLetter_levelsInput | letter_progressCreateOrConnectWithoutLetter_levelsInput[]
+    upsert?: letter_progressUpsertWithWhereUniqueWithoutLetter_levelsInput | letter_progressUpsertWithWhereUniqueWithoutLetter_levelsInput[]
+    createMany?: letter_progressCreateManyLetter_levelsInputEnvelope
+    set?: letter_progressWhereUniqueInput | letter_progressWhereUniqueInput[]
+    disconnect?: letter_progressWhereUniqueInput | letter_progressWhereUniqueInput[]
+    delete?: letter_progressWhereUniqueInput | letter_progressWhereUniqueInput[]
+    connect?: letter_progressWhereUniqueInput | letter_progressWhereUniqueInput[]
+    update?: letter_progressUpdateWithWhereUniqueWithoutLetter_levelsInput | letter_progressUpdateWithWhereUniqueWithoutLetter_levelsInput[]
+    updateMany?: letter_progressUpdateManyWithWhereWithoutLetter_levelsInput | letter_progressUpdateManyWithWhereWithoutLetter_levelsInput[]
+    deleteMany?: letter_progressScalarWhereInput | letter_progressScalarWhereInput[]
+  }
+
+  export type letter_questions_to_letter_levelsUncheckedUpdateManyWithoutLetter_levelsNestedInput = {
+    create?: XOR<letter_questions_to_letter_levelsCreateWithoutLetter_levelsInput, letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput> | letter_questions_to_letter_levelsCreateWithoutLetter_levelsInput[] | letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput[]
+    connectOrCreate?: letter_questions_to_letter_levelsCreateOrConnectWithoutLetter_levelsInput | letter_questions_to_letter_levelsCreateOrConnectWithoutLetter_levelsInput[]
+    upsert?: letter_questions_to_letter_levelsUpsertWithWhereUniqueWithoutLetter_levelsInput | letter_questions_to_letter_levelsUpsertWithWhereUniqueWithoutLetter_levelsInput[]
+    createMany?: letter_questions_to_letter_levelsCreateManyLetter_levelsInputEnvelope
+    set?: letter_questions_to_letter_levelsWhereUniqueInput | letter_questions_to_letter_levelsWhereUniqueInput[]
+    disconnect?: letter_questions_to_letter_levelsWhereUniqueInput | letter_questions_to_letter_levelsWhereUniqueInput[]
+    delete?: letter_questions_to_letter_levelsWhereUniqueInput | letter_questions_to_letter_levelsWhereUniqueInput[]
+    connect?: letter_questions_to_letter_levelsWhereUniqueInput | letter_questions_to_letter_levelsWhereUniqueInput[]
+    update?: letter_questions_to_letter_levelsUpdateWithWhereUniqueWithoutLetter_levelsInput | letter_questions_to_letter_levelsUpdateWithWhereUniqueWithoutLetter_levelsInput[]
+    updateMany?: letter_questions_to_letter_levelsUpdateManyWithWhereWithoutLetter_levelsInput | letter_questions_to_letter_levelsUpdateManyWithWhereWithoutLetter_levelsInput[]
+    deleteMany?: letter_questions_to_letter_levelsScalarWhereInput | letter_questions_to_letter_levelsScalarWhereInput[]
+  }
+
+  export type letters_to_letter_levelsUncheckedUpdateManyWithoutLetter_levelsNestedInput = {
+    create?: XOR<letters_to_letter_levelsCreateWithoutLetter_levelsInput, letters_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput> | letters_to_letter_levelsCreateWithoutLetter_levelsInput[] | letters_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput[]
+    connectOrCreate?: letters_to_letter_levelsCreateOrConnectWithoutLetter_levelsInput | letters_to_letter_levelsCreateOrConnectWithoutLetter_levelsInput[]
+    upsert?: letters_to_letter_levelsUpsertWithWhereUniqueWithoutLetter_levelsInput | letters_to_letter_levelsUpsertWithWhereUniqueWithoutLetter_levelsInput[]
+    createMany?: letters_to_letter_levelsCreateManyLetter_levelsInputEnvelope
+    set?: letters_to_letter_levelsWhereUniqueInput | letters_to_letter_levelsWhereUniqueInput[]
+    disconnect?: letters_to_letter_levelsWhereUniqueInput | letters_to_letter_levelsWhereUniqueInput[]
+    delete?: letters_to_letter_levelsWhereUniqueInput | letters_to_letter_levelsWhereUniqueInput[]
+    connect?: letters_to_letter_levelsWhereUniqueInput | letters_to_letter_levelsWhereUniqueInput[]
+    update?: letters_to_letter_levelsUpdateWithWhereUniqueWithoutLetter_levelsInput | letters_to_letter_levelsUpdateWithWhereUniqueWithoutLetter_levelsInput[]
+    updateMany?: letters_to_letter_levelsUpdateManyWithWhereWithoutLetter_levelsInput | letters_to_letter_levelsUpdateManyWithWhereWithoutLetter_levelsInput[]
+    deleteMany?: letters_to_letter_levelsScalarWhereInput | letters_to_letter_levelsScalarWhereInput[]
+  }
+
+  export type lettersCreateNestedManyWithoutLetter_positionsInput = {
+    create?: XOR<lettersCreateWithoutLetter_positionsInput, lettersUncheckedCreateWithoutLetter_positionsInput> | lettersCreateWithoutLetter_positionsInput[] | lettersUncheckedCreateWithoutLetter_positionsInput[]
+    connectOrCreate?: lettersCreateOrConnectWithoutLetter_positionsInput | lettersCreateOrConnectWithoutLetter_positionsInput[]
+    createMany?: lettersCreateManyLetter_positionsInputEnvelope
+    connect?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+  }
+
+  export type lettersUncheckedCreateNestedManyWithoutLetter_positionsInput = {
+    create?: XOR<lettersCreateWithoutLetter_positionsInput, lettersUncheckedCreateWithoutLetter_positionsInput> | lettersCreateWithoutLetter_positionsInput[] | lettersUncheckedCreateWithoutLetter_positionsInput[]
+    connectOrCreate?: lettersCreateOrConnectWithoutLetter_positionsInput | lettersCreateOrConnectWithoutLetter_positionsInput[]
+    createMany?: lettersCreateManyLetter_positionsInputEnvelope
+    connect?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+  }
+
+  export type lettersUpdateManyWithoutLetter_positionsNestedInput = {
+    create?: XOR<lettersCreateWithoutLetter_positionsInput, lettersUncheckedCreateWithoutLetter_positionsInput> | lettersCreateWithoutLetter_positionsInput[] | lettersUncheckedCreateWithoutLetter_positionsInput[]
+    connectOrCreate?: lettersCreateOrConnectWithoutLetter_positionsInput | lettersCreateOrConnectWithoutLetter_positionsInput[]
+    upsert?: lettersUpsertWithWhereUniqueWithoutLetter_positionsInput | lettersUpsertWithWhereUniqueWithoutLetter_positionsInput[]
+    createMany?: lettersCreateManyLetter_positionsInputEnvelope
+    set?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    disconnect?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    delete?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    connect?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    update?: lettersUpdateWithWhereUniqueWithoutLetter_positionsInput | lettersUpdateWithWhereUniqueWithoutLetter_positionsInput[]
+    updateMany?: lettersUpdateManyWithWhereWithoutLetter_positionsInput | lettersUpdateManyWithWhereWithoutLetter_positionsInput[]
+    deleteMany?: lettersScalarWhereInput | lettersScalarWhereInput[]
+  }
+
+  export type lettersUncheckedUpdateManyWithoutLetter_positionsNestedInput = {
+    create?: XOR<lettersCreateWithoutLetter_positionsInput, lettersUncheckedCreateWithoutLetter_positionsInput> | lettersCreateWithoutLetter_positionsInput[] | lettersUncheckedCreateWithoutLetter_positionsInput[]
+    connectOrCreate?: lettersCreateOrConnectWithoutLetter_positionsInput | lettersCreateOrConnectWithoutLetter_positionsInput[]
+    upsert?: lettersUpsertWithWhereUniqueWithoutLetter_positionsInput | lettersUpsertWithWhereUniqueWithoutLetter_positionsInput[]
+    createMany?: lettersCreateManyLetter_positionsInputEnvelope
+    set?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    disconnect?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    delete?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    connect?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    update?: lettersUpdateWithWhereUniqueWithoutLetter_positionsInput | lettersUpdateWithWhereUniqueWithoutLetter_positionsInput[]
+    updateMany?: lettersUpdateManyWithWhereWithoutLetter_positionsInput | lettersUpdateManyWithWhereWithoutLetter_positionsInput[]
+    deleteMany?: lettersScalarWhereInput | lettersScalarWhereInput[]
+  }
+
+  export type letter_levelsCreateNestedOneWithoutLetter_progressInput = {
+    create?: XOR<letter_levelsCreateWithoutLetter_progressInput, letter_levelsUncheckedCreateWithoutLetter_progressInput>
+    connectOrCreate?: letter_levelsCreateOrConnectWithoutLetter_progressInput
+    connect?: letter_levelsWhereUniqueInput
+  }
+
+  export type letter_levelsUpdateOneRequiredWithoutLetter_progressNestedInput = {
+    create?: XOR<letter_levelsCreateWithoutLetter_progressInput, letter_levelsUncheckedCreateWithoutLetter_progressInput>
+    connectOrCreate?: letter_levelsCreateOrConnectWithoutLetter_progressInput
+    upsert?: letter_levelsUpsertWithoutLetter_progressInput
+    connect?: letter_levelsWhereUniqueInput
+    update?: XOR<XOR<letter_levelsUpdateToOneWithWhereWithoutLetter_progressInput, letter_levelsUpdateWithoutLetter_progressInput>, letter_levelsUncheckedUpdateWithoutLetter_progressInput>
+  }
+
+  export type letter_questions_to_letter_levelsCreateNestedManyWithoutLetter_questionsInput = {
+    create?: XOR<letter_questions_to_letter_levelsCreateWithoutLetter_questionsInput, letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_questionsInput> | letter_questions_to_letter_levelsCreateWithoutLetter_questionsInput[] | letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_questionsInput[]
+    connectOrCreate?: letter_questions_to_letter_levelsCreateOrConnectWithoutLetter_questionsInput | letter_questions_to_letter_levelsCreateOrConnectWithoutLetter_questionsInput[]
+    createMany?: letter_questions_to_letter_levelsCreateManyLetter_questionsInputEnvelope
+    connect?: letter_questions_to_letter_levelsWhereUniqueInput | letter_questions_to_letter_levelsWhereUniqueInput[]
+  }
+
+  export type letter_questions_to_letter_levelsUncheckedCreateNestedManyWithoutLetter_questionsInput = {
+    create?: XOR<letter_questions_to_letter_levelsCreateWithoutLetter_questionsInput, letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_questionsInput> | letter_questions_to_letter_levelsCreateWithoutLetter_questionsInput[] | letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_questionsInput[]
+    connectOrCreate?: letter_questions_to_letter_levelsCreateOrConnectWithoutLetter_questionsInput | letter_questions_to_letter_levelsCreateOrConnectWithoutLetter_questionsInput[]
+    createMany?: letter_questions_to_letter_levelsCreateManyLetter_questionsInputEnvelope
+    connect?: letter_questions_to_letter_levelsWhereUniqueInput | letter_questions_to_letter_levelsWhereUniqueInput[]
+  }
+
+  export type letter_questions_to_letter_levelsUpdateManyWithoutLetter_questionsNestedInput = {
+    create?: XOR<letter_questions_to_letter_levelsCreateWithoutLetter_questionsInput, letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_questionsInput> | letter_questions_to_letter_levelsCreateWithoutLetter_questionsInput[] | letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_questionsInput[]
+    connectOrCreate?: letter_questions_to_letter_levelsCreateOrConnectWithoutLetter_questionsInput | letter_questions_to_letter_levelsCreateOrConnectWithoutLetter_questionsInput[]
+    upsert?: letter_questions_to_letter_levelsUpsertWithWhereUniqueWithoutLetter_questionsInput | letter_questions_to_letter_levelsUpsertWithWhereUniqueWithoutLetter_questionsInput[]
+    createMany?: letter_questions_to_letter_levelsCreateManyLetter_questionsInputEnvelope
+    set?: letter_questions_to_letter_levelsWhereUniqueInput | letter_questions_to_letter_levelsWhereUniqueInput[]
+    disconnect?: letter_questions_to_letter_levelsWhereUniqueInput | letter_questions_to_letter_levelsWhereUniqueInput[]
+    delete?: letter_questions_to_letter_levelsWhereUniqueInput | letter_questions_to_letter_levelsWhereUniqueInput[]
+    connect?: letter_questions_to_letter_levelsWhereUniqueInput | letter_questions_to_letter_levelsWhereUniqueInput[]
+    update?: letter_questions_to_letter_levelsUpdateWithWhereUniqueWithoutLetter_questionsInput | letter_questions_to_letter_levelsUpdateWithWhereUniqueWithoutLetter_questionsInput[]
+    updateMany?: letter_questions_to_letter_levelsUpdateManyWithWhereWithoutLetter_questionsInput | letter_questions_to_letter_levelsUpdateManyWithWhereWithoutLetter_questionsInput[]
+    deleteMany?: letter_questions_to_letter_levelsScalarWhereInput | letter_questions_to_letter_levelsScalarWhereInput[]
+  }
+
+  export type letter_questions_to_letter_levelsUncheckedUpdateManyWithoutLetter_questionsNestedInput = {
+    create?: XOR<letter_questions_to_letter_levelsCreateWithoutLetter_questionsInput, letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_questionsInput> | letter_questions_to_letter_levelsCreateWithoutLetter_questionsInput[] | letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_questionsInput[]
+    connectOrCreate?: letter_questions_to_letter_levelsCreateOrConnectWithoutLetter_questionsInput | letter_questions_to_letter_levelsCreateOrConnectWithoutLetter_questionsInput[]
+    upsert?: letter_questions_to_letter_levelsUpsertWithWhereUniqueWithoutLetter_questionsInput | letter_questions_to_letter_levelsUpsertWithWhereUniqueWithoutLetter_questionsInput[]
+    createMany?: letter_questions_to_letter_levelsCreateManyLetter_questionsInputEnvelope
+    set?: letter_questions_to_letter_levelsWhereUniqueInput | letter_questions_to_letter_levelsWhereUniqueInput[]
+    disconnect?: letter_questions_to_letter_levelsWhereUniqueInput | letter_questions_to_letter_levelsWhereUniqueInput[]
+    delete?: letter_questions_to_letter_levelsWhereUniqueInput | letter_questions_to_letter_levelsWhereUniqueInput[]
+    connect?: letter_questions_to_letter_levelsWhereUniqueInput | letter_questions_to_letter_levelsWhereUniqueInput[]
+    update?: letter_questions_to_letter_levelsUpdateWithWhereUniqueWithoutLetter_questionsInput | letter_questions_to_letter_levelsUpdateWithWhereUniqueWithoutLetter_questionsInput[]
+    updateMany?: letter_questions_to_letter_levelsUpdateManyWithWhereWithoutLetter_questionsInput | letter_questions_to_letter_levelsUpdateManyWithWhereWithoutLetter_questionsInput[]
+    deleteMany?: letter_questions_to_letter_levelsScalarWhereInput | letter_questions_to_letter_levelsScalarWhereInput[]
+  }
+
+  export type letter_levelsCreateNestedOneWithoutLetter_questions_to_letter_levelsInput = {
+    create?: XOR<letter_levelsCreateWithoutLetter_questions_to_letter_levelsInput, letter_levelsUncheckedCreateWithoutLetter_questions_to_letter_levelsInput>
+    connectOrCreate?: letter_levelsCreateOrConnectWithoutLetter_questions_to_letter_levelsInput
+    connect?: letter_levelsWhereUniqueInput
+  }
+
+  export type letter_questionsCreateNestedOneWithoutLetter_questions_to_letter_levelsInput = {
+    create?: XOR<letter_questionsCreateWithoutLetter_questions_to_letter_levelsInput, letter_questionsUncheckedCreateWithoutLetter_questions_to_letter_levelsInput>
+    connectOrCreate?: letter_questionsCreateOrConnectWithoutLetter_questions_to_letter_levelsInput
+    connect?: letter_questionsWhereUniqueInput
+  }
+
+  export type letter_levelsUpdateOneRequiredWithoutLetter_questions_to_letter_levelsNestedInput = {
+    create?: XOR<letter_levelsCreateWithoutLetter_questions_to_letter_levelsInput, letter_levelsUncheckedCreateWithoutLetter_questions_to_letter_levelsInput>
+    connectOrCreate?: letter_levelsCreateOrConnectWithoutLetter_questions_to_letter_levelsInput
+    upsert?: letter_levelsUpsertWithoutLetter_questions_to_letter_levelsInput
+    connect?: letter_levelsWhereUniqueInput
+    update?: XOR<XOR<letter_levelsUpdateToOneWithWhereWithoutLetter_questions_to_letter_levelsInput, letter_levelsUpdateWithoutLetter_questions_to_letter_levelsInput>, letter_levelsUncheckedUpdateWithoutLetter_questions_to_letter_levelsInput>
+  }
+
+  export type letter_questionsUpdateOneRequiredWithoutLetter_questions_to_letter_levelsNestedInput = {
+    create?: XOR<letter_questionsCreateWithoutLetter_questions_to_letter_levelsInput, letter_questionsUncheckedCreateWithoutLetter_questions_to_letter_levelsInput>
+    connectOrCreate?: letter_questionsCreateOrConnectWithoutLetter_questions_to_letter_levelsInput
+    upsert?: letter_questionsUpsertWithoutLetter_questions_to_letter_levelsInput
+    connect?: letter_questionsWhereUniqueInput
+    update?: XOR<XOR<letter_questionsUpdateToOneWithWhereWithoutLetter_questions_to_letter_levelsInput, letter_questionsUpdateWithoutLetter_questions_to_letter_levelsInput>, letter_questionsUncheckedUpdateWithoutLetter_questions_to_letter_levelsInput>
+  }
+
+  export type letter_levelsCreateNestedManyWithoutLetter_typesInput = {
+    create?: XOR<letter_levelsCreateWithoutLetter_typesInput, letter_levelsUncheckedCreateWithoutLetter_typesInput> | letter_levelsCreateWithoutLetter_typesInput[] | letter_levelsUncheckedCreateWithoutLetter_typesInput[]
+    connectOrCreate?: letter_levelsCreateOrConnectWithoutLetter_typesInput | letter_levelsCreateOrConnectWithoutLetter_typesInput[]
+    createMany?: letter_levelsCreateManyLetter_typesInputEnvelope
+    connect?: letter_levelsWhereUniqueInput | letter_levelsWhereUniqueInput[]
+  }
+
+  export type lettersCreateNestedManyWithoutLetter_typesInput = {
+    create?: XOR<lettersCreateWithoutLetter_typesInput, lettersUncheckedCreateWithoutLetter_typesInput> | lettersCreateWithoutLetter_typesInput[] | lettersUncheckedCreateWithoutLetter_typesInput[]
+    connectOrCreate?: lettersCreateOrConnectWithoutLetter_typesInput | lettersCreateOrConnectWithoutLetter_typesInput[]
+    createMany?: lettersCreateManyLetter_typesInputEnvelope
+    connect?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+  }
+
+  export type letter_levelsUncheckedCreateNestedManyWithoutLetter_typesInput = {
+    create?: XOR<letter_levelsCreateWithoutLetter_typesInput, letter_levelsUncheckedCreateWithoutLetter_typesInput> | letter_levelsCreateWithoutLetter_typesInput[] | letter_levelsUncheckedCreateWithoutLetter_typesInput[]
+    connectOrCreate?: letter_levelsCreateOrConnectWithoutLetter_typesInput | letter_levelsCreateOrConnectWithoutLetter_typesInput[]
+    createMany?: letter_levelsCreateManyLetter_typesInputEnvelope
+    connect?: letter_levelsWhereUniqueInput | letter_levelsWhereUniqueInput[]
+  }
+
+  export type lettersUncheckedCreateNestedManyWithoutLetter_typesInput = {
+    create?: XOR<lettersCreateWithoutLetter_typesInput, lettersUncheckedCreateWithoutLetter_typesInput> | lettersCreateWithoutLetter_typesInput[] | lettersUncheckedCreateWithoutLetter_typesInput[]
+    connectOrCreate?: lettersCreateOrConnectWithoutLetter_typesInput | lettersCreateOrConnectWithoutLetter_typesInput[]
+    createMany?: lettersCreateManyLetter_typesInputEnvelope
+    connect?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+  }
+
+  export type letter_levelsUpdateManyWithoutLetter_typesNestedInput = {
+    create?: XOR<letter_levelsCreateWithoutLetter_typesInput, letter_levelsUncheckedCreateWithoutLetter_typesInput> | letter_levelsCreateWithoutLetter_typesInput[] | letter_levelsUncheckedCreateWithoutLetter_typesInput[]
+    connectOrCreate?: letter_levelsCreateOrConnectWithoutLetter_typesInput | letter_levelsCreateOrConnectWithoutLetter_typesInput[]
+    upsert?: letter_levelsUpsertWithWhereUniqueWithoutLetter_typesInput | letter_levelsUpsertWithWhereUniqueWithoutLetter_typesInput[]
+    createMany?: letter_levelsCreateManyLetter_typesInputEnvelope
+    set?: letter_levelsWhereUniqueInput | letter_levelsWhereUniqueInput[]
+    disconnect?: letter_levelsWhereUniqueInput | letter_levelsWhereUniqueInput[]
+    delete?: letter_levelsWhereUniqueInput | letter_levelsWhereUniqueInput[]
+    connect?: letter_levelsWhereUniqueInput | letter_levelsWhereUniqueInput[]
+    update?: letter_levelsUpdateWithWhereUniqueWithoutLetter_typesInput | letter_levelsUpdateWithWhereUniqueWithoutLetter_typesInput[]
+    updateMany?: letter_levelsUpdateManyWithWhereWithoutLetter_typesInput | letter_levelsUpdateManyWithWhereWithoutLetter_typesInput[]
+    deleteMany?: letter_levelsScalarWhereInput | letter_levelsScalarWhereInput[]
+  }
+
+  export type lettersUpdateManyWithoutLetter_typesNestedInput = {
+    create?: XOR<lettersCreateWithoutLetter_typesInput, lettersUncheckedCreateWithoutLetter_typesInput> | lettersCreateWithoutLetter_typesInput[] | lettersUncheckedCreateWithoutLetter_typesInput[]
+    connectOrCreate?: lettersCreateOrConnectWithoutLetter_typesInput | lettersCreateOrConnectWithoutLetter_typesInput[]
+    upsert?: lettersUpsertWithWhereUniqueWithoutLetter_typesInput | lettersUpsertWithWhereUniqueWithoutLetter_typesInput[]
+    createMany?: lettersCreateManyLetter_typesInputEnvelope
+    set?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    disconnect?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    delete?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    connect?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    update?: lettersUpdateWithWhereUniqueWithoutLetter_typesInput | lettersUpdateWithWhereUniqueWithoutLetter_typesInput[]
+    updateMany?: lettersUpdateManyWithWhereWithoutLetter_typesInput | lettersUpdateManyWithWhereWithoutLetter_typesInput[]
+    deleteMany?: lettersScalarWhereInput | lettersScalarWhereInput[]
+  }
+
+  export type letter_levelsUncheckedUpdateManyWithoutLetter_typesNestedInput = {
+    create?: XOR<letter_levelsCreateWithoutLetter_typesInput, letter_levelsUncheckedCreateWithoutLetter_typesInput> | letter_levelsCreateWithoutLetter_typesInput[] | letter_levelsUncheckedCreateWithoutLetter_typesInput[]
+    connectOrCreate?: letter_levelsCreateOrConnectWithoutLetter_typesInput | letter_levelsCreateOrConnectWithoutLetter_typesInput[]
+    upsert?: letter_levelsUpsertWithWhereUniqueWithoutLetter_typesInput | letter_levelsUpsertWithWhereUniqueWithoutLetter_typesInput[]
+    createMany?: letter_levelsCreateManyLetter_typesInputEnvelope
+    set?: letter_levelsWhereUniqueInput | letter_levelsWhereUniqueInput[]
+    disconnect?: letter_levelsWhereUniqueInput | letter_levelsWhereUniqueInput[]
+    delete?: letter_levelsWhereUniqueInput | letter_levelsWhereUniqueInput[]
+    connect?: letter_levelsWhereUniqueInput | letter_levelsWhereUniqueInput[]
+    update?: letter_levelsUpdateWithWhereUniqueWithoutLetter_typesInput | letter_levelsUpdateWithWhereUniqueWithoutLetter_typesInput[]
+    updateMany?: letter_levelsUpdateManyWithWhereWithoutLetter_typesInput | letter_levelsUpdateManyWithWhereWithoutLetter_typesInput[]
+    deleteMany?: letter_levelsScalarWhereInput | letter_levelsScalarWhereInput[]
+  }
+
+  export type lettersUncheckedUpdateManyWithoutLetter_typesNestedInput = {
+    create?: XOR<lettersCreateWithoutLetter_typesInput, lettersUncheckedCreateWithoutLetter_typesInput> | lettersCreateWithoutLetter_typesInput[] | lettersUncheckedCreateWithoutLetter_typesInput[]
+    connectOrCreate?: lettersCreateOrConnectWithoutLetter_typesInput | lettersCreateOrConnectWithoutLetter_typesInput[]
+    upsert?: lettersUpsertWithWhereUniqueWithoutLetter_typesInput | lettersUpsertWithWhereUniqueWithoutLetter_typesInput[]
+    createMany?: lettersCreateManyLetter_typesInputEnvelope
+    set?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    disconnect?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    delete?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    connect?: lettersWhereUniqueInput | lettersWhereUniqueInput[]
+    update?: lettersUpdateWithWhereUniqueWithoutLetter_typesInput | lettersUpdateWithWhereUniqueWithoutLetter_typesInput[]
+    updateMany?: lettersUpdateManyWithWhereWithoutLetter_typesInput | lettersUpdateManyWithWhereWithoutLetter_typesInput[]
+    deleteMany?: lettersScalarWhereInput | lettersScalarWhereInput[]
+  }
+
+  export type letter_blocksCreateNestedOneWithoutLettersInput = {
+    create?: XOR<letter_blocksCreateWithoutLettersInput, letter_blocksUncheckedCreateWithoutLettersInput>
+    connectOrCreate?: letter_blocksCreateOrConnectWithoutLettersInput
+    connect?: letter_blocksWhereUniqueInput
+  }
+
+  export type letter_positionsCreateNestedOneWithoutLettersInput = {
+    create?: XOR<letter_positionsCreateWithoutLettersInput, letter_positionsUncheckedCreateWithoutLettersInput>
+    connectOrCreate?: letter_positionsCreateOrConnectWithoutLettersInput
+    connect?: letter_positionsWhereUniqueInput
+  }
+
+  export type letter_typesCreateNestedOneWithoutLettersInput = {
+    create?: XOR<letter_typesCreateWithoutLettersInput, letter_typesUncheckedCreateWithoutLettersInput>
+    connectOrCreate?: letter_typesCreateOrConnectWithoutLettersInput
+    connect?: letter_typesWhereUniqueInput
+  }
+
+  export type letters_to_letter_levelsCreateNestedManyWithoutLettersInput = {
+    create?: XOR<letters_to_letter_levelsCreateWithoutLettersInput, letters_to_letter_levelsUncheckedCreateWithoutLettersInput> | letters_to_letter_levelsCreateWithoutLettersInput[] | letters_to_letter_levelsUncheckedCreateWithoutLettersInput[]
+    connectOrCreate?: letters_to_letter_levelsCreateOrConnectWithoutLettersInput | letters_to_letter_levelsCreateOrConnectWithoutLettersInput[]
+    createMany?: letters_to_letter_levelsCreateManyLettersInputEnvelope
+    connect?: letters_to_letter_levelsWhereUniqueInput | letters_to_letter_levelsWhereUniqueInput[]
+  }
+
+  export type letters_to_letter_levelsUncheckedCreateNestedManyWithoutLettersInput = {
+    create?: XOR<letters_to_letter_levelsCreateWithoutLettersInput, letters_to_letter_levelsUncheckedCreateWithoutLettersInput> | letters_to_letter_levelsCreateWithoutLettersInput[] | letters_to_letter_levelsUncheckedCreateWithoutLettersInput[]
+    connectOrCreate?: letters_to_letter_levelsCreateOrConnectWithoutLettersInput | letters_to_letter_levelsCreateOrConnectWithoutLettersInput[]
+    createMany?: letters_to_letter_levelsCreateManyLettersInputEnvelope
+    connect?: letters_to_letter_levelsWhereUniqueInput | letters_to_letter_levelsWhereUniqueInput[]
+  }
+
+  export type letter_blocksUpdateOneRequiredWithoutLettersNestedInput = {
+    create?: XOR<letter_blocksCreateWithoutLettersInput, letter_blocksUncheckedCreateWithoutLettersInput>
+    connectOrCreate?: letter_blocksCreateOrConnectWithoutLettersInput
+    upsert?: letter_blocksUpsertWithoutLettersInput
+    connect?: letter_blocksWhereUniqueInput
+    update?: XOR<XOR<letter_blocksUpdateToOneWithWhereWithoutLettersInput, letter_blocksUpdateWithoutLettersInput>, letter_blocksUncheckedUpdateWithoutLettersInput>
+  }
+
+  export type letter_positionsUpdateOneRequiredWithoutLettersNestedInput = {
+    create?: XOR<letter_positionsCreateWithoutLettersInput, letter_positionsUncheckedCreateWithoutLettersInput>
+    connectOrCreate?: letter_positionsCreateOrConnectWithoutLettersInput
+    upsert?: letter_positionsUpsertWithoutLettersInput
+    connect?: letter_positionsWhereUniqueInput
+    update?: XOR<XOR<letter_positionsUpdateToOneWithWhereWithoutLettersInput, letter_positionsUpdateWithoutLettersInput>, letter_positionsUncheckedUpdateWithoutLettersInput>
+  }
+
+  export type letter_typesUpdateOneRequiredWithoutLettersNestedInput = {
+    create?: XOR<letter_typesCreateWithoutLettersInput, letter_typesUncheckedCreateWithoutLettersInput>
+    connectOrCreate?: letter_typesCreateOrConnectWithoutLettersInput
+    upsert?: letter_typesUpsertWithoutLettersInput
+    connect?: letter_typesWhereUniqueInput
+    update?: XOR<XOR<letter_typesUpdateToOneWithWhereWithoutLettersInput, letter_typesUpdateWithoutLettersInput>, letter_typesUncheckedUpdateWithoutLettersInput>
+  }
+
+  export type letters_to_letter_levelsUpdateManyWithoutLettersNestedInput = {
+    create?: XOR<letters_to_letter_levelsCreateWithoutLettersInput, letters_to_letter_levelsUncheckedCreateWithoutLettersInput> | letters_to_letter_levelsCreateWithoutLettersInput[] | letters_to_letter_levelsUncheckedCreateWithoutLettersInput[]
+    connectOrCreate?: letters_to_letter_levelsCreateOrConnectWithoutLettersInput | letters_to_letter_levelsCreateOrConnectWithoutLettersInput[]
+    upsert?: letters_to_letter_levelsUpsertWithWhereUniqueWithoutLettersInput | letters_to_letter_levelsUpsertWithWhereUniqueWithoutLettersInput[]
+    createMany?: letters_to_letter_levelsCreateManyLettersInputEnvelope
+    set?: letters_to_letter_levelsWhereUniqueInput | letters_to_letter_levelsWhereUniqueInput[]
+    disconnect?: letters_to_letter_levelsWhereUniqueInput | letters_to_letter_levelsWhereUniqueInput[]
+    delete?: letters_to_letter_levelsWhereUniqueInput | letters_to_letter_levelsWhereUniqueInput[]
+    connect?: letters_to_letter_levelsWhereUniqueInput | letters_to_letter_levelsWhereUniqueInput[]
+    update?: letters_to_letter_levelsUpdateWithWhereUniqueWithoutLettersInput | letters_to_letter_levelsUpdateWithWhereUniqueWithoutLettersInput[]
+    updateMany?: letters_to_letter_levelsUpdateManyWithWhereWithoutLettersInput | letters_to_letter_levelsUpdateManyWithWhereWithoutLettersInput[]
+    deleteMany?: letters_to_letter_levelsScalarWhereInput | letters_to_letter_levelsScalarWhereInput[]
+  }
+
+  export type letters_to_letter_levelsUncheckedUpdateManyWithoutLettersNestedInput = {
+    create?: XOR<letters_to_letter_levelsCreateWithoutLettersInput, letters_to_letter_levelsUncheckedCreateWithoutLettersInput> | letters_to_letter_levelsCreateWithoutLettersInput[] | letters_to_letter_levelsUncheckedCreateWithoutLettersInput[]
+    connectOrCreate?: letters_to_letter_levelsCreateOrConnectWithoutLettersInput | letters_to_letter_levelsCreateOrConnectWithoutLettersInput[]
+    upsert?: letters_to_letter_levelsUpsertWithWhereUniqueWithoutLettersInput | letters_to_letter_levelsUpsertWithWhereUniqueWithoutLettersInput[]
+    createMany?: letters_to_letter_levelsCreateManyLettersInputEnvelope
+    set?: letters_to_letter_levelsWhereUniqueInput | letters_to_letter_levelsWhereUniqueInput[]
+    disconnect?: letters_to_letter_levelsWhereUniqueInput | letters_to_letter_levelsWhereUniqueInput[]
+    delete?: letters_to_letter_levelsWhereUniqueInput | letters_to_letter_levelsWhereUniqueInput[]
+    connect?: letters_to_letter_levelsWhereUniqueInput | letters_to_letter_levelsWhereUniqueInput[]
+    update?: letters_to_letter_levelsUpdateWithWhereUniqueWithoutLettersInput | letters_to_letter_levelsUpdateWithWhereUniqueWithoutLettersInput[]
+    updateMany?: letters_to_letter_levelsUpdateManyWithWhereWithoutLettersInput | letters_to_letter_levelsUpdateManyWithWhereWithoutLettersInput[]
+    deleteMany?: letters_to_letter_levelsScalarWhereInput | letters_to_letter_levelsScalarWhereInput[]
+  }
+
+  export type lettersCreateNestedOneWithoutLetters_to_letter_levelsInput = {
+    create?: XOR<lettersCreateWithoutLetters_to_letter_levelsInput, lettersUncheckedCreateWithoutLetters_to_letter_levelsInput>
+    connectOrCreate?: lettersCreateOrConnectWithoutLetters_to_letter_levelsInput
+    connect?: lettersWhereUniqueInput
+  }
+
+  export type letter_levelsCreateNestedOneWithoutLetters_to_letter_levelsInput = {
+    create?: XOR<letter_levelsCreateWithoutLetters_to_letter_levelsInput, letter_levelsUncheckedCreateWithoutLetters_to_letter_levelsInput>
+    connectOrCreate?: letter_levelsCreateOrConnectWithoutLetters_to_letter_levelsInput
+    connect?: letter_levelsWhereUniqueInput
+  }
+
+  export type lettersUpdateOneRequiredWithoutLetters_to_letter_levelsNestedInput = {
+    create?: XOR<lettersCreateWithoutLetters_to_letter_levelsInput, lettersUncheckedCreateWithoutLetters_to_letter_levelsInput>
+    connectOrCreate?: lettersCreateOrConnectWithoutLetters_to_letter_levelsInput
+    upsert?: lettersUpsertWithoutLetters_to_letter_levelsInput
+    connect?: lettersWhereUniqueInput
+    update?: XOR<XOR<lettersUpdateToOneWithWhereWithoutLetters_to_letter_levelsInput, lettersUpdateWithoutLetters_to_letter_levelsInput>, lettersUncheckedUpdateWithoutLetters_to_letter_levelsInput>
+  }
+
+  export type letter_levelsUpdateOneRequiredWithoutLetters_to_letter_levelsNestedInput = {
+    create?: XOR<letter_levelsCreateWithoutLetters_to_letter_levelsInput, letter_levelsUncheckedCreateWithoutLetters_to_letter_levelsInput>
+    connectOrCreate?: letter_levelsCreateOrConnectWithoutLetters_to_letter_levelsInput
+    upsert?: letter_levelsUpsertWithoutLetters_to_letter_levelsInput
+    connect?: letter_levelsWhereUniqueInput
+    update?: XOR<XOR<letter_levelsUpdateToOneWithWhereWithoutLetters_to_letter_levelsInput, letter_levelsUpdateWithoutLetters_to_letter_levelsInput>, letter_levelsUncheckedUpdateWithoutLetters_to_letter_levelsInput>
+  }
+
+  export type NestedDateTimeFilter<$PrismaModel = never> = {
+    equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
+    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
+    lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    not?: NestedDateTimeFilter<$PrismaModel> | Date | string
+  }
+
+  export type NestedStringFilter<$PrismaModel = never> = {
+    equals?: string | StringFieldRefInput<$PrismaModel>
+    in?: string[] | ListStringFieldRefInput<$PrismaModel>
+    notIn?: string[] | ListStringFieldRefInput<$PrismaModel>
+    lt?: string | StringFieldRefInput<$PrismaModel>
+    lte?: string | StringFieldRefInput<$PrismaModel>
+    gt?: string | StringFieldRefInput<$PrismaModel>
+    gte?: string | StringFieldRefInput<$PrismaModel>
+    contains?: string | StringFieldRefInput<$PrismaModel>
+    startsWith?: string | StringFieldRefInput<$PrismaModel>
+    endsWith?: string | StringFieldRefInput<$PrismaModel>
+    not?: NestedStringFilter<$PrismaModel> | string
+  }
+
+  export type NestedUuidFilter<$PrismaModel = never> = {
+    equals?: string | StringFieldRefInput<$PrismaModel>
+    in?: string[] | ListStringFieldRefInput<$PrismaModel>
+    notIn?: string[] | ListStringFieldRefInput<$PrismaModel>
+    lt?: string | StringFieldRefInput<$PrismaModel>
+    lte?: string | StringFieldRefInput<$PrismaModel>
+    gt?: string | StringFieldRefInput<$PrismaModel>
+    gte?: string | StringFieldRefInput<$PrismaModel>
+    not?: NestedUuidFilter<$PrismaModel> | string
+  }
+
+  export type NestedBoolFilter<$PrismaModel = never> = {
+    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
+    not?: NestedBoolFilter<$PrismaModel> | boolean
+  }
+
+  export type NestedDateTimeWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
+    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
+    lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    not?: NestedDateTimeWithAggregatesFilter<$PrismaModel> | Date | string
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedDateTimeFilter<$PrismaModel>
+    _max?: NestedDateTimeFilter<$PrismaModel>
+  }
+
+  export type NestedIntFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel>
+    in?: number[] | ListIntFieldRefInput<$PrismaModel>
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntFilter<$PrismaModel> | number
+  }
+
+  export type NestedStringWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: string | StringFieldRefInput<$PrismaModel>
+    in?: string[] | ListStringFieldRefInput<$PrismaModel>
+    notIn?: string[] | ListStringFieldRefInput<$PrismaModel>
+    lt?: string | StringFieldRefInput<$PrismaModel>
+    lte?: string | StringFieldRefInput<$PrismaModel>
+    gt?: string | StringFieldRefInput<$PrismaModel>
+    gte?: string | StringFieldRefInput<$PrismaModel>
+    contains?: string | StringFieldRefInput<$PrismaModel>
+    startsWith?: string | StringFieldRefInput<$PrismaModel>
+    endsWith?: string | StringFieldRefInput<$PrismaModel>
+    not?: NestedStringWithAggregatesFilter<$PrismaModel> | string
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedStringFilter<$PrismaModel>
+    _max?: NestedStringFilter<$PrismaModel>
+  }
+
+  export type NestedUuidWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: string | StringFieldRefInput<$PrismaModel>
+    in?: string[] | ListStringFieldRefInput<$PrismaModel>
+    notIn?: string[] | ListStringFieldRefInput<$PrismaModel>
+    lt?: string | StringFieldRefInput<$PrismaModel>
+    lte?: string | StringFieldRefInput<$PrismaModel>
+    gt?: string | StringFieldRefInput<$PrismaModel>
+    gte?: string | StringFieldRefInput<$PrismaModel>
+    not?: NestedUuidWithAggregatesFilter<$PrismaModel> | string
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedStringFilter<$PrismaModel>
+    _max?: NestedStringFilter<$PrismaModel>
+  }
+
+  export type NestedBoolWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
+    not?: NestedBoolWithAggregatesFilter<$PrismaModel> | boolean
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedBoolFilter<$PrismaModel>
+    _max?: NestedBoolFilter<$PrismaModel>
+  }
+
+  export type NestedIntWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel>
+    in?: number[] | ListIntFieldRefInput<$PrismaModel>
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntWithAggregatesFilter<$PrismaModel> | number
+    _count?: NestedIntFilter<$PrismaModel>
+    _avg?: NestedFloatFilter<$PrismaModel>
+    _sum?: NestedIntFilter<$PrismaModel>
+    _min?: NestedIntFilter<$PrismaModel>
+    _max?: NestedIntFilter<$PrismaModel>
+  }
+
+  export type NestedFloatFilter<$PrismaModel = never> = {
+    equals?: number | FloatFieldRefInput<$PrismaModel>
+    in?: number[] | ListFloatFieldRefInput<$PrismaModel>
+    notIn?: number[] | ListFloatFieldRefInput<$PrismaModel>
+    lt?: number | FloatFieldRefInput<$PrismaModel>
+    lte?: number | FloatFieldRefInput<$PrismaModel>
+    gt?: number | FloatFieldRefInput<$PrismaModel>
+    gte?: number | FloatFieldRefInput<$PrismaModel>
+    not?: NestedFloatFilter<$PrismaModel> | number
+  }
+  export type NestedJsonFilter<$PrismaModel = never> =
+    | PatchUndefined<
+        Either<Required<NestedJsonFilterBase<$PrismaModel>>, Exclude<keyof Required<NestedJsonFilterBase<$PrismaModel>>, 'path'>>,
+        Required<NestedJsonFilterBase<$PrismaModel>>
+      >
+    | OptionalFlat<Omit<Required<NestedJsonFilterBase<$PrismaModel>>, 'path'>>
+
+  export type NestedJsonFilterBase<$PrismaModel = never> = {
+    equals?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+    path?: string[]
+    mode?: QueryMode | EnumQueryModeFieldRefInput<$PrismaModel>
+    string_contains?: string | StringFieldRefInput<$PrismaModel>
+    string_starts_with?: string | StringFieldRefInput<$PrismaModel>
+    string_ends_with?: string | StringFieldRefInput<$PrismaModel>
+    array_starts_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_ends_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_contains?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    lt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    lte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    not?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+  }
+
+  export type lettersCreateWithoutLetter_blocksInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    name: string
+    symbol: string
+    id?: string
+    letter_positions: letter_positionsCreateNestedOneWithoutLettersInput
+    letter_types: letter_typesCreateNestedOneWithoutLettersInput
+    letters_to_letter_levels?: letters_to_letter_levelsCreateNestedManyWithoutLettersInput
+  }
+
+  export type lettersUncheckedCreateWithoutLetter_blocksInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    name: string
+    symbol: string
+    type_id: string
+    position_id: string
+    id?: string
+    letters_to_letter_levels?: letters_to_letter_levelsUncheckedCreateNestedManyWithoutLettersInput
+  }
+
+  export type lettersCreateOrConnectWithoutLetter_blocksInput = {
+    where: lettersWhereUniqueInput
+    create: XOR<lettersCreateWithoutLetter_blocksInput, lettersUncheckedCreateWithoutLetter_blocksInput>
+  }
+
+  export type lettersCreateManyLetter_blocksInputEnvelope = {
+    data: lettersCreateManyLetter_blocksInput | lettersCreateManyLetter_blocksInput[]
+    skipDuplicates?: boolean
+  }
+
+  export type lettersUpsertWithWhereUniqueWithoutLetter_blocksInput = {
+    where: lettersWhereUniqueInput
+    update: XOR<lettersUpdateWithoutLetter_blocksInput, lettersUncheckedUpdateWithoutLetter_blocksInput>
+    create: XOR<lettersCreateWithoutLetter_blocksInput, lettersUncheckedCreateWithoutLetter_blocksInput>
+  }
+
+  export type lettersUpdateWithWhereUniqueWithoutLetter_blocksInput = {
+    where: lettersWhereUniqueInput
+    data: XOR<lettersUpdateWithoutLetter_blocksInput, lettersUncheckedUpdateWithoutLetter_blocksInput>
+  }
+
+  export type lettersUpdateManyWithWhereWithoutLetter_blocksInput = {
+    where: lettersScalarWhereInput
+    data: XOR<lettersUpdateManyMutationInput, lettersUncheckedUpdateManyWithoutLetter_blocksInput>
+  }
+
+  export type lettersScalarWhereInput = {
+    AND?: lettersScalarWhereInput | lettersScalarWhereInput[]
+    OR?: lettersScalarWhereInput[]
+    NOT?: lettersScalarWhereInput | lettersScalarWhereInput[]
+    created_at?: DateTimeFilter<"letters"> | Date | string
+    updated_at?: DateTimeFilter<"letters"> | Date | string
+    deleted?: BoolFilter<"letters"> | boolean
+    name?: StringFilter<"letters"> | string
+    symbol?: StringFilter<"letters"> | string
+    type_id?: UuidFilter<"letters"> | string
+    position_id?: UuidFilter<"letters"> | string
+    block_id?: UuidFilter<"letters"> | string
+    id?: UuidFilter<"letters"> | string
+  }
+
+  export type letter_typesCreateWithoutLetter_levelsInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    name?: string
+    deleted?: boolean
+    letters?: lettersCreateNestedManyWithoutLetter_typesInput
+  }
+
+  export type letter_typesUncheckedCreateWithoutLetter_levelsInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    name?: string
+    deleted?: boolean
+    letters?: lettersUncheckedCreateNestedManyWithoutLetter_typesInput
+  }
+
+  export type letter_typesCreateOrConnectWithoutLetter_levelsInput = {
+    where: letter_typesWhereUniqueInput
+    create: XOR<letter_typesCreateWithoutLetter_levelsInput, letter_typesUncheckedCreateWithoutLetter_levelsInput>
+  }
+
+  export type letter_progressCreateWithoutLetter_levelsInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    is_completed: boolean
+  }
+
+  export type letter_progressUncheckedCreateWithoutLetter_levelsInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    is_completed: boolean
+  }
+
+  export type letter_progressCreateOrConnectWithoutLetter_levelsInput = {
+    where: letter_progressWhereUniqueInput
+    create: XOR<letter_progressCreateWithoutLetter_levelsInput, letter_progressUncheckedCreateWithoutLetter_levelsInput>
+  }
+
+  export type letter_progressCreateManyLetter_levelsInputEnvelope = {
+    data: letter_progressCreateManyLetter_levelsInput | letter_progressCreateManyLetter_levelsInput[]
+    skipDuplicates?: boolean
+  }
+
+  export type letter_questions_to_letter_levelsCreateWithoutLetter_levelsInput = {
+    number?: number
+    letter_questions: letter_questionsCreateNestedOneWithoutLetter_questions_to_letter_levelsInput
+  }
+
+  export type letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput = {
+    letter_question_id: string
+    number?: number
+  }
+
+  export type letter_questions_to_letter_levelsCreateOrConnectWithoutLetter_levelsInput = {
+    where: letter_questions_to_letter_levelsWhereUniqueInput
+    create: XOR<letter_questions_to_letter_levelsCreateWithoutLetter_levelsInput, letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput>
+  }
+
+  export type letter_questions_to_letter_levelsCreateManyLetter_levelsInputEnvelope = {
+    data: letter_questions_to_letter_levelsCreateManyLetter_levelsInput | letter_questions_to_letter_levelsCreateManyLetter_levelsInput[]
+    skipDuplicates?: boolean
+  }
+
+  export type letters_to_letter_levelsCreateWithoutLetter_levelsInput = {
+    letters: lettersCreateNestedOneWithoutLetters_to_letter_levelsInput
+  }
+
+  export type letters_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput = {
+    letter_id: string
+  }
+
+  export type letters_to_letter_levelsCreateOrConnectWithoutLetter_levelsInput = {
+    where: letters_to_letter_levelsWhereUniqueInput
+    create: XOR<letters_to_letter_levelsCreateWithoutLetter_levelsInput, letters_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput>
+  }
+
+  export type letters_to_letter_levelsCreateManyLetter_levelsInputEnvelope = {
+    data: letters_to_letter_levelsCreateManyLetter_levelsInput | letters_to_letter_levelsCreateManyLetter_levelsInput[]
+    skipDuplicates?: boolean
+  }
+
+  export type letter_typesUpsertWithoutLetter_levelsInput = {
+    update: XOR<letter_typesUpdateWithoutLetter_levelsInput, letter_typesUncheckedUpdateWithoutLetter_levelsInput>
+    create: XOR<letter_typesCreateWithoutLetter_levelsInput, letter_typesUncheckedCreateWithoutLetter_levelsInput>
+    where?: letter_typesWhereInput
+  }
+
+  export type letter_typesUpdateToOneWithWhereWithoutLetter_levelsInput = {
+    where?: letter_typesWhereInput
+    data: XOR<letter_typesUpdateWithoutLetter_levelsInput, letter_typesUncheckedUpdateWithoutLetter_levelsInput>
+  }
+
+  export type letter_typesUpdateWithoutLetter_levelsInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    name?: StringFieldUpdateOperationsInput | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    letters?: lettersUpdateManyWithoutLetter_typesNestedInput
+  }
+
+  export type letter_typesUncheckedUpdateWithoutLetter_levelsInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    name?: StringFieldUpdateOperationsInput | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    letters?: lettersUncheckedUpdateManyWithoutLetter_typesNestedInput
+  }
+
+  export type letter_progressUpsertWithWhereUniqueWithoutLetter_levelsInput = {
+    where: letter_progressWhereUniqueInput
+    update: XOR<letter_progressUpdateWithoutLetter_levelsInput, letter_progressUncheckedUpdateWithoutLetter_levelsInput>
+    create: XOR<letter_progressCreateWithoutLetter_levelsInput, letter_progressUncheckedCreateWithoutLetter_levelsInput>
+  }
+
+  export type letter_progressUpdateWithWhereUniqueWithoutLetter_levelsInput = {
+    where: letter_progressWhereUniqueInput
+    data: XOR<letter_progressUpdateWithoutLetter_levelsInput, letter_progressUncheckedUpdateWithoutLetter_levelsInput>
+  }
+
+  export type letter_progressUpdateManyWithWhereWithoutLetter_levelsInput = {
+    where: letter_progressScalarWhereInput
+    data: XOR<letter_progressUpdateManyMutationInput, letter_progressUncheckedUpdateManyWithoutLetter_levelsInput>
+  }
+
+  export type letter_progressScalarWhereInput = {
+    AND?: letter_progressScalarWhereInput | letter_progressScalarWhereInput[]
+    OR?: letter_progressScalarWhereInput[]
+    NOT?: letter_progressScalarWhereInput | letter_progressScalarWhereInput[]
+    id?: UuidFilter<"letter_progress"> | string
+    created_at?: DateTimeFilter<"letter_progress"> | Date | string
+    updated_at?: DateTimeFilter<"letter_progress"> | Date | string
+    deleted?: BoolFilter<"letter_progress"> | boolean
+    is_completed?: BoolFilter<"letter_progress"> | boolean
+    letter_level_id?: UuidFilter<"letter_progress"> | string
+  }
+
+  export type letter_questions_to_letter_levelsUpsertWithWhereUniqueWithoutLetter_levelsInput = {
+    where: letter_questions_to_letter_levelsWhereUniqueInput
+    update: XOR<letter_questions_to_letter_levelsUpdateWithoutLetter_levelsInput, letter_questions_to_letter_levelsUncheckedUpdateWithoutLetter_levelsInput>
+    create: XOR<letter_questions_to_letter_levelsCreateWithoutLetter_levelsInput, letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput>
+  }
+
+  export type letter_questions_to_letter_levelsUpdateWithWhereUniqueWithoutLetter_levelsInput = {
+    where: letter_questions_to_letter_levelsWhereUniqueInput
+    data: XOR<letter_questions_to_letter_levelsUpdateWithoutLetter_levelsInput, letter_questions_to_letter_levelsUncheckedUpdateWithoutLetter_levelsInput>
+  }
+
+  export type letter_questions_to_letter_levelsUpdateManyWithWhereWithoutLetter_levelsInput = {
+    where: letter_questions_to_letter_levelsScalarWhereInput
+    data: XOR<letter_questions_to_letter_levelsUpdateManyMutationInput, letter_questions_to_letter_levelsUncheckedUpdateManyWithoutLetter_levelsInput>
+  }
+
+  export type letter_questions_to_letter_levelsScalarWhereInput = {
+    AND?: letter_questions_to_letter_levelsScalarWhereInput | letter_questions_to_letter_levelsScalarWhereInput[]
+    OR?: letter_questions_to_letter_levelsScalarWhereInput[]
+    NOT?: letter_questions_to_letter_levelsScalarWhereInput | letter_questions_to_letter_levelsScalarWhereInput[]
+    letter_question_id?: UuidFilter<"letter_questions_to_letter_levels"> | string
+    letter_level_id?: UuidFilter<"letter_questions_to_letter_levels"> | string
+    number?: IntFilter<"letter_questions_to_letter_levels"> | number
+  }
+
+  export type letters_to_letter_levelsUpsertWithWhereUniqueWithoutLetter_levelsInput = {
+    where: letters_to_letter_levelsWhereUniqueInput
+    update: XOR<letters_to_letter_levelsUpdateWithoutLetter_levelsInput, letters_to_letter_levelsUncheckedUpdateWithoutLetter_levelsInput>
+    create: XOR<letters_to_letter_levelsCreateWithoutLetter_levelsInput, letters_to_letter_levelsUncheckedCreateWithoutLetter_levelsInput>
+  }
+
+  export type letters_to_letter_levelsUpdateWithWhereUniqueWithoutLetter_levelsInput = {
+    where: letters_to_letter_levelsWhereUniqueInput
+    data: XOR<letters_to_letter_levelsUpdateWithoutLetter_levelsInput, letters_to_letter_levelsUncheckedUpdateWithoutLetter_levelsInput>
+  }
+
+  export type letters_to_letter_levelsUpdateManyWithWhereWithoutLetter_levelsInput = {
+    where: letters_to_letter_levelsScalarWhereInput
+    data: XOR<letters_to_letter_levelsUpdateManyMutationInput, letters_to_letter_levelsUncheckedUpdateManyWithoutLetter_levelsInput>
+  }
+
+  export type letters_to_letter_levelsScalarWhereInput = {
+    AND?: letters_to_letter_levelsScalarWhereInput | letters_to_letter_levelsScalarWhereInput[]
+    OR?: letters_to_letter_levelsScalarWhereInput[]
+    NOT?: letters_to_letter_levelsScalarWhereInput | letters_to_letter_levelsScalarWhereInput[]
+    letter_id?: UuidFilter<"letters_to_letter_levels"> | string
+    letter_level_id?: UuidFilter<"letters_to_letter_levels"> | string
+  }
+
+  export type lettersCreateWithoutLetter_positionsInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    name: string
+    symbol: string
+    id?: string
+    letter_blocks: letter_blocksCreateNestedOneWithoutLettersInput
+    letter_types: letter_typesCreateNestedOneWithoutLettersInput
+    letters_to_letter_levels?: letters_to_letter_levelsCreateNestedManyWithoutLettersInput
+  }
+
+  export type lettersUncheckedCreateWithoutLetter_positionsInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    name: string
+    symbol: string
+    type_id: string
+    block_id: string
+    id?: string
+    letters_to_letter_levels?: letters_to_letter_levelsUncheckedCreateNestedManyWithoutLettersInput
+  }
+
+  export type lettersCreateOrConnectWithoutLetter_positionsInput = {
+    where: lettersWhereUniqueInput
+    create: XOR<lettersCreateWithoutLetter_positionsInput, lettersUncheckedCreateWithoutLetter_positionsInput>
+  }
+
+  export type lettersCreateManyLetter_positionsInputEnvelope = {
+    data: lettersCreateManyLetter_positionsInput | lettersCreateManyLetter_positionsInput[]
+    skipDuplicates?: boolean
+  }
+
+  export type lettersUpsertWithWhereUniqueWithoutLetter_positionsInput = {
+    where: lettersWhereUniqueInput
+    update: XOR<lettersUpdateWithoutLetter_positionsInput, lettersUncheckedUpdateWithoutLetter_positionsInput>
+    create: XOR<lettersCreateWithoutLetter_positionsInput, lettersUncheckedCreateWithoutLetter_positionsInput>
+  }
+
+  export type lettersUpdateWithWhereUniqueWithoutLetter_positionsInput = {
+    where: lettersWhereUniqueInput
+    data: XOR<lettersUpdateWithoutLetter_positionsInput, lettersUncheckedUpdateWithoutLetter_positionsInput>
+  }
+
+  export type lettersUpdateManyWithWhereWithoutLetter_positionsInput = {
+    where: lettersScalarWhereInput
+    data: XOR<lettersUpdateManyMutationInput, lettersUncheckedUpdateManyWithoutLetter_positionsInput>
+  }
+
+  export type letter_levelsCreateWithoutLetter_progressInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    number: number
+    deleted?: boolean
+    id?: string
+    letter_types: letter_typesCreateNestedOneWithoutLetter_levelsInput
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsCreateNestedManyWithoutLetter_levelsInput
+    letters_to_letter_levels?: letters_to_letter_levelsCreateNestedManyWithoutLetter_levelsInput
+  }
+
+  export type letter_levelsUncheckedCreateWithoutLetter_progressInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    number: number
+    letter_type_id: string
+    deleted?: boolean
+    id?: string
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsUncheckedCreateNestedManyWithoutLetter_levelsInput
+    letters_to_letter_levels?: letters_to_letter_levelsUncheckedCreateNestedManyWithoutLetter_levelsInput
+  }
+
+  export type letter_levelsCreateOrConnectWithoutLetter_progressInput = {
+    where: letter_levelsWhereUniqueInput
+    create: XOR<letter_levelsCreateWithoutLetter_progressInput, letter_levelsUncheckedCreateWithoutLetter_progressInput>
+  }
+
+  export type letter_levelsUpsertWithoutLetter_progressInput = {
+    update: XOR<letter_levelsUpdateWithoutLetter_progressInput, letter_levelsUncheckedUpdateWithoutLetter_progressInput>
+    create: XOR<letter_levelsCreateWithoutLetter_progressInput, letter_levelsUncheckedCreateWithoutLetter_progressInput>
+    where?: letter_levelsWhereInput
+  }
+
+  export type letter_levelsUpdateToOneWithWhereWithoutLetter_progressInput = {
+    where?: letter_levelsWhereInput
+    data: XOR<letter_levelsUpdateWithoutLetter_progressInput, letter_levelsUncheckedUpdateWithoutLetter_progressInput>
+  }
+
+  export type letter_levelsUpdateWithoutLetter_progressInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    number?: IntFieldUpdateOperationsInput | number
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+    letter_types?: letter_typesUpdateOneRequiredWithoutLetter_levelsNestedInput
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsUpdateManyWithoutLetter_levelsNestedInput
+    letters_to_letter_levels?: letters_to_letter_levelsUpdateManyWithoutLetter_levelsNestedInput
+  }
+
+  export type letter_levelsUncheckedUpdateWithoutLetter_progressInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    number?: IntFieldUpdateOperationsInput | number
+    letter_type_id?: StringFieldUpdateOperationsInput | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsUncheckedUpdateManyWithoutLetter_levelsNestedInput
+    letters_to_letter_levels?: letters_to_letter_levelsUncheckedUpdateManyWithoutLetter_levelsNestedInput
+  }
+
+  export type letter_questions_to_letter_levelsCreateWithoutLetter_questionsInput = {
+    number?: number
+    letter_levels: letter_levelsCreateNestedOneWithoutLetter_questions_to_letter_levelsInput
+  }
+
+  export type letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_questionsInput = {
+    letter_level_id: string
+    number?: number
+  }
+
+  export type letter_questions_to_letter_levelsCreateOrConnectWithoutLetter_questionsInput = {
+    where: letter_questions_to_letter_levelsWhereUniqueInput
+    create: XOR<letter_questions_to_letter_levelsCreateWithoutLetter_questionsInput, letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_questionsInput>
+  }
+
+  export type letter_questions_to_letter_levelsCreateManyLetter_questionsInputEnvelope = {
+    data: letter_questions_to_letter_levelsCreateManyLetter_questionsInput | letter_questions_to_letter_levelsCreateManyLetter_questionsInput[]
+    skipDuplicates?: boolean
+  }
+
+  export type letter_questions_to_letter_levelsUpsertWithWhereUniqueWithoutLetter_questionsInput = {
+    where: letter_questions_to_letter_levelsWhereUniqueInput
+    update: XOR<letter_questions_to_letter_levelsUpdateWithoutLetter_questionsInput, letter_questions_to_letter_levelsUncheckedUpdateWithoutLetter_questionsInput>
+    create: XOR<letter_questions_to_letter_levelsCreateWithoutLetter_questionsInput, letter_questions_to_letter_levelsUncheckedCreateWithoutLetter_questionsInput>
+  }
+
+  export type letter_questions_to_letter_levelsUpdateWithWhereUniqueWithoutLetter_questionsInput = {
+    where: letter_questions_to_letter_levelsWhereUniqueInput
+    data: XOR<letter_questions_to_letter_levelsUpdateWithoutLetter_questionsInput, letter_questions_to_letter_levelsUncheckedUpdateWithoutLetter_questionsInput>
+  }
+
+  export type letter_questions_to_letter_levelsUpdateManyWithWhereWithoutLetter_questionsInput = {
+    where: letter_questions_to_letter_levelsScalarWhereInput
+    data: XOR<letter_questions_to_letter_levelsUpdateManyMutationInput, letter_questions_to_letter_levelsUncheckedUpdateManyWithoutLetter_questionsInput>
+  }
+
+  export type letter_levelsCreateWithoutLetter_questions_to_letter_levelsInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    number: number
+    deleted?: boolean
+    id?: string
+    letter_types: letter_typesCreateNestedOneWithoutLetter_levelsInput
+    letter_progress?: letter_progressCreateNestedManyWithoutLetter_levelsInput
+    letters_to_letter_levels?: letters_to_letter_levelsCreateNestedManyWithoutLetter_levelsInput
+  }
+
+  export type letter_levelsUncheckedCreateWithoutLetter_questions_to_letter_levelsInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    number: number
+    letter_type_id: string
+    deleted?: boolean
+    id?: string
+    letter_progress?: letter_progressUncheckedCreateNestedManyWithoutLetter_levelsInput
+    letters_to_letter_levels?: letters_to_letter_levelsUncheckedCreateNestedManyWithoutLetter_levelsInput
+  }
+
+  export type letter_levelsCreateOrConnectWithoutLetter_questions_to_letter_levelsInput = {
+    where: letter_levelsWhereUniqueInput
+    create: XOR<letter_levelsCreateWithoutLetter_questions_to_letter_levelsInput, letter_levelsUncheckedCreateWithoutLetter_questions_to_letter_levelsInput>
+  }
+
+  export type letter_questionsCreateWithoutLetter_questions_to_letter_levelsInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    question: JsonNullValueInput | InputJsonValue
+    deleted?: boolean
+    id?: string
+  }
+
+  export type letter_questionsUncheckedCreateWithoutLetter_questions_to_letter_levelsInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    question: JsonNullValueInput | InputJsonValue
+    deleted?: boolean
+    id?: string
+  }
+
+  export type letter_questionsCreateOrConnectWithoutLetter_questions_to_letter_levelsInput = {
+    where: letter_questionsWhereUniqueInput
+    create: XOR<letter_questionsCreateWithoutLetter_questions_to_letter_levelsInput, letter_questionsUncheckedCreateWithoutLetter_questions_to_letter_levelsInput>
+  }
+
+  export type letter_levelsUpsertWithoutLetter_questions_to_letter_levelsInput = {
+    update: XOR<letter_levelsUpdateWithoutLetter_questions_to_letter_levelsInput, letter_levelsUncheckedUpdateWithoutLetter_questions_to_letter_levelsInput>
+    create: XOR<letter_levelsCreateWithoutLetter_questions_to_letter_levelsInput, letter_levelsUncheckedCreateWithoutLetter_questions_to_letter_levelsInput>
+    where?: letter_levelsWhereInput
+  }
+
+  export type letter_levelsUpdateToOneWithWhereWithoutLetter_questions_to_letter_levelsInput = {
+    where?: letter_levelsWhereInput
+    data: XOR<letter_levelsUpdateWithoutLetter_questions_to_letter_levelsInput, letter_levelsUncheckedUpdateWithoutLetter_questions_to_letter_levelsInput>
+  }
+
+  export type letter_levelsUpdateWithoutLetter_questions_to_letter_levelsInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    number?: IntFieldUpdateOperationsInput | number
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+    letter_types?: letter_typesUpdateOneRequiredWithoutLetter_levelsNestedInput
+    letter_progress?: letter_progressUpdateManyWithoutLetter_levelsNestedInput
+    letters_to_letter_levels?: letters_to_letter_levelsUpdateManyWithoutLetter_levelsNestedInput
+  }
+
+  export type letter_levelsUncheckedUpdateWithoutLetter_questions_to_letter_levelsInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    number?: IntFieldUpdateOperationsInput | number
+    letter_type_id?: StringFieldUpdateOperationsInput | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+    letter_progress?: letter_progressUncheckedUpdateManyWithoutLetter_levelsNestedInput
+    letters_to_letter_levels?: letters_to_letter_levelsUncheckedUpdateManyWithoutLetter_levelsNestedInput
+  }
+
+  export type letter_questionsUpsertWithoutLetter_questions_to_letter_levelsInput = {
+    update: XOR<letter_questionsUpdateWithoutLetter_questions_to_letter_levelsInput, letter_questionsUncheckedUpdateWithoutLetter_questions_to_letter_levelsInput>
+    create: XOR<letter_questionsCreateWithoutLetter_questions_to_letter_levelsInput, letter_questionsUncheckedCreateWithoutLetter_questions_to_letter_levelsInput>
+    where?: letter_questionsWhereInput
+  }
+
+  export type letter_questionsUpdateToOneWithWhereWithoutLetter_questions_to_letter_levelsInput = {
+    where?: letter_questionsWhereInput
+    data: XOR<letter_questionsUpdateWithoutLetter_questions_to_letter_levelsInput, letter_questionsUncheckedUpdateWithoutLetter_questions_to_letter_levelsInput>
+  }
+
+  export type letter_questionsUpdateWithoutLetter_questions_to_letter_levelsInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    question?: JsonNullValueInput | InputJsonValue
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type letter_questionsUncheckedUpdateWithoutLetter_questions_to_letter_levelsInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    question?: JsonNullValueInput | InputJsonValue
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type letter_levelsCreateWithoutLetter_typesInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    number: number
+    deleted?: boolean
+    id?: string
+    letter_progress?: letter_progressCreateNestedManyWithoutLetter_levelsInput
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsCreateNestedManyWithoutLetter_levelsInput
+    letters_to_letter_levels?: letters_to_letter_levelsCreateNestedManyWithoutLetter_levelsInput
+  }
+
+  export type letter_levelsUncheckedCreateWithoutLetter_typesInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    number: number
+    deleted?: boolean
+    id?: string
+    letter_progress?: letter_progressUncheckedCreateNestedManyWithoutLetter_levelsInput
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsUncheckedCreateNestedManyWithoutLetter_levelsInput
+    letters_to_letter_levels?: letters_to_letter_levelsUncheckedCreateNestedManyWithoutLetter_levelsInput
+  }
+
+  export type letter_levelsCreateOrConnectWithoutLetter_typesInput = {
+    where: letter_levelsWhereUniqueInput
+    create: XOR<letter_levelsCreateWithoutLetter_typesInput, letter_levelsUncheckedCreateWithoutLetter_typesInput>
+  }
+
+  export type letter_levelsCreateManyLetter_typesInputEnvelope = {
+    data: letter_levelsCreateManyLetter_typesInput | letter_levelsCreateManyLetter_typesInput[]
+    skipDuplicates?: boolean
+  }
+
+  export type lettersCreateWithoutLetter_typesInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    name: string
+    symbol: string
+    id?: string
+    letter_blocks: letter_blocksCreateNestedOneWithoutLettersInput
+    letter_positions: letter_positionsCreateNestedOneWithoutLettersInput
+    letters_to_letter_levels?: letters_to_letter_levelsCreateNestedManyWithoutLettersInput
+  }
+
+  export type lettersUncheckedCreateWithoutLetter_typesInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    name: string
+    symbol: string
+    position_id: string
+    block_id: string
+    id?: string
+    letters_to_letter_levels?: letters_to_letter_levelsUncheckedCreateNestedManyWithoutLettersInput
+  }
+
+  export type lettersCreateOrConnectWithoutLetter_typesInput = {
+    where: lettersWhereUniqueInput
+    create: XOR<lettersCreateWithoutLetter_typesInput, lettersUncheckedCreateWithoutLetter_typesInput>
+  }
+
+  export type lettersCreateManyLetter_typesInputEnvelope = {
+    data: lettersCreateManyLetter_typesInput | lettersCreateManyLetter_typesInput[]
+    skipDuplicates?: boolean
+  }
+
+  export type letter_levelsUpsertWithWhereUniqueWithoutLetter_typesInput = {
+    where: letter_levelsWhereUniqueInput
+    update: XOR<letter_levelsUpdateWithoutLetter_typesInput, letter_levelsUncheckedUpdateWithoutLetter_typesInput>
+    create: XOR<letter_levelsCreateWithoutLetter_typesInput, letter_levelsUncheckedCreateWithoutLetter_typesInput>
+  }
+
+  export type letter_levelsUpdateWithWhereUniqueWithoutLetter_typesInput = {
+    where: letter_levelsWhereUniqueInput
+    data: XOR<letter_levelsUpdateWithoutLetter_typesInput, letter_levelsUncheckedUpdateWithoutLetter_typesInput>
+  }
+
+  export type letter_levelsUpdateManyWithWhereWithoutLetter_typesInput = {
+    where: letter_levelsScalarWhereInput
+    data: XOR<letter_levelsUpdateManyMutationInput, letter_levelsUncheckedUpdateManyWithoutLetter_typesInput>
+  }
+
+  export type letter_levelsScalarWhereInput = {
+    AND?: letter_levelsScalarWhereInput | letter_levelsScalarWhereInput[]
+    OR?: letter_levelsScalarWhereInput[]
+    NOT?: letter_levelsScalarWhereInput | letter_levelsScalarWhereInput[]
+    created_at?: DateTimeFilter<"letter_levels"> | Date | string
+    updated_at?: DateTimeFilter<"letter_levels"> | Date | string
+    number?: IntFilter<"letter_levels"> | number
+    letter_type_id?: UuidFilter<"letter_levels"> | string
+    deleted?: BoolFilter<"letter_levels"> | boolean
+    id?: UuidFilter<"letter_levels"> | string
+  }
+
+  export type lettersUpsertWithWhereUniqueWithoutLetter_typesInput = {
+    where: lettersWhereUniqueInput
+    update: XOR<lettersUpdateWithoutLetter_typesInput, lettersUncheckedUpdateWithoutLetter_typesInput>
+    create: XOR<lettersCreateWithoutLetter_typesInput, lettersUncheckedCreateWithoutLetter_typesInput>
+  }
+
+  export type lettersUpdateWithWhereUniqueWithoutLetter_typesInput = {
+    where: lettersWhereUniqueInput
+    data: XOR<lettersUpdateWithoutLetter_typesInput, lettersUncheckedUpdateWithoutLetter_typesInput>
+  }
+
+  export type lettersUpdateManyWithWhereWithoutLetter_typesInput = {
+    where: lettersScalarWhereInput
+    data: XOR<lettersUpdateManyMutationInput, lettersUncheckedUpdateManyWithoutLetter_typesInput>
+  }
+
+  export type letter_blocksCreateWithoutLettersInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    name?: string
+    description?: string
+    id?: string
+    deleted?: boolean
+  }
+
+  export type letter_blocksUncheckedCreateWithoutLettersInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    name?: string
+    description?: string
+    id?: string
+    deleted?: boolean
+  }
+
+  export type letter_blocksCreateOrConnectWithoutLettersInput = {
+    where: letter_blocksWhereUniqueInput
+    create: XOR<letter_blocksCreateWithoutLettersInput, letter_blocksUncheckedCreateWithoutLettersInput>
+  }
+
+  export type letter_positionsCreateWithoutLettersInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    row: number
+    column: number
+    deleted?: boolean
+  }
+
+  export type letter_positionsUncheckedCreateWithoutLettersInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    row: number
+    column: number
+    deleted?: boolean
+  }
+
+  export type letter_positionsCreateOrConnectWithoutLettersInput = {
+    where: letter_positionsWhereUniqueInput
+    create: XOR<letter_positionsCreateWithoutLettersInput, letter_positionsUncheckedCreateWithoutLettersInput>
+  }
+
+  export type letter_typesCreateWithoutLettersInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    name?: string
+    deleted?: boolean
+    letter_levels?: letter_levelsCreateNestedManyWithoutLetter_typesInput
+  }
+
+  export type letter_typesUncheckedCreateWithoutLettersInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    name?: string
+    deleted?: boolean
+    letter_levels?: letter_levelsUncheckedCreateNestedManyWithoutLetter_typesInput
+  }
+
+  export type letter_typesCreateOrConnectWithoutLettersInput = {
+    where: letter_typesWhereUniqueInput
+    create: XOR<letter_typesCreateWithoutLettersInput, letter_typesUncheckedCreateWithoutLettersInput>
+  }
+
+  export type letters_to_letter_levelsCreateWithoutLettersInput = {
+    letter_levels: letter_levelsCreateNestedOneWithoutLetters_to_letter_levelsInput
+  }
+
+  export type letters_to_letter_levelsUncheckedCreateWithoutLettersInput = {
+    letter_level_id: string
+  }
+
+  export type letters_to_letter_levelsCreateOrConnectWithoutLettersInput = {
+    where: letters_to_letter_levelsWhereUniqueInput
+    create: XOR<letters_to_letter_levelsCreateWithoutLettersInput, letters_to_letter_levelsUncheckedCreateWithoutLettersInput>
+  }
+
+  export type letters_to_letter_levelsCreateManyLettersInputEnvelope = {
+    data: letters_to_letter_levelsCreateManyLettersInput | letters_to_letter_levelsCreateManyLettersInput[]
+    skipDuplicates?: boolean
+  }
+
+  export type letter_blocksUpsertWithoutLettersInput = {
+    update: XOR<letter_blocksUpdateWithoutLettersInput, letter_blocksUncheckedUpdateWithoutLettersInput>
+    create: XOR<letter_blocksCreateWithoutLettersInput, letter_blocksUncheckedCreateWithoutLettersInput>
+    where?: letter_blocksWhereInput
+  }
+
+  export type letter_blocksUpdateToOneWithWhereWithoutLettersInput = {
+    where?: letter_blocksWhereInput
+    data: XOR<letter_blocksUpdateWithoutLettersInput, letter_blocksUncheckedUpdateWithoutLettersInput>
+  }
+
+  export type letter_blocksUpdateWithoutLettersInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    name?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+  }
+
+  export type letter_blocksUncheckedUpdateWithoutLettersInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    name?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+  }
+
+  export type letter_positionsUpsertWithoutLettersInput = {
+    update: XOR<letter_positionsUpdateWithoutLettersInput, letter_positionsUncheckedUpdateWithoutLettersInput>
+    create: XOR<letter_positionsCreateWithoutLettersInput, letter_positionsUncheckedCreateWithoutLettersInput>
+    where?: letter_positionsWhereInput
+  }
+
+  export type letter_positionsUpdateToOneWithWhereWithoutLettersInput = {
+    where?: letter_positionsWhereInput
+    data: XOR<letter_positionsUpdateWithoutLettersInput, letter_positionsUncheckedUpdateWithoutLettersInput>
+  }
+
+  export type letter_positionsUpdateWithoutLettersInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    row?: IntFieldUpdateOperationsInput | number
+    column?: IntFieldUpdateOperationsInput | number
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+  }
+
+  export type letter_positionsUncheckedUpdateWithoutLettersInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    row?: IntFieldUpdateOperationsInput | number
+    column?: IntFieldUpdateOperationsInput | number
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+  }
+
+  export type letter_typesUpsertWithoutLettersInput = {
+    update: XOR<letter_typesUpdateWithoutLettersInput, letter_typesUncheckedUpdateWithoutLettersInput>
+    create: XOR<letter_typesCreateWithoutLettersInput, letter_typesUncheckedCreateWithoutLettersInput>
+    where?: letter_typesWhereInput
+  }
+
+  export type letter_typesUpdateToOneWithWhereWithoutLettersInput = {
+    where?: letter_typesWhereInput
+    data: XOR<letter_typesUpdateWithoutLettersInput, letter_typesUncheckedUpdateWithoutLettersInput>
+  }
+
+  export type letter_typesUpdateWithoutLettersInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    name?: StringFieldUpdateOperationsInput | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    letter_levels?: letter_levelsUpdateManyWithoutLetter_typesNestedInput
+  }
+
+  export type letter_typesUncheckedUpdateWithoutLettersInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    name?: StringFieldUpdateOperationsInput | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    letter_levels?: letter_levelsUncheckedUpdateManyWithoutLetter_typesNestedInput
+  }
+
+  export type letters_to_letter_levelsUpsertWithWhereUniqueWithoutLettersInput = {
+    where: letters_to_letter_levelsWhereUniqueInput
+    update: XOR<letters_to_letter_levelsUpdateWithoutLettersInput, letters_to_letter_levelsUncheckedUpdateWithoutLettersInput>
+    create: XOR<letters_to_letter_levelsCreateWithoutLettersInput, letters_to_letter_levelsUncheckedCreateWithoutLettersInput>
+  }
+
+  export type letters_to_letter_levelsUpdateWithWhereUniqueWithoutLettersInput = {
+    where: letters_to_letter_levelsWhereUniqueInput
+    data: XOR<letters_to_letter_levelsUpdateWithoutLettersInput, letters_to_letter_levelsUncheckedUpdateWithoutLettersInput>
+  }
+
+  export type letters_to_letter_levelsUpdateManyWithWhereWithoutLettersInput = {
+    where: letters_to_letter_levelsScalarWhereInput
+    data: XOR<letters_to_letter_levelsUpdateManyMutationInput, letters_to_letter_levelsUncheckedUpdateManyWithoutLettersInput>
+  }
+
+  export type lettersCreateWithoutLetters_to_letter_levelsInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    name: string
+    symbol: string
+    id?: string
+    letter_blocks: letter_blocksCreateNestedOneWithoutLettersInput
+    letter_positions: letter_positionsCreateNestedOneWithoutLettersInput
+    letter_types: letter_typesCreateNestedOneWithoutLettersInput
+  }
+
+  export type lettersUncheckedCreateWithoutLetters_to_letter_levelsInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    name: string
+    symbol: string
+    type_id: string
+    position_id: string
+    block_id: string
+    id?: string
+  }
+
+  export type lettersCreateOrConnectWithoutLetters_to_letter_levelsInput = {
+    where: lettersWhereUniqueInput
+    create: XOR<lettersCreateWithoutLetters_to_letter_levelsInput, lettersUncheckedCreateWithoutLetters_to_letter_levelsInput>
+  }
+
+  export type letter_levelsCreateWithoutLetters_to_letter_levelsInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    number: number
+    deleted?: boolean
+    id?: string
+    letter_types: letter_typesCreateNestedOneWithoutLetter_levelsInput
+    letter_progress?: letter_progressCreateNestedManyWithoutLetter_levelsInput
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsCreateNestedManyWithoutLetter_levelsInput
+  }
+
+  export type letter_levelsUncheckedCreateWithoutLetters_to_letter_levelsInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    number: number
+    letter_type_id: string
+    deleted?: boolean
+    id?: string
+    letter_progress?: letter_progressUncheckedCreateNestedManyWithoutLetter_levelsInput
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsUncheckedCreateNestedManyWithoutLetter_levelsInput
+  }
+
+  export type letter_levelsCreateOrConnectWithoutLetters_to_letter_levelsInput = {
+    where: letter_levelsWhereUniqueInput
+    create: XOR<letter_levelsCreateWithoutLetters_to_letter_levelsInput, letter_levelsUncheckedCreateWithoutLetters_to_letter_levelsInput>
+  }
+
+  export type lettersUpsertWithoutLetters_to_letter_levelsInput = {
+    update: XOR<lettersUpdateWithoutLetters_to_letter_levelsInput, lettersUncheckedUpdateWithoutLetters_to_letter_levelsInput>
+    create: XOR<lettersCreateWithoutLetters_to_letter_levelsInput, lettersUncheckedCreateWithoutLetters_to_letter_levelsInput>
+    where?: lettersWhereInput
+  }
+
+  export type lettersUpdateToOneWithWhereWithoutLetters_to_letter_levelsInput = {
+    where?: lettersWhereInput
+    data: XOR<lettersUpdateWithoutLetters_to_letter_levelsInput, lettersUncheckedUpdateWithoutLetters_to_letter_levelsInput>
+  }
+
+  export type lettersUpdateWithoutLetters_to_letter_levelsInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    name?: StringFieldUpdateOperationsInput | string
+    symbol?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+    letter_blocks?: letter_blocksUpdateOneRequiredWithoutLettersNestedInput
+    letter_positions?: letter_positionsUpdateOneRequiredWithoutLettersNestedInput
+    letter_types?: letter_typesUpdateOneRequiredWithoutLettersNestedInput
+  }
+
+  export type lettersUncheckedUpdateWithoutLetters_to_letter_levelsInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    name?: StringFieldUpdateOperationsInput | string
+    symbol?: StringFieldUpdateOperationsInput | string
+    type_id?: StringFieldUpdateOperationsInput | string
+    position_id?: StringFieldUpdateOperationsInput | string
+    block_id?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type letter_levelsUpsertWithoutLetters_to_letter_levelsInput = {
+    update: XOR<letter_levelsUpdateWithoutLetters_to_letter_levelsInput, letter_levelsUncheckedUpdateWithoutLetters_to_letter_levelsInput>
+    create: XOR<letter_levelsCreateWithoutLetters_to_letter_levelsInput, letter_levelsUncheckedCreateWithoutLetters_to_letter_levelsInput>
+    where?: letter_levelsWhereInput
+  }
+
+  export type letter_levelsUpdateToOneWithWhereWithoutLetters_to_letter_levelsInput = {
+    where?: letter_levelsWhereInput
+    data: XOR<letter_levelsUpdateWithoutLetters_to_letter_levelsInput, letter_levelsUncheckedUpdateWithoutLetters_to_letter_levelsInput>
+  }
+
+  export type letter_levelsUpdateWithoutLetters_to_letter_levelsInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    number?: IntFieldUpdateOperationsInput | number
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+    letter_types?: letter_typesUpdateOneRequiredWithoutLetter_levelsNestedInput
+    letter_progress?: letter_progressUpdateManyWithoutLetter_levelsNestedInput
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsUpdateManyWithoutLetter_levelsNestedInput
+  }
+
+  export type letter_levelsUncheckedUpdateWithoutLetters_to_letter_levelsInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    number?: IntFieldUpdateOperationsInput | number
+    letter_type_id?: StringFieldUpdateOperationsInput | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+    letter_progress?: letter_progressUncheckedUpdateManyWithoutLetter_levelsNestedInput
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsUncheckedUpdateManyWithoutLetter_levelsNestedInput
+  }
+
+  export type lettersCreateManyLetter_blocksInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    name: string
+    symbol: string
+    type_id: string
+    position_id: string
+    id?: string
+  }
+
+  export type lettersUpdateWithoutLetter_blocksInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    name?: StringFieldUpdateOperationsInput | string
+    symbol?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+    letter_positions?: letter_positionsUpdateOneRequiredWithoutLettersNestedInput
+    letter_types?: letter_typesUpdateOneRequiredWithoutLettersNestedInput
+    letters_to_letter_levels?: letters_to_letter_levelsUpdateManyWithoutLettersNestedInput
+  }
+
+  export type lettersUncheckedUpdateWithoutLetter_blocksInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    name?: StringFieldUpdateOperationsInput | string
+    symbol?: StringFieldUpdateOperationsInput | string
+    type_id?: StringFieldUpdateOperationsInput | string
+    position_id?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+    letters_to_letter_levels?: letters_to_letter_levelsUncheckedUpdateManyWithoutLettersNestedInput
+  }
+
+  export type lettersUncheckedUpdateManyWithoutLetter_blocksInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    name?: StringFieldUpdateOperationsInput | string
+    symbol?: StringFieldUpdateOperationsInput | string
+    type_id?: StringFieldUpdateOperationsInput | string
+    position_id?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type letter_progressCreateManyLetter_levelsInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    is_completed: boolean
+  }
+
+  export type letter_questions_to_letter_levelsCreateManyLetter_levelsInput = {
+    letter_question_id: string
+    number?: number
+  }
+
+  export type letters_to_letter_levelsCreateManyLetter_levelsInput = {
+    letter_id: string
+  }
+
+  export type letter_progressUpdateWithoutLetter_levelsInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    is_completed?: BoolFieldUpdateOperationsInput | boolean
+  }
+
+  export type letter_progressUncheckedUpdateWithoutLetter_levelsInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    is_completed?: BoolFieldUpdateOperationsInput | boolean
+  }
+
+  export type letter_progressUncheckedUpdateManyWithoutLetter_levelsInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    is_completed?: BoolFieldUpdateOperationsInput | boolean
+  }
+
+  export type letter_questions_to_letter_levelsUpdateWithoutLetter_levelsInput = {
+    number?: IntFieldUpdateOperationsInput | number
+    letter_questions?: letter_questionsUpdateOneRequiredWithoutLetter_questions_to_letter_levelsNestedInput
+  }
+
+  export type letter_questions_to_letter_levelsUncheckedUpdateWithoutLetter_levelsInput = {
+    letter_question_id?: StringFieldUpdateOperationsInput | string
+    number?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type letter_questions_to_letter_levelsUncheckedUpdateManyWithoutLetter_levelsInput = {
+    letter_question_id?: StringFieldUpdateOperationsInput | string
+    number?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type letters_to_letter_levelsUpdateWithoutLetter_levelsInput = {
+    letters?: lettersUpdateOneRequiredWithoutLetters_to_letter_levelsNestedInput
+  }
+
+  export type letters_to_letter_levelsUncheckedUpdateWithoutLetter_levelsInput = {
+    letter_id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type letters_to_letter_levelsUncheckedUpdateManyWithoutLetter_levelsInput = {
+    letter_id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type lettersCreateManyLetter_positionsInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    name: string
+    symbol: string
+    type_id: string
+    block_id: string
+    id?: string
+  }
+
+  export type lettersUpdateWithoutLetter_positionsInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    name?: StringFieldUpdateOperationsInput | string
+    symbol?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+    letter_blocks?: letter_blocksUpdateOneRequiredWithoutLettersNestedInput
+    letter_types?: letter_typesUpdateOneRequiredWithoutLettersNestedInput
+    letters_to_letter_levels?: letters_to_letter_levelsUpdateManyWithoutLettersNestedInput
+  }
+
+  export type lettersUncheckedUpdateWithoutLetter_positionsInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    name?: StringFieldUpdateOperationsInput | string
+    symbol?: StringFieldUpdateOperationsInput | string
+    type_id?: StringFieldUpdateOperationsInput | string
+    block_id?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+    letters_to_letter_levels?: letters_to_letter_levelsUncheckedUpdateManyWithoutLettersNestedInput
+  }
+
+  export type lettersUncheckedUpdateManyWithoutLetter_positionsInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    name?: StringFieldUpdateOperationsInput | string
+    symbol?: StringFieldUpdateOperationsInput | string
+    type_id?: StringFieldUpdateOperationsInput | string
+    block_id?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type letter_questions_to_letter_levelsCreateManyLetter_questionsInput = {
+    letter_level_id: string
+    number?: number
+  }
+
+  export type letter_questions_to_letter_levelsUpdateWithoutLetter_questionsInput = {
+    number?: IntFieldUpdateOperationsInput | number
+    letter_levels?: letter_levelsUpdateOneRequiredWithoutLetter_questions_to_letter_levelsNestedInput
+  }
+
+  export type letter_questions_to_letter_levelsUncheckedUpdateWithoutLetter_questionsInput = {
+    letter_level_id?: StringFieldUpdateOperationsInput | string
+    number?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type letter_questions_to_letter_levelsUncheckedUpdateManyWithoutLetter_questionsInput = {
+    letter_level_id?: StringFieldUpdateOperationsInput | string
+    number?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type letter_levelsCreateManyLetter_typesInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    number: number
+    deleted?: boolean
+    id?: string
+  }
+
+  export type lettersCreateManyLetter_typesInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    name: string
+    symbol: string
+    position_id: string
+    block_id: string
+    id?: string
+  }
+
+  export type letter_levelsUpdateWithoutLetter_typesInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    number?: IntFieldUpdateOperationsInput | number
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+    letter_progress?: letter_progressUpdateManyWithoutLetter_levelsNestedInput
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsUpdateManyWithoutLetter_levelsNestedInput
+    letters_to_letter_levels?: letters_to_letter_levelsUpdateManyWithoutLetter_levelsNestedInput
+  }
+
+  export type letter_levelsUncheckedUpdateWithoutLetter_typesInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    number?: IntFieldUpdateOperationsInput | number
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+    letter_progress?: letter_progressUncheckedUpdateManyWithoutLetter_levelsNestedInput
+    letter_questions_to_letter_levels?: letter_questions_to_letter_levelsUncheckedUpdateManyWithoutLetter_levelsNestedInput
+    letters_to_letter_levels?: letters_to_letter_levelsUncheckedUpdateManyWithoutLetter_levelsNestedInput
+  }
+
+  export type letter_levelsUncheckedUpdateManyWithoutLetter_typesInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    number?: IntFieldUpdateOperationsInput | number
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type lettersUpdateWithoutLetter_typesInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    name?: StringFieldUpdateOperationsInput | string
+    symbol?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+    letter_blocks?: letter_blocksUpdateOneRequiredWithoutLettersNestedInput
+    letter_positions?: letter_positionsUpdateOneRequiredWithoutLettersNestedInput
+    letters_to_letter_levels?: letters_to_letter_levelsUpdateManyWithoutLettersNestedInput
+  }
+
+  export type lettersUncheckedUpdateWithoutLetter_typesInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    name?: StringFieldUpdateOperationsInput | string
+    symbol?: StringFieldUpdateOperationsInput | string
+    position_id?: StringFieldUpdateOperationsInput | string
+    block_id?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+    letters_to_letter_levels?: letters_to_letter_levelsUncheckedUpdateManyWithoutLettersNestedInput
+  }
+
+  export type lettersUncheckedUpdateManyWithoutLetter_typesInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    name?: StringFieldUpdateOperationsInput | string
+    symbol?: StringFieldUpdateOperationsInput | string
+    position_id?: StringFieldUpdateOperationsInput | string
+    block_id?: StringFieldUpdateOperationsInput | string
+    id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type letters_to_letter_levelsCreateManyLettersInput = {
+    letter_level_id: string
+  }
+
+  export type letters_to_letter_levelsUpdateWithoutLettersInput = {
+    letter_levels?: letter_levelsUpdateOneRequiredWithoutLetters_to_letter_levelsNestedInput
+  }
+
+  export type letters_to_letter_levelsUncheckedUpdateWithoutLettersInput = {
+    letter_level_id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type letters_to_letter_levelsUncheckedUpdateManyWithoutLettersInput = {
+    letter_level_id?: StringFieldUpdateOperationsInput | string
+  }
+
+
+
+  /**
+   * Batch Payload for updateMany & deleteMany & createMany
+   */
+
+  export type BatchPayload = {
+    count: number
+  }
+
+  /**
+   * DMMF
+   */
+  export const dmmf: runtime.BaseDMMF
+}
