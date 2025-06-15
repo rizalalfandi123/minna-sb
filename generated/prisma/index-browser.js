@@ -195,6 +195,21 @@ exports.Prisma.Letters_to_letter_levelsScalarFieldEnum = {
   letter_level_id: 'letter_level_id'
 };
 
+exports.Prisma.Unit_questionsScalarFieldEnum = {
+  created_at: 'created_at',
+  updated_at: 'updated_at',
+  question: 'question',
+  deleted: 'deleted',
+  id: 'id'
+};
+
+exports.Prisma.UnitsScalarFieldEnum = {
+  id: 'id',
+  created_at: 'created_at',
+  updated_at: 'updated_at',
+  deleted: 'deleted'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -225,7 +240,9 @@ exports.Prisma.ModelName = {
   letter_questions_to_letter_levels: 'letter_questions_to_letter_levels',
   letter_types: 'letter_types',
   letters: 'letters',
-  letters_to_letter_levels: 'letters_to_letter_levels'
+  letters_to_letter_levels: 'letters_to_letter_levels',
+  unit_questions: 'unit_questions',
+  units: 'units'
 };
 
 /**

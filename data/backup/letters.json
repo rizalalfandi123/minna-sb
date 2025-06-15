@@ -397,15 +397,6 @@
   },
   {
     "deleted": false,
-    "name": "o",
-    "symbol": "を",
-    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
-    "position_id": "b6a896c8-64b5-403f-baed-4c1093f254f8",
-    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
-    "id": "13a8c7d7-1e91-48a2-9489-047991419b4f"
-  },
-  {
-    "deleted": false,
     "name": "n",
     "symbol": "ん",
     "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
@@ -1432,15 +1423,6 @@
   },
   {
     "deleted": false,
-    "name": "o",
-    "symbol": "ヲ",
-    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
-    "position_id": "b6a896c8-64b5-403f-baed-4c1093f254f8",
-    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
-    "id": "eca0411e-83a6-4fe8-be5b-9ff24c214ba0"
-  },
-  {
-    "deleted": false,
     "name": "n",
     "symbol": "ン",
     "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
@@ -2068,5 +2050,23 @@
     "position_id": "8c8593e3-7693-4ddd-a903-482972efd5c9",
     "block_id": "6686daa2-2ed1-4109-b0d6-706890f7bb01",
     "id": "60bc2575-57ee-4bc5-a1b0-74cc03e59882"
+  },
+  {
+    "deleted": false,
+    "name": "wo",
+    "symbol": "を",
+    "type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "position_id": "b6a896c8-64b5-403f-baed-4c1093f254f8",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "13a8c7d7-1e91-48a2-9489-047991419b4f"
+  },
+  {
+    "deleted": false,
+    "name": "wo",
+    "symbol": "ヲ",
+    "type_id": "1e7f5733-b89c-43f4-b46d-26d215975599",
+    "position_id": "b6a896c8-64b5-403f-baed-4c1093f254f8",
+    "block_id": "5abffe43-4c68-45ac-9c14-7d4e60a90a09",
+    "id": "eca0411e-83a6-4fe8-be5b-9ff24c214ba0"
   }
 ]

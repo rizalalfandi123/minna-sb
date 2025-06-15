@@ -1,162 +1,163 @@
 import { Hono } from "hono";
 import { PrismaClient } from "../generated/prisma";
-import {
-  isGuessTheLetter,
-  isGuessTheLetterSound,
-  isGuessTheSymbol,
-  isMatchingTextByText,
-  isSortItemsBySound,
-  LetterQuestionSchema,
-} from "./schemas";
+import { cors } from "hono/cors";
+import { LetterQuestionTypeSchema, LetterTypeSchema } from "./schemas";
 import { z } from "zod";
+import { updateLettersToLetterLevels } from "./backup-code";
 
 const app = new Hono();
 
+app.use(cors({ origin: "*" }));
+
 const prisma = new PrismaClient();
 
-const CreateQuestionSchema = LetterQuestionSchema.omit({
-  id: true,
-  number: true,
-}).merge(
-  z.object({
-    level_number: z.number(),
-    level_type: z.enum(["hiragana", "katakana", "kanji"]),
-  })
-);
-
-const createQuestion = async (body: unknown) => {
-  const { level_number, level_type, ...data } =
-    CreateQuestionSchema.parse(body);
-
-  const letterType = await prisma.letter_types.findFirstOrThrow({
-    where: {
-      name: {
-        equals: level_type,
-      },
-    },
-  });
-
-  let letterLevel = await prisma.letter_levels.findFirst({
-    where: { number: level_number, letter_type_id: letterType.id },
-  });
-
-  if (!letterLevel) {
-    letterLevel = await prisma.letter_levels.create({
-      data: {
-        number: level_number,
-        letter_type_id: letterType.id,
-      },
-    });
-  }
-
-  const letterQuestions =
-    await prisma.letter_questions_to_letter_levels.findMany({
-      include: {
-        letter_questions: true,
-      },
-      where: {
-        letter_level_id: { equals: letterLevel.id },
-      },
-    });
-
-  const lastNumber = Math.max(
-    0,
-    ...letterQuestions.map((item) => item.number)
-  );
-
-  const letterQuestion = await prisma.letter_questions.create({
-    data: data,
-  });
-
-  await prisma.letter_questions_to_letter_levels.create({
-    data: {
-      letter_level_id: letterLevel.id,
-      letter_question_id: letterQuestion.id,
-      number: lastNumber + 1
-    },
-  });
-
-  const letters = await prisma.letters.findMany();
-
-  const letterContext = letters.filter((letter) => {
-    let letters: Array<string> = [];
-
-    if (isGuessTheLetter(data.question)) {
-      letters = [data.question.data.question];
-    }
-
-    if (isGuessTheSymbol(data.question)) {
-      letters = data.question.data.options;
-    }
-
-    if (isGuessTheLetterSound(data.question)) {
-      letters = data.question.data.options;
-    }
-
-    if (isMatchingTextByText(data.question)) {
-      letters = data.question.data.options
-        .map((side) => [side.leftSide, side.rightSide])
-        .flat();
-    }
-
-    if (isSortItemsBySound(data.question)) {
-      letters = data.question.data.options.map((item) => item.value);
-    }
-
-    return letters.some((item) => item === letter.symbol);
-  });
-
-  await prisma.letters_to_letter_levels.createMany({
-    data: letterContext.map((letter) => ({
-      letter_id: letter.id,
-      letter_level_id: letterLevel.id,
-    })),
-    skipDuplicates: true,
-  });
-
-  return { ...letterQuestion, level: letterLevel };
-};
-
 app
-  .get("/letter-questions", async (c) => {
-    try {
-      const letterQuestions = await prisma.letter_questions.findMany();
-
-      return c.json(letterQuestions);
-    } catch (error) {
-      return c.json({ error });
-    }
-  })
+  .use("/letter-questions")
   .post(async (c) => {
     try {
       const body = await c.req.json();
 
-      const res = await createQuestion(body);
+      const validBody = LetterQuestionTypeSchema.parse(body);
+
+      const res = await prisma.letter_questions.create({
+        data: { question: validBody },
+      });
 
       return c.json(res);
     } catch (error) {
       return c.json({ error });
     }
   })
-  .patch(async (c) => {
+  .put(async (c) => {
     try {
       const body = await c.req.json();
 
-      const data = LetterQuestionSchema.omit({ id: true })
-        .partial()
-        .merge(LetterQuestionSchema.pick({ id: true }))
+      const validBody = z
+        .object({
+          id: z.string(),
+          question: LetterQuestionTypeSchema,
+        })
         .parse(body);
 
-      const letterQuestion = await prisma.letter_questions.update({
-        data,
-        where: { id: data.id },
+      const res = await prisma.letter_questions.update({
+        data: { question: validBody.question },
+        where: { id: validBody.id },
       });
 
-      return c.json(letterQuestion);
+      return c.json(res);
+    } catch (error) {
+      return c.json({ error });
+    }
+  })
+  .delete(async (c) => {
+    try {
+      const body = await c.req.json();
+
+      const validBody = z
+        .object({
+          id: z.string(),
+        })
+        .parse(body);
+
+      const res = await prisma.letter_questions.delete({
+        where: { id: validBody.id },
+      });
+
+      return c.json(res);
     } catch (error) {
       return c.json({ error });
     }
   });
+
+app.post("/unapply-level", async (c) => {
+  try {
+    const body = await c.req.json();
+
+    const validBody = z
+      .object({
+        questionId: z.string(),
+        levelId: z.string(),
+        letterType: LetterTypeSchema,
+      })
+      .parse(body);
+
+    const res = await prisma.letter_questions_to_letter_levels.delete({
+      where: {
+        letter_question_id_letter_level_id: {
+          letter_level_id: validBody.levelId,
+          letter_question_id: validBody.questionId,
+        },
+      },
+    });
+
+    return c.json(res);
+  } catch (error) {
+    return c.json({ error });
+  }
+});
+
+app.post("/apply-level", async (c) => {
+  try {
+    const body = await c.req.json();
+
+    const validBody = z
+      .object({
+        questionId: z.string(),
+        levelNumber: z.coerce.number(),
+        number: z.coerce.number(),
+        letterType: LetterTypeSchema,
+      })
+      .parse(body);
+
+    const letterType = await prisma.letter_types.findFirstOrThrow({
+      where: {
+        name: validBody.letterType,
+      },
+    });
+
+    let levelData = await prisma.letter_levels.findFirst({
+      where: { number: { equals: validBody.levelNumber } },
+    });
+
+    if (!levelData) {
+      levelData = await prisma.letter_levels.create({
+        data: {
+          number: validBody.levelNumber,
+          letter_type_id: letterType.id,
+        },
+      });
+    }
+
+    if (!levelData) {
+      throw new Error("No level data");
+    }
+
+    const res = await prisma.letter_questions_to_letter_levels.upsert({
+      where: {
+        letter_question_id_letter_level_id: {
+          letter_level_id: levelData.id,
+          letter_question_id: validBody.questionId,
+        },
+      },
+      create: {
+        letter_level_id: levelData.id,
+        number: validBody.number,
+        letter_question_id: validBody.questionId,
+      },
+      update: {
+        letter_level_id: levelData.id,
+        number: validBody.number,
+        letter_question_id: validBody.questionId,
+      },
+    });
+
+    await updateLettersToLetterLevels({ levelId: levelData.id });
+
+    return c.json(res);
+  } catch (error) {
+    return c.json({ error });
+  }
+});
 
 export default {
   port: 3001,

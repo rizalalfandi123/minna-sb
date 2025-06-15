@@ -15,6 +15,7 @@ json
         "answer": "i"
     }
 }
+
 GUESS_THE_SYMBOL
 Guess the Japanese character (hiragana/katakana/kanji) from romaji.
 Example:
@@ -28,6 +29,7 @@ json
         "answer": "あ"
     }
 }
+
 GUESS_THE_LETTER_SOUND
 Guess the Japanese character (hiragana/katakana/kanji) from its sound.
 The sound is generated via text-to-speech (e.g., expo-speech).
@@ -42,6 +44,7 @@ json
         "answer": "あ"
     }
 }
+
 MATCHING_TEXT_BY_TEXT
 Match Japanese characters (hiragana/katakana/kanji) with their corresponding romaji.
 Example:

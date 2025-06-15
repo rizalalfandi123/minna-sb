@@ -58,6 +58,16 @@ export type letters = $Result.DefaultSelection<Prisma.$lettersPayload>
  * This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
  */
 export type letters_to_letter_levels = $Result.DefaultSelection<Prisma.$letters_to_letter_levelsPayload>
+/**
+ * Model unit_questions
+ * This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+ */
+export type unit_questions = $Result.DefaultSelection<Prisma.$unit_questionsPayload>
+/**
+ * Model units
+ * This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+ */
+export type units = $Result.DefaultSelection<Prisma.$unitsPayload>
 
 /**
  * ##  Prisma Client ʲˢ
@@ -273,6 +283,26 @@ export class PrismaClient<
     * ```
     */
   get letters_to_letter_levels(): Prisma.letters_to_letter_levelsDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.unit_questions`: Exposes CRUD operations for the **unit_questions** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more Unit_questions
+    * const unit_questions = await prisma.unit_questions.findMany()
+    * ```
+    */
+  get unit_questions(): Prisma.unit_questionsDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.units`: Exposes CRUD operations for the **units** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more Units
+    * const units = await prisma.units.findMany()
+    * ```
+    */
+  get units(): Prisma.unitsDelegate<ExtArgs, ClientOptions>;
 }
 
 export namespace Prisma {
@@ -721,7 +751,9 @@ export namespace Prisma {
     letter_questions_to_letter_levels: 'letter_questions_to_letter_levels',
     letter_types: 'letter_types',
     letters: 'letters',
-    letters_to_letter_levels: 'letters_to_letter_levels'
+    letters_to_letter_levels: 'letters_to_letter_levels',
+    unit_questions: 'unit_questions',
+    units: 'units'
   };
 
   export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -740,7 +772,7 @@ export namespace Prisma {
       omit: GlobalOmitOptions
     }
     meta: {
-      modelProps: "letter_blocks" | "letter_levels" | "letter_positions" | "letter_progress" | "letter_questions" | "letter_questions_to_letter_levels" | "letter_types" | "letters" | "letters_to_letter_levels"
+      modelProps: "letter_blocks" | "letter_levels" | "letter_positions" | "letter_progress" | "letter_questions" | "letter_questions_to_letter_levels" | "letter_types" | "letters" | "letters_to_letter_levels" | "unit_questions" | "units"
       txIsolationLevel: Prisma.TransactionIsolationLevel
     }
     model: {
@@ -1410,6 +1442,154 @@ export namespace Prisma {
           }
         }
       }
+      unit_questions: {
+        payload: Prisma.$unit_questionsPayload<ExtArgs>
+        fields: Prisma.unit_questionsFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.unit_questionsFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_questionsPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.unit_questionsFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_questionsPayload>
+          }
+          findFirst: {
+            args: Prisma.unit_questionsFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_questionsPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.unit_questionsFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_questionsPayload>
+          }
+          findMany: {
+            args: Prisma.unit_questionsFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_questionsPayload>[]
+          }
+          create: {
+            args: Prisma.unit_questionsCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_questionsPayload>
+          }
+          createMany: {
+            args: Prisma.unit_questionsCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.unit_questionsCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_questionsPayload>[]
+          }
+          delete: {
+            args: Prisma.unit_questionsDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_questionsPayload>
+          }
+          update: {
+            args: Prisma.unit_questionsUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_questionsPayload>
+          }
+          deleteMany: {
+            args: Prisma.unit_questionsDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.unit_questionsUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.unit_questionsUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_questionsPayload>[]
+          }
+          upsert: {
+            args: Prisma.unit_questionsUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_questionsPayload>
+          }
+          aggregate: {
+            args: Prisma.Unit_questionsAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateUnit_questions>
+          }
+          groupBy: {
+            args: Prisma.unit_questionsGroupByArgs<ExtArgs>
+            result: $Utils.Optional<Unit_questionsGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.unit_questionsCountArgs<ExtArgs>
+            result: $Utils.Optional<Unit_questionsCountAggregateOutputType> | number
+          }
+        }
+      }
+      units: {
+        payload: Prisma.$unitsPayload<ExtArgs>
+        fields: Prisma.unitsFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.unitsFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unitsPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.unitsFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unitsPayload>
+          }
+          findFirst: {
+            args: Prisma.unitsFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unitsPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.unitsFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unitsPayload>
+          }
+          findMany: {
+            args: Prisma.unitsFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unitsPayload>[]
+          }
+          create: {
+            args: Prisma.unitsCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unitsPayload>
+          }
+          createMany: {
+            args: Prisma.unitsCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.unitsCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unitsPayload>[]
+          }
+          delete: {
+            args: Prisma.unitsDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unitsPayload>
+          }
+          update: {
+            args: Prisma.unitsUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unitsPayload>
+          }
+          deleteMany: {
+            args: Prisma.unitsDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.unitsUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.unitsUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unitsPayload>[]
+          }
+          upsert: {
+            args: Prisma.unitsUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unitsPayload>
+          }
+          aggregate: {
+            args: Prisma.UnitsAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateUnits>
+          }
+          groupBy: {
+            args: Prisma.unitsGroupByArgs<ExtArgs>
+            result: $Utils.Optional<UnitsGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.unitsCountArgs<ExtArgs>
+            result: $Utils.Optional<UnitsCountAggregateOutputType> | number
+          }
+        }
+      }
     }
   } & {
     other: {
@@ -1503,6 +1683,8 @@ export namespace Prisma {
     letter_types?: letter_typesOmit
     letters?: lettersOmit
     letters_to_letter_levels?: letters_to_letter_levelsOmit
+    unit_questions?: unit_questionsOmit
+    units?: unitsOmit
   }
 
   /* Types for Logging */
@@ -11697,6 +11879,1979 @@ export namespace Prisma {
 
 
   /**
+   * Model unit_questions
+   */
+
+  export type AggregateUnit_questions = {
+    _count: Unit_questionsCountAggregateOutputType | null
+    _min: Unit_questionsMinAggregateOutputType | null
+    _max: Unit_questionsMaxAggregateOutputType | null
+  }
+
+  export type Unit_questionsMinAggregateOutputType = {
+    created_at: Date | null
+    updated_at: Date | null
+    deleted: boolean | null
+    id: string | null
+  }
+
+  export type Unit_questionsMaxAggregateOutputType = {
+    created_at: Date | null
+    updated_at: Date | null
+    deleted: boolean | null
+    id: string | null
+  }
+
+  export type Unit_questionsCountAggregateOutputType = {
+    created_at: number
+    updated_at: number
+    question: number
+    deleted: number
+    id: number
+    _all: number
+  }
+
+
+  export type Unit_questionsMinAggregateInputType = {
+    created_at?: true
+    updated_at?: true
+    deleted?: true
+    id?: true
+  }
+
+  export type Unit_questionsMaxAggregateInputType = {
+    created_at?: true
+    updated_at?: true
+    deleted?: true
+    id?: true
+  }
+
+  export type Unit_questionsCountAggregateInputType = {
+    created_at?: true
+    updated_at?: true
+    question?: true
+    deleted?: true
+    id?: true
+    _all?: true
+  }
+
+  export type Unit_questionsAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which unit_questions to aggregate.
+     */
+    where?: unit_questionsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of unit_questions to fetch.
+     */
+    orderBy?: unit_questionsOrderByWithRelationInput | unit_questionsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: unit_questionsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` unit_questions from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` unit_questions.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned unit_questions
+    **/
+    _count?: true | Unit_questionsCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: Unit_questionsMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: Unit_questionsMaxAggregateInputType
+  }
+
+  export type GetUnit_questionsAggregateType<T extends Unit_questionsAggregateArgs> = {
+        [P in keyof T & keyof AggregateUnit_questions]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateUnit_questions[P]>
+      : GetScalarType<T[P], AggregateUnit_questions[P]>
+  }
+
+
+
+
+  export type unit_questionsGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: unit_questionsWhereInput
+    orderBy?: unit_questionsOrderByWithAggregationInput | unit_questionsOrderByWithAggregationInput[]
+    by: Unit_questionsScalarFieldEnum[] | Unit_questionsScalarFieldEnum
+    having?: unit_questionsScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: Unit_questionsCountAggregateInputType | true
+    _min?: Unit_questionsMinAggregateInputType
+    _max?: Unit_questionsMaxAggregateInputType
+  }
+
+  export type Unit_questionsGroupByOutputType = {
+    created_at: Date
+    updated_at: Date
+    question: JsonValue
+    deleted: boolean
+    id: string
+    _count: Unit_questionsCountAggregateOutputType | null
+    _min: Unit_questionsMinAggregateOutputType | null
+    _max: Unit_questionsMaxAggregateOutputType | null
+  }
+
+  type GetUnit_questionsGroupByPayload<T extends unit_questionsGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<Unit_questionsGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof Unit_questionsGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], Unit_questionsGroupByOutputType[P]>
+            : GetScalarType<T[P], Unit_questionsGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type unit_questionsSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    created_at?: boolean
+    updated_at?: boolean
+    question?: boolean
+    deleted?: boolean
+    id?: boolean
+  }, ExtArgs["result"]["unit_questions"]>
+
+  export type unit_questionsSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    created_at?: boolean
+    updated_at?: boolean
+    question?: boolean
+    deleted?: boolean
+    id?: boolean
+  }, ExtArgs["result"]["unit_questions"]>
+
+  export type unit_questionsSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    created_at?: boolean
+    updated_at?: boolean
+    question?: boolean
+    deleted?: boolean
+    id?: boolean
+  }, ExtArgs["result"]["unit_questions"]>
+
+  export type unit_questionsSelectScalar = {
+    created_at?: boolean
+    updated_at?: boolean
+    question?: boolean
+    deleted?: boolean
+    id?: boolean
+  }
+
+  export type unit_questionsOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"created_at" | "updated_at" | "question" | "deleted" | "id", ExtArgs["result"]["unit_questions"]>
+
+  export type $unit_questionsPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "unit_questions"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      created_at: Date
+      updated_at: Date
+      question: Prisma.JsonValue
+      deleted: boolean
+      id: string
+    }, ExtArgs["result"]["unit_questions"]>
+    composites: {}
+  }
+
+  type unit_questionsGetPayload<S extends boolean | null | undefined | unit_questionsDefaultArgs> = $Result.GetResult<Prisma.$unit_questionsPayload, S>
+
+  type unit_questionsCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<unit_questionsFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: Unit_questionsCountAggregateInputType | true
+    }
+
+  export interface unit_questionsDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['unit_questions'], meta: { name: 'unit_questions' } }
+    /**
+     * Find zero or one Unit_questions that matches the filter.
+     * @param {unit_questionsFindUniqueArgs} args - Arguments to find a Unit_questions
+     * @example
+     * // Get one Unit_questions
+     * const unit_questions = await prisma.unit_questions.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends unit_questionsFindUniqueArgs>(args: SelectSubset<T, unit_questionsFindUniqueArgs<ExtArgs>>): Prisma__unit_questionsClient<$Result.GetResult<Prisma.$unit_questionsPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one Unit_questions that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {unit_questionsFindUniqueOrThrowArgs} args - Arguments to find a Unit_questions
+     * @example
+     * // Get one Unit_questions
+     * const unit_questions = await prisma.unit_questions.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends unit_questionsFindUniqueOrThrowArgs>(args: SelectSubset<T, unit_questionsFindUniqueOrThrowArgs<ExtArgs>>): Prisma__unit_questionsClient<$Result.GetResult<Prisma.$unit_questionsPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Unit_questions that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {unit_questionsFindFirstArgs} args - Arguments to find a Unit_questions
+     * @example
+     * // Get one Unit_questions
+     * const unit_questions = await prisma.unit_questions.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends unit_questionsFindFirstArgs>(args?: SelectSubset<T, unit_questionsFindFirstArgs<ExtArgs>>): Prisma__unit_questionsClient<$Result.GetResult<Prisma.$unit_questionsPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Unit_questions that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {unit_questionsFindFirstOrThrowArgs} args - Arguments to find a Unit_questions
+     * @example
+     * // Get one Unit_questions
+     * const unit_questions = await prisma.unit_questions.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends unit_questionsFindFirstOrThrowArgs>(args?: SelectSubset<T, unit_questionsFindFirstOrThrowArgs<ExtArgs>>): Prisma__unit_questionsClient<$Result.GetResult<Prisma.$unit_questionsPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more Unit_questions that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {unit_questionsFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all Unit_questions
+     * const unit_questions = await prisma.unit_questions.findMany()
+     * 
+     * // Get first 10 Unit_questions
+     * const unit_questions = await prisma.unit_questions.findMany({ take: 10 })
+     * 
+     * // Only select the `created_at`
+     * const unit_questionsWithCreated_atOnly = await prisma.unit_questions.findMany({ select: { created_at: true } })
+     * 
+     */
+    findMany<T extends unit_questionsFindManyArgs>(args?: SelectSubset<T, unit_questionsFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$unit_questionsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a Unit_questions.
+     * @param {unit_questionsCreateArgs} args - Arguments to create a Unit_questions.
+     * @example
+     * // Create one Unit_questions
+     * const Unit_questions = await prisma.unit_questions.create({
+     *   data: {
+     *     // ... data to create a Unit_questions
+     *   }
+     * })
+     * 
+     */
+    create<T extends unit_questionsCreateArgs>(args: SelectSubset<T, unit_questionsCreateArgs<ExtArgs>>): Prisma__unit_questionsClient<$Result.GetResult<Prisma.$unit_questionsPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many Unit_questions.
+     * @param {unit_questionsCreateManyArgs} args - Arguments to create many Unit_questions.
+     * @example
+     * // Create many Unit_questions
+     * const unit_questions = await prisma.unit_questions.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends unit_questionsCreateManyArgs>(args?: SelectSubset<T, unit_questionsCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many Unit_questions and returns the data saved in the database.
+     * @param {unit_questionsCreateManyAndReturnArgs} args - Arguments to create many Unit_questions.
+     * @example
+     * // Create many Unit_questions
+     * const unit_questions = await prisma.unit_questions.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Unit_questions and only return the `created_at`
+     * const unit_questionsWithCreated_atOnly = await prisma.unit_questions.createManyAndReturn({
+     *   select: { created_at: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends unit_questionsCreateManyAndReturnArgs>(args?: SelectSubset<T, unit_questionsCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$unit_questionsPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a Unit_questions.
+     * @param {unit_questionsDeleteArgs} args - Arguments to delete one Unit_questions.
+     * @example
+     * // Delete one Unit_questions
+     * const Unit_questions = await prisma.unit_questions.delete({
+     *   where: {
+     *     // ... filter to delete one Unit_questions
+     *   }
+     * })
+     * 
+     */
+    delete<T extends unit_questionsDeleteArgs>(args: SelectSubset<T, unit_questionsDeleteArgs<ExtArgs>>): Prisma__unit_questionsClient<$Result.GetResult<Prisma.$unit_questionsPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one Unit_questions.
+     * @param {unit_questionsUpdateArgs} args - Arguments to update one Unit_questions.
+     * @example
+     * // Update one Unit_questions
+     * const unit_questions = await prisma.unit_questions.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends unit_questionsUpdateArgs>(args: SelectSubset<T, unit_questionsUpdateArgs<ExtArgs>>): Prisma__unit_questionsClient<$Result.GetResult<Prisma.$unit_questionsPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more Unit_questions.
+     * @param {unit_questionsDeleteManyArgs} args - Arguments to filter Unit_questions to delete.
+     * @example
+     * // Delete a few Unit_questions
+     * const { count } = await prisma.unit_questions.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends unit_questionsDeleteManyArgs>(args?: SelectSubset<T, unit_questionsDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Unit_questions.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {unit_questionsUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many Unit_questions
+     * const unit_questions = await prisma.unit_questions.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends unit_questionsUpdateManyArgs>(args: SelectSubset<T, unit_questionsUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Unit_questions and returns the data updated in the database.
+     * @param {unit_questionsUpdateManyAndReturnArgs} args - Arguments to update many Unit_questions.
+     * @example
+     * // Update many Unit_questions
+     * const unit_questions = await prisma.unit_questions.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Unit_questions and only return the `created_at`
+     * const unit_questionsWithCreated_atOnly = await prisma.unit_questions.updateManyAndReturn({
+     *   select: { created_at: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends unit_questionsUpdateManyAndReturnArgs>(args: SelectSubset<T, unit_questionsUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$unit_questionsPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one Unit_questions.
+     * @param {unit_questionsUpsertArgs} args - Arguments to update or create a Unit_questions.
+     * @example
+     * // Update or create a Unit_questions
+     * const unit_questions = await prisma.unit_questions.upsert({
+     *   create: {
+     *     // ... data to create a Unit_questions
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the Unit_questions we want to update
+     *   }
+     * })
+     */
+    upsert<T extends unit_questionsUpsertArgs>(args: SelectSubset<T, unit_questionsUpsertArgs<ExtArgs>>): Prisma__unit_questionsClient<$Result.GetResult<Prisma.$unit_questionsPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of Unit_questions.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {unit_questionsCountArgs} args - Arguments to filter Unit_questions to count.
+     * @example
+     * // Count the number of Unit_questions
+     * const count = await prisma.unit_questions.count({
+     *   where: {
+     *     // ... the filter for the Unit_questions we want to count
+     *   }
+     * })
+    **/
+    count<T extends unit_questionsCountArgs>(
+      args?: Subset<T, unit_questionsCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], Unit_questionsCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a Unit_questions.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {Unit_questionsAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends Unit_questionsAggregateArgs>(args: Subset<T, Unit_questionsAggregateArgs>): Prisma.PrismaPromise<GetUnit_questionsAggregateType<T>>
+
+    /**
+     * Group by Unit_questions.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {unit_questionsGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends unit_questionsGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: unit_questionsGroupByArgs['orderBy'] }
+        : { orderBy?: unit_questionsGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, unit_questionsGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetUnit_questionsGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the unit_questions model
+   */
+  readonly fields: unit_questionsFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for unit_questions.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__unit_questionsClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the unit_questions model
+   */
+  interface unit_questionsFieldRefs {
+    readonly created_at: FieldRef<"unit_questions", 'DateTime'>
+    readonly updated_at: FieldRef<"unit_questions", 'DateTime'>
+    readonly question: FieldRef<"unit_questions", 'Json'>
+    readonly deleted: FieldRef<"unit_questions", 'Boolean'>
+    readonly id: FieldRef<"unit_questions", 'String'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * unit_questions findUnique
+   */
+  export type unit_questionsFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_questions
+     */
+    select?: unit_questionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_questions
+     */
+    omit?: unit_questionsOmit<ExtArgs> | null
+    /**
+     * Filter, which unit_questions to fetch.
+     */
+    where: unit_questionsWhereUniqueInput
+  }
+
+  /**
+   * unit_questions findUniqueOrThrow
+   */
+  export type unit_questionsFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_questions
+     */
+    select?: unit_questionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_questions
+     */
+    omit?: unit_questionsOmit<ExtArgs> | null
+    /**
+     * Filter, which unit_questions to fetch.
+     */
+    where: unit_questionsWhereUniqueInput
+  }
+
+  /**
+   * unit_questions findFirst
+   */
+  export type unit_questionsFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_questions
+     */
+    select?: unit_questionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_questions
+     */
+    omit?: unit_questionsOmit<ExtArgs> | null
+    /**
+     * Filter, which unit_questions to fetch.
+     */
+    where?: unit_questionsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of unit_questions to fetch.
+     */
+    orderBy?: unit_questionsOrderByWithRelationInput | unit_questionsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for unit_questions.
+     */
+    cursor?: unit_questionsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` unit_questions from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` unit_questions.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of unit_questions.
+     */
+    distinct?: Unit_questionsScalarFieldEnum | Unit_questionsScalarFieldEnum[]
+  }
+
+  /**
+   * unit_questions findFirstOrThrow
+   */
+  export type unit_questionsFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_questions
+     */
+    select?: unit_questionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_questions
+     */
+    omit?: unit_questionsOmit<ExtArgs> | null
+    /**
+     * Filter, which unit_questions to fetch.
+     */
+    where?: unit_questionsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of unit_questions to fetch.
+     */
+    orderBy?: unit_questionsOrderByWithRelationInput | unit_questionsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for unit_questions.
+     */
+    cursor?: unit_questionsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` unit_questions from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` unit_questions.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of unit_questions.
+     */
+    distinct?: Unit_questionsScalarFieldEnum | Unit_questionsScalarFieldEnum[]
+  }
+
+  /**
+   * unit_questions findMany
+   */
+  export type unit_questionsFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_questions
+     */
+    select?: unit_questionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_questions
+     */
+    omit?: unit_questionsOmit<ExtArgs> | null
+    /**
+     * Filter, which unit_questions to fetch.
+     */
+    where?: unit_questionsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of unit_questions to fetch.
+     */
+    orderBy?: unit_questionsOrderByWithRelationInput | unit_questionsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing unit_questions.
+     */
+    cursor?: unit_questionsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` unit_questions from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` unit_questions.
+     */
+    skip?: number
+    distinct?: Unit_questionsScalarFieldEnum | Unit_questionsScalarFieldEnum[]
+  }
+
+  /**
+   * unit_questions create
+   */
+  export type unit_questionsCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_questions
+     */
+    select?: unit_questionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_questions
+     */
+    omit?: unit_questionsOmit<ExtArgs> | null
+    /**
+     * The data needed to create a unit_questions.
+     */
+    data: XOR<unit_questionsCreateInput, unit_questionsUncheckedCreateInput>
+  }
+
+  /**
+   * unit_questions createMany
+   */
+  export type unit_questionsCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many unit_questions.
+     */
+    data: unit_questionsCreateManyInput | unit_questionsCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * unit_questions createManyAndReturn
+   */
+  export type unit_questionsCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_questions
+     */
+    select?: unit_questionsSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_questions
+     */
+    omit?: unit_questionsOmit<ExtArgs> | null
+    /**
+     * The data used to create many unit_questions.
+     */
+    data: unit_questionsCreateManyInput | unit_questionsCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * unit_questions update
+   */
+  export type unit_questionsUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_questions
+     */
+    select?: unit_questionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_questions
+     */
+    omit?: unit_questionsOmit<ExtArgs> | null
+    /**
+     * The data needed to update a unit_questions.
+     */
+    data: XOR<unit_questionsUpdateInput, unit_questionsUncheckedUpdateInput>
+    /**
+     * Choose, which unit_questions to update.
+     */
+    where: unit_questionsWhereUniqueInput
+  }
+
+  /**
+   * unit_questions updateMany
+   */
+  export type unit_questionsUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update unit_questions.
+     */
+    data: XOR<unit_questionsUpdateManyMutationInput, unit_questionsUncheckedUpdateManyInput>
+    /**
+     * Filter which unit_questions to update
+     */
+    where?: unit_questionsWhereInput
+    /**
+     * Limit how many unit_questions to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * unit_questions updateManyAndReturn
+   */
+  export type unit_questionsUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_questions
+     */
+    select?: unit_questionsSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_questions
+     */
+    omit?: unit_questionsOmit<ExtArgs> | null
+    /**
+     * The data used to update unit_questions.
+     */
+    data: XOR<unit_questionsUpdateManyMutationInput, unit_questionsUncheckedUpdateManyInput>
+    /**
+     * Filter which unit_questions to update
+     */
+    where?: unit_questionsWhereInput
+    /**
+     * Limit how many unit_questions to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * unit_questions upsert
+   */
+  export type unit_questionsUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_questions
+     */
+    select?: unit_questionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_questions
+     */
+    omit?: unit_questionsOmit<ExtArgs> | null
+    /**
+     * The filter to search for the unit_questions to update in case it exists.
+     */
+    where: unit_questionsWhereUniqueInput
+    /**
+     * In case the unit_questions found by the `where` argument doesn't exist, create a new unit_questions with this data.
+     */
+    create: XOR<unit_questionsCreateInput, unit_questionsUncheckedCreateInput>
+    /**
+     * In case the unit_questions was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<unit_questionsUpdateInput, unit_questionsUncheckedUpdateInput>
+  }
+
+  /**
+   * unit_questions delete
+   */
+  export type unit_questionsDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_questions
+     */
+    select?: unit_questionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_questions
+     */
+    omit?: unit_questionsOmit<ExtArgs> | null
+    /**
+     * Filter which unit_questions to delete.
+     */
+    where: unit_questionsWhereUniqueInput
+  }
+
+  /**
+   * unit_questions deleteMany
+   */
+  export type unit_questionsDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which unit_questions to delete
+     */
+    where?: unit_questionsWhereInput
+    /**
+     * Limit how many unit_questions to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * unit_questions without action
+   */
+  export type unit_questionsDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_questions
+     */
+    select?: unit_questionsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_questions
+     */
+    omit?: unit_questionsOmit<ExtArgs> | null
+  }
+
+
+  /**
+   * Model units
+   */
+
+  export type AggregateUnits = {
+    _count: UnitsCountAggregateOutputType | null
+    _min: UnitsMinAggregateOutputType | null
+    _max: UnitsMaxAggregateOutputType | null
+  }
+
+  export type UnitsMinAggregateOutputType = {
+    id: string | null
+    created_at: Date | null
+    updated_at: Date | null
+    deleted: boolean | null
+  }
+
+  export type UnitsMaxAggregateOutputType = {
+    id: string | null
+    created_at: Date | null
+    updated_at: Date | null
+    deleted: boolean | null
+  }
+
+  export type UnitsCountAggregateOutputType = {
+    id: number
+    created_at: number
+    updated_at: number
+    deleted: number
+    _all: number
+  }
+
+
+  export type UnitsMinAggregateInputType = {
+    id?: true
+    created_at?: true
+    updated_at?: true
+    deleted?: true
+  }
+
+  export type UnitsMaxAggregateInputType = {
+    id?: true
+    created_at?: true
+    updated_at?: true
+    deleted?: true
+  }
+
+  export type UnitsCountAggregateInputType = {
+    id?: true
+    created_at?: true
+    updated_at?: true
+    deleted?: true
+    _all?: true
+  }
+
+  export type UnitsAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which units to aggregate.
+     */
+    where?: unitsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of units to fetch.
+     */
+    orderBy?: unitsOrderByWithRelationInput | unitsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: unitsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` units from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` units.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned units
+    **/
+    _count?: true | UnitsCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: UnitsMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: UnitsMaxAggregateInputType
+  }
+
+  export type GetUnitsAggregateType<T extends UnitsAggregateArgs> = {
+        [P in keyof T & keyof AggregateUnits]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateUnits[P]>
+      : GetScalarType<T[P], AggregateUnits[P]>
+  }
+
+
+
+
+  export type unitsGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: unitsWhereInput
+    orderBy?: unitsOrderByWithAggregationInput | unitsOrderByWithAggregationInput[]
+    by: UnitsScalarFieldEnum[] | UnitsScalarFieldEnum
+    having?: unitsScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: UnitsCountAggregateInputType | true
+    _min?: UnitsMinAggregateInputType
+    _max?: UnitsMaxAggregateInputType
+  }
+
+  export type UnitsGroupByOutputType = {
+    id: string
+    created_at: Date
+    updated_at: Date
+    deleted: boolean
+    _count: UnitsCountAggregateOutputType | null
+    _min: UnitsMinAggregateOutputType | null
+    _max: UnitsMaxAggregateOutputType | null
+  }
+
+  type GetUnitsGroupByPayload<T extends unitsGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<UnitsGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof UnitsGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], UnitsGroupByOutputType[P]>
+            : GetScalarType<T[P], UnitsGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type unitsSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    created_at?: boolean
+    updated_at?: boolean
+    deleted?: boolean
+  }, ExtArgs["result"]["units"]>
+
+  export type unitsSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    created_at?: boolean
+    updated_at?: boolean
+    deleted?: boolean
+  }, ExtArgs["result"]["units"]>
+
+  export type unitsSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    created_at?: boolean
+    updated_at?: boolean
+    deleted?: boolean
+  }, ExtArgs["result"]["units"]>
+
+  export type unitsSelectScalar = {
+    id?: boolean
+    created_at?: boolean
+    updated_at?: boolean
+    deleted?: boolean
+  }
+
+  export type unitsOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "created_at" | "updated_at" | "deleted", ExtArgs["result"]["units"]>
+
+  export type $unitsPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "units"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      id: string
+      created_at: Date
+      updated_at: Date
+      deleted: boolean
+    }, ExtArgs["result"]["units"]>
+    composites: {}
+  }
+
+  type unitsGetPayload<S extends boolean | null | undefined | unitsDefaultArgs> = $Result.GetResult<Prisma.$unitsPayload, S>
+
+  type unitsCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<unitsFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: UnitsCountAggregateInputType | true
+    }
+
+  export interface unitsDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['units'], meta: { name: 'units' } }
+    /**
+     * Find zero or one Units that matches the filter.
+     * @param {unitsFindUniqueArgs} args - Arguments to find a Units
+     * @example
+     * // Get one Units
+     * const units = await prisma.units.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends unitsFindUniqueArgs>(args: SelectSubset<T, unitsFindUniqueArgs<ExtArgs>>): Prisma__unitsClient<$Result.GetResult<Prisma.$unitsPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one Units that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {unitsFindUniqueOrThrowArgs} args - Arguments to find a Units
+     * @example
+     * // Get one Units
+     * const units = await prisma.units.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends unitsFindUniqueOrThrowArgs>(args: SelectSubset<T, unitsFindUniqueOrThrowArgs<ExtArgs>>): Prisma__unitsClient<$Result.GetResult<Prisma.$unitsPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Units that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {unitsFindFirstArgs} args - Arguments to find a Units
+     * @example
+     * // Get one Units
+     * const units = await prisma.units.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends unitsFindFirstArgs>(args?: SelectSubset<T, unitsFindFirstArgs<ExtArgs>>): Prisma__unitsClient<$Result.GetResult<Prisma.$unitsPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Units that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {unitsFindFirstOrThrowArgs} args - Arguments to find a Units
+     * @example
+     * // Get one Units
+     * const units = await prisma.units.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends unitsFindFirstOrThrowArgs>(args?: SelectSubset<T, unitsFindFirstOrThrowArgs<ExtArgs>>): Prisma__unitsClient<$Result.GetResult<Prisma.$unitsPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more Units that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {unitsFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all Units
+     * const units = await prisma.units.findMany()
+     * 
+     * // Get first 10 Units
+     * const units = await prisma.units.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const unitsWithIdOnly = await prisma.units.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends unitsFindManyArgs>(args?: SelectSubset<T, unitsFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$unitsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a Units.
+     * @param {unitsCreateArgs} args - Arguments to create a Units.
+     * @example
+     * // Create one Units
+     * const Units = await prisma.units.create({
+     *   data: {
+     *     // ... data to create a Units
+     *   }
+     * })
+     * 
+     */
+    create<T extends unitsCreateArgs>(args: SelectSubset<T, unitsCreateArgs<ExtArgs>>): Prisma__unitsClient<$Result.GetResult<Prisma.$unitsPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many Units.
+     * @param {unitsCreateManyArgs} args - Arguments to create many Units.
+     * @example
+     * // Create many Units
+     * const units = await prisma.units.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends unitsCreateManyArgs>(args?: SelectSubset<T, unitsCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many Units and returns the data saved in the database.
+     * @param {unitsCreateManyAndReturnArgs} args - Arguments to create many Units.
+     * @example
+     * // Create many Units
+     * const units = await prisma.units.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Units and only return the `id`
+     * const unitsWithIdOnly = await prisma.units.createManyAndReturn({
+     *   select: { id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends unitsCreateManyAndReturnArgs>(args?: SelectSubset<T, unitsCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$unitsPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a Units.
+     * @param {unitsDeleteArgs} args - Arguments to delete one Units.
+     * @example
+     * // Delete one Units
+     * const Units = await prisma.units.delete({
+     *   where: {
+     *     // ... filter to delete one Units
+     *   }
+     * })
+     * 
+     */
+    delete<T extends unitsDeleteArgs>(args: SelectSubset<T, unitsDeleteArgs<ExtArgs>>): Prisma__unitsClient<$Result.GetResult<Prisma.$unitsPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one Units.
+     * @param {unitsUpdateArgs} args - Arguments to update one Units.
+     * @example
+     * // Update one Units
+     * const units = await prisma.units.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends unitsUpdateArgs>(args: SelectSubset<T, unitsUpdateArgs<ExtArgs>>): Prisma__unitsClient<$Result.GetResult<Prisma.$unitsPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more Units.
+     * @param {unitsDeleteManyArgs} args - Arguments to filter Units to delete.
+     * @example
+     * // Delete a few Units
+     * const { count } = await prisma.units.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends unitsDeleteManyArgs>(args?: SelectSubset<T, unitsDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Units.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {unitsUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many Units
+     * const units = await prisma.units.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends unitsUpdateManyArgs>(args: SelectSubset<T, unitsUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Units and returns the data updated in the database.
+     * @param {unitsUpdateManyAndReturnArgs} args - Arguments to update many Units.
+     * @example
+     * // Update many Units
+     * const units = await prisma.units.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Units and only return the `id`
+     * const unitsWithIdOnly = await prisma.units.updateManyAndReturn({
+     *   select: { id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends unitsUpdateManyAndReturnArgs>(args: SelectSubset<T, unitsUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$unitsPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one Units.
+     * @param {unitsUpsertArgs} args - Arguments to update or create a Units.
+     * @example
+     * // Update or create a Units
+     * const units = await prisma.units.upsert({
+     *   create: {
+     *     // ... data to create a Units
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the Units we want to update
+     *   }
+     * })
+     */
+    upsert<T extends unitsUpsertArgs>(args: SelectSubset<T, unitsUpsertArgs<ExtArgs>>): Prisma__unitsClient<$Result.GetResult<Prisma.$unitsPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of Units.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {unitsCountArgs} args - Arguments to filter Units to count.
+     * @example
+     * // Count the number of Units
+     * const count = await prisma.units.count({
+     *   where: {
+     *     // ... the filter for the Units we want to count
+     *   }
+     * })
+    **/
+    count<T extends unitsCountArgs>(
+      args?: Subset<T, unitsCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], UnitsCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a Units.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {UnitsAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends UnitsAggregateArgs>(args: Subset<T, UnitsAggregateArgs>): Prisma.PrismaPromise<GetUnitsAggregateType<T>>
+
+    /**
+     * Group by Units.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {unitsGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends unitsGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: unitsGroupByArgs['orderBy'] }
+        : { orderBy?: unitsGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, unitsGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetUnitsGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the units model
+   */
+  readonly fields: unitsFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for units.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__unitsClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the units model
+   */
+  interface unitsFieldRefs {
+    readonly id: FieldRef<"units", 'String'>
+    readonly created_at: FieldRef<"units", 'DateTime'>
+    readonly updated_at: FieldRef<"units", 'DateTime'>
+    readonly deleted: FieldRef<"units", 'Boolean'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * units findUnique
+   */
+  export type unitsFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the units
+     */
+    select?: unitsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the units
+     */
+    omit?: unitsOmit<ExtArgs> | null
+    /**
+     * Filter, which units to fetch.
+     */
+    where: unitsWhereUniqueInput
+  }
+
+  /**
+   * units findUniqueOrThrow
+   */
+  export type unitsFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the units
+     */
+    select?: unitsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the units
+     */
+    omit?: unitsOmit<ExtArgs> | null
+    /**
+     * Filter, which units to fetch.
+     */
+    where: unitsWhereUniqueInput
+  }
+
+  /**
+   * units findFirst
+   */
+  export type unitsFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the units
+     */
+    select?: unitsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the units
+     */
+    omit?: unitsOmit<ExtArgs> | null
+    /**
+     * Filter, which units to fetch.
+     */
+    where?: unitsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of units to fetch.
+     */
+    orderBy?: unitsOrderByWithRelationInput | unitsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for units.
+     */
+    cursor?: unitsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` units from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` units.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of units.
+     */
+    distinct?: UnitsScalarFieldEnum | UnitsScalarFieldEnum[]
+  }
+
+  /**
+   * units findFirstOrThrow
+   */
+  export type unitsFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the units
+     */
+    select?: unitsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the units
+     */
+    omit?: unitsOmit<ExtArgs> | null
+    /**
+     * Filter, which units to fetch.
+     */
+    where?: unitsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of units to fetch.
+     */
+    orderBy?: unitsOrderByWithRelationInput | unitsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for units.
+     */
+    cursor?: unitsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` units from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` units.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of units.
+     */
+    distinct?: UnitsScalarFieldEnum | UnitsScalarFieldEnum[]
+  }
+
+  /**
+   * units findMany
+   */
+  export type unitsFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the units
+     */
+    select?: unitsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the units
+     */
+    omit?: unitsOmit<ExtArgs> | null
+    /**
+     * Filter, which units to fetch.
+     */
+    where?: unitsWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of units to fetch.
+     */
+    orderBy?: unitsOrderByWithRelationInput | unitsOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing units.
+     */
+    cursor?: unitsWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` units from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` units.
+     */
+    skip?: number
+    distinct?: UnitsScalarFieldEnum | UnitsScalarFieldEnum[]
+  }
+
+  /**
+   * units create
+   */
+  export type unitsCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the units
+     */
+    select?: unitsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the units
+     */
+    omit?: unitsOmit<ExtArgs> | null
+    /**
+     * The data needed to create a units.
+     */
+    data: XOR<unitsCreateInput, unitsUncheckedCreateInput>
+  }
+
+  /**
+   * units createMany
+   */
+  export type unitsCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many units.
+     */
+    data: unitsCreateManyInput | unitsCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * units createManyAndReturn
+   */
+  export type unitsCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the units
+     */
+    select?: unitsSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the units
+     */
+    omit?: unitsOmit<ExtArgs> | null
+    /**
+     * The data used to create many units.
+     */
+    data: unitsCreateManyInput | unitsCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * units update
+   */
+  export type unitsUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the units
+     */
+    select?: unitsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the units
+     */
+    omit?: unitsOmit<ExtArgs> | null
+    /**
+     * The data needed to update a units.
+     */
+    data: XOR<unitsUpdateInput, unitsUncheckedUpdateInput>
+    /**
+     * Choose, which units to update.
+     */
+    where: unitsWhereUniqueInput
+  }
+
+  /**
+   * units updateMany
+   */
+  export type unitsUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update units.
+     */
+    data: XOR<unitsUpdateManyMutationInput, unitsUncheckedUpdateManyInput>
+    /**
+     * Filter which units to update
+     */
+    where?: unitsWhereInput
+    /**
+     * Limit how many units to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * units updateManyAndReturn
+   */
+  export type unitsUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the units
+     */
+    select?: unitsSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the units
+     */
+    omit?: unitsOmit<ExtArgs> | null
+    /**
+     * The data used to update units.
+     */
+    data: XOR<unitsUpdateManyMutationInput, unitsUncheckedUpdateManyInput>
+    /**
+     * Filter which units to update
+     */
+    where?: unitsWhereInput
+    /**
+     * Limit how many units to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * units upsert
+   */
+  export type unitsUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the units
+     */
+    select?: unitsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the units
+     */
+    omit?: unitsOmit<ExtArgs> | null
+    /**
+     * The filter to search for the units to update in case it exists.
+     */
+    where: unitsWhereUniqueInput
+    /**
+     * In case the units found by the `where` argument doesn't exist, create a new units with this data.
+     */
+    create: XOR<unitsCreateInput, unitsUncheckedCreateInput>
+    /**
+     * In case the units was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<unitsUpdateInput, unitsUncheckedUpdateInput>
+  }
+
+  /**
+   * units delete
+   */
+  export type unitsDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the units
+     */
+    select?: unitsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the units
+     */
+    omit?: unitsOmit<ExtArgs> | null
+    /**
+     * Filter which units to delete.
+     */
+    where: unitsWhereUniqueInput
+  }
+
+  /**
+   * units deleteMany
+   */
+  export type unitsDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which units to delete
+     */
+    where?: unitsWhereInput
+    /**
+     * Limit how many units to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * units without action
+   */
+  export type unitsDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the units
+     */
+    select?: unitsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the units
+     */
+    omit?: unitsOmit<ExtArgs> | null
+  }
+
+
+  /**
    * Enums
    */
 
@@ -11810,6 +13965,27 @@ export namespace Prisma {
   };
 
   export type Letters_to_letter_levelsScalarFieldEnum = (typeof Letters_to_letter_levelsScalarFieldEnum)[keyof typeof Letters_to_letter_levelsScalarFieldEnum]
+
+
+  export const Unit_questionsScalarFieldEnum: {
+    created_at: 'created_at',
+    updated_at: 'updated_at',
+    question: 'question',
+    deleted: 'deleted',
+    id: 'id'
+  };
+
+  export type Unit_questionsScalarFieldEnum = (typeof Unit_questionsScalarFieldEnum)[keyof typeof Unit_questionsScalarFieldEnum]
+
+
+  export const UnitsScalarFieldEnum: {
+    id: 'id',
+    created_at: 'created_at',
+    updated_at: 'updated_at',
+    deleted: 'deleted'
+  };
+
+  export type UnitsScalarFieldEnum = (typeof UnitsScalarFieldEnum)[keyof typeof UnitsScalarFieldEnum]
 
 
   export const SortOrder: {
@@ -12474,6 +14650,105 @@ export namespace Prisma {
     letter_level_id?: UuidWithAggregatesFilter<"letters_to_letter_levels"> | string
   }
 
+  export type unit_questionsWhereInput = {
+    AND?: unit_questionsWhereInput | unit_questionsWhereInput[]
+    OR?: unit_questionsWhereInput[]
+    NOT?: unit_questionsWhereInput | unit_questionsWhereInput[]
+    created_at?: DateTimeFilter<"unit_questions"> | Date | string
+    updated_at?: DateTimeFilter<"unit_questions"> | Date | string
+    question?: JsonFilter<"unit_questions">
+    deleted?: BoolFilter<"unit_questions"> | boolean
+    id?: UuidFilter<"unit_questions"> | string
+  }
+
+  export type unit_questionsOrderByWithRelationInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    question?: SortOrder
+    deleted?: SortOrder
+    id?: SortOrder
+  }
+
+  export type unit_questionsWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    AND?: unit_questionsWhereInput | unit_questionsWhereInput[]
+    OR?: unit_questionsWhereInput[]
+    NOT?: unit_questionsWhereInput | unit_questionsWhereInput[]
+    created_at?: DateTimeFilter<"unit_questions"> | Date | string
+    updated_at?: DateTimeFilter<"unit_questions"> | Date | string
+    question?: JsonFilter<"unit_questions">
+    deleted?: BoolFilter<"unit_questions"> | boolean
+  }, "id">
+
+  export type unit_questionsOrderByWithAggregationInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    question?: SortOrder
+    deleted?: SortOrder
+    id?: SortOrder
+    _count?: unit_questionsCountOrderByAggregateInput
+    _max?: unit_questionsMaxOrderByAggregateInput
+    _min?: unit_questionsMinOrderByAggregateInput
+  }
+
+  export type unit_questionsScalarWhereWithAggregatesInput = {
+    AND?: unit_questionsScalarWhereWithAggregatesInput | unit_questionsScalarWhereWithAggregatesInput[]
+    OR?: unit_questionsScalarWhereWithAggregatesInput[]
+    NOT?: unit_questionsScalarWhereWithAggregatesInput | unit_questionsScalarWhereWithAggregatesInput[]
+    created_at?: DateTimeWithAggregatesFilter<"unit_questions"> | Date | string
+    updated_at?: DateTimeWithAggregatesFilter<"unit_questions"> | Date | string
+    question?: JsonWithAggregatesFilter<"unit_questions">
+    deleted?: BoolWithAggregatesFilter<"unit_questions"> | boolean
+    id?: UuidWithAggregatesFilter<"unit_questions"> | string
+  }
+
+  export type unitsWhereInput = {
+    AND?: unitsWhereInput | unitsWhereInput[]
+    OR?: unitsWhereInput[]
+    NOT?: unitsWhereInput | unitsWhereInput[]
+    id?: UuidFilter<"units"> | string
+    created_at?: DateTimeFilter<"units"> | Date | string
+    updated_at?: DateTimeFilter<"units"> | Date | string
+    deleted?: BoolFilter<"units"> | boolean
+  }
+
+  export type unitsOrderByWithRelationInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+  }
+
+  export type unitsWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    AND?: unitsWhereInput | unitsWhereInput[]
+    OR?: unitsWhereInput[]
+    NOT?: unitsWhereInput | unitsWhereInput[]
+    created_at?: DateTimeFilter<"units"> | Date | string
+    updated_at?: DateTimeFilter<"units"> | Date | string
+    deleted?: BoolFilter<"units"> | boolean
+  }, "id">
+
+  export type unitsOrderByWithAggregationInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+    _count?: unitsCountOrderByAggregateInput
+    _max?: unitsMaxOrderByAggregateInput
+    _min?: unitsMinOrderByAggregateInput
+  }
+
+  export type unitsScalarWhereWithAggregatesInput = {
+    AND?: unitsScalarWhereWithAggregatesInput | unitsScalarWhereWithAggregatesInput[]
+    OR?: unitsScalarWhereWithAggregatesInput[]
+    NOT?: unitsScalarWhereWithAggregatesInput | unitsScalarWhereWithAggregatesInput[]
+    id?: UuidWithAggregatesFilter<"units"> | string
+    created_at?: DateTimeWithAggregatesFilter<"units"> | Date | string
+    updated_at?: DateTimeWithAggregatesFilter<"units"> | Date | string
+    deleted?: BoolWithAggregatesFilter<"units"> | boolean
+  }
+
   export type letter_blocksCreateInput = {
     created_at?: Date | string
     updated_at?: Date | string
@@ -13027,6 +15302,111 @@ export namespace Prisma {
     letter_level_id?: StringFieldUpdateOperationsInput | string
   }
 
+  export type unit_questionsCreateInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    question: JsonNullValueInput | InputJsonValue
+    deleted?: boolean
+    id?: string
+  }
+
+  export type unit_questionsUncheckedCreateInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    question: JsonNullValueInput | InputJsonValue
+    deleted?: boolean
+    id?: string
+  }
+
+  export type unit_questionsUpdateInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    question?: JsonNullValueInput | InputJsonValue
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type unit_questionsUncheckedUpdateInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    question?: JsonNullValueInput | InputJsonValue
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type unit_questionsCreateManyInput = {
+    created_at?: Date | string
+    updated_at?: Date | string
+    question: JsonNullValueInput | InputJsonValue
+    deleted?: boolean
+    id?: string
+  }
+
+  export type unit_questionsUpdateManyMutationInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    question?: JsonNullValueInput | InputJsonValue
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type unit_questionsUncheckedUpdateManyInput = {
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    question?: JsonNullValueInput | InputJsonValue
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type unitsCreateInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at: Date | string
+    deleted?: boolean
+  }
+
+  export type unitsUncheckedCreateInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at: Date | string
+    deleted?: boolean
+  }
+
+  export type unitsUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+  }
+
+  export type unitsUncheckedUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+  }
+
+  export type unitsCreateManyInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at: Date | string
+    deleted?: boolean
+  }
+
+  export type unitsUpdateManyMutationInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+  }
+
+  export type unitsUncheckedUpdateManyInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+  }
+
   export type DateTimeFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
@@ -13538,6 +15918,49 @@ export namespace Prisma {
   export type letters_to_letter_levelsMinOrderByAggregateInput = {
     letter_id?: SortOrder
     letter_level_id?: SortOrder
+  }
+
+  export type unit_questionsCountOrderByAggregateInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    question?: SortOrder
+    deleted?: SortOrder
+    id?: SortOrder
+  }
+
+  export type unit_questionsMaxOrderByAggregateInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+    id?: SortOrder
+  }
+
+  export type unit_questionsMinOrderByAggregateInput = {
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+    id?: SortOrder
+  }
+
+  export type unitsCountOrderByAggregateInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+  }
+
+  export type unitsMaxOrderByAggregateInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+  }
+
+  export type unitsMinOrderByAggregateInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
   }
 
   export type lettersCreateNestedManyWithoutLetter_blocksInput = {
