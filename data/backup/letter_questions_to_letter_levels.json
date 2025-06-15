@@ -55,6 +55,81 @@
     "number": 10
   },
   {
+    "letter_question_id": "007a5586-fc09-4ec9-aa26-37477995859a",
+    "letter_level_id": "591c8b8b-cb6d-478c-b11e-ccb52b84bc6e",
+    "number": 1
+  },
+  {
+    "letter_question_id": "a86c8ecb-7c08-4351-b6d3-07e0d7b410da",
+    "letter_level_id": "591c8b8b-cb6d-478c-b11e-ccb52b84bc6e",
+    "number": 2
+  },
+  {
+    "letter_question_id": "22c9e07f-def6-4e76-8dcc-27e644f24074",
+    "letter_level_id": "591c8b8b-cb6d-478c-b11e-ccb52b84bc6e",
+    "number": 5
+  },
+  {
+    "letter_question_id": "4eb62882-b37f-4795-8386-bda1b5ad91a8",
+    "letter_level_id": "591c8b8b-cb6d-478c-b11e-ccb52b84bc6e",
+    "number": 6
+  },
+  {
+    "letter_question_id": "e4f331a1-9b09-49bd-a658-d6f0aa63234e",
+    "letter_level_id": "591c8b8b-cb6d-478c-b11e-ccb52b84bc6e",
+    "number": 7
+  },
+  {
+    "letter_question_id": "56dd9b26-7fc1-40c3-b242-06509a9684e6",
+    "letter_level_id": "591c8b8b-cb6d-478c-b11e-ccb52b84bc6e",
+    "number": 8
+  },
+  {
+    "letter_question_id": "c0378ded-614c-4577-b236-72e4d243126a",
+    "letter_level_id": "591c8b8b-cb6d-478c-b11e-ccb52b84bc6e",
+    "number": 9
+  },
+  {
+    "letter_question_id": "804e27b3-213a-404c-99b9-bf5d5bed754d",
+    "letter_level_id": "591c8b8b-cb6d-478c-b11e-ccb52b84bc6e",
+    "number": 10
+  },
+  {
+    "letter_question_id": "d8f8f6db-618a-4d0e-acae-4c3757ffb1e5",
+    "letter_level_id": "1016ad59-aed0-49d8-b8f8-8549bcb5a2a3",
+    "number": 2
+  },
+  {
+    "letter_question_id": "5fdf4115-9b7c-4cb3-8a12-a37735affde9",
+    "letter_level_id": "591c8b8b-cb6d-478c-b11e-ccb52b84bc6e",
+    "number": 3
+  },
+  {
+    "letter_question_id": "6c38b0d5-0b06-4aa6-aa4f-42b2294d99a5",
+    "letter_level_id": "591c8b8b-cb6d-478c-b11e-ccb52b84bc6e",
+    "number": 4
+  },
+  {
+    "letter_question_id": "5fdf4115-9b7c-4cb3-8a12-a37735affde9",
+    "letter_level_id": "1016ad59-aed0-49d8-b8f8-8549bcb5a2a3",
+    "number": 3
+  },
+  {
+    "letter_question_id": "52e7b797-2806-44b7-a648-5b80a4c01f58",
+    "letter_level_id": "1016ad59-aed0-49d8-b8f8-8549bcb5a2a3",
+    "number": 4
+  },
+  {
+    "letter_question_id": "cb3a2a89-24d0-4c66-bcfc-1f1585ca88f5",
+    "letter_level_id": "1016ad59-aed0-49d8-b8f8-8549bcb5a2a3",
+    "number": 5
+  },
+  {
+    "letter_question_id": "a36571be-5611-4922-9eef-46c9cedecec1",
+    "letter_level_id": "1016ad59-aed0-49d8-b8f8-8549bcb5a2a3",
+    "number": 7
+  },
+  {
     "letter_question_id": "5596ee9b-1cdb-4f99-aa55-88848e63dbcc",
     "letter_level_id": "8920c65a-fbe1-4624-9678-d53c20bec5c7",
     "number": 1
@@ -198,5 +273,180 @@
     "letter_question_id": "22c9e07f-def6-4e76-8dcc-27e644f24074",
     "letter_level_id": "5c4c9542-396c-4af2-8eb0-c32a2209687d",
     "number": 9
+  },
+  {
+    "letter_question_id": "4eb62882-b37f-4795-8386-bda1b5ad91a8",
+    "letter_level_id": "1016ad59-aed0-49d8-b8f8-8549bcb5a2a3",
+    "number": 6
+  },
+  {
+    "letter_question_id": "56dd9b26-7fc1-40c3-b242-06509a9684e6",
+    "letter_level_id": "1016ad59-aed0-49d8-b8f8-8549bcb5a2a3",
+    "number": 7
+  },
+  {
+    "letter_question_id": "155a52ab-20ca-4c7d-894d-c7c259fcb9ad",
+    "letter_level_id": "1016ad59-aed0-49d8-b8f8-8549bcb5a2a3",
+    "number": 8
+  },
+  {
+    "letter_question_id": "5596ee9b-1cdb-4f99-aa55-88848e63dbcc",
+    "letter_level_id": "1016ad59-aed0-49d8-b8f8-8549bcb5a2a3",
+    "number": 9
+  },
+  {
+    "letter_question_id": "f5f67493-becf-4472-95d0-c720f4216a93",
+    "letter_level_id": "1016ad59-aed0-49d8-b8f8-8549bcb5a2a3",
+    "number": 10
+  },
+  {
+    "letter_question_id": "d8f8f6db-618a-4d0e-acae-4c3757ffb1e5",
+    "letter_level_id": "5edcaf22-6a44-4e8a-b35f-52771ab2dd12",
+    "number": 1
+  },
+  {
+    "letter_question_id": "a36571be-5611-4922-9eef-46c9cedecec1",
+    "letter_level_id": "5edcaf22-6a44-4e8a-b35f-52771ab2dd12",
+    "number": 2
+  },
+  {
+    "letter_question_id": "804e27b3-213a-404c-99b9-bf5d5bed754d",
+    "letter_level_id": "5edcaf22-6a44-4e8a-b35f-52771ab2dd12",
+    "number": 3
+  },
+  {
+    "letter_question_id": "c0378ded-614c-4577-b236-72e4d243126a",
+    "letter_level_id": "5edcaf22-6a44-4e8a-b35f-52771ab2dd12",
+    "number": 4
+  },
+  {
+    "letter_question_id": "6c38b0d5-0b06-4aa6-aa4f-42b2294d99a5",
+    "letter_level_id": "5edcaf22-6a44-4e8a-b35f-52771ab2dd12",
+    "number": 6
+  },
+  {
+    "letter_question_id": "4eb62882-b37f-4795-8386-bda1b5ad91a8",
+    "letter_level_id": "5edcaf22-6a44-4e8a-b35f-52771ab2dd12",
+    "number": 5
+  },
+  {
+    "letter_question_id": "e4f331a1-9b09-49bd-a658-d6f0aa63234e",
+    "letter_level_id": "5edcaf22-6a44-4e8a-b35f-52771ab2dd12",
+    "number": 7
+  },
+  {
+    "letter_question_id": "91251cd9-b9ca-4113-9950-cd89e0d72dc6",
+    "letter_level_id": "5edcaf22-6a44-4e8a-b35f-52771ab2dd12",
+    "number": 8
+  },
+  {
+    "letter_question_id": "e0df63f0-c39a-4a40-9605-9c2230d37881",
+    "letter_level_id": "5edcaf22-6a44-4e8a-b35f-52771ab2dd12",
+    "number": 9
+  },
+  {
+    "letter_question_id": "e382d012-03a4-49e5-b7ef-4546ac9bfdad",
+    "letter_level_id": "5edcaf22-6a44-4e8a-b35f-52771ab2dd12",
+    "number": 10
+  },
+  {
+    "letter_question_id": "5596ee9b-1cdb-4f99-aa55-88848e63dbcc",
+    "letter_level_id": "f4a9a4cb-670d-4eeb-9ed9-be4366e26af5",
+    "number": 1
+  },
+  {
+    "letter_question_id": "22c9e07f-def6-4e76-8dcc-27e644f24074",
+    "letter_level_id": "f4a9a4cb-670d-4eeb-9ed9-be4366e26af5",
+    "number": 2
+  },
+  {
+    "letter_question_id": "cb3a2a89-24d0-4c66-bcfc-1f1585ca88f5",
+    "letter_level_id": "f4a9a4cb-670d-4eeb-9ed9-be4366e26af5",
+    "number": 3
+  },
+  {
+    "letter_question_id": "c0378ded-614c-4577-b236-72e4d243126a",
+    "letter_level_id": "f4a9a4cb-670d-4eeb-9ed9-be4366e26af5",
+    "number": 4
+  },
+  {
+    "letter_question_id": "6c38b0d5-0b06-4aa6-aa4f-42b2294d99a5",
+    "letter_level_id": "f4a9a4cb-670d-4eeb-9ed9-be4366e26af5",
+    "number": 5
+  },
+  {
+    "letter_question_id": "51468722-ab1d-4011-bb12-10ffce2a2e4b",
+    "letter_level_id": "f4a9a4cb-670d-4eeb-9ed9-be4366e26af5",
+    "number": 6
+  },
+  {
+    "letter_question_id": "3396c4d0-0b94-4175-9586-5f380a9fe8c2",
+    "letter_level_id": "f4a9a4cb-670d-4eeb-9ed9-be4366e26af5",
+    "number": 7
+  },
+  {
+    "letter_question_id": "e0df63f0-c39a-4a40-9605-9c2230d37881",
+    "letter_level_id": "f4a9a4cb-670d-4eeb-9ed9-be4366e26af5",
+    "number": 8
+  },
+  {
+    "letter_question_id": "a86c8ecb-7c08-4351-b6d3-07e0d7b410da",
+    "letter_level_id": "f4a9a4cb-670d-4eeb-9ed9-be4366e26af5",
+    "number": 9
+  },
+  {
+    "letter_question_id": "007a5586-fc09-4ec9-aa26-37477995859a",
+    "letter_level_id": "f4a9a4cb-670d-4eeb-9ed9-be4366e26af5",
+    "number": 10
+  },
+  {
+    "letter_question_id": "b8a9679c-99ba-4820-8542-28b3dc7ce76b",
+    "letter_level_id": "c915b92d-95ec-42ca-bb46-500707b1e1d5",
+    "number": 1
+  },
+  {
+    "letter_question_id": "fb120db2-24f2-4112-9098-0e749a857554",
+    "letter_level_id": "c915b92d-95ec-42ca-bb46-500707b1e1d5",
+    "number": 2
+  },
+  {
+    "letter_question_id": "ec8a0420-4e0c-475d-918e-7fbcc16c07be",
+    "letter_level_id": "c915b92d-95ec-42ca-bb46-500707b1e1d5",
+    "number": 3
+  },
+  {
+    "letter_question_id": "f81dcba4-df75-4320-a464-06b3f0d2e4bf",
+    "letter_level_id": "c915b92d-95ec-42ca-bb46-500707b1e1d5",
+    "number": 4
+  },
+  {
+    "letter_question_id": "a421d580-e6a2-48df-822d-7670c9ee97f4",
+    "letter_level_id": "c915b92d-95ec-42ca-bb46-500707b1e1d5",
+    "number": 5
+  },
+  {
+    "letter_question_id": "df19b849-b74d-48d6-aee1-0fcf687864a6",
+    "letter_level_id": "c915b92d-95ec-42ca-bb46-500707b1e1d5",
+    "number": 6
+  },
+  {
+    "letter_question_id": "0141a7de-85a9-4f61-af17-219ed3455b8c",
+    "letter_level_id": "c915b92d-95ec-42ca-bb46-500707b1e1d5",
+    "number": 7
+  },
+  {
+    "letter_question_id": "9d810d28-66b5-4339-a9cf-08d3353b5978",
+    "letter_level_id": "c915b92d-95ec-42ca-bb46-500707b1e1d5",
+    "number": 8
+  },
+  {
+    "letter_question_id": "99112903-3783-4c71-8dc4-787eec6cd0a4",
+    "letter_level_id": "c915b92d-95ec-42ca-bb46-500707b1e1d5",
+    "number": 9
+  },
+  {
+    "letter_question_id": "99a771ef-3902-4ef9-9f92-e9c64af8392c",
+    "letter_level_id": "c915b92d-95ec-42ca-bb46-500707b1e1d5",
+    "number": 10
   }
 ]

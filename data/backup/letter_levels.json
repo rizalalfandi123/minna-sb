@@ -22,5 +22,35 @@
     "letter_type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
     "deleted": false,
     "id": "d445c098-d39a-4082-a916-6ffae1141002"
+  },
+  {
+    "number": 5,
+    "letter_type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "deleted": false,
+    "id": "591c8b8b-cb6d-478c-b11e-ccb52b84bc6e"
+  },
+  {
+    "number": 6,
+    "letter_type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "deleted": false,
+    "id": "1016ad59-aed0-49d8-b8f8-8549bcb5a2a3"
+  },
+  {
+    "number": 7,
+    "letter_type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "deleted": false,
+    "id": "5edcaf22-6a44-4e8a-b35f-52771ab2dd12"
+  },
+  {
+    "number": 8,
+    "letter_type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "deleted": false,
+    "id": "f4a9a4cb-670d-4eeb-9ed9-be4366e26af5"
+  },
+  {
+    "number": 9,
+    "letter_type_id": "36c41b53-53f8-47f9-a159-934b2121e01b",
+    "deleted": false,
+    "id": "c915b92d-95ec-42ca-bb46-500707b1e1d5"
   }
 ]

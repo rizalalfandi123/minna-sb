@@ -94,3 +94,8 @@ Request:
 Please create questions base on this hiragana block
 ["あ", "い", "う", "え", "お"]
 5 questions for each of question type
+
+
+kata dalam bahasa jepang (hiragana)
+harus include salah satu dari (か,き,く,け,こ)
+bisa diberi tambahan あ,い,う,え,お
