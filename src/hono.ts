@@ -3,13 +3,68 @@ import { PrismaClient } from "../generated/prisma";
 import { cors } from "hono/cors";
 import { LetterQuestionTypeSchema, LetterTypeSchema } from "./schemas";
 import { z } from "zod";
-import { updateLettersToLetterLevels } from "./backup-code";
+import hiraganaBlock from "./hiragana-block";
 
 const app = new Hono();
 
 app.use(cors({ origin: "*" }));
 
 const prisma = new PrismaClient();
+
+const updateLettersToLetterLevels = async ({
+  levelId,
+}: {
+  levelId: string;
+}) => {
+  function getBlockByNumber(input: number): number[] {
+    const blockStart = Math.floor((input - 1) / 8) * 8 + 1;
+    return Array.from({ length: 8 }, (_, i) => blockStart + i);
+  }
+
+  function getMultiplesOf8Block(n: number): number[] {
+    const start: number = (n - 1) * 8 + 1;
+    return Array.from({ length: 8 }, (_, i) => start + i);
+  }
+
+  const levelData = await prisma.letter_levels.findFirstOrThrow({
+    where: { id: { equals: levelId } },
+  });
+
+  const allLevels = await prisma.letter_levels.findMany({
+    where: {
+      number: {
+        in: getBlockByNumber(levelData.number),
+      },
+    },
+  });
+
+  const letterBlock = (
+    hiraganaBlock.find((_, i) =>
+      getMultiplesOf8Block(i + 1).includes(levelData.number)
+    ) ?? []
+  ).filter((item) => item !== null);
+
+  for (let index = 0; index < allLevels.length; index++) {
+    const element = allLevels[index];
+
+    if (element) {
+      await prisma.letters_to_letter_levels.createMany({
+        data: letterBlock.map((item) => ({
+          letter_id: item.id,
+          letter_level_id: element.id,
+        })),
+        skipDuplicates: true,
+      });
+
+      await prisma.letters_to_letter_levels.deleteMany({
+        where: {
+          letter_level_id: { equals: element.id },
+          letter_id: { notIn: letterBlock.map((item) => item.id) },
+        },
+      });
+    }
+  }
+};
 
 app
   .use("/letter-questions")
