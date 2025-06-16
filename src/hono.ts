@@ -1,7 +1,15 @@
 import { Hono } from "hono";
 import { PrismaClient } from "../generated/prisma";
 import { cors } from "hono/cors";
-import { LetterQuestionTypeSchema, LetterTypeSchema } from "./schemas";
+import {
+  LetterQuestionTypeSchema,
+  LetterTypeSchema,
+  type TGuessTheLetter,
+  type TGuessTheLetterSound,
+  type TGuessTheSymbol,
+  type TMatchingTextByText,
+  type TSortItemsBySound,
+} from "./schemas";
 import { z } from "zod";
 import hiraganaBlock from "./hiragana-block";
 
@@ -213,6 +221,132 @@ app.post("/apply-level", async (c) => {
     return c.json({ error });
   }
 });
+
+app.post("/create-block-question", async (c) => {
+  try {
+    const body = await c.req.json();
+
+    const validBody = z
+      .object({
+        letters: z.array(z.string()).length(5),
+        words: z.array(z.string()).min(5),
+        type: LetterTypeSchema,
+      })
+      .parse(body);
+
+    const letters = await prisma.letters.findMany();
+
+    const letterData = letters.filter((letter) =>
+      validBody.letters.includes(letter.symbol)
+    );
+
+    if (letterData.length !== validBody.letters.length) {
+      throw new Error("Failed data");
+    }
+
+    const guessTheLetter: Array<TGuessTheLetter> = letterData.map((item) => {
+      const data: TGuessTheLetter = {
+        data: {
+          answer: item.name,
+          question: item.symbol,
+          options: letterData.map((letter) => letter.name),
+        },
+        letterType: validBody.type,
+        type: "GUESS_THE_LETTER",
+      };
+
+      return data;
+    });
+
+    const guessTheSymbol: Array<TGuessTheSymbol> = letterData.map((item) => {
+      const data: TGuessTheSymbol = {
+        data: {
+          answer: item.symbol,
+          question: item.name,
+          options: letterData.map((letter) => letter.symbol),
+        },
+        letterType: validBody.type,
+        type: "GUESS_THE_SYMBOL",
+      };
+
+      return data;
+    });
+
+    const guessTheLetterSound: Array<TGuessTheLetterSound> = letterData.map(
+      (item) => {
+        const data: TGuessTheLetterSound = {
+          data: {
+            answer: item.symbol,
+            question: item.symbol,
+            options: letterData.map((letter) => letter.symbol),
+          },
+          letterType: validBody.type,
+          type: "GUESS_THE_LETTER_SOUND",
+        };
+
+        return data;
+      }
+    );
+
+    const matchingTextByText: Array<TMatchingTextByText> = [true, false].map(
+      (isLeftSymbol) => {
+        const data: TMatchingTextByText = {
+          type: "MATCHING_TEXT_BY_TEXT",
+          letterType: validBody.type,
+          data: {
+            isLeftSymbol,
+            answer: letterData.map((letter) => ({
+              leftSide: isLeftSymbol ? letter.symbol : letter.name,
+              rightSide: isLeftSymbol ? letter.name : letter.symbol,
+            })),
+            options: letterData.map((letter) => ({
+              leftSide: isLeftSymbol ? letter.symbol : letter.name,
+              rightSide: isLeftSymbol ? letter.name : letter.symbol,
+            })),
+          },
+        };
+
+        return data;
+      }
+    );
+
+    const sortTheLetters: Array<TSortItemsBySound> = validBody.words.map(
+      (item) => {
+        const data: TSortItemsBySound = {
+          letterType: validBody.type,
+          type: "SORT_THE_ITEMS_BY_SOUND",
+          data: {
+            answer: item,
+            options: item
+              .split("")
+              .map((item, number) => ({ value: item, number })),
+          },
+        };
+
+        return data;
+      }
+    );
+
+    const allQuestions = z
+      .array(LetterQuestionTypeSchema)
+      .parse([
+        ...guessTheLetter,
+        ...guessTheSymbol,
+        ...guessTheLetterSound,
+        ...matchingTextByText,
+        ...sortTheLetters,
+      ]);
+
+    const res = await prisma.letter_questions.createMany({
+      data: allQuestions.map((question) => ({ question })),
+    });
+
+    return c.json(res);
+  } catch (error) {
+    return c.json({ error });
+  }
+});
+
 
 export default {
   port: 3001,
