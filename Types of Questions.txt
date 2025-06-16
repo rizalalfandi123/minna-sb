@@ -96,6 +96,8 @@ Please create questions base on this hiragana block
 5 questions for each of question type
 
 
-kata dalam bahasa jepang (hiragana)
-harus include salah satu dari (か,き,く,け,こ)
-bisa diberi tambahan あ,い,う,え,お
+Japanese words (hiragana)
+must include one of (さ, し, す, せ, そ)
+You can also add 
+あ, い, う, え, お, 
+か, き, く, け, こ
