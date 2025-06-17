@@ -10,6 +10,7 @@ const BaseEntitySchema = z.object({
 const GuessTheLetterQuestionSchema = z.object({
   type: z.literal("GUESS_THE_LETTER"),
   letterType: LetterTypeSchema,
+  scoope: z.array(z.string()),
   data: z.object({
     options: z.array(z.string().min(1)),
     answer: z.string().min(1),
@@ -20,18 +21,21 @@ const GuessTheLetterQuestionSchema = z.object({
 const GuessTheSymbolQuestionSchema = z.object({
   type: z.literal("GUESS_THE_SYMBOL"),
   letterType: LetterTypeSchema,
+  scoope: z.array(z.string()),
   data: GuessTheLetterQuestionSchema.shape.data,
 });
 
 const GuessTheLetterSoundQuestionSchema = z.object({
   type: z.literal("GUESS_THE_LETTER_SOUND"),
   letterType: LetterTypeSchema,
+  scoope: z.array(z.string()),
   data: GuessTheLetterQuestionSchema.shape.data,
 });
 
 const MatchingTextByTextQuestionSchema = z.object({
   type: z.literal("MATCHING_TEXT_BY_TEXT"),
   letterType: LetterTypeSchema,
+  scoope: z.array(z.string()),
   data: z.object({
     answer: z.array(
       z.object({ rightSide: z.string().min(1), leftSide: z.string().min(1) })
@@ -46,6 +50,7 @@ const MatchingTextByTextQuestionSchema = z.object({
 const SortItemsBySoundQuestionSchema = z.object({
   type: z.literal("SORT_THE_ITEMS_BY_SOUND"),
   letterType: LetterTypeSchema,
+  scoope: z.array(z.string()),
   data: z.object({
     answer: z.string().min(1),
     options: z.array(
@@ -90,6 +95,8 @@ export const UpdateQuestionSchema = CreateQuestionSchema.merge(
 );
 
 export type TCreateQuestionPayload = z.infer<typeof CreateQuestionSchema>;
+
+export type TTypeLetterQuestion = z.infer<typeof LetterQuestionTypeSchema>
 
 export type TLetterQuestion = z.infer<typeof LetterQuestionSchema>;
 
