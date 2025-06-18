@@ -13980,5 +13980,5225 @@
     },
     "deleted": false,
     "id": "d38c6c2d-c828-4541-be54-dcfadb65138c"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "a",
+        "options": ["a", "i", "u", "e", "o"],
+        "question": "ア"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "965b2111-8837-4af8-a4ed-21adbb4699b1"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "i",
+        "options": ["a", "i", "u", "e", "o"],
+        "question": "イ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "df5be015-98d7-4caa-8031-8a72158d792a"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "u",
+        "options": ["a", "i", "u", "e", "o"],
+        "question": "ウ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "95f2ec8f-b353-4dd7-a5bd-4c5f96470ec8"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "e",
+        "options": ["a", "i", "u", "e", "o"],
+        "question": "エ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "9e519a58-23bb-48e7-ae9a-ec4d7e8131f9"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "o",
+        "options": ["a", "i", "u", "e", "o"],
+        "question": "オ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "3d81a3e5-5ac6-4f93-868e-54cb3a2a4e82"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ア",
+        "options": ["ア", "イ", "ウ", "エ", "オ"],
+        "question": "a"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "06283a9a-0796-4a09-92fb-3601fc3a2520"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "イ",
+        "options": ["ア", "イ", "ウ", "エ", "オ"],
+        "question": "i"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "c628bc5a-30f4-4ec3-b70c-bfcee915218a"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ウ",
+        "options": ["ア", "イ", "ウ", "エ", "オ"],
+        "question": "u"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "34ee2c9d-1048-4061-a61f-3b434e5976ab"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "エ",
+        "options": ["ア", "イ", "ウ", "エ", "オ"],
+        "question": "e"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "f391877a-b826-40f1-881f-c5ffe4f24a82"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "オ",
+        "options": ["ア", "イ", "ウ", "エ", "オ"],
+        "question": "o"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "c16b26a0-0eca-4e86-9712-b86a8948871a"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ア",
+        "options": ["ア", "イ", "ウ", "エ", "オ"],
+        "question": "ア"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "e83a046e-5e6d-4914-b954-46c36d8a6f2f"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "イ",
+        "options": ["ア", "イ", "ウ", "エ", "オ"],
+        "question": "イ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "ca08184d-a969-4c1c-b776-727ca547e212"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ウ",
+        "options": ["ア", "イ", "ウ", "エ", "オ"],
+        "question": "ウ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "fbe588b8-1c52-4d2b-992d-c57419a437b2"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "エ",
+        "options": ["ア", "イ", "ウ", "エ", "オ"],
+        "question": "エ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "b0b807ba-7555-4025-81b3-7ea6d823d5c0"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "オ",
+        "options": ["ア", "イ", "ウ", "エ", "オ"],
+        "question": "オ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "6890cc23-e60e-4d18-8829-94ff22ef91c3"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "ア",
+            "rightSide": "a"
+          },
+          {
+            "leftSide": "イ",
+            "rightSide": "i"
+          },
+          {
+            "leftSide": "ウ",
+            "rightSide": "u"
+          },
+          {
+            "leftSide": "エ",
+            "rightSide": "e"
+          },
+          {
+            "leftSide": "オ",
+            "rightSide": "o"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "ア",
+            "rightSide": "a"
+          },
+          {
+            "leftSide": "イ",
+            "rightSide": "i"
+          },
+          {
+            "leftSide": "ウ",
+            "rightSide": "u"
+          },
+          {
+            "leftSide": "エ",
+            "rightSide": "e"
+          },
+          {
+            "leftSide": "オ",
+            "rightSide": "o"
+          }
+        ],
+        "isLeftSymbol": true
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "740da0f5-5754-4caf-868a-c06a563f34ae"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "a",
+            "rightSide": "ア"
+          },
+          {
+            "leftSide": "i",
+            "rightSide": "イ"
+          },
+          {
+            "leftSide": "u",
+            "rightSide": "ウ"
+          },
+          {
+            "leftSide": "e",
+            "rightSide": "エ"
+          },
+          {
+            "leftSide": "o",
+            "rightSide": "オ"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "a",
+            "rightSide": "ア"
+          },
+          {
+            "leftSide": "i",
+            "rightSide": "イ"
+          },
+          {
+            "leftSide": "u",
+            "rightSide": "ウ"
+          },
+          {
+            "leftSide": "e",
+            "rightSide": "エ"
+          },
+          {
+            "leftSide": "o",
+            "rightSide": "オ"
+          }
+        ],
+        "isLeftSymbol": false
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "32c847ec-8896-4584-8f8b-ec66a83d60f9"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "アイ",
+        "options": [
+          {
+            "value": "ア",
+            "number": 0
+          },
+          {
+            "value": "イ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "c865cba7-cb6f-4856-bf69-babcfb0456a1"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "イオ",
+        "options": [
+          {
+            "value": "イ",
+            "number": 0
+          },
+          {
+            "value": "オ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "a74a05c9-1e76-4244-9032-8cb308080379"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "アイウ",
+        "options": [
+          {
+            "value": "ア",
+            "number": 0
+          },
+          {
+            "value": "イ",
+            "number": 1
+          },
+          {
+            "value": "ウ",
+            "number": 2
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "123ae919-d0a9-46d3-8020-f1dc8de00f17"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ウオ",
+        "options": [
+          {
+            "value": "ウ",
+            "number": 0
+          },
+          {
+            "value": "オ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "7c92c2bf-acd4-4529-b21e-d22f1deda2b7"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "オウ",
+        "options": [
+          {
+            "value": "オ",
+            "number": 0
+          },
+          {
+            "value": "ウ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "e24a2746-a27f-4f11-8fe4-19e62d24f1a7"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "エオ",
+        "options": [
+          {
+            "value": "エ",
+            "number": 0
+          },
+          {
+            "value": "オ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "f43919fc-60ba-47c3-8a6b-184f35cd9834"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "アオ",
+        "options": [
+          {
+            "value": "ア",
+            "number": 0
+          },
+          {
+            "value": "オ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "553a3444-be0a-4ab5-b828-057aa3194c6d"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "イエ",
+        "options": [
+          {
+            "value": "イ",
+            "number": 0
+          },
+          {
+            "value": "エ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ア", "イ", "ウ", "エ", "オ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "ad4dd1d1-6a92-4ae8-9886-e6d98b266f89"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ka",
+        "options": ["ka", "ki", "ku", "ke", "ko"],
+        "question": "カ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "8dd5c71a-86ee-4989-bf3b-658cfab44136"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ki",
+        "options": ["ka", "ki", "ku", "ke", "ko"],
+        "question": "キ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "a28c09d4-e27c-422c-a7d7-4561d475d86d"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ku",
+        "options": ["ka", "ki", "ku", "ke", "ko"],
+        "question": "ク"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "d4b93137-5766-4336-9a1a-847490ea0a90"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ke",
+        "options": ["ka", "ki", "ku", "ke", "ko"],
+        "question": "ケ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "4ac50579-6859-44e5-a178-8ff97a81c023"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ko",
+        "options": ["ka", "ki", "ku", "ke", "ko"],
+        "question": "コ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "cb88e364-2550-4e28-b277-7a4fc5ec4785"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "カ",
+        "options": ["カ", "キ", "ク", "ケ", "コ"],
+        "question": "ka"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "cad2f848-84ab-41f4-9d69-b29af3905691"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "キ",
+        "options": ["カ", "キ", "ク", "ケ", "コ"],
+        "question": "ki"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "9f8794ef-3f92-4320-86f4-dcb54b376c00"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ク",
+        "options": ["カ", "キ", "ク", "ケ", "コ"],
+        "question": "ku"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "0917df67-7888-47a5-b762-a5903a0bdef1"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ケ",
+        "options": ["カ", "キ", "ク", "ケ", "コ"],
+        "question": "ke"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "6dbc6a05-3401-40b9-a5e4-2c61a9c79ed1"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "コ",
+        "options": ["カ", "キ", "ク", "ケ", "コ"],
+        "question": "ko"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "4bf79e76-d0d0-400a-9eb9-24512a537e68"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "カ",
+        "options": ["カ", "キ", "ク", "ケ", "コ"],
+        "question": "カ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "33b3de1f-4888-4a7e-b43a-ec44ff97e878"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "キ",
+        "options": ["カ", "キ", "ク", "ケ", "コ"],
+        "question": "キ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "8abe60ba-97ee-4696-a080-9dd0af4b005f"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ク",
+        "options": ["カ", "キ", "ク", "ケ", "コ"],
+        "question": "ク"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "07a2bef8-004a-4184-af5c-04b0389fd4b8"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ケ",
+        "options": ["カ", "キ", "ク", "ケ", "コ"],
+        "question": "ケ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "6800a266-d927-4730-a3af-bfdee356a18d"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "コ",
+        "options": ["カ", "キ", "ク", "ケ", "コ"],
+        "question": "コ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "cbe1e272-8e41-4f9c-bd99-59cf7e118bed"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "カ",
+            "rightSide": "ka"
+          },
+          {
+            "leftSide": "キ",
+            "rightSide": "ki"
+          },
+          {
+            "leftSide": "ク",
+            "rightSide": "ku"
+          },
+          {
+            "leftSide": "ケ",
+            "rightSide": "ke"
+          },
+          {
+            "leftSide": "コ",
+            "rightSide": "ko"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "カ",
+            "rightSide": "ka"
+          },
+          {
+            "leftSide": "キ",
+            "rightSide": "ki"
+          },
+          {
+            "leftSide": "ク",
+            "rightSide": "ku"
+          },
+          {
+            "leftSide": "ケ",
+            "rightSide": "ke"
+          },
+          {
+            "leftSide": "コ",
+            "rightSide": "ko"
+          }
+        ],
+        "isLeftSymbol": true
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "c677684d-b89f-44a4-811b-bd007423bc94"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "ka",
+            "rightSide": "カ"
+          },
+          {
+            "leftSide": "ki",
+            "rightSide": "キ"
+          },
+          {
+            "leftSide": "ku",
+            "rightSide": "ク"
+          },
+          {
+            "leftSide": "ke",
+            "rightSide": "ケ"
+          },
+          {
+            "leftSide": "ko",
+            "rightSide": "コ"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "ka",
+            "rightSide": "カ"
+          },
+          {
+            "leftSide": "ki",
+            "rightSide": "キ"
+          },
+          {
+            "leftSide": "ku",
+            "rightSide": "ク"
+          },
+          {
+            "leftSide": "ke",
+            "rightSide": "ケ"
+          },
+          {
+            "leftSide": "ko",
+            "rightSide": "コ"
+          }
+        ],
+        "isLeftSymbol": false
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "8411a727-3fea-4d04-a90c-da7c82d4714d"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "カキ",
+        "options": [
+          {
+            "value": "カ",
+            "number": 0
+          },
+          {
+            "value": "キ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "5064164a-3f8f-4a39-af3c-146160db7c6c"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "キク",
+        "options": [
+          {
+            "value": "キ",
+            "number": 0
+          },
+          {
+            "value": "ク",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "8871111c-d383-4f49-93f7-097d9ef41599"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "コエ",
+        "options": [
+          {
+            "value": "コ",
+            "number": 0
+          },
+          {
+            "value": "エ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "ee9ef70c-3245-4f07-96fb-c2469fd6d0e9"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "カコ",
+        "options": [
+          {
+            "value": "カ",
+            "number": 0
+          },
+          {
+            "value": "コ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "d3dc0690-dd0c-4c08-8241-c5764a1e6b04"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ケイ",
+        "options": [
+          {
+            "value": "ケ",
+            "number": 0
+          },
+          {
+            "value": "イ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "44f958b2-885c-4b3d-94bb-45e59a07b3e0"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "クキ",
+        "options": [
+          {
+            "value": "ク",
+            "number": 0
+          },
+          {
+            "value": "キ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "4374af92-e61b-4744-80aa-da49707ea222"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "オキ",
+        "options": [
+          {
+            "value": "オ",
+            "number": 0
+          },
+          {
+            "value": "キ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "374f59dd-3b92-4813-8a83-a81f24ac4653"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "アカ",
+        "options": [
+          {
+            "value": "ア",
+            "number": 0
+          },
+          {
+            "value": "カ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "fbaeaa35-a782-4f2e-a032-97e36e551d3b"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "イコ",
+        "options": [
+          {
+            "value": "イ",
+            "number": 0
+          },
+          {
+            "value": "コ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "0e7ac789-6eb8-4b32-8d04-87f98694b289"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ウケ",
+        "options": [
+          {
+            "value": "ウ",
+            "number": 0
+          },
+          {
+            "value": "ケ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["カ", "キ", "ク", "ケ", "コ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "5d474fce-b4b1-4ecc-b8b6-05716035f655"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "sa",
+        "options": ["sa", "shi", "su", "se", "so"],
+        "question": "サ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "20989d6c-3a75-45b6-a231-258ad055d6d5"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "shi",
+        "options": ["sa", "shi", "su", "se", "so"],
+        "question": "シ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "49106ed1-7b0a-49ca-9103-d8d200a26a0b"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "su",
+        "options": ["sa", "shi", "su", "se", "so"],
+        "question": "ス"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "1b0b4b5a-7b96-426a-b5d7-4d541b969dcb"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "se",
+        "options": ["sa", "shi", "su", "se", "so"],
+        "question": "セ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "41f38efa-3cd9-4792-9c39-b1b535e2969d"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "so",
+        "options": ["sa", "shi", "su", "se", "so"],
+        "question": "ソ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "455da552-5f72-44f2-af89-da78ae26bd9c"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "サ",
+        "options": ["サ", "シ", "ス", "セ", "ソ"],
+        "question": "sa"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "7321cbfc-8d63-4a52-9927-1daad22db16d"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "シ",
+        "options": ["サ", "シ", "ス", "セ", "ソ"],
+        "question": "shi"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "63ba404a-e539-4d02-b4fd-ec1c93b4561b"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ス",
+        "options": ["サ", "シ", "ス", "セ", "ソ"],
+        "question": "su"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "71e06dcb-314a-4058-a6c3-50428410417b"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "セ",
+        "options": ["サ", "シ", "ス", "セ", "ソ"],
+        "question": "se"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "19151080-5884-4f26-a566-ebe217b22326"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ソ",
+        "options": ["サ", "シ", "ス", "セ", "ソ"],
+        "question": "so"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "1ec5cb12-e077-430b-b201-e42e34df8cd8"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "サ",
+        "options": ["サ", "シ", "ス", "セ", "ソ"],
+        "question": "サ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "a7594057-0f03-4a40-868a-eab379c5aa99"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "シ",
+        "options": ["サ", "シ", "ス", "セ", "ソ"],
+        "question": "シ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "083f3590-3442-4abe-8f85-5f4523fa35b2"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ス",
+        "options": ["サ", "シ", "ス", "セ", "ソ"],
+        "question": "ス"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "ee5a3b9a-dd70-4557-a0f4-bf567444d142"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "セ",
+        "options": ["サ", "シ", "ス", "セ", "ソ"],
+        "question": "セ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "71bb9581-78d4-48b8-92d7-8e241ab94b5a"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ソ",
+        "options": ["サ", "シ", "ス", "セ", "ソ"],
+        "question": "ソ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "add85b73-59ee-4dba-a7d0-eec837e84300"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "サ",
+            "rightSide": "sa"
+          },
+          {
+            "leftSide": "シ",
+            "rightSide": "shi"
+          },
+          {
+            "leftSide": "ス",
+            "rightSide": "su"
+          },
+          {
+            "leftSide": "セ",
+            "rightSide": "se"
+          },
+          {
+            "leftSide": "ソ",
+            "rightSide": "so"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "サ",
+            "rightSide": "sa"
+          },
+          {
+            "leftSide": "シ",
+            "rightSide": "shi"
+          },
+          {
+            "leftSide": "ス",
+            "rightSide": "su"
+          },
+          {
+            "leftSide": "セ",
+            "rightSide": "se"
+          },
+          {
+            "leftSide": "ソ",
+            "rightSide": "so"
+          }
+        ],
+        "isLeftSymbol": true
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "5caafa12-bf5e-40ed-906f-236365c806e4"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "sa",
+            "rightSide": "サ"
+          },
+          {
+            "leftSide": "shi",
+            "rightSide": "シ"
+          },
+          {
+            "leftSide": "su",
+            "rightSide": "ス"
+          },
+          {
+            "leftSide": "se",
+            "rightSide": "セ"
+          },
+          {
+            "leftSide": "so",
+            "rightSide": "ソ"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "sa",
+            "rightSide": "サ"
+          },
+          {
+            "leftSide": "shi",
+            "rightSide": "シ"
+          },
+          {
+            "leftSide": "su",
+            "rightSide": "ス"
+          },
+          {
+            "leftSide": "se",
+            "rightSide": "セ"
+          },
+          {
+            "leftSide": "so",
+            "rightSide": "ソ"
+          }
+        ],
+        "isLeftSymbol": false
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "55e38c8a-20ce-41f6-9c04-d7fe7a29878e"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "スシ",
+        "options": [
+          {
+            "value": "ス",
+            "number": 0
+          },
+          {
+            "value": "シ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "8ddf9aef-49c7-42b6-ba69-8766143c7abb"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "サカ",
+        "options": [
+          {
+            "value": "サ",
+            "number": 0
+          },
+          {
+            "value": "カ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "b0c8be74-9210-4738-81b9-1e2c60156a73"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ソコ",
+        "options": [
+          {
+            "value": "ソ",
+            "number": 0
+          },
+          {
+            "value": "コ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "d6eac9e0-5fdb-4f44-b95e-6b76e53d0f2c"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "シオ",
+        "options": [
+          {
+            "value": "シ",
+            "number": 0
+          },
+          {
+            "value": "オ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "9ea6cebb-62ee-4a56-91ad-2bc6ac601348"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "セカイ",
+        "options": [
+          {
+            "value": "セ",
+            "number": 0
+          },
+          {
+            "value": "カ",
+            "number": 1
+          },
+          {
+            "value": "イ",
+            "number": 2
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "f794a34c-fbed-4d30-91a1-164c52428260"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "カサ",
+        "options": [
+          {
+            "value": "カ",
+            "number": 0
+          },
+          {
+            "value": "サ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "6b1d04cb-340c-427c-94dc-b50508963c25"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "スコア",
+        "options": [
+          {
+            "value": "ス",
+            "number": 0
+          },
+          {
+            "value": "コ",
+            "number": 1
+          },
+          {
+            "value": "ア",
+            "number": 2
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "35e5385c-7f5c-4dee-8b3a-dbdde25fd04c"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "キソ",
+        "options": [
+          {
+            "value": "キ",
+            "number": 0
+          },
+          {
+            "value": "ソ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "519ecaf1-33b6-4d48-9aab-1a21ff5fb402"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "シカ",
+        "options": [
+          {
+            "value": "シ",
+            "number": 0
+          },
+          {
+            "value": "カ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "cc7531ce-41eb-4e7a-850d-76f9f1d07e77"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "アシ",
+        "options": [
+          {
+            "value": "ア",
+            "number": 0
+          },
+          {
+            "value": "シ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["サ", "シ", "ス", "セ", "ソ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "03eb8312-d414-4966-ba64-9897838a7205"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ta",
+        "options": ["ta", "chi", "tsu", "te", "to"],
+        "question": "タ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "7624fbf3-a0cc-4eab-8d07-8d9784ee46da"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "chi",
+        "options": ["ta", "chi", "tsu", "te", "to"],
+        "question": "チ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "58c0c8c5-fbe5-4db8-bea3-b76684303194"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "tsu",
+        "options": ["ta", "chi", "tsu", "te", "to"],
+        "question": "ツ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "55b08405-d36e-407d-ac0b-ea3db2107351"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "te",
+        "options": ["ta", "chi", "tsu", "te", "to"],
+        "question": "テ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "2b97d727-854b-4ecc-aef1-5635cad5babe"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "to",
+        "options": ["ta", "chi", "tsu", "te", "to"],
+        "question": "ト"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "1b601d3e-369f-487f-b4ed-ddbf6b7732fc"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "タ",
+        "options": ["タ", "チ", "ツ", "テ", "ト"],
+        "question": "ta"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "4d3ee3be-7be1-4a01-bf63-4f4cc028336f"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "チ",
+        "options": ["タ", "チ", "ツ", "テ", "ト"],
+        "question": "chi"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "f92bfe87-01f0-40bf-ae07-02e7c996098f"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ツ",
+        "options": ["タ", "チ", "ツ", "テ", "ト"],
+        "question": "tsu"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "ae361283-63c2-42fe-a3e0-1f3356694a30"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "テ",
+        "options": ["タ", "チ", "ツ", "テ", "ト"],
+        "question": "te"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "0ef86426-3088-40fd-9e16-e5f8b752dab7"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ト",
+        "options": ["タ", "チ", "ツ", "テ", "ト"],
+        "question": "to"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "ded35103-8bc9-45e3-82ce-02221641a289"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "タ",
+        "options": ["タ", "チ", "ツ", "テ", "ト"],
+        "question": "タ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "d9f7023a-4b39-4d92-a1c5-cc47d2f262eb"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "チ",
+        "options": ["タ", "チ", "ツ", "テ", "ト"],
+        "question": "チ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "1fadd2da-1069-4c52-8040-caa477bb9df0"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ツ",
+        "options": ["タ", "チ", "ツ", "テ", "ト"],
+        "question": "ツ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "8f0f85bd-9712-4280-9c0b-31b1b7db01dc"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "テ",
+        "options": ["タ", "チ", "ツ", "テ", "ト"],
+        "question": "テ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "10392907-1a51-4341-9798-419de76a17ee"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ト",
+        "options": ["タ", "チ", "ツ", "テ", "ト"],
+        "question": "ト"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "f091256e-4b0e-42ef-8a56-49c74fba8395"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "タ",
+            "rightSide": "ta"
+          },
+          {
+            "leftSide": "チ",
+            "rightSide": "chi"
+          },
+          {
+            "leftSide": "ツ",
+            "rightSide": "tsu"
+          },
+          {
+            "leftSide": "テ",
+            "rightSide": "te"
+          },
+          {
+            "leftSide": "ト",
+            "rightSide": "to"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "タ",
+            "rightSide": "ta"
+          },
+          {
+            "leftSide": "チ",
+            "rightSide": "chi"
+          },
+          {
+            "leftSide": "ツ",
+            "rightSide": "tsu"
+          },
+          {
+            "leftSide": "テ",
+            "rightSide": "te"
+          },
+          {
+            "leftSide": "ト",
+            "rightSide": "to"
+          }
+        ],
+        "isLeftSymbol": true
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "b732122d-a011-4813-bbbf-7c43cd85d2f8"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "ta",
+            "rightSide": "タ"
+          },
+          {
+            "leftSide": "chi",
+            "rightSide": "チ"
+          },
+          {
+            "leftSide": "tsu",
+            "rightSide": "ツ"
+          },
+          {
+            "leftSide": "te",
+            "rightSide": "テ"
+          },
+          {
+            "leftSide": "to",
+            "rightSide": "ト"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "ta",
+            "rightSide": "タ"
+          },
+          {
+            "leftSide": "chi",
+            "rightSide": "チ"
+          },
+          {
+            "leftSide": "tsu",
+            "rightSide": "ツ"
+          },
+          {
+            "leftSide": "te",
+            "rightSide": "テ"
+          },
+          {
+            "leftSide": "to",
+            "rightSide": "ト"
+          }
+        ],
+        "isLeftSymbol": false
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "4e252128-3395-49e7-9825-72c4404653ea"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "タコ",
+        "options": [
+          {
+            "value": "タ",
+            "number": 0
+          },
+          {
+            "value": "コ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "ed92c740-43c9-431f-a34a-473bcdadaeb8"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "チカ",
+        "options": [
+          {
+            "value": "チ",
+            "number": 0
+          },
+          {
+            "value": "カ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "4e517291-3401-4b04-b827-7beb2f79aff0"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ツキ",
+        "options": [
+          {
+            "value": "ツ",
+            "number": 0
+          },
+          {
+            "value": "キ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "e490b2dd-3fbc-4df0-8b22-aaf5408891fc"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "テキ",
+        "options": [
+          {
+            "value": "テ",
+            "number": 0
+          },
+          {
+            "value": "キ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "0237c742-21de-4ac9-b8d8-61943843ef98"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "トキ",
+        "options": [
+          {
+            "value": "ト",
+            "number": 0
+          },
+          {
+            "value": "キ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "fa57b846-fda5-4605-990b-c6a21ffca487"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "カタ",
+        "options": [
+          {
+            "value": "カ",
+            "number": 0
+          },
+          {
+            "value": "タ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "a0caeb40-8ac0-4d98-adba-5e140b52a57e"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "トコ",
+        "options": [
+          {
+            "value": "ト",
+            "number": 0
+          },
+          {
+            "value": "コ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "68703b57-7e2f-4d69-9255-3947d3386db9"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "チサ",
+        "options": [
+          {
+            "value": "チ",
+            "number": 0
+          },
+          {
+            "value": "サ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "c250a118-a3a8-4a8b-a5c3-649a1245bbde"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "アチ",
+        "options": [
+          {
+            "value": "ア",
+            "number": 0
+          },
+          {
+            "value": "チ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "dfcba2b5-ffaf-43eb-8571-472c4832090a"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "エツ",
+        "options": [
+          {
+            "value": "エ",
+            "number": 0
+          },
+          {
+            "value": "ツ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["タ", "チ", "ツ", "テ", "ト"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "4002d5e3-191e-4a71-97e2-609bd089dded"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "na",
+        "options": ["na", "ni", "nu", "ne", "no"],
+        "question": "ナ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "e0627ea6-a758-430c-ae6a-b35c0712a9f9"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ni",
+        "options": ["na", "ni", "nu", "ne", "no"],
+        "question": "ニ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "fedf9238-3e16-4d11-bb87-18669973ad1a"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "nu",
+        "options": ["na", "ni", "nu", "ne", "no"],
+        "question": "ヌ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "67a84ce3-9397-4838-b139-1251aff7a5bc"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ne",
+        "options": ["na", "ni", "nu", "ne", "no"],
+        "question": "ネ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "191c3603-a4b1-47cd-8f5e-cba69c9b0208"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "no",
+        "options": ["na", "ni", "nu", "ne", "no"],
+        "question": "ノ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "04ea2547-2019-40e0-8be4-172e600a7806"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ナ",
+        "options": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+        "question": "na"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "3ae289dc-08ca-49ba-9fca-82200ba3df7c"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ニ",
+        "options": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+        "question": "ni"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "6c5a7b3e-eead-4522-8241-aad5dfe4bfcd"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ヌ",
+        "options": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+        "question": "nu"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "a37551a5-77de-45be-94f6-02bb9398a149"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ネ",
+        "options": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+        "question": "ne"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "9597688e-d3cc-48ca-a192-3f7403885cb8"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ノ",
+        "options": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+        "question": "no"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "00fc9bf8-d722-4884-9ab4-5d9356dc1728"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ナ",
+        "options": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+        "question": "ナ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "e331c186-3b43-4333-9966-441d77a8c08a"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ニ",
+        "options": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+        "question": "ニ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "ad9e0b7e-12b6-4a95-b1dc-4dabf6241fe3"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ヌ",
+        "options": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+        "question": "ヌ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "03cf418d-4891-4924-bb47-fbcc0d1cea96"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ネ",
+        "options": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+        "question": "ネ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "b41581ba-736a-4e5f-b817-10c186b1b6bf"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ノ",
+        "options": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+        "question": "ノ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "c975af83-1784-403d-b9b6-a367591cec7f"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "ナ",
+            "rightSide": "na"
+          },
+          {
+            "leftSide": "ニ",
+            "rightSide": "ni"
+          },
+          {
+            "leftSide": "ヌ",
+            "rightSide": "nu"
+          },
+          {
+            "leftSide": "ネ",
+            "rightSide": "ne"
+          },
+          {
+            "leftSide": "ノ",
+            "rightSide": "no"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "ナ",
+            "rightSide": "na"
+          },
+          {
+            "leftSide": "ニ",
+            "rightSide": "ni"
+          },
+          {
+            "leftSide": "ヌ",
+            "rightSide": "nu"
+          },
+          {
+            "leftSide": "ネ",
+            "rightSide": "ne"
+          },
+          {
+            "leftSide": "ノ",
+            "rightSide": "no"
+          }
+        ],
+        "isLeftSymbol": true
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "d45cf3ee-eb02-48a6-a2f7-2787115b704d"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "na",
+            "rightSide": "ナ"
+          },
+          {
+            "leftSide": "ni",
+            "rightSide": "ニ"
+          },
+          {
+            "leftSide": "nu",
+            "rightSide": "ヌ"
+          },
+          {
+            "leftSide": "ne",
+            "rightSide": "ネ"
+          },
+          {
+            "leftSide": "no",
+            "rightSide": "ノ"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "na",
+            "rightSide": "ナ"
+          },
+          {
+            "leftSide": "ni",
+            "rightSide": "ニ"
+          },
+          {
+            "leftSide": "nu",
+            "rightSide": "ヌ"
+          },
+          {
+            "leftSide": "ne",
+            "rightSide": "ネ"
+          },
+          {
+            "leftSide": "no",
+            "rightSide": "ノ"
+          }
+        ],
+        "isLeftSymbol": false
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "accb8537-3e0c-478f-8354-bc289ce59f41"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ナイ",
+        "options": [
+          {
+            "value": "ナ",
+            "number": 0
+          },
+          {
+            "value": "イ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "fb4b32e2-96ad-4bb5-b609-d896357c6c5f"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ニコ",
+        "options": [
+          {
+            "value": "ニ",
+            "number": 0
+          },
+          {
+            "value": "コ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "ab6c0a20-aae8-426c-872b-a0d00a61ffa8"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ノコ",
+        "options": [
+          {
+            "value": "ノ",
+            "number": 0
+          },
+          {
+            "value": "コ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "9f09550c-a3b8-4d8c-91fc-c4a2ba6e5ce0"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ネコ",
+        "options": [
+          {
+            "value": "ネ",
+            "number": 0
+          },
+          {
+            "value": "コ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "3d3d8ad7-6bf7-484e-8c05-477ccf81e00d"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ヌク",
+        "options": [
+          {
+            "value": "ヌ",
+            "number": 0
+          },
+          {
+            "value": "ク",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "6120d0cc-8c10-487a-b712-051319f0b84f"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "タニ",
+        "options": [
+          {
+            "value": "タ",
+            "number": 0
+          },
+          {
+            "value": "ニ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "62bf615e-4f18-4c4e-b4fb-b606243ae787"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "カネ",
+        "options": [
+          {
+            "value": "カ",
+            "number": 0
+          },
+          {
+            "value": "ネ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "646e2152-de20-4919-9781-b254d00cb79b"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ネタ",
+        "options": [
+          {
+            "value": "ネ",
+            "number": 0
+          },
+          {
+            "value": "タ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "a7401a58-ddb0-439c-bd0f-e19bd54a6f6e"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "コネ",
+        "options": [
+          {
+            "value": "コ",
+            "number": 0
+          },
+          {
+            "value": "ネ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "64a9c402-614b-4791-b39a-be7bdb2863c0"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "アニ",
+        "options": [
+          {
+            "value": "ア",
+            "number": 0
+          },
+          {
+            "value": "ニ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ナ", "ニ", "ヌ", "ネ", "ノ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "9b98f2a0-0c40-44f6-9783-c52823322a60"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ha",
+        "options": ["ha", "hi", "fu", "he", "ho"],
+        "question": "ハ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "371fbf63-924b-42cc-a5f2-864bb262edf3"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "hi",
+        "options": ["ha", "hi", "fu", "he", "ho"],
+        "question": "ヒ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "75aaa6a0-ccdb-49b9-901a-cc35da3f18b8"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "fu",
+        "options": ["ha", "hi", "fu", "he", "ho"],
+        "question": "フ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "db30f30b-4564-4739-9015-90f3edbb2b5f"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "he",
+        "options": ["ha", "hi", "fu", "he", "ho"],
+        "question": "ヘ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "74f32c9e-eee1-41f3-acf0-eb9bb7f2aefe"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ho",
+        "options": ["ha", "hi", "fu", "he", "ho"],
+        "question": "ホ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "a35621b1-4968-4786-b26e-28e0ebf0c239"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ハ",
+        "options": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+        "question": "ha"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "a04653eb-43c6-4b4b-9cf8-e3eedbdff390"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ヒ",
+        "options": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+        "question": "hi"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "78330e60-fb3c-4b22-99e2-4c611fcd7523"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "フ",
+        "options": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+        "question": "fu"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "2c62c845-b514-4c6a-8245-9e1a3810dfb2"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ヘ",
+        "options": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+        "question": "he"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "219a4529-74ae-437a-b931-1f762bc064b0"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ホ",
+        "options": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+        "question": "ho"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "21e69330-c971-412f-9f2a-b759c06fa908"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ハ",
+        "options": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+        "question": "ハ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "0d672636-3e71-4e38-a3e5-9e7feb9f7a42"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ヒ",
+        "options": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+        "question": "ヒ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "8230a9c6-a711-46e8-9247-d27e02cc4003"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "フ",
+        "options": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+        "question": "フ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "36499489-c14c-479c-8d20-18cf746fa322"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ヘ",
+        "options": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+        "question": "ヘ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "de38c9f3-21c7-4fd3-877d-da64f839cc71"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ホ",
+        "options": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+        "question": "ホ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "7d066d01-54d5-45a9-967c-96c3032e9da5"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "ハ",
+            "rightSide": "ha"
+          },
+          {
+            "leftSide": "ヒ",
+            "rightSide": "hi"
+          },
+          {
+            "leftSide": "フ",
+            "rightSide": "fu"
+          },
+          {
+            "leftSide": "ヘ",
+            "rightSide": "he"
+          },
+          {
+            "leftSide": "ホ",
+            "rightSide": "ho"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "ハ",
+            "rightSide": "ha"
+          },
+          {
+            "leftSide": "ヒ",
+            "rightSide": "hi"
+          },
+          {
+            "leftSide": "フ",
+            "rightSide": "fu"
+          },
+          {
+            "leftSide": "ヘ",
+            "rightSide": "he"
+          },
+          {
+            "leftSide": "ホ",
+            "rightSide": "ho"
+          }
+        ],
+        "isLeftSymbol": true
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "aed14e50-cf13-4bba-a294-f7e556e5931c"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "モ",
+        "options": ["マ", "ミ", "ム", "メ", "モ"],
+        "question": "モ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "c06e6d2b-4c7e-4328-91ef-86b34cb67e9d"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "ha",
+            "rightSide": "ハ"
+          },
+          {
+            "leftSide": "hi",
+            "rightSide": "ヒ"
+          },
+          {
+            "leftSide": "fu",
+            "rightSide": "フ"
+          },
+          {
+            "leftSide": "he",
+            "rightSide": "ヘ"
+          },
+          {
+            "leftSide": "ho",
+            "rightSide": "ホ"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "ha",
+            "rightSide": "ハ"
+          },
+          {
+            "leftSide": "hi",
+            "rightSide": "ヒ"
+          },
+          {
+            "leftSide": "fu",
+            "rightSide": "フ"
+          },
+          {
+            "leftSide": "he",
+            "rightSide": "ヘ"
+          },
+          {
+            "leftSide": "ho",
+            "rightSide": "ホ"
+          }
+        ],
+        "isLeftSymbol": false
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "0fc24234-0d85-419e-80b4-29f9c2fdafed"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ホシ",
+        "options": [
+          {
+            "value": "ホ",
+            "number": 0
+          },
+          {
+            "value": "シ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "194d61b2-e42e-46f0-ba1d-6f691ba5a473"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ハコ",
+        "options": [
+          {
+            "value": "ハ",
+            "number": 0
+          },
+          {
+            "value": "コ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "5361e701-169b-41da-aa98-b6bed44bc4c5"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "フネ",
+        "options": [
+          {
+            "value": "フ",
+            "number": 0
+          },
+          {
+            "value": "ネ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "5656a52b-591a-449f-9dcb-682513de1bc2"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ヒト",
+        "options": [
+          {
+            "value": "ヒ",
+            "number": 0
+          },
+          {
+            "value": "ト",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "ab58becc-6e38-4d4a-8d69-44ebc0636c83"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ヘタ",
+        "options": [
+          {
+            "value": "ヘ",
+            "number": 0
+          },
+          {
+            "value": "タ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "ec87d982-8ffd-473f-8ea3-26bb4cfc3ff3"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "カホ",
+        "options": [
+          {
+            "value": "カ",
+            "number": 0
+          },
+          {
+            "value": "ホ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "0f925ad9-84ad-4a89-93d6-7164796e2a30"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ホネ",
+        "options": [
+          {
+            "value": "ホ",
+            "number": 0
+          },
+          {
+            "value": "ネ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "244cb7f7-0d4c-4965-8c7b-74530be2773c"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "アフ",
+        "options": [
+          {
+            "value": "ア",
+            "number": 0
+          },
+          {
+            "value": "フ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "0d24f2bf-aa58-4fb7-980a-0fc96327d5f8"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ハナ",
+        "options": [
+          {
+            "value": "ハ",
+            "number": 0
+          },
+          {
+            "value": "ナ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "00ce2b42-292d-4fe7-b748-c6629b2400e0"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ネフ",
+        "options": [
+          {
+            "value": "ネ",
+            "number": 0
+          },
+          {
+            "value": "フ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ハ", "ヒ", "フ", "ヘ", "ホ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "ad5c95b7-fb0b-4229-9696-860fd956cfb6"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ma",
+        "options": ["ma", "mi", "mu", "me", "mo"],
+        "question": "マ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "861880cf-8484-421c-a96c-0dda17906bf5"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "mi",
+        "options": ["ma", "mi", "mu", "me", "mo"],
+        "question": "ミ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "68e3ca63-5240-406f-b9b5-edb29f1bf83d"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "mu",
+        "options": ["ma", "mi", "mu", "me", "mo"],
+        "question": "ム"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "5fa3262f-da7a-4c47-8012-24bc9eace2ec"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "me",
+        "options": ["ma", "mi", "mu", "me", "mo"],
+        "question": "メ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "533370fd-8e66-4e4f-83fb-c99fc4ad0f98"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "mo",
+        "options": ["ma", "mi", "mu", "me", "mo"],
+        "question": "モ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "4b87e9eb-3918-4d75-aaad-d28c6663b818"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "マ",
+        "options": ["マ", "ミ", "ム", "メ", "モ"],
+        "question": "ma"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "b5ff9b53-9ffe-40eb-9855-37cba2033225"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ミ",
+        "options": ["マ", "ミ", "ム", "メ", "モ"],
+        "question": "mi"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "00f879ba-990d-44ee-937c-cc96de8e5df8"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ム",
+        "options": ["マ", "ミ", "ム", "メ", "モ"],
+        "question": "mu"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "30490242-3176-43b4-ba42-749ff24bf4b5"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "メ",
+        "options": ["マ", "ミ", "ム", "メ", "モ"],
+        "question": "me"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "a95a8784-e2cf-4d48-a5df-6c5d8e2c5c8d"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "モ",
+        "options": ["マ", "ミ", "ム", "メ", "モ"],
+        "question": "mo"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "3791b60c-15b4-4117-a14e-71dca6dad756"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "マ",
+        "options": ["マ", "ミ", "ム", "メ", "モ"],
+        "question": "マ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "4928c7f3-e406-465f-a744-6500419a150a"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ミ",
+        "options": ["マ", "ミ", "ム", "メ", "モ"],
+        "question": "ミ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "45e52de7-fbab-46d6-bbc3-c0cc776c457e"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ム",
+        "options": ["マ", "ミ", "ム", "メ", "モ"],
+        "question": "ム"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "56096457-b2d8-482c-bde1-3eaf7c60bd65"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "メ",
+        "options": ["マ", "ミ", "ム", "メ", "モ"],
+        "question": "メ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "e95faed8-9107-451c-9112-b6891cbe503f"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "マ",
+            "rightSide": "ma"
+          },
+          {
+            "leftSide": "ミ",
+            "rightSide": "mi"
+          },
+          {
+            "leftSide": "ム",
+            "rightSide": "mu"
+          },
+          {
+            "leftSide": "メ",
+            "rightSide": "me"
+          },
+          {
+            "leftSide": "モ",
+            "rightSide": "mo"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "マ",
+            "rightSide": "ma"
+          },
+          {
+            "leftSide": "ミ",
+            "rightSide": "mi"
+          },
+          {
+            "leftSide": "ム",
+            "rightSide": "mu"
+          },
+          {
+            "leftSide": "メ",
+            "rightSide": "me"
+          },
+          {
+            "leftSide": "モ",
+            "rightSide": "mo"
+          }
+        ],
+        "isLeftSymbol": true
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "a96c1ce7-b5bc-4988-85f2-db4616fad963"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "ma",
+            "rightSide": "マ"
+          },
+          {
+            "leftSide": "mi",
+            "rightSide": "ミ"
+          },
+          {
+            "leftSide": "mu",
+            "rightSide": "ム"
+          },
+          {
+            "leftSide": "me",
+            "rightSide": "メ"
+          },
+          {
+            "leftSide": "mo",
+            "rightSide": "モ"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "ma",
+            "rightSide": "マ"
+          },
+          {
+            "leftSide": "mi",
+            "rightSide": "ミ"
+          },
+          {
+            "leftSide": "mu",
+            "rightSide": "ム"
+          },
+          {
+            "leftSide": "me",
+            "rightSide": "メ"
+          },
+          {
+            "leftSide": "mo",
+            "rightSide": "モ"
+          }
+        ],
+        "isLeftSymbol": false
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "5847f665-cab0-4de4-b28b-7669d5b047db"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "マチ",
+        "options": [
+          {
+            "value": "マ",
+            "number": 0
+          },
+          {
+            "value": "チ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "523aa246-52e1-48c9-b0a3-c9cd5ed0d25a"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "モノ",
+        "options": [
+          {
+            "value": "モ",
+            "number": 0
+          },
+          {
+            "value": "ノ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "f9b9d719-3dc6-4889-b13c-8d446979f3e9"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ミカ",
+        "options": [
+          {
+            "value": "ミ",
+            "number": 0
+          },
+          {
+            "value": "カ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "7fb49792-5db1-4854-8fd8-6f5309480aae"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "メモ",
+        "options": [
+          {
+            "value": "メ",
+            "number": 0
+          },
+          {
+            "value": "モ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "2828a211-0d9a-4b28-afd3-9dbc0b576066"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ムネ",
+        "options": [
+          {
+            "value": "ム",
+            "number": 0
+          },
+          {
+            "value": "ネ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "5864abfc-4ace-43c0-ab40-0e7adec8439b"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "カモ",
+        "options": [
+          {
+            "value": "カ",
+            "number": 0
+          },
+          {
+            "value": "モ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "27966957-594d-414e-ba87-589a435ce9ff"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "サム",
+        "options": [
+          {
+            "value": "サ",
+            "number": 0
+          },
+          {
+            "value": "ム",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "eeb1fd3c-8770-4328-b60e-826155008c38"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "トモ",
+        "options": [
+          {
+            "value": "ト",
+            "number": 0
+          },
+          {
+            "value": "モ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "f645f4f1-4642-4040-99b1-bd8aaca27839"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "アミ",
+        "options": [
+          {
+            "value": "ア",
+            "number": 0
+          },
+          {
+            "value": "ミ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "faacf09b-4322-4849-a47a-f89f701b6180"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ナマ",
+        "options": [
+          {
+            "value": "ナ",
+            "number": 0
+          },
+          {
+            "value": "マ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["マ", "ミ", "ム", "メ", "モ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "4b90fda0-75f5-4f35-93ec-91e17b5e0f7f"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ya",
+        "options": ["ya", "yu", "yo"],
+        "question": "ヤ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "363bbce7-9f54-43a2-97b0-20a870d5c953"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "yu",
+        "options": ["ya", "yu", "yo"],
+        "question": "ユ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "77921248-2e7c-4591-b010-8c1a335e2d14"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "yo",
+        "options": ["ya", "yu", "yo"],
+        "question": "ヨ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "a5493c2c-dabc-4782-8691-b899f7075708"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ヤ",
+        "options": ["ヤ", "ユ", "ヨ"],
+        "question": "ya"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "4e6e99b8-2f81-4680-942d-46ef8d51948f"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ユ",
+        "options": ["ヤ", "ユ", "ヨ"],
+        "question": "yu"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "09b0ca33-aedd-4a4b-8c63-5682ee408fe2"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ヨ",
+        "options": ["ヤ", "ユ", "ヨ"],
+        "question": "yo"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "40086cdd-ba3b-4df6-9ebd-2488082a9422"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ヤ",
+        "options": ["ヤ", "ユ", "ヨ"],
+        "question": "ヤ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "f1d9c366-66bc-4561-be79-39cc431b457c"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ユ",
+        "options": ["ヤ", "ユ", "ヨ"],
+        "question": "ユ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "c5acb642-7610-4db7-998a-a0526e66b042"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ヨ",
+        "options": ["ヤ", "ユ", "ヨ"],
+        "question": "ヨ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "0d3cd9b6-0e28-4b12-8448-a05eab3271bf"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "ヤ",
+            "rightSide": "ya"
+          },
+          {
+            "leftSide": "ユ",
+            "rightSide": "yu"
+          },
+          {
+            "leftSide": "ヨ",
+            "rightSide": "yo"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "ヤ",
+            "rightSide": "ya"
+          },
+          {
+            "leftSide": "ユ",
+            "rightSide": "yu"
+          },
+          {
+            "leftSide": "ヨ",
+            "rightSide": "yo"
+          }
+        ],
+        "isLeftSymbol": true
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "aaf76ce5-de4f-46a1-aeaf-5b11a6b0b85d"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ロ",
+        "options": ["ラ", "リ", "ル", "レ", "ロ"],
+        "question": "ロ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "1a4c8118-6ce0-4a22-82f5-dba1595f703c"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "ya",
+            "rightSide": "ヤ"
+          },
+          {
+            "leftSide": "yu",
+            "rightSide": "ユ"
+          },
+          {
+            "leftSide": "yo",
+            "rightSide": "ヨ"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "ya",
+            "rightSide": "ヤ"
+          },
+          {
+            "leftSide": "yu",
+            "rightSide": "ユ"
+          },
+          {
+            "leftSide": "yo",
+            "rightSide": "ヨ"
+          }
+        ],
+        "isLeftSymbol": false
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "8b457b88-9b51-435c-aeb5-1118b5f8aa3d"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ヤミ",
+        "options": [
+          {
+            "value": "ヤ",
+            "number": 0
+          },
+          {
+            "value": "ミ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "b8c91e3f-997d-40e6-bd6a-182c4fce3937"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ユメ",
+        "options": [
+          {
+            "value": "ユ",
+            "number": 0
+          },
+          {
+            "value": "メ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "88d05b2f-7bf2-41a9-873e-bb63dc5788eb"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ヨコ",
+        "options": [
+          {
+            "value": "ヨ",
+            "number": 0
+          },
+          {
+            "value": "コ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "b0351fce-df2b-4321-87c0-cf97e4d39cde"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "カユイ",
+        "options": [
+          {
+            "value": "カ",
+            "number": 0
+          },
+          {
+            "value": "ユ",
+            "number": 1
+          },
+          {
+            "value": "イ",
+            "number": 2
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "b06ce676-0f89-41dc-a7f9-f2b9558cc286"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ヤマ",
+        "options": [
+          {
+            "value": "ヤ",
+            "number": 0
+          },
+          {
+            "value": "マ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "5588cd91-56eb-43f7-b6c3-986e6ce19ef6"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ユウ",
+        "options": [
+          {
+            "value": "ユ",
+            "number": 0
+          },
+          {
+            "value": "ウ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "de7574e0-ada2-47bd-b984-293b8aec32aa"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ヨミ",
+        "options": [
+          {
+            "value": "ヨ",
+            "number": 0
+          },
+          {
+            "value": "ミ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "3493bc40-c9a6-4ee5-b8f8-1ef06947e31f"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "タユミ",
+        "options": [
+          {
+            "value": "タ",
+            "number": 0
+          },
+          {
+            "value": "ユ",
+            "number": 1
+          },
+          {
+            "value": "ミ",
+            "number": 2
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "26944d63-2bdc-4c78-9867-cac1e1ed5f85"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ユナ",
+        "options": [
+          {
+            "value": "ユ",
+            "number": 0
+          },
+          {
+            "value": "ナ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "3db47dce-f369-45a9-8901-544799f197fe"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "モユル",
+        "options": [
+          {
+            "value": "モ",
+            "number": 0
+          },
+          {
+            "value": "ユ",
+            "number": 1
+          },
+          {
+            "value": "ル",
+            "number": 2
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ヤ", "ユ", "ヨ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "d6073b96-3bc9-4766-91c0-0ace5701c970"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ra",
+        "options": ["ra", "ri", "ru", "re", "ro"],
+        "question": "ラ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "f37be391-e402-4019-9c7b-d839d71bd037"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ri",
+        "options": ["ra", "ri", "ru", "re", "ro"],
+        "question": "リ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "24fa9cb3-6acb-499f-806b-79996cf22011"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ru",
+        "options": ["ra", "ri", "ru", "re", "ro"],
+        "question": "ル"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "9129c137-ae9c-47ad-9e42-259f91105303"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "re",
+        "options": ["ra", "ri", "ru", "re", "ro"],
+        "question": "レ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "8ed4fcf3-1b83-40b2-80dd-3eaffdcfe3ad"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ro",
+        "options": ["ra", "ri", "ru", "re", "ro"],
+        "question": "ロ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "56a518a1-259c-42c2-bf1f-3972514137dc"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ラ",
+        "options": ["ラ", "リ", "ル", "レ", "ロ"],
+        "question": "ra"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "78b45ed2-b9c0-48d4-9de8-2fc0be1e8589"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "リ",
+        "options": ["ラ", "リ", "ル", "レ", "ロ"],
+        "question": "ri"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "91bc4e9f-3d91-4834-bd68-064ac5bc1493"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ル",
+        "options": ["ラ", "リ", "ル", "レ", "ロ"],
+        "question": "ru"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "5462b55f-c37b-4386-b518-ea5c48388c82"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "レ",
+        "options": ["ラ", "リ", "ル", "レ", "ロ"],
+        "question": "re"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "03a09286-c6bb-4a0a-ae0a-89181c5b1278"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ロ",
+        "options": ["ラ", "リ", "ル", "レ", "ロ"],
+        "question": "ro"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "8156b829-4807-4e18-be8a-830abc659e19"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ラ",
+        "options": ["ラ", "リ", "ル", "レ", "ロ"],
+        "question": "ラ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "3f5a9c3a-8a9c-45f7-96a0-4aff0fdc6492"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "リ",
+        "options": ["ラ", "リ", "ル", "レ", "ロ"],
+        "question": "リ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "d38955e3-2835-457a-bfb3-a4b5f0a377ba"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ル",
+        "options": ["ラ", "リ", "ル", "レ", "ロ"],
+        "question": "ル"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "81a7d998-2909-454c-b1e5-0e5ecd522f8c"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "レ",
+        "options": ["ラ", "リ", "ル", "レ", "ロ"],
+        "question": "レ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "2374272e-2508-4369-93a4-284011f45f17"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "ラ",
+            "rightSide": "ra"
+          },
+          {
+            "leftSide": "リ",
+            "rightSide": "ri"
+          },
+          {
+            "leftSide": "ル",
+            "rightSide": "ru"
+          },
+          {
+            "leftSide": "レ",
+            "rightSide": "re"
+          },
+          {
+            "leftSide": "ロ",
+            "rightSide": "ro"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "ラ",
+            "rightSide": "ra"
+          },
+          {
+            "leftSide": "リ",
+            "rightSide": "ri"
+          },
+          {
+            "leftSide": "ル",
+            "rightSide": "ru"
+          },
+          {
+            "leftSide": "レ",
+            "rightSide": "re"
+          },
+          {
+            "leftSide": "ロ",
+            "rightSide": "ro"
+          }
+        ],
+        "isLeftSymbol": true
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "728563b5-e2a3-4eaa-a449-5784ea0fb3e6"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "ra",
+            "rightSide": "ラ"
+          },
+          {
+            "leftSide": "ri",
+            "rightSide": "リ"
+          },
+          {
+            "leftSide": "ru",
+            "rightSide": "ル"
+          },
+          {
+            "leftSide": "re",
+            "rightSide": "レ"
+          },
+          {
+            "leftSide": "ro",
+            "rightSide": "ロ"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "ra",
+            "rightSide": "ラ"
+          },
+          {
+            "leftSide": "ri",
+            "rightSide": "リ"
+          },
+          {
+            "leftSide": "ru",
+            "rightSide": "ル"
+          },
+          {
+            "leftSide": "re",
+            "rightSide": "レ"
+          },
+          {
+            "leftSide": "ro",
+            "rightSide": "ロ"
+          }
+        ],
+        "isLeftSymbol": false
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "df46fba3-9350-43a2-9b75-97360dc79ea4"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ラメ",
+        "options": [
+          {
+            "value": "ラ",
+            "number": 0
+          },
+          {
+            "value": "メ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "ec8d6fcc-feab-47ab-b3a3-fc80bc6b01c4"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "リボン",
+        "options": [
+          {
+            "value": "リ",
+            "number": 0
+          },
+          {
+            "value": "ボ",
+            "number": 1
+          },
+          {
+            "value": "ン",
+            "number": 2
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "5db03b2a-005d-4222-a83c-86eca7061623"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ルミ",
+        "options": [
+          {
+            "value": "ル",
+            "number": 0
+          },
+          {
+            "value": "ミ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "9f33b5e5-4688-400f-b812-7ec7e6d9bd83"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "レモン",
+        "options": [
+          {
+            "value": "レ",
+            "number": 0
+          },
+          {
+            "value": "モ",
+            "number": 1
+          },
+          {
+            "value": "ン",
+            "number": 2
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "c79f7bfd-70cd-458e-a43b-1c5e6fb9451f"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ロク",
+        "options": [
+          {
+            "value": "ロ",
+            "number": 0
+          },
+          {
+            "value": "ク",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "f7abe0d3-83fc-46c7-b953-c5de7e05f8b0"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "カリ",
+        "options": [
+          {
+            "value": "カ",
+            "number": 0
+          },
+          {
+            "value": "リ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "3b2e1054-0e46-43f2-be80-7f39a61b5a98"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ソラ",
+        "options": [
+          {
+            "value": "ソ",
+            "number": 0
+          },
+          {
+            "value": "ラ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "1d66bd0e-4d2f-415c-915d-8333d10739f2"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "トラ",
+        "options": [
+          {
+            "value": "ト",
+            "number": 0
+          },
+          {
+            "value": "ラ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "7cdbab8e-a7d9-4fdc-9b8a-92b16a08b670"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "リク",
+        "options": [
+          {
+            "value": "リ",
+            "number": 0
+          },
+          {
+            "value": "ク",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "68e6f65c-cdbd-4c52-96a9-c22a70582ab1"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "メロ",
+        "options": [
+          {
+            "value": "メ",
+            "number": 0
+          },
+          {
+            "value": "ロ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ラ", "リ", "ル", "レ", "ロ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "bc1d8eb1-449f-4891-a980-061d04ebfb89"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "wa",
+        "options": ["wa", "wo"],
+        "question": "ワ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ワ", "ヲ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "e3acf4be-fefa-4ccb-8e7b-bff0432e7323"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "wo",
+        "options": ["wa", "wo"],
+        "question": "ヲ"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ワ", "ヲ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "abd75060-9e3d-4c10-b185-c7a241f8bea6"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ワ",
+        "options": ["ワ", "ヲ"],
+        "question": "wa"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ワ", "ヲ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "a393a72d-54bf-4d10-86da-6b6a1e6c0b41"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ヲ",
+        "options": ["ワ", "ヲ"],
+        "question": "wo"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ワ", "ヲ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "bc4800b6-250c-45a8-bcfc-054a8e6d4f1c"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ワ",
+        "options": ["ワ", "ヲ"],
+        "question": "ワ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ワ", "ヲ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "63c459f0-1d8d-4b1e-85fa-85fd6df71b4d"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ヲ",
+        "options": ["ワ", "ヲ"],
+        "question": "ヲ"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ワ", "ヲ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "81f25cbe-86d6-425c-b0ea-9f3e09b2fb79"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "ワ",
+            "rightSide": "wa"
+          },
+          {
+            "leftSide": "ヲ",
+            "rightSide": "wo"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "ワ",
+            "rightSide": "wa"
+          },
+          {
+            "leftSide": "ヲ",
+            "rightSide": "wo"
+          }
+        ],
+        "isLeftSymbol": true
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["ワ", "ヲ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "9d0304d1-a0ea-48a8-831f-8079b35ea6fb"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "wa",
+            "rightSide": "ワ"
+          },
+          {
+            "leftSide": "wo",
+            "rightSide": "ヲ"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "wa",
+            "rightSide": "ワ"
+          },
+          {
+            "leftSide": "wo",
+            "rightSide": "ヲ"
+          }
+        ],
+        "isLeftSymbol": false
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["ワ", "ヲ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "e59973d5-1fae-4ae4-bc99-b60431518e1c"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ワカメ",
+        "options": [
+          {
+            "value": "ワ",
+            "number": 0
+          },
+          {
+            "value": "カ",
+            "number": 1
+          },
+          {
+            "value": "メ",
+            "number": 2
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ワ", "ヲ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "01d568a2-d7e1-4270-acd0-b9645bb4ca16"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ワサビ",
+        "options": [
+          {
+            "value": "ワ",
+            "number": 0
+          },
+          {
+            "value": "サ",
+            "number": 1
+          },
+          {
+            "value": "ビ",
+            "number": 2
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ワ", "ヲ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "81e09a0f-f592-4216-b2e4-0cc8a82bcb61"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ワラ",
+        "options": [
+          {
+            "value": "ワ",
+            "number": 0
+          },
+          {
+            "value": "ラ",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ワ", "ヲ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "292e8539-f4cc-4bd1-8c6c-915cc110080a"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ワン",
+        "options": [
+          {
+            "value": "ワ",
+            "number": 0
+          },
+          {
+            "value": "ン",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ワ", "ヲ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "36aea90a-998e-41fa-8756-dfc4e2b0d1c1"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ワカイ",
+        "options": [
+          {
+            "value": "ワ",
+            "number": 0
+          },
+          {
+            "value": "カ",
+            "number": 1
+          },
+          {
+            "value": "イ",
+            "number": 2
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ワ", "ヲ"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "db15f9c2-53d2-4cbe-9d7c-f59651fa9514"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "n",
+        "options": ["n"],
+        "question": "ン"
+      },
+      "type": "GUESS_THE_LETTER",
+      "scoope": ["ン"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "b273d554-7b89-48d9-965e-716a156fa21e"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ン",
+        "options": ["ン"],
+        "question": "n"
+      },
+      "type": "GUESS_THE_SYMBOL",
+      "scoope": ["ン"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "0107a49b-856d-416b-8ff0-7b01e5a94b33"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "ン",
+        "options": ["ン"],
+        "question": "ン"
+      },
+      "type": "GUESS_THE_LETTER_SOUND",
+      "scoope": ["ン"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "afea7f7c-b4e4-4c35-8526-e47d24507ead"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "ン",
+            "rightSide": "n"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "ン",
+            "rightSide": "n"
+          }
+        ],
+        "isLeftSymbol": true
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["ン"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "dbeea1a9-e65d-4473-9e97-0b3dae6316f0"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": [
+          {
+            "leftSide": "n",
+            "rightSide": "ン"
+          }
+        ],
+        "options": [
+          {
+            "leftSide": "n",
+            "rightSide": "ン"
+          }
+        ],
+        "isLeftSymbol": false
+      },
+      "type": "MATCHING_TEXT_BY_TEXT",
+      "scoope": ["ン"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "b4371525-be2c-4307-889b-3a9b4abddeda"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "カン",
+        "options": [
+          {
+            "value": "カ",
+            "number": 0
+          },
+          {
+            "value": "ン",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ン"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "8399796a-565f-4e4b-8066-4b0423afb2e8"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "コン",
+        "options": [
+          {
+            "value": "コ",
+            "number": 0
+          },
+          {
+            "value": "ン",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ン"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "25fbc6ad-2e21-40bd-8871-a25a83c9279a"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "テン",
+        "options": [
+          {
+            "value": "テ",
+            "number": 0
+          },
+          {
+            "value": "ン",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ン"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "ce608089-3e9c-4054-8050-64cbe04ed061"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "サン",
+        "options": [
+          {
+            "value": "サ",
+            "number": 0
+          },
+          {
+            "value": "ン",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ン"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "e3c90b2b-406a-4074-bec1-d053b366d06a"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "オン",
+        "options": [
+          {
+            "value": "オ",
+            "number": 0
+          },
+          {
+            "value": "ン",
+            "number": 1
+          }
+        ]
+      },
+      "type": "SORT_THE_ITEMS_BY_SOUND",
+      "scoope": ["ン"],
+      "letterType": "katakana"
+    },
+    "deleted": false,
+    "id": "3ebdbea0-fe4c-41b9-9284-db754feb6964"
   }
 ]

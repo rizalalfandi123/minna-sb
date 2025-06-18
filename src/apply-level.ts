@@ -292,7 +292,7 @@ applyLevelApp.post("/apply-block-question", async (c) => {
       let levelData = await prisma.letter_levels.findFirst({
         where: {
           number: levelStart + i,
-          letter_type_id: "36c41b53-53f8-47f9-a159-934b2121e01b",
+          letter_type_id: "1e7f5733-b89c-43f4-b46d-26d215975599",
         },
       });
 
@@ -300,7 +300,7 @@ applyLevelApp.post("/apply-block-question", async (c) => {
         levelData = await prisma.letter_levels.create({
           data: {
             number: levelStart + i,
-            letter_type_id: "36c41b53-53f8-47f9-a159-934b2121e01b",
+            letter_type_id: "1e7f5733-b89c-43f4-b46d-26d215975599",
           },
         });
       }
