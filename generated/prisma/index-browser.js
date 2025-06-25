@@ -152,7 +152,6 @@ exports.Prisma.Letter_progressScalarFieldEnum = {
   created_at: 'created_at',
   updated_at: 'updated_at',
   deleted: 'deleted',
-  is_completed: 'is_completed',
   letter_level_id: 'letter_level_id'
 };
 
@@ -200,14 +199,32 @@ exports.Prisma.Unit_questionsScalarFieldEnum = {
   updated_at: 'updated_at',
   question: 'question',
   deleted: 'deleted',
-  id: 'id'
+  id: 'id',
+  key: 'key'
 };
 
 exports.Prisma.UnitsScalarFieldEnum = {
   id: 'id',
   created_at: 'created_at',
   updated_at: 'updated_at',
-  deleted: 'deleted'
+  deleted: 'deleted',
+  number: 'number'
+};
+
+exports.Prisma.Unit_levelsScalarFieldEnum = {
+  created_at: 'created_at',
+  updated_at: 'updated_at',
+  deleted: 'deleted',
+  number: 'number',
+  unit_id: 'unit_id',
+  id: 'id'
+};
+
+exports.Prisma.Unit_questions_to_unit_levelsScalarFieldEnum = {
+  unit_level_id: 'unit_level_id',
+  unit_question_id: 'unit_question_id',
+  number: 'number',
+  with_hint: 'with_hint'
 };
 
 exports.Prisma.SortOrder = {
@@ -230,6 +247,11 @@ exports.Prisma.JsonNullValueFilter = {
   AnyNull: Prisma.AnyNull
 };
 
+exports.Prisma.NullsOrder = {
+  first: 'first',
+  last: 'last'
+};
+
 
 exports.Prisma.ModelName = {
   letter_blocks: 'letter_blocks',
@@ -242,7 +264,9 @@ exports.Prisma.ModelName = {
   letters: 'letters',
   letters_to_letter_levels: 'letters_to_letter_levels',
   unit_questions: 'unit_questions',
-  units: 'units'
+  units: 'units',
+  unit_levels: 'unit_levels',
+  unit_questions_to_unit_levels: 'unit_questions_to_unit_levels'
 };
 
 /**

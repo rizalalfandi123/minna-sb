@@ -18,6 +18,7 @@ import {
 import { z } from "zod";
 import hiraganaBlock from "./hiragana-block";
 import applyLevelApp from "./apply-level";
+import units from "./units";
 
 const app = new Hono();
 
@@ -359,6 +360,8 @@ app.post("/create-block-question", async (c) => {
 });
 
 app.route("/block", applyLevelApp);
+
+app.route("/units", units);
 
 export default {
   port: 3001,

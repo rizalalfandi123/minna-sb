@@ -1,0 +1,147 @@
+Saya akan membuat quiz/game untuk belajar japanaese vocabulary
+ada 7 jenis pertanyaan untuk di jawab
+
+1. GUESS_THE_SENTENCE_MEAN
+akan disediakan text dalam bahasa jepang, kemudian user harus memilih jawaban yang benar dari pilihan yang tersedia
+jawaban yang benar adalah arti dari suara tersebut
+
+data:
+{
+    category: "GRAMMAR",
+    data: {
+        type: "GUESS_THE_SENTENCE_MEAN",
+        data: {
+            answer: {
+            en: "I",
+            id: "Saya",
+            },
+            options: [
+            {
+                en: "I",
+                id: "Saya",
+            },
+            {
+                en: "You",
+                id: "Kamu",
+            },
+            {
+                en: "They",
+                id: "Mereka",
+            },
+            // ... more options here
+            ],
+            question: [
+            {
+                value: "わたし",
+                mean: {
+                en: "I",
+                id: "Saya",
+                },
+                // alternative in optional
+                alternative: {
+                romaji: "watashi",
+                hiragana: "わたし",
+                // katakana: string;
+                // kanji: string;
+                // romaji: string;
+                },
+            },
+            ],
+        },
+    },
+}
+
+
+2. GUESS_THE_SOUND_MEAN
+akan disediakan suara data bahasa jepang, kemudian user harus memilih jawaban yang benar dari pilihan yang tersedia
+jawaban yang benar adalah arti dari suara tersebut
+{
+    category: "GRAMMAR",
+    data: {
+    type: "GUESS_THE_SOUND_MEAN",
+    data: {
+        answer: {
+        en: "I",
+        id: "Saya",
+        },
+        options: [
+        {
+            en: "I",
+            id: "Saya",
+        },
+        //...more options here
+        ],
+        question: "わたし",
+    },
+    }
+}
+
+3. SORT_THE_MEAN
+sama seperti GUESS_THE_SENTENCE_MEAN namum mempunyai interaksi berbeda
+
+4. GUESS_THE_SYMBOL_FROM_MEAN
+akan disediakan sebuah kata, kemudian user harus menebak kata tersebut dalam bahasa jepang
+
+{
+      category: "GRAMMAR",
+      data: {
+        type: "GUESS_THE_SYMBOL_FROM_MEAN",
+        data: {
+          answer: "わたし",
+          options: ["わたし". ...more option here],
+          question: [
+            {
+              value: "わたし",
+              mean: {
+                en: "I",
+                id: "Saya",
+              },
+              alternative: {
+                romaji: "watashi",
+
+              },
+            },
+          ],
+        },
+      },
+    }
+
+5. SORT_THE_SYMBOLS_FROM_MEAN
+sama seperti GUESS_THE_SYMBOL_FROM_MEAN namum mempunyai interaksi berbeda
+
+6.WRITE_THE_SYMBOL_FROM_SOUND
+akan disediakan suara dalam bahasa jepang, kemudian user harus menuliskanya di input yang tersedia
+{
+      category: "GRAMMAR",
+      data: {
+        type: "WRITE_THE_SYMBOL_FROM_SOUND",
+        data: {
+          answer: "わたし",
+          question: "わたし",
+        },
+      },
+    }
+
+7.WRITE_THE_SYMBOL_FROM_MEAN
+akan disediakan sebuah katam kemudain user harus menuliskanya dalam bahasa jepang
+{
+      category: "GRAMMAR",
+      data: {
+        type: "WRITE_THE_SYMBOL_FROM_MEAN",
+        data: {
+          answer: "わたし",
+          question: [
+            {
+              value: "わたし",
+              mean: {
+                en: "I",
+                id: "Saya",
+              },
+              alternative: {
+                romaji: "watashi",
+              },
+            },
+          ],
+        },
+      },
+    }

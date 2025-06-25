@@ -50,7 +50,6 @@ model letter_progress {
   created_at      DateTime      @default(now()) @db.Timestamptz(6)
   updated_at      DateTime      @default(now()) @db.Timestamptz(6)
   deleted         Boolean       @default(false)
-  is_completed    Boolean
   letter_level_id String        @default(dbgenerated("gen_random_uuid()")) @db.Uuid
   letter_levels   letter_levels @relation(fields: [letter_level_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
 }
@@ -116,17 +115,45 @@ model letters_to_letter_levels {
 
 /// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
 model unit_questions {
-  created_at DateTime @default(now()) @db.Timestamptz(6)
-  updated_at DateTime @default(now()) @db.Timestamptz(6)
-  question   Json
-  deleted    Boolean  @default(false)
-  id         String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  created_at                    DateTime                        @default(now()) @db.Timestamptz(6)
+  updated_at                    DateTime                        @default(now()) @db.Timestamptz(6)
+  question                      Json
+  deleted                       Boolean                         @default(false)
+  id                            String                          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  key                           String?
+  unit_questions_to_unit_levels unit_questions_to_unit_levels[]
 }
 
 /// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
 model units {
-  id         String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  created_at DateTime @default(now()) @db.Timestamptz(6)
-  updated_at DateTime @db.Timestamptz(6)
-  deleted    Boolean  @default(false)
+  id          String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  created_at  DateTime      @default(now()) @db.Timestamptz(6)
+  updated_at  DateTime      @default(now()) @db.Timestamptz(6)
+  deleted     Boolean       @default(false)
+  number      Int
+  unit_levels unit_levels[]
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model unit_levels {
+  created_at                    DateTime                        @default(now()) @db.Timestamptz(6)
+  updated_at                    DateTime                        @default(now()) @db.Timestamptz(6)
+  deleted                       Boolean                         @default(false)
+  number                        Int
+  unit_id                       String                          @db.Uuid
+  id                            String                          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  units                         units                           @relation(fields: [unit_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  unit_questions_to_unit_levels unit_questions_to_unit_levels[]
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model unit_questions_to_unit_levels {
+  unit_level_id    String         @db.Uuid
+  unit_question_id String         @db.Uuid
+  number           Int
+  with_hint        Boolean        @default(true)
+  unit_levels      unit_levels    @relation(fields: [unit_level_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  unit_questions   unit_questions @relation(fields: [unit_question_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@id([unit_level_id, unit_question_id, with_hint])
 }
