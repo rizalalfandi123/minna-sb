@@ -227,6 +227,14 @@ exports.Prisma.Unit_questions_to_unit_levelsScalarFieldEnum = {
   with_hint: 'with_hint'
 };
 
+exports.Prisma.Unit_progressScalarFieldEnum = {
+  id: 'id',
+  created_at: 'created_at',
+  updated_at: 'updated_at',
+  deleted: 'deleted',
+  unit_level_id: 'unit_level_id'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -266,7 +274,8 @@ exports.Prisma.ModelName = {
   unit_questions: 'unit_questions',
   units: 'units',
   unit_levels: 'unit_levels',
-  unit_questions_to_unit_levels: 'unit_questions_to_unit_levels'
+  unit_questions_to_unit_levels: 'unit_questions_to_unit_levels',
+  unit_progress: 'unit_progress'
 };
 
 /**

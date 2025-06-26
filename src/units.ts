@@ -240,6 +240,7 @@ app.post("/generate-unit-question-from-word", async (c) => {
               category: "VOCABULARY",
               data: question,
             },
+            key: bodyData.word.value,
           },
         })
       )
@@ -324,13 +325,13 @@ app.get("/block-questions", async (c) => {
         }
       });
 
-      const totalUsed = Array.from(questionPerType.values()).flat().length
+      const totalUsed = Array.from(questionPerType.values()).flat().length;
 
       return {
         [key]: {
           questionCount: questions.length,
-          questionUsed: Object.fromEntries(questionPerType.entries()),
-          totalUsed
+          // questionUsed: Object.fromEntries(questionPerType.entries()),
+          totalUsed,
         },
       };
     });
@@ -452,10 +453,13 @@ app.post("/apply-unit-questions", async (c) => {
       withHint: true,
     }));
 
-    const othersLevel = buildQuestionLevels(questions);
+    const secondLevel = shuffle(firstLevel);
+
+    const othersLevel = buildQuestionLevels(shuffle(questions));
 
     const allData = [
       firstLevel,
+      secondLevel,
       ...Object.values(othersLevel).map((item) =>
         item.map((subItem) => ({ ...subItem, withHint: false }))
       ),
@@ -465,11 +469,16 @@ app.post("/apply-unit-questions", async (c) => {
       where: {
         unit_id: unitData.id,
       },
+      include: {
+        unit_questions_to_unit_levels: true,
+      },
     });
 
     const lastLevelNumber = Math.max(
       1,
-      ...lastLevel.map((level) => level.number)
+      ...lastLevel
+        .filter((level) => level.unit_questions_to_unit_levels.length > 0)
+        .map((level) => level.number)
     );
 
     const allDataWithLevel = await Promise.all(
@@ -517,6 +526,44 @@ app.post("/apply-unit-questions", async (c) => {
     return c.json(response);
   } catch (error) {
     console.log(error);
+    return c.json({ error });
+  }
+});
+
+app.post("/delete-block-by-key", async (c) => {
+  try {
+    const schema = z.object({
+      keys: z.array(z.string()),
+    });
+
+    const body = await c.req.json();
+
+    const validBody = schema.parse(body);
+
+    const data = await prisma.unit_questions_to_unit_levels.findMany({
+      where: {
+        unit_questions: {
+          key: {
+            in: validBody.keys,
+          },
+        },
+      },
+    });
+
+    const response = await prisma.unit_questions_to_unit_levels.deleteMany({
+      where: {
+        unit_questions: {
+          key: {
+            in: validBody.keys,
+          },
+        },
+      },
+    });
+
+    return c.json({response, data});
+  } catch (error) {
+    console.log("error", error);
+
     return c.json({ error });
   }
 });

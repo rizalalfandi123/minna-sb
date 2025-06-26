@@ -652,5 +652,5336 @@
     "deleted": false,
     "id": "97d81ff1-1f87-4368-9be2-a45e93cf6ff7",
     "key": "ひと"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "teacher",
+            "id": "guru"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "doctor",
+              "id": "dokter"
+            },
+            {
+              "en": "company employee",
+              "id": "karyawan perusahaan"
+            },
+            {
+              "en": "student",
+              "id": "pelajar"
+            }
+          ],
+          "question": "せんせい"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "d7ab87b6-89ca-4070-95e2-6a8cd8bacd68",
+    "key": "せんせい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "teacher",
+            "id": "guru"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "doctor",
+              "id": "dokter"
+            },
+            {
+              "en": "company employee",
+              "id": "karyawan perusahaan"
+            },
+            {
+              "en": "student",
+              "id": "pelajar"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "teacher",
+                "id": "guru"
+              },
+              "value": "せんせい",
+              "alternative": {
+                "kanji": "先生",
+                "hiragana": "せんせい"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "6f214614-6b63-4596-9057-dfa09c1fa3ce",
+    "key": "せんせい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "せんせい",
+          "options": ["せんせい", "がくせい", "かいしゃいん", "いしゃ"],
+          "question": [
+            {
+              "mean": {
+                "en": "teacher",
+                "id": "guru"
+              },
+              "value": "せんせい",
+              "alternative": {
+                "kanji": "先生",
+                "hiragana": "せんせい"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "ec3deecd-81a1-45d3-ac07-1e03e91e09f5",
+    "key": "せんせい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "teacher",
+            "id": "guru"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "doctor",
+              "id": "dokter"
+            },
+            {
+              "en": "company employee",
+              "id": "karyawan perusahaan"
+            },
+            {
+              "en": "student",
+              "id": "pelajar"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "teacher",
+                "id": "guru"
+              },
+              "value": "せんせい",
+              "alternative": {
+                "kanji": "先生",
+                "hiragana": "せんせい"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "9cc8bf4a-ed78-4229-bd68-438817b8df4e",
+    "key": "せんせい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "せんせい",
+          "question": "せんせい"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "e72c8c76-a58e-43a2-96b8-c2581be85768",
+    "key": "せんせい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "せんせい",
+          "question": [
+            {
+              "mean": {
+                "en": "teacher",
+                "id": "guru"
+              },
+              "value": "せんせい",
+              "alternative": {
+                "kanji": "先生",
+                "hiragana": "せんせい"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "4e92fd99-fd78-4814-8b1f-9f8019f581df",
+    "key": "せんせい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "せんせい",
+          "options": ["せんせい", "がくせい", "かいしゃいん", "いしゃ"],
+          "question": [
+            {
+              "mean": {
+                "en": "teacher",
+                "id": "guru"
+              },
+              "value": "せんせい",
+              "alternative": {
+                "kanji": "先生",
+                "hiragana": "せんせい"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "ca1ca8ed-e021-4c6e-b65b-f3f261b1e81d",
+    "key": "せんせい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "がくせい",
+          "options": ["せんせい", "がくせい", "かいしゃいん", "いしゃ"],
+          "question": [
+            {
+              "mean": {
+                "en": "student",
+                "id": "pelajar"
+              },
+              "value": "がくせい",
+              "alternative": {
+                "kanji": "学生",
+                "hiragana": "がくせい"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "de9e0022-99d7-4f3b-9849-e262c76d37bf",
+    "key": "がくせい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "がくせい",
+          "question": "がくせい"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "33e2ed04-975a-45e8-bc09-de599f15b3b9",
+    "key": "がくせい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "student",
+            "id": "pelajar"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "doctor",
+              "id": "dokter"
+            },
+            {
+              "en": "company employee",
+              "id": "karyawan perusahaan"
+            },
+            {
+              "en": "student",
+              "id": "pelajar"
+            }
+          ],
+          "question": "がくせい"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "5f0d2a12-009d-4e8c-823d-7c4dd26f31ba",
+    "key": "がくせい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "がくせい",
+          "question": [
+            {
+              "mean": {
+                "en": "student",
+                "id": "pelajar"
+              },
+              "value": "がくせい",
+              "alternative": {
+                "kanji": "学生",
+                "hiragana": "がくせい"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "3482a283-c2a0-4e8d-b42f-8bd2c46aaee9",
+    "key": "がくせい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "がくせい",
+          "options": ["せんせい", "がくせい", "かいしゃいん", "いしゃ"],
+          "question": [
+            {
+              "mean": {
+                "en": "student",
+                "id": "pelajar"
+              },
+              "value": "がくせい",
+              "alternative": {
+                "kanji": "学生",
+                "hiragana": "がくせい"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "eac66f47-94a6-464f-a06b-5eeff445c101",
+    "key": "がくせい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "student",
+            "id": "pelajar"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "doctor",
+              "id": "dokter"
+            },
+            {
+              "en": "company employee",
+              "id": "karyawan perusahaan"
+            },
+            {
+              "en": "student",
+              "id": "pelajar"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "student",
+                "id": "pelajar"
+              },
+              "value": "がくせい",
+              "alternative": {
+                "kanji": "学生",
+                "hiragana": "がくせい"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "ccf3fbfa-3194-45f0-b560-5021783b9cc5",
+    "key": "がくせい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "student",
+            "id": "pelajar"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "doctor",
+              "id": "dokter"
+            },
+            {
+              "en": "company employee",
+              "id": "karyawan perusahaan"
+            },
+            {
+              "en": "student",
+              "id": "pelajar"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "student",
+                "id": "pelajar"
+              },
+              "value": "がくせい",
+              "alternative": {
+                "kanji": "学生",
+                "hiragana": "がくせい"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "e79c0e37-639b-4c02-a854-4747cdfba0de",
+    "key": "がくせい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "かいしゃいん",
+          "question": "かいしゃいん"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "f32052a8-e087-4cd2-b54c-12f441be7c4f",
+    "key": "かいしゃいん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "company employee",
+            "id": "karyawan perusahaan"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "doctor",
+              "id": "dokter"
+            },
+            {
+              "en": "company employee",
+              "id": "karyawan perusahaan"
+            },
+            {
+              "en": "student",
+              "id": "pelajar"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "company employee",
+                "id": "karyawan perusahaan"
+              },
+              "value": "かいしゃいん",
+              "alternative": {
+                "kanji": "会社員",
+                "hiragana": "かいしゃいん"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "50ba8b05-303a-416a-8fb1-c29fb099194e",
+    "key": "かいしゃいん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "いしゃ",
+          "question": [
+            {
+              "mean": {
+                "en": "doctor",
+                "id": "dokter"
+              },
+              "value": "いしゃ",
+              "alternative": {
+                "kanji": "医者",
+                "hiragana": "いしゃ"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "f8443640-6625-4ae4-b1d0-71b7e7ae22b5",
+    "key": "いしゃ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "company employee",
+            "id": "karyawan perusahaan"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "doctor",
+              "id": "dokter"
+            },
+            {
+              "en": "company employee",
+              "id": "karyawan perusahaan"
+            },
+            {
+              "en": "student",
+              "id": "pelajar"
+            }
+          ],
+          "question": "かいしゃいん"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "de39c1ef-937d-432b-850c-44755ed2be4a",
+    "key": "かいしゃいん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "doctor",
+            "id": "dokter"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "doctor",
+              "id": "dokter"
+            },
+            {
+              "en": "company employee",
+              "id": "karyawan perusahaan"
+            },
+            {
+              "en": "student",
+              "id": "pelajar"
+            }
+          ],
+          "question": "いしゃ"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "ab9fc807-4232-4819-97ab-81963f633099",
+    "key": "いしゃ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "かいしゃいん",
+          "question": [
+            {
+              "mean": {
+                "en": "company employee",
+                "id": "karyawan perusahaan"
+              },
+              "value": "かいしゃいん",
+              "alternative": {
+                "kanji": "会社員",
+                "hiragana": "かいしゃいん"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "f19ac3fe-b6d2-44a6-94bb-6e3abc4a487d",
+    "key": "かいしゃいん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "doctor",
+            "id": "dokter"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "doctor",
+              "id": "dokter"
+            },
+            {
+              "en": "company employee",
+              "id": "karyawan perusahaan"
+            },
+            {
+              "en": "student",
+              "id": "pelajar"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "doctor",
+                "id": "dokter"
+              },
+              "value": "いしゃ",
+              "alternative": {
+                "kanji": "医者",
+                "hiragana": "いしゃ"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "d9fa7785-fc1f-42e3-98ed-361cce39bf91",
+    "key": "いしゃ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "かいしゃいん",
+          "options": ["せんせい", "がくせい", "かいしゃいん", "いしゃ"],
+          "question": [
+            {
+              "mean": {
+                "en": "company employee",
+                "id": "karyawan perusahaan"
+              },
+              "value": "かいしゃいん",
+              "alternative": {
+                "kanji": "会社員",
+                "hiragana": "かいしゃいん"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "8fa4b14e-2919-45c4-9e1b-920e4e2bd69f",
+    "key": "かいしゃいん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "doctor",
+            "id": "dokter"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "doctor",
+              "id": "dokter"
+            },
+            {
+              "en": "company employee",
+              "id": "karyawan perusahaan"
+            },
+            {
+              "en": "student",
+              "id": "pelajar"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "doctor",
+                "id": "dokter"
+              },
+              "value": "いしゃ",
+              "alternative": {
+                "kanji": "医者",
+                "hiragana": "いしゃ"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "69a4acd8-7e95-4a0a-b856-f72c20f16bc1",
+    "key": "いしゃ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "company employee",
+            "id": "karyawan perusahaan"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "doctor",
+              "id": "dokter"
+            },
+            {
+              "en": "company employee",
+              "id": "karyawan perusahaan"
+            },
+            {
+              "en": "student",
+              "id": "pelajar"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "company employee",
+                "id": "karyawan perusahaan"
+              },
+              "value": "かいしゃいん",
+              "alternative": {
+                "kanji": "会社員",
+                "hiragana": "かいしゃいん"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "873b2331-ba87-4e1d-a7eb-5161cee2dd1e",
+    "key": "かいしゃいん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "いしゃ",
+          "options": ["せんせい", "がくせい", "かいしゃいん", "いしゃ"],
+          "question": [
+            {
+              "mean": {
+                "en": "doctor",
+                "id": "dokter"
+              },
+              "value": "いしゃ",
+              "alternative": {
+                "kanji": "医者",
+                "hiragana": "いしゃ"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "d4eccf5d-ef04-4baa-a313-d5f9642de66e",
+    "key": "いしゃ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "いしゃ",
+          "options": ["せんせい", "がくせい", "かいしゃいん", "いしゃ"],
+          "question": [
+            {
+              "mean": {
+                "en": "doctor",
+                "id": "dokter"
+              },
+              "value": "いしゃ",
+              "alternative": {
+                "kanji": "医者",
+                "hiragana": "いしゃ"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "6dce7da4-6f8e-4a80-ad7b-460a4c3b24bd",
+    "key": "いしゃ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "teacher",
+            "id": "guru"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "bank employee",
+              "id": "pegawai bank"
+            },
+            {
+              "en": "researcher",
+              "id": "peneliti"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "teacher",
+                "id": "guru"
+              },
+              "value": "きょうし",
+              "alternative": {
+                "kanji": "教師",
+                "hiragana": "きょうし"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "fe0021df-1ac8-452d-bd5b-4528e2e4b4cd",
+    "key": "きょうし"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "ぎんこういん",
+          "options": ["きょうし", "ぎんこういん", "けんきゅうしゃ"],
+          "question": [
+            {
+              "mean": {
+                "en": "bank employee",
+                "id": "pegawai bank"
+              },
+              "value": "ぎんこういん",
+              "alternative": {
+                "kanji": "銀行員",
+                "hiragana": "ぎんこういん"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "e6313c00-648d-4afd-9f3d-583214b0c66c",
+    "key": "ぎんこういん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "けんきゅうしゃ",
+          "options": ["きょうし", "ぎんこういん", "けんきゅうしゃ"],
+          "question": [
+            {
+              "mean": {
+                "en": "researcher",
+                "id": "peneliti"
+              },
+              "value": "けんきゅうしゃ",
+              "alternative": {
+                "kanji": "研究者",
+                "hiragana": "けんきゅうしゃ"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "81cbb7b7-1be3-42eb-8077-b8dbaa86ecba",
+    "key": "けんきゅうしゃ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "きょうし",
+          "options": ["きょうし", "ぎんこういん", "けんきゅうしゃ"],
+          "question": [
+            {
+              "mean": {
+                "en": "teacher",
+                "id": "guru"
+              },
+              "value": "きょうし",
+              "alternative": {
+                "kanji": "教師",
+                "hiragana": "きょうし"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "9c304af6-f32a-45f4-a635-97ba277b6e11",
+    "key": "きょうし"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "きょうし",
+          "options": ["きょうし", "ぎんこういん", "けんきゅうしゃ"],
+          "question": [
+            {
+              "mean": {
+                "en": "teacher",
+                "id": "guru"
+              },
+              "value": "きょうし",
+              "alternative": {
+                "kanji": "教師",
+                "hiragana": "きょうし"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "7de4751a-3ac6-4ed3-affc-1b536e812166",
+    "key": "きょうし"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "bank employee",
+            "id": "pegawai bank"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "bank employee",
+              "id": "pegawai bank"
+            },
+            {
+              "en": "researcher",
+              "id": "peneliti"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "bank employee",
+                "id": "pegawai bank"
+              },
+              "value": "ぎんこういん",
+              "alternative": {
+                "kanji": "銀行員",
+                "hiragana": "ぎんこういん"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "307151de-01d6-42dc-ba6d-cfb62ed4e4bc",
+    "key": "ぎんこういん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "bank employee",
+            "id": "pegawai bank"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "bank employee",
+              "id": "pegawai bank"
+            },
+            {
+              "en": "researcher",
+              "id": "peneliti"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "bank employee",
+                "id": "pegawai bank"
+              },
+              "value": "ぎんこういん",
+              "alternative": {
+                "kanji": "銀行員",
+                "hiragana": "ぎんこういん"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "6b9e85da-29fd-48ce-b0fa-784baee224da",
+    "key": "ぎんこういん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "researcher",
+            "id": "peneliti"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "bank employee",
+              "id": "pegawai bank"
+            },
+            {
+              "en": "researcher",
+              "id": "peneliti"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "researcher",
+                "id": "peneliti"
+              },
+              "value": "けんきゅうしゃ",
+              "alternative": {
+                "kanji": "研究者",
+                "hiragana": "けんきゅうしゃ"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "7d64276b-e08d-48ae-9fbd-244be5f85306",
+    "key": "けんきゅうしゃ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "けんきゅうしゃ",
+          "question": "けんきゅうしゃ"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "3d0fc085-abcf-41e8-8791-d102f4435ae3",
+    "key": "けんきゅうしゃ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "teacher",
+            "id": "guru"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "bank employee",
+              "id": "pegawai bank"
+            },
+            {
+              "en": "researcher",
+              "id": "peneliti"
+            }
+          ],
+          "question": "きょうし"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "f3fcfffe-30d5-496c-aa16-b21482dc7450",
+    "key": "きょうし"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "bank employee",
+            "id": "pegawai bank"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "bank employee",
+              "id": "pegawai bank"
+            },
+            {
+              "en": "researcher",
+              "id": "peneliti"
+            }
+          ],
+          "question": "ぎんこういん"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "0cef8b0b-d308-4db2-ab73-018388fd007c",
+    "key": "ぎんこういん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "けんきゅうしゃ",
+          "question": [
+            {
+              "mean": {
+                "en": "researcher",
+                "id": "peneliti"
+              },
+              "value": "けんきゅうしゃ",
+              "alternative": {
+                "kanji": "研究者",
+                "hiragana": "けんきゅうしゃ"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "b7c5ca12-cc2b-413c-a7e6-1af69653a527",
+    "key": "けんきゅうしゃ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "teacher",
+            "id": "guru"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "bank employee",
+              "id": "pegawai bank"
+            },
+            {
+              "en": "researcher",
+              "id": "peneliti"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "teacher",
+                "id": "guru"
+              },
+              "value": "きょうし",
+              "alternative": {
+                "kanji": "教師",
+                "hiragana": "きょうし"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "afe3e086-bada-4c34-8fed-d54b68bc9e47",
+    "key": "きょうし"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "ぎんこういん",
+          "options": ["きょうし", "ぎんこういん", "けんきゅうしゃ"],
+          "question": [
+            {
+              "mean": {
+                "en": "bank employee",
+                "id": "pegawai bank"
+              },
+              "value": "ぎんこういん",
+              "alternative": {
+                "kanji": "銀行員",
+                "hiragana": "ぎんこういん"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "533851c7-a404-4ba8-b89f-7a57b97d3fc0",
+    "key": "ぎんこういん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "けんきゅうしゃ",
+          "options": ["きょうし", "ぎんこういん", "けんきゅうしゃ"],
+          "question": [
+            {
+              "mean": {
+                "en": "researcher",
+                "id": "peneliti"
+              },
+              "value": "けんきゅうしゃ",
+              "alternative": {
+                "kanji": "研究者",
+                "hiragana": "けんきゅうしゃ"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "86dfbe58-82af-42cd-aa50-d8043517e250",
+    "key": "けんきゅうしゃ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "きょうし",
+          "question": [
+            {
+              "mean": {
+                "en": "teacher",
+                "id": "guru"
+              },
+              "value": "きょうし",
+              "alternative": {
+                "kanji": "教師",
+                "hiragana": "きょうし"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "b3c95748-6770-415d-bbc6-297738e51b44",
+    "key": "きょうし"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "ぎんこういん",
+          "question": [
+            {
+              "mean": {
+                "en": "bank employee",
+                "id": "pegawai bank"
+              },
+              "value": "ぎんこういん",
+              "alternative": {
+                "kanji": "銀行員",
+                "hiragana": "ぎんこういん"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "77e37879-0c69-4fdf-b8e6-7e84aac51a2f",
+    "key": "ぎんこういん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "researcher",
+            "id": "peneliti"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "bank employee",
+              "id": "pegawai bank"
+            },
+            {
+              "en": "researcher",
+              "id": "peneliti"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "researcher",
+                "id": "peneliti"
+              },
+              "value": "けんきゅうしゃ",
+              "alternative": {
+                "kanji": "研究者",
+                "hiragana": "けんきゅうしゃ"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "f0f81abb-2262-49a5-952b-6216392b54a7",
+    "key": "けんきゅうしゃ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "きょうし",
+          "question": "きょうし"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "dbed12a8-df3f-40e2-ada8-cec49f11dcef",
+    "key": "きょうし"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "ぎんこういん",
+          "question": "ぎんこういん"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "8ded7bc1-8bef-4ca4-a657-1d72e1582a48",
+    "key": "ぎんこういん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "researcher",
+            "id": "peneliti"
+          },
+          "options": [
+            {
+              "en": "teacher",
+              "id": "guru"
+            },
+            {
+              "en": "bank employee",
+              "id": "pegawai bank"
+            },
+            {
+              "en": "researcher",
+              "id": "peneliti"
+            }
+          ],
+          "question": "けんきゅうしゃ"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "93d87eb2-a1e7-4435-8441-072ae47c6115",
+    "key": "けんきゅうしゃ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "university",
+            "id": "universitas"
+          },
+          "options": [
+            {
+              "en": "university",
+              "id": "universitas"
+            },
+            {
+              "en": "hospital",
+              "id": "rumah sakit"
+            }
+          ],
+          "question": "だいがく"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "26389b60-b55d-49cf-93e6-dbaf1d76e252",
+    "key": "だいがく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "びょういん",
+          "options": ["びょういん", "だいがく"],
+          "question": [
+            {
+              "mean": {
+                "en": "hospital",
+                "id": "rumah sakit"
+              },
+              "value": "びょういん",
+              "alternative": {
+                "kanji": "病院",
+                "hiragana": "びょういん"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "571f39a3-e001-4c5a-bdc1-82f9fdd8a454",
+    "key": "びょういん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "university",
+            "id": "universitas"
+          },
+          "options": [
+            {
+              "en": "university",
+              "id": "universitas"
+            },
+            {
+              "en": "hospital",
+              "id": "rumah sakit"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "university",
+                "id": "universitas"
+              },
+              "value": "だいがく",
+              "alternative": {
+                "kanji": "大学",
+                "hiragana": "だいがく"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "7d307d88-678b-4c9f-86f1-eb9d9676fc2e",
+    "key": "だいがく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "びょういん",
+          "question": [
+            {
+              "mean": {
+                "en": "hospital",
+                "id": "rumah sakit"
+              },
+              "value": "びょういん",
+              "alternative": {
+                "kanji": "病院",
+                "hiragana": "びょういん"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "616d20c3-d7be-4836-8d79-56c7737f4c12",
+    "key": "びょういん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "university",
+            "id": "universitas"
+          },
+          "options": [
+            {
+              "en": "university",
+              "id": "universitas"
+            },
+            {
+              "en": "hospital",
+              "id": "rumah sakit"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "university",
+                "id": "universitas"
+              },
+              "value": "だいがく",
+              "alternative": {
+                "kanji": "大学",
+                "hiragana": "だいがく"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "60d88b99-8a0b-4f04-a27f-efc93966c290",
+    "key": "だいがく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "びょういん",
+          "question": "びょういん"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "4e080c1b-6b73-4d02-b136-526c184d8450",
+    "key": "びょういん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "だいがく",
+          "question": "だいがく"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "52d841da-0e0c-4f52-b47e-88857bdcacef",
+    "key": "だいがく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "びょういん",
+          "options": ["びょういん", "だいがく"],
+          "question": [
+            {
+              "mean": {
+                "en": "hospital",
+                "id": "rumah sakit"
+              },
+              "value": "びょういん",
+              "alternative": {
+                "kanji": "病院",
+                "hiragana": "びょういん"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "869621e2-4a8f-4dbc-801d-5e00a1b5aa99",
+    "key": "びょういん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "だいがく",
+          "question": [
+            {
+              "mean": {
+                "en": "university",
+                "id": "universitas"
+              },
+              "value": "だいがく",
+              "alternative": {
+                "kanji": "大学",
+                "hiragana": "だいがく"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "2774a301-f3eb-404c-8769-dc2f7ea43a62",
+    "key": "だいがく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "hospital",
+            "id": "rumah sakit"
+          },
+          "options": [
+            {
+              "en": "university",
+              "id": "universitas"
+            },
+            {
+              "en": "hospital",
+              "id": "rumah sakit"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "hospital",
+                "id": "rumah sakit"
+              },
+              "value": "びょういん",
+              "alternative": {
+                "kanji": "病院",
+                "hiragana": "びょういん"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "2c947a27-ec65-4ddd-815b-e08dbbdb91f3",
+    "key": "びょういん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "だいがく",
+          "options": ["びょういん", "だいがく"],
+          "question": [
+            {
+              "mean": {
+                "en": "university",
+                "id": "universitas"
+              },
+              "value": "だいがく",
+              "alternative": {
+                "kanji": "大学",
+                "hiragana": "だいがく"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "74bd539c-5ce5-44da-ae1c-96e9e386bd7d",
+    "key": "だいがく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "hospital",
+            "id": "rumah sakit"
+          },
+          "options": [
+            {
+              "en": "university",
+              "id": "universitas"
+            },
+            {
+              "en": "hospital",
+              "id": "rumah sakit"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "hospital",
+                "id": "rumah sakit"
+              },
+              "value": "びょういん",
+              "alternative": {
+                "kanji": "病院",
+                "hiragana": "びょういん"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "e5e08743-38bb-414d-8d7b-70da555b59f3",
+    "key": "びょういん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "だいがく",
+          "options": ["びょういん", "だいがく"],
+          "question": [
+            {
+              "mean": {
+                "en": "university",
+                "id": "universitas"
+              },
+              "value": "だいがく",
+              "alternative": {
+                "kanji": "大学",
+                "hiragana": "だいがく"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "61e33f2f-e1ed-4eef-8b58-64e4944f3485",
+    "key": "だいがく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "hospital",
+            "id": "rumah sakit"
+          },
+          "options": [
+            {
+              "en": "university",
+              "id": "universitas"
+            },
+            {
+              "en": "hospital",
+              "id": "rumah sakit"
+            }
+          ],
+          "question": "びょういん"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "c00b081e-c945-4161-9532-7a3105dfa3b8",
+    "key": "びょういん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "who",
+            "id": "siapa"
+          },
+          "options": [
+            {
+              "en": "who",
+              "id": "siapa"
+            },
+            {
+              "en": "years old",
+              "id": "tahun (usia)"
+            },
+            {
+              "en": "yes",
+              "id": "ya"
+            },
+            {
+              "en": "no",
+              "id": "tidak"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "who",
+                "id": "siapa"
+              },
+              "value": "だれ",
+              "alternative": {
+                "hiragana": "だれ"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "de7fa327-c457-4771-b5ca-18f92f48424a",
+    "key": "だれ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "さい",
+          "options": ["だれ", "さい", "はい", "いいえ"],
+          "question": [
+            {
+              "mean": {
+                "en": "years old",
+                "id": "tahun (usia)"
+              },
+              "value": "さい",
+              "alternative": {
+                "kanji": "歳",
+                "hiragana": "さい"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "9bc386e3-0c37-4916-b892-26a530ae8601",
+    "key": "さい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "yes",
+            "id": "ya"
+          },
+          "options": [
+            {
+              "en": "who",
+              "id": "siapa"
+            },
+            {
+              "en": "years old",
+              "id": "tahun (usia)"
+            },
+            {
+              "en": "yes",
+              "id": "ya"
+            },
+            {
+              "en": "no",
+              "id": "tidak"
+            }
+          ],
+          "question": "はい"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "7d15174f-24ea-4c5e-84c6-06ad6b183cd3",
+    "key": "はい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "いいえ",
+          "question": "いいえ"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "c99543fa-9902-4bb4-b92c-93b98f65c406",
+    "key": "いいえ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "who",
+            "id": "siapa"
+          },
+          "options": [
+            {
+              "en": "who",
+              "id": "siapa"
+            },
+            {
+              "en": "years old",
+              "id": "tahun (usia)"
+            },
+            {
+              "en": "yes",
+              "id": "ya"
+            },
+            {
+              "en": "no",
+              "id": "tidak"
+            }
+          ],
+          "question": "だれ"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "abb9fc28-3e3f-4580-904a-dff618d2ad9f",
+    "key": "だれ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "years old",
+            "id": "tahun (usia)"
+          },
+          "options": [
+            {
+              "en": "who",
+              "id": "siapa"
+            },
+            {
+              "en": "years old",
+              "id": "tahun (usia)"
+            },
+            {
+              "en": "yes",
+              "id": "ya"
+            },
+            {
+              "en": "no",
+              "id": "tidak"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "years old",
+                "id": "tahun (usia)"
+              },
+              "value": "さい",
+              "alternative": {
+                "kanji": "歳",
+                "hiragana": "さい"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "86789ba4-6d20-4bd0-9d9d-1b6c7a432f92",
+    "key": "さい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "yes",
+            "id": "ya"
+          },
+          "options": [
+            {
+              "en": "who",
+              "id": "siapa"
+            },
+            {
+              "en": "years old",
+              "id": "tahun (usia)"
+            },
+            {
+              "en": "yes",
+              "id": "ya"
+            },
+            {
+              "en": "no",
+              "id": "tidak"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "yes",
+                "id": "ya"
+              },
+              "value": "はい",
+              "alternative": {
+                "hiragana": "はい"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "3e1cf9cd-b042-44d3-94a8-d4668dc831fe",
+    "key": "はい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "いいえ",
+          "question": [
+            {
+              "mean": {
+                "en": "no",
+                "id": "tidak"
+              },
+              "value": "いいえ",
+              "alternative": {
+                "hiragana": "いいえ"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "b19671d2-841e-404b-8f76-9b7dd1565151",
+    "key": "いいえ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "だれ",
+          "options": ["だれ", "さい", "はい", "いいえ"],
+          "question": [
+            {
+              "mean": {
+                "en": "who",
+                "id": "siapa"
+              },
+              "value": "だれ",
+              "alternative": {
+                "hiragana": "だれ"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "25fee998-3473-4760-82b2-dd033e1cade8",
+    "key": "だれ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "だれ",
+          "options": ["だれ", "さい", "はい", "いいえ"],
+          "question": [
+            {
+              "mean": {
+                "en": "who",
+                "id": "siapa"
+              },
+              "value": "だれ",
+              "alternative": {
+                "hiragana": "だれ"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "fdf32b9f-3584-4b51-ad6b-a05783a6939b",
+    "key": "だれ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "years old",
+            "id": "tahun (usia)"
+          },
+          "options": [
+            {
+              "en": "who",
+              "id": "siapa"
+            },
+            {
+              "en": "years old",
+              "id": "tahun (usia)"
+            },
+            {
+              "en": "yes",
+              "id": "ya"
+            },
+            {
+              "en": "no",
+              "id": "tidak"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "years old",
+                "id": "tahun (usia)"
+              },
+              "value": "さい",
+              "alternative": {
+                "kanji": "歳",
+                "hiragana": "さい"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "855da573-f475-496c-8f72-29db73aabcdd",
+    "key": "さい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "さい",
+          "question": [
+            {
+              "mean": {
+                "en": "years old",
+                "id": "tahun (usia)"
+              },
+              "value": "さい",
+              "alternative": {
+                "kanji": "歳",
+                "hiragana": "さい"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "d7230de3-4c4b-4d3a-a1ec-0efc98e2ad45",
+    "key": "さい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "yes",
+            "id": "ya"
+          },
+          "options": [
+            {
+              "en": "who",
+              "id": "siapa"
+            },
+            {
+              "en": "years old",
+              "id": "tahun (usia)"
+            },
+            {
+              "en": "yes",
+              "id": "ya"
+            },
+            {
+              "en": "no",
+              "id": "tidak"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "yes",
+                "id": "ya"
+              },
+              "value": "はい",
+              "alternative": {
+                "hiragana": "はい"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "dd26c0d6-41d4-47ce-94c7-e7991fe4afdc",
+    "key": "はい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "はい",
+          "question": [
+            {
+              "mean": {
+                "en": "yes",
+                "id": "ya"
+              },
+              "value": "はい",
+              "alternative": {
+                "hiragana": "はい"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "04a7ab96-daa9-4f27-ac72-8dd65cbfa2bd",
+    "key": "はい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "no",
+            "id": "tidak"
+          },
+          "options": [
+            {
+              "en": "who",
+              "id": "siapa"
+            },
+            {
+              "en": "years old",
+              "id": "tahun (usia)"
+            },
+            {
+              "en": "yes",
+              "id": "ya"
+            },
+            {
+              "en": "no",
+              "id": "tidak"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "no",
+                "id": "tidak"
+              },
+              "value": "いいえ",
+              "alternative": {
+                "hiragana": "いいえ"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "48e50c27-cf18-4dc4-8bed-91e37e7b8b99",
+    "key": "いいえ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "no",
+            "id": "tidak"
+          },
+          "options": [
+            {
+              "en": "who",
+              "id": "siapa"
+            },
+            {
+              "en": "years old",
+              "id": "tahun (usia)"
+            },
+            {
+              "en": "yes",
+              "id": "ya"
+            },
+            {
+              "en": "no",
+              "id": "tidak"
+            }
+          ],
+          "question": "いいえ"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "ccec292d-3f27-4850-886f-ca5e4ee3b1bf",
+    "key": "いいえ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "だれ",
+          "question": "だれ"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "47149436-1503-44b9-9cbf-5f0bab7687dd",
+    "key": "だれ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "years old",
+            "id": "tahun (usia)"
+          },
+          "options": [
+            {
+              "en": "who",
+              "id": "siapa"
+            },
+            {
+              "en": "years old",
+              "id": "tahun (usia)"
+            },
+            {
+              "en": "yes",
+              "id": "ya"
+            },
+            {
+              "en": "no",
+              "id": "tidak"
+            }
+          ],
+          "question": "さい"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "ab055983-81d6-4efe-8e4e-00c98fde6761",
+    "key": "さい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "はい",
+          "question": "はい"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "295f9a04-5f04-4d55-b5c0-44d03e2df327",
+    "key": "はい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "no",
+            "id": "tidak"
+          },
+          "options": [
+            {
+              "en": "who",
+              "id": "siapa"
+            },
+            {
+              "en": "years old",
+              "id": "tahun (usia)"
+            },
+            {
+              "en": "yes",
+              "id": "ya"
+            },
+            {
+              "en": "no",
+              "id": "tidak"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "no",
+                "id": "tidak"
+              },
+              "value": "いいえ",
+              "alternative": {
+                "hiragana": "いいえ"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "6cc39d86-5e83-449d-b769-c7095404b09a",
+    "key": "いいえ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "who",
+            "id": "siapa"
+          },
+          "options": [
+            {
+              "en": "who",
+              "id": "siapa"
+            },
+            {
+              "en": "years old",
+              "id": "tahun (usia)"
+            },
+            {
+              "en": "yes",
+              "id": "ya"
+            },
+            {
+              "en": "no",
+              "id": "tidak"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "who",
+                "id": "siapa"
+              },
+              "value": "だれ",
+              "alternative": {
+                "hiragana": "だれ"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "5aaf3763-edf0-40e6-b894-169d06e73d9a",
+    "key": "だれ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "さい",
+          "options": ["だれ", "さい", "はい", "いいえ"],
+          "question": [
+            {
+              "mean": {
+                "en": "years old",
+                "id": "tahun (usia)"
+              },
+              "value": "さい",
+              "alternative": {
+                "kanji": "歳",
+                "hiragana": "さい"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "0d604396-ab3d-412c-a8a2-b9ab4e4ffd53",
+    "key": "さい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "はい",
+          "options": ["だれ", "さい", "はい", "いいえ"],
+          "question": [
+            {
+              "mean": {
+                "en": "yes",
+                "id": "ya"
+              },
+              "value": "はい",
+              "alternative": {
+                "hiragana": "はい"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "92beb7bb-beec-43de-9b3b-03fce88f49b0",
+    "key": "はい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "いいえ",
+          "options": ["だれ", "さい", "はい", "いいえ"],
+          "question": [
+            {
+              "mean": {
+                "en": "no",
+                "id": "tidak"
+              },
+              "value": "いいえ",
+              "alternative": {
+                "hiragana": "いいえ"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "f9af221d-ee58-4c70-adf7-60af57ea83ae",
+    "key": "いいえ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "だれ",
+          "question": [
+            {
+              "mean": {
+                "en": "who",
+                "id": "siapa"
+              },
+              "value": "だれ",
+              "alternative": {
+                "hiragana": "だれ"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "571ada25-4a97-4f8f-bdc8-44e058f6642e",
+    "key": "だれ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "さい",
+          "question": "さい"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "5e576f05-478a-41e5-b435-7960b51575a0",
+    "key": "さい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "はい",
+          "options": ["だれ", "さい", "はい", "いいえ"],
+          "question": [
+            {
+              "mean": {
+                "en": "yes",
+                "id": "ya"
+              },
+              "value": "はい",
+              "alternative": {
+                "hiragana": "はい"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "6b6a9fa4-6ce3-42f6-8083-76540ed0dc38",
+    "key": "はい"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "いいえ",
+          "options": ["だれ", "さい", "はい", "いいえ"],
+          "question": [
+            {
+              "mean": {
+                "en": "no",
+                "id": "tidak"
+              },
+              "value": "いいえ",
+              "alternative": {
+                "hiragana": "いいえ"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "ad6529ca-6e6d-4237-b533-8812b4cfdb84",
+    "key": "いいえ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "United States",
+            "id": "Amerika Serikat"
+          },
+          "options": [
+            {
+              "en": "United States",
+              "id": "Amerika Serikat"
+            },
+            {
+              "en": "United Kingdom",
+              "id": "Inggris"
+            },
+            {
+              "en": "India",
+              "id": "India"
+            },
+            {
+              "en": "Indonesia",
+              "id": "Indonesia"
+            },
+            {
+              "en": "South Korea",
+              "id": "Korea Selatan"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "United States",
+                "id": "Amerika Serikat"
+              },
+              "value": "アメリカ",
+              "alternative": {
+                "katakana": "アメリカ"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "97d607d2-39a1-4e97-8ecb-4de22170700b",
+    "key": "アメリカ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "イギリス",
+          "options": [
+            "アメリカ",
+            "イギリス",
+            "インド",
+            "インドネシア",
+            "かんこく"
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "United Kingdom",
+                "id": "Inggris"
+              },
+              "value": "イギリス",
+              "alternative": {
+                "katakana": "イギリス"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "a72fca97-5009-44ec-b093-dcee8221c11b",
+    "key": "イギリス"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "インド",
+          "options": [
+            "アメリカ",
+            "イギリス",
+            "インド",
+            "インドネシア",
+            "かんこく"
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "India",
+                "id": "India"
+              },
+              "value": "インド",
+              "alternative": {
+                "katakana": "インド"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "f558ae42-f643-4ec3-af0d-a15c3915b60d",
+    "key": "インド"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "アメリカ",
+          "question": "アメリカ"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "4469937a-2ad7-48c8-bc05-009bc9acbcbe",
+    "key": "アメリカ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "United Kingdom",
+            "id": "Inggris"
+          },
+          "options": [
+            {
+              "en": "United States",
+              "id": "Amerika Serikat"
+            },
+            {
+              "en": "United Kingdom",
+              "id": "Inggris"
+            },
+            {
+              "en": "India",
+              "id": "India"
+            },
+            {
+              "en": "Indonesia",
+              "id": "Indonesia"
+            },
+            {
+              "en": "South Korea",
+              "id": "Korea Selatan"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "United Kingdom",
+                "id": "Inggris"
+              },
+              "value": "イギリス",
+              "alternative": {
+                "katakana": "イギリス"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "698830d6-6f54-45b1-9d05-c1992416592f",
+    "key": "イギリス"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "インド",
+          "question": [
+            {
+              "mean": {
+                "en": "India",
+                "id": "India"
+              },
+              "value": "インド",
+              "alternative": {
+                "katakana": "インド"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "7d119b97-7658-44f4-adf2-f6fd9141b6f3",
+    "key": "インド"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "アメリカ",
+          "question": [
+            {
+              "mean": {
+                "en": "United States",
+                "id": "Amerika Serikat"
+              },
+              "value": "アメリカ",
+              "alternative": {
+                "katakana": "アメリカ"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "3a1724e4-d41c-43a6-be78-edc34901e67f",
+    "key": "アメリカ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "イギリス",
+          "options": [
+            "アメリカ",
+            "イギリス",
+            "インド",
+            "インドネシア",
+            "かんこく"
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "United Kingdom",
+                "id": "Inggris"
+              },
+              "value": "イギリス",
+              "alternative": {
+                "katakana": "イギリス"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "890f2db6-37ca-4079-bd57-bb79961c481f",
+    "key": "イギリス"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "インド",
+          "question": "インド"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "45441405-6c9c-4e8d-9b40-988d2f67117a",
+    "key": "インド"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "United States",
+            "id": "Amerika Serikat"
+          },
+          "options": [
+            {
+              "en": "United States",
+              "id": "Amerika Serikat"
+            },
+            {
+              "en": "United Kingdom",
+              "id": "Inggris"
+            },
+            {
+              "en": "India",
+              "id": "India"
+            },
+            {
+              "en": "Indonesia",
+              "id": "Indonesia"
+            },
+            {
+              "en": "South Korea",
+              "id": "Korea Selatan"
+            }
+          ],
+          "question": "アメリカ"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "3d01eff5-a187-4781-b066-9fed10dacd9a",
+    "key": "アメリカ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "イギリス",
+          "question": [
+            {
+              "mean": {
+                "en": "United Kingdom",
+                "id": "Inggris"
+              },
+              "value": "イギリス",
+              "alternative": {
+                "katakana": "イギリス"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "06708ab9-0088-45b9-b544-b6428c49b4ab",
+    "key": "イギリス"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "インド",
+          "options": [
+            "アメリカ",
+            "イギリス",
+            "インド",
+            "インドネシア",
+            "かんこく"
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "India",
+                "id": "India"
+              },
+              "value": "インド",
+              "alternative": {
+                "katakana": "インド"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "d15e2b8c-4f37-4c17-9227-66a32f682b18",
+    "key": "インド"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "United States",
+            "id": "Amerika Serikat"
+          },
+          "options": [
+            {
+              "en": "United States",
+              "id": "Amerika Serikat"
+            },
+            {
+              "en": "United Kingdom",
+              "id": "Inggris"
+            },
+            {
+              "en": "India",
+              "id": "India"
+            },
+            {
+              "en": "Indonesia",
+              "id": "Indonesia"
+            },
+            {
+              "en": "South Korea",
+              "id": "Korea Selatan"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "United States",
+                "id": "Amerika Serikat"
+              },
+              "value": "アメリカ",
+              "alternative": {
+                "katakana": "アメリカ"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "43f0dcd1-84b2-4ec1-b004-b8386dedfc3e",
+    "key": "アメリカ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "United Kingdom",
+            "id": "Inggris"
+          },
+          "options": [
+            {
+              "en": "United States",
+              "id": "Amerika Serikat"
+            },
+            {
+              "en": "United Kingdom",
+              "id": "Inggris"
+            },
+            {
+              "en": "India",
+              "id": "India"
+            },
+            {
+              "en": "Indonesia",
+              "id": "Indonesia"
+            },
+            {
+              "en": "South Korea",
+              "id": "Korea Selatan"
+            }
+          ],
+          "question": "イギリス"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "9c9a55f3-79d3-4035-a6a8-0526e64c5b5c",
+    "key": "イギリス"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "India",
+            "id": "India"
+          },
+          "options": [
+            {
+              "en": "United States",
+              "id": "Amerika Serikat"
+            },
+            {
+              "en": "United Kingdom",
+              "id": "Inggris"
+            },
+            {
+              "en": "India",
+              "id": "India"
+            },
+            {
+              "en": "Indonesia",
+              "id": "Indonesia"
+            },
+            {
+              "en": "South Korea",
+              "id": "Korea Selatan"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "India",
+                "id": "India"
+              },
+              "value": "インド",
+              "alternative": {
+                "katakana": "インド"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "82ae010c-8f67-42a6-892c-37f41af9c9e9",
+    "key": "インド"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "アメリカ",
+          "options": [
+            "アメリカ",
+            "イギリス",
+            "インド",
+            "インドネシア",
+            "かんこく"
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "United States",
+                "id": "Amerika Serikat"
+              },
+              "value": "アメリカ",
+              "alternative": {
+                "katakana": "アメリカ"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "d003f208-eed7-41c5-833a-cb4942f23c28",
+    "key": "アメリカ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "United Kingdom",
+            "id": "Inggris"
+          },
+          "options": [
+            {
+              "en": "United States",
+              "id": "Amerika Serikat"
+            },
+            {
+              "en": "United Kingdom",
+              "id": "Inggris"
+            },
+            {
+              "en": "India",
+              "id": "India"
+            },
+            {
+              "en": "Indonesia",
+              "id": "Indonesia"
+            },
+            {
+              "en": "South Korea",
+              "id": "Korea Selatan"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "United Kingdom",
+                "id": "Inggris"
+              },
+              "value": "イギリス",
+              "alternative": {
+                "katakana": "イギリス"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "f184dfaa-806f-4260-b98d-12ba11397e2a",
+    "key": "イギリス"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "India",
+            "id": "India"
+          },
+          "options": [
+            {
+              "en": "United States",
+              "id": "Amerika Serikat"
+            },
+            {
+              "en": "United Kingdom",
+              "id": "Inggris"
+            },
+            {
+              "en": "India",
+              "id": "India"
+            },
+            {
+              "en": "Indonesia",
+              "id": "Indonesia"
+            },
+            {
+              "en": "South Korea",
+              "id": "Korea Selatan"
+            }
+          ],
+          "question": "インド"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "e9ec34bd-7d89-409d-b0e3-f9a08eac3634",
+    "key": "インド"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "アメリカ",
+          "options": [
+            "アメリカ",
+            "イギリス",
+            "インド",
+            "インドネシア",
+            "かんこく"
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "United States",
+                "id": "Amerika Serikat"
+              },
+              "value": "アメリカ",
+              "alternative": {
+                "katakana": "アメリカ"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "994e1b18-735e-44f1-9c2d-ebae650a08cc",
+    "key": "アメリカ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "イギリス",
+          "question": "イギリス"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "316aac59-4a8a-49d4-a4b9-3c7d35a750ba",
+    "key": "イギリス"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "India",
+            "id": "India"
+          },
+          "options": [
+            {
+              "en": "United States",
+              "id": "Amerika Serikat"
+            },
+            {
+              "en": "United Kingdom",
+              "id": "Inggris"
+            },
+            {
+              "en": "India",
+              "id": "India"
+            },
+            {
+              "en": "Indonesia",
+              "id": "Indonesia"
+            },
+            {
+              "en": "South Korea",
+              "id": "Korea Selatan"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "India",
+                "id": "India"
+              },
+              "value": "インド",
+              "alternative": {
+                "katakana": "インド"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "2e7f5516-d330-40b8-9d53-11a8b2299f2a",
+    "key": "インド"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "Indonesia",
+            "id": "Indonesia"
+          },
+          "options": [
+            {
+              "en": "United States",
+              "id": "Amerika Serikat"
+            },
+            {
+              "en": "United Kingdom",
+              "id": "Inggris"
+            },
+            {
+              "en": "India",
+              "id": "India"
+            },
+            {
+              "en": "Indonesia",
+              "id": "Indonesia"
+            },
+            {
+              "en": "South Korea",
+              "id": "Korea Selatan"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "Indonesia",
+                "id": "Indonesia"
+              },
+              "value": "インドネシア",
+              "alternative": {
+                "katakana": "インドネシア"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "07531b85-b556-4de1-830d-58ddcfaf88e4",
+    "key": "インドネシア"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "Indonesia",
+            "id": "Indonesia"
+          },
+          "options": [
+            {
+              "en": "United States",
+              "id": "Amerika Serikat"
+            },
+            {
+              "en": "United Kingdom",
+              "id": "Inggris"
+            },
+            {
+              "en": "India",
+              "id": "India"
+            },
+            {
+              "en": "Indonesia",
+              "id": "Indonesia"
+            },
+            {
+              "en": "South Korea",
+              "id": "Korea Selatan"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "Indonesia",
+                "id": "Indonesia"
+              },
+              "value": "インドネシア",
+              "alternative": {
+                "katakana": "インドネシア"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "afca2e55-977c-47e7-8338-13a5cc306a6a",
+    "key": "インドネシア"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "インドネシア",
+          "question": "インドネシア"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "d5817e1f-4b0f-48a2-976f-9e71d9be9ed8",
+    "key": "インドネシア"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "インドネシア",
+          "options": [
+            "アメリカ",
+            "イギリス",
+            "インド",
+            "インドネシア",
+            "かんこく"
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "Indonesia",
+                "id": "Indonesia"
+              },
+              "value": "インドネシア",
+              "alternative": {
+                "katakana": "インドネシア"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "0395d1fe-e1a4-4563-888d-2c4403a7860a",
+    "key": "インドネシア"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "インドネシア",
+          "question": [
+            {
+              "mean": {
+                "en": "Indonesia",
+                "id": "Indonesia"
+              },
+              "value": "インドネシア",
+              "alternative": {
+                "katakana": "インドネシア"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "20851602-452d-4bca-afc7-5ae8e60c4062",
+    "key": "インドネシア"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "South Korea",
+            "id": "Korea Selatan"
+          },
+          "options": [
+            {
+              "en": "United States",
+              "id": "Amerika Serikat"
+            },
+            {
+              "en": "United Kingdom",
+              "id": "Inggris"
+            },
+            {
+              "en": "India",
+              "id": "India"
+            },
+            {
+              "en": "Indonesia",
+              "id": "Indonesia"
+            },
+            {
+              "en": "South Korea",
+              "id": "Korea Selatan"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "South Korea",
+                "id": "Korea Selatan"
+              },
+              "value": "かんこく",
+              "alternative": {
+                "katakana": "かんこく"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "7f1272b2-efb4-4c6a-8902-707ea8bd2789",
+    "key": "かんこく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "かんこく",
+          "options": [
+            "アメリカ",
+            "イギリス",
+            "インド",
+            "インドネシア",
+            "かんこく"
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "South Korea",
+                "id": "Korea Selatan"
+              },
+              "value": "かんこく",
+              "alternative": {
+                "katakana": "かんこく"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "69999f76-38c1-4b22-9b05-d55c4e99b5f7",
+    "key": "かんこく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "South Korea",
+            "id": "Korea Selatan"
+          },
+          "options": [
+            {
+              "en": "United States",
+              "id": "Amerika Serikat"
+            },
+            {
+              "en": "United Kingdom",
+              "id": "Inggris"
+            },
+            {
+              "en": "India",
+              "id": "India"
+            },
+            {
+              "en": "Indonesia",
+              "id": "Indonesia"
+            },
+            {
+              "en": "South Korea",
+              "id": "Korea Selatan"
+            }
+          ],
+          "question": "かんこく"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "dd0da0c0-f8b6-4c24-a5a4-bac2e47a182a",
+    "key": "かんこく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "かんこく",
+          "question": "かんこく"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "28c79651-2df9-4ab8-9b71-dbb1f3c0ec0a",
+    "key": "かんこく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "South Korea",
+            "id": "Korea Selatan"
+          },
+          "options": [
+            {
+              "en": "United States",
+              "id": "Amerika Serikat"
+            },
+            {
+              "en": "United Kingdom",
+              "id": "Inggris"
+            },
+            {
+              "en": "India",
+              "id": "India"
+            },
+            {
+              "en": "Indonesia",
+              "id": "Indonesia"
+            },
+            {
+              "en": "South Korea",
+              "id": "Korea Selatan"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "South Korea",
+                "id": "Korea Selatan"
+              },
+              "value": "かんこく",
+              "alternative": {
+                "katakana": "かんこく"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "cc53e92f-d373-49bc-aebd-3ea6e2f934bc",
+    "key": "かんこく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "Indonesia",
+            "id": "Indonesia"
+          },
+          "options": [
+            {
+              "en": "United States",
+              "id": "Amerika Serikat"
+            },
+            {
+              "en": "United Kingdom",
+              "id": "Inggris"
+            },
+            {
+              "en": "India",
+              "id": "India"
+            },
+            {
+              "en": "Indonesia",
+              "id": "Indonesia"
+            },
+            {
+              "en": "South Korea",
+              "id": "Korea Selatan"
+            }
+          ],
+          "question": "インドネシア"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "ac4b9c46-743b-49fa-a825-382d31b36f3b",
+    "key": "インドネシア"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "かんこく",
+          "options": [
+            "アメリカ",
+            "イギリス",
+            "インド",
+            "インドネシア",
+            "かんこく"
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "South Korea",
+                "id": "Korea Selatan"
+              },
+              "value": "かんこく",
+              "alternative": {
+                "katakana": "かんこく"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "b87f6933-adc2-41a1-9094-cfc3916f6cb9",
+    "key": "かんこく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "インドネシア",
+          "options": [
+            "アメリカ",
+            "イギリス",
+            "インド",
+            "インドネシア",
+            "かんこく"
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "Indonesia",
+                "id": "Indonesia"
+              },
+              "value": "インドネシア",
+              "alternative": {
+                "katakana": "インドネシア"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "3211cba6-1d09-4fbd-8d89-57dc47361b0d",
+    "key": "インドネシア"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "かんこく",
+          "question": [
+            {
+              "mean": {
+                "en": "South Korea",
+                "id": "Korea Selatan"
+              },
+              "value": "かんこく",
+              "alternative": {
+                "katakana": "かんこく"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "2157bbdc-02a1-42d6-91ff-a8deb1ccab59",
+    "key": "かんこく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "タイ",
+          "question": "タイ"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "b04925a5-8dad-4a37-b024-370084725222",
+    "key": "タイ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "ちゅうごく",
+          "question": [
+            {
+              "mean": {
+                "en": "China",
+                "id": "Cina"
+              },
+              "value": "ちゅうごく",
+              "alternative": {
+                "kanji": "中国",
+                "hiragana": "ちゅうごく"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "f4cf7ce5-d784-4dba-af84-a82afa7479df",
+    "key": "ちゅうごく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "Germany",
+            "id": "Jerman"
+          },
+          "options": [
+            {
+              "en": "Thailand",
+              "id": "Thailand"
+            },
+            {
+              "en": "China",
+              "id": "Cina"
+            },
+            {
+              "en": "Germany",
+              "id": "Jerman"
+            },
+            {
+              "en": "Japan",
+              "id": "Jepang"
+            },
+            {
+              "en": "Brazil",
+              "id": "Brasil"
+            }
+          ],
+          "question": "ドイツ"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "93259f82-1ade-48a8-bd6c-e2fbc9d9cc06",
+    "key": "ドイツ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "Brazil",
+            "id": "Brasil"
+          },
+          "options": [
+            {
+              "en": "Thailand",
+              "id": "Thailand"
+            },
+            {
+              "en": "China",
+              "id": "Cina"
+            },
+            {
+              "en": "Germany",
+              "id": "Jerman"
+            },
+            {
+              "en": "Japan",
+              "id": "Jepang"
+            },
+            {
+              "en": "Brazil",
+              "id": "Brasil"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "Brazil",
+                "id": "Brasil"
+              },
+              "value": "ブラジル",
+              "alternative": {
+                "katakana": "ブラジル"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "8bb179dd-8a71-4bcb-a72d-6287334a447a",
+    "key": "ブラジル"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "タイ",
+          "options": ["タイ", "ちゅうごく", "ドイツ", "にほん", "ブラジル"],
+          "question": [
+            {
+              "mean": {
+                "en": "Thailand",
+                "id": "Thailand"
+              },
+              "value": "タイ",
+              "alternative": {
+                "katakana": "タイ"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "9c581d03-6e7f-44ce-aa15-d07eb4be68f5",
+    "key": "タイ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "ちゅうごく",
+          "question": "ちゅうごく"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "1d086b20-1f2d-413d-abc3-842feee698c5",
+    "key": "ちゅうごく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "ドイツ",
+          "question": [
+            {
+              "mean": {
+                "en": "Germany",
+                "id": "Jerman"
+              },
+              "value": "ドイツ",
+              "alternative": {
+                "katakana": "ドイツ"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "f90a719e-e631-49f5-b1c6-6d96f126842a",
+    "key": "ドイツ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "ブラジル",
+          "options": ["タイ", "ちゅうごく", "ドイツ", "にほん", "ブラジル"],
+          "question": [
+            {
+              "mean": {
+                "en": "Brazil",
+                "id": "Brasil"
+              },
+              "value": "ブラジル",
+              "alternative": {
+                "katakana": "ブラジル"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "8202d934-ca66-4927-96af-9638262a52b7",
+    "key": "ブラジル"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "タイ",
+          "question": [
+            {
+              "mean": {
+                "en": "Thailand",
+                "id": "Thailand"
+              },
+              "value": "タイ",
+              "alternative": {
+                "katakana": "タイ"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "2ab0367a-3dc6-4b9d-821e-da17613e687f",
+    "key": "タイ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "ちゅうごく",
+          "options": ["タイ", "ちゅうごく", "ドイツ", "にほん", "ブラジル"],
+          "question": [
+            {
+              "mean": {
+                "en": "China",
+                "id": "Cina"
+              },
+              "value": "ちゅうごく",
+              "alternative": {
+                "kanji": "中国",
+                "hiragana": "ちゅうごく"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "ebdbc9cb-e5a1-4052-8083-508c89e9aa56",
+    "key": "ちゅうごく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "ドイツ",
+          "question": "ドイツ"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "7cf86877-5bc1-4266-88c5-8c0c52c35c50",
+    "key": "ドイツ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "ブラジル",
+          "options": ["タイ", "ちゅうごく", "ドイツ", "にほん", "ブラジル"],
+          "question": [
+            {
+              "mean": {
+                "en": "Brazil",
+                "id": "Brasil"
+              },
+              "value": "ブラジル",
+              "alternative": {
+                "katakana": "ブラジル"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "52a09375-0336-4cda-8f1f-7edcc07baad1",
+    "key": "ブラジル"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "Thailand",
+            "id": "Thailand"
+          },
+          "options": [
+            {
+              "en": "Thailand",
+              "id": "Thailand"
+            },
+            {
+              "en": "China",
+              "id": "Cina"
+            },
+            {
+              "en": "Germany",
+              "id": "Jerman"
+            },
+            {
+              "en": "Japan",
+              "id": "Jepang"
+            },
+            {
+              "en": "Brazil",
+              "id": "Brasil"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "Thailand",
+                "id": "Thailand"
+              },
+              "value": "タイ",
+              "alternative": {
+                "katakana": "タイ"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "3666e35a-e2d0-41cd-aa1a-b6a39c67730a",
+    "key": "タイ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "タイ",
+          "options": ["タイ", "ちゅうごく", "ドイツ", "にほん", "ブラジル"],
+          "question": [
+            {
+              "mean": {
+                "en": "Thailand",
+                "id": "Thailand"
+              },
+              "value": "タイ",
+              "alternative": {
+                "katakana": "タイ"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "2094d715-6380-46c6-832a-19f571d8cede",
+    "key": "タイ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "China",
+            "id": "Cina"
+          },
+          "options": [
+            {
+              "en": "Thailand",
+              "id": "Thailand"
+            },
+            {
+              "en": "China",
+              "id": "Cina"
+            },
+            {
+              "en": "Germany",
+              "id": "Jerman"
+            },
+            {
+              "en": "Japan",
+              "id": "Jepang"
+            },
+            {
+              "en": "Brazil",
+              "id": "Brasil"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "China",
+                "id": "Cina"
+              },
+              "value": "ちゅうごく",
+              "alternative": {
+                "kanji": "中国",
+                "hiragana": "ちゅうごく"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "2a385aa3-c1a8-4771-8ae9-9aaedbf25e0a",
+    "key": "ちゅうごく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "China",
+            "id": "Cina"
+          },
+          "options": [
+            {
+              "en": "Thailand",
+              "id": "Thailand"
+            },
+            {
+              "en": "China",
+              "id": "Cina"
+            },
+            {
+              "en": "Germany",
+              "id": "Jerman"
+            },
+            {
+              "en": "Japan",
+              "id": "Jepang"
+            },
+            {
+              "en": "Brazil",
+              "id": "Brasil"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "China",
+                "id": "Cina"
+              },
+              "value": "ちゅうごく",
+              "alternative": {
+                "kanji": "中国",
+                "hiragana": "ちゅうごく"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "e6650a2f-0f7c-4c36-a52d-69fad74f544a",
+    "key": "ちゅうごく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "ドイツ",
+          "options": ["タイ", "ちゅうごく", "ドイツ", "にほん", "ブラジル"],
+          "question": [
+            {
+              "mean": {
+                "en": "Germany",
+                "id": "Jerman"
+              },
+              "value": "ドイツ",
+              "alternative": {
+                "katakana": "ドイツ"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "0db512e2-67de-4638-a00e-14ea98f834e4",
+    "key": "ドイツ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "Germany",
+            "id": "Jerman"
+          },
+          "options": [
+            {
+              "en": "Thailand",
+              "id": "Thailand"
+            },
+            {
+              "en": "China",
+              "id": "Cina"
+            },
+            {
+              "en": "Germany",
+              "id": "Jerman"
+            },
+            {
+              "en": "Japan",
+              "id": "Jepang"
+            },
+            {
+              "en": "Brazil",
+              "id": "Brasil"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "Germany",
+                "id": "Jerman"
+              },
+              "value": "ドイツ",
+              "alternative": {
+                "katakana": "ドイツ"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "69742fef-6370-49a5-8416-dcbaef452262",
+    "key": "ドイツ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "Brazil",
+            "id": "Brasil"
+          },
+          "options": [
+            {
+              "en": "Thailand",
+              "id": "Thailand"
+            },
+            {
+              "en": "China",
+              "id": "Cina"
+            },
+            {
+              "en": "Germany",
+              "id": "Jerman"
+            },
+            {
+              "en": "Japan",
+              "id": "Jepang"
+            },
+            {
+              "en": "Brazil",
+              "id": "Brasil"
+            }
+          ],
+          "question": "ブラジル"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "9b0468a9-9d33-40e6-82b7-c114eec09f98",
+    "key": "ブラジル"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "ブラジル",
+          "question": "ブラジル"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "17777cd8-5aa4-404b-8057-49dca9c1c993",
+    "key": "ブラジル"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "Thailand",
+            "id": "Thailand"
+          },
+          "options": [
+            {
+              "en": "Thailand",
+              "id": "Thailand"
+            },
+            {
+              "en": "China",
+              "id": "Cina"
+            },
+            {
+              "en": "Germany",
+              "id": "Jerman"
+            },
+            {
+              "en": "Japan",
+              "id": "Jepang"
+            },
+            {
+              "en": "Brazil",
+              "id": "Brasil"
+            }
+          ],
+          "question": "タイ"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "5cdbebec-c9ab-4886-9a18-b37ceda740e6",
+    "key": "タイ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "ちゅうごく",
+          "options": ["タイ", "ちゅうごく", "ドイツ", "にほん", "ブラジル"],
+          "question": [
+            {
+              "mean": {
+                "en": "China",
+                "id": "Cina"
+              },
+              "value": "ちゅうごく",
+              "alternative": {
+                "kanji": "中国",
+                "hiragana": "ちゅうごく"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "dc3d904d-f774-4711-8c78-76fbd05eda72",
+    "key": "ちゅうごく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "Germany",
+            "id": "Jerman"
+          },
+          "options": [
+            {
+              "en": "Thailand",
+              "id": "Thailand"
+            },
+            {
+              "en": "China",
+              "id": "Cina"
+            },
+            {
+              "en": "Germany",
+              "id": "Jerman"
+            },
+            {
+              "en": "Japan",
+              "id": "Jepang"
+            },
+            {
+              "en": "Brazil",
+              "id": "Brasil"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "Germany",
+                "id": "Jerman"
+              },
+              "value": "ドイツ",
+              "alternative": {
+                "katakana": "ドイツ"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "ded79c91-a8b6-4de7-8621-a817155ff76a",
+    "key": "ドイツ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "ブラジル",
+          "question": [
+            {
+              "mean": {
+                "en": "Brazil",
+                "id": "Brasil"
+              },
+              "value": "ブラジル",
+              "alternative": {
+                "katakana": "ブラジル"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "f6565f8b-343e-46a6-87a7-b7443ff9a5c0",
+    "key": "ブラジル"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "Thailand",
+            "id": "Thailand"
+          },
+          "options": [
+            {
+              "en": "Thailand",
+              "id": "Thailand"
+            },
+            {
+              "en": "China",
+              "id": "Cina"
+            },
+            {
+              "en": "Germany",
+              "id": "Jerman"
+            },
+            {
+              "en": "Japan",
+              "id": "Jepang"
+            },
+            {
+              "en": "Brazil",
+              "id": "Brasil"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "Thailand",
+                "id": "Thailand"
+              },
+              "value": "タイ",
+              "alternative": {
+                "katakana": "タイ"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "810c7507-e5f8-4c34-a806-dd861fad3a83",
+    "key": "タイ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "China",
+            "id": "Cina"
+          },
+          "options": [
+            {
+              "en": "Thailand",
+              "id": "Thailand"
+            },
+            {
+              "en": "China",
+              "id": "Cina"
+            },
+            {
+              "en": "Germany",
+              "id": "Jerman"
+            },
+            {
+              "en": "Japan",
+              "id": "Jepang"
+            },
+            {
+              "en": "Brazil",
+              "id": "Brasil"
+            }
+          ],
+          "question": "ちゅうごく"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "c4eac9e6-4cb3-4f7a-95dc-5988749958ad",
+    "key": "ちゅうごく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "ドイツ",
+          "options": ["タイ", "ちゅうごく", "ドイツ", "にほん", "ブラジル"],
+          "question": [
+            {
+              "mean": {
+                "en": "Germany",
+                "id": "Jerman"
+              },
+              "value": "ドイツ",
+              "alternative": {
+                "katakana": "ドイツ"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "2ca99a0a-0694-4e53-b923-5ad5e872ca94",
+    "key": "ドイツ"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "Brazil",
+            "id": "Brasil"
+          },
+          "options": [
+            {
+              "en": "Thailand",
+              "id": "Thailand"
+            },
+            {
+              "en": "China",
+              "id": "Cina"
+            },
+            {
+              "en": "Germany",
+              "id": "Jerman"
+            },
+            {
+              "en": "Japan",
+              "id": "Jepang"
+            },
+            {
+              "en": "Brazil",
+              "id": "Brasil"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "Brazil",
+                "id": "Brasil"
+              },
+              "value": "ブラジル",
+              "alternative": {
+                "katakana": "ブラジル"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "f5e06ba8-9984-4d07-a6bf-5dcee323406b",
+    "key": "ブラジル"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "Japan",
+            "id": "Jepang"
+          },
+          "options": [
+            {
+              "en": "Thailand",
+              "id": "Thailand"
+            },
+            {
+              "en": "China",
+              "id": "Cina"
+            },
+            {
+              "en": "Germany",
+              "id": "Jerman"
+            },
+            {
+              "en": "Japan",
+              "id": "Jepang"
+            },
+            {
+              "en": "Brazil",
+              "id": "Brasil"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "Japan",
+                "id": "Jepang"
+              },
+              "value": "にほん",
+              "alternative": {
+                "kanji": "日本",
+                "hiragana": "にほん"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SENTENCE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "7373c15c-c425-4a34-a6c5-b6e1c0293249",
+    "key": "にほん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "にほん",
+          "options": ["タイ", "ちゅうごく", "ドイツ", "にほん", "ブラジル"],
+          "question": [
+            {
+              "mean": {
+                "en": "Japan",
+                "id": "Jepang"
+              },
+              "value": "にほん",
+              "alternative": {
+                "kanji": "日本",
+                "hiragana": "にほん"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "37c84387-da08-4b03-afa1-aa4e0a70010b",
+    "key": "にほん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "にほん",
+          "question": "にほん"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "d69b8345-c490-4b21-8d0f-fcd56a120063",
+    "key": "にほん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "Japan",
+            "id": "Jepang"
+          },
+          "options": [
+            {
+              "en": "Thailand",
+              "id": "Thailand"
+            },
+            {
+              "en": "China",
+              "id": "Cina"
+            },
+            {
+              "en": "Germany",
+              "id": "Jerman"
+            },
+            {
+              "en": "Japan",
+              "id": "Jepang"
+            },
+            {
+              "en": "Brazil",
+              "id": "Brasil"
+            }
+          ],
+          "question": "にほん"
+        },
+        "type": "GUESS_THE_SOUND_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "ac1288b0-05ae-440f-92e2-9b3786a72c24",
+    "key": "にほん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "にほん",
+          "options": ["タイ", "ちゅうごく", "ドイツ", "にほん", "ブラジル"],
+          "question": [
+            {
+              "mean": {
+                "en": "Japan",
+                "id": "Jepang"
+              },
+              "value": "にほん",
+              "alternative": {
+                "kanji": "日本",
+                "hiragana": "にほん"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "f6ccb3cf-cfc8-4540-bcd0-feceb007e3b1",
+    "key": "にほん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "にほん",
+          "question": [
+            {
+              "mean": {
+                "en": "Japan",
+                "id": "Jepang"
+              },
+              "value": "にほん",
+              "alternative": {
+                "kanji": "日本",
+                "hiragana": "にほん"
+              }
+            }
+          ]
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "1f2266cc-0598-44a8-bc68-2a2dffff02c7",
+    "key": "にほん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": {
+            "en": "Japan",
+            "id": "Jepang"
+          },
+          "options": [
+            {
+              "en": "Thailand",
+              "id": "Thailand"
+            },
+            {
+              "en": "China",
+              "id": "Cina"
+            },
+            {
+              "en": "Germany",
+              "id": "Jerman"
+            },
+            {
+              "en": "Japan",
+              "id": "Jepang"
+            },
+            {
+              "en": "Brazil",
+              "id": "Brasil"
+            }
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "Japan",
+                "id": "Jepang"
+              },
+              "value": "にほん",
+              "alternative": {
+                "kanji": "日本",
+                "hiragana": "にほん"
+              }
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "2648451b-1246-455f-8ff7-16857e98af78",
+    "key": "にほん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "かいしゃいん",
+          "options": ["せんせい", "がくせい", "かいしゃいん", "いしゃ"],
+          "question": [
+            {
+              "mean": {
+                "en": "company employee",
+                "id": "karyawan perusahaan"
+              },
+              "value": "かいしゃいん",
+              "alternative": {
+                "kanji": "会社員",
+                "hiragana": "かいしゃいん"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "13aa836e-b16d-4d37-aad6-05f6e2b04934",
+    "key": "かいしゃいん"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
+          "answer": "いしゃ",
+          "question": "いしゃ"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "6a32d968-c0e8-4d80-ae96-3d509a29639c",
+    "key": "いしゃ"
   }
 ]

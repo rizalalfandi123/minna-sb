@@ -31,6 +31,7 @@ model letter_levels {
   letter_progress                   letter_progress[]
   letter_questions_to_letter_levels letter_questions_to_letter_levels[]
   letters_to_letter_levels          letters_to_letter_levels[]
+  unit_progress                     unit_progress[]
 }
 
 /// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
@@ -155,5 +156,15 @@ model unit_questions_to_unit_levels {
   unit_levels      unit_levels    @relation(fields: [unit_level_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
   unit_questions   unit_questions @relation(fields: [unit_question_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
 
-  @@id([unit_level_id, unit_question_id, with_hint])
+  @@id([unit_level_id, unit_question_id, number, with_hint])
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model unit_progress {
+  id            String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  created_at    DateTime      @default(now()) @db.Timestamptz(6)
+  updated_at    DateTime      @default(now()) @db.Timestamptz(6)
+  deleted       Boolean       @default(false)
+  unit_level_id String        @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  letter_levels letter_levels @relation(fields: [unit_level_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "unit_progress_letter_level_id_fkey")
 }
