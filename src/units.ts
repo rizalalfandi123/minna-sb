@@ -344,6 +344,37 @@ app.get("/block-questions", async (c) => {
   }
 });
 
+app.get("/level-questions", async (c) => {
+  try {
+    const res = await prisma.unit_levels.findMany({
+      include: {
+        unit_questions_to_unit_levels: {
+          select: {
+            unit_question_id: true,
+          },
+        },
+      },
+      orderBy:{
+        number: 'asc'
+      }
+    });
+
+    const levelWithCount = res.map(
+      ({ unit_questions_to_unit_levels, ...levelData }) => {
+        return {
+          ...levelData,
+          questionCount: unit_questions_to_unit_levels.length,
+        };
+      }
+    );
+
+    return c.json(levelWithCount);
+  } catch (error) {
+    console.log(error);
+    return c.json({ error });
+  }
+});
+
 app.post("/apply-unit-questions", async (c) => {
   try {
     const body = await c.req.json();
@@ -483,7 +514,7 @@ app.post("/apply-unit-questions", async (c) => {
 
     const allDataWithLevel = await Promise.all(
       allData.map(async (item, index) => {
-        const nextIndex = lastLevelNumber + index;
+        const nextIndex = lastLevelNumber + index + 1;
 
         let levelData = await prisma.unit_levels.findFirst({
           where: {
@@ -560,7 +591,7 @@ app.post("/delete-block-by-key", async (c) => {
       },
     });
 
-    return c.json({response, data});
+    return c.json({ response, data });
   } catch (error) {
     console.log("error", error);
 

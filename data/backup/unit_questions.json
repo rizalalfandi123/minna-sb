@@ -4062,6 +4062,39 @@
     "question": {
       "data": {
         "data": {
+          "answer": "かんこく",
+          "options": [
+            "アメリカ",
+            "イギリス",
+            "インド",
+            "インドネシア",
+            "かんこく"
+          ],
+          "question": [
+            {
+              "mean": {
+                "en": "South Korea",
+                "id": "Korea Selatan"
+              },
+              "value": "かんこく",
+              "alternative": {
+                "katakana": "かんこく"
+              }
+            }
+          ]
+        },
+        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
+      },
+      "category": "VOCABULARY"
+    },
+    "deleted": false,
+    "id": "b87f6933-adc2-41a1-9094-cfc3916f6cb9",
+    "key": "かんこく"
+  },
+  {
+    "question": {
+      "data": {
+        "data": {
           "answer": {
             "en": "United Kingdom",
             "id": "Inggris"
@@ -4653,39 +4686,6 @@
     "deleted": false,
     "id": "ac4b9c46-743b-49fa-a825-382d31b36f3b",
     "key": "インドネシア"
-  },
-  {
-    "question": {
-      "data": {
-        "data": {
-          "answer": "かんこく",
-          "options": [
-            "アメリカ",
-            "イギリス",
-            "インド",
-            "インドネシア",
-            "かんこく"
-          ],
-          "question": [
-            {
-              "mean": {
-                "en": "South Korea",
-                "id": "Korea Selatan"
-              },
-              "value": "かんこく",
-              "alternative": {
-                "katakana": "かんこく"
-              }
-            }
-          ]
-        },
-        "type": "GUESS_THE_SYMBOL_FROM_MEAN"
-      },
-      "category": "VOCABULARY"
-    },
-    "deleted": false,
-    "id": "b87f6933-adc2-41a1-9094-cfc3916f6cb9",
-    "key": "かんこく"
   },
   {
     "question": {
