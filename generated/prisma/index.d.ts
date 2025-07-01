@@ -74,15 +74,38 @@ export type units = $Result.DefaultSelection<Prisma.$unitsPayload>
  */
 export type unit_levels = $Result.DefaultSelection<Prisma.$unit_levelsPayload>
 /**
+ * Model unit_question_blocks
+ * This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+ */
+export type unit_question_blocks = $Result.DefaultSelection<Prisma.$unit_question_blocksPayload>
+/**
  * Model unit_questions_to_unit_levels
  * This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
  */
 export type unit_questions_to_unit_levels = $Result.DefaultSelection<Prisma.$unit_questions_to_unit_levelsPayload>
 /**
  * Model unit_progress
+ * This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
  * This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
  */
 export type unit_progress = $Result.DefaultSelection<Prisma.$unit_progressPayload>
+
+/**
+ * Enums
+ */
+export namespace $Enums {
+  export const unit_block_type: {
+  vocabulary: 'vocabulary',
+  grammar: 'grammar'
+};
+
+export type unit_block_type = (typeof unit_block_type)[keyof typeof unit_block_type]
+
+}
+
+export type unit_block_type = $Enums.unit_block_type
+
+export const unit_block_type: typeof $Enums.unit_block_type
 
 /**
  * ##  Prisma Client ʲˢ
@@ -328,6 +351,16 @@ export class PrismaClient<
     * ```
     */
   get unit_levels(): Prisma.unit_levelsDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.unit_question_blocks`: Exposes CRUD operations for the **unit_question_blocks** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more Unit_question_blocks
+    * const unit_question_blocks = await prisma.unit_question_blocks.findMany()
+    * ```
+    */
+  get unit_question_blocks(): Prisma.unit_question_blocksDelegate<ExtArgs, ClientOptions>;
 
   /**
    * `prisma.unit_questions_to_unit_levels`: Exposes CRUD operations for the **unit_questions_to_unit_levels** model.
@@ -800,6 +833,7 @@ export namespace Prisma {
     unit_questions: 'unit_questions',
     units: 'units',
     unit_levels: 'unit_levels',
+    unit_question_blocks: 'unit_question_blocks',
     unit_questions_to_unit_levels: 'unit_questions_to_unit_levels',
     unit_progress: 'unit_progress'
   };
@@ -820,7 +854,7 @@ export namespace Prisma {
       omit: GlobalOmitOptions
     }
     meta: {
-      modelProps: "letter_blocks" | "letter_levels" | "letter_positions" | "letter_progress" | "letter_questions" | "letter_questions_to_letter_levels" | "letter_types" | "letters" | "letters_to_letter_levels" | "unit_questions" | "units" | "unit_levels" | "unit_questions_to_unit_levels" | "unit_progress"
+      modelProps: "letter_blocks" | "letter_levels" | "letter_positions" | "letter_progress" | "letter_questions" | "letter_questions_to_letter_levels" | "letter_types" | "letters" | "letters_to_letter_levels" | "unit_questions" | "units" | "unit_levels" | "unit_question_blocks" | "unit_questions_to_unit_levels" | "unit_progress"
       txIsolationLevel: Prisma.TransactionIsolationLevel
     }
     model: {
@@ -1712,6 +1746,80 @@ export namespace Prisma {
           }
         }
       }
+      unit_question_blocks: {
+        payload: Prisma.$unit_question_blocksPayload<ExtArgs>
+        fields: Prisma.unit_question_blocksFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.unit_question_blocksFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_question_blocksPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.unit_question_blocksFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_question_blocksPayload>
+          }
+          findFirst: {
+            args: Prisma.unit_question_blocksFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_question_blocksPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.unit_question_blocksFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_question_blocksPayload>
+          }
+          findMany: {
+            args: Prisma.unit_question_blocksFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_question_blocksPayload>[]
+          }
+          create: {
+            args: Prisma.unit_question_blocksCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_question_blocksPayload>
+          }
+          createMany: {
+            args: Prisma.unit_question_blocksCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.unit_question_blocksCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_question_blocksPayload>[]
+          }
+          delete: {
+            args: Prisma.unit_question_blocksDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_question_blocksPayload>
+          }
+          update: {
+            args: Prisma.unit_question_blocksUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_question_blocksPayload>
+          }
+          deleteMany: {
+            args: Prisma.unit_question_blocksDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.unit_question_blocksUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.unit_question_blocksUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_question_blocksPayload>[]
+          }
+          upsert: {
+            args: Prisma.unit_question_blocksUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$unit_question_blocksPayload>
+          }
+          aggregate: {
+            args: Prisma.Unit_question_blocksAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateUnit_question_blocks>
+          }
+          groupBy: {
+            args: Prisma.unit_question_blocksGroupByArgs<ExtArgs>
+            result: $Utils.Optional<Unit_question_blocksGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.unit_question_blocksCountArgs<ExtArgs>
+            result: $Utils.Optional<Unit_question_blocksCountAggregateOutputType> | number
+          }
+        }
+      }
       unit_questions_to_unit_levels: {
         payload: Prisma.$unit_questions_to_unit_levelsPayload<ExtArgs>
         fields: Prisma.unit_questions_to_unit_levelsFieldRefs
@@ -1956,6 +2064,7 @@ export namespace Prisma {
     unit_questions?: unit_questionsOmit
     units?: unitsOmit
     unit_levels?: unit_levelsOmit
+    unit_question_blocks?: unit_question_blocksOmit
     unit_questions_to_unit_levels?: unit_questions_to_unit_levelsOmit
     unit_progress?: unit_progressOmit
   }
@@ -2305,11 +2414,11 @@ export namespace Prisma {
    */
 
   export type UnitsCountOutputType = {
-    unit_levels: number
+    unit_question_blocks: number
   }
 
   export type UnitsCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    unit_levels?: boolean | UnitsCountOutputTypeCountUnit_levelsArgs
+    unit_question_blocks?: boolean | UnitsCountOutputTypeCountUnit_question_blocksArgs
   }
 
   // Custom InputTypes
@@ -2326,8 +2435,8 @@ export namespace Prisma {
   /**
    * UnitsCountOutputType without action
    */
-  export type UnitsCountOutputTypeCountUnit_levelsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    where?: unit_levelsWhereInput
+  export type UnitsCountOutputTypeCountUnit_question_blocksArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: unit_question_blocksWhereInput
   }
 
 
@@ -2336,10 +2445,12 @@ export namespace Prisma {
    */
 
   export type Unit_levelsCountOutputType = {
+    unit_progress: number
     unit_questions_to_unit_levels: number
   }
 
   export type Unit_levelsCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    unit_progress?: boolean | Unit_levelsCountOutputTypeCountUnit_progressArgs
     unit_questions_to_unit_levels?: boolean | Unit_levelsCountOutputTypeCountUnit_questions_to_unit_levelsArgs
   }
 
@@ -2357,8 +2468,46 @@ export namespace Prisma {
   /**
    * Unit_levelsCountOutputType without action
    */
+  export type Unit_levelsCountOutputTypeCountUnit_progressArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: unit_progressWhereInput
+  }
+
+  /**
+   * Unit_levelsCountOutputType without action
+   */
   export type Unit_levelsCountOutputTypeCountUnit_questions_to_unit_levelsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: unit_questions_to_unit_levelsWhereInput
+  }
+
+
+  /**
+   * Count Type Unit_question_blocksCountOutputType
+   */
+
+  export type Unit_question_blocksCountOutputType = {
+    unit_levels: number
+  }
+
+  export type Unit_question_blocksCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    unit_levels?: boolean | Unit_question_blocksCountOutputTypeCountUnit_levelsArgs
+  }
+
+  // Custom InputTypes
+  /**
+   * Unit_question_blocksCountOutputType without action
+   */
+  export type Unit_question_blocksCountOutputTypeDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Unit_question_blocksCountOutputType
+     */
+    select?: Unit_question_blocksCountOutputTypeSelect<ExtArgs> | null
+  }
+
+  /**
+   * Unit_question_blocksCountOutputType without action
+   */
+  export type Unit_question_blocksCountOutputTypeCountUnit_levelsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: unit_levelsWhereInput
   }
 
 
@@ -12409,7 +12558,7 @@ export namespace Prisma {
     question: JsonValue
     deleted: boolean
     id: string
-    key: string | null
+    key: string
     _count: Unit_questionsCountAggregateOutputType | null
     _min: Unit_questionsMinAggregateOutputType | null
     _max: Unit_questionsMaxAggregateOutputType | null
@@ -12486,7 +12635,7 @@ export namespace Prisma {
       question: Prisma.JsonValue
       deleted: boolean
       id: string
-      key: string | null
+      key: string
     }, ExtArgs["result"]["unit_questions"]>
     composites: {}
   }
@@ -13545,7 +13694,7 @@ export namespace Prisma {
     updated_at?: boolean
     deleted?: boolean
     number?: boolean
-    unit_levels?: boolean | units$unit_levelsArgs<ExtArgs>
+    unit_question_blocks?: boolean | units$unit_question_blocksArgs<ExtArgs>
     _count?: boolean | UnitsCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["units"]>
 
@@ -13575,7 +13724,7 @@ export namespace Prisma {
 
   export type unitsOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "created_at" | "updated_at" | "deleted" | "number", ExtArgs["result"]["units"]>
   export type unitsInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    unit_levels?: boolean | units$unit_levelsArgs<ExtArgs>
+    unit_question_blocks?: boolean | units$unit_question_blocksArgs<ExtArgs>
     _count?: boolean | UnitsCountOutputTypeDefaultArgs<ExtArgs>
   }
   export type unitsIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
@@ -13584,7 +13733,7 @@ export namespace Prisma {
   export type $unitsPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "units"
     objects: {
-      unit_levels: Prisma.$unit_levelsPayload<ExtArgs>[]
+      unit_question_blocks: Prisma.$unit_question_blocksPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: string
@@ -13986,7 +14135,7 @@ export namespace Prisma {
    */
   export interface Prisma__unitsClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
-    unit_levels<T extends units$unit_levelsArgs<ExtArgs> = {}>(args?: Subset<T, units$unit_levelsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$unit_levelsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    unit_question_blocks<T extends units$unit_question_blocksArgs<ExtArgs> = {}>(args?: Subset<T, units$unit_question_blocksArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$unit_question_blocksPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -14239,7 +14388,7 @@ export namespace Prisma {
     /**
      * The data needed to create a units.
      */
-    data: XOR<unitsCreateInput, unitsUncheckedCreateInput>
+    data?: XOR<unitsCreateInput, unitsUncheckedCreateInput>
   }
 
   /**
@@ -14409,27 +14558,27 @@ export namespace Prisma {
   }
 
   /**
-   * units.unit_levels
+   * units.unit_question_blocks
    */
-  export type units$unit_levelsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type units$unit_question_blocksArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the unit_levels
+     * Select specific fields to fetch from the unit_question_blocks
      */
-    select?: unit_levelsSelect<ExtArgs> | null
+    select?: unit_question_blocksSelect<ExtArgs> | null
     /**
-     * Omit specific fields from the unit_levels
+     * Omit specific fields from the unit_question_blocks
      */
-    omit?: unit_levelsOmit<ExtArgs> | null
+    omit?: unit_question_blocksOmit<ExtArgs> | null
     /**
      * Choose, which related nodes to fetch as well
      */
-    include?: unit_levelsInclude<ExtArgs> | null
-    where?: unit_levelsWhereInput
-    orderBy?: unit_levelsOrderByWithRelationInput | unit_levelsOrderByWithRelationInput[]
-    cursor?: unit_levelsWhereUniqueInput
+    include?: unit_question_blocksInclude<ExtArgs> | null
+    where?: unit_question_blocksWhereInput
+    orderBy?: unit_question_blocksOrderByWithRelationInput | unit_question_blocksOrderByWithRelationInput[]
+    cursor?: unit_question_blocksWhereUniqueInput
     take?: number
     skip?: number
-    distinct?: Unit_levelsScalarFieldEnum | Unit_levelsScalarFieldEnum[]
+    distinct?: Unit_question_blocksScalarFieldEnum | Unit_question_blocksScalarFieldEnum[]
   }
 
   /**
@@ -14472,30 +14621,30 @@ export namespace Prisma {
   }
 
   export type Unit_levelsMinAggregateOutputType = {
+    id: string | null
     created_at: Date | null
     updated_at: Date | null
     deleted: boolean | null
     number: number | null
-    unit_id: string | null
-    id: string | null
+    unit_question_block_id: string | null
   }
 
   export type Unit_levelsMaxAggregateOutputType = {
+    id: string | null
     created_at: Date | null
     updated_at: Date | null
     deleted: boolean | null
     number: number | null
-    unit_id: string | null
-    id: string | null
+    unit_question_block_id: string | null
   }
 
   export type Unit_levelsCountAggregateOutputType = {
+    id: number
     created_at: number
     updated_at: number
     deleted: number
     number: number
-    unit_id: number
-    id: number
+    unit_question_block_id: number
     _all: number
   }
 
@@ -14509,30 +14658,30 @@ export namespace Prisma {
   }
 
   export type Unit_levelsMinAggregateInputType = {
+    id?: true
     created_at?: true
     updated_at?: true
     deleted?: true
     number?: true
-    unit_id?: true
-    id?: true
+    unit_question_block_id?: true
   }
 
   export type Unit_levelsMaxAggregateInputType = {
+    id?: true
     created_at?: true
     updated_at?: true
     deleted?: true
     number?: true
-    unit_id?: true
-    id?: true
+    unit_question_block_id?: true
   }
 
   export type Unit_levelsCountAggregateInputType = {
+    id?: true
     created_at?: true
     updated_at?: true
     deleted?: true
     number?: true
-    unit_id?: true
-    id?: true
+    unit_question_block_id?: true
     _all?: true
   }
 
@@ -14623,12 +14772,12 @@ export namespace Prisma {
   }
 
   export type Unit_levelsGroupByOutputType = {
+    id: string
     created_at: Date
     updated_at: Date
     deleted: boolean
     number: number
-    unit_id: string
-    id: string
+    unit_question_block_id: string
     _count: Unit_levelsCountAggregateOutputType | null
     _avg: Unit_levelsAvgAggregateOutputType | null
     _sum: Unit_levelsSumAggregateOutputType | null
@@ -14651,72 +14800,75 @@ export namespace Prisma {
 
 
   export type unit_levelsSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
     created_at?: boolean
     updated_at?: boolean
     deleted?: boolean
     number?: boolean
-    unit_id?: boolean
-    id?: boolean
-    units?: boolean | unitsDefaultArgs<ExtArgs>
+    unit_question_block_id?: boolean
+    unit_question_blocks?: boolean | unit_question_blocksDefaultArgs<ExtArgs>
+    unit_progress?: boolean | unit_levels$unit_progressArgs<ExtArgs>
     unit_questions_to_unit_levels?: boolean | unit_levels$unit_questions_to_unit_levelsArgs<ExtArgs>
     _count?: boolean | Unit_levelsCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["unit_levels"]>
 
   export type unit_levelsSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
     created_at?: boolean
     updated_at?: boolean
     deleted?: boolean
     number?: boolean
-    unit_id?: boolean
-    id?: boolean
-    units?: boolean | unitsDefaultArgs<ExtArgs>
+    unit_question_block_id?: boolean
+    unit_question_blocks?: boolean | unit_question_blocksDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["unit_levels"]>
 
   export type unit_levelsSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
     created_at?: boolean
     updated_at?: boolean
     deleted?: boolean
     number?: boolean
-    unit_id?: boolean
-    id?: boolean
-    units?: boolean | unitsDefaultArgs<ExtArgs>
+    unit_question_block_id?: boolean
+    unit_question_blocks?: boolean | unit_question_blocksDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["unit_levels"]>
 
   export type unit_levelsSelectScalar = {
+    id?: boolean
     created_at?: boolean
     updated_at?: boolean
     deleted?: boolean
     number?: boolean
-    unit_id?: boolean
-    id?: boolean
+    unit_question_block_id?: boolean
   }
 
-  export type unit_levelsOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"created_at" | "updated_at" | "deleted" | "number" | "unit_id" | "id", ExtArgs["result"]["unit_levels"]>
+  export type unit_levelsOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "created_at" | "updated_at" | "deleted" | "number" | "unit_question_block_id", ExtArgs["result"]["unit_levels"]>
   export type unit_levelsInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    units?: boolean | unitsDefaultArgs<ExtArgs>
+    unit_question_blocks?: boolean | unit_question_blocksDefaultArgs<ExtArgs>
+    unit_progress?: boolean | unit_levels$unit_progressArgs<ExtArgs>
     unit_questions_to_unit_levels?: boolean | unit_levels$unit_questions_to_unit_levelsArgs<ExtArgs>
     _count?: boolean | Unit_levelsCountOutputTypeDefaultArgs<ExtArgs>
   }
   export type unit_levelsIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    units?: boolean | unitsDefaultArgs<ExtArgs>
+    unit_question_blocks?: boolean | unit_question_blocksDefaultArgs<ExtArgs>
   }
   export type unit_levelsIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    units?: boolean | unitsDefaultArgs<ExtArgs>
+    unit_question_blocks?: boolean | unit_question_blocksDefaultArgs<ExtArgs>
   }
 
   export type $unit_levelsPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "unit_levels"
     objects: {
-      units: Prisma.$unitsPayload<ExtArgs>
+      unit_question_blocks: Prisma.$unit_question_blocksPayload<ExtArgs>
+      unit_progress: Prisma.$unit_progressPayload<ExtArgs>[]
       unit_questions_to_unit_levels: Prisma.$unit_questions_to_unit_levelsPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
+      id: string
       created_at: Date
       updated_at: Date
       deleted: boolean
       number: number
-      unit_id: string
-      id: string
+      unit_question_block_id: string
     }, ExtArgs["result"]["unit_levels"]>
     composites: {}
   }
@@ -14800,8 +14952,8 @@ export namespace Prisma {
      * // Get first 10 Unit_levels
      * const unit_levels = await prisma.unit_levels.findMany({ take: 10 })
      * 
-     * // Only select the `created_at`
-     * const unit_levelsWithCreated_atOnly = await prisma.unit_levels.findMany({ select: { created_at: true } })
+     * // Only select the `id`
+     * const unit_levelsWithIdOnly = await prisma.unit_levels.findMany({ select: { id: true } })
      * 
      */
     findMany<T extends unit_levelsFindManyArgs>(args?: SelectSubset<T, unit_levelsFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$unit_levelsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
@@ -14845,9 +14997,9 @@ export namespace Prisma {
      *   ]
      * })
      * 
-     * // Create many Unit_levels and only return the `created_at`
-     * const unit_levelsWithCreated_atOnly = await prisma.unit_levels.createManyAndReturn({
-     *   select: { created_at: true },
+     * // Create many Unit_levels and only return the `id`
+     * const unit_levelsWithIdOnly = await prisma.unit_levels.createManyAndReturn({
+     *   select: { id: true },
      *   data: [
      *     // ... provide data here
      *   ]
@@ -14936,9 +15088,9 @@ export namespace Prisma {
      *   ]
      * })
      * 
-     * // Update zero or more Unit_levels and only return the `created_at`
-     * const unit_levelsWithCreated_atOnly = await prisma.unit_levels.updateManyAndReturn({
-     *   select: { created_at: true },
+     * // Update zero or more Unit_levels and only return the `id`
+     * const unit_levelsWithIdOnly = await prisma.unit_levels.updateManyAndReturn({
+     *   select: { id: true },
      *   where: {
      *     // ... provide filter here
      *   },
@@ -15111,7 +15263,8 @@ export namespace Prisma {
    */
   export interface Prisma__unit_levelsClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
-    units<T extends unitsDefaultArgs<ExtArgs> = {}>(args?: Subset<T, unitsDefaultArgs<ExtArgs>>): Prisma__unitsClient<$Result.GetResult<Prisma.$unitsPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    unit_question_blocks<T extends unit_question_blocksDefaultArgs<ExtArgs> = {}>(args?: Subset<T, unit_question_blocksDefaultArgs<ExtArgs>>): Prisma__unit_question_blocksClient<$Result.GetResult<Prisma.$unit_question_blocksPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    unit_progress<T extends unit_levels$unit_progressArgs<ExtArgs> = {}>(args?: Subset<T, unit_levels$unit_progressArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$unit_progressPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     unit_questions_to_unit_levels<T extends unit_levels$unit_questions_to_unit_levelsArgs<ExtArgs> = {}>(args?: Subset<T, unit_levels$unit_questions_to_unit_levelsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$unit_questions_to_unit_levelsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
@@ -15142,12 +15295,12 @@ export namespace Prisma {
    * Fields of the unit_levels model
    */
   interface unit_levelsFieldRefs {
+    readonly id: FieldRef<"unit_levels", 'String'>
     readonly created_at: FieldRef<"unit_levels", 'DateTime'>
     readonly updated_at: FieldRef<"unit_levels", 'DateTime'>
     readonly deleted: FieldRef<"unit_levels", 'Boolean'>
     readonly number: FieldRef<"unit_levels", 'Int'>
-    readonly unit_id: FieldRef<"unit_levels", 'String'>
-    readonly id: FieldRef<"unit_levels", 'String'>
+    readonly unit_question_block_id: FieldRef<"unit_levels", 'String'>
   }
     
 
@@ -15544,6 +15697,30 @@ export namespace Prisma {
   }
 
   /**
+   * unit_levels.unit_progress
+   */
+  export type unit_levels$unit_progressArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_progress
+     */
+    select?: unit_progressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_progress
+     */
+    omit?: unit_progressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: unit_progressInclude<ExtArgs> | null
+    where?: unit_progressWhereInput
+    orderBy?: unit_progressOrderByWithRelationInput | unit_progressOrderByWithRelationInput[]
+    cursor?: unit_progressWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: Unit_progressScalarFieldEnum | Unit_progressScalarFieldEnum[]
+  }
+
+  /**
    * unit_levels.unit_questions_to_unit_levels
    */
   export type unit_levels$unit_questions_to_unit_levelsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -15587,6 +15764,1163 @@ export namespace Prisma {
 
 
   /**
+   * Model unit_question_blocks
+   */
+
+  export type AggregateUnit_question_blocks = {
+    _count: Unit_question_blocksCountAggregateOutputType | null
+    _avg: Unit_question_blocksAvgAggregateOutputType | null
+    _sum: Unit_question_blocksSumAggregateOutputType | null
+    _min: Unit_question_blocksMinAggregateOutputType | null
+    _max: Unit_question_blocksMaxAggregateOutputType | null
+  }
+
+  export type Unit_question_blocksAvgAggregateOutputType = {
+    number: number | null
+  }
+
+  export type Unit_question_blocksSumAggregateOutputType = {
+    number: number | null
+  }
+
+  export type Unit_question_blocksMinAggregateOutputType = {
+    id: string | null
+    created_at: Date | null
+    updated_at: Date | null
+    deleted: boolean | null
+    number: number | null
+    unit_id: string | null
+    type: $Enums.unit_block_type | null
+  }
+
+  export type Unit_question_blocksMaxAggregateOutputType = {
+    id: string | null
+    created_at: Date | null
+    updated_at: Date | null
+    deleted: boolean | null
+    number: number | null
+    unit_id: string | null
+    type: $Enums.unit_block_type | null
+  }
+
+  export type Unit_question_blocksCountAggregateOutputType = {
+    id: number
+    created_at: number
+    updated_at: number
+    deleted: number
+    description: number
+    number: number
+    unit_id: number
+    type: number
+    _all: number
+  }
+
+
+  export type Unit_question_blocksAvgAggregateInputType = {
+    number?: true
+  }
+
+  export type Unit_question_blocksSumAggregateInputType = {
+    number?: true
+  }
+
+  export type Unit_question_blocksMinAggregateInputType = {
+    id?: true
+    created_at?: true
+    updated_at?: true
+    deleted?: true
+    number?: true
+    unit_id?: true
+    type?: true
+  }
+
+  export type Unit_question_blocksMaxAggregateInputType = {
+    id?: true
+    created_at?: true
+    updated_at?: true
+    deleted?: true
+    number?: true
+    unit_id?: true
+    type?: true
+  }
+
+  export type Unit_question_blocksCountAggregateInputType = {
+    id?: true
+    created_at?: true
+    updated_at?: true
+    deleted?: true
+    description?: true
+    number?: true
+    unit_id?: true
+    type?: true
+    _all?: true
+  }
+
+  export type Unit_question_blocksAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which unit_question_blocks to aggregate.
+     */
+    where?: unit_question_blocksWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of unit_question_blocks to fetch.
+     */
+    orderBy?: unit_question_blocksOrderByWithRelationInput | unit_question_blocksOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: unit_question_blocksWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` unit_question_blocks from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` unit_question_blocks.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned unit_question_blocks
+    **/
+    _count?: true | Unit_question_blocksCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: Unit_question_blocksAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: Unit_question_blocksSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: Unit_question_blocksMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: Unit_question_blocksMaxAggregateInputType
+  }
+
+  export type GetUnit_question_blocksAggregateType<T extends Unit_question_blocksAggregateArgs> = {
+        [P in keyof T & keyof AggregateUnit_question_blocks]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateUnit_question_blocks[P]>
+      : GetScalarType<T[P], AggregateUnit_question_blocks[P]>
+  }
+
+
+
+
+  export type unit_question_blocksGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: unit_question_blocksWhereInput
+    orderBy?: unit_question_blocksOrderByWithAggregationInput | unit_question_blocksOrderByWithAggregationInput[]
+    by: Unit_question_blocksScalarFieldEnum[] | Unit_question_blocksScalarFieldEnum
+    having?: unit_question_blocksScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: Unit_question_blocksCountAggregateInputType | true
+    _avg?: Unit_question_blocksAvgAggregateInputType
+    _sum?: Unit_question_blocksSumAggregateInputType
+    _min?: Unit_question_blocksMinAggregateInputType
+    _max?: Unit_question_blocksMaxAggregateInputType
+  }
+
+  export type Unit_question_blocksGroupByOutputType = {
+    id: string
+    created_at: Date
+    updated_at: Date
+    deleted: boolean
+    description: JsonValue
+    number: number
+    unit_id: string
+    type: $Enums.unit_block_type
+    _count: Unit_question_blocksCountAggregateOutputType | null
+    _avg: Unit_question_blocksAvgAggregateOutputType | null
+    _sum: Unit_question_blocksSumAggregateOutputType | null
+    _min: Unit_question_blocksMinAggregateOutputType | null
+    _max: Unit_question_blocksMaxAggregateOutputType | null
+  }
+
+  type GetUnit_question_blocksGroupByPayload<T extends unit_question_blocksGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<Unit_question_blocksGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof Unit_question_blocksGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], Unit_question_blocksGroupByOutputType[P]>
+            : GetScalarType<T[P], Unit_question_blocksGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type unit_question_blocksSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    created_at?: boolean
+    updated_at?: boolean
+    deleted?: boolean
+    description?: boolean
+    number?: boolean
+    unit_id?: boolean
+    type?: boolean
+    unit_levels?: boolean | unit_question_blocks$unit_levelsArgs<ExtArgs>
+    units?: boolean | unitsDefaultArgs<ExtArgs>
+    _count?: boolean | Unit_question_blocksCountOutputTypeDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["unit_question_blocks"]>
+
+  export type unit_question_blocksSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    created_at?: boolean
+    updated_at?: boolean
+    deleted?: boolean
+    description?: boolean
+    number?: boolean
+    unit_id?: boolean
+    type?: boolean
+    units?: boolean | unitsDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["unit_question_blocks"]>
+
+  export type unit_question_blocksSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    created_at?: boolean
+    updated_at?: boolean
+    deleted?: boolean
+    description?: boolean
+    number?: boolean
+    unit_id?: boolean
+    type?: boolean
+    units?: boolean | unitsDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["unit_question_blocks"]>
+
+  export type unit_question_blocksSelectScalar = {
+    id?: boolean
+    created_at?: boolean
+    updated_at?: boolean
+    deleted?: boolean
+    description?: boolean
+    number?: boolean
+    unit_id?: boolean
+    type?: boolean
+  }
+
+  export type unit_question_blocksOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "created_at" | "updated_at" | "deleted" | "description" | "number" | "unit_id" | "type", ExtArgs["result"]["unit_question_blocks"]>
+  export type unit_question_blocksInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    unit_levels?: boolean | unit_question_blocks$unit_levelsArgs<ExtArgs>
+    units?: boolean | unitsDefaultArgs<ExtArgs>
+    _count?: boolean | Unit_question_blocksCountOutputTypeDefaultArgs<ExtArgs>
+  }
+  export type unit_question_blocksIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    units?: boolean | unitsDefaultArgs<ExtArgs>
+  }
+  export type unit_question_blocksIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    units?: boolean | unitsDefaultArgs<ExtArgs>
+  }
+
+  export type $unit_question_blocksPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "unit_question_blocks"
+    objects: {
+      unit_levels: Prisma.$unit_levelsPayload<ExtArgs>[]
+      units: Prisma.$unitsPayload<ExtArgs>
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      id: string
+      created_at: Date
+      updated_at: Date
+      deleted: boolean
+      description: Prisma.JsonValue
+      number: number
+      unit_id: string
+      type: $Enums.unit_block_type
+    }, ExtArgs["result"]["unit_question_blocks"]>
+    composites: {}
+  }
+
+  type unit_question_blocksGetPayload<S extends boolean | null | undefined | unit_question_blocksDefaultArgs> = $Result.GetResult<Prisma.$unit_question_blocksPayload, S>
+
+  type unit_question_blocksCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<unit_question_blocksFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: Unit_question_blocksCountAggregateInputType | true
+    }
+
+  export interface unit_question_blocksDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['unit_question_blocks'], meta: { name: 'unit_question_blocks' } }
+    /**
+     * Find zero or one Unit_question_blocks that matches the filter.
+     * @param {unit_question_blocksFindUniqueArgs} args - Arguments to find a Unit_question_blocks
+     * @example
+     * // Get one Unit_question_blocks
+     * const unit_question_blocks = await prisma.unit_question_blocks.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends unit_question_blocksFindUniqueArgs>(args: SelectSubset<T, unit_question_blocksFindUniqueArgs<ExtArgs>>): Prisma__unit_question_blocksClient<$Result.GetResult<Prisma.$unit_question_blocksPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one Unit_question_blocks that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {unit_question_blocksFindUniqueOrThrowArgs} args - Arguments to find a Unit_question_blocks
+     * @example
+     * // Get one Unit_question_blocks
+     * const unit_question_blocks = await prisma.unit_question_blocks.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends unit_question_blocksFindUniqueOrThrowArgs>(args: SelectSubset<T, unit_question_blocksFindUniqueOrThrowArgs<ExtArgs>>): Prisma__unit_question_blocksClient<$Result.GetResult<Prisma.$unit_question_blocksPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Unit_question_blocks that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {unit_question_blocksFindFirstArgs} args - Arguments to find a Unit_question_blocks
+     * @example
+     * // Get one Unit_question_blocks
+     * const unit_question_blocks = await prisma.unit_question_blocks.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends unit_question_blocksFindFirstArgs>(args?: SelectSubset<T, unit_question_blocksFindFirstArgs<ExtArgs>>): Prisma__unit_question_blocksClient<$Result.GetResult<Prisma.$unit_question_blocksPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Unit_question_blocks that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {unit_question_blocksFindFirstOrThrowArgs} args - Arguments to find a Unit_question_blocks
+     * @example
+     * // Get one Unit_question_blocks
+     * const unit_question_blocks = await prisma.unit_question_blocks.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends unit_question_blocksFindFirstOrThrowArgs>(args?: SelectSubset<T, unit_question_blocksFindFirstOrThrowArgs<ExtArgs>>): Prisma__unit_question_blocksClient<$Result.GetResult<Prisma.$unit_question_blocksPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more Unit_question_blocks that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {unit_question_blocksFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all Unit_question_blocks
+     * const unit_question_blocks = await prisma.unit_question_blocks.findMany()
+     * 
+     * // Get first 10 Unit_question_blocks
+     * const unit_question_blocks = await prisma.unit_question_blocks.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const unit_question_blocksWithIdOnly = await prisma.unit_question_blocks.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends unit_question_blocksFindManyArgs>(args?: SelectSubset<T, unit_question_blocksFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$unit_question_blocksPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a Unit_question_blocks.
+     * @param {unit_question_blocksCreateArgs} args - Arguments to create a Unit_question_blocks.
+     * @example
+     * // Create one Unit_question_blocks
+     * const Unit_question_blocks = await prisma.unit_question_blocks.create({
+     *   data: {
+     *     // ... data to create a Unit_question_blocks
+     *   }
+     * })
+     * 
+     */
+    create<T extends unit_question_blocksCreateArgs>(args: SelectSubset<T, unit_question_blocksCreateArgs<ExtArgs>>): Prisma__unit_question_blocksClient<$Result.GetResult<Prisma.$unit_question_blocksPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many Unit_question_blocks.
+     * @param {unit_question_blocksCreateManyArgs} args - Arguments to create many Unit_question_blocks.
+     * @example
+     * // Create many Unit_question_blocks
+     * const unit_question_blocks = await prisma.unit_question_blocks.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends unit_question_blocksCreateManyArgs>(args?: SelectSubset<T, unit_question_blocksCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many Unit_question_blocks and returns the data saved in the database.
+     * @param {unit_question_blocksCreateManyAndReturnArgs} args - Arguments to create many Unit_question_blocks.
+     * @example
+     * // Create many Unit_question_blocks
+     * const unit_question_blocks = await prisma.unit_question_blocks.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Unit_question_blocks and only return the `id`
+     * const unit_question_blocksWithIdOnly = await prisma.unit_question_blocks.createManyAndReturn({
+     *   select: { id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends unit_question_blocksCreateManyAndReturnArgs>(args?: SelectSubset<T, unit_question_blocksCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$unit_question_blocksPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a Unit_question_blocks.
+     * @param {unit_question_blocksDeleteArgs} args - Arguments to delete one Unit_question_blocks.
+     * @example
+     * // Delete one Unit_question_blocks
+     * const Unit_question_blocks = await prisma.unit_question_blocks.delete({
+     *   where: {
+     *     // ... filter to delete one Unit_question_blocks
+     *   }
+     * })
+     * 
+     */
+    delete<T extends unit_question_blocksDeleteArgs>(args: SelectSubset<T, unit_question_blocksDeleteArgs<ExtArgs>>): Prisma__unit_question_blocksClient<$Result.GetResult<Prisma.$unit_question_blocksPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one Unit_question_blocks.
+     * @param {unit_question_blocksUpdateArgs} args - Arguments to update one Unit_question_blocks.
+     * @example
+     * // Update one Unit_question_blocks
+     * const unit_question_blocks = await prisma.unit_question_blocks.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends unit_question_blocksUpdateArgs>(args: SelectSubset<T, unit_question_blocksUpdateArgs<ExtArgs>>): Prisma__unit_question_blocksClient<$Result.GetResult<Prisma.$unit_question_blocksPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more Unit_question_blocks.
+     * @param {unit_question_blocksDeleteManyArgs} args - Arguments to filter Unit_question_blocks to delete.
+     * @example
+     * // Delete a few Unit_question_blocks
+     * const { count } = await prisma.unit_question_blocks.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends unit_question_blocksDeleteManyArgs>(args?: SelectSubset<T, unit_question_blocksDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Unit_question_blocks.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {unit_question_blocksUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many Unit_question_blocks
+     * const unit_question_blocks = await prisma.unit_question_blocks.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends unit_question_blocksUpdateManyArgs>(args: SelectSubset<T, unit_question_blocksUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Unit_question_blocks and returns the data updated in the database.
+     * @param {unit_question_blocksUpdateManyAndReturnArgs} args - Arguments to update many Unit_question_blocks.
+     * @example
+     * // Update many Unit_question_blocks
+     * const unit_question_blocks = await prisma.unit_question_blocks.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Unit_question_blocks and only return the `id`
+     * const unit_question_blocksWithIdOnly = await prisma.unit_question_blocks.updateManyAndReturn({
+     *   select: { id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends unit_question_blocksUpdateManyAndReturnArgs>(args: SelectSubset<T, unit_question_blocksUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$unit_question_blocksPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one Unit_question_blocks.
+     * @param {unit_question_blocksUpsertArgs} args - Arguments to update or create a Unit_question_blocks.
+     * @example
+     * // Update or create a Unit_question_blocks
+     * const unit_question_blocks = await prisma.unit_question_blocks.upsert({
+     *   create: {
+     *     // ... data to create a Unit_question_blocks
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the Unit_question_blocks we want to update
+     *   }
+     * })
+     */
+    upsert<T extends unit_question_blocksUpsertArgs>(args: SelectSubset<T, unit_question_blocksUpsertArgs<ExtArgs>>): Prisma__unit_question_blocksClient<$Result.GetResult<Prisma.$unit_question_blocksPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of Unit_question_blocks.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {unit_question_blocksCountArgs} args - Arguments to filter Unit_question_blocks to count.
+     * @example
+     * // Count the number of Unit_question_blocks
+     * const count = await prisma.unit_question_blocks.count({
+     *   where: {
+     *     // ... the filter for the Unit_question_blocks we want to count
+     *   }
+     * })
+    **/
+    count<T extends unit_question_blocksCountArgs>(
+      args?: Subset<T, unit_question_blocksCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], Unit_question_blocksCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a Unit_question_blocks.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {Unit_question_blocksAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends Unit_question_blocksAggregateArgs>(args: Subset<T, Unit_question_blocksAggregateArgs>): Prisma.PrismaPromise<GetUnit_question_blocksAggregateType<T>>
+
+    /**
+     * Group by Unit_question_blocks.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {unit_question_blocksGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends unit_question_blocksGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: unit_question_blocksGroupByArgs['orderBy'] }
+        : { orderBy?: unit_question_blocksGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, unit_question_blocksGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetUnit_question_blocksGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the unit_question_blocks model
+   */
+  readonly fields: unit_question_blocksFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for unit_question_blocks.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__unit_question_blocksClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    unit_levels<T extends unit_question_blocks$unit_levelsArgs<ExtArgs> = {}>(args?: Subset<T, unit_question_blocks$unit_levelsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$unit_levelsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    units<T extends unitsDefaultArgs<ExtArgs> = {}>(args?: Subset<T, unitsDefaultArgs<ExtArgs>>): Prisma__unitsClient<$Result.GetResult<Prisma.$unitsPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the unit_question_blocks model
+   */
+  interface unit_question_blocksFieldRefs {
+    readonly id: FieldRef<"unit_question_blocks", 'String'>
+    readonly created_at: FieldRef<"unit_question_blocks", 'DateTime'>
+    readonly updated_at: FieldRef<"unit_question_blocks", 'DateTime'>
+    readonly deleted: FieldRef<"unit_question_blocks", 'Boolean'>
+    readonly description: FieldRef<"unit_question_blocks", 'Json'>
+    readonly number: FieldRef<"unit_question_blocks", 'Int'>
+    readonly unit_id: FieldRef<"unit_question_blocks", 'String'>
+    readonly type: FieldRef<"unit_question_blocks", 'unit_block_type'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * unit_question_blocks findUnique
+   */
+  export type unit_question_blocksFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_question_blocks
+     */
+    select?: unit_question_blocksSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_question_blocks
+     */
+    omit?: unit_question_blocksOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: unit_question_blocksInclude<ExtArgs> | null
+    /**
+     * Filter, which unit_question_blocks to fetch.
+     */
+    where: unit_question_blocksWhereUniqueInput
+  }
+
+  /**
+   * unit_question_blocks findUniqueOrThrow
+   */
+  export type unit_question_blocksFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_question_blocks
+     */
+    select?: unit_question_blocksSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_question_blocks
+     */
+    omit?: unit_question_blocksOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: unit_question_blocksInclude<ExtArgs> | null
+    /**
+     * Filter, which unit_question_blocks to fetch.
+     */
+    where: unit_question_blocksWhereUniqueInput
+  }
+
+  /**
+   * unit_question_blocks findFirst
+   */
+  export type unit_question_blocksFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_question_blocks
+     */
+    select?: unit_question_blocksSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_question_blocks
+     */
+    omit?: unit_question_blocksOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: unit_question_blocksInclude<ExtArgs> | null
+    /**
+     * Filter, which unit_question_blocks to fetch.
+     */
+    where?: unit_question_blocksWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of unit_question_blocks to fetch.
+     */
+    orderBy?: unit_question_blocksOrderByWithRelationInput | unit_question_blocksOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for unit_question_blocks.
+     */
+    cursor?: unit_question_blocksWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` unit_question_blocks from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` unit_question_blocks.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of unit_question_blocks.
+     */
+    distinct?: Unit_question_blocksScalarFieldEnum | Unit_question_blocksScalarFieldEnum[]
+  }
+
+  /**
+   * unit_question_blocks findFirstOrThrow
+   */
+  export type unit_question_blocksFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_question_blocks
+     */
+    select?: unit_question_blocksSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_question_blocks
+     */
+    omit?: unit_question_blocksOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: unit_question_blocksInclude<ExtArgs> | null
+    /**
+     * Filter, which unit_question_blocks to fetch.
+     */
+    where?: unit_question_blocksWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of unit_question_blocks to fetch.
+     */
+    orderBy?: unit_question_blocksOrderByWithRelationInput | unit_question_blocksOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for unit_question_blocks.
+     */
+    cursor?: unit_question_blocksWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` unit_question_blocks from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` unit_question_blocks.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of unit_question_blocks.
+     */
+    distinct?: Unit_question_blocksScalarFieldEnum | Unit_question_blocksScalarFieldEnum[]
+  }
+
+  /**
+   * unit_question_blocks findMany
+   */
+  export type unit_question_blocksFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_question_blocks
+     */
+    select?: unit_question_blocksSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_question_blocks
+     */
+    omit?: unit_question_blocksOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: unit_question_blocksInclude<ExtArgs> | null
+    /**
+     * Filter, which unit_question_blocks to fetch.
+     */
+    where?: unit_question_blocksWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of unit_question_blocks to fetch.
+     */
+    orderBy?: unit_question_blocksOrderByWithRelationInput | unit_question_blocksOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing unit_question_blocks.
+     */
+    cursor?: unit_question_blocksWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` unit_question_blocks from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` unit_question_blocks.
+     */
+    skip?: number
+    distinct?: Unit_question_blocksScalarFieldEnum | Unit_question_blocksScalarFieldEnum[]
+  }
+
+  /**
+   * unit_question_blocks create
+   */
+  export type unit_question_blocksCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_question_blocks
+     */
+    select?: unit_question_blocksSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_question_blocks
+     */
+    omit?: unit_question_blocksOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: unit_question_blocksInclude<ExtArgs> | null
+    /**
+     * The data needed to create a unit_question_blocks.
+     */
+    data: XOR<unit_question_blocksCreateInput, unit_question_blocksUncheckedCreateInput>
+  }
+
+  /**
+   * unit_question_blocks createMany
+   */
+  export type unit_question_blocksCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many unit_question_blocks.
+     */
+    data: unit_question_blocksCreateManyInput | unit_question_blocksCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * unit_question_blocks createManyAndReturn
+   */
+  export type unit_question_blocksCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_question_blocks
+     */
+    select?: unit_question_blocksSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_question_blocks
+     */
+    omit?: unit_question_blocksOmit<ExtArgs> | null
+    /**
+     * The data used to create many unit_question_blocks.
+     */
+    data: unit_question_blocksCreateManyInput | unit_question_blocksCreateManyInput[]
+    skipDuplicates?: boolean
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: unit_question_blocksIncludeCreateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * unit_question_blocks update
+   */
+  export type unit_question_blocksUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_question_blocks
+     */
+    select?: unit_question_blocksSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_question_blocks
+     */
+    omit?: unit_question_blocksOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: unit_question_blocksInclude<ExtArgs> | null
+    /**
+     * The data needed to update a unit_question_blocks.
+     */
+    data: XOR<unit_question_blocksUpdateInput, unit_question_blocksUncheckedUpdateInput>
+    /**
+     * Choose, which unit_question_blocks to update.
+     */
+    where: unit_question_blocksWhereUniqueInput
+  }
+
+  /**
+   * unit_question_blocks updateMany
+   */
+  export type unit_question_blocksUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update unit_question_blocks.
+     */
+    data: XOR<unit_question_blocksUpdateManyMutationInput, unit_question_blocksUncheckedUpdateManyInput>
+    /**
+     * Filter which unit_question_blocks to update
+     */
+    where?: unit_question_blocksWhereInput
+    /**
+     * Limit how many unit_question_blocks to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * unit_question_blocks updateManyAndReturn
+   */
+  export type unit_question_blocksUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_question_blocks
+     */
+    select?: unit_question_blocksSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_question_blocks
+     */
+    omit?: unit_question_blocksOmit<ExtArgs> | null
+    /**
+     * The data used to update unit_question_blocks.
+     */
+    data: XOR<unit_question_blocksUpdateManyMutationInput, unit_question_blocksUncheckedUpdateManyInput>
+    /**
+     * Filter which unit_question_blocks to update
+     */
+    where?: unit_question_blocksWhereInput
+    /**
+     * Limit how many unit_question_blocks to update.
+     */
+    limit?: number
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: unit_question_blocksIncludeUpdateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * unit_question_blocks upsert
+   */
+  export type unit_question_blocksUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_question_blocks
+     */
+    select?: unit_question_blocksSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_question_blocks
+     */
+    omit?: unit_question_blocksOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: unit_question_blocksInclude<ExtArgs> | null
+    /**
+     * The filter to search for the unit_question_blocks to update in case it exists.
+     */
+    where: unit_question_blocksWhereUniqueInput
+    /**
+     * In case the unit_question_blocks found by the `where` argument doesn't exist, create a new unit_question_blocks with this data.
+     */
+    create: XOR<unit_question_blocksCreateInput, unit_question_blocksUncheckedCreateInput>
+    /**
+     * In case the unit_question_blocks was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<unit_question_blocksUpdateInput, unit_question_blocksUncheckedUpdateInput>
+  }
+
+  /**
+   * unit_question_blocks delete
+   */
+  export type unit_question_blocksDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_question_blocks
+     */
+    select?: unit_question_blocksSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_question_blocks
+     */
+    omit?: unit_question_blocksOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: unit_question_blocksInclude<ExtArgs> | null
+    /**
+     * Filter which unit_question_blocks to delete.
+     */
+    where: unit_question_blocksWhereUniqueInput
+  }
+
+  /**
+   * unit_question_blocks deleteMany
+   */
+  export type unit_question_blocksDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which unit_question_blocks to delete
+     */
+    where?: unit_question_blocksWhereInput
+    /**
+     * Limit how many unit_question_blocks to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * unit_question_blocks.unit_levels
+   */
+  export type unit_question_blocks$unit_levelsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_levels
+     */
+    select?: unit_levelsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_levels
+     */
+    omit?: unit_levelsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: unit_levelsInclude<ExtArgs> | null
+    where?: unit_levelsWhereInput
+    orderBy?: unit_levelsOrderByWithRelationInput | unit_levelsOrderByWithRelationInput[]
+    cursor?: unit_levelsWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: Unit_levelsScalarFieldEnum | Unit_levelsScalarFieldEnum[]
+  }
+
+  /**
+   * unit_question_blocks without action
+   */
+  export type unit_question_blocksDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the unit_question_blocks
+     */
+    select?: unit_question_blocksSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the unit_question_blocks
+     */
+    omit?: unit_question_blocksOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: unit_question_blocksInclude<ExtArgs> | null
+  }
+
+
+  /**
    * Model unit_questions_to_unit_levels
    */
 
@@ -15607,23 +16941,23 @@ export namespace Prisma {
   }
 
   export type Unit_questions_to_unit_levelsMinAggregateOutputType = {
-    unit_level_id: string | null
     unit_question_id: string | null
     number: number | null
+    unit_level_id: string | null
     with_hint: boolean | null
   }
 
   export type Unit_questions_to_unit_levelsMaxAggregateOutputType = {
-    unit_level_id: string | null
     unit_question_id: string | null
     number: number | null
+    unit_level_id: string | null
     with_hint: boolean | null
   }
 
   export type Unit_questions_to_unit_levelsCountAggregateOutputType = {
-    unit_level_id: number
     unit_question_id: number
     number: number
+    unit_level_id: number
     with_hint: number
     _all: number
   }
@@ -15638,23 +16972,23 @@ export namespace Prisma {
   }
 
   export type Unit_questions_to_unit_levelsMinAggregateInputType = {
-    unit_level_id?: true
     unit_question_id?: true
     number?: true
+    unit_level_id?: true
     with_hint?: true
   }
 
   export type Unit_questions_to_unit_levelsMaxAggregateInputType = {
-    unit_level_id?: true
     unit_question_id?: true
     number?: true
+    unit_level_id?: true
     with_hint?: true
   }
 
   export type Unit_questions_to_unit_levelsCountAggregateInputType = {
-    unit_level_id?: true
     unit_question_id?: true
     number?: true
+    unit_level_id?: true
     with_hint?: true
     _all?: true
   }
@@ -15746,9 +17080,9 @@ export namespace Prisma {
   }
 
   export type Unit_questions_to_unit_levelsGroupByOutputType = {
-    unit_level_id: string
     unit_question_id: string
     number: number
+    unit_level_id: string
     with_hint: boolean
     _count: Unit_questions_to_unit_levelsCountAggregateOutputType | null
     _avg: Unit_questions_to_unit_levelsAvgAggregateOutputType | null
@@ -15772,40 +17106,40 @@ export namespace Prisma {
 
 
   export type unit_questions_to_unit_levelsSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    unit_level_id?: boolean
     unit_question_id?: boolean
     number?: boolean
+    unit_level_id?: boolean
     with_hint?: boolean
     unit_levels?: boolean | unit_levelsDefaultArgs<ExtArgs>
     unit_questions?: boolean | unit_questionsDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["unit_questions_to_unit_levels"]>
 
   export type unit_questions_to_unit_levelsSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    unit_level_id?: boolean
     unit_question_id?: boolean
     number?: boolean
+    unit_level_id?: boolean
     with_hint?: boolean
     unit_levels?: boolean | unit_levelsDefaultArgs<ExtArgs>
     unit_questions?: boolean | unit_questionsDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["unit_questions_to_unit_levels"]>
 
   export type unit_questions_to_unit_levelsSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    unit_level_id?: boolean
     unit_question_id?: boolean
     number?: boolean
+    unit_level_id?: boolean
     with_hint?: boolean
     unit_levels?: boolean | unit_levelsDefaultArgs<ExtArgs>
     unit_questions?: boolean | unit_questionsDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["unit_questions_to_unit_levels"]>
 
   export type unit_questions_to_unit_levelsSelectScalar = {
-    unit_level_id?: boolean
     unit_question_id?: boolean
     number?: boolean
+    unit_level_id?: boolean
     with_hint?: boolean
   }
 
-  export type unit_questions_to_unit_levelsOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"unit_level_id" | "unit_question_id" | "number" | "with_hint", ExtArgs["result"]["unit_questions_to_unit_levels"]>
+  export type unit_questions_to_unit_levelsOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"unit_question_id" | "number" | "unit_level_id" | "with_hint", ExtArgs["result"]["unit_questions_to_unit_levels"]>
   export type unit_questions_to_unit_levelsInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     unit_levels?: boolean | unit_levelsDefaultArgs<ExtArgs>
     unit_questions?: boolean | unit_questionsDefaultArgs<ExtArgs>
@@ -15826,9 +17160,9 @@ export namespace Prisma {
       unit_questions: Prisma.$unit_questionsPayload<ExtArgs>
     }
     scalars: $Extensions.GetPayloadResult<{
-      unit_level_id: string
       unit_question_id: string
       number: number
+      unit_level_id: string
       with_hint: boolean
     }, ExtArgs["result"]["unit_questions_to_unit_levels"]>
     composites: {}
@@ -15913,8 +17247,8 @@ export namespace Prisma {
      * // Get first 10 Unit_questions_to_unit_levels
      * const unit_questions_to_unit_levels = await prisma.unit_questions_to_unit_levels.findMany({ take: 10 })
      * 
-     * // Only select the `unit_level_id`
-     * const unit_questions_to_unit_levelsWithUnit_level_idOnly = await prisma.unit_questions_to_unit_levels.findMany({ select: { unit_level_id: true } })
+     * // Only select the `unit_question_id`
+     * const unit_questions_to_unit_levelsWithUnit_question_idOnly = await prisma.unit_questions_to_unit_levels.findMany({ select: { unit_question_id: true } })
      * 
      */
     findMany<T extends unit_questions_to_unit_levelsFindManyArgs>(args?: SelectSubset<T, unit_questions_to_unit_levelsFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$unit_questions_to_unit_levelsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
@@ -15958,9 +17292,9 @@ export namespace Prisma {
      *   ]
      * })
      * 
-     * // Create many Unit_questions_to_unit_levels and only return the `unit_level_id`
-     * const unit_questions_to_unit_levelsWithUnit_level_idOnly = await prisma.unit_questions_to_unit_levels.createManyAndReturn({
-     *   select: { unit_level_id: true },
+     * // Create many Unit_questions_to_unit_levels and only return the `unit_question_id`
+     * const unit_questions_to_unit_levelsWithUnit_question_idOnly = await prisma.unit_questions_to_unit_levels.createManyAndReturn({
+     *   select: { unit_question_id: true },
      *   data: [
      *     // ... provide data here
      *   ]
@@ -16049,9 +17383,9 @@ export namespace Prisma {
      *   ]
      * })
      * 
-     * // Update zero or more Unit_questions_to_unit_levels and only return the `unit_level_id`
-     * const unit_questions_to_unit_levelsWithUnit_level_idOnly = await prisma.unit_questions_to_unit_levels.updateManyAndReturn({
-     *   select: { unit_level_id: true },
+     * // Update zero or more Unit_questions_to_unit_levels and only return the `unit_question_id`
+     * const unit_questions_to_unit_levelsWithUnit_question_idOnly = await prisma.unit_questions_to_unit_levels.updateManyAndReturn({
+     *   select: { unit_question_id: true },
      *   where: {
      *     // ... provide filter here
      *   },
@@ -16255,9 +17589,9 @@ export namespace Prisma {
    * Fields of the unit_questions_to_unit_levels model
    */
   interface unit_questions_to_unit_levelsFieldRefs {
-    readonly unit_level_id: FieldRef<"unit_questions_to_unit_levels", 'String'>
     readonly unit_question_id: FieldRef<"unit_questions_to_unit_levels", 'String'>
     readonly number: FieldRef<"unit_questions_to_unit_levels", 'Int'>
+    readonly unit_level_id: FieldRef<"unit_questions_to_unit_levels", 'String'>
     readonly with_hint: FieldRef<"unit_questions_to_unit_levels", 'Boolean'>
   }
     
@@ -16838,6 +18172,7 @@ export namespace Prisma {
     deleted?: boolean
     unit_level_id?: boolean
     letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+    unit_levels?: boolean | unit_levelsDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["unit_progress"]>
 
   export type unit_progressSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
@@ -16847,6 +18182,7 @@ export namespace Prisma {
     deleted?: boolean
     unit_level_id?: boolean
     letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+    unit_levels?: boolean | unit_levelsDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["unit_progress"]>
 
   export type unit_progressSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
@@ -16856,6 +18192,7 @@ export namespace Prisma {
     deleted?: boolean
     unit_level_id?: boolean
     letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+    unit_levels?: boolean | unit_levelsDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["unit_progress"]>
 
   export type unit_progressSelectScalar = {
@@ -16869,18 +18206,22 @@ export namespace Prisma {
   export type unit_progressOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "created_at" | "updated_at" | "deleted" | "unit_level_id", ExtArgs["result"]["unit_progress"]>
   export type unit_progressInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+    unit_levels?: boolean | unit_levelsDefaultArgs<ExtArgs>
   }
   export type unit_progressIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+    unit_levels?: boolean | unit_levelsDefaultArgs<ExtArgs>
   }
   export type unit_progressIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     letter_levels?: boolean | letter_levelsDefaultArgs<ExtArgs>
+    unit_levels?: boolean | unit_levelsDefaultArgs<ExtArgs>
   }
 
   export type $unit_progressPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "unit_progress"
     objects: {
       letter_levels: Prisma.$letter_levelsPayload<ExtArgs>
+      unit_levels: Prisma.$unit_levelsPayload<ExtArgs>
     }
     scalars: $Extensions.GetPayloadResult<{
       id: string
@@ -17283,6 +18624,7 @@ export namespace Prisma {
   export interface Prisma__unit_progressClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
     letter_levels<T extends letter_levelsDefaultArgs<ExtArgs> = {}>(args?: Subset<T, letter_levelsDefaultArgs<ExtArgs>>): Prisma__letter_levelsClient<$Result.GetResult<Prisma.$letter_levelsPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    unit_levels<T extends unit_levelsDefaultArgs<ExtArgs> = {}>(args?: Subset<T, unit_levelsDefaultArgs<ExtArgs>>): Prisma__unit_levelsClient<$Result.GetResult<Prisma.$unit_levelsPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -17870,21 +19212,35 @@ export namespace Prisma {
 
 
   export const Unit_levelsScalarFieldEnum: {
+    id: 'id',
     created_at: 'created_at',
     updated_at: 'updated_at',
     deleted: 'deleted',
     number: 'number',
-    unit_id: 'unit_id',
-    id: 'id'
+    unit_question_block_id: 'unit_question_block_id'
   };
 
   export type Unit_levelsScalarFieldEnum = (typeof Unit_levelsScalarFieldEnum)[keyof typeof Unit_levelsScalarFieldEnum]
 
 
+  export const Unit_question_blocksScalarFieldEnum: {
+    id: 'id',
+    created_at: 'created_at',
+    updated_at: 'updated_at',
+    deleted: 'deleted',
+    description: 'description',
+    number: 'number',
+    unit_id: 'unit_id',
+    type: 'type'
+  };
+
+  export type Unit_question_blocksScalarFieldEnum = (typeof Unit_question_blocksScalarFieldEnum)[keyof typeof Unit_question_blocksScalarFieldEnum]
+
+
   export const Unit_questions_to_unit_levelsScalarFieldEnum: {
-    unit_level_id: 'unit_level_id',
     unit_question_id: 'unit_question_id',
     number: 'number',
+    unit_level_id: 'unit_level_id',
     with_hint: 'with_hint'
   };
 
@@ -17932,14 +19288,6 @@ export namespace Prisma {
   };
 
   export type JsonNullValueFilter = (typeof JsonNullValueFilter)[keyof typeof JsonNullValueFilter]
-
-
-  export const NullsOrder: {
-    first: 'first',
-    last: 'last'
-  };
-
-  export type NullsOrder = (typeof NullsOrder)[keyof typeof NullsOrder]
 
 
   /**
@@ -18007,6 +19355,20 @@ export namespace Prisma {
    * Reference to a field of type 'QueryMode'
    */
   export type EnumQueryModeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'QueryMode'>
+    
+
+
+  /**
+   * Reference to a field of type 'unit_block_type'
+   */
+  export type Enumunit_block_typeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'unit_block_type'>
+    
+
+
+  /**
+   * Reference to a field of type 'unit_block_type[]'
+   */
+  export type ListEnumunit_block_typeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'unit_block_type[]'>
     
 
 
@@ -18579,7 +19941,7 @@ export namespace Prisma {
     question?: JsonFilter<"unit_questions">
     deleted?: BoolFilter<"unit_questions"> | boolean
     id?: UuidFilter<"unit_questions"> | string
-    key?: StringNullableFilter<"unit_questions"> | string | null
+    key?: StringFilter<"unit_questions"> | string
     unit_questions_to_unit_levels?: Unit_questions_to_unit_levelsListRelationFilter
   }
 
@@ -18589,7 +19951,7 @@ export namespace Prisma {
     question?: SortOrder
     deleted?: SortOrder
     id?: SortOrder
-    key?: SortOrderInput | SortOrder
+    key?: SortOrder
     unit_questions_to_unit_levels?: unit_questions_to_unit_levelsOrderByRelationAggregateInput
   }
 
@@ -18602,7 +19964,7 @@ export namespace Prisma {
     updated_at?: DateTimeFilter<"unit_questions"> | Date | string
     question?: JsonFilter<"unit_questions">
     deleted?: BoolFilter<"unit_questions"> | boolean
-    key?: StringNullableFilter<"unit_questions"> | string | null
+    key?: StringFilter<"unit_questions"> | string
     unit_questions_to_unit_levels?: Unit_questions_to_unit_levelsListRelationFilter
   }, "id">
 
@@ -18612,7 +19974,7 @@ export namespace Prisma {
     question?: SortOrder
     deleted?: SortOrder
     id?: SortOrder
-    key?: SortOrderInput | SortOrder
+    key?: SortOrder
     _count?: unit_questionsCountOrderByAggregateInput
     _max?: unit_questionsMaxOrderByAggregateInput
     _min?: unit_questionsMinOrderByAggregateInput
@@ -18627,7 +19989,7 @@ export namespace Prisma {
     question?: JsonWithAggregatesFilter<"unit_questions">
     deleted?: BoolWithAggregatesFilter<"unit_questions"> | boolean
     id?: UuidWithAggregatesFilter<"unit_questions"> | string
-    key?: StringNullableWithAggregatesFilter<"unit_questions"> | string | null
+    key?: StringWithAggregatesFilter<"unit_questions"> | string
   }
 
   export type unitsWhereInput = {
@@ -18639,7 +20001,7 @@ export namespace Prisma {
     updated_at?: DateTimeFilter<"units"> | Date | string
     deleted?: BoolFilter<"units"> | boolean
     number?: IntFilter<"units"> | number
-    unit_levels?: Unit_levelsListRelationFilter
+    unit_question_blocks?: Unit_question_blocksListRelationFilter
   }
 
   export type unitsOrderByWithRelationInput = {
@@ -18648,20 +20010,20 @@ export namespace Prisma {
     updated_at?: SortOrder
     deleted?: SortOrder
     number?: SortOrder
-    unit_levels?: unit_levelsOrderByRelationAggregateInput
+    unit_question_blocks?: unit_question_blocksOrderByRelationAggregateInput
   }
 
   export type unitsWhereUniqueInput = Prisma.AtLeast<{
     id?: string
+    number?: number
     AND?: unitsWhereInput | unitsWhereInput[]
     OR?: unitsWhereInput[]
     NOT?: unitsWhereInput | unitsWhereInput[]
     created_at?: DateTimeFilter<"units"> | Date | string
     updated_at?: DateTimeFilter<"units"> | Date | string
     deleted?: BoolFilter<"units"> | boolean
-    number?: IntFilter<"units"> | number
-    unit_levels?: Unit_levelsListRelationFilter
-  }, "id">
+    unit_question_blocks?: Unit_question_blocksListRelationFilter
+  }, "id" | "number">
 
   export type unitsOrderByWithAggregationInput = {
     id?: SortOrder
@@ -18691,24 +20053,26 @@ export namespace Prisma {
     AND?: unit_levelsWhereInput | unit_levelsWhereInput[]
     OR?: unit_levelsWhereInput[]
     NOT?: unit_levelsWhereInput | unit_levelsWhereInput[]
+    id?: UuidFilter<"unit_levels"> | string
     created_at?: DateTimeFilter<"unit_levels"> | Date | string
     updated_at?: DateTimeFilter<"unit_levels"> | Date | string
     deleted?: BoolFilter<"unit_levels"> | boolean
     number?: IntFilter<"unit_levels"> | number
-    unit_id?: UuidFilter<"unit_levels"> | string
-    id?: UuidFilter<"unit_levels"> | string
-    units?: XOR<UnitsScalarRelationFilter, unitsWhereInput>
+    unit_question_block_id?: UuidFilter<"unit_levels"> | string
+    unit_question_blocks?: XOR<Unit_question_blocksScalarRelationFilter, unit_question_blocksWhereInput>
+    unit_progress?: Unit_progressListRelationFilter
     unit_questions_to_unit_levels?: Unit_questions_to_unit_levelsListRelationFilter
   }
 
   export type unit_levelsOrderByWithRelationInput = {
+    id?: SortOrder
     created_at?: SortOrder
     updated_at?: SortOrder
     deleted?: SortOrder
     number?: SortOrder
-    unit_id?: SortOrder
-    id?: SortOrder
-    units?: unitsOrderByWithRelationInput
+    unit_question_block_id?: SortOrder
+    unit_question_blocks?: unit_question_blocksOrderByWithRelationInput
+    unit_progress?: unit_progressOrderByRelationAggregateInput
     unit_questions_to_unit_levels?: unit_questions_to_unit_levelsOrderByRelationAggregateInput
   }
 
@@ -18721,18 +20085,19 @@ export namespace Prisma {
     updated_at?: DateTimeFilter<"unit_levels"> | Date | string
     deleted?: BoolFilter<"unit_levels"> | boolean
     number?: IntFilter<"unit_levels"> | number
-    unit_id?: UuidFilter<"unit_levels"> | string
-    units?: XOR<UnitsScalarRelationFilter, unitsWhereInput>
+    unit_question_block_id?: UuidFilter<"unit_levels"> | string
+    unit_question_blocks?: XOR<Unit_question_blocksScalarRelationFilter, unit_question_blocksWhereInput>
+    unit_progress?: Unit_progressListRelationFilter
     unit_questions_to_unit_levels?: Unit_questions_to_unit_levelsListRelationFilter
   }, "id">
 
   export type unit_levelsOrderByWithAggregationInput = {
+    id?: SortOrder
     created_at?: SortOrder
     updated_at?: SortOrder
     deleted?: SortOrder
     number?: SortOrder
-    unit_id?: SortOrder
-    id?: SortOrder
+    unit_question_block_id?: SortOrder
     _count?: unit_levelsCountOrderByAggregateInput
     _avg?: unit_levelsAvgOrderByAggregateInput
     _max?: unit_levelsMaxOrderByAggregateInput
@@ -18744,52 +20109,127 @@ export namespace Prisma {
     AND?: unit_levelsScalarWhereWithAggregatesInput | unit_levelsScalarWhereWithAggregatesInput[]
     OR?: unit_levelsScalarWhereWithAggregatesInput[]
     NOT?: unit_levelsScalarWhereWithAggregatesInput | unit_levelsScalarWhereWithAggregatesInput[]
+    id?: UuidWithAggregatesFilter<"unit_levels"> | string
     created_at?: DateTimeWithAggregatesFilter<"unit_levels"> | Date | string
     updated_at?: DateTimeWithAggregatesFilter<"unit_levels"> | Date | string
     deleted?: BoolWithAggregatesFilter<"unit_levels"> | boolean
     number?: IntWithAggregatesFilter<"unit_levels"> | number
-    unit_id?: UuidWithAggregatesFilter<"unit_levels"> | string
-    id?: UuidWithAggregatesFilter<"unit_levels"> | string
+    unit_question_block_id?: UuidWithAggregatesFilter<"unit_levels"> | string
+  }
+
+  export type unit_question_blocksWhereInput = {
+    AND?: unit_question_blocksWhereInput | unit_question_blocksWhereInput[]
+    OR?: unit_question_blocksWhereInput[]
+    NOT?: unit_question_blocksWhereInput | unit_question_blocksWhereInput[]
+    id?: UuidFilter<"unit_question_blocks"> | string
+    created_at?: DateTimeFilter<"unit_question_blocks"> | Date | string
+    updated_at?: DateTimeFilter<"unit_question_blocks"> | Date | string
+    deleted?: BoolFilter<"unit_question_blocks"> | boolean
+    description?: JsonFilter<"unit_question_blocks">
+    number?: IntFilter<"unit_question_blocks"> | number
+    unit_id?: UuidFilter<"unit_question_blocks"> | string
+    type?: Enumunit_block_typeFilter<"unit_question_blocks"> | $Enums.unit_block_type
+    unit_levels?: Unit_levelsListRelationFilter
+    units?: XOR<UnitsScalarRelationFilter, unitsWhereInput>
+  }
+
+  export type unit_question_blocksOrderByWithRelationInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+    description?: SortOrder
+    number?: SortOrder
+    unit_id?: SortOrder
+    type?: SortOrder
+    unit_levels?: unit_levelsOrderByRelationAggregateInput
+    units?: unitsOrderByWithRelationInput
+  }
+
+  export type unit_question_blocksWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    number?: number
+    AND?: unit_question_blocksWhereInput | unit_question_blocksWhereInput[]
+    OR?: unit_question_blocksWhereInput[]
+    NOT?: unit_question_blocksWhereInput | unit_question_blocksWhereInput[]
+    created_at?: DateTimeFilter<"unit_question_blocks"> | Date | string
+    updated_at?: DateTimeFilter<"unit_question_blocks"> | Date | string
+    deleted?: BoolFilter<"unit_question_blocks"> | boolean
+    description?: JsonFilter<"unit_question_blocks">
+    unit_id?: UuidFilter<"unit_question_blocks"> | string
+    type?: Enumunit_block_typeFilter<"unit_question_blocks"> | $Enums.unit_block_type
+    unit_levels?: Unit_levelsListRelationFilter
+    units?: XOR<UnitsScalarRelationFilter, unitsWhereInput>
+  }, "id" | "number">
+
+  export type unit_question_blocksOrderByWithAggregationInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+    description?: SortOrder
+    number?: SortOrder
+    unit_id?: SortOrder
+    type?: SortOrder
+    _count?: unit_question_blocksCountOrderByAggregateInput
+    _avg?: unit_question_blocksAvgOrderByAggregateInput
+    _max?: unit_question_blocksMaxOrderByAggregateInput
+    _min?: unit_question_blocksMinOrderByAggregateInput
+    _sum?: unit_question_blocksSumOrderByAggregateInput
+  }
+
+  export type unit_question_blocksScalarWhereWithAggregatesInput = {
+    AND?: unit_question_blocksScalarWhereWithAggregatesInput | unit_question_blocksScalarWhereWithAggregatesInput[]
+    OR?: unit_question_blocksScalarWhereWithAggregatesInput[]
+    NOT?: unit_question_blocksScalarWhereWithAggregatesInput | unit_question_blocksScalarWhereWithAggregatesInput[]
+    id?: UuidWithAggregatesFilter<"unit_question_blocks"> | string
+    created_at?: DateTimeWithAggregatesFilter<"unit_question_blocks"> | Date | string
+    updated_at?: DateTimeWithAggregatesFilter<"unit_question_blocks"> | Date | string
+    deleted?: BoolWithAggregatesFilter<"unit_question_blocks"> | boolean
+    description?: JsonWithAggregatesFilter<"unit_question_blocks">
+    number?: IntWithAggregatesFilter<"unit_question_blocks"> | number
+    unit_id?: UuidWithAggregatesFilter<"unit_question_blocks"> | string
+    type?: Enumunit_block_typeWithAggregatesFilter<"unit_question_blocks"> | $Enums.unit_block_type
   }
 
   export type unit_questions_to_unit_levelsWhereInput = {
     AND?: unit_questions_to_unit_levelsWhereInput | unit_questions_to_unit_levelsWhereInput[]
     OR?: unit_questions_to_unit_levelsWhereInput[]
     NOT?: unit_questions_to_unit_levelsWhereInput | unit_questions_to_unit_levelsWhereInput[]
-    unit_level_id?: UuidFilter<"unit_questions_to_unit_levels"> | string
     unit_question_id?: UuidFilter<"unit_questions_to_unit_levels"> | string
     number?: IntFilter<"unit_questions_to_unit_levels"> | number
+    unit_level_id?: UuidFilter<"unit_questions_to_unit_levels"> | string
     with_hint?: BoolFilter<"unit_questions_to_unit_levels"> | boolean
     unit_levels?: XOR<Unit_levelsScalarRelationFilter, unit_levelsWhereInput>
     unit_questions?: XOR<Unit_questionsScalarRelationFilter, unit_questionsWhereInput>
   }
 
   export type unit_questions_to_unit_levelsOrderByWithRelationInput = {
-    unit_level_id?: SortOrder
     unit_question_id?: SortOrder
     number?: SortOrder
+    unit_level_id?: SortOrder
     with_hint?: SortOrder
     unit_levels?: unit_levelsOrderByWithRelationInput
     unit_questions?: unit_questionsOrderByWithRelationInput
   }
 
   export type unit_questions_to_unit_levelsWhereUniqueInput = Prisma.AtLeast<{
-    unit_level_id_unit_question_id_number_with_hint?: unit_questions_to_unit_levelsUnit_level_idUnit_question_idNumberWith_hintCompoundUniqueInput
+    unit_question_id_number_unit_level_id_with_hint?: unit_questions_to_unit_levelsUnit_question_idNumberUnit_level_idWith_hintCompoundUniqueInput
     AND?: unit_questions_to_unit_levelsWhereInput | unit_questions_to_unit_levelsWhereInput[]
     OR?: unit_questions_to_unit_levelsWhereInput[]
     NOT?: unit_questions_to_unit_levelsWhereInput | unit_questions_to_unit_levelsWhereInput[]
-    unit_level_id?: UuidFilter<"unit_questions_to_unit_levels"> | string
     unit_question_id?: UuidFilter<"unit_questions_to_unit_levels"> | string
     number?: IntFilter<"unit_questions_to_unit_levels"> | number
+    unit_level_id?: UuidFilter<"unit_questions_to_unit_levels"> | string
     with_hint?: BoolFilter<"unit_questions_to_unit_levels"> | boolean
     unit_levels?: XOR<Unit_levelsScalarRelationFilter, unit_levelsWhereInput>
     unit_questions?: XOR<Unit_questionsScalarRelationFilter, unit_questionsWhereInput>
-  }, "unit_level_id_unit_question_id_number_with_hint">
+  }, "unit_question_id_number_unit_level_id_with_hint">
 
   export type unit_questions_to_unit_levelsOrderByWithAggregationInput = {
-    unit_level_id?: SortOrder
     unit_question_id?: SortOrder
     number?: SortOrder
+    unit_level_id?: SortOrder
     with_hint?: SortOrder
     _count?: unit_questions_to_unit_levelsCountOrderByAggregateInput
     _avg?: unit_questions_to_unit_levelsAvgOrderByAggregateInput
@@ -18802,9 +20242,9 @@ export namespace Prisma {
     AND?: unit_questions_to_unit_levelsScalarWhereWithAggregatesInput | unit_questions_to_unit_levelsScalarWhereWithAggregatesInput[]
     OR?: unit_questions_to_unit_levelsScalarWhereWithAggregatesInput[]
     NOT?: unit_questions_to_unit_levelsScalarWhereWithAggregatesInput | unit_questions_to_unit_levelsScalarWhereWithAggregatesInput[]
-    unit_level_id?: UuidWithAggregatesFilter<"unit_questions_to_unit_levels"> | string
     unit_question_id?: UuidWithAggregatesFilter<"unit_questions_to_unit_levels"> | string
     number?: IntWithAggregatesFilter<"unit_questions_to_unit_levels"> | number
+    unit_level_id?: UuidWithAggregatesFilter<"unit_questions_to_unit_levels"> | string
     with_hint?: BoolWithAggregatesFilter<"unit_questions_to_unit_levels"> | boolean
   }
 
@@ -18818,6 +20258,7 @@ export namespace Prisma {
     deleted?: BoolFilter<"unit_progress"> | boolean
     unit_level_id?: UuidFilter<"unit_progress"> | string
     letter_levels?: XOR<Letter_levelsScalarRelationFilter, letter_levelsWhereInput>
+    unit_levels?: XOR<Unit_levelsScalarRelationFilter, unit_levelsWhereInput>
   }
 
   export type unit_progressOrderByWithRelationInput = {
@@ -18827,6 +20268,7 @@ export namespace Prisma {
     deleted?: SortOrder
     unit_level_id?: SortOrder
     letter_levels?: letter_levelsOrderByWithRelationInput
+    unit_levels?: unit_levelsOrderByWithRelationInput
   }
 
   export type unit_progressWhereUniqueInput = Prisma.AtLeast<{
@@ -18839,6 +20281,7 @@ export namespace Prisma {
     deleted?: BoolFilter<"unit_progress"> | boolean
     unit_level_id?: UuidFilter<"unit_progress"> | string
     letter_levels?: XOR<Letter_levelsScalarRelationFilter, letter_levelsWhereInput>
+    unit_levels?: XOR<Unit_levelsScalarRelationFilter, unit_levelsWhereInput>
   }, "id">
 
   export type unit_progressOrderByWithAggregationInput = {
@@ -19419,7 +20862,7 @@ export namespace Prisma {
     question: JsonNullValueInput | InputJsonValue
     deleted?: boolean
     id?: string
-    key?: string | null
+    key: string
     unit_questions_to_unit_levels?: unit_questions_to_unit_levelsCreateNestedManyWithoutUnit_questionsInput
   }
 
@@ -19429,7 +20872,7 @@ export namespace Prisma {
     question: JsonNullValueInput | InputJsonValue
     deleted?: boolean
     id?: string
-    key?: string | null
+    key: string
     unit_questions_to_unit_levels?: unit_questions_to_unit_levelsUncheckedCreateNestedManyWithoutUnit_questionsInput
   }
 
@@ -19439,7 +20882,7 @@ export namespace Prisma {
     question?: JsonNullValueInput | InputJsonValue
     deleted?: BoolFieldUpdateOperationsInput | boolean
     id?: StringFieldUpdateOperationsInput | string
-    key?: NullableStringFieldUpdateOperationsInput | string | null
+    key?: StringFieldUpdateOperationsInput | string
     unit_questions_to_unit_levels?: unit_questions_to_unit_levelsUpdateManyWithoutUnit_questionsNestedInput
   }
 
@@ -19449,7 +20892,7 @@ export namespace Prisma {
     question?: JsonNullValueInput | InputJsonValue
     deleted?: BoolFieldUpdateOperationsInput | boolean
     id?: StringFieldUpdateOperationsInput | string
-    key?: NullableStringFieldUpdateOperationsInput | string | null
+    key?: StringFieldUpdateOperationsInput | string
     unit_questions_to_unit_levels?: unit_questions_to_unit_levelsUncheckedUpdateManyWithoutUnit_questionsNestedInput
   }
 
@@ -19459,7 +20902,7 @@ export namespace Prisma {
     question: JsonNullValueInput | InputJsonValue
     deleted?: boolean
     id?: string
-    key?: string | null
+    key: string
   }
 
   export type unit_questionsUpdateManyMutationInput = {
@@ -19468,7 +20911,7 @@ export namespace Prisma {
     question?: JsonNullValueInput | InputJsonValue
     deleted?: BoolFieldUpdateOperationsInput | boolean
     id?: StringFieldUpdateOperationsInput | string
-    key?: NullableStringFieldUpdateOperationsInput | string | null
+    key?: StringFieldUpdateOperationsInput | string
   }
 
   export type unit_questionsUncheckedUpdateManyInput = {
@@ -19477,7 +20920,7 @@ export namespace Prisma {
     question?: JsonNullValueInput | InputJsonValue
     deleted?: BoolFieldUpdateOperationsInput | boolean
     id?: StringFieldUpdateOperationsInput | string
-    key?: NullableStringFieldUpdateOperationsInput | string | null
+    key?: StringFieldUpdateOperationsInput | string
   }
 
   export type unitsCreateInput = {
@@ -19485,8 +20928,8 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     deleted?: boolean
-    number: number
-    unit_levels?: unit_levelsCreateNestedManyWithoutUnitsInput
+    number?: number
+    unit_question_blocks?: unit_question_blocksCreateNestedManyWithoutUnitsInput
   }
 
   export type unitsUncheckedCreateInput = {
@@ -19494,8 +20937,8 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     deleted?: boolean
-    number: number
-    unit_levels?: unit_levelsUncheckedCreateNestedManyWithoutUnitsInput
+    number?: number
+    unit_question_blocks?: unit_question_blocksUncheckedCreateNestedManyWithoutUnitsInput
   }
 
   export type unitsUpdateInput = {
@@ -19504,7 +20947,7 @@ export namespace Prisma {
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted?: BoolFieldUpdateOperationsInput | boolean
     number?: IntFieldUpdateOperationsInput | number
-    unit_levels?: unit_levelsUpdateManyWithoutUnitsNestedInput
+    unit_question_blocks?: unit_question_blocksUpdateManyWithoutUnitsNestedInput
   }
 
   export type unitsUncheckedUpdateInput = {
@@ -19513,7 +20956,7 @@ export namespace Prisma {
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted?: BoolFieldUpdateOperationsInput | boolean
     number?: IntFieldUpdateOperationsInput | number
-    unit_levels?: unit_levelsUncheckedUpdateManyWithoutUnitsNestedInput
+    unit_question_blocks?: unit_question_blocksUncheckedUpdateManyWithoutUnitsNestedInput
   }
 
   export type unitsCreateManyInput = {
@@ -19521,7 +20964,7 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     deleted?: boolean
-    number: number
+    number?: number
   }
 
   export type unitsUpdateManyMutationInput = {
@@ -19541,82 +20984,166 @@ export namespace Prisma {
   }
 
   export type unit_levelsCreateInput = {
+    id?: string
     created_at?: Date | string
     updated_at?: Date | string
     deleted?: boolean
-    number: number
-    id?: string
-    units: unitsCreateNestedOneWithoutUnit_levelsInput
+    number?: number
+    unit_question_blocks: unit_question_blocksCreateNestedOneWithoutUnit_levelsInput
+    unit_progress?: unit_progressCreateNestedManyWithoutUnit_levelsInput
     unit_questions_to_unit_levels?: unit_questions_to_unit_levelsCreateNestedManyWithoutUnit_levelsInput
   }
 
   export type unit_levelsUncheckedCreateInput = {
+    id?: string
     created_at?: Date | string
     updated_at?: Date | string
     deleted?: boolean
-    number: number
-    unit_id: string
-    id?: string
+    number?: number
+    unit_question_block_id: string
+    unit_progress?: unit_progressUncheckedCreateNestedManyWithoutUnit_levelsInput
     unit_questions_to_unit_levels?: unit_questions_to_unit_levelsUncheckedCreateNestedManyWithoutUnit_levelsInput
   }
 
   export type unit_levelsUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted?: BoolFieldUpdateOperationsInput | boolean
     number?: IntFieldUpdateOperationsInput | number
-    id?: StringFieldUpdateOperationsInput | string
-    units?: unitsUpdateOneRequiredWithoutUnit_levelsNestedInput
+    unit_question_blocks?: unit_question_blocksUpdateOneRequiredWithoutUnit_levelsNestedInput
+    unit_progress?: unit_progressUpdateManyWithoutUnit_levelsNestedInput
     unit_questions_to_unit_levels?: unit_questions_to_unit_levelsUpdateManyWithoutUnit_levelsNestedInput
   }
 
   export type unit_levelsUncheckedUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted?: BoolFieldUpdateOperationsInput | boolean
     number?: IntFieldUpdateOperationsInput | number
-    unit_id?: StringFieldUpdateOperationsInput | string
-    id?: StringFieldUpdateOperationsInput | string
+    unit_question_block_id?: StringFieldUpdateOperationsInput | string
+    unit_progress?: unit_progressUncheckedUpdateManyWithoutUnit_levelsNestedInput
     unit_questions_to_unit_levels?: unit_questions_to_unit_levelsUncheckedUpdateManyWithoutUnit_levelsNestedInput
   }
 
   export type unit_levelsCreateManyInput = {
+    id?: string
     created_at?: Date | string
     updated_at?: Date | string
     deleted?: boolean
-    number: number
-    unit_id: string
-    id?: string
+    number?: number
+    unit_question_block_id: string
   }
 
   export type unit_levelsUpdateManyMutationInput = {
+    id?: StringFieldUpdateOperationsInput | string
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted?: BoolFieldUpdateOperationsInput | boolean
     number?: IntFieldUpdateOperationsInput | number
-    id?: StringFieldUpdateOperationsInput | string
   }
 
   export type unit_levelsUncheckedUpdateManyInput = {
+    id?: StringFieldUpdateOperationsInput | string
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted?: BoolFieldUpdateOperationsInput | boolean
     number?: IntFieldUpdateOperationsInput | number
-    unit_id?: StringFieldUpdateOperationsInput | string
+    unit_question_block_id?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type unit_question_blocksCreateInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    description: JsonNullValueInput | InputJsonValue
+    number?: number
+    type?: $Enums.unit_block_type
+    unit_levels?: unit_levelsCreateNestedManyWithoutUnit_question_blocksInput
+    units: unitsCreateNestedOneWithoutUnit_question_blocksInput
+  }
+
+  export type unit_question_blocksUncheckedCreateInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    description: JsonNullValueInput | InputJsonValue
+    number?: number
+    unit_id: string
+    type?: $Enums.unit_block_type
+    unit_levels?: unit_levelsUncheckedCreateNestedManyWithoutUnit_question_blocksInput
+  }
+
+  export type unit_question_blocksUpdateInput = {
     id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    description?: JsonNullValueInput | InputJsonValue
+    number?: IntFieldUpdateOperationsInput | number
+    type?: Enumunit_block_typeFieldUpdateOperationsInput | $Enums.unit_block_type
+    unit_levels?: unit_levelsUpdateManyWithoutUnit_question_blocksNestedInput
+    units?: unitsUpdateOneRequiredWithoutUnit_question_blocksNestedInput
+  }
+
+  export type unit_question_blocksUncheckedUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    description?: JsonNullValueInput | InputJsonValue
+    number?: IntFieldUpdateOperationsInput | number
+    unit_id?: StringFieldUpdateOperationsInput | string
+    type?: Enumunit_block_typeFieldUpdateOperationsInput | $Enums.unit_block_type
+    unit_levels?: unit_levelsUncheckedUpdateManyWithoutUnit_question_blocksNestedInput
+  }
+
+  export type unit_question_blocksCreateManyInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    description: JsonNullValueInput | InputJsonValue
+    number?: number
+    unit_id: string
+    type?: $Enums.unit_block_type
+  }
+
+  export type unit_question_blocksUpdateManyMutationInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    description?: JsonNullValueInput | InputJsonValue
+    number?: IntFieldUpdateOperationsInput | number
+    type?: Enumunit_block_typeFieldUpdateOperationsInput | $Enums.unit_block_type
+  }
+
+  export type unit_question_blocksUncheckedUpdateManyInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    description?: JsonNullValueInput | InputJsonValue
+    number?: IntFieldUpdateOperationsInput | number
+    unit_id?: StringFieldUpdateOperationsInput | string
+    type?: Enumunit_block_typeFieldUpdateOperationsInput | $Enums.unit_block_type
   }
 
   export type unit_questions_to_unit_levelsCreateInput = {
-    number: number
+    number?: number
     with_hint?: boolean
     unit_levels: unit_levelsCreateNestedOneWithoutUnit_questions_to_unit_levelsInput
     unit_questions: unit_questionsCreateNestedOneWithoutUnit_questions_to_unit_levelsInput
   }
 
   export type unit_questions_to_unit_levelsUncheckedCreateInput = {
-    unit_level_id: string
     unit_question_id: string
-    number: number
+    number?: number
+    unit_level_id: string
     with_hint?: boolean
   }
 
@@ -19628,16 +21155,16 @@ export namespace Prisma {
   }
 
   export type unit_questions_to_unit_levelsUncheckedUpdateInput = {
-    unit_level_id?: StringFieldUpdateOperationsInput | string
     unit_question_id?: StringFieldUpdateOperationsInput | string
     number?: IntFieldUpdateOperationsInput | number
+    unit_level_id?: StringFieldUpdateOperationsInput | string
     with_hint?: BoolFieldUpdateOperationsInput | boolean
   }
 
   export type unit_questions_to_unit_levelsCreateManyInput = {
-    unit_level_id: string
     unit_question_id: string
-    number: number
+    number?: number
+    unit_level_id: string
     with_hint?: boolean
   }
 
@@ -19647,9 +21174,9 @@ export namespace Prisma {
   }
 
   export type unit_questions_to_unit_levelsUncheckedUpdateManyInput = {
-    unit_level_id?: StringFieldUpdateOperationsInput | string
     unit_question_id?: StringFieldUpdateOperationsInput | string
     number?: IntFieldUpdateOperationsInput | number
+    unit_level_id?: StringFieldUpdateOperationsInput | string
     with_hint?: BoolFieldUpdateOperationsInput | boolean
   }
 
@@ -19659,6 +21186,7 @@ export namespace Prisma {
     updated_at?: Date | string
     deleted?: boolean
     letter_levels?: letter_levelsCreateNestedOneWithoutUnit_progressInput
+    unit_levels?: unit_levelsCreateNestedOneWithoutUnit_progressInput
   }
 
   export type unit_progressUncheckedCreateInput = {
@@ -19675,6 +21203,7 @@ export namespace Prisma {
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted?: BoolFieldUpdateOperationsInput | boolean
     letter_levels?: letter_levelsUpdateOneRequiredWithoutUnit_progressNestedInput
+    unit_levels?: unit_levelsUpdateOneRequiredWithoutUnit_progressNestedInput
   }
 
   export type unit_progressUncheckedUpdateInput = {
@@ -20228,30 +21757,10 @@ export namespace Prisma {
     letter_level_id?: SortOrder
   }
 
-  export type StringNullableFilter<$PrismaModel = never> = {
-    equals?: string | StringFieldRefInput<$PrismaModel> | null
-    in?: string[] | ListStringFieldRefInput<$PrismaModel> | null
-    notIn?: string[] | ListStringFieldRefInput<$PrismaModel> | null
-    lt?: string | StringFieldRefInput<$PrismaModel>
-    lte?: string | StringFieldRefInput<$PrismaModel>
-    gt?: string | StringFieldRefInput<$PrismaModel>
-    gte?: string | StringFieldRefInput<$PrismaModel>
-    contains?: string | StringFieldRefInput<$PrismaModel>
-    startsWith?: string | StringFieldRefInput<$PrismaModel>
-    endsWith?: string | StringFieldRefInput<$PrismaModel>
-    mode?: QueryMode
-    not?: NestedStringNullableFilter<$PrismaModel> | string | null
-  }
-
   export type Unit_questions_to_unit_levelsListRelationFilter = {
     every?: unit_questions_to_unit_levelsWhereInput
     some?: unit_questions_to_unit_levelsWhereInput
     none?: unit_questions_to_unit_levelsWhereInput
-  }
-
-  export type SortOrderInput = {
-    sort: SortOrder
-    nulls?: NullsOrder
   }
 
   export type unit_questions_to_unit_levelsOrderByRelationAggregateInput = {
@@ -20283,31 +21792,13 @@ export namespace Prisma {
     key?: SortOrder
   }
 
-  export type StringNullableWithAggregatesFilter<$PrismaModel = never> = {
-    equals?: string | StringFieldRefInput<$PrismaModel> | null
-    in?: string[] | ListStringFieldRefInput<$PrismaModel> | null
-    notIn?: string[] | ListStringFieldRefInput<$PrismaModel> | null
-    lt?: string | StringFieldRefInput<$PrismaModel>
-    lte?: string | StringFieldRefInput<$PrismaModel>
-    gt?: string | StringFieldRefInput<$PrismaModel>
-    gte?: string | StringFieldRefInput<$PrismaModel>
-    contains?: string | StringFieldRefInput<$PrismaModel>
-    startsWith?: string | StringFieldRefInput<$PrismaModel>
-    endsWith?: string | StringFieldRefInput<$PrismaModel>
-    mode?: QueryMode
-    not?: NestedStringNullableWithAggregatesFilter<$PrismaModel> | string | null
-    _count?: NestedIntNullableFilter<$PrismaModel>
-    _min?: NestedStringNullableFilter<$PrismaModel>
-    _max?: NestedStringNullableFilter<$PrismaModel>
+  export type Unit_question_blocksListRelationFilter = {
+    every?: unit_question_blocksWhereInput
+    some?: unit_question_blocksWhereInput
+    none?: unit_question_blocksWhereInput
   }
 
-  export type Unit_levelsListRelationFilter = {
-    every?: unit_levelsWhereInput
-    some?: unit_levelsWhereInput
-    none?: unit_levelsWhereInput
-  }
-
-  export type unit_levelsOrderByRelationAggregateInput = {
+  export type unit_question_blocksOrderByRelationAggregateInput = {
     _count?: SortOrder
   }
 
@@ -20343,18 +21834,18 @@ export namespace Prisma {
     number?: SortOrder
   }
 
-  export type UnitsScalarRelationFilter = {
-    is?: unitsWhereInput
-    isNot?: unitsWhereInput
+  export type Unit_question_blocksScalarRelationFilter = {
+    is?: unit_question_blocksWhereInput
+    isNot?: unit_question_blocksWhereInput
   }
 
   export type unit_levelsCountOrderByAggregateInput = {
+    id?: SortOrder
     created_at?: SortOrder
     updated_at?: SortOrder
     deleted?: SortOrder
     number?: SortOrder
-    unit_id?: SortOrder
-    id?: SortOrder
+    unit_question_block_id?: SortOrder
   }
 
   export type unit_levelsAvgOrderByAggregateInput = {
@@ -20362,25 +21853,96 @@ export namespace Prisma {
   }
 
   export type unit_levelsMaxOrderByAggregateInput = {
+    id?: SortOrder
     created_at?: SortOrder
     updated_at?: SortOrder
     deleted?: SortOrder
     number?: SortOrder
-    unit_id?: SortOrder
-    id?: SortOrder
+    unit_question_block_id?: SortOrder
   }
 
   export type unit_levelsMinOrderByAggregateInput = {
+    id?: SortOrder
     created_at?: SortOrder
     updated_at?: SortOrder
     deleted?: SortOrder
     number?: SortOrder
-    unit_id?: SortOrder
-    id?: SortOrder
+    unit_question_block_id?: SortOrder
   }
 
   export type unit_levelsSumOrderByAggregateInput = {
     number?: SortOrder
+  }
+
+  export type Enumunit_block_typeFilter<$PrismaModel = never> = {
+    equals?: $Enums.unit_block_type | Enumunit_block_typeFieldRefInput<$PrismaModel>
+    in?: $Enums.unit_block_type[] | ListEnumunit_block_typeFieldRefInput<$PrismaModel>
+    notIn?: $Enums.unit_block_type[] | ListEnumunit_block_typeFieldRefInput<$PrismaModel>
+    not?: NestedEnumunit_block_typeFilter<$PrismaModel> | $Enums.unit_block_type
+  }
+
+  export type Unit_levelsListRelationFilter = {
+    every?: unit_levelsWhereInput
+    some?: unit_levelsWhereInput
+    none?: unit_levelsWhereInput
+  }
+
+  export type UnitsScalarRelationFilter = {
+    is?: unitsWhereInput
+    isNot?: unitsWhereInput
+  }
+
+  export type unit_levelsOrderByRelationAggregateInput = {
+    _count?: SortOrder
+  }
+
+  export type unit_question_blocksCountOrderByAggregateInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+    description?: SortOrder
+    number?: SortOrder
+    unit_id?: SortOrder
+    type?: SortOrder
+  }
+
+  export type unit_question_blocksAvgOrderByAggregateInput = {
+    number?: SortOrder
+  }
+
+  export type unit_question_blocksMaxOrderByAggregateInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+    number?: SortOrder
+    unit_id?: SortOrder
+    type?: SortOrder
+  }
+
+  export type unit_question_blocksMinOrderByAggregateInput = {
+    id?: SortOrder
+    created_at?: SortOrder
+    updated_at?: SortOrder
+    deleted?: SortOrder
+    number?: SortOrder
+    unit_id?: SortOrder
+    type?: SortOrder
+  }
+
+  export type unit_question_blocksSumOrderByAggregateInput = {
+    number?: SortOrder
+  }
+
+  export type Enumunit_block_typeWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: $Enums.unit_block_type | Enumunit_block_typeFieldRefInput<$PrismaModel>
+    in?: $Enums.unit_block_type[] | ListEnumunit_block_typeFieldRefInput<$PrismaModel>
+    notIn?: $Enums.unit_block_type[] | ListEnumunit_block_typeFieldRefInput<$PrismaModel>
+    not?: NestedEnumunit_block_typeWithAggregatesFilter<$PrismaModel> | $Enums.unit_block_type
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedEnumunit_block_typeFilter<$PrismaModel>
+    _max?: NestedEnumunit_block_typeFilter<$PrismaModel>
   }
 
   export type Unit_levelsScalarRelationFilter = {
@@ -20393,17 +21955,17 @@ export namespace Prisma {
     isNot?: unit_questionsWhereInput
   }
 
-  export type unit_questions_to_unit_levelsUnit_level_idUnit_question_idNumberWith_hintCompoundUniqueInput = {
-    unit_level_id: string
+  export type unit_questions_to_unit_levelsUnit_question_idNumberUnit_level_idWith_hintCompoundUniqueInput = {
     unit_question_id: string
     number: number
+    unit_level_id: string
     with_hint: boolean
   }
 
   export type unit_questions_to_unit_levelsCountOrderByAggregateInput = {
-    unit_level_id?: SortOrder
     unit_question_id?: SortOrder
     number?: SortOrder
+    unit_level_id?: SortOrder
     with_hint?: SortOrder
   }
 
@@ -20412,16 +21974,16 @@ export namespace Prisma {
   }
 
   export type unit_questions_to_unit_levelsMaxOrderByAggregateInput = {
-    unit_level_id?: SortOrder
     unit_question_id?: SortOrder
     number?: SortOrder
+    unit_level_id?: SortOrder
     with_hint?: SortOrder
   }
 
   export type unit_questions_to_unit_levelsMinOrderByAggregateInput = {
-    unit_level_id?: SortOrder
     unit_question_id?: SortOrder
     number?: SortOrder
+    unit_level_id?: SortOrder
     with_hint?: SortOrder
   }
 
@@ -21033,10 +22595,6 @@ export namespace Prisma {
     connect?: unit_questions_to_unit_levelsWhereUniqueInput | unit_questions_to_unit_levelsWhereUniqueInput[]
   }
 
-  export type NullableStringFieldUpdateOperationsInput = {
-    set?: string | null
-  }
-
   export type unit_questions_to_unit_levelsUpdateManyWithoutUnit_questionsNestedInput = {
     create?: XOR<unit_questions_to_unit_levelsCreateWithoutUnit_questionsInput, unit_questions_to_unit_levelsUncheckedCreateWithoutUnit_questionsInput> | unit_questions_to_unit_levelsCreateWithoutUnit_questionsInput[] | unit_questions_to_unit_levelsUncheckedCreateWithoutUnit_questionsInput[]
     connectOrCreate?: unit_questions_to_unit_levelsCreateOrConnectWithoutUnit_questionsInput | unit_questions_to_unit_levelsCreateOrConnectWithoutUnit_questionsInput[]
@@ -21065,52 +22623,59 @@ export namespace Prisma {
     deleteMany?: unit_questions_to_unit_levelsScalarWhereInput | unit_questions_to_unit_levelsScalarWhereInput[]
   }
 
-  export type unit_levelsCreateNestedManyWithoutUnitsInput = {
-    create?: XOR<unit_levelsCreateWithoutUnitsInput, unit_levelsUncheckedCreateWithoutUnitsInput> | unit_levelsCreateWithoutUnitsInput[] | unit_levelsUncheckedCreateWithoutUnitsInput[]
-    connectOrCreate?: unit_levelsCreateOrConnectWithoutUnitsInput | unit_levelsCreateOrConnectWithoutUnitsInput[]
-    createMany?: unit_levelsCreateManyUnitsInputEnvelope
-    connect?: unit_levelsWhereUniqueInput | unit_levelsWhereUniqueInput[]
+  export type unit_question_blocksCreateNestedManyWithoutUnitsInput = {
+    create?: XOR<unit_question_blocksCreateWithoutUnitsInput, unit_question_blocksUncheckedCreateWithoutUnitsInput> | unit_question_blocksCreateWithoutUnitsInput[] | unit_question_blocksUncheckedCreateWithoutUnitsInput[]
+    connectOrCreate?: unit_question_blocksCreateOrConnectWithoutUnitsInput | unit_question_blocksCreateOrConnectWithoutUnitsInput[]
+    createMany?: unit_question_blocksCreateManyUnitsInputEnvelope
+    connect?: unit_question_blocksWhereUniqueInput | unit_question_blocksWhereUniqueInput[]
   }
 
-  export type unit_levelsUncheckedCreateNestedManyWithoutUnitsInput = {
-    create?: XOR<unit_levelsCreateWithoutUnitsInput, unit_levelsUncheckedCreateWithoutUnitsInput> | unit_levelsCreateWithoutUnitsInput[] | unit_levelsUncheckedCreateWithoutUnitsInput[]
-    connectOrCreate?: unit_levelsCreateOrConnectWithoutUnitsInput | unit_levelsCreateOrConnectWithoutUnitsInput[]
-    createMany?: unit_levelsCreateManyUnitsInputEnvelope
-    connect?: unit_levelsWhereUniqueInput | unit_levelsWhereUniqueInput[]
+  export type unit_question_blocksUncheckedCreateNestedManyWithoutUnitsInput = {
+    create?: XOR<unit_question_blocksCreateWithoutUnitsInput, unit_question_blocksUncheckedCreateWithoutUnitsInput> | unit_question_blocksCreateWithoutUnitsInput[] | unit_question_blocksUncheckedCreateWithoutUnitsInput[]
+    connectOrCreate?: unit_question_blocksCreateOrConnectWithoutUnitsInput | unit_question_blocksCreateOrConnectWithoutUnitsInput[]
+    createMany?: unit_question_blocksCreateManyUnitsInputEnvelope
+    connect?: unit_question_blocksWhereUniqueInput | unit_question_blocksWhereUniqueInput[]
   }
 
-  export type unit_levelsUpdateManyWithoutUnitsNestedInput = {
-    create?: XOR<unit_levelsCreateWithoutUnitsInput, unit_levelsUncheckedCreateWithoutUnitsInput> | unit_levelsCreateWithoutUnitsInput[] | unit_levelsUncheckedCreateWithoutUnitsInput[]
-    connectOrCreate?: unit_levelsCreateOrConnectWithoutUnitsInput | unit_levelsCreateOrConnectWithoutUnitsInput[]
-    upsert?: unit_levelsUpsertWithWhereUniqueWithoutUnitsInput | unit_levelsUpsertWithWhereUniqueWithoutUnitsInput[]
-    createMany?: unit_levelsCreateManyUnitsInputEnvelope
-    set?: unit_levelsWhereUniqueInput | unit_levelsWhereUniqueInput[]
-    disconnect?: unit_levelsWhereUniqueInput | unit_levelsWhereUniqueInput[]
-    delete?: unit_levelsWhereUniqueInput | unit_levelsWhereUniqueInput[]
-    connect?: unit_levelsWhereUniqueInput | unit_levelsWhereUniqueInput[]
-    update?: unit_levelsUpdateWithWhereUniqueWithoutUnitsInput | unit_levelsUpdateWithWhereUniqueWithoutUnitsInput[]
-    updateMany?: unit_levelsUpdateManyWithWhereWithoutUnitsInput | unit_levelsUpdateManyWithWhereWithoutUnitsInput[]
-    deleteMany?: unit_levelsScalarWhereInput | unit_levelsScalarWhereInput[]
+  export type unit_question_blocksUpdateManyWithoutUnitsNestedInput = {
+    create?: XOR<unit_question_blocksCreateWithoutUnitsInput, unit_question_blocksUncheckedCreateWithoutUnitsInput> | unit_question_blocksCreateWithoutUnitsInput[] | unit_question_blocksUncheckedCreateWithoutUnitsInput[]
+    connectOrCreate?: unit_question_blocksCreateOrConnectWithoutUnitsInput | unit_question_blocksCreateOrConnectWithoutUnitsInput[]
+    upsert?: unit_question_blocksUpsertWithWhereUniqueWithoutUnitsInput | unit_question_blocksUpsertWithWhereUniqueWithoutUnitsInput[]
+    createMany?: unit_question_blocksCreateManyUnitsInputEnvelope
+    set?: unit_question_blocksWhereUniqueInput | unit_question_blocksWhereUniqueInput[]
+    disconnect?: unit_question_blocksWhereUniqueInput | unit_question_blocksWhereUniqueInput[]
+    delete?: unit_question_blocksWhereUniqueInput | unit_question_blocksWhereUniqueInput[]
+    connect?: unit_question_blocksWhereUniqueInput | unit_question_blocksWhereUniqueInput[]
+    update?: unit_question_blocksUpdateWithWhereUniqueWithoutUnitsInput | unit_question_blocksUpdateWithWhereUniqueWithoutUnitsInput[]
+    updateMany?: unit_question_blocksUpdateManyWithWhereWithoutUnitsInput | unit_question_blocksUpdateManyWithWhereWithoutUnitsInput[]
+    deleteMany?: unit_question_blocksScalarWhereInput | unit_question_blocksScalarWhereInput[]
   }
 
-  export type unit_levelsUncheckedUpdateManyWithoutUnitsNestedInput = {
-    create?: XOR<unit_levelsCreateWithoutUnitsInput, unit_levelsUncheckedCreateWithoutUnitsInput> | unit_levelsCreateWithoutUnitsInput[] | unit_levelsUncheckedCreateWithoutUnitsInput[]
-    connectOrCreate?: unit_levelsCreateOrConnectWithoutUnitsInput | unit_levelsCreateOrConnectWithoutUnitsInput[]
-    upsert?: unit_levelsUpsertWithWhereUniqueWithoutUnitsInput | unit_levelsUpsertWithWhereUniqueWithoutUnitsInput[]
-    createMany?: unit_levelsCreateManyUnitsInputEnvelope
-    set?: unit_levelsWhereUniqueInput | unit_levelsWhereUniqueInput[]
-    disconnect?: unit_levelsWhereUniqueInput | unit_levelsWhereUniqueInput[]
-    delete?: unit_levelsWhereUniqueInput | unit_levelsWhereUniqueInput[]
-    connect?: unit_levelsWhereUniqueInput | unit_levelsWhereUniqueInput[]
-    update?: unit_levelsUpdateWithWhereUniqueWithoutUnitsInput | unit_levelsUpdateWithWhereUniqueWithoutUnitsInput[]
-    updateMany?: unit_levelsUpdateManyWithWhereWithoutUnitsInput | unit_levelsUpdateManyWithWhereWithoutUnitsInput[]
-    deleteMany?: unit_levelsScalarWhereInput | unit_levelsScalarWhereInput[]
+  export type unit_question_blocksUncheckedUpdateManyWithoutUnitsNestedInput = {
+    create?: XOR<unit_question_blocksCreateWithoutUnitsInput, unit_question_blocksUncheckedCreateWithoutUnitsInput> | unit_question_blocksCreateWithoutUnitsInput[] | unit_question_blocksUncheckedCreateWithoutUnitsInput[]
+    connectOrCreate?: unit_question_blocksCreateOrConnectWithoutUnitsInput | unit_question_blocksCreateOrConnectWithoutUnitsInput[]
+    upsert?: unit_question_blocksUpsertWithWhereUniqueWithoutUnitsInput | unit_question_blocksUpsertWithWhereUniqueWithoutUnitsInput[]
+    createMany?: unit_question_blocksCreateManyUnitsInputEnvelope
+    set?: unit_question_blocksWhereUniqueInput | unit_question_blocksWhereUniqueInput[]
+    disconnect?: unit_question_blocksWhereUniqueInput | unit_question_blocksWhereUniqueInput[]
+    delete?: unit_question_blocksWhereUniqueInput | unit_question_blocksWhereUniqueInput[]
+    connect?: unit_question_blocksWhereUniqueInput | unit_question_blocksWhereUniqueInput[]
+    update?: unit_question_blocksUpdateWithWhereUniqueWithoutUnitsInput | unit_question_blocksUpdateWithWhereUniqueWithoutUnitsInput[]
+    updateMany?: unit_question_blocksUpdateManyWithWhereWithoutUnitsInput | unit_question_blocksUpdateManyWithWhereWithoutUnitsInput[]
+    deleteMany?: unit_question_blocksScalarWhereInput | unit_question_blocksScalarWhereInput[]
   }
 
-  export type unitsCreateNestedOneWithoutUnit_levelsInput = {
-    create?: XOR<unitsCreateWithoutUnit_levelsInput, unitsUncheckedCreateWithoutUnit_levelsInput>
-    connectOrCreate?: unitsCreateOrConnectWithoutUnit_levelsInput
-    connect?: unitsWhereUniqueInput
+  export type unit_question_blocksCreateNestedOneWithoutUnit_levelsInput = {
+    create?: XOR<unit_question_blocksCreateWithoutUnit_levelsInput, unit_question_blocksUncheckedCreateWithoutUnit_levelsInput>
+    connectOrCreate?: unit_question_blocksCreateOrConnectWithoutUnit_levelsInput
+    connect?: unit_question_blocksWhereUniqueInput
+  }
+
+  export type unit_progressCreateNestedManyWithoutUnit_levelsInput = {
+    create?: XOR<unit_progressCreateWithoutUnit_levelsInput, unit_progressUncheckedCreateWithoutUnit_levelsInput> | unit_progressCreateWithoutUnit_levelsInput[] | unit_progressUncheckedCreateWithoutUnit_levelsInput[]
+    connectOrCreate?: unit_progressCreateOrConnectWithoutUnit_levelsInput | unit_progressCreateOrConnectWithoutUnit_levelsInput[]
+    createMany?: unit_progressCreateManyUnit_levelsInputEnvelope
+    connect?: unit_progressWhereUniqueInput | unit_progressWhereUniqueInput[]
   }
 
   export type unit_questions_to_unit_levelsCreateNestedManyWithoutUnit_levelsInput = {
@@ -21120,6 +22685,13 @@ export namespace Prisma {
     connect?: unit_questions_to_unit_levelsWhereUniqueInput | unit_questions_to_unit_levelsWhereUniqueInput[]
   }
 
+  export type unit_progressUncheckedCreateNestedManyWithoutUnit_levelsInput = {
+    create?: XOR<unit_progressCreateWithoutUnit_levelsInput, unit_progressUncheckedCreateWithoutUnit_levelsInput> | unit_progressCreateWithoutUnit_levelsInput[] | unit_progressUncheckedCreateWithoutUnit_levelsInput[]
+    connectOrCreate?: unit_progressCreateOrConnectWithoutUnit_levelsInput | unit_progressCreateOrConnectWithoutUnit_levelsInput[]
+    createMany?: unit_progressCreateManyUnit_levelsInputEnvelope
+    connect?: unit_progressWhereUniqueInput | unit_progressWhereUniqueInput[]
+  }
+
   export type unit_questions_to_unit_levelsUncheckedCreateNestedManyWithoutUnit_levelsInput = {
     create?: XOR<unit_questions_to_unit_levelsCreateWithoutUnit_levelsInput, unit_questions_to_unit_levelsUncheckedCreateWithoutUnit_levelsInput> | unit_questions_to_unit_levelsCreateWithoutUnit_levelsInput[] | unit_questions_to_unit_levelsUncheckedCreateWithoutUnit_levelsInput[]
     connectOrCreate?: unit_questions_to_unit_levelsCreateOrConnectWithoutUnit_levelsInput | unit_questions_to_unit_levelsCreateOrConnectWithoutUnit_levelsInput[]
@@ -21127,12 +22699,26 @@ export namespace Prisma {
     connect?: unit_questions_to_unit_levelsWhereUniqueInput | unit_questions_to_unit_levelsWhereUniqueInput[]
   }
 
-  export type unitsUpdateOneRequiredWithoutUnit_levelsNestedInput = {
-    create?: XOR<unitsCreateWithoutUnit_levelsInput, unitsUncheckedCreateWithoutUnit_levelsInput>
-    connectOrCreate?: unitsCreateOrConnectWithoutUnit_levelsInput
-    upsert?: unitsUpsertWithoutUnit_levelsInput
-    connect?: unitsWhereUniqueInput
-    update?: XOR<XOR<unitsUpdateToOneWithWhereWithoutUnit_levelsInput, unitsUpdateWithoutUnit_levelsInput>, unitsUncheckedUpdateWithoutUnit_levelsInput>
+  export type unit_question_blocksUpdateOneRequiredWithoutUnit_levelsNestedInput = {
+    create?: XOR<unit_question_blocksCreateWithoutUnit_levelsInput, unit_question_blocksUncheckedCreateWithoutUnit_levelsInput>
+    connectOrCreate?: unit_question_blocksCreateOrConnectWithoutUnit_levelsInput
+    upsert?: unit_question_blocksUpsertWithoutUnit_levelsInput
+    connect?: unit_question_blocksWhereUniqueInput
+    update?: XOR<XOR<unit_question_blocksUpdateToOneWithWhereWithoutUnit_levelsInput, unit_question_blocksUpdateWithoutUnit_levelsInput>, unit_question_blocksUncheckedUpdateWithoutUnit_levelsInput>
+  }
+
+  export type unit_progressUpdateManyWithoutUnit_levelsNestedInput = {
+    create?: XOR<unit_progressCreateWithoutUnit_levelsInput, unit_progressUncheckedCreateWithoutUnit_levelsInput> | unit_progressCreateWithoutUnit_levelsInput[] | unit_progressUncheckedCreateWithoutUnit_levelsInput[]
+    connectOrCreate?: unit_progressCreateOrConnectWithoutUnit_levelsInput | unit_progressCreateOrConnectWithoutUnit_levelsInput[]
+    upsert?: unit_progressUpsertWithWhereUniqueWithoutUnit_levelsInput | unit_progressUpsertWithWhereUniqueWithoutUnit_levelsInput[]
+    createMany?: unit_progressCreateManyUnit_levelsInputEnvelope
+    set?: unit_progressWhereUniqueInput | unit_progressWhereUniqueInput[]
+    disconnect?: unit_progressWhereUniqueInput | unit_progressWhereUniqueInput[]
+    delete?: unit_progressWhereUniqueInput | unit_progressWhereUniqueInput[]
+    connect?: unit_progressWhereUniqueInput | unit_progressWhereUniqueInput[]
+    update?: unit_progressUpdateWithWhereUniqueWithoutUnit_levelsInput | unit_progressUpdateWithWhereUniqueWithoutUnit_levelsInput[]
+    updateMany?: unit_progressUpdateManyWithWhereWithoutUnit_levelsInput | unit_progressUpdateManyWithWhereWithoutUnit_levelsInput[]
+    deleteMany?: unit_progressScalarWhereInput | unit_progressScalarWhereInput[]
   }
 
   export type unit_questions_to_unit_levelsUpdateManyWithoutUnit_levelsNestedInput = {
@@ -21149,6 +22735,20 @@ export namespace Prisma {
     deleteMany?: unit_questions_to_unit_levelsScalarWhereInput | unit_questions_to_unit_levelsScalarWhereInput[]
   }
 
+  export type unit_progressUncheckedUpdateManyWithoutUnit_levelsNestedInput = {
+    create?: XOR<unit_progressCreateWithoutUnit_levelsInput, unit_progressUncheckedCreateWithoutUnit_levelsInput> | unit_progressCreateWithoutUnit_levelsInput[] | unit_progressUncheckedCreateWithoutUnit_levelsInput[]
+    connectOrCreate?: unit_progressCreateOrConnectWithoutUnit_levelsInput | unit_progressCreateOrConnectWithoutUnit_levelsInput[]
+    upsert?: unit_progressUpsertWithWhereUniqueWithoutUnit_levelsInput | unit_progressUpsertWithWhereUniqueWithoutUnit_levelsInput[]
+    createMany?: unit_progressCreateManyUnit_levelsInputEnvelope
+    set?: unit_progressWhereUniqueInput | unit_progressWhereUniqueInput[]
+    disconnect?: unit_progressWhereUniqueInput | unit_progressWhereUniqueInput[]
+    delete?: unit_progressWhereUniqueInput | unit_progressWhereUniqueInput[]
+    connect?: unit_progressWhereUniqueInput | unit_progressWhereUniqueInput[]
+    update?: unit_progressUpdateWithWhereUniqueWithoutUnit_levelsInput | unit_progressUpdateWithWhereUniqueWithoutUnit_levelsInput[]
+    updateMany?: unit_progressUpdateManyWithWhereWithoutUnit_levelsInput | unit_progressUpdateManyWithWhereWithoutUnit_levelsInput[]
+    deleteMany?: unit_progressScalarWhereInput | unit_progressScalarWhereInput[]
+  }
+
   export type unit_questions_to_unit_levelsUncheckedUpdateManyWithoutUnit_levelsNestedInput = {
     create?: XOR<unit_questions_to_unit_levelsCreateWithoutUnit_levelsInput, unit_questions_to_unit_levelsUncheckedCreateWithoutUnit_levelsInput> | unit_questions_to_unit_levelsCreateWithoutUnit_levelsInput[] | unit_questions_to_unit_levelsUncheckedCreateWithoutUnit_levelsInput[]
     connectOrCreate?: unit_questions_to_unit_levelsCreateOrConnectWithoutUnit_levelsInput | unit_questions_to_unit_levelsCreateOrConnectWithoutUnit_levelsInput[]
@@ -21161,6 +22761,66 @@ export namespace Prisma {
     update?: unit_questions_to_unit_levelsUpdateWithWhereUniqueWithoutUnit_levelsInput | unit_questions_to_unit_levelsUpdateWithWhereUniqueWithoutUnit_levelsInput[]
     updateMany?: unit_questions_to_unit_levelsUpdateManyWithWhereWithoutUnit_levelsInput | unit_questions_to_unit_levelsUpdateManyWithWhereWithoutUnit_levelsInput[]
     deleteMany?: unit_questions_to_unit_levelsScalarWhereInput | unit_questions_to_unit_levelsScalarWhereInput[]
+  }
+
+  export type unit_levelsCreateNestedManyWithoutUnit_question_blocksInput = {
+    create?: XOR<unit_levelsCreateWithoutUnit_question_blocksInput, unit_levelsUncheckedCreateWithoutUnit_question_blocksInput> | unit_levelsCreateWithoutUnit_question_blocksInput[] | unit_levelsUncheckedCreateWithoutUnit_question_blocksInput[]
+    connectOrCreate?: unit_levelsCreateOrConnectWithoutUnit_question_blocksInput | unit_levelsCreateOrConnectWithoutUnit_question_blocksInput[]
+    createMany?: unit_levelsCreateManyUnit_question_blocksInputEnvelope
+    connect?: unit_levelsWhereUniqueInput | unit_levelsWhereUniqueInput[]
+  }
+
+  export type unitsCreateNestedOneWithoutUnit_question_blocksInput = {
+    create?: XOR<unitsCreateWithoutUnit_question_blocksInput, unitsUncheckedCreateWithoutUnit_question_blocksInput>
+    connectOrCreate?: unitsCreateOrConnectWithoutUnit_question_blocksInput
+    connect?: unitsWhereUniqueInput
+  }
+
+  export type unit_levelsUncheckedCreateNestedManyWithoutUnit_question_blocksInput = {
+    create?: XOR<unit_levelsCreateWithoutUnit_question_blocksInput, unit_levelsUncheckedCreateWithoutUnit_question_blocksInput> | unit_levelsCreateWithoutUnit_question_blocksInput[] | unit_levelsUncheckedCreateWithoutUnit_question_blocksInput[]
+    connectOrCreate?: unit_levelsCreateOrConnectWithoutUnit_question_blocksInput | unit_levelsCreateOrConnectWithoutUnit_question_blocksInput[]
+    createMany?: unit_levelsCreateManyUnit_question_blocksInputEnvelope
+    connect?: unit_levelsWhereUniqueInput | unit_levelsWhereUniqueInput[]
+  }
+
+  export type Enumunit_block_typeFieldUpdateOperationsInput = {
+    set?: $Enums.unit_block_type
+  }
+
+  export type unit_levelsUpdateManyWithoutUnit_question_blocksNestedInput = {
+    create?: XOR<unit_levelsCreateWithoutUnit_question_blocksInput, unit_levelsUncheckedCreateWithoutUnit_question_blocksInput> | unit_levelsCreateWithoutUnit_question_blocksInput[] | unit_levelsUncheckedCreateWithoutUnit_question_blocksInput[]
+    connectOrCreate?: unit_levelsCreateOrConnectWithoutUnit_question_blocksInput | unit_levelsCreateOrConnectWithoutUnit_question_blocksInput[]
+    upsert?: unit_levelsUpsertWithWhereUniqueWithoutUnit_question_blocksInput | unit_levelsUpsertWithWhereUniqueWithoutUnit_question_blocksInput[]
+    createMany?: unit_levelsCreateManyUnit_question_blocksInputEnvelope
+    set?: unit_levelsWhereUniqueInput | unit_levelsWhereUniqueInput[]
+    disconnect?: unit_levelsWhereUniqueInput | unit_levelsWhereUniqueInput[]
+    delete?: unit_levelsWhereUniqueInput | unit_levelsWhereUniqueInput[]
+    connect?: unit_levelsWhereUniqueInput | unit_levelsWhereUniqueInput[]
+    update?: unit_levelsUpdateWithWhereUniqueWithoutUnit_question_blocksInput | unit_levelsUpdateWithWhereUniqueWithoutUnit_question_blocksInput[]
+    updateMany?: unit_levelsUpdateManyWithWhereWithoutUnit_question_blocksInput | unit_levelsUpdateManyWithWhereWithoutUnit_question_blocksInput[]
+    deleteMany?: unit_levelsScalarWhereInput | unit_levelsScalarWhereInput[]
+  }
+
+  export type unitsUpdateOneRequiredWithoutUnit_question_blocksNestedInput = {
+    create?: XOR<unitsCreateWithoutUnit_question_blocksInput, unitsUncheckedCreateWithoutUnit_question_blocksInput>
+    connectOrCreate?: unitsCreateOrConnectWithoutUnit_question_blocksInput
+    upsert?: unitsUpsertWithoutUnit_question_blocksInput
+    connect?: unitsWhereUniqueInput
+    update?: XOR<XOR<unitsUpdateToOneWithWhereWithoutUnit_question_blocksInput, unitsUpdateWithoutUnit_question_blocksInput>, unitsUncheckedUpdateWithoutUnit_question_blocksInput>
+  }
+
+  export type unit_levelsUncheckedUpdateManyWithoutUnit_question_blocksNestedInput = {
+    create?: XOR<unit_levelsCreateWithoutUnit_question_blocksInput, unit_levelsUncheckedCreateWithoutUnit_question_blocksInput> | unit_levelsCreateWithoutUnit_question_blocksInput[] | unit_levelsUncheckedCreateWithoutUnit_question_blocksInput[]
+    connectOrCreate?: unit_levelsCreateOrConnectWithoutUnit_question_blocksInput | unit_levelsCreateOrConnectWithoutUnit_question_blocksInput[]
+    upsert?: unit_levelsUpsertWithWhereUniqueWithoutUnit_question_blocksInput | unit_levelsUpsertWithWhereUniqueWithoutUnit_question_blocksInput[]
+    createMany?: unit_levelsCreateManyUnit_question_blocksInputEnvelope
+    set?: unit_levelsWhereUniqueInput | unit_levelsWhereUniqueInput[]
+    disconnect?: unit_levelsWhereUniqueInput | unit_levelsWhereUniqueInput[]
+    delete?: unit_levelsWhereUniqueInput | unit_levelsWhereUniqueInput[]
+    connect?: unit_levelsWhereUniqueInput | unit_levelsWhereUniqueInput[]
+    update?: unit_levelsUpdateWithWhereUniqueWithoutUnit_question_blocksInput | unit_levelsUpdateWithWhereUniqueWithoutUnit_question_blocksInput[]
+    updateMany?: unit_levelsUpdateManyWithWhereWithoutUnit_question_blocksInput | unit_levelsUpdateManyWithWhereWithoutUnit_question_blocksInput[]
+    deleteMany?: unit_levelsScalarWhereInput | unit_levelsScalarWhereInput[]
   }
 
   export type unit_levelsCreateNestedOneWithoutUnit_questions_to_unit_levelsInput = {
@@ -21197,12 +22857,26 @@ export namespace Prisma {
     connect?: letter_levelsWhereUniqueInput
   }
 
+  export type unit_levelsCreateNestedOneWithoutUnit_progressInput = {
+    create?: XOR<unit_levelsCreateWithoutUnit_progressInput, unit_levelsUncheckedCreateWithoutUnit_progressInput>
+    connectOrCreate?: unit_levelsCreateOrConnectWithoutUnit_progressInput
+    connect?: unit_levelsWhereUniqueInput
+  }
+
   export type letter_levelsUpdateOneRequiredWithoutUnit_progressNestedInput = {
     create?: XOR<letter_levelsCreateWithoutUnit_progressInput, letter_levelsUncheckedCreateWithoutUnit_progressInput>
     connectOrCreate?: letter_levelsCreateOrConnectWithoutUnit_progressInput
     upsert?: letter_levelsUpsertWithoutUnit_progressInput
     connect?: letter_levelsWhereUniqueInput
     update?: XOR<XOR<letter_levelsUpdateToOneWithWhereWithoutUnit_progressInput, letter_levelsUpdateWithoutUnit_progressInput>, letter_levelsUncheckedUpdateWithoutUnit_progressInput>
+  }
+
+  export type unit_levelsUpdateOneRequiredWithoutUnit_progressNestedInput = {
+    create?: XOR<unit_levelsCreateWithoutUnit_progressInput, unit_levelsUncheckedCreateWithoutUnit_progressInput>
+    connectOrCreate?: unit_levelsCreateOrConnectWithoutUnit_progressInput
+    upsert?: unit_levelsUpsertWithoutUnit_progressInput
+    connect?: unit_levelsWhereUniqueInput
+    update?: XOR<XOR<unit_levelsUpdateToOneWithWhereWithoutUnit_progressInput, unit_levelsUpdateWithoutUnit_progressInput>, unit_levelsUncheckedUpdateWithoutUnit_progressInput>
   }
 
   export type NestedDateTimeFilter<$PrismaModel = never> = {
@@ -21360,46 +23034,21 @@ export namespace Prisma {
     not?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
   }
 
-  export type NestedStringNullableFilter<$PrismaModel = never> = {
-    equals?: string | StringFieldRefInput<$PrismaModel> | null
-    in?: string[] | ListStringFieldRefInput<$PrismaModel> | null
-    notIn?: string[] | ListStringFieldRefInput<$PrismaModel> | null
-    lt?: string | StringFieldRefInput<$PrismaModel>
-    lte?: string | StringFieldRefInput<$PrismaModel>
-    gt?: string | StringFieldRefInput<$PrismaModel>
-    gte?: string | StringFieldRefInput<$PrismaModel>
-    contains?: string | StringFieldRefInput<$PrismaModel>
-    startsWith?: string | StringFieldRefInput<$PrismaModel>
-    endsWith?: string | StringFieldRefInput<$PrismaModel>
-    not?: NestedStringNullableFilter<$PrismaModel> | string | null
+  export type NestedEnumunit_block_typeFilter<$PrismaModel = never> = {
+    equals?: $Enums.unit_block_type | Enumunit_block_typeFieldRefInput<$PrismaModel>
+    in?: $Enums.unit_block_type[] | ListEnumunit_block_typeFieldRefInput<$PrismaModel>
+    notIn?: $Enums.unit_block_type[] | ListEnumunit_block_typeFieldRefInput<$PrismaModel>
+    not?: NestedEnumunit_block_typeFilter<$PrismaModel> | $Enums.unit_block_type
   }
 
-  export type NestedStringNullableWithAggregatesFilter<$PrismaModel = never> = {
-    equals?: string | StringFieldRefInput<$PrismaModel> | null
-    in?: string[] | ListStringFieldRefInput<$PrismaModel> | null
-    notIn?: string[] | ListStringFieldRefInput<$PrismaModel> | null
-    lt?: string | StringFieldRefInput<$PrismaModel>
-    lte?: string | StringFieldRefInput<$PrismaModel>
-    gt?: string | StringFieldRefInput<$PrismaModel>
-    gte?: string | StringFieldRefInput<$PrismaModel>
-    contains?: string | StringFieldRefInput<$PrismaModel>
-    startsWith?: string | StringFieldRefInput<$PrismaModel>
-    endsWith?: string | StringFieldRefInput<$PrismaModel>
-    not?: NestedStringNullableWithAggregatesFilter<$PrismaModel> | string | null
-    _count?: NestedIntNullableFilter<$PrismaModel>
-    _min?: NestedStringNullableFilter<$PrismaModel>
-    _max?: NestedStringNullableFilter<$PrismaModel>
-  }
-
-  export type NestedIntNullableFilter<$PrismaModel = never> = {
-    equals?: number | IntFieldRefInput<$PrismaModel> | null
-    in?: number[] | ListIntFieldRefInput<$PrismaModel> | null
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel> | null
-    lt?: number | IntFieldRefInput<$PrismaModel>
-    lte?: number | IntFieldRefInput<$PrismaModel>
-    gt?: number | IntFieldRefInput<$PrismaModel>
-    gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntNullableFilter<$PrismaModel> | number | null
+  export type NestedEnumunit_block_typeWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: $Enums.unit_block_type | Enumunit_block_typeFieldRefInput<$PrismaModel>
+    in?: $Enums.unit_block_type[] | ListEnumunit_block_typeFieldRefInput<$PrismaModel>
+    notIn?: $Enums.unit_block_type[] | ListEnumunit_block_typeFieldRefInput<$PrismaModel>
+    not?: NestedEnumunit_block_typeWithAggregatesFilter<$PrismaModel> | $Enums.unit_block_type
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedEnumunit_block_typeFilter<$PrismaModel>
+    _max?: NestedEnumunit_block_typeFilter<$PrismaModel>
   }
 
   export type lettersCreateWithoutLetter_blocksInput = {
@@ -21557,6 +23206,7 @@ export namespace Prisma {
     created_at?: Date | string
     updated_at?: Date | string
     deleted?: boolean
+    unit_levels?: unit_levelsCreateNestedOneWithoutUnit_progressInput
   }
 
   export type unit_progressUncheckedCreateWithoutLetter_levelsInput = {
@@ -22401,14 +24051,14 @@ export namespace Prisma {
   }
 
   export type unit_questions_to_unit_levelsCreateWithoutUnit_questionsInput = {
-    number: number
+    number?: number
     with_hint?: boolean
     unit_levels: unit_levelsCreateNestedOneWithoutUnit_questions_to_unit_levelsInput
   }
 
   export type unit_questions_to_unit_levelsUncheckedCreateWithoutUnit_questionsInput = {
+    number?: number
     unit_level_id: string
-    number: number
     with_hint?: boolean
   }
 
@@ -22442,98 +24092,135 @@ export namespace Prisma {
     AND?: unit_questions_to_unit_levelsScalarWhereInput | unit_questions_to_unit_levelsScalarWhereInput[]
     OR?: unit_questions_to_unit_levelsScalarWhereInput[]
     NOT?: unit_questions_to_unit_levelsScalarWhereInput | unit_questions_to_unit_levelsScalarWhereInput[]
-    unit_level_id?: UuidFilter<"unit_questions_to_unit_levels"> | string
     unit_question_id?: UuidFilter<"unit_questions_to_unit_levels"> | string
     number?: IntFilter<"unit_questions_to_unit_levels"> | number
+    unit_level_id?: UuidFilter<"unit_questions_to_unit_levels"> | string
     with_hint?: BoolFilter<"unit_questions_to_unit_levels"> | boolean
   }
 
-  export type unit_levelsCreateWithoutUnitsInput = {
+  export type unit_question_blocksCreateWithoutUnitsInput = {
+    id?: string
     created_at?: Date | string
     updated_at?: Date | string
     deleted?: boolean
-    number: number
-    id?: string
-    unit_questions_to_unit_levels?: unit_questions_to_unit_levelsCreateNestedManyWithoutUnit_levelsInput
+    description: JsonNullValueInput | InputJsonValue
+    number?: number
+    type?: $Enums.unit_block_type
+    unit_levels?: unit_levelsCreateNestedManyWithoutUnit_question_blocksInput
   }
 
-  export type unit_levelsUncheckedCreateWithoutUnitsInput = {
+  export type unit_question_blocksUncheckedCreateWithoutUnitsInput = {
+    id?: string
     created_at?: Date | string
     updated_at?: Date | string
     deleted?: boolean
-    number: number
-    id?: string
-    unit_questions_to_unit_levels?: unit_questions_to_unit_levelsUncheckedCreateNestedManyWithoutUnit_levelsInput
+    description: JsonNullValueInput | InputJsonValue
+    number?: number
+    type?: $Enums.unit_block_type
+    unit_levels?: unit_levelsUncheckedCreateNestedManyWithoutUnit_question_blocksInput
   }
 
-  export type unit_levelsCreateOrConnectWithoutUnitsInput = {
-    where: unit_levelsWhereUniqueInput
-    create: XOR<unit_levelsCreateWithoutUnitsInput, unit_levelsUncheckedCreateWithoutUnitsInput>
+  export type unit_question_blocksCreateOrConnectWithoutUnitsInput = {
+    where: unit_question_blocksWhereUniqueInput
+    create: XOR<unit_question_blocksCreateWithoutUnitsInput, unit_question_blocksUncheckedCreateWithoutUnitsInput>
   }
 
-  export type unit_levelsCreateManyUnitsInputEnvelope = {
-    data: unit_levelsCreateManyUnitsInput | unit_levelsCreateManyUnitsInput[]
+  export type unit_question_blocksCreateManyUnitsInputEnvelope = {
+    data: unit_question_blocksCreateManyUnitsInput | unit_question_blocksCreateManyUnitsInput[]
     skipDuplicates?: boolean
   }
 
-  export type unit_levelsUpsertWithWhereUniqueWithoutUnitsInput = {
-    where: unit_levelsWhereUniqueInput
-    update: XOR<unit_levelsUpdateWithoutUnitsInput, unit_levelsUncheckedUpdateWithoutUnitsInput>
-    create: XOR<unit_levelsCreateWithoutUnitsInput, unit_levelsUncheckedCreateWithoutUnitsInput>
+  export type unit_question_blocksUpsertWithWhereUniqueWithoutUnitsInput = {
+    where: unit_question_blocksWhereUniqueInput
+    update: XOR<unit_question_blocksUpdateWithoutUnitsInput, unit_question_blocksUncheckedUpdateWithoutUnitsInput>
+    create: XOR<unit_question_blocksCreateWithoutUnitsInput, unit_question_blocksUncheckedCreateWithoutUnitsInput>
   }
 
-  export type unit_levelsUpdateWithWhereUniqueWithoutUnitsInput = {
-    where: unit_levelsWhereUniqueInput
-    data: XOR<unit_levelsUpdateWithoutUnitsInput, unit_levelsUncheckedUpdateWithoutUnitsInput>
+  export type unit_question_blocksUpdateWithWhereUniqueWithoutUnitsInput = {
+    where: unit_question_blocksWhereUniqueInput
+    data: XOR<unit_question_blocksUpdateWithoutUnitsInput, unit_question_blocksUncheckedUpdateWithoutUnitsInput>
   }
 
-  export type unit_levelsUpdateManyWithWhereWithoutUnitsInput = {
-    where: unit_levelsScalarWhereInput
-    data: XOR<unit_levelsUpdateManyMutationInput, unit_levelsUncheckedUpdateManyWithoutUnitsInput>
+  export type unit_question_blocksUpdateManyWithWhereWithoutUnitsInput = {
+    where: unit_question_blocksScalarWhereInput
+    data: XOR<unit_question_blocksUpdateManyMutationInput, unit_question_blocksUncheckedUpdateManyWithoutUnitsInput>
   }
 
-  export type unit_levelsScalarWhereInput = {
-    AND?: unit_levelsScalarWhereInput | unit_levelsScalarWhereInput[]
-    OR?: unit_levelsScalarWhereInput[]
-    NOT?: unit_levelsScalarWhereInput | unit_levelsScalarWhereInput[]
-    created_at?: DateTimeFilter<"unit_levels"> | Date | string
-    updated_at?: DateTimeFilter<"unit_levels"> | Date | string
-    deleted?: BoolFilter<"unit_levels"> | boolean
-    number?: IntFilter<"unit_levels"> | number
-    unit_id?: UuidFilter<"unit_levels"> | string
-    id?: UuidFilter<"unit_levels"> | string
+  export type unit_question_blocksScalarWhereInput = {
+    AND?: unit_question_blocksScalarWhereInput | unit_question_blocksScalarWhereInput[]
+    OR?: unit_question_blocksScalarWhereInput[]
+    NOT?: unit_question_blocksScalarWhereInput | unit_question_blocksScalarWhereInput[]
+    id?: UuidFilter<"unit_question_blocks"> | string
+    created_at?: DateTimeFilter<"unit_question_blocks"> | Date | string
+    updated_at?: DateTimeFilter<"unit_question_blocks"> | Date | string
+    deleted?: BoolFilter<"unit_question_blocks"> | boolean
+    description?: JsonFilter<"unit_question_blocks">
+    number?: IntFilter<"unit_question_blocks"> | number
+    unit_id?: UuidFilter<"unit_question_blocks"> | string
+    type?: Enumunit_block_typeFilter<"unit_question_blocks"> | $Enums.unit_block_type
   }
 
-  export type unitsCreateWithoutUnit_levelsInput = {
+  export type unit_question_blocksCreateWithoutUnit_levelsInput = {
     id?: string
     created_at?: Date | string
     updated_at?: Date | string
     deleted?: boolean
-    number: number
+    description: JsonNullValueInput | InputJsonValue
+    number?: number
+    type?: $Enums.unit_block_type
+    units: unitsCreateNestedOneWithoutUnit_question_blocksInput
   }
 
-  export type unitsUncheckedCreateWithoutUnit_levelsInput = {
+  export type unit_question_blocksUncheckedCreateWithoutUnit_levelsInput = {
     id?: string
     created_at?: Date | string
     updated_at?: Date | string
     deleted?: boolean
-    number: number
+    description: JsonNullValueInput | InputJsonValue
+    number?: number
+    unit_id: string
+    type?: $Enums.unit_block_type
   }
 
-  export type unitsCreateOrConnectWithoutUnit_levelsInput = {
-    where: unitsWhereUniqueInput
-    create: XOR<unitsCreateWithoutUnit_levelsInput, unitsUncheckedCreateWithoutUnit_levelsInput>
+  export type unit_question_blocksCreateOrConnectWithoutUnit_levelsInput = {
+    where: unit_question_blocksWhereUniqueInput
+    create: XOR<unit_question_blocksCreateWithoutUnit_levelsInput, unit_question_blocksUncheckedCreateWithoutUnit_levelsInput>
+  }
+
+  export type unit_progressCreateWithoutUnit_levelsInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    letter_levels?: letter_levelsCreateNestedOneWithoutUnit_progressInput
+  }
+
+  export type unit_progressUncheckedCreateWithoutUnit_levelsInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+  }
+
+  export type unit_progressCreateOrConnectWithoutUnit_levelsInput = {
+    where: unit_progressWhereUniqueInput
+    create: XOR<unit_progressCreateWithoutUnit_levelsInput, unit_progressUncheckedCreateWithoutUnit_levelsInput>
+  }
+
+  export type unit_progressCreateManyUnit_levelsInputEnvelope = {
+    data: unit_progressCreateManyUnit_levelsInput | unit_progressCreateManyUnit_levelsInput[]
+    skipDuplicates?: boolean
   }
 
   export type unit_questions_to_unit_levelsCreateWithoutUnit_levelsInput = {
-    number: number
+    number?: number
     with_hint?: boolean
     unit_questions: unit_questionsCreateNestedOneWithoutUnit_questions_to_unit_levelsInput
   }
 
   export type unit_questions_to_unit_levelsUncheckedCreateWithoutUnit_levelsInput = {
     unit_question_id: string
-    number: number
+    number?: number
     with_hint?: boolean
   }
 
@@ -22547,31 +24234,53 @@ export namespace Prisma {
     skipDuplicates?: boolean
   }
 
-  export type unitsUpsertWithoutUnit_levelsInput = {
-    update: XOR<unitsUpdateWithoutUnit_levelsInput, unitsUncheckedUpdateWithoutUnit_levelsInput>
-    create: XOR<unitsCreateWithoutUnit_levelsInput, unitsUncheckedCreateWithoutUnit_levelsInput>
-    where?: unitsWhereInput
+  export type unit_question_blocksUpsertWithoutUnit_levelsInput = {
+    update: XOR<unit_question_blocksUpdateWithoutUnit_levelsInput, unit_question_blocksUncheckedUpdateWithoutUnit_levelsInput>
+    create: XOR<unit_question_blocksCreateWithoutUnit_levelsInput, unit_question_blocksUncheckedCreateWithoutUnit_levelsInput>
+    where?: unit_question_blocksWhereInput
   }
 
-  export type unitsUpdateToOneWithWhereWithoutUnit_levelsInput = {
-    where?: unitsWhereInput
-    data: XOR<unitsUpdateWithoutUnit_levelsInput, unitsUncheckedUpdateWithoutUnit_levelsInput>
+  export type unit_question_blocksUpdateToOneWithWhereWithoutUnit_levelsInput = {
+    where?: unit_question_blocksWhereInput
+    data: XOR<unit_question_blocksUpdateWithoutUnit_levelsInput, unit_question_blocksUncheckedUpdateWithoutUnit_levelsInput>
   }
 
-  export type unitsUpdateWithoutUnit_levelsInput = {
+  export type unit_question_blocksUpdateWithoutUnit_levelsInput = {
     id?: StringFieldUpdateOperationsInput | string
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted?: BoolFieldUpdateOperationsInput | boolean
+    description?: JsonNullValueInput | InputJsonValue
     number?: IntFieldUpdateOperationsInput | number
+    type?: Enumunit_block_typeFieldUpdateOperationsInput | $Enums.unit_block_type
+    units?: unitsUpdateOneRequiredWithoutUnit_question_blocksNestedInput
   }
 
-  export type unitsUncheckedUpdateWithoutUnit_levelsInput = {
+  export type unit_question_blocksUncheckedUpdateWithoutUnit_levelsInput = {
     id?: StringFieldUpdateOperationsInput | string
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted?: BoolFieldUpdateOperationsInput | boolean
+    description?: JsonNullValueInput | InputJsonValue
     number?: IntFieldUpdateOperationsInput | number
+    unit_id?: StringFieldUpdateOperationsInput | string
+    type?: Enumunit_block_typeFieldUpdateOperationsInput | $Enums.unit_block_type
+  }
+
+  export type unit_progressUpsertWithWhereUniqueWithoutUnit_levelsInput = {
+    where: unit_progressWhereUniqueInput
+    update: XOR<unit_progressUpdateWithoutUnit_levelsInput, unit_progressUncheckedUpdateWithoutUnit_levelsInput>
+    create: XOR<unit_progressCreateWithoutUnit_levelsInput, unit_progressUncheckedCreateWithoutUnit_levelsInput>
+  }
+
+  export type unit_progressUpdateWithWhereUniqueWithoutUnit_levelsInput = {
+    where: unit_progressWhereUniqueInput
+    data: XOR<unit_progressUpdateWithoutUnit_levelsInput, unit_progressUncheckedUpdateWithoutUnit_levelsInput>
+  }
+
+  export type unit_progressUpdateManyWithWhereWithoutUnit_levelsInput = {
+    where: unit_progressScalarWhereInput
+    data: XOR<unit_progressUpdateManyMutationInput, unit_progressUncheckedUpdateManyWithoutUnit_levelsInput>
   }
 
   export type unit_questions_to_unit_levelsUpsertWithWhereUniqueWithoutUnit_levelsInput = {
@@ -22590,22 +24299,130 @@ export namespace Prisma {
     data: XOR<unit_questions_to_unit_levelsUpdateManyMutationInput, unit_questions_to_unit_levelsUncheckedUpdateManyWithoutUnit_levelsInput>
   }
 
-  export type unit_levelsCreateWithoutUnit_questions_to_unit_levelsInput = {
+  export type unit_levelsCreateWithoutUnit_question_blocksInput = {
+    id?: string
     created_at?: Date | string
     updated_at?: Date | string
     deleted?: boolean
-    number: number
+    number?: number
+    unit_progress?: unit_progressCreateNestedManyWithoutUnit_levelsInput
+    unit_questions_to_unit_levels?: unit_questions_to_unit_levelsCreateNestedManyWithoutUnit_levelsInput
+  }
+
+  export type unit_levelsUncheckedCreateWithoutUnit_question_blocksInput = {
     id?: string
-    units: unitsCreateNestedOneWithoutUnit_levelsInput
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    number?: number
+    unit_progress?: unit_progressUncheckedCreateNestedManyWithoutUnit_levelsInput
+    unit_questions_to_unit_levels?: unit_questions_to_unit_levelsUncheckedCreateNestedManyWithoutUnit_levelsInput
+  }
+
+  export type unit_levelsCreateOrConnectWithoutUnit_question_blocksInput = {
+    where: unit_levelsWhereUniqueInput
+    create: XOR<unit_levelsCreateWithoutUnit_question_blocksInput, unit_levelsUncheckedCreateWithoutUnit_question_blocksInput>
+  }
+
+  export type unit_levelsCreateManyUnit_question_blocksInputEnvelope = {
+    data: unit_levelsCreateManyUnit_question_blocksInput | unit_levelsCreateManyUnit_question_blocksInput[]
+    skipDuplicates?: boolean
+  }
+
+  export type unitsCreateWithoutUnit_question_blocksInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    number?: number
+  }
+
+  export type unitsUncheckedCreateWithoutUnit_question_blocksInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    number?: number
+  }
+
+  export type unitsCreateOrConnectWithoutUnit_question_blocksInput = {
+    where: unitsWhereUniqueInput
+    create: XOR<unitsCreateWithoutUnit_question_blocksInput, unitsUncheckedCreateWithoutUnit_question_blocksInput>
+  }
+
+  export type unit_levelsUpsertWithWhereUniqueWithoutUnit_question_blocksInput = {
+    where: unit_levelsWhereUniqueInput
+    update: XOR<unit_levelsUpdateWithoutUnit_question_blocksInput, unit_levelsUncheckedUpdateWithoutUnit_question_blocksInput>
+    create: XOR<unit_levelsCreateWithoutUnit_question_blocksInput, unit_levelsUncheckedCreateWithoutUnit_question_blocksInput>
+  }
+
+  export type unit_levelsUpdateWithWhereUniqueWithoutUnit_question_blocksInput = {
+    where: unit_levelsWhereUniqueInput
+    data: XOR<unit_levelsUpdateWithoutUnit_question_blocksInput, unit_levelsUncheckedUpdateWithoutUnit_question_blocksInput>
+  }
+
+  export type unit_levelsUpdateManyWithWhereWithoutUnit_question_blocksInput = {
+    where: unit_levelsScalarWhereInput
+    data: XOR<unit_levelsUpdateManyMutationInput, unit_levelsUncheckedUpdateManyWithoutUnit_question_blocksInput>
+  }
+
+  export type unit_levelsScalarWhereInput = {
+    AND?: unit_levelsScalarWhereInput | unit_levelsScalarWhereInput[]
+    OR?: unit_levelsScalarWhereInput[]
+    NOT?: unit_levelsScalarWhereInput | unit_levelsScalarWhereInput[]
+    id?: UuidFilter<"unit_levels"> | string
+    created_at?: DateTimeFilter<"unit_levels"> | Date | string
+    updated_at?: DateTimeFilter<"unit_levels"> | Date | string
+    deleted?: BoolFilter<"unit_levels"> | boolean
+    number?: IntFilter<"unit_levels"> | number
+    unit_question_block_id?: UuidFilter<"unit_levels"> | string
+  }
+
+  export type unitsUpsertWithoutUnit_question_blocksInput = {
+    update: XOR<unitsUpdateWithoutUnit_question_blocksInput, unitsUncheckedUpdateWithoutUnit_question_blocksInput>
+    create: XOR<unitsCreateWithoutUnit_question_blocksInput, unitsUncheckedCreateWithoutUnit_question_blocksInput>
+    where?: unitsWhereInput
+  }
+
+  export type unitsUpdateToOneWithWhereWithoutUnit_question_blocksInput = {
+    where?: unitsWhereInput
+    data: XOR<unitsUpdateWithoutUnit_question_blocksInput, unitsUncheckedUpdateWithoutUnit_question_blocksInput>
+  }
+
+  export type unitsUpdateWithoutUnit_question_blocksInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    number?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type unitsUncheckedUpdateWithoutUnit_question_blocksInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    number?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type unit_levelsCreateWithoutUnit_questions_to_unit_levelsInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    number?: number
+    unit_question_blocks: unit_question_blocksCreateNestedOneWithoutUnit_levelsInput
+    unit_progress?: unit_progressCreateNestedManyWithoutUnit_levelsInput
   }
 
   export type unit_levelsUncheckedCreateWithoutUnit_questions_to_unit_levelsInput = {
+    id?: string
     created_at?: Date | string
     updated_at?: Date | string
     deleted?: boolean
-    number: number
-    unit_id: string
-    id?: string
+    number?: number
+    unit_question_block_id: string
+    unit_progress?: unit_progressUncheckedCreateNestedManyWithoutUnit_levelsInput
   }
 
   export type unit_levelsCreateOrConnectWithoutUnit_questions_to_unit_levelsInput = {
@@ -22619,7 +24436,7 @@ export namespace Prisma {
     question: JsonNullValueInput | InputJsonValue
     deleted?: boolean
     id?: string
-    key?: string | null
+    key: string
   }
 
   export type unit_questionsUncheckedCreateWithoutUnit_questions_to_unit_levelsInput = {
@@ -22628,7 +24445,7 @@ export namespace Prisma {
     question: JsonNullValueInput | InputJsonValue
     deleted?: boolean
     id?: string
-    key?: string | null
+    key: string
   }
 
   export type unit_questionsCreateOrConnectWithoutUnit_questions_to_unit_levelsInput = {
@@ -22648,21 +24465,23 @@ export namespace Prisma {
   }
 
   export type unit_levelsUpdateWithoutUnit_questions_to_unit_levelsInput = {
+    id?: StringFieldUpdateOperationsInput | string
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted?: BoolFieldUpdateOperationsInput | boolean
     number?: IntFieldUpdateOperationsInput | number
-    id?: StringFieldUpdateOperationsInput | string
-    units?: unitsUpdateOneRequiredWithoutUnit_levelsNestedInput
+    unit_question_blocks?: unit_question_blocksUpdateOneRequiredWithoutUnit_levelsNestedInput
+    unit_progress?: unit_progressUpdateManyWithoutUnit_levelsNestedInput
   }
 
   export type unit_levelsUncheckedUpdateWithoutUnit_questions_to_unit_levelsInput = {
+    id?: StringFieldUpdateOperationsInput | string
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted?: BoolFieldUpdateOperationsInput | boolean
     number?: IntFieldUpdateOperationsInput | number
-    unit_id?: StringFieldUpdateOperationsInput | string
-    id?: StringFieldUpdateOperationsInput | string
+    unit_question_block_id?: StringFieldUpdateOperationsInput | string
+    unit_progress?: unit_progressUncheckedUpdateManyWithoutUnit_levelsNestedInput
   }
 
   export type unit_questionsUpsertWithoutUnit_questions_to_unit_levelsInput = {
@@ -22682,7 +24501,7 @@ export namespace Prisma {
     question?: JsonNullValueInput | InputJsonValue
     deleted?: BoolFieldUpdateOperationsInput | boolean
     id?: StringFieldUpdateOperationsInput | string
-    key?: NullableStringFieldUpdateOperationsInput | string | null
+    key?: StringFieldUpdateOperationsInput | string
   }
 
   export type unit_questionsUncheckedUpdateWithoutUnit_questions_to_unit_levelsInput = {
@@ -22691,7 +24510,7 @@ export namespace Prisma {
     question?: JsonNullValueInput | InputJsonValue
     deleted?: BoolFieldUpdateOperationsInput | boolean
     id?: StringFieldUpdateOperationsInput | string
-    key?: NullableStringFieldUpdateOperationsInput | string | null
+    key?: StringFieldUpdateOperationsInput | string
   }
 
   export type letter_levelsCreateWithoutUnit_progressInput = {
@@ -22721,6 +24540,31 @@ export namespace Prisma {
   export type letter_levelsCreateOrConnectWithoutUnit_progressInput = {
     where: letter_levelsWhereUniqueInput
     create: XOR<letter_levelsCreateWithoutUnit_progressInput, letter_levelsUncheckedCreateWithoutUnit_progressInput>
+  }
+
+  export type unit_levelsCreateWithoutUnit_progressInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    number?: number
+    unit_question_blocks: unit_question_blocksCreateNestedOneWithoutUnit_levelsInput
+    unit_questions_to_unit_levels?: unit_questions_to_unit_levelsCreateNestedManyWithoutUnit_levelsInput
+  }
+
+  export type unit_levelsUncheckedCreateWithoutUnit_progressInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    number?: number
+    unit_question_block_id: string
+    unit_questions_to_unit_levels?: unit_questions_to_unit_levelsUncheckedCreateNestedManyWithoutUnit_levelsInput
+  }
+
+  export type unit_levelsCreateOrConnectWithoutUnit_progressInput = {
+    where: unit_levelsWhereUniqueInput
+    create: XOR<unit_levelsCreateWithoutUnit_progressInput, unit_levelsUncheckedCreateWithoutUnit_progressInput>
   }
 
   export type letter_levelsUpsertWithoutUnit_progressInput = {
@@ -22756,6 +24600,37 @@ export namespace Prisma {
     letter_progress?: letter_progressUncheckedUpdateManyWithoutLetter_levelsNestedInput
     letter_questions_to_letter_levels?: letter_questions_to_letter_levelsUncheckedUpdateManyWithoutLetter_levelsNestedInput
     letters_to_letter_levels?: letters_to_letter_levelsUncheckedUpdateManyWithoutLetter_levelsNestedInput
+  }
+
+  export type unit_levelsUpsertWithoutUnit_progressInput = {
+    update: XOR<unit_levelsUpdateWithoutUnit_progressInput, unit_levelsUncheckedUpdateWithoutUnit_progressInput>
+    create: XOR<unit_levelsCreateWithoutUnit_progressInput, unit_levelsUncheckedCreateWithoutUnit_progressInput>
+    where?: unit_levelsWhereInput
+  }
+
+  export type unit_levelsUpdateToOneWithWhereWithoutUnit_progressInput = {
+    where?: unit_levelsWhereInput
+    data: XOR<unit_levelsUpdateWithoutUnit_progressInput, unit_levelsUncheckedUpdateWithoutUnit_progressInput>
+  }
+
+  export type unit_levelsUpdateWithoutUnit_progressInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    number?: IntFieldUpdateOperationsInput | number
+    unit_question_blocks?: unit_question_blocksUpdateOneRequiredWithoutUnit_levelsNestedInput
+    unit_questions_to_unit_levels?: unit_questions_to_unit_levelsUpdateManyWithoutUnit_levelsNestedInput
+  }
+
+  export type unit_levelsUncheckedUpdateWithoutUnit_progressInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    number?: IntFieldUpdateOperationsInput | number
+    unit_question_block_id?: StringFieldUpdateOperationsInput | string
+    unit_questions_to_unit_levels?: unit_questions_to_unit_levelsUncheckedUpdateManyWithoutUnit_levelsNestedInput
   }
 
   export type lettersCreateManyLetter_blocksInput = {
@@ -22880,6 +24755,7 @@ export namespace Prisma {
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
     updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
     deleted?: BoolFieldUpdateOperationsInput | boolean
+    unit_levels?: unit_levelsUpdateOneRequiredWithoutUnit_progressNestedInput
   }
 
   export type unit_progressUncheckedUpdateWithoutLetter_levelsInput = {
@@ -23065,8 +24941,8 @@ export namespace Prisma {
   }
 
   export type unit_questions_to_unit_levelsCreateManyUnit_questionsInput = {
+    number?: number
     unit_level_id: string
-    number: number
     with_hint?: boolean
   }
 
@@ -23077,55 +24953,92 @@ export namespace Prisma {
   }
 
   export type unit_questions_to_unit_levelsUncheckedUpdateWithoutUnit_questionsInput = {
-    unit_level_id?: StringFieldUpdateOperationsInput | string
     number?: IntFieldUpdateOperationsInput | number
+    unit_level_id?: StringFieldUpdateOperationsInput | string
     with_hint?: BoolFieldUpdateOperationsInput | boolean
   }
 
   export type unit_questions_to_unit_levelsUncheckedUpdateManyWithoutUnit_questionsInput = {
-    unit_level_id?: StringFieldUpdateOperationsInput | string
     number?: IntFieldUpdateOperationsInput | number
+    unit_level_id?: StringFieldUpdateOperationsInput | string
     with_hint?: BoolFieldUpdateOperationsInput | boolean
   }
 
-  export type unit_levelsCreateManyUnitsInput = {
+  export type unit_question_blocksCreateManyUnitsInput = {
+    id?: string
     created_at?: Date | string
     updated_at?: Date | string
     deleted?: boolean
-    number: number
+    description: JsonNullValueInput | InputJsonValue
+    number?: number
+    type?: $Enums.unit_block_type
+  }
+
+  export type unit_question_blocksUpdateWithoutUnitsInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    description?: JsonNullValueInput | InputJsonValue
+    number?: IntFieldUpdateOperationsInput | number
+    type?: Enumunit_block_typeFieldUpdateOperationsInput | $Enums.unit_block_type
+    unit_levels?: unit_levelsUpdateManyWithoutUnit_question_blocksNestedInput
+  }
+
+  export type unit_question_blocksUncheckedUpdateWithoutUnitsInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    description?: JsonNullValueInput | InputJsonValue
+    number?: IntFieldUpdateOperationsInput | number
+    type?: Enumunit_block_typeFieldUpdateOperationsInput | $Enums.unit_block_type
+    unit_levels?: unit_levelsUncheckedUpdateManyWithoutUnit_question_blocksNestedInput
+  }
+
+  export type unit_question_blocksUncheckedUpdateManyWithoutUnitsInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    description?: JsonNullValueInput | InputJsonValue
+    number?: IntFieldUpdateOperationsInput | number
+    type?: Enumunit_block_typeFieldUpdateOperationsInput | $Enums.unit_block_type
+  }
+
+  export type unit_progressCreateManyUnit_levelsInput = {
     id?: string
-  }
-
-  export type unit_levelsUpdateWithoutUnitsInput = {
-    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    deleted?: BoolFieldUpdateOperationsInput | boolean
-    number?: IntFieldUpdateOperationsInput | number
-    id?: StringFieldUpdateOperationsInput | string
-    unit_questions_to_unit_levels?: unit_questions_to_unit_levelsUpdateManyWithoutUnit_levelsNestedInput
-  }
-
-  export type unit_levelsUncheckedUpdateWithoutUnitsInput = {
-    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    deleted?: BoolFieldUpdateOperationsInput | boolean
-    number?: IntFieldUpdateOperationsInput | number
-    id?: StringFieldUpdateOperationsInput | string
-    unit_questions_to_unit_levels?: unit_questions_to_unit_levelsUncheckedUpdateManyWithoutUnit_levelsNestedInput
-  }
-
-  export type unit_levelsUncheckedUpdateManyWithoutUnitsInput = {
-    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
-    deleted?: BoolFieldUpdateOperationsInput | boolean
-    number?: IntFieldUpdateOperationsInput | number
-    id?: StringFieldUpdateOperationsInput | string
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
   }
 
   export type unit_questions_to_unit_levelsCreateManyUnit_levelsInput = {
     unit_question_id: string
-    number: number
+    number?: number
     with_hint?: boolean
+  }
+
+  export type unit_progressUpdateWithoutUnit_levelsInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    letter_levels?: letter_levelsUpdateOneRequiredWithoutUnit_progressNestedInput
+  }
+
+  export type unit_progressUncheckedUpdateWithoutUnit_levelsInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+  }
+
+  export type unit_progressUncheckedUpdateManyWithoutUnit_levelsInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
   }
 
   export type unit_questions_to_unit_levelsUpdateWithoutUnit_levelsInput = {
@@ -23144,6 +25057,42 @@ export namespace Prisma {
     unit_question_id?: StringFieldUpdateOperationsInput | string
     number?: IntFieldUpdateOperationsInput | number
     with_hint?: BoolFieldUpdateOperationsInput | boolean
+  }
+
+  export type unit_levelsCreateManyUnit_question_blocksInput = {
+    id?: string
+    created_at?: Date | string
+    updated_at?: Date | string
+    deleted?: boolean
+    number?: number
+  }
+
+  export type unit_levelsUpdateWithoutUnit_question_blocksInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    number?: IntFieldUpdateOperationsInput | number
+    unit_progress?: unit_progressUpdateManyWithoutUnit_levelsNestedInput
+    unit_questions_to_unit_levels?: unit_questions_to_unit_levelsUpdateManyWithoutUnit_levelsNestedInput
+  }
+
+  export type unit_levelsUncheckedUpdateWithoutUnit_question_blocksInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    number?: IntFieldUpdateOperationsInput | number
+    unit_progress?: unit_progressUncheckedUpdateManyWithoutUnit_levelsNestedInput
+    unit_questions_to_unit_levels?: unit_questions_to_unit_levelsUncheckedUpdateManyWithoutUnit_levelsNestedInput
+  }
+
+  export type unit_levelsUncheckedUpdateManyWithoutUnit_question_blocksInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    updated_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    deleted?: BoolFieldUpdateOperationsInput | boolean
+    number?: IntFieldUpdateOperationsInput | number
   }
 
 

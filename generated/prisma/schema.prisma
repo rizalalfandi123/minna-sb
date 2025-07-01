@@ -121,44 +121,60 @@ model unit_questions {
   question                      Json
   deleted                       Boolean                         @default(false)
   id                            String                          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  key                           String?
+  key                           String
   unit_questions_to_unit_levels unit_questions_to_unit_levels[]
 }
 
 /// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
 model units {
-  id          String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  created_at  DateTime      @default(now()) @db.Timestamptz(6)
-  updated_at  DateTime      @default(now()) @db.Timestamptz(6)
-  deleted     Boolean       @default(false)
-  number      Int
-  unit_levels unit_levels[]
+  id                   String                 @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  created_at           DateTime               @default(now()) @db.Timestamptz(6)
+  updated_at           DateTime               @default(now()) @db.Timestamptz(6)
+  deleted              Boolean                @default(false)
+  number               Int                    @unique @default(1)
+  unit_question_blocks unit_question_blocks[]
 }
 
 /// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
 model unit_levels {
+  id                            String                          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
   created_at                    DateTime                        @default(now()) @db.Timestamptz(6)
   updated_at                    DateTime                        @default(now()) @db.Timestamptz(6)
   deleted                       Boolean                         @default(false)
-  number                        Int
-  unit_id                       String                          @db.Uuid
-  id                            String                          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  units                         units                           @relation(fields: [unit_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  number                        Int                             @default(1)
+  unit_question_block_id        String                          @db.Uuid
+  unit_question_blocks          unit_question_blocks            @relation(fields: [unit_question_block_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  unit_progress                 unit_progress[]
   unit_questions_to_unit_levels unit_questions_to_unit_levels[]
 }
 
 /// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model unit_question_blocks {
+  id          String          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  created_at  DateTime        @default(now()) @db.Timestamptz(6)
+  updated_at  DateTime        @default(now()) @db.Timestamptz(6)
+  deleted     Boolean         @default(false)
+  description Json
+  number      Int             @unique @default(1)
+  unit_id     String          @db.Uuid
+  type        unit_block_type @default(vocabulary)
+  unit_levels unit_levels[]
+  units       units           @relation(fields: [unit_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
 model unit_questions_to_unit_levels {
-  unit_level_id    String         @db.Uuid
   unit_question_id String         @db.Uuid
-  number           Int
-  with_hint        Boolean        @default(true)
+  number           Int            @default(1)
+  unit_level_id    String         @db.Uuid
+  with_hint        Boolean        @default(false)
   unit_levels      unit_levels    @relation(fields: [unit_level_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
   unit_questions   unit_questions @relation(fields: [unit_question_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
 
-  @@id([unit_level_id, unit_question_id, number, with_hint])
+  @@id([unit_question_id, number, unit_level_id, with_hint])
 }
 
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
 /// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
 model unit_progress {
   id            String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
@@ -167,4 +183,10 @@ model unit_progress {
   deleted       Boolean       @default(false)
   unit_level_id String        @default(dbgenerated("gen_random_uuid()")) @db.Uuid
   letter_levels letter_levels @relation(fields: [unit_level_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "unit_progress_letter_level_id_fkey")
+  unit_levels   unit_levels   @relation(fields: [unit_level_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+enum unit_block_type {
+  vocabulary
+  grammar
 }

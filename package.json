@@ -7,7 +7,7 @@
     "supabase": "supabase start",
     "dev": "bun run --hot ./src/hono.ts",
     "db:seed": "prisma db seed",
-    "db:types": "supabase gen types typescript --local > ../minna-new/database.types.ts",
+    "db:types": "supabase gen types typescript --local > ../minna-expo/database.types.ts",
     "db:backup": "bun ./backup.ts && prettier --write data/backup",
     "db:restore": "bun ./restore.ts"
   },

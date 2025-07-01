@@ -212,18 +212,29 @@ exports.Prisma.UnitsScalarFieldEnum = {
 };
 
 exports.Prisma.Unit_levelsScalarFieldEnum = {
+  id: 'id',
   created_at: 'created_at',
   updated_at: 'updated_at',
   deleted: 'deleted',
   number: 'number',
+  unit_question_block_id: 'unit_question_block_id'
+};
+
+exports.Prisma.Unit_question_blocksScalarFieldEnum = {
+  id: 'id',
+  created_at: 'created_at',
+  updated_at: 'updated_at',
+  deleted: 'deleted',
+  description: 'description',
+  number: 'number',
   unit_id: 'unit_id',
-  id: 'id'
+  type: 'type'
 };
 
 exports.Prisma.Unit_questions_to_unit_levelsScalarFieldEnum = {
-  unit_level_id: 'unit_level_id',
   unit_question_id: 'unit_question_id',
   number: 'number',
+  unit_level_id: 'unit_level_id',
   with_hint: 'with_hint'
 };
 
@@ -254,12 +265,10 @@ exports.Prisma.JsonNullValueFilter = {
   JsonNull: Prisma.JsonNull,
   AnyNull: Prisma.AnyNull
 };
-
-exports.Prisma.NullsOrder = {
-  first: 'first',
-  last: 'last'
+exports.unit_block_type = exports.$Enums.unit_block_type = {
+  vocabulary: 'vocabulary',
+  grammar: 'grammar'
 };
-
 
 exports.Prisma.ModelName = {
   letter_blocks: 'letter_blocks',
@@ -274,6 +283,7 @@ exports.Prisma.ModelName = {
   unit_questions: 'unit_questions',
   units: 'units',
   unit_levels: 'unit_levels',
+  unit_question_blocks: 'unit_question_blocks',
   unit_questions_to_unit_levels: 'unit_questions_to_unit_levels',
   unit_progress: 'unit_progress'
 };
