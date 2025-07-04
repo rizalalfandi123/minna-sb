@@ -1,13 +1,19 @@
 import { z } from "zod";
 
 export const TranslatedWordSchema = z.object({
-  id: z.string(),
-  en: z.string(),
+  id: z.object({
+    translate: z.string(),
+    index: z.number(),
+  }),
+  en: z.object({
+    translate: z.string(),
+    index: z.number(),
+  }),
 });
 
 export const SymbolWordSchema = z.object({
   value: z.string(),
-  mean: TranslatedWordSchema,
+  translation: TranslatedWordSchema.nullish(),
   alternative: z
     .object({
       hiragana: z.string().optional(),
@@ -55,6 +61,15 @@ export const GuessTheSymbolFromMeanSchema = z.object({
   }),
 });
 
+export const SortTheSymbolsFromSoundSchema = z.object({
+  type: z.literal("SORT_THE_SYMBOLS_FROM_SOUND"),
+  data: z.object({
+    question: z.string(),
+    answer: z.string(),
+    options: z.array(z.string()),
+  }),
+});
+
 export const SortTheSymbolsFromMeanSchema = z.object({
   type: z.literal("SORT_THE_SYMBOLS_FROM_MEAN"),
   data: z.object({
@@ -81,17 +96,18 @@ export const WriteTheSymbolFromSoundSchema = z.object({
 });
 
 export const UnitQuestionTypeSchema = z.union([
+  SortTheMeansSchema,
   GuessTheSoundMeanSchema,
   GuessTheSentenceMeanSchema,
-  SortTheMeansSchema,
   GuessTheSymbolFromMeanSchema,
   SortTheSymbolsFromMeanSchema,
+  SortTheSymbolsFromSoundSchema,
   WriteTheSymbolFromMeanSchema,
   WriteTheSymbolFromSoundSchema,
 ]);
 
 export const UnitQuestionSchema = z.object({
-  category: z.literal("VOCABULARY"),
+  category: z.literal("VOCABULARY").or(z.literal("GRAMMAR")),
   data: UnitQuestionTypeSchema,
 });
 
@@ -124,3 +140,39 @@ export type WriteTheSymbolFromSound = z.infer<
 export type UnitQuestionType = z.infer<typeof UnitQuestionTypeSchema>;
 
 export type UnitQuestion = z.infer<typeof UnitQuestionSchema>;
+
+export function isGUESS_THE_SOUND_MEAN(
+  question: UnitQuestionType
+): question is GuessTheSoundMean {
+  return question.type === "GUESS_THE_SOUND_MEAN";
+}
+
+export function isSORT_THE_MEAN(
+  question: UnitQuestionType
+): question is SortTheMeans {
+  return question.type === "SORT_THE_MEAN";
+}
+
+export function isGUESS_THE_SENTENCE_MEAN(
+  question: UnitQuestionType
+): question is GuessTheSentenceMean {
+  return question.type === "GUESS_THE_SENTENCE_MEAN";
+}
+
+export function isWRITE_THE_SYMBOL_FROM_MEAN(
+  question: UnitQuestionType
+): question is WriteTheSymbolFromMean {
+  return question.type === "WRITE_THE_SYMBOL_FROM_MEAN";
+}
+
+export function isGUESS_THE_SYMBOL_FROM_MEAN(
+  question: UnitQuestionType
+): question is GuessTheSymbolFromMean {
+  return question.type === "GUESS_THE_SYMBOL_FROM_MEAN";
+}
+
+export function isSORT_THE_SYMBOLS_FROM_MEAN(
+  question: UnitQuestionType
+): question is SortTheSymbolsFromMean {
+  return question.type === "SORT_THE_SYMBOLS_FROM_MEAN";
+}

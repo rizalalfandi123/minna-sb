@@ -133,20 +133,25 @@ const buildBlockLevels = async ({
   questions,
   blockKeys,
   blockId,
+  blockType,
 }: {
   questions: Array<TDetailUnitQuestion>;
   blockKeys: Array<string>;
   blockId: string;
+  blockType: "grammar" | "vocabulary";
 }) => {
   const buildFirstLevel = () => {
     const firstLevelPooler = new Map<string, Array<TDetailUnitQuestion>>();
 
-    const firstLevelQuestionType: Array<UnitQuestionType["type"]> = [
-      "GUESS_THE_SENTENCE_MEAN",
-      "GUESS_THE_SYMBOL_FROM_MEAN",
-      "GUESS_THE_SOUND_MEAN",
-      "WRITE_THE_SYMBOL_FROM_SOUND",
-    ];
+    const firstLevelQuestionType: Array<UnitQuestionType["type"]> =
+      blockType === "vocabulary"
+        ? [
+            "GUESS_THE_SENTENCE_MEAN",
+            "GUESS_THE_SYMBOL_FROM_MEAN",
+            "GUESS_THE_SOUND_MEAN",
+            "WRITE_THE_SYMBOL_FROM_SOUND",
+          ]
+        : ["SORT_THE_MEAN", "SORT_THE_SYMBOLS_FROM_MEAN"];
 
     const firstLevelQuestions = questions.filter((question) =>
       firstLevelQuestionType.includes(question.question.data.type)
@@ -209,13 +214,21 @@ const buildBlockLevels = async ({
 
   const othersLevel = buildQuestionLevels(shuffle(questions));
 
-  const allData = [
-    firstLevel,
-    secondLevel,
+  const allData: TDetailUnitQuestion[][] = [];
+
+  if (firstLevel.length > 0) {
+    allData.push(firstLevel);
+
+    if (blockType === "vocabulary") {
+      allData.push(secondLevel);
+    }
+  }
+
+  allData.push(
     ...Object.values(othersLevel).map((item) =>
       item.map((subItem) => ({ ...subItem, withHint: false }))
-    ),
-  ];
+    )
+  );
 
   const dataWithLevel = await Promise.all(
     allData.map(async (level, index) => {
@@ -297,6 +310,7 @@ const buildBlockHierarcy = async () => {
               number: index,
               description: {},
               unit_id: allUnitData[indexOfUnit].id,
+              type: item.type,
             },
           });
         }
@@ -313,12 +327,18 @@ const buildBlockHierarcy = async () => {
         },
       },
     },
+    orderBy: {
+      created_at: "asc",
+    },
+    where: {
+      deleted: false,
+    },
   }) as Promise<Array<TDetailUnitQuestion>>);
 
   const unUppliedQuestion = allUnitQuestions
     .map((item) => {
       const unitNumber = unitBlocks.findIndex((unit) =>
-        unit.flat().includes(item.key)
+        unit.flatMap((item) => item.block).includes(item.key)
       );
 
       if (unitNumber < 0) {
@@ -329,7 +349,7 @@ const buildBlockHierarcy = async () => {
       }
 
       const blockNumber = unitBlocks[unitNumber].findIndex((block) =>
-        block.includes(item.key)
+        block.block.includes(item.key)
       );
 
       if (blockNumber < 0) {
@@ -352,13 +372,14 @@ const buildBlockHierarcy = async () => {
           const blockData = allBlocksData[unitIndex + blockIndex];
 
           const questions = unUppliedQuestion.filter((question) =>
-            block.includes(question.key)
+            block.block.includes(question.key)
           );
 
           const blockHierary = await buildBlockLevels({
             questions: questions,
-            blockKeys: block,
+            blockKeys: block.block,
             blockId: blockData.id,
+            blockType: block.type,
           });
 
           return { blockId: blockData.id, blocks: blockHierary };
