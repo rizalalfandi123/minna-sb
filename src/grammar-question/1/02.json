@@ -1,0 +1,538 @@
+[
+  {
+    "key": "わたし は カール シュミット じゃ ありません",
+    "questions": [
+      {
+        "data": {
+          "answer": "わたし は カール シュミット じゃ ありません",
+          "options": [
+            "わたし",
+            "あなた",
+            "カール",
+            "シュミット",
+            "スミス",
+            "じゃ",
+            "ありません",
+            "です",
+            "は",
+            "さん"
+          ],
+          "question": {
+            "en": [
+              { "key": "わたし", "value": "I" },
+              { "key": "は", "value": "am" },
+              { "key": "じゃ ありません", "value": "not" },
+              { "key": "カール シュミット", "value": "Karl Schmidt" }
+            ],
+            "id": [
+              { "key": "わたし", "value": "Saya" },
+              { "key": "は", "value": "" },
+              { "key": "じゃ ありません", "value": "bukan" },
+              { "key": "カール シュミット", "value": "Karl Schmidt" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "I am not Karl Schmidt",
+            "id": "Saya bukan Karl Schmidt"
+          },
+          "options": {
+            "en": [
+              "I",
+              "You",
+              "He",
+              "am",
+              "is",
+              "not",
+              "Karl Schmidt",
+              "John Smith",
+              "a teacher",
+              "a student"
+            ],
+            "id": [
+              "Saya",
+              "Anda",
+              "Dia",
+              "adalah",
+              "bukan",
+              "Karl Schmidt",
+              "John Smith",
+              "guru",
+              "mahasiswa"
+            ]
+          },
+          "question": [
+            {
+              "value": "わたし",
+              "key": "わたし"
+            },
+            {
+              "value": "は",
+              "key": "は"
+            },
+            {
+              "value": "カール シュミット",
+              "key": "カール シュミット"
+            },
+            {
+              "value": "じゃ ありません",
+              "key": "じゃ ありません"
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "わたし は カール シュミット じゃ ありません",
+          "options": [
+            "わたし",
+            "あなた",
+            "カール",
+            "シュミット",
+            "たなか",
+            "じゃ",
+            "ありません",
+            "です",
+            "は",
+            "さん"
+          ],
+          "question": "わたし は カール シュミット じゃ ありません"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "わたし は カール シュミット じゃ ありません",
+          "question": {
+            "en": [
+              { "key": "わたし", "value": "I" },
+              { "key": "は", "value": "am" },
+              { "key": "じゃ ありません", "value": "not" },
+              { "key": "カール シュミット", "value": "Karl Schmidt" }
+            ],
+            "id": [
+              { "key": "わたし", "value": "Saya" },
+              { "key": "は", "value": "" },
+              { "key": "じゃ ありません", "value": "bukan" },
+              { "key": "カール シュミット", "value": "Karl Schmidt" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "わたし は カール シュミット じゃ ありません",
+          "question": "わたし は カール シュミット じゃ ありません"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "わたし は きょうし じゃ ありません",
+    "questions": [
+      {
+        "data": {
+          "answer": "わたし は きょうし じゃ ありません",
+          "options": [
+            "わたし",
+            "あなた",
+            "きょうし",
+            "がくせい",
+            "いしゃ",
+            "じゃ",
+            "ありません",
+            "は",
+            "です",
+            "さん"
+          ],
+          "question": {
+            "en": [
+              { "key": "わたし", "value": "I" },
+              { "key": "は", "value": "am" },
+              { "key": "じゃ ありません", "value": "not" },
+              { "key": "きょうし", "value": "a teacher" }
+            ],
+            "id": [
+              { "key": "わたし", "value": "Saya" },
+              { "key": "は", "value": "" },
+              { "key": "じゃ ありません", "value": "bukan" },
+              { "key": "きょうし", "value": "guru" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "I am not a teacher",
+            "id": "Saya bukan guru"
+          },
+          "options": {
+            "en": [
+              "I",
+              "You",
+              "He",
+              "am",
+              "is",
+              "not",
+              "a teacher",
+              "a student",
+              "a doctor",
+              "Mr. Tanaka"
+            ],
+            "id": [
+              "Saya",
+              "Anda",
+              "Dia",
+              "adalah",
+              "bukan",
+              "guru",
+              "mahasiswa",
+              "dokter",
+              "Tn. Tanaka"
+            ]
+          },
+          "question": [
+            {
+              "value": "わたし",
+              "key": "わたし"
+            },
+            {
+              "value": "は",
+              "key": "は"
+            },
+            {
+              "value": "きょうし",
+              "key": "きょうし"
+            },
+            {
+              "value": "じゃ ありません",
+              "key": "じゃ ありません"
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "わたし は きょうし じゃ ありません",
+          "options": [
+            "わたし",
+            "あなた",
+            "きょうし",
+            "せんせい",
+            "がくせい",
+            "じゃ",
+            "ありません",
+            "です",
+            "は",
+            "さん"
+          ],
+          "question": "わたし は きょうし じゃ ありません"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "わたし は きょうし じゃ ありません",
+          "question": {
+            "en": [
+              { "key": "わたし", "value": "I" },
+              { "key": "は", "value": "am" },
+              { "key": "じゃ ありません", "value": "not" },
+              { "key": "きょうし", "value": "a teacher" }
+            ],
+            "id": [
+              { "key": "わたし", "value": "Saya" },
+              { "key": "は", "value": "" },
+              { "key": "じゃ ありません", "value": "bukan" },
+              { "key": "きょうし", "value": "guru" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "わたし は きょうし じゃ ありません",
+          "question": "わたし は きょうし じゃ ありません"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "イーさん は アメリカじん じゃ ありません",
+    "questions": [
+      {
+        "data": {
+          "answer": "イーさん は アメリカじん じゃ ありません",
+          "options": [
+            "イーさん",
+            "あなた",
+            "アメリカじん",
+            "にほんじん",
+            "かんこくじん",
+            "じゃ",
+            "ありません",
+            "です",
+            "は",
+            "さん"
+          ],
+          "question": {
+            "en": [
+              { "key": "イーさん", "value": "Ms. Lee" },
+              { "key": "は", "value": "is" },
+              { "key": "じゃ ありません", "value": "not" },
+              { "key": "アメリカじん", "value": "American" }
+            ],
+            "id": [
+              { "key": "イーさん", "value": "Nona Lee" },
+              { "key": "は", "value": "" },
+              { "key": "じゃ ありません", "value": "bukan" },
+              { "key": "アメリカじん", "value": "orang Amerika" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "Ms. Lee is not American",
+            "id": "Nona Lee bukan orang Amerika"
+          },
+          "options": {
+            "en": [
+              "Ms. Lee",
+              "Mr. Kim",
+              "is",
+              "is not",
+              "American",
+              "Japanese",
+              "Korean",
+              "student",
+              "teacher"
+            ],
+            "id": [
+              "Nona Lee",
+              "Tn. Kim",
+              "adalah",
+              "bukan",
+              "orang Amerika",
+              "orang Jepang",
+              "orang Korea",
+              "mahasiswa",
+              "guru"
+            ]
+          },
+          "question": [
+            {
+              "value": "イーさん",
+              "key": "イーさん"
+            },
+            {
+              "value": "は",
+              "key": "は"
+            },
+            {
+              "value": "アメリカじん",
+              "key": "アメリカじん"
+            },
+            {
+              "value": "じゃ ありません",
+              "key": "じゃ ありません"
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "イーさん は アメリカじん じゃ ありません",
+          "options": [
+            "イーさん",
+            "りーさん",
+            "アメリカじん",
+            "ちゅうごくじん",
+            "かんこくじん",
+            "じゃ",
+            "ありません",
+            "です",
+            "は",
+            "さん"
+          ],
+          "question": "イーさん は アメリカじん じゃ ありません"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "イーさん は アメリカじん じゃ ありません",
+          "question": {
+            "en": [
+              { "key": "イーさん", "value": "Ms. Lee" },
+              { "key": "は", "value": "is" },
+              { "key": "じゃ ありません", "value": "not" },
+              { "key": "アメリカじん", "value": "American" }
+            ],
+            "id": [
+              { "key": "イーさん", "value": "Nona Lee" },
+              { "key": "は", "value": "" },
+              { "key": "じゃ ありません", "value": "bukan" },
+              { "key": "アメリカじん", "value": "orang Amerika" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "イーさん は アメリカじん じゃ ありません",
+          "question": "イーさん は アメリカじん じゃ ありません"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "イーさん は がくせい じゃ ありません",
+    "questions": [
+      {
+        "data": {
+          "answer": "イーさん は がくせい じゃ ありません",
+          "options": [
+            "イーさん",
+            "あなた",
+            "がくせい",
+            "せんせい",
+            "かいしゃいん",
+            "いしゃ",
+            "じゃ",
+            "ありません",
+            "です",
+            "は"
+          ],
+          "question": {
+            "en": [
+              { "key": "イーさん", "value": "Ms. Lee" },
+              { "key": "は", "value": "is" },
+              { "key": "じゃ ありません", "value": "not" },
+              { "key": "がくせい", "value": "a student" }
+            ],
+            "id": [
+              { "key": "イーさん", "value": "Nona Lee" },
+              { "key": "は", "value": "" },
+              { "key": "じゃ ありません", "value": "bukan" },
+              { "key": "がくせい", "value": "mahasiswa" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "Ms. Lee is not a student",
+            "id": "Nona Lee bukan mahasiswa"
+          },
+          "options": {
+            "en": [
+              "Ms. Lee",
+              "Mr. Kim",
+              "is",
+              "is not",
+              "a student",
+              "a teacher",
+              "an office worker",
+              "a doctor"
+            ],
+            "id": [
+              "Nona Lee",
+              "Tn. Kim",
+              "adalah",
+              "bukan",
+              "mahasiswa",
+              "guru",
+              "karyawan",
+              "dokter"
+            ]
+          },
+          "question": [
+            {
+              "value": "イーさん",
+              "key": "イーさん"
+            },
+            {
+              "value": "は",
+              "key": "は"
+            },
+            {
+              "value": "がくせい",
+              "key": "がくせい"
+            },
+            {
+              "value": "じゃ ありません",
+              "key": "じゃ ありません"
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "イーさん は がくせい じゃ ありません",
+          "options": [
+            "イーさん",
+            "りーさん",
+            "がくせい",
+            "せんせい",
+            "かいしゃいん",
+            "じゃ",
+            "ありません",
+            "です",
+            "は",
+            "さん"
+          ],
+          "question": "イーさん は がくせい じゃ ありません"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "イーさん は がくせい じゃ ありません",
+          "question": {
+            "en": [
+              { "key": "イーさん", "value": "Ms. Lee" },
+              { "key": "は", "value": "is" },
+              { "key": "じゃ ありません", "value": "not" },
+              { "key": "がくせい", "value": "a student" }
+            ],
+            "id": [
+              { "key": "イーさん", "value": "Nona Lee" },
+              { "key": "じゃ ありません", "value": "bukan" },
+              { "key": "は", "value": "" },
+              { "key": "がくせい", "value": "mahasiswa" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "イーさん は がくせい じゃ ありません",
+          "question": "イーさん は がくせい じゃ ありません"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  }
+]

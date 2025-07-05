@@ -1,0 +1,499 @@
+[
+  {
+    "key": "わたし は マイクミラー です",
+    "questions": [
+      {
+        "data": {
+          "answer": "わたし は マイクミラー です",
+          "options": [
+            "わたし",
+            "あなた",
+            "ひと",
+            "マイクミラー",
+            "です",
+            "は",
+            "ワンさん"
+          ],
+          "question": {
+            "en": [
+              { "key": "わたし", "value": "I" },
+              { "key": "は", "value": "am" },
+              { "key": "マイク ミラー", "value": "Mike Miller" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "わたし", "value": "Saya" },
+              { "key": "は", "value": "adalah" },
+              { "key": "マイク ミラー", "value": "Mike Miller" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "I am Mike Miller",
+            "id": "Saya adalah Mike Miller"
+          },
+          "options": {
+            "en": [
+              "I",
+              "You",
+              "am",
+              "Mike Miller",
+              "a company employee",
+              "a doctor"
+            ],
+            "id": [
+              "Saya",
+              "Anda",
+              "adalah",
+              "Mike Miller",
+              "karyawan perusahaan",
+              "dokter"
+            ]
+          },
+          "question": [
+            {
+              "value": "わたし",
+              "key": "わたし"
+            },
+            {
+              "value": "は",
+              "key": "は"
+            },
+            {
+              "value": "マイク ミラー",
+              "key": "マイク ミラー"
+            },
+            {
+              "value": "です",
+              "key": "です"
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "わたし は マイクミラー です",
+          "options": [
+            "わたし",
+            "あなた",
+            "ひと",
+            "マイクミラー",
+            "です",
+            "は",
+            "ちゅうごくじん",
+            "ワンさん"
+          ],
+          "question": "わたし は マイクミラー です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "わたし は マイクミラー です",
+          "question": {
+            "en": [
+              { "key": "わたし", "value": "I" },
+              { "key": "は", "value": "am" },
+              { "key": "マイク ミラー", "value": "Mike Miller" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "わたし", "value": "Saya" },
+              { "key": "は", "value": "adalah" },
+              { "key": "マイク ミラー", "value": "Mike Miller" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "わたし は マイクミラー です",
+          "question": "わたし は マイクミラー です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "わたし は かいしゃいん です",
+    "questions": [
+      {
+        "data": {
+          "answer": "わたし は かいしゃいん です",
+          "options": [
+            "わたし",
+            "あなた",
+            "ひと",
+            "かいしゃいん",
+            "です",
+            "は",
+            "マイクミラー",
+            "いしゃ"
+          ],
+          "question": {
+            "en": [
+              { "key": "わたし", "value": "I" },
+              { "key": "は", "value": "am" },
+              { "key": "かいしゃいん", "value": "a company employee" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "わたし", "value": "Saya" },
+              { "key": "は", "value": "adalah" },
+              { "key": "かいしゃいん", "value": "karyawan perusahaan" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "I am a company employee",
+            "id": "Saya adalah karyawan perusahaan"
+          },
+          "options": {
+            "en": [
+              "I",
+              "You",
+              "am",
+              "a company employee",
+              "a doctor",
+              "Chinese",
+              "Mr. Wang"
+            ],
+            "id": [
+              "Saya",
+              "Anda",
+              "adalah",
+              "karyawan perusahaan",
+              "dokter",
+              "orang Tiongkok",
+              "Tn. Wang"
+            ]
+          },
+          "question": [
+            {
+              "value": "わたし",
+              "key": "わたし"
+            },
+            {
+              "value": "は",
+              "key": "は"
+            },
+            {
+              "value": "かいしゃいん",
+              "key": "かいしゃいん"
+            },
+            {
+              "value": "です",
+              "key": "です"
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "わたし は かいしゃいん です",
+          "options": [
+            "わたし",
+            "あなた",
+            "ひと",
+            "かいしゃいん",
+            "です",
+            "は",
+            "いしゃ",
+            "ちゅうごくじん"
+          ],
+          "question": "わたし は かいしゃいん です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "わたし は かいしゃいん です",
+          "question": {
+            "en": [
+              { "key": "わたし", "value": "I" },
+              { "key": "は", "value": "am" },
+              { "key": "かいしゃいん", "value": "a company employee" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "わたし", "value": "Saya" },
+              { "key": "は", "value": "adalah" },
+              { "key": "かいしゃいん", "value": "karyawan perusahaan" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "わたし は かいしゃいん です",
+          "question": "わたし は かいしゃいん です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "ワンさん は ちゅうごくじん です",
+    "questions": [
+      {
+        "data": {
+          "answer": "ワンさん は ちゅうごくじん です",
+          "options": [
+            "ワンさん",
+            "あなた",
+            "ちゅうごくじん",
+            "です",
+            "は",
+            "マイクミラー",
+            "かいしゃいん",
+            "いしゃ"
+          ],
+          "question": {
+            "en": [
+              { "key": "ワンさん", "value": "Mr. Wang" },
+              { "key": "は", "value": "is" },
+              { "key": "ちゅうごくじん", "value": "Chinese" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "ワンさん", "value": "Tn. Wang" },
+              { "key": "は", "value": "adalah" },
+              { "key": "ちゅうごくじん", "value": "orang Tiongkok" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "Mr. Wang is Chinese",
+            "id": "Tn. Wang adalah orang Tiongkok"
+          },
+          "options": {
+            "en": [
+              "Mr. Wang",
+              "You",
+              "is",
+              "Chinese",
+              "a doctor",
+              "a company employee"
+            ],
+            "id": [
+              "Tn. Wang",
+              "Anda",
+              "adalah",
+              "orang Tiongkok",
+              "dokter",
+              "karyawan perusahaan"
+            ]
+          },
+          "question": [
+            {
+              "value": "ワンさん",
+              "key": "ワンさん"
+            },
+            {
+              "value": "は",
+              "key": "は"
+            },
+            {
+              "value": "ちゅうごくじん",
+              "key": "ちゅうごくじん"
+            },
+            {
+              "value": "です",
+              "key": "です"
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "ワンさん は ちゅうごくじん です",
+          "options": [
+            "ワンさん",
+            "あなた",
+            "ちゅうごくじん",
+            "です",
+            "は",
+            "マイクミラー",
+            "かいしゃいん",
+            "いしゃ"
+          ],
+          "question": "ワンさん は ちゅうごくじん です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "ワンさん は ちゅうごくじん です",
+          "question": {
+            "en": [
+              { "key": "ワンさん", "value": "Mr. Wang" },
+              { "key": "は", "value": "is" },
+              { "key": "ちゅうごくじん", "value": "Chinese" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "ワンさん", "value": "Tn. Wang" },
+              { "key": "は", "value": "adalah" },
+              { "key": "ちゅうごくじん", "value": "orang Tiongkok" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "ワンさん は ちゅうごくじん です",
+          "question": "ワンさん は ちゅうごくじん です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "ワンさん は いしゃ です",
+    "questions": [
+      {
+        "data": {
+          "answer": "ワンさん は いしゃ です",
+          "options": [
+            "ワンさん",
+            "あなた",
+            "いしゃ",
+            "です",
+            "は",
+            "ちゅうごくじん",
+            "マイクミラー",
+            "わたし"
+          ],
+          "question": {
+            "en": [
+              { "key": "ワンさん", "value": "Mr. Wang" },
+              { "key": "は", "value": "is" },
+              { "key": "いしゃ", "value": "a doctor" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "ワンさん", "value": "Tn. Wang" },
+              { "key": "は", "value": "adalah" },
+              { "key": "いしゃ", "value": "dokter" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "Mr. Wang is a doctor",
+            "id": "Tn. Wang adalah dokter"
+          },
+          "options": {
+            "en": [
+              "Mr. Wang",
+              "You",
+              "is",
+              "a doctor",
+              "Chinese",
+              "a company employee"
+            ],
+            "id": [
+              "Tn. Wang",
+              "Anda",
+              "adalah",
+              "dokter",
+              "orang Tiongkok",
+              "karyawan perusahaan"
+            ]
+          },
+          "question": [
+            {
+              "value": "ワンさん",
+              "key": "ワンさん"
+            },
+            {
+              "value": "は",
+              "key": "は"
+            },
+            {
+              "value": "いしゃ",
+              "key": "いしゃ"
+            },
+            {
+              "value": "です",
+              "key": "です"
+            }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "ワンさん は いしゃ です",
+          "options": [
+            "ワンさん",
+            "あなた",
+            "いしゃ",
+            "です",
+            "は",
+            "ちゅうごくじん",
+            "マイクミラー",
+            "わたし"
+          ],
+          "question": "ワンさん は いしゃ です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "ワンさん は いしゃ です",
+          "question": {
+            "en": [
+              { "key": "ワンさん", "value": "Mr. Wang" },
+              { "key": "は", "value": "is" },
+              { "key": "いしゃ", "value": "a doctor" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "ワンさん", "value": "Tn. Wang" },
+              { "key": "は", "value": "adalah" },
+              { "key": "いしゃ", "value": "dokter" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "ワンさん は いしゃ です",
+          "question": "ワンさん は いしゃ です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  }
+]

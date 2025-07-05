@@ -1,6 +1,6 @@
 import { Hono } from "hono";
 import { PrismaClient } from "../generated/prisma";
-import { z } from "zod";
+import { object, z } from "zod";
 import {
   isGUESS_THE_SENTENCE_MEAN,
   isGUESS_THE_SOUND_MEAN,
@@ -8,14 +8,13 @@ import {
   isSORT_THE_MEAN,
   isSORT_THE_SYMBOLS_FROM_MEAN,
   isWRITE_THE_SYMBOL_FROM_MEAN,
-  SymbolWordSchema,
-  TranslatedWordSchema,
   UnitQuestionSchema,
   type GuessTheSentenceMean,
   type GuessTheSoundMean,
   type GuessTheSymbolFromMean,
   type SortTheMeans,
   type SortTheSymbolsFromMean,
+  type SortTheSymbolsFromSound,
   type WriteTheSymbolFromMean,
   type WriteTheSymbolFromSound,
 } from "./units/unit-question-schema";
@@ -81,100 +80,256 @@ app.post("/create-unit-question", async (c) => {
   }
 });
 
-app.post("/generate-unit-question-from-word", async (c) => {
+app.post("/generate-vocab-question-from-word-block", async (c) => {
   try {
     const body = await c.req.json();
 
     const schema = z.object({
-      word: SymbolWordSchema.omit({ translation: true }).merge(
-        z.object({
-          translation: TranslatedWordSchema,
-        })
-      ),
-      meanOptions: z.array(TranslatedWordSchema),
-      kanaOptions: z.array(z.string()),
+      words: z.array(z.string()),
     });
 
     const bodyData = schema.parse(body);
 
-    const guessTheSentenceMean: GuessTheSentenceMean = {
-      type: "GUESS_THE_SENTENCE_MEAN",
-      data: {
-        answer: bodyData.word.translation,
-        options: bodyData.meanOptions,
-        question: [bodyData.word],
-      },
-    };
+    const words = await Promise.all(
+      bodyData.words.map(async (word) => {
+        const data = await prisma.words.findFirstOrThrow({
+          where: {
+            key: word,
+          },
+        });
 
-    const sortMean: SortTheMeans = {
-      type: "SORT_THE_MEAN",
-      data: {
-        answer: bodyData.word.translation,
-        options: bodyData.meanOptions,
-        question: [bodyData.word],
-      },
-    };
+        return { key: word, word: data };
+      })
+    );
 
-    const guessTheSoundMean: GuessTheSoundMean = {
-      type: "GUESS_THE_SOUND_MEAN",
-      data: {
-        answer: bodyData.word.translation,
-        options: bodyData.meanOptions,
-        question: bodyData.word.value,
-      },
-    };
+    const guessTheSentenceMean: Array<{
+      question: GuessTheSentenceMean;
+      key: string;
+    }> = words.map(({ word, key }) => {
+      const data: GuessTheSentenceMean = {
+        type: "GUESS_THE_SENTENCE_MEAN",
+        data: {
+          answer: {
+            en: word.en.replace(/\s*\(.*?\)/g, ""),
+            id: word.id.replace(/\s*\(.*?\)/g, ""),
+          },
+          options: {
+            en: words.map((item) => item.word.en.replace(/\s*\(.*?\)/g, "")),
+            id: words.map((item) => item.word.id.replace(/\s*\(.*?\)/g, "")),
+          },
+          question: [
+            {
+              value: key,
+              key,
+            },
+          ],
+        },
+      };
 
-    const guessTheSymbolFromMean: GuessTheSymbolFromMean = {
-      type: "GUESS_THE_SYMBOL_FROM_MEAN",
-      data: {
-        answer: bodyData.word.value,
-        options: bodyData.kanaOptions,
-        question: [bodyData.word],
-      },
-    };
+      return { question: data, key };
+    });
 
-    const sortTheSymbolFromMean: SortTheSymbolsFromMean = {
-      type: "SORT_THE_SYMBOLS_FROM_MEAN",
-      data: {
-        answer: bodyData.word.value,
-        options: bodyData.kanaOptions,
-        question: [bodyData.word],
-      },
-    };
+    const sortMean: Array<{
+      question: SortTheMeans;
+      key: string;
+    }> = words.map(({ word, key }) => {
+      const data: SortTheMeans = {
+        type: "SORT_THE_MEAN",
+        data: {
+          answer: {
+            en: word.en.replace(/\s*\(.*?\)/g, ""),
+            id: word.id.replace(/\s*\(.*?\)/g, ""),
+          },
+          options: {
+            en: words.map((item) => item.word.en.replace(/\s*\(.*?\)/g, "")),
+            id: words.map((item) => item.word.id.replace(/\s*\(.*?\)/g, "")),
+          },
+          question: [
+            {
+              value: key,
+              key,
+            },
+          ],
+        },
+      };
 
-    const writeSymbolFromMean: WriteTheSymbolFromMean = {
-      type: "WRITE_THE_SYMBOL_FROM_MEAN",
-      data: {
-        answer: bodyData.word.value,
-        question: [bodyData.word],
-      },
-    };
+      return { question: data, key };
+    });
 
-    const writeTheSymbolFromSound: WriteTheSymbolFromSound = {
-      type: "WRITE_THE_SYMBOL_FROM_SOUND",
-      data: {
-        answer: bodyData.word.value,
-        question: bodyData.word.value,
+    const guessTheSoundMean: Array<{
+      question: GuessTheSoundMean;
+      key: string;
+    }> = words.map(({ word, key }) => {
+      const data: GuessTheSoundMean = {
+        type: "GUESS_THE_SOUND_MEAN",
+        data: {
+          answer: {
+            en: word.en.replace(/\s*\(.*?\)/g, ""),
+            id: word.id.replace(/\s*\(.*?\)/g, ""),
+          },
+          options: {
+            en: words.map((item) => item.word.en.replace(/\s*\(.*?\)/g, "")),
+            id: words.map((item) => item.word.id.replace(/\s*\(.*?\)/g, "")),
+          },
+          question: key,
+        },
+      };
+
+      return { question: data, key };
+    });
+
+    const guessTheSymbolFromMean: Array<{
+      question: GuessTheSymbolFromMean;
+      key: string;
+    }> = words.map(({ key, word }) => {
+      const data: GuessTheSymbolFromMean = {
+        type: "GUESS_THE_SYMBOL_FROM_MEAN",
+        data: {
+          answer: key,
+          options: words.map((item) => item.word.key),
+          question: {
+            en: [
+              {
+                key,
+                value: word.en,
+              },
+            ],
+            id: [
+              {
+                key,
+                value: word.id,
+              },
+            ],
+          },
+        },
+      };
+
+      return { question: data, key };
+    });
+
+    const sortTheSymbolFromMean: Array<{
+      question: SortTheSymbolsFromMean;
+      key: string;
+    }> = words.map(({ key, word }) => {
+      const data: SortTheSymbolsFromMean = {
+        type: "SORT_THE_SYMBOLS_FROM_MEAN",
+        data: {
+          answer: key,
+          options: words.map((item) => item.word.key),
+          question: {
+            en: [
+              {
+                key,
+                value: word.en,
+              },
+            ],
+            id: [
+              {
+                key,
+                value: word.id,
+              },
+            ],
+          },
+        },
+      };
+
+      return { question: data, key };
+    });
+
+    const sortTheSymbolFromSound: Array<{
+      question: SortTheSymbolsFromSound;
+      key: string;
+    }> = words.map(({ key, word }) => {
+      const data: SortTheSymbolsFromSound = {
+        type: "SORT_THE_SYMBOLS_FROM_SOUND",
+        data: {
+          answer: key,
+          options: words.map((item) => item.word.key),
+          question: key,
+        },
+      };
+
+      return { question: data, key };
+    });
+
+    const writeSymbolFromMean: Array<{
+      question: WriteTheSymbolFromMean;
+      key: string;
+    }> = words.map(({ key, word }) => {
+      const data: WriteTheSymbolFromMean = {
+        type: "WRITE_THE_SYMBOL_FROM_MEAN",
+        data: {
+          answer: key,
+          question: {
+            en: [
+              {
+                key,
+                value: word.en,
+              },
+            ],
+            id: [
+              {
+                key,
+                value: word.id,
+              },
+            ],
+          },
+        },
+      };
+
+      return { question: data, key };
+    });
+
+    const writeTheSymbolFromSound: Array<{
+      question: WriteTheSymbolFromSound;
+      key: string;
+    }> = words.map(({ key, word }) => {
+      const data: WriteTheSymbolFromSound = {
+        type: "WRITE_THE_SYMBOL_FROM_SOUND",
+        data: {
+          answer: key,
+          question: key,
+        },
+      };
+
+      return { question: data, key };
+    });
+
+    const allQuestionData = [
+      ...guessTheSentenceMean,
+      ...sortMean,
+      ...guessTheSoundMean,
+      ...guessTheSymbolFromMean,
+      ...sortTheSymbolFromMean,
+      ...sortTheSymbolFromSound,
+      ...writeSymbolFromMean,
+      ...writeTheSymbolFromSound,
+    ];
+
+    const similarQuestion = await prisma.unit_questions.findMany({
+      where: {
+        key: {
+          in: bodyData.words,
+        },
       },
-    };
+    });
+
+    const sameQuestion = similarQuestion.find((question) =>
+      allQuestionData.some((newQuestion) =>
+        lodash.isEqual(newQuestion.question, question.question)
+      )
+    );
+
+    if (sameQuestion) {
+      throw { sameQuestion };
+    }
 
     const response = await Promise.all(
-      [
-        guessTheSentenceMean,
-        sortMean,
-        guessTheSoundMean,
-        guessTheSymbolFromMean,
-        sortTheSymbolFromMean,
-        writeSymbolFromMean,
-        writeTheSymbolFromSound,
-      ].map((question) =>
+      allQuestionData.map(({ question, key }) =>
         prisma.unit_questions.create({
           data: {
-            question: {
-              category: "VOCABULARY",
-              data: question,
-            },
-            key: bodyData.word.value,
+            question: question,
+            key,
           },
         })
       )
@@ -400,6 +555,50 @@ app.post("/apply-unit-question-to-block", async (c) => {
         .flat(),
       skipDuplicates: true,
     });
+
+    return c.json(res);
+  } catch (error) {
+    console.log(error);
+    return c.json({ error });
+  }
+});
+
+app.post("/create-words", async (c) => {
+  try {
+    const body = await c.req.json();
+
+    const schema = z.array(
+      z.object({
+        key: z.string(),
+        en: z.string(),
+        id: z.string(),
+        others: z.record(
+          z.string(),
+          z.union([
+            z.string(),
+            z.object({
+              en: z.string(),
+              id: z.string(),
+            }),
+          ])
+        ),
+      })
+    );
+
+    const validBody = schema.parse(body);
+
+    const res = await Promise.all(
+      validBody.map((word) =>
+        prisma.words.create({
+          data: {
+            en: word.en.replace(/\s*\(.*?\)/g, ""),
+            id: word.id.replace(/\s*\(.*?\)/g, ""),
+            key: word.key,
+            others: word.others,
+          },
+        })
+      )
+    );
 
     return c.json(res);
   } catch (error) {

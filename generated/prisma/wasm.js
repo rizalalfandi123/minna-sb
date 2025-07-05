@@ -194,23 +194,6 @@ exports.Prisma.Letters_to_letter_levelsScalarFieldEnum = {
   letter_level_id: 'letter_level_id'
 };
 
-exports.Prisma.Unit_questionsScalarFieldEnum = {
-  created_at: 'created_at',
-  updated_at: 'updated_at',
-  question: 'question',
-  deleted: 'deleted',
-  id: 'id',
-  key: 'key'
-};
-
-exports.Prisma.UnitsScalarFieldEnum = {
-  id: 'id',
-  created_at: 'created_at',
-  updated_at: 'updated_at',
-  deleted: 'deleted',
-  number: 'number'
-};
-
 exports.Prisma.Unit_levelsScalarFieldEnum = {
   id: 'id',
   created_at: 'created_at',
@@ -218,6 +201,14 @@ exports.Prisma.Unit_levelsScalarFieldEnum = {
   deleted: 'deleted',
   number: 'number',
   unit_question_block_id: 'unit_question_block_id'
+};
+
+exports.Prisma.Unit_progressScalarFieldEnum = {
+  id: 'id',
+  created_at: 'created_at',
+  updated_at: 'updated_at',
+  deleted: 'deleted',
+  unit_level_id: 'unit_level_id'
 };
 
 exports.Prisma.Unit_question_blocksScalarFieldEnum = {
@@ -231,6 +222,15 @@ exports.Prisma.Unit_question_blocksScalarFieldEnum = {
   type: 'type'
 };
 
+exports.Prisma.Unit_questionsScalarFieldEnum = {
+  created_at: 'created_at',
+  updated_at: 'updated_at',
+  question: 'question',
+  deleted: 'deleted',
+  id: 'id',
+  key: 'key'
+};
+
 exports.Prisma.Unit_questions_to_unit_levelsScalarFieldEnum = {
   unit_question_id: 'unit_question_id',
   number: 'number',
@@ -238,12 +238,22 @@ exports.Prisma.Unit_questions_to_unit_levelsScalarFieldEnum = {
   with_hint: 'with_hint'
 };
 
-exports.Prisma.Unit_progressScalarFieldEnum = {
+exports.Prisma.UnitsScalarFieldEnum = {
   id: 'id',
   created_at: 'created_at',
   updated_at: 'updated_at',
   deleted: 'deleted',
-  unit_level_id: 'unit_level_id'
+  number: 'number'
+};
+
+exports.Prisma.WordsScalarFieldEnum = {
+  created_at: 'created_at',
+  updated_at: 'updated_at',
+  deleted: 'deleted',
+  key: 'key',
+  id: 'id',
+  en: 'en',
+  others: 'others'
 };
 
 exports.Prisma.SortOrder = {
@@ -280,12 +290,13 @@ exports.Prisma.ModelName = {
   letter_types: 'letter_types',
   letters: 'letters',
   letters_to_letter_levels: 'letters_to_letter_levels',
-  unit_questions: 'unit_questions',
-  units: 'units',
   unit_levels: 'unit_levels',
+  unit_progress: 'unit_progress',
   unit_question_blocks: 'unit_question_blocks',
+  unit_questions: 'unit_questions',
   unit_questions_to_unit_levels: 'unit_questions_to_unit_levels',
-  unit_progress: 'unit_progress'
+  units: 'units',
+  words: 'words'
 };
 
 /**

@@ -34,7 +34,7 @@ function buildQuestionLevels(
   // 1. Group questions by type
   const questionsByType = new Map<string, TDetailUnitQuestion[]>();
   questions.forEach((question) => {
-    const type = question.question?.data?.type;
+    const type = question.question?.type;
     if (!type) return;
 
     if (!questionsByType.has(type)) {
@@ -110,7 +110,7 @@ function buildQuestionLevels(
 
     // Remove one instance of each used question from the pool
     levelQuestions.forEach((question) => {
-      const type = question.question?.data?.type;
+      const type = question?.question?.type;
       if (type) {
         const typeQuestions = questionsByType.get(type);
         if (typeQuestions && typeQuestions.length > 0) {
@@ -154,7 +154,7 @@ const buildBlockLevels = async ({
         : ["SORT_THE_MEAN", "SORT_THE_SYMBOLS_FROM_MEAN"];
 
     const firstLevelQuestions = questions.filter((question) =>
-      firstLevelQuestionType.includes(question.question.data.type)
+      firstLevelQuestionType.includes(question.question.type)
     );
 
     for (let index = 0; index < firstLevelQuestions.length; index++) {
@@ -184,8 +184,8 @@ const buildBlockLevels = async ({
         firstLevelPooler.set(
           pickElement.picked.key,
           [...nextValue].sort((a, b) => {
-            const indexA = firstLevelQuestionType.indexOf(a.question.data.type);
-            const indexB = firstLevelQuestionType.indexOf(b.question.data.type);
+            const indexA = firstLevelQuestionType.indexOf(a.question.type);
+            const indexB = firstLevelQuestionType.indexOf(b.question.type);
             return indexA - indexB;
           })
         );
@@ -219,9 +219,7 @@ const buildBlockLevels = async ({
   if (firstLevel.length > 0) {
     allData.push(firstLevel);
 
-    if (blockType === "vocabulary") {
-      allData.push(secondLevel);
-    }
+    allData.push(secondLevel);
   }
 
   allData.push(

@@ -1,53 +1,41 @@
 import { z } from "zod";
 
-export const TranslatedWordSchema = z.object({
-  id: z.object({
-    translate: z.string(),
-    index: z.number(),
-  }),
-  en: z.object({
-    translate: z.string(),
-    index: z.number(),
-  }),
-});
-
-export const SymbolWordSchema = z.object({
+const WordSchema = z.object({
   value: z.string(),
-  translation: TranslatedWordSchema.nullish(),
-  alternative: z
-    .object({
-      hiragana: z.string().optional(),
-      katakana: z.string().optional(),
-      kanji: z.string().optional(),
-      romaji: z.string().optional(),
-    })
-    .partial()
-    .nullish(),
+  key: z.string(),
 });
 
 export const GuessTheSentenceMeanSchema = z.object({
   type: z.literal("GUESS_THE_SENTENCE_MEAN"),
   data: z.object({
-    options: z.array(TranslatedWordSchema),
-    answer: TranslatedWordSchema,
-    question: z.array(SymbolWordSchema),
+    options: z.object({
+      en: z.array(z.string()),
+      id: z.array(z.string()),
+    }),
+    answer: z.object({
+      en: z.string(),
+      id: z.string(),
+    }),
+    question: z.array(WordSchema),
   }),
 });
 
 export const SortTheMeansSchema = z.object({
   type: z.literal("SORT_THE_MEAN"),
-  data: z.object({
-    question: z.array(SymbolWordSchema),
-    answer: TranslatedWordSchema,
-    options: z.array(TranslatedWordSchema),
-  }),
+  data: GuessTheSentenceMeanSchema.shape.data,
 });
 
 export const GuessTheSoundMeanSchema = z.object({
   type: z.literal("GUESS_THE_SOUND_MEAN"),
   data: z.object({
-    options: z.array(TranslatedWordSchema),
-    answer: TranslatedWordSchema,
+    options: z.object({
+      en: z.array(z.string()),
+      id: z.array(z.string()),
+    }),
+    answer: z.object({
+      en: z.string(),
+      id: z.string(),
+    }),
     question: z.string(),
   }),
 });
@@ -57,7 +45,10 @@ export const GuessTheSymbolFromMeanSchema = z.object({
   data: z.object({
     options: z.array(z.string()),
     answer: z.string(),
-    question: z.array(SymbolWordSchema),
+    question: z.object({
+      en: z.array(WordSchema),
+      id: z.array(WordSchema),
+    }),
   }),
 });
 
@@ -72,17 +63,16 @@ export const SortTheSymbolsFromSoundSchema = z.object({
 
 export const SortTheSymbolsFromMeanSchema = z.object({
   type: z.literal("SORT_THE_SYMBOLS_FROM_MEAN"),
-  data: z.object({
-    question: z.array(SymbolWordSchema),
-    answer: z.string(),
-    options: z.array(z.string()),
-  }),
+  data: GuessTheSymbolFromMeanSchema.shape.data,
 });
 
 export const WriteTheSymbolFromMeanSchema = z.object({
   type: z.literal("WRITE_THE_SYMBOL_FROM_MEAN"),
   data: z.object({
-    question: z.array(SymbolWordSchema),
+    question: z.object({
+      en: z.array(WordSchema),
+      id: z.array(WordSchema),
+    }),
     answer: z.string(),
   }),
 });
@@ -106,20 +96,17 @@ export const UnitQuestionTypeSchema = z.union([
   WriteTheSymbolFromSoundSchema,
 ]);
 
-export const UnitQuestionSchema = z.object({
-  category: z.literal("VOCABULARY").or(z.literal("GRAMMAR")),
-  data: UnitQuestionTypeSchema,
-});
-
-export type TranslatedWord = z.infer<typeof TranslatedWordSchema>;
-
-export type SymbolWord = z.infer<typeof SymbolWordSchema>;
+export const UnitQuestionSchema = UnitQuestionTypeSchema;
 
 export type GuessTheSentenceMean = z.infer<typeof GuessTheSentenceMeanSchema>;
 
 export type SortTheMeans = z.infer<typeof SortTheMeansSchema>;
 
 export type GuessTheSoundMean = z.infer<typeof GuessTheSoundMeanSchema>;
+
+export type SortTheSymbolsFromSound = z.infer<
+  typeof SortTheSymbolsFromSoundSchema
+>;
 
 export type GuessTheSymbolFromMean = z.infer<
   typeof GuessTheSymbolFromMeanSchema
