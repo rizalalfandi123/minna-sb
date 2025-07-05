@@ -1,0 +1,359 @@
+[
+  {
+    "deleted": false,
+    "key": "わたし",
+    "id": "saya",
+    "en": "I",
+    "others": {
+      "kanji": "私"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "あなた",
+    "id": "kamu",
+    "en": "you",
+    "others": {
+      "kanji": "貴方"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ひと",
+    "id": "orang",
+    "en": "person",
+    "others": {
+      "kanji": "人"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "きょうし",
+    "id": "guru, pengajar",
+    "en": "teacher, instructor",
+    "others": {
+      "kanji": "教師"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "がくせい",
+    "id": "mahasiswa",
+    "en": "student",
+    "others": {
+      "kanji": "学生"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "いしゃ",
+    "id": "dokter",
+    "en": "doctor",
+    "others": {
+      "kanji": "医者"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "さい",
+    "id": "tahun (usia)",
+    "en": "years old",
+    "others": {
+      "kanji": "歳"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "せんせい",
+    "id": "guru, dosen",
+    "en": "teacher, professor",
+    "others": {
+      "kanji": "先生"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ぎんこういん",
+    "id": "pegawai bank",
+    "en": "bank employee",
+    "others": {
+      "kanji": "銀行員"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "いいえ",
+    "id": "tidak",
+    "en": "no",
+    "others": {}
+  },
+  {
+    "deleted": false,
+    "key": "だれ",
+    "id": "siapa",
+    "en": "who",
+    "others": {}
+  },
+  {
+    "deleted": false,
+    "key": "かいしゃいん",
+    "id": "karyawan perusahaan",
+    "en": "company employee",
+    "others": {
+      "kanji": "会社員"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "はい",
+    "id": "ya",
+    "en": "yes",
+    "others": {}
+  },
+  {
+    "deleted": false,
+    "key": "けんきゅうしゃ",
+    "id": "peneliti",
+    "en": "researcher",
+    "others": {
+      "kanji": "研究者"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "イギリス",
+    "id": "Inggris",
+    "en": "United Kingdom",
+    "others": {}
+  },
+  {
+    "deleted": false,
+    "key": "インド",
+    "id": "India",
+    "en": "India",
+    "others": {}
+  },
+  {
+    "deleted": false,
+    "key": "アメリカ",
+    "id": "Amerika Serikat",
+    "en": "United States",
+    "others": {}
+  },
+  {
+    "deleted": false,
+    "key": "ちゅうごく",
+    "id": "Cina",
+    "en": "China",
+    "others": {
+      "kanji": "中国"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "タイ",
+    "id": "Thailand",
+    "en": "Thailand",
+    "others": {}
+  },
+  {
+    "deleted": false,
+    "key": "ブラジル",
+    "id": "Brasil",
+    "en": "Brazil",
+    "others": {}
+  },
+  {
+    "deleted": false,
+    "key": "インドネシア",
+    "id": "Indonesia",
+    "en": "Indonesia",
+    "others": {}
+  },
+  {
+    "deleted": false,
+    "key": "ドイツ",
+    "id": "Jerman",
+    "en": "Germany",
+    "others": {}
+  },
+  {
+    "deleted": false,
+    "key": "にほん",
+    "id": "Jepang",
+    "en": "Japan",
+    "others": {
+      "kanji": "日本"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "だいがく",
+    "id": "universitas",
+    "en": "university",
+    "others": {
+      "kanji": "大学"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "びょういん",
+    "id": "rumah sakit",
+    "en": "hospital",
+    "others": {
+      "kanji": "病院"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "かんこく",
+    "id": "Korea Selatan",
+    "en": "South Korea",
+    "others": {
+      "kanji": "韓国"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "です",
+    "id": "adalah",
+    "en": "is / am / are",
+    "others": {
+      "note": {
+        "en": "Polite sentence ending in Japanese, known as a copula.",
+        "id": "Penutup kalimat formal dalam bahasa Jepang, disebut juga kopula."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "は",
+    "id": "partikel topik",
+    "en": "topic particle",
+    "others": {
+      "note": {
+        "en": "Pronounced 'wa' when used as a particle, not 'ha'.",
+        "id": "Dibaca 'wa' saat digunakan sebagai partikel, bukan 'ha'."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "マイク ミラー",
+    "id": "Mike Miller",
+    "en": "Mike Miller",
+    "others": {
+      "note": {
+        "en": "Person's name.",
+        "id": "Nama orang."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ちゅうごくじん",
+    "id": "orang Tiongkok",
+    "en": "Chinese person",
+    "others": {
+      "kanji": "中国人"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ワンさん",
+    "id": "Tuan Wang",
+    "en": "Mr. Wang",
+    "others": {
+      "note": {
+        "en": "さん (san) is a polite suffix used after a person's name.",
+        "id": "さん (san) adalah akhiran sopan yang digunakan setelah nama orang."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "カール シュミット",
+    "id": "Tuan Karl Schmidt",
+    "en": "Mr. Karl Schmidt",
+    "others": {
+      "note": {
+        "en": "Foreign names are written in katakana. 'Karl Schmidt' is a German name.",
+        "id": "Nama asing ditulis dalam katakana. 'Karl Schmidt' adalah nama dari Jerman."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "じゃ ありません",
+    "id": "bukan",
+    "en": "is not / am not / are not",
+    "others": {
+      "note": {
+        "en": "Polite negative form of です (desu) used in formal sentences.",
+        "id": "Bentuk negatif sopan dari です (desu), digunakan dalam kalimat formal."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "アメリカじん",
+    "id": "orang Amerika",
+    "en": "American",
+    "others": {
+      "note": {
+        "en": "じん (jin) is a suffix that means 'person from' a country.",
+        "id": "じん (jin) adalah akhiran yang berarti 'orang dari' suatu negara."
+      },
+      "kanji": "-"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "イーさん",
+    "id": "Nona Lee",
+    "en": "Ms Lee",
+    "others": {
+      "note": {
+        "en": "さん (san) is a polite suffix used after a person's name. イー is a katakana rendering of 'Yi'.",
+        "id": "さん (san) adalah akhiran sopan setelah nama orang. イー adalah ejaan katakana dari 'Yi'."
+      },
+      "kanji": "-"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ですか",
+    "id": "apakah ...?",
+    "en": "is it...? / are you...? / do you...?",
+    "others": {
+      "note": {
+        "en": "Polite question form, combining です (copula) and か (question particle).",
+        "id": "Bentuk tanya sopan, gabungan dari です dan か."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "マリアさん",
+    "id": "Nona Maria",
+    "en": "Ms. Maria",
+    "others": {
+      "note": {
+        "en": "マリア is a foreign given name 'Maria' written in katakana. さん is a polite suffix.",
+        "id": "マリア adalah nama asing 'Maria' yang ditulis dalam katakana. さん adalah akhiran sopan."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "きむらさん",
+    "id": "Nona Kimura",
+    "en": "Ms. Kimura",
+    "others": {
+      "note": {
+        "en": "きむら is the Japanese surname 'Kimura'. さん is a polite suffix.",
+        "id": "きむら adalah nama keluarga Jepang 'Kimura'. さん adalah akhiran sopan."
+      }
+    }
+  }
+]
