@@ -5905,6 +5905,677 @@
   {
     "question": {
       "data": {
+        "answer": "あの ひと は きむらさん ですか",
+        "options": [
+          "あの",
+          "ひと",
+          "は",
+          "きむら",
+          "さん",
+          "です",
+          "か",
+          "この",
+          "あれ",
+          "だれ"
+        ],
+        "question": {
+          "en": [
+            {
+              "key": "は",
+              "value": "Is"
+            },
+            {
+              "key": "あの",
+              "value": "that"
+            },
+            {
+              "key": "ひと",
+              "value": "person"
+            },
+            {
+              "key": "きむらさん",
+              "value": "Ms. Kimura"
+            },
+            {
+              "key": "ですか",
+              "value": "?"
+            }
+          ],
+          "id": [
+            {
+              "key": "は",
+              "value": "Apakah"
+            },
+            {
+              "key": "ひと",
+              "value": "orang"
+            },
+            {
+              "key": "あの",
+              "value": "itu"
+            },
+            {
+              "key": "きむらさん",
+              "value": "Nona Kimura"
+            },
+            {
+              "key": "ですか",
+              "value": "?"
+            }
+          ]
+        }
+      },
+      "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+    },
+    "deleted": false,
+    "id": "1d985a81-1cf7-4fce-ac7a-dd59dece479b",
+    "key": "あの ひと は きむらさん ですか"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": {
+          "en": "Is that person Ms. Kimura?",
+          "id": "Apakah orang itu Nona Kimura?"
+        },
+        "options": {
+          "en": [
+            "Is",
+            "that",
+            "person",
+            "this",
+            "Ms. Kimura",
+            "Mr. Tanaka",
+            "teacher",
+            "student",
+            "friend",
+            "?"
+          ],
+          "id": [
+            "Apakah",
+            "orang",
+            "itu",
+            "ini",
+            "Nona Kimura",
+            "Tn. Tanaka",
+            "guru",
+            "murid",
+            "teman",
+            "?"
+          ]
+        },
+        "question": [
+          {
+            "key": "あの",
+            "value": "あの"
+          },
+          {
+            "key": "ひと",
+            "value": "ひと"
+          },
+          {
+            "key": "は",
+            "value": "は"
+          },
+          {
+            "key": "きむらさん",
+            "value": "きむらさん"
+          },
+          {
+            "key": "ですか",
+            "value": "ですか"
+          }
+        ]
+      },
+      "type": "SORT_THE_MEAN"
+    },
+    "deleted": false,
+    "id": "330946c8-efc1-44da-82cf-947e763c95f9",
+    "key": "あの ひと は きむらさん ですか"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "あの ひと は きむらさん ですか",
+        "options": [
+          "あの",
+          "ひと",
+          "は",
+          "きむら",
+          "さん",
+          "です",
+          "か",
+          "この",
+          "ひと",
+          "たなか"
+        ],
+        "question": "あの ひと は きむらさん ですか"
+      },
+      "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+    },
+    "deleted": false,
+    "id": "f0ea0081-ffb5-46a4-a93a-431fbae9cfdd",
+    "key": "あの ひと は きむらさん ですか"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "あの ひと は きむらさん ですか",
+        "question": {
+          "en": [
+            {
+              "key": "は",
+              "value": "Is"
+            },
+            {
+              "key": "あの",
+              "value": "that"
+            },
+            {
+              "key": "ひと",
+              "value": "person"
+            },
+            {
+              "key": "きむらさん",
+              "value": "Ms. Kimura"
+            },
+            {
+              "key": "ですか",
+              "value": "?"
+            }
+          ],
+          "id": [
+            {
+              "key": "は",
+              "value": "Apakah"
+            },
+            {
+              "key": "ひと",
+              "value": "orang"
+            },
+            {
+              "key": "あの",
+              "value": "itu"
+            },
+            {
+              "key": "きむらさん",
+              "value": "Nona Kimura"
+            },
+            {
+              "key": "ですか",
+              "value": "?"
+            }
+          ]
+        }
+      },
+      "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+    },
+    "deleted": false,
+    "id": "b8e3ebfc-2b8f-4dc2-8322-b584e5a3e282",
+    "key": "あの ひと は きむらさん ですか"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "あの ひと は きむらさん ですか",
+        "question": "あの ひと は きむらさん ですか"
+      },
+      "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+    },
+    "deleted": false,
+    "id": "84fb4d73-141b-4e29-b90b-8e14968e914d",
+    "key": "あの ひと は きむらさん ですか"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "あの ひと は マリアさん ですか",
+        "options": [
+          "あの",
+          "ひと",
+          "は",
+          "マリア",
+          "さん",
+          "です",
+          "か",
+          "この",
+          "あれ",
+          "だれ"
+        ],
+        "question": {
+          "en": [
+            {
+              "key": "は",
+              "value": "Is"
+            },
+            {
+              "key": "あの",
+              "value": "that"
+            },
+            {
+              "key": "ひと",
+              "value": "person"
+            },
+            {
+              "key": "マリアさん",
+              "value": "Ms. Maria"
+            },
+            {
+              "key": "ですか",
+              "value": "?"
+            }
+          ],
+          "id": [
+            {
+              "key": "は",
+              "value": "Apakah"
+            },
+            {
+              "key": "ひと",
+              "value": "orang"
+            },
+            {
+              "key": "あの",
+              "value": "itu"
+            },
+            {
+              "key": "マリアさん",
+              "value": "Nona Maria"
+            },
+            {
+              "key": "ですか",
+              "value": "?"
+            }
+          ]
+        }
+      },
+      "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+    },
+    "deleted": false,
+    "id": "6a3934a3-4cfc-4403-b20b-6840c4ecc00d",
+    "key": "あの ひと は マリアさん ですか"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": {
+          "en": "Is that person Ms. Maria?",
+          "id": "Apakah orang itu Nona Maria?"
+        },
+        "options": {
+          "en": [
+            "Is",
+            "that",
+            "person",
+            "this",
+            "Ms. Maria",
+            "Mr. Tanaka",
+            "teacher",
+            "student",
+            "friend",
+            "?"
+          ],
+          "id": [
+            "Apakah",
+            "orang",
+            "itu",
+            "ini",
+            "Nona Maria",
+            "Tn. Tanaka",
+            "guru",
+            "murid",
+            "teman",
+            "?"
+          ]
+        },
+        "question": [
+          {
+            "key": "あの",
+            "value": "あの"
+          },
+          {
+            "key": "ひと",
+            "value": "ひと"
+          },
+          {
+            "key": "は",
+            "value": "は"
+          },
+          {
+            "key": "マリアさん",
+            "value": "マリアさん"
+          },
+          {
+            "key": "ですか",
+            "value": "ですか"
+          }
+        ]
+      },
+      "type": "SORT_THE_MEAN"
+    },
+    "deleted": false,
+    "id": "ba6f5c83-0138-4d0c-80ac-12ed8c6773d1",
+    "key": "あの ひと は マリアさん ですか"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "あの ひと は マリアさん ですか",
+        "options": [
+          "あの",
+          "ひと",
+          "は",
+          "マリア",
+          "さん",
+          "です",
+          "か",
+          "この",
+          "ひと",
+          "たなか"
+        ],
+        "question": "あの ひと は マリアさん ですか"
+      },
+      "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+    },
+    "deleted": false,
+    "id": "21a5b801-43c5-44ef-81b6-5e07cc6c6990",
+    "key": "あの ひと は マリアさん ですか"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "あの ひと は マリアさん ですか",
+        "question": {
+          "en": [
+            {
+              "key": "は",
+              "value": "Is"
+            },
+            {
+              "key": "あの",
+              "value": "that"
+            },
+            {
+              "key": "ひと",
+              "value": "person"
+            },
+            {
+              "key": "マリアさん",
+              "value": "Ms. Maria"
+            },
+            {
+              "key": "ですか",
+              "value": "?"
+            }
+          ],
+          "id": [
+            {
+              "key": "は",
+              "value": "Apakah"
+            },
+            {
+              "key": "ひと",
+              "value": "orang"
+            },
+            {
+              "key": "あの",
+              "value": "itu"
+            },
+            {
+              "key": "マリアさん",
+              "value": "Nona Maria"
+            },
+            {
+              "key": "ですか",
+              "value": "?"
+            }
+          ]
+        }
+      },
+      "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+    },
+    "deleted": false,
+    "id": "7ea7a12b-681c-4112-9794-02c5ad65a359",
+    "key": "あの ひと は マリアさん ですか"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "あの ひと は マリアさん ですか",
+        "question": "あの ひと は マリアさん ですか"
+      },
+      "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+    },
+    "deleted": false,
+    "id": "38fba0b7-d9f0-42c8-89c4-1e19e4958af8",
+    "key": "あの ひと は マリアさん ですか"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "あの ひと は だれ ですか",
+        "options": [
+          "あの",
+          "ひと",
+          "は",
+          "だれ",
+          "です",
+          "か",
+          "この",
+          "あれ",
+          "わたし",
+          "あなた"
+        ],
+        "question": {
+          "en": [
+            {
+              "key": "だれ",
+              "value": "Who"
+            },
+            {
+              "key": "は",
+              "value": "is"
+            },
+            {
+              "key": "あの",
+              "value": "that"
+            },
+            {
+              "key": "ひと",
+              "value": "person"
+            },
+            {
+              "key": "ですか",
+              "value": "?"
+            }
+          ],
+          "id": [
+            {
+              "key": "だれ",
+              "value": "Siapa"
+            },
+            {
+              "key": "ひと",
+              "value": "orang"
+            },
+            {
+              "key": "あの",
+              "value": "itu"
+            },
+            {
+              "key": "ですか",
+              "value": "?"
+            },
+            {
+              "key": "は",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+    },
+    "deleted": false,
+    "id": "286006e3-c19f-45f2-88bc-c6ef6833c8b6",
+    "key": "あの ひと は だれ ですか"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": {
+          "en": "Who is that person?",
+          "id": "Siapa orang itu?"
+        },
+        "options": {
+          "en": [
+            "Who",
+            "is",
+            "that",
+            "person",
+            "this",
+            "teacher",
+            "student",
+            "friend",
+            "Mr.",
+            "?"
+          ],
+          "id": [
+            "Siapa",
+            "orang",
+            "itu",
+            "ini",
+            "guru",
+            "murid",
+            "teman",
+            "Tn.",
+            "?"
+          ]
+        },
+        "question": [
+          {
+            "key": "あの",
+            "value": "あの"
+          },
+          {
+            "key": "ひと",
+            "value": "ひと"
+          },
+          {
+            "key": "は",
+            "value": "は"
+          },
+          {
+            "key": "だれ",
+            "value": "だれ"
+          },
+          {
+            "key": "ですか",
+            "value": "ですか"
+          }
+        ]
+      },
+      "type": "SORT_THE_MEAN"
+    },
+    "deleted": false,
+    "id": "ce4ee6cb-c69d-4d7d-b4e8-64bcb6f52b7c",
+    "key": "あの ひと は だれ ですか"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "あの ひと は だれ ですか",
+        "options": [
+          "あの",
+          "ひと",
+          "は",
+          "だれ",
+          "です",
+          "か",
+          "この",
+          "わたし",
+          "あなた",
+          "さん"
+        ],
+        "question": "あの ひと は だれ ですか"
+      },
+      "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+    },
+    "deleted": false,
+    "id": "8350fdf6-346e-455a-8b7d-39ccdbe25575",
+    "key": "あの ひと は だれ ですか"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "あの ひと は だれ ですか",
+        "question": {
+          "en": [
+            {
+              "key": "だれ",
+              "value": "Who"
+            },
+            {
+              "key": "は",
+              "value": "is"
+            },
+            {
+              "key": "あの",
+              "value": "that"
+            },
+            {
+              "key": "ひと",
+              "value": "person"
+            },
+            {
+              "key": "ですか",
+              "value": "?"
+            }
+          ],
+          "id": [
+            {
+              "key": "だれ",
+              "value": "Siapa"
+            },
+            {
+              "key": "ひと",
+              "value": "orang"
+            },
+            {
+              "key": "あの",
+              "value": "itu"
+            },
+            {
+              "key": "ですか",
+              "value": "?"
+            },
+            {
+              "key": "は",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+    },
+    "deleted": false,
+    "id": "86f15c63-84f9-47e5-81ad-6e31af0b8480",
+    "key": "あの ひと は だれ ですか"
+  },
+  {
+    "question": {
+      "data": {
+        "answer": "あの ひと は だれ ですか",
+        "question": "あの ひと は だれ ですか"
+      },
+      "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+    },
+    "deleted": false,
+    "id": "73fec33f-8d4a-473a-9750-bcca10e775ee",
+    "key": "あの ひと は だれ ですか"
+  },
+  {
+    "question": {
+      "data": {
         "answer": {
           "en": "teacher, professor",
           "id": "guru, dosen"

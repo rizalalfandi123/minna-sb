@@ -355,5 +355,41 @@
         "id": "きむら adalah nama keluarga Jepang 'Kimura'. さん adalah akhiran sopan."
       }
     }
+  },
+  {
+    "deleted": false,
+    "key": "あの",
+    "id": "itu",
+    "en": "that",
+    "others": {
+      "note": {
+        "en": "Used to refer to something far from the speaker but near the listener, or known to both.",
+        "id": "Digunakan untuk menyebut benda yang jauh dari pembicara, dekat lawan bicara atau diketahui bersama."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "この",
+    "id": "ini",
+    "en": "this",
+    "others": {
+      "note": {
+        "en": "Used to refer to something close to the speaker.",
+        "id": "Digunakan untuk menyebut benda yang dekat dengan pembicara."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "その",
+    "id": "itu",
+    "en": "that",
+    "others": {
+      "note": {
+        "en": "Used to refer to something near the listener.",
+        "id": "Digunakan untuk menyebut benda yang dekat dengan lawan bicara."
+      }
+    }
   }
 ]
