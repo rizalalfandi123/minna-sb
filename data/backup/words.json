@@ -309,6 +309,18 @@
   },
   {
     "deleted": false,
+    "key": "カリナさん",
+    "id": "Nona Karina",
+    "en": "Ms. Karina",
+    "others": {
+      "note": {
+        "en": "カリナ is a foreign given name 'Karina' written in katakana. さん is a polite suffix.",
+        "id": "カリナ adalah nama asing 'Karina' yang ditulis dalam katakana. さん adalah akhiran sopan."
+      }
+    }
+  },
+  {
+    "deleted": false,
     "key": "イーさん",
     "id": "Nona Lee",
     "en": "Ms Lee",
@@ -389,6 +401,54 @@
       "note": {
         "en": "Used to refer to something near the listener.",
         "id": "Digunakan untuk menyebut benda yang dekat dengan lawan bicara."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "IMC の しゃいん",
+    "id": "karyawan IMC",
+    "en": "employee of IMC",
+    "others": {
+      "note": {
+        "en": "の indicates possession. しゃいん (company employee) belongs to IMC.",
+        "id": "の menunjukkan kepemilikan. しゃいん (pegawai perusahaan) milik perusahaan IMC."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ふじだいがく の がくせい",
+    "id": "mahasiswa Universitas Fuji",
+    "en": "student of Fuji University",
+    "others": {
+      "note": {
+        "en": "の connects Fuji University with the student (がくせい).",
+        "id": "の menghubungkan Universitas Fuji dengan mahasiswa (がくせい)."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ワットさん",
+    "id": "Tuan Watt",
+    "en": "Mr. Watt",
+    "others": {
+      "note": {
+        "en": "ワット is a foreign surname 'Watt' from England, written in katakana. さん is a polite suffix.",
+        "id": "ワット adalah nama keluarga asing 'Watt' dari Inggris, ditulis dalam katakana. さん adalah akhiran sopan."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "さくらだいがく の せんせい",
+    "id": "dosen/profesor Universitas Sakura",
+    "en": "teacher/professor at Sakura University",
+    "others": {
+      "note": {
+        "en": "さくらだいがく is a school name. の links it to せんせい (teacher).",
+        "id": "さくらだいがく adalah nama universitas. の menghubungkan ke せんせい (dosen)."
       }
     }
   }

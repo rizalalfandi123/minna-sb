@@ -34,46 +34,56 @@ app.post("/create-unit-question", async (c) => {
       key: z.string(),
     });
 
-    const validBody = schema.parse(body);
+    const schemaCollection = z.array(schema);
 
-    const similarQuestion = await prisma.unit_questions.findMany({
-      where: {
-        key: {
-          equals: validBody.key,
+    const validBody = schemaCollection.parse(body);
+
+    const createBlockQuestion = async (validBody: z.infer<typeof schema>) => {
+      const similarQuestion = await prisma.unit_questions.findMany({
+        where: {
+          key: {
+            equals: validBody.key,
+          },
         },
-      },
-    });
+      });
 
-    const sameQuestion = similarQuestion.find((question) =>
-      validBody.questions.some((newQuestion) =>
-        lodash.isEqual(newQuestion, question.question)
-      )
+      const sameQuestion = similarQuestion.find((question) =>
+        validBody.questions.some((newQuestion) =>
+          lodash.isEqual(newQuestion, question.question)
+        )
+      );
+
+      if (sameQuestion) {
+        throw { sameQuestion };
+      }
+
+      for (let index = 0; index < validBody.questions.length; index++) {
+        const element = validBody.questions[index];
+
+        await prisma.unit_questions.create({
+          data: { question: element, key: validBody.key },
+        });
+      }
+
+      const results = await prisma.unit_questions.findMany({
+        where: {
+          key: {
+            equals: validBody.key,
+          },
+        },
+        orderBy: {
+          created_at: "asc",
+        },
+      });
+
+      return results;
+    };
+
+    const response = await Promise.all(
+      validBody.map((item) => createBlockQuestion(item))
     );
 
-    if (sameQuestion) {
-      throw { sameQuestion };
-    }
-
-    for (let index = 0; index < validBody.questions.length; index++) {
-      const element = validBody.questions[index];
-
-      await prisma.unit_questions.create({
-        data: { question: element, key: validBody.key },
-      });
-    }
-
-    const results = await prisma.unit_questions.findMany({
-      where: {
-        key: {
-          equals: validBody.key,
-        },
-      },
-      orderBy: {
-        created_at: "asc",
-      },
-    });
-
-    return c.json(results);
+    return c.json(response);
   } catch (error) {
     console.log(error);
     return c.json({ error });

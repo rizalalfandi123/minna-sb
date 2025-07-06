@@ -45,6 +45,14 @@ const level1GrammarBlocks: Array<{
       "あの ひと は だれ ですか",
     ],
   },
+  {
+    type: "grammar",
+    block: [
+      "わたし は IMC の しゃいん です",
+      "カリナさん は ふじだいがく の がくせい です",
+      "ワットさん は さくらだいがく の せんせい です"
+    ],
+  },
 ];
 
 const level1Block: Array<{

@@ -1,0 +1,414 @@
+[
+  {
+    "key": "わたし は IMC の しゃいん です",
+    "questions": [
+      {
+        "data": {
+          "answer": "わたし は IMC の しゃいん です",
+          "options": [
+            "わたし",
+            "は",
+            "IMC",
+            "の",
+            "しゃいん",
+            "です",
+            "あなた",
+            "がっこう",
+            "かいしゃ",
+            "せんせい"
+          ],
+          "question": {
+            "en": [
+              { "key": "わたし", "value": "I" },
+              { "key": "は", "value": "am" },
+              { "key": "IMC の しゃいん", "value": "an employee of IMC" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "わたし", "value": "Saya" },
+              { "key": "は", "value": "adalah" },
+              { "key": "IMC の しゃいん", "value": "karyawan IMC" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "I am an employee of IMC",
+            "id": "Saya adalah karyawan IMC"
+          },
+          "options": {
+            "en": [
+              "I",
+              "am",
+              "employee",
+              "an",
+              "of",
+              "Fuji University",
+              "IMC",
+              "student",
+              "teacher",
+              "worker",
+              "Karina",
+              "staff"
+            ],
+            "id": [
+              "Saya",
+              "adalah",
+              "karyawan",
+              "murid",
+              "IMC",
+              "insinyur",
+              "Universitas Sakura",
+              "Universitas Fuji",
+              "guru",
+              "pekerja",
+              "anggota",
+              "staf"
+            ]
+          },
+          "question": [
+            { "value": "わたし", "key": "わたし" },
+            { "value": "は", "key": "は" },
+            { "value": "IMC の しゃいん", "key": "IMC の しゃいん" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "わたし は IMC の しゃいん です",
+          "options": [
+            "わたし",
+            "は",
+            "IMC",
+            "の",
+            "しゃいん",
+            "です",
+            "あなた",
+            "かいしゃ",
+            "がっこう",
+            "せんせい"
+          ],
+          "question": "わたし は IMC の しゃいん です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "わたし は IMC の しゃいん です",
+          "question": {
+            "en": [
+              { "key": "わたし", "value": "I" },
+              { "key": "は", "value": "am" },
+              { "key": "IMC の しゃいん", "value": "an employee of IMC" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "わたし", "value": "Saya" },
+              { "key": "は", "value": "adalah" },
+              { "key": "IMC の しゃいん", "value": "karyawan IMC" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "わたし は IMC の しゃいん です",
+          "question": "わたし は IMC の しゃいん です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "カリナさん は ふじだいがく の がくせい です",
+    "questions": [
+      {
+        "data": {
+          "answer": "カリナさん は ふじだいがく の がくせい です",
+          "options": [
+            "カリナ",
+            "さん",
+            "は",
+            "ふじだいがく",
+            "の",
+            "がくせい",
+            "です",
+            "せんせい",
+            "かいしゃいん",
+            "だれ"
+          ],
+          "question": {
+            "en": [
+              { "key": "カリナさん", "value": "Karina" },
+              { "key": "は", "value": "is" },
+              {
+                "key": "ふじだいがく の がくせい",
+                "value": "a student at Fuji University"
+              },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "カリナさん", "value": "Karina" },
+              { "key": "は", "value": "adalah" },
+              {
+                "key": "ふじだいがく の がくせい",
+                "value": "mahasiswa Universitas Fuji"
+              },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "Karina is a student at Fuji University",
+            "id": "Karina adalah mahasiswa Universitas Fuji"
+          },
+          "options": {
+            "en": [
+              "Karina",
+              "is",
+              "Fuji University",
+              "a",
+              "student",
+              "at",
+              "teacher",
+              "employee",
+              "doctor",
+              "professor",
+              "researcher"
+            ],
+            "id": [
+              "Karina",
+              "adalah",
+              "mahasiswa",
+              "Universitas Fuji",
+              "IMC",
+              "Universitas Sakura",
+              "guru",
+              "karyawan",
+              "dokter",
+              "profesor",
+              "peneliti"
+            ]
+          },
+          "question": [
+            { "value": "カリナさん", "key": "カリナさん" },
+            { "value": "は", "key": "は" },
+            {
+              "value": "ふじだいがく の がくせい",
+              "key": "ふじだいがく の がくせい"
+            },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "カリナさん は ふじだいがく の がくせい です",
+          "options": [
+            "カリナ",
+            "さん",
+            "は",
+            "ふじだいがく",
+            "の",
+            "がくせい",
+            "です",
+            "せんせい",
+            "かいしゃいん",
+            "だれ"
+          ],
+          "question": "カリナさん は ふじだいがく の がくせい です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "カリナさん は ふじだいがく の がくせい です",
+          "question": {
+            "en": [
+              { "key": "カリナさん", "value": "Karina" },
+              { "key": "は", "value": "is" },
+              {
+                "key": "ふじだいがく の がくせい",
+                "value": "a student at Fuji University"
+              },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "カリナさん", "value": "Karina" },
+              { "key": "は", "value": "adalah" },
+              {
+                "key": "ふじだいがく の がくせい",
+                "value": "mahasiswa Universitas Fuji"
+              },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "カリナさん は ふじだいがく の がくせい です",
+          "question": "カリナさん は ふじだいがく の がくせい です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "ワットさん は さくらだいがく の せんせい です",
+    "questions": [
+      {
+        "data": {
+          "answer": "ワットさん は さくらだいがく の せんせい です",
+          "options": [
+            "ワット",
+            "さん",
+            "は",
+            "さくらだいがく",
+            "の",
+            "せんせい",
+            "です",
+            "がくせい",
+            "かいしゃいん",
+            "いしゃ"
+          ],
+          "question": {
+            "en": [
+              { "key": "ワットさん", "value": "Mr. Watt" },
+              { "key": "は", "value": "is" },
+              {
+                "key": "さくらだいがく の せんせい",
+                "value": "a professor at Sakura University"
+              },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "ワットさん", "value": "Tn. Watt" },
+              { "key": "は", "value": "adalah" },
+              {
+                "key": "さくらだいがく の せんせい",
+                "value": "dosen Universitas Sakura"
+              },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "Mr. Watt is a professor at Sakura University",
+            "id": "Tn. Watt adalah dosen Universitas Sakura"
+          },
+          "options": {
+            "en": [
+              "Mr. Watt",
+              "is",
+              "at",
+              "Fuji University",
+              "a",
+              "professor",
+              "Sakura University",
+              "student",
+              "researcher",
+              "doctor",
+              "engineer",
+              "lecturer"
+            ],
+            "id": [
+              "Tn. Watt",
+              "adalah",
+              "Universitas Fuji",
+              "dosen",
+              "Universitas Sakura",
+              "mahasiswa",
+              "peneliti",
+              "dokter",
+              "insinyur",
+              "pengajar",
+              "staf",
+              "IMC"
+            ]
+          },
+          "question": [
+            { "value": "ワットさん", "key": "ワットさん" },
+            { "value": "は", "key": "は" },
+            {
+              "value": "さくらだいがく の せんせい",
+              "key": "さくらだいがく の せんせい"
+            },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "ワットさん は さくらだいがく の せんせい です",
+          "options": [
+            "ワット",
+            "さん",
+            "は",
+            "さくらだいがく",
+            "の",
+            "せんせい",
+            "です",
+            "がくせい",
+            "かいしゃいん",
+            "いしゃ"
+          ],
+          "question": "ワットさん は さくらだいがく の せんせい です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "ワットさん は さくらだいがく の せんせい です",
+          "question": {
+            "en": [
+              { "key": "ワットさん", "value": "Mr. Watt" },
+              { "key": "は", "value": "is" },
+              {
+                "key": "さくらだいがく の せんせい",
+                "value": "a professor at Sakura University"
+              },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "ワットさん", "value": "Tn. Watt" },
+              { "key": "は", "value": "adalah" },
+              {
+                "key": "さくらだいがく の せんせい",
+                "value": "dosen Universitas Sakura"
+              },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "ワットさん は さくらだいがく の せんせい です",
+          "question": "ワットさん は さくらだいがく の せんせい です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  }
+]
