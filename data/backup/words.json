@@ -451,5 +451,145 @@
         "id": "さくらだいがく adalah nama universitas. の menghubungkan ke せんせい (dosen)."
       }
     }
+  },
+  {
+    "deleted": false,
+    "key": "も",
+    "id": "juga",
+    "en": "also / too",
+    "others": {
+      "note": {
+        "en": "も is a particle used to indicate 'also' or 'too' in a sentence.",
+        "id": "も adalah partikel yang digunakan untuk menyatakan 'juga' dalam kalimat."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ブラジルじん",
+    "id": "orang Brasil",
+    "en": "Brazilian",
+    "others": {
+      "note": {
+        "en": "じん (人) is a suffix meaning 'person'. ブラジル is 'Brazil' in katakana.",
+        "id": "じん (人) adalah akhiran yang berarti 'orang dari'. ブラジル adalah 'Brasil' dalam katakana."
+      },
+      "kanji": "ブラジル人"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "サントスさん",
+    "id": "Tuan Santos",
+    "en": "Mr. Santos",
+    "others": {
+      "note": {
+        "en": "サントス is a foreign surname 'Santos' written in katakana. さん is a polite suffix.",
+        "id": "サントス adalah nama keluarga asing 'Santos' yang ditulis dalam katakana. さん adalah akhiran sopan."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "あの ひと",
+    "id": "orang itu",
+    "en": "that person",
+    "others": {
+      "note": {
+        "en": "あの means 'that (over there)', and ひと (人) means 'person'. Used to refer to someone far from the speaker.",
+        "id": "あの berarti 'itu (di sana)', dan ひと (人) berarti 'orang'. Digunakan untuk menyebut seseorang yang jauh dari pembicara."
+      },
+      "kanji": "あの人"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "8",
+    "id": "delapan",
+    "en": "eight",
+    "others": {
+      "note": {
+        "en": "The kanji 八 represents the number eight.",
+        "id": "Kanji 八 mewakili angka delapan."
+      },
+      "kanji": "八"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "テレーザちゃん",
+    "id": "Tereza",
+    "en": "Tereza",
+    "others": {
+      "note": {
+        "en": "テレーザ is the name 'Tereza' written in katakana. ちゃん is an affectionate suffix often used for children or close friends.",
+        "id": "テレーザ adalah nama 'Tereza' dalam katakana. ちゃん adalah akhiran akrab yang sering digunakan untuk anak-anak atau teman dekat."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "9",
+    "id": "sembilan",
+    "en": "nine",
+    "others": {
+      "note": {
+        "en": "The kanji 九 represents the number nine.",
+        "id": "Kanji 九 mewakili angka sembilan."
+      },
+      "kanji": "九"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "なんさい",
+    "id": "berapa tahun",
+    "en": "how old",
+    "others": {
+      "note": {
+        "en": "なん (何) means 'what', and さい (歳) is the age counter. Together they mean 'how old?'.",
+        "id": "なん (何) berarti 'apa', dan さい (歳) adalah penghitung umur. Bersama berarti 'berapa umur?'."
+      },
+      "kanji": "何歳"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "8さい",
+    "id": "8 tahun",
+    "en": "8 years old",
+    "others": {
+      "note": {
+        "en": "さい (歳) is a counter for age. 八 is the kanji for 8.",
+        "id": "さい (歳) adalah penghitung usia. 八 adalah kanji untuk angka 8."
+      },
+      "kanji": "八歳"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "９さい",
+    "id": "9 tahun",
+    "en": "9 years old",
+    "others": {
+      "note": {
+        "en": "さい (歳) is a counter for age. 九 is the kanji for 9.",
+        "id": "さい (歳) adalah penghitung usia. 九 adalah kanji untuk angka 9."
+      },
+      "kanji": "九歳"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "たろうちゃん",
+    "id": "Taro",
+    "en": "Taro",
+    "others": {
+      "note": {
+        "en": "たろう (Tarou) is a common Japanese male name. ちゃん is a friendly suffix used for familiarity.",
+        "id": "たろう (Tarou) adalah nama laki-laki Jepang yang umum. ちゃん adalah akhiran akrab untuk menunjukkan keakraban."
+      },
+      "kanji": "太郎ちゃん"
+    }
   }
 ]

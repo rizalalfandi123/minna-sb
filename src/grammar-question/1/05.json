@@ -1,0 +1,368 @@
+[
+  {
+    "key": "サントスさん は ブラジルじん です",
+    "questions": [
+      {
+        "data": {
+          "answer": "サントスさん は ブラジルじん です",
+          "options": [
+            "サントス",
+            "さん",
+            "は",
+            "ブラジル",
+            "じん",
+            "です",
+            "アメリカ",
+            "かんこく",
+            "ちゅうごく",
+            "にほん"
+          ],
+          "question": {
+            "en": [
+              { "key": "サントスさん", "value": "Mr. Santos" },
+              { "key": "は", "value": "is" },
+              { "key": "ブラジルじん", "value": "Brazilian" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "サントスさん", "value": "Tuan Santos" },
+              { "key": "は", "value": "adalah" },
+              { "key": "ブラジルじん", "value": "orang Brasil" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "Mr. Santos is Brazilian",
+            "id": "Tuan Santos adalah orang Brasil"
+          },
+          "options": {
+            "en": [
+              "Mr. Santos",
+              "is",
+              "Brazilian",
+              "American",
+              "Japanese",
+              "Korean",
+              "Chinese",
+              "student"
+            ],
+            "id": [
+              "Tuan Santos",
+              "adalah",
+              "orang Brasil",
+              "orang Amerika",
+              "orang Jepang",
+              "orang Korea",
+              "orang Tiongkok",
+              "mahasiswa"
+            ]
+          },
+          "question": [
+            { "value": "サントスさん", "key": "サントスさん" },
+            { "value": "は", "key": "は" },
+            { "value": "ブラジルじん", "key": "ブラジルじん" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "サントスさん は ブラジルじん です",
+          "options": [
+            "サントス",
+            "さん",
+            "は",
+            "ブラジル",
+            "じん",
+            "です",
+            "アメリカ",
+            "かんこく",
+            "ちゅうごく",
+            "にほん"
+          ],
+          "question": "サントスさん は ブラジルじん です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "サントスさん は ブラジルじん です",
+          "question": {
+            "en": [
+              { "key": "サントスさん", "value": "Mr. Santos" },
+              { "key": "は", "value": "is" },
+              { "key": "ブラジルじん", "value": "Brazilian" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "サントスさん", "value": "Tuan Santos" },
+              { "key": "は", "value": "adalah" },
+              { "key": "ブラジルじん", "value": "orang Brasil" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "サントスさん は ブラジルじん です",
+          "question": "サントスさん は ブラジルじん です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "マリアさん も ブラジルじん です",
+    "questions": [
+      {
+        "data": {
+          "answer": "マリアさん も ブラジルじん です",
+          "options": [
+            "マリア",
+            "さん",
+            "も",
+            "ブラジル",
+            "じん",
+            "です",
+            "は",
+            "アメリカ",
+            "かんこく",
+            "にほん"
+          ],
+          "question": {
+            "en": [
+              { "key": "マリアさん", "value": "Maria" },
+              { "key": "です", "value": "is" },
+              { "key": "も", "value": "also" },
+              { "key": "ブラジルじん", "value": "Brazilian" }
+            ],
+            "id": [
+              { "key": "マリアさん", "value": "Maria" },
+              { "key": "も", "value": "juga" },
+              { "key": "ブラジルじん", "value": "orang Brasil" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "Maria is also Brazilian",
+            "id": "Maria juga orang Brasil"
+          },
+          "options": {
+            "en": [
+              "Maria",
+              "also",
+              "Brazilian",
+              "Japanese",
+              "is",
+              "American",
+              "student",
+              "teacher",
+              "Korean"
+            ],
+            "id": [
+              "Maria",
+              "juga",
+              "orang Brasil",
+              "orang Jepang",
+              "orang Amerika",
+              "mahasiswa",
+              "guru",
+              "orang Korea"
+            ]
+          },
+          "question": [
+            { "value": "マリアさん", "key": "マリアさん" },
+            { "value": "も", "key": "も" },
+            { "value": "ブラジルじん", "key": "ブラジルじん" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "マリアさん も ブラジルじん です",
+          "options": [
+            "マリア",
+            "さん",
+            "も",
+            "ブラジル",
+            "じん",
+            "です",
+            "は",
+            "アメリカ",
+            "かんこく",
+            "にほん"
+          ],
+          "question": "マリアさん も ブラジルじん です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "マリアさん も ブラジルじん です",
+          "question": {
+            "en": [
+              { "key": "マリアさん", "value": "Maria" },
+              { "key": "です", "value": "is" },
+              { "key": "も", "value": "also" },
+              { "key": "ブラジルじん", "value": "Brazilian" }
+            ],
+            "id": [
+              { "key": "マリアさん", "value": "Maria" },
+              { "key": "も", "value": "juga" },
+              { "key": "ブラジルじん", "value": "orang Brasil" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "マリアさん も ブラジルじん です",
+          "question": "マリアさん も ブラジルじん です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "あの ひと も ブラジルじん です",
+    "questions": [
+      {
+        "data": {
+          "answer": "あの ひと も ブラジルじん です",
+          "options": [
+            "あの",
+            "ひと",
+            "も",
+            "ブラジル",
+            "じん",
+            "です",
+            "は",
+            "この",
+            "アメリカ",
+            "にほん"
+          ],
+          "question": {
+            "en": [
+              { "key": "あの ひと", "value": "that person" },
+              { "key": "です", "value": "is" },
+              { "key": "も", "value": "also" },
+              { "key": "ブラジルじん", "value": "Brazilian" }
+            ],
+            "id": [
+              { "key": "あの ひと", "value": "orang itu" },
+              { "key": "も", "value": "juga" },
+              { "key": "ブラジルじん", "value": "orang Brasil" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "That person is also Brazilian",
+            "id": "Orang itu juga orang Brasil"
+          },
+          "options": {
+            "en": [
+              "That",
+              "person",
+              "This",
+              "also",
+              "is",
+              "Brazilian",
+              "Japanese",
+              "American",
+              "teacher",
+              "student",
+              "Korean"
+            ],
+            "id": [
+              "Orang",
+              "itu",
+              "ini",
+              "juga",
+              "orang Brasil",
+              "orang Jepang",
+              "orang Amerika",
+              "guru",
+              "murid",
+              "orang Korea"
+            ]
+          },
+          "question": [
+            { "value": "あの ひと", "key": "あの ひと" },
+            { "value": "も", "key": "も" },
+            { "value": "ブラジルじん", "key": "ブラジルじん" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "あの ひと も ブラジルじん です",
+          "options": [
+            "あの",
+            "ひと",
+            "も",
+            "ブラジル",
+            "じん",
+            "です",
+            "は",
+            "この",
+            "アメリカ",
+            "にほん"
+          ],
+          "question": "あの ひと も ブラジルじん です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "あの ひと も ブラジルじん です",
+          "question": {
+            "en": [
+              { "key": "あの ひと", "value": "that person" },
+              { "key": "です", "value": "is" },
+              { "key": "も", "value": "also" },
+              { "key": "ブラジルじん", "value": "Brazilian" }
+            ],
+            "id": [
+              { "key": "あの ひと", "value": "orang itu" },
+              { "key": "も", "value": "juga" },
+              { "key": "ブラジルじん", "value": "orang Brasil" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "あの ひと も ブラジルじん です",
+          "question": "あの ひと も ブラジルじん です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  }
+]
