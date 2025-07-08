@@ -120,12 +120,12 @@ app.post("/generate-vocab-question-from-word-block", async (c) => {
         type: "GUESS_THE_SENTENCE_MEAN",
         data: {
           answer: {
-            en: word.en.replace(/\s*\(.*?\)/g, ""),
-            id: word.id.replace(/\s*\(.*?\)/g, ""),
+            en: word.en,
+            id: word.id,
           },
           options: {
-            en: words.map((item) => item.word.en.replace(/\s*\(.*?\)/g, "")),
-            id: words.map((item) => item.word.id.replace(/\s*\(.*?\)/g, "")),
+            en: words.map((item) => item.word.en),
+            id: words.map((item) => item.word.id),
           },
           question: [
             {
@@ -147,12 +147,12 @@ app.post("/generate-vocab-question-from-word-block", async (c) => {
         type: "SORT_THE_MEAN",
         data: {
           answer: {
-            en: word.en.replace(/\s*\(.*?\)/g, ""),
-            id: word.id.replace(/\s*\(.*?\)/g, ""),
+            en: word.en,
+            id: word.id,
           },
           options: {
-            en: words.map((item) => item.word.en.replace(/\s*\(.*?\)/g, "")),
-            id: words.map((item) => item.word.id.replace(/\s*\(.*?\)/g, "")),
+            en: words.map((item) => item.word.en),
+            id: words.map((item) => item.word.id),
           },
           question: [
             {
@@ -174,12 +174,12 @@ app.post("/generate-vocab-question-from-word-block", async (c) => {
         type: "GUESS_THE_SOUND_MEAN",
         data: {
           answer: {
-            en: word.en.replace(/\s*\(.*?\)/g, ""),
-            id: word.id.replace(/\s*\(.*?\)/g, ""),
+            en: word.en,
+            id: word.id,
           },
           options: {
-            en: words.map((item) => item.word.en.replace(/\s*\(.*?\)/g, "")),
-            id: words.map((item) => item.word.id.replace(/\s*\(.*?\)/g, "")),
+            en: words.map((item) => item.word.en),
+            id: words.map((item) => item.word.id),
           },
           question: key,
         },
@@ -566,7 +566,7 @@ app.post("/apply-unit-question-to-block", async (c) => {
       skipDuplicates: true,
     });
 
-    return c.json(res);
+    return c.json({ res, hieracy });
   } catch (error) {
     console.log(error);
     return c.json({ error });
@@ -601,14 +601,35 @@ app.post("/create-words", async (c) => {
       validBody.map((word) =>
         prisma.words.create({
           data: {
-            en: word.en.replace(/\s*\(.*?\)/g, ""),
-            id: word.id.replace(/\s*\(.*?\)/g, ""),
+            en: word.en,
+            id: word.id,
             key: word.key,
             others: word.others,
           },
         })
       )
     );
+
+    return c.json(res);
+  } catch (error) {
+    console.log(error);
+    return c.json({ error });
+  }
+});
+
+app.post("/delete-words", async (c) => {
+  try {
+    const body = await c.req.json();
+
+    const schema = z.object({
+      keys: z.array(z.string()),
+    });
+
+    const validBody = schema.parse(body);
+
+    const res = await prisma.words.deleteMany({
+      where: { key: { in: validBody.keys } },
+    });
 
     return c.json(res);
   } catch (error) {

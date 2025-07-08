@@ -20,6 +20,7 @@ export const GuessTheSentenceMeanSchema = z.object({
   }),
 });
 
+// 2
 export const SortTheMeansSchema = z.object({
   type: z.literal("SORT_THE_MEAN"),
   data: GuessTheSentenceMeanSchema.shape.data,
@@ -52,6 +53,7 @@ export const GuessTheSymbolFromMeanSchema = z.object({
   }),
 });
 
+// 3
 export const SortTheSymbolsFromSoundSchema = z.object({
   type: z.literal("SORT_THE_SYMBOLS_FROM_SOUND"),
   data: z.object({
@@ -61,11 +63,13 @@ export const SortTheSymbolsFromSoundSchema = z.object({
   }),
 });
 
+// 1
 export const SortTheSymbolsFromMeanSchema = z.object({
   type: z.literal("SORT_THE_SYMBOLS_FROM_MEAN"),
   data: GuessTheSymbolFromMeanSchema.shape.data,
 });
 
+// 5
 export const WriteTheSymbolFromMeanSchema = z.object({
   type: z.literal("WRITE_THE_SYMBOL_FROM_MEAN"),
   data: z.object({
@@ -77,6 +81,7 @@ export const WriteTheSymbolFromMeanSchema = z.object({
   }),
 });
 
+// 4
 export const WriteTheSymbolFromSoundSchema = z.object({
   type: z.literal("WRITE_THE_SYMBOL_FROM_SOUND"),
   data: z.object({

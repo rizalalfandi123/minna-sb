@@ -292,7 +292,7 @@ const buildBlockHierarcy = async () => {
           throw new Error("01");
         }
 
-        const index = indexOfBlock + indexOfUnit + 1;
+        const index = indexOfBlock + Math.max(1, indexOfUnit);
 
         let blockData = await prisma.unit_question_blocks.findFirst({
           where: {
@@ -362,12 +362,18 @@ const buildBlockHierarcy = async () => {
     .filter((item) => item.unit_questions_to_unit_levels.length <= 0);
 
   const hieracy = await Promise.all(
-    unitBlocks.map(async (unit, unitIndex) => {
-      const unitData = allUnitData[unitIndex];
+    unitBlocks.map(async (unit, index) => {
+      const unitData = allUnitData[index];
 
       const unitHirarcy = await Promise.all(
         unit.map(async (block, blockIndex) => {
-          const blockData = allBlocksData[unitIndex + blockIndex];
+          const unitNumber = unitData.number;
+
+          const relatedBlocks = allBlocksData
+            .filter((block) => block.unit_id === unitData.id)
+            .sort((a, b) => a.number - b.number);
+
+          const blockData = relatedBlocks[blockIndex];
 
           const questions = unUppliedQuestion.filter((question) =>
             block.block.includes(question.key)

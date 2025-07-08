@@ -1,0 +1,472 @@
+[
+  {
+    "key": "これ は つくえ です",
+    "questions": [
+      {
+        "data": {
+          "answer": "これ は つくえ です",
+          "options": [
+            "これ",
+            "は",
+            "つくえ",
+            "です",
+            "それ",
+            "あれ",
+            "いす",
+            "ほん",
+            "かばん",
+            "えんぴつ"
+          ],
+          "question": {
+            "en": [
+              { "key": "これ", "value": "This" },
+              { "key": "は", "value": "is" },
+              { "key": "つくえ", "value": "a desk" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "これ", "value": "Ini" },
+              { "key": "は", "value": "adalah" },
+              { "key": "つくえ", "value": "meja" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "This is a desk",
+            "id": "Ini adalah meja"
+          },
+          "options": {
+            "en": [
+              "This",
+              "is",
+              "a desk",
+              "a chair",
+              "a book",
+              "a bag",
+              "a pencil",
+              "a table"
+            ],
+            "id": [
+              "Ini",
+              "adalah",
+              "meja",
+              "kursi",
+              "buku",
+              "tas",
+              "pensil",
+              "meja"
+            ]
+          },
+          "question": [
+            { "value": "これ", "key": "これ" },
+            { "value": "は", "key": "は" },
+            { "value": "つくえ", "key": "つくえ" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "これ は つくえ です",
+          "options": [
+            "これ",
+            "は",
+            "つくえ",
+            "です",
+            "それ",
+            "あれ",
+            "いす",
+            "ほん",
+            "かばん",
+            "えんぴつ"
+          ],
+          "question": "これ は つくえ です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "これ は つくえ です",
+          "question": {
+            "en": [
+              { "key": "これ", "value": "This" },
+              { "key": "は", "value": "is" },
+              { "key": "つくえ", "value": "a desk" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "これ", "value": "Ini" },
+              { "key": "は", "value": "adalah" },
+              { "key": "つくえ", "value": "meja" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "これ は つくえ です",
+          "question": "これ は つくえ です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "これ は しんぶん です",
+    "questions": [
+      {
+        "data": {
+          "answer": "これ は しんぶん です",
+          "options": [
+            "これ",
+            "は",
+            "しんぶん",
+            "です",
+            "それ",
+            "あれ",
+            "ざっし",
+            "ほん",
+            "ノート",
+            "てがみ"
+          ],
+          "question": {
+            "en": [
+              { "key": "これ", "value": "This" },
+              { "key": "は", "value": "is" },
+              { "key": "しんぶん", "value": "a newspaper" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "これ", "value": "Ini" },
+              { "key": "は", "value": "adalah" },
+              { "key": "しんぶん", "value": "koran" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "This is a newspaper",
+            "id": "Ini adalah koran"
+          },
+          "options": {
+            "en": [
+              "This",
+              "is",
+              "a newspaper",
+              "a magazine",
+              "a book",
+              "a notebook",
+              "a letter",
+              "a dictionary"
+            ],
+            "id": [
+              "Ini",
+              "adalah",
+              "koran",
+              "majalah",
+              "buku",
+              "notebook",
+              "surat",
+              "kamus"
+            ]
+          },
+          "question": [
+            { "value": "これ", "key": "これ" },
+            { "value": "は", "key": "は" },
+            { "value": "しんぶん", "key": "しんぶん" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "これ は しんぶん です",
+          "options": [
+            "これ",
+            "は",
+            "しんぶん",
+            "です",
+            "それ",
+            "あれ",
+            "ざっし",
+            "ほん",
+            "ノート",
+            "てがみ"
+          ],
+          "question": "これ は しんぶん です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "これ は しんぶん です",
+          "question": {
+            "en": [
+              { "key": "これ", "value": "This" },
+              { "key": "は", "value": "is" },
+              { "key": "しんぶん", "value": "a newspaper" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "これ", "value": "Ini" },
+              { "key": "は", "value": "adalah" },
+              { "key": "しんぶん", "value": "koran" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "これ は しんぶん です",
+          "question": "これ は しんぶん です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "これ は めいし です",
+    "questions": [
+      {
+        "data": {
+          "answer": "これ は めいし です",
+          "options": [
+            "これ",
+            "は",
+            "めいし",
+            "です",
+            "それ",
+            "あれ",
+            "しんぶん",
+            "ほん",
+            "てがみ",
+            "ノート"
+          ],
+          "question": {
+            "en": [
+              { "key": "これ", "value": "This" },
+              { "key": "は", "value": "is" },
+              { "key": "めいし", "value": "a business card" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "これ", "value": "Ini" },
+              { "key": "は", "value": "adalah" },
+              { "key": "めいし", "value": "kartu nama" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "This is a business card",
+            "id": "Ini adalah kartu nama"
+          },
+          "options": {
+            "en": [
+              "This",
+              "is",
+              "a business card",
+              "a newspaper",
+              "a book",
+              "a letter",
+              "a notebook",
+              "a magazine"
+            ],
+            "id": [
+              "Ini",
+              "adalah",
+              "kartu nama",
+              "koran",
+              "buku",
+              "surat",
+              "notebook",
+              "majalah"
+            ]
+          },
+          "question": [
+            { "value": "これ", "key": "これ" },
+            { "value": "は", "key": "は" },
+            { "value": "めいし", "key": "めいし" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "これ は めいし です",
+          "options": [
+            "これ",
+            "は",
+            "めいし",
+            "です",
+            "それ",
+            "あれ",
+            "しんぶん",
+            "ほん",
+            "てがみ",
+            "ノート"
+          ],
+          "question": "これ は めいし です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "これ は めいし です",
+          "question": {
+            "en": [
+              { "key": "これ", "value": "This" },
+              { "key": "は", "value": "is" },
+              { "key": "めいし", "value": "a business card" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "これ", "value": "Ini" },
+              { "key": "は", "value": "adalah" },
+              { "key": "めいし", "value": "kartu nama" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "これ は めいし です",
+          "question": "これ は めいし です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "これ は なん ですか",
+    "questions": [
+      {
+        "data": {
+          "answer": "これ は なん ですか",
+          "options": [
+            "これ",
+            "は",
+            "なん",
+            "です",
+            "か",
+            "それ",
+            "あれ",
+            "だれ",
+            "どこ",
+            "いつ"
+          ],
+          "question": {
+            "en": [
+              { "key": "これ", "value": "What" },
+              { "key": "は", "value": "is" },
+              { "key": "なん", "value": "this" },
+              { "key": "ですか", "value": "?" }
+            ],
+            "id": [
+              { "key": "これ", "value": "Apa" },
+              { "key": "は", "value": "ini" },
+              { "key": "なん", "value": "" },
+              { "key": "ですか", "value": "?" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "What is this?",
+            "id": "Apa ini?"
+          },
+          "options": {
+            "en": ["What", "is", "this", "that", "who", "where", "when", "how"],
+            "id": [
+              "Apa",
+              "ini",
+              "itu",
+              "siapa",
+              "di mana",
+              "kapan",
+              "bagaimana"
+            ]
+          },
+          "question": [
+            { "value": "これ", "key": "これ" },
+            { "value": "は", "key": "は" },
+            { "value": "なん", "key": "なん" },
+            { "value": "ですか", "key": "ですか" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "これ は なん ですか",
+          "options": [
+            "これ",
+            "は",
+            "なん",
+            "です",
+            "か",
+            "それ",
+            "あれ",
+            "だれ",
+            "どこ",
+            "いつ"
+          ],
+          "question": "これ は なん ですか"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "これ は なん ですか",
+          "question": {
+            "en": [
+              { "key": "これ", "value": "What" },
+              { "key": "は", "value": "is" },
+              { "key": "なん", "value": "this" },
+              { "key": "ですか", "value": "?" }
+            ],
+            "id": [
+              { "key": "これ", "value": "Apa" },
+              { "key": "は", "value": "ini" },
+              { "key": "なん", "value": "" },
+              { "key": "ですか", "value": "?" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "これ は なん ですか",
+          "question": "これ は なん ですか"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  }
+]
