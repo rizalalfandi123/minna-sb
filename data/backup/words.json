@@ -630,19 +630,6 @@
   },
   {
     "deleted": false,
-    "key": "てちょう",
-    "id": "buku catatan kecil",
-    "en": "pocket notebook",
-    "others": {
-      "note": {
-        "en": "Used for personal memos or scheduling.",
-        "id": "Digunakan untuk memo pribadi atau jadwal."
-      },
-      "kanji": "手帳"
-    }
-  },
-  {
-    "deleted": false,
     "key": "カード",
     "id": "kartu",
     "en": "card",
@@ -698,6 +685,19 @@
     "en": "bag",
     "others": {
       "kanji": "鞄"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "てちょう",
+    "id": "buku catatan",
+    "en": "notebook",
+    "others": {
+      "note": {
+        "en": "Used for personal memos or scheduling.",
+        "id": "Digunakan untuk memo pribadi atau jadwal."
+      },
+      "kanji": "手帳"
     }
   },
   {
@@ -1015,6 +1015,109 @@
         "id": "Frasa pertanyaan yang menggunakan 'の' untuk menanyakan jenis atau isi buku."
       },
       "kanji": "何の本"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "わたし の かばん",
+    "id": "tas saya",
+    "en": "my bag",
+    "others": {
+      "note": {
+        "en": "Indicates possession using 'の', meaning the bag belongs to the speaker.",
+        "id": "Menunjukkan kepemilikan dengan 'の', bahwa tas tersebut milik pembicara."
+      },
+      "kanji": "私の鞄"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "さとう さん の かばん",
+    "id": "tas Bu Sato",
+    "en": "Ms. Sato's bag",
+    "others": {
+      "note": {
+        "en": "Indicates possession using 'の', showing the bag belongs to Ms. Sato.",
+        "id": "Menunjukkan kepemilikan dengan 'の', bahwa tas tersebut milik Bu Sato."
+      },
+      "kanji": "佐藤さんの鞄"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "さとう さん",
+    "id": "Bu Sato",
+    "en": "Ms. Sato",
+    "others": {
+      "note": {
+        "en": "'さん' is an honorific suffix used after names to show respect.",
+        "id": "'さん' adalah akhiran kehormatan yang digunakan setelah nama untuk menunjukkan rasa hormat."
+      },
+      "kanji": "佐藤さん"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "せんせい の かばん",
+    "id": "tas guru",
+    "en": "teacher's bag",
+    "others": {
+      "note": {
+        "en": "Shows possession using 'の', indicating the bag belongs to the teacher.",
+        "id": "Menunjukkan kepemilikan dengan 'の', bahwa tas tersebut milik guru."
+      },
+      "kanji": "先生の鞄"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "だれ の",
+    "id": "milik siapa",
+    "en": "whose",
+    "others": {
+      "note": {
+        "en": "Used to ask about possession, typically in questions like 'Whose [object] is this?'",
+        "id": "Digunakan untuk menanyakan kepemilikan, biasanya dalam pertanyaan seperti 'Ini milik siapa?'"
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "だれ の かばん",
+    "id": "tas milik siapa",
+    "en": "whose bag",
+    "others": {
+      "note": {
+        "en": "Question phrase using 'の' to ask who the bag belongs to.",
+        "id": "Frasa tanya yang menggunakan 'の' untuk menanyakan tas itu milik siapa."
+      },
+      "kanji": "だれの鞄"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "わたし の",
+    "id": "milik saya",
+    "en": "my",
+    "others": {
+      "note": {
+        "en": "Used to express possession, showing something belongs to the speaker.",
+        "id": "Digunakan untuk menyatakan kepemilikan, menunjukkan sesuatu milik pembicara."
+      },
+      "kanji": "私の"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "この てちょう",
+    "id": "buku catatan ini",
+    "en": "this notebook",
+    "others": {
+      "note": {
+        "en": "'この' is a demonstrative used before a noun to refer to something near the speaker.",
+        "id": "'この' adalah kata penunjuk yang digunakan sebelum kata benda untuk merujuk sesuatu yang dekat dengan pembicara."
+      },
+      "kanji": "この手帳"
     }
   },
   {

@@ -1,0 +1,487 @@
+[
+  {
+    "key": "あれ は わたし の です",
+    "questions": [
+      {
+        "data": {
+          "answer": "あれ は わたし の です",
+          "options": [
+            "あれ",
+            "は",
+            "わたし",
+            "の",
+            "です",
+            "これ",
+            "それ",
+            "あなた",
+            "せんせい",
+            "ともだち"
+          ],
+          "question": {
+            "en": [
+              { "key": "あれ", "value": "That" },
+              { "key": "は", "value": "is" },
+              { "key": "わたし の", "value": "mine" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "あれ", "value": "Itu" },
+              { "key": "は", "value": "adalah" },
+              { "key": "わたし の", "value": "milikku" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "That is mine",
+            "id": "Itu milikku"
+          },
+          "options": {
+            "en": [
+              "That",
+              "is",
+              "mine",
+              "yours",
+              "his",
+              "hers",
+              "the teacher's",
+              "a friend's"
+            ],
+            "id": [
+              "Itu",
+              "adalah",
+              "milikku",
+              "milikmu",
+              "miliknya (laki-laki)",
+              "miliknya (perempuan)",
+              "milik guru",
+              "milik teman"
+            ]
+          },
+          "question": [
+            { "value": "あれ", "key": "あれ" },
+            { "value": "は", "key": "は" },
+            { "value": "わたし", "key": "わたし" },
+            { "value": "の", "key": "の" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "あれ は わたし の です",
+          "options": [
+            "あれ",
+            "は",
+            "わたし",
+            "の",
+            "です",
+            "これ",
+            "それ",
+            "あなた",
+            "せんせい",
+            "ともだち"
+          ],
+          "question": "あれ は わたし の です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "あれ は わたし の です",
+          "question": {
+            "en": [
+              { "key": "あれ", "value": "That" },
+              { "key": "は", "value": "is" },
+              { "key": "わたし の", "value": "mine" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "あれ", "value": "Itu" },
+              { "key": "は", "value": "adalah" },
+              { "key": "わたし の", "value": "milikku" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "あれ は わたし の です",
+          "question": "あれ は わたし の です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "あれ は さとうさん の です",
+    "questions": [
+      {
+        "data": {
+          "answer": "あれ は さとうさん の です",
+          "options": [
+            "あれ",
+            "は",
+            "さとう",
+            "さん",
+            "の",
+            "です",
+            "これ",
+            "それ",
+            "わたし",
+            "あなた"
+          ],
+          "question": {
+            "en": [
+              { "key": "あれ", "value": "That" },
+              { "key": "は", "value": "is" },
+              { "key": "さとうさん の", "value": "Ms. Sato's" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "あれ", "value": "Itu" },
+              { "key": "は", "value": "adalah" },
+              { "key": "さとうさん の", "value": "milik Bu Sato" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "That is Ms. Sato's",
+            "id": "Itu milik Bu Sato"
+          },
+          "options": {
+            "en": [
+              "That",
+              "is",
+              "Ms. Sato's",
+              "mine",
+              "yours",
+              "the teacher's",
+              "a friend's",
+              "company's"
+            ],
+            "id": [
+              "Itu",
+              "adalah",
+              "milik Bu Sato",
+              "milikku",
+              "milikmu",
+              "milik guru",
+              "milik teman",
+              "milik perusahaan"
+            ]
+          },
+          "question": [
+            { "value": "あれ", "key": "あれ" },
+            { "value": "は", "key": "は" },
+            { "value": "さとうさん", "key": "さとうさん" },
+            { "value": "の", "key": "の" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "あれ は さとうさん の です",
+          "options": [
+            "あれ",
+            "は",
+            "さとう",
+            "さん",
+            "の",
+            "です",
+            "これ",
+            "それ",
+            "わたし",
+            "あなた"
+          ],
+          "question": "あれ は さとうさん の です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "あれ は さとうさん の です",
+          "question": {
+            "en": [
+              { "key": "あれ", "value": "That" },
+              { "key": "は", "value": "is" },
+              { "key": "さとうさん の", "value": "Ms. Sato's" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "あれ", "value": "Itu" },
+              { "key": "は", "value": "adalah" },
+              { "key": "さとうさん の", "value": "milik Bu Sato" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "あれ は さとうさん の です",
+          "question": "あれ は さとうさん の です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "あれ は せんせい の です",
+    "questions": [
+      {
+        "data": {
+          "answer": "あれ は せんせい の です",
+          "options": [
+            "あれ",
+            "は",
+            "せんせい",
+            "の",
+            "です",
+            "これ",
+            "それ",
+            "わたし",
+            "あなた",
+            "がくせい"
+          ],
+          "question": {
+            "en": [
+              { "key": "あれ", "value": "That" },
+              { "key": "は", "value": "is" },
+              { "key": "せんせい の", "value": "the teacher's" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "あれ", "value": "Itu" },
+              { "key": "は", "value": "adalah" },
+              { "key": "せんせい の", "value": "milik guru" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "That is the teacher's",
+            "id": "Itu milik guru"
+          },
+          "options": {
+            "en": [
+              "That",
+              "is",
+              "the teacher's",
+              "mine",
+              "yours",
+              "the student's",
+              "the school's",
+              "a friend's"
+            ],
+            "id": [
+              "Itu",
+              "adalah",
+              "milik guru",
+              "milikku",
+              "milikmu",
+              "milik murid",
+              "milik sekolah",
+              "milik teman"
+            ]
+          },
+          "question": [
+            { "value": "あれ", "key": "あれ" },
+            { "value": "は", "key": "は" },
+            { "value": "せんせい", "key": "せんせい" },
+            { "value": "の", "key": "の" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "あれ は せんせい の です",
+          "options": [
+            "あれ",
+            "は",
+            "せんせい",
+            "の",
+            "です",
+            "これ",
+            "それ",
+            "わたし",
+            "あなた",
+            "がくせい"
+          ],
+          "question": "あれ は せんせい の です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "あれ は せんせい の です",
+          "question": {
+            "en": [
+              { "key": "あれ", "value": "That" },
+              { "key": "は", "value": "is" },
+              { "key": "せんせい の", "value": "the teacher's" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "あれ", "value": "Itu" },
+              { "key": "は", "value": "adalah" },
+              { "key": "せんせい の", "value": "milik guru" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "あれ は せんせい の です",
+          "question": "あれ は せんせい の です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "あれ は だれ の ですか",
+    "questions": [
+      {
+        "data": {
+          "answer": "あれ は だれ の ですか",
+          "options": [
+            "あれ",
+            "は",
+            "だれ",
+            "の",
+            "です",
+            "か",
+            "これ",
+            "それ",
+            "わたし",
+            "あなた"
+          ],
+          "question": {
+            "en": [
+              { "key": "あれ", "value": "Whose" },
+              { "key": "は", "value": "is" },
+              { "key": "だれ の", "value": "that" },
+              { "key": "ですか", "value": "?" }
+            ],
+            "id": [
+              { "key": "あれ", "value": "Milik" },
+              { "key": "は", "value": "siapa" },
+              { "key": "だれ の", "value": "itu" },
+              { "key": "ですか", "value": "?" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "Whose is that?",
+            "id": "Milik siapa itu?"
+          },
+          "options": {
+            "en": [
+              "Whose",
+              "is",
+              "that",
+              "mine",
+              "yours",
+              "the teacher's",
+              "the student's",
+              "the company's"
+            ],
+            "id": [
+              "Milik",
+              "siapa",
+              "itu",
+              "saya",
+              "kamu",
+              "guru",
+              "murid",
+              "perusahaan"
+            ]
+          },
+          "question": [
+            { "value": "あれ", "key": "あれ" },
+            { "value": "は", "key": "は" },
+            { "value": "だれ", "key": "だれ" },
+            { "value": "の", "key": "の" },
+            { "value": "です", "key": "です" },
+            { "value": "か", "key": "か" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "あれ は だれ の ですか",
+          "options": [
+            "あれ",
+            "は",
+            "だれ",
+            "の",
+            "です",
+            "か",
+            "これ",
+            "それ",
+            "わたし",
+            "あなた"
+          ],
+          "question": "あれ は だれ の ですか"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "あれ は だれ の ですか",
+          "question": {
+            "en": [
+              { "key": "あれ", "value": "Whose" },
+              { "key": "は", "value": "is" },
+              { "key": "だれ の", "value": "that" },
+              { "key": "ですか", "value": "?" }
+            ],
+            "id": [
+              { "key": "あれ", "value": "Milik" },
+              { "key": "は", "value": "siapa" },
+              { "key": "だれ の", "value": "itu" },
+              { "key": "ですか", "value": "?" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "あれ は だれ の ですか",
+          "question": "あれ は だれ の ですか"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  }
+]
