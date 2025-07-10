@@ -1,0 +1,492 @@
+[
+  {
+    "key": "エレベーター は こちら です",
+    "questions": [
+      {
+        "data": {
+          "answer": "エレベーター は こちら です",
+          "options": [
+            "エレベーター",
+            "は",
+            "こちら",
+            "です",
+            "あちら",
+            "そちら",
+            "じむしょ",
+            "トイレ",
+            "ロビー",
+            "かいだん"
+          ],
+          "question": {
+            "en": [
+              { "key": "エレベーター", "value": "The elevator" },
+              { "key": "は", "value": "is" },
+              { "key": "こちら", "value": "this way" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "エレベーター", "value": "Lift" },
+              { "key": "は", "value": "ada" },
+              { "key": "こちら", "value": "di sini" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "The elevator is this way",
+            "id": "Lift ada di sini"
+          },
+          "options": {
+            "en": [
+              "The elevator",
+              "is",
+              "this way",
+              "that way",
+              "over there",
+              "in the office",
+              "in the restroom",
+              "in the lobby",
+              "the stairs"
+            ],
+            "id": [
+              "Lift",
+              "ada",
+              "di sini",
+              "di sana",
+              "di sana",
+              "di kantor",
+              "di toilet",
+              "di lobi",
+              "tangga"
+            ]
+          },
+          "question": [
+            { "value": "エレベーター", "key": "エレベーター" },
+            { "value": "は", "key": "は" },
+            { "value": "こちら", "key": "こちら" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "エレベーター は こちら です",
+          "options": [
+            "エレベーター",
+            "は",
+            "こちら",
+            "です",
+            "あちら",
+            "そちら",
+            "じむしょ",
+            "トイレ",
+            "ロビー",
+            "かいだん"
+          ],
+          "question": "エレベーター は こちら です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "エレベーター は こちら です",
+          "question": {
+            "en": [
+              { "key": "エレベーター", "value": "The elevator" },
+              { "key": "は", "value": "is" },
+              { "key": "こちら", "value": "this way" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "エレベーター", "value": "Lift" },
+              { "key": "は", "value": "ada" },
+              { "key": "こちら", "value": "di sini" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "エレベーター は こちら です",
+          "question": "エレベーター は こちら です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "エレベーター は そちら です",
+    "questions": [
+      {
+        "data": {
+          "answer": "エレベーター は そちら です",
+          "options": [
+            "エレベーター",
+            "は",
+            "そちら",
+            "です",
+            "こちら",
+            "あちら",
+            "じむしょ",
+            "トイレ",
+            "ロビー",
+            "かいだん"
+          ],
+          "question": {
+            "en": [
+              { "key": "エレベーター", "value": "The elevator" },
+              { "key": "は", "value": "is" },
+              { "key": "そちら", "value": "that way" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "エレベーター", "value": "Lift" },
+              { "key": "は", "value": "ada" },
+              { "key": "そちら", "value": "di sana" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "The elevator is that way",
+            "id": "Lift ada di sana"
+          },
+          "options": {
+            "en": [
+              "The elevator",
+              "is",
+              "that way",
+              "this way",
+              "over there",
+              "in the office",
+              "in the restroom",
+              "in the lobby",
+              "the stairs"
+            ],
+            "id": [
+              "Lift",
+              "ada",
+              "di sana",
+              "di sini",
+              "di sana",
+              "di kantor",
+              "di toilet",
+              "di lobi",
+              "tangga"
+            ]
+          },
+          "question": [
+            { "value": "エレベーター", "key": "エレベーター" },
+            { "value": "は", "key": "は" },
+            { "value": "そちら", "key": "そちら" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "エレベーター は そちら です",
+          "options": [
+            "エレベーター",
+            "は",
+            "そちら",
+            "です",
+            "こちら",
+            "あちら",
+            "じむしょ",
+            "トイレ",
+            "ロビー",
+            "かいだん"
+          ],
+          "question": "エレベーター は そちら です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "エレベーター は そちら です",
+          "question": {
+            "en": [
+              { "key": "エレベーター", "value": "The elevator" },
+              { "key": "は", "value": "is" },
+              { "key": "そちら", "value": "that way" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "エレベーター", "value": "Lift" },
+              { "key": "は", "value": "ada" },
+              { "key": "そちら", "value": "di sana" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "エレベーター は そちら です",
+          "question": "エレベーター は そちら です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "エレベーター は あちら です",
+    "questions": [
+      {
+        "data": {
+          "answer": "エレベーター は あちら です",
+          "options": [
+            "エレベーター",
+            "は",
+            "あちら",
+            "です",
+            "こちら",
+            "そちら",
+            "じむしょ",
+            "トイレ",
+            "ロビー",
+            "かいだん"
+          ],
+          "question": {
+            "en": [
+              { "key": "エレベーター", "value": "The elevator" },
+              { "key": "は", "value": "is" },
+              { "key": "あちら", "value": "over there" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "エレベーター", "value": "Lift" },
+              { "key": "は", "value": "ada" },
+              { "key": "あちら", "value": "di sana" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "The elevator is over there",
+            "id": "Lift ada di sana"
+          },
+          "options": {
+            "en": [
+              "The elevator",
+              "is",
+              "over there",
+              "this way",
+              "that way",
+              "in the office",
+              "in the restroom",
+              "in the lobby",
+              "the stairs"
+            ],
+            "id": [
+              "Lift",
+              "ada",
+              "di sana",
+              "di sini",
+              "di sana",
+              "di kantor",
+              "di toilet",
+              "di lobi",
+              "tangga"
+            ]
+          },
+          "question": [
+            { "value": "エレベーター", "key": "エレベーター" },
+            { "value": "は", "key": "は" },
+            { "value": "あちら", "key": "あちら" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "エレベーター は あちら です",
+          "options": [
+            "エレベーター",
+            "は",
+            "あちら",
+            "です",
+            "こちら",
+            "そちら",
+            "じむしょ",
+            "トイレ",
+            "ロビー",
+            "かいだん"
+          ],
+          "question": "エレベーター は あちら です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "エレベーター は あちら です",
+          "question": {
+            "en": [
+              { "key": "エレベーター", "value": "The elevator" },
+              { "key": "は", "value": "is" },
+              { "key": "あちら", "value": "over there" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "エレベーター", "value": "Lift" },
+              { "key": "は", "value": "ada" },
+              { "key": "あちら", "value": "di sana" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "エレベーター は あちら です",
+          "question": "エレベーター は あちら です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "エレベーター は どちら ですか",
+    "questions": [
+      {
+        "data": {
+          "answer": "エレベーター は どちら ですか",
+          "options": [
+            "エレベーター",
+            "は",
+            "どちら",
+            "です",
+            "か",
+            "こちら",
+            "そちら",
+            "あちら",
+            "かいだん",
+            "ロビー"
+          ],
+          "question": {
+            "en": [
+              { "key": "どちら", "value": "Which way" },
+              { "key": "は", "value": "is" },
+              { "key": "エレベーター", "value": "the elevator" },
+              { "key": "ですか", "value": "" }
+            ],
+            "id": [
+              { "key": "どちら", "value": "Di mana arah" },
+              { "key": "は", "value": "" },
+              { "key": "エレベーター", "value": "Lift" },
+              { "key": "ですか", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "Which way is the elevator",
+            "id": "Di mana arah lift"
+          },
+          "options": {
+            "en": [
+              "Where",
+              "is",
+              "the elevator",
+              "Which way",
+              "this way",
+              "that way",
+              "over there",
+              "the stairs",
+              "the lobby",
+              "the restroom"
+            ],
+            "id": [
+              "Di mana",
+              "ada",
+              "lift",
+              "di sini",
+              "di sana",
+              "di sebelah sana",
+              "tangga",
+              "lobi",
+              "toilet",
+              "arah"
+            ]
+          },
+          "question": [
+            { "value": "エレベーター", "key": "エレベーター" },
+            { "value": "は", "key": "は" },
+            { "value": "どちら", "key": "どちら" },
+            { "value": "ですか", "key": "ですか" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "エレベーター は どちら ですか",
+          "options": [
+            "エレベーター",
+            "は",
+            "どちら",
+            "です",
+            "か",
+            "こちら",
+            "そちら",
+            "あちら",
+            "かいだん",
+            "ロビー"
+          ],
+          "question": "エレベーター は どちら ですか"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "エレベーター は どちら ですか",
+          "question": {
+            "en": [
+              { "key": "どちら", "value": "Which way" },
+              { "key": "は", "value": "is" },
+              { "key": "エレベーター", "value": "the elevator" },
+              { "key": "ですか", "value": "" }
+            ],
+            "id": [
+              { "key": "どちら", "value": "Di mana arah" },
+              { "key": "は", "value": "" },
+              { "key": "エレベーター", "value": "Lift" },
+              { "key": "ですか", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "エレベーター は どちら ですか",
+          "question": "エレベーター は どちら ですか"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  }
+]

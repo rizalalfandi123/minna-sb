@@ -1,0 +1,489 @@
+[
+  {
+    "key": "うけつけ は ここ です",
+    "questions": [
+      {
+        "data": {
+          "answer": "うけつけ は ここ です",
+          "options": [
+            "うけつけ",
+            "は",
+            "ここ",
+            "です",
+            "そこ",
+            "あそこ",
+            "トイレ",
+            "じむしょ",
+            "としょかん",
+            "きょうしつ"
+          ],
+          "question": {
+            "en": [
+              { "key": "うけつけ", "value": "The reception" },
+              { "key": "は", "value": "is" },
+              { "key": "ここ", "value": "here" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "うけつけ", "value": "Resepsionis" },
+              { "key": "は", "value": "ada" },
+              { "key": "ここ", "value": "di sini" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "The reception is here",
+            "id": "Resepsionis ada di sini"
+          },
+          "options": {
+            "en": [
+              "The reception",
+              "is",
+              "here",
+              "there",
+              "that place",
+              "the office",
+              "the library",
+              "the classroom",
+              "the toilet"
+            ],
+            "id": [
+              "Resepsionis",
+              "ada",
+              "di sini",
+              "di sana",
+              "tempat itu",
+              "kantor",
+              "perpustakaan",
+              "ruang kelas",
+              "toilet"
+            ]
+          },
+          "question": [
+            { "value": "うけつけ", "key": "うけつけ" },
+            { "value": "は", "key": "は" },
+            { "value": "ここ", "key": "ここ" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "うけつけ は ここ です",
+          "options": [
+            "うけつけ",
+            "は",
+            "ここ",
+            "です",
+            "そこ",
+            "あそこ",
+            "トイレ",
+            "じむしょ",
+            "としょかん",
+            "きょうしつ"
+          ],
+          "question": "うけつけ は ここ です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "うけつけ は ここ です",
+          "question": {
+            "en": [
+              { "key": "うけつけ", "value": "The reception" },
+              { "key": "は", "value": "is" },
+              { "key": "ここ", "value": "here" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "うけつけ", "value": "Resepsionis" },
+              { "key": "は", "value": "ada" },
+              { "key": "ここ", "value": "di sini" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "うけつけ は ここ です",
+          "question": "うけつけ は ここ です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "うけつけ は そこ です",
+    "questions": [
+      {
+        "data": {
+          "answer": "うけつけ は そこ です",
+          "options": [
+            "うけつけ",
+            "は",
+            "そこ",
+            "です",
+            "ここ",
+            "あそこ",
+            "トイレ",
+            "じむしょ",
+            "としょかん",
+            "きょうしつ"
+          ],
+          "question": {
+            "en": [
+              { "key": "うけつけ", "value": "The reception" },
+              { "key": "は", "value": "is" },
+              { "key": "そこ", "value": "there" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "うけつけ", "value": "Resepsionis" },
+              { "key": "は", "value": "ada" },
+              { "key": "そこ", "value": "di sana" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "The reception is there",
+            "id": "Resepsionis ada di sana"
+          },
+          "options": {
+            "en": [
+              "The reception",
+              "is",
+              "there",
+              "here",
+              "that place",
+              "the office",
+              "the library",
+              "the classroom",
+              "the toilet"
+            ],
+            "id": [
+              "Resepsionis",
+              "ada",
+              "di sana",
+              "di sini",
+              "tempat itu",
+              "kantor",
+              "perpustakaan",
+              "ruang kelas",
+              "toilet"
+            ]
+          },
+          "question": [
+            { "value": "うけつけ", "key": "うけつけ" },
+            { "value": "は", "key": "は" },
+            { "value": "そこ", "key": "そこ" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "うけつけ は そこ です",
+          "options": [
+            "うけつけ",
+            "は",
+            "そこ",
+            "です",
+            "ここ",
+            "あそこ",
+            "トイレ",
+            "じむしょ",
+            "としょかん",
+            "きょうしつ"
+          ],
+          "question": "うけつけ は そこ です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "うけつけ は そこ です",
+          "question": {
+            "en": [
+              { "key": "うけつけ", "value": "The reception" },
+              { "key": "は", "value": "is" },
+              { "key": "そこ", "value": "there" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "うけつけ", "value": "Resepsionis" },
+              { "key": "は", "value": "ada" },
+              { "key": "そこ", "value": "di sana" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "うけつけ は そこ です",
+          "question": "うけつけ は そこ です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "うけつけ は あそこ です",
+    "questions": [
+      {
+        "data": {
+          "answer": "うけつけ は あそこ です",
+          "options": [
+            "うけつけ",
+            "は",
+            "あそこ",
+            "です",
+            "ここ",
+            "そこ",
+            "トイレ",
+            "じむしょ",
+            "としょかん",
+            "きょうしつ"
+          ],
+          "question": {
+            "en": [
+              { "key": "うけつけ", "value": "The reception" },
+              { "key": "は", "value": "is" },
+              { "key": "あそこ", "value": "over there" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "うけつけ", "value": "Resepsionis" },
+              { "key": "は", "value": "ada" },
+              { "key": "あそこ", "value": "di sana" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "The reception is over there",
+            "id": "Resepsionis ada di sana"
+          },
+          "options": {
+            "en": [
+              "The reception",
+              "is",
+              "over there",
+              "here",
+              "there",
+              "the office",
+              "the library",
+              "the classroom",
+              "the toilet"
+            ],
+            "id": [
+              "Resepsionis",
+              "ada",
+              "di sana",
+              "di sini",
+              "di sana",
+              "kantor",
+              "perpustakaan",
+              "ruang kelas",
+              "toilet"
+            ]
+          },
+          "question": [
+            { "value": "うけつけ", "key": "うけつけ" },
+            { "value": "は", "key": "は" },
+            { "value": "あそこ", "key": "あそこ" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "うけつけ は あそこ です",
+          "options": [
+            "うけつけ",
+            "は",
+            "あそこ",
+            "です",
+            "ここ",
+            "そこ",
+            "トイレ",
+            "じむしょ",
+            "としょかん",
+            "きょうしつ"
+          ],
+          "question": "うけつけ は あそこ です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "うけつけ は あそこ です",
+          "question": {
+            "en": [
+              { "key": "うけつけ", "value": "The reception" },
+              { "key": "は", "value": "is" },
+              { "key": "あそこ", "value": "over there" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "うけつけ", "value": "Resepsionis" },
+              { "key": "は", "value": "ada" },
+              { "key": "あそこ", "value": "di sana" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "うけつけ は あそこ です",
+          "question": "うけつけ は あそこ です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "うけつけ は どこ ですか",
+    "questions": [
+      {
+        "data": {
+          "answer": "うけつけ は どこ ですか",
+          "options": [
+            "うけつけ",
+            "は",
+            "どこ",
+            "です",
+            "か",
+            "ここ",
+            "そこ",
+            "あそこ",
+            "トイレ",
+            "じむしょ"
+          ],
+          "question": {
+            "en": [
+              { "key": "どこ", "value": "Where" },
+              { "key": "は", "value": "is" },
+              { "key": "うけつけ", "value": "the reception" },
+              { "key": "ですか", "value": "" }
+            ],
+            "id": [
+              { "key": "うけつけ", "value": "Resepsionis" },
+              { "key": "は", "value": "ada" },
+              { "key": "どこ", "value": "dimana" },
+              { "key": "ですか", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "Where is the reception",
+            "id": "Resepsionis ada di mana"
+          },
+          "options": {
+            "en": [
+              "Where",
+              "is",
+              "the reception",
+              "the office",
+              "the library",
+              "here",
+              "there",
+              "over there",
+              "the classroom"
+            ],
+            "id": [
+              "Di mana",
+              "ada",
+              "resepsionis",
+              "kantor",
+              "perpustakaan",
+              "di sini",
+              "di sana",
+              "ruang kelas"
+            ]
+          },
+          "question": [
+            { "value": "うけつけ", "key": "うけつけ" },
+            { "value": "は", "key": "は" },
+            { "value": "どこ", "key": "どこ" },
+            { "value": "ですか", "key": "ですか" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "うけつけ は どこ ですか",
+          "options": [
+            "うけつけ",
+            "は",
+            "どこ",
+            "です",
+            "か",
+            "ここ",
+            "そこ",
+            "あそこ",
+            "トイレ",
+            "じむしょ"
+          ],
+          "question": "うけつけ は どこ ですか"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "うけつけ は どこ ですか",
+          "question": {
+            "en": [
+              { "key": "どこ", "value": "Where" },
+              { "key": "は", "value": "is" },
+              { "key": "うけつけ", "value": "the reception" },
+              { "key": "ですか", "value": "" }
+            ],
+            "id": [
+              { "key": "うけつけ", "value": "Resepsionis" },
+              { "key": "は", "value": "ada" },
+              { "key": "どこ", "value": "dimana" },
+              { "key": "ですか", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "うけつけ は どこ ですか",
+          "question": "うけつけ は どこ ですか"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  }
+]

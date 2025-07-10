@@ -1,0 +1,364 @@
+[
+  {
+    "key": "ここ は きょうしつ です",
+    "questions": [
+      {
+        "data": {
+          "answer": "ここ は きょうしつ です",
+          "options": [
+            "ここ",
+            "は",
+            "きょうしつ",
+            "です",
+            "そこ",
+            "あそこ",
+            "トイレ",
+            "じむしょ",
+            "としょかん",
+            "きょうだい"
+          ],
+          "question": {
+            "en": [
+              { "key": "ここ", "value": "This" },
+              { "key": "は", "value": "is" },
+              { "key": "きょうしつ", "value": "a classroom" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "ここ", "value": "Ini" },
+              { "key": "は", "value": "adalah" },
+              { "key": "きょうしつ", "value": "ruang kelas" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "This is a classroom",
+            "id": "Ini adalah ruang kelas"
+          },
+          "options": {
+            "en": [
+              "This",
+              "is",
+              "a classroom",
+              "a toilet",
+              "an office",
+              "a library",
+              "that place",
+              "there"
+            ],
+            "id": [
+              "Ini",
+              "adalah",
+              "ruang kelas",
+              "toilet",
+              "kantor",
+              "perpustakaan",
+              "tempat itu",
+              "sana"
+            ]
+          },
+          "question": [
+            { "value": "ここ", "key": "ここ" },
+            { "value": "は", "key": "は" },
+            { "value": "きょうしつ", "key": "きょうしつ" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "ここ は きょうしつ です",
+          "options": [
+            "ここ",
+            "は",
+            "きょうしつ",
+            "です",
+            "そこ",
+            "あそこ",
+            "トイレ",
+            "じむしょ",
+            "としょかん",
+            "きょうだい"
+          ],
+          "question": "ここ は きょうしつ です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "ここ は きょうしつ です",
+          "question": {
+            "en": [
+              { "key": "ここ", "value": "This" },
+              { "key": "は", "value": "is" },
+              { "key": "きょうしつ", "value": "a classroom" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "ここ", "value": "Ini" },
+              { "key": "は", "value": "adalah" },
+              { "key": "きょうしつ", "value": "ruang kelas" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "ここ は きょうしつ です",
+          "question": "ここ は きょうしつ です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "ここ は だいがく です",
+    "questions": [
+      {
+        "data": {
+          "answer": "ここ は だいがく です",
+          "options": [
+            "ここ",
+            "は",
+            "だいがく",
+            "です",
+            "そこ",
+            "あそこ",
+            "こうこう",
+            "しょうがっこう",
+            "びょういん",
+            "えき"
+          ],
+          "question": {
+            "en": [
+              { "key": "ここ", "value": "This" },
+              { "key": "は", "value": "is" },
+              { "key": "だいがく", "value": "a university" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "ここ", "value": "Ini" },
+              { "key": "は", "value": "adalah" },
+              { "key": "だいがく", "value": "universitas" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "This is a university",
+            "id": "Ini adalah universitas"
+          },
+          "options": {
+            "en": [
+              "This",
+              "is",
+              "a university",
+              "a high school",
+              "an elementary school",
+              "a hospital",
+              "a station",
+              "that place"
+            ],
+            "id": [
+              "Ini",
+              "adalah",
+              "universitas",
+              "SMA",
+              "SD",
+              "rumah sakit",
+              "stasiun",
+              "tempat itu"
+            ]
+          },
+          "question": [
+            { "value": "ここ", "key": "ここ" },
+            { "value": "は", "key": "は" },
+            { "value": "だいがく", "key": "だいがく" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "ここ は だいがく です",
+          "options": [
+            "ここ",
+            "は",
+            "だいがく",
+            "です",
+            "そこ",
+            "あそこ",
+            "こうこう",
+            "しょうがっこう",
+            "びょういん",
+            "えき"
+          ],
+          "question": "ここ は だいがく です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "ここ は だいがく です",
+          "question": {
+            "en": [
+              { "key": "ここ", "value": "This" },
+              { "key": "は", "value": "is" },
+              { "key": "だいがく", "value": "a university" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "ここ", "value": "Ini" },
+              { "key": "は", "value": "adalah" },
+              { "key": "だいがく", "value": "universitas" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "ここ は だいがく です",
+          "question": "ここ は だいがく です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "ここ は ひろしま です",
+    "questions": [
+      {
+        "data": {
+          "answer": "ここ は ひろしま です",
+          "options": [
+            "ここ",
+            "は",
+            "ひろしま",
+            "です",
+            "そこ",
+            "あそこ",
+            "トイレ",
+            "じむしょ",
+            "としょかん",
+            "きょうしつ"
+          ],
+          "question": {
+            "en": [
+              { "key": "ここ", "value": "This" },
+              { "key": "は", "value": "is" },
+              { "key": "ひろしま", "value": "Hiroshima" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "ここ", "value": "Ini" },
+              { "key": "は", "value": "adalah" },
+              { "key": "ひろしま", "value": "Hiroshima" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "This is Hiroshima",
+            "id": "Ini adalah Hiroshima"
+          },
+          "options": {
+            "en": [
+              "This",
+              "is",
+              "Hiroshima",
+              "a toilet",
+              "an office",
+              "a library",
+              "that place",
+              "there",
+              "a classroom"
+            ],
+            "id": [
+              "Ini",
+              "adalah",
+              "Hiroshima",
+              "toilet",
+              "kantor",
+              "perpustakaan",
+              "tempat itu",
+              "sana",
+              "ruang kelas"
+            ]
+          },
+          "question": [
+            { "value": "ここ", "key": "ここ" },
+            { "value": "は", "key": "は" },
+            { "value": "ひろしま", "key": "ひろしま" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "ここ は ひろしま です",
+          "options": [
+            "ここ",
+            "は",
+            "ひろしま",
+            "です",
+            "そこ",
+            "あそこ",
+            "トイレ",
+            "じむしょ",
+            "としょかん",
+            "きょうしつ"
+          ],
+          "question": "ここ は ひろしま です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "ここ は ひろしま です",
+          "question": {
+            "en": [
+              { "key": "ここ", "value": "This" },
+              { "key": "は", "value": "is" },
+              { "key": "ひろしま", "value": "Hiroshima" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "ここ", "value": "Ini" },
+              { "key": "は", "value": "adalah" },
+              { "key": "ひろしま", "value": "Hiroshima" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "ここ は ひろしま です",
+          "question": "ここ は ひろしま です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  }
+]

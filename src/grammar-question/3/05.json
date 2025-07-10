@@ -1,0 +1,493 @@
+[
+  {
+    "key": "くに は フランス です",
+    "questions": [
+      {
+        "data": {
+          "answer": "くに は フランス です",
+          "options": [
+            "くに",
+            "は",
+            "フランス",
+            "です",
+            "アメリカ",
+            "イギリス",
+            "ドイツ",
+            "スペイン",
+            "イタリア",
+            "ブラジル"
+          ],
+          "question": {
+            "en": [
+              { "key": "くに", "value": "My Country" },
+              { "key": "は", "value": "is" },
+              { "key": "フランス", "value": "France" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "くに", "value": "Negara saya" },
+              { "key": "は", "value": "adalah" },
+              { "key": "フランス", "value": "Prancis" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "My country is France",
+            "id": "Negara saya adalah Prancis"
+          },
+          "options": {
+            "en": [
+              "My country",
+              "is",
+              "France",
+              "America",
+              "England",
+              "Germany",
+              "Spain",
+              "Italy",
+              "Brazil"
+            ],
+            "id": [
+              "Negara saya",
+              "adalah",
+              "Prancis",
+              "Amerika",
+              "Inggris",
+              "Jerman",
+              "Spanyol",
+              "Italia",
+              "Brasil"
+            ]
+          },
+          "question": [
+            { "value": "くに", "key": "くに" },
+            { "value": "は", "key": "は" },
+            { "value": "フランス", "key": "フランス" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "くに は フランス です",
+          "options": [
+            "くに",
+            "は",
+            "フランス",
+            "です",
+            "アメリカ",
+            "イギリス",
+            "ドイツ",
+            "スペイン",
+            "イタリア",
+            "ブラジル"
+          ],
+          "question": "くに は フランス です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "くに は フランス です",
+          "question": {
+            "en": [
+              { "key": "くに", "value": "My Country" },
+              { "key": "は", "value": "is" },
+              { "key": "フランス", "value": "France" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "くに", "value": "Negara saya" },
+              { "key": "は", "value": "adalah" },
+              { "key": "フランス", "value": "Prancis" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "くに は フランス です",
+          "question": "くに は フランス です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "かいしゃ は IMC です",
+    "questions": [
+      {
+        "data": {
+          "answer": "かいしゃ は IMC です",
+          "options": [
+            "かいしゃ",
+            "は",
+            "IMC",
+            "です",
+            "ABC",
+            "XYZ",
+            "NTT",
+            "SONY",
+            "TOYOTA",
+            "HONDA"
+          ],
+          "question": {
+            "en": [
+              { "key": "かいしゃ", "value": "My Company" },
+              { "key": "は", "value": "is" },
+              { "key": "IMC", "value": "IMC" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "かいしゃ", "value": "Perusahaan saya" },
+              { "key": "は", "value": "adalah" },
+              { "key": "IMC", "value": "IMC" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "My company is IMC",
+            "id": "Perusahaan saya adalah IMC"
+          },
+          "options": {
+            "en": [
+              "My Company",
+              "is",
+              "IMC",
+              "ABC",
+              "XYZ",
+              "NTT",
+              "SONY",
+              "TOYOTA",
+              "HONDA"
+            ],
+            "id": [
+              "Perusahaan saya",
+              "adalah",
+              "IMC",
+              "ABC",
+              "XYZ",
+              "NTT",
+              "SONY",
+              "TOYOTA",
+              "HONDA"
+            ]
+          },
+          "question": [
+            { "value": "かいしゃ", "key": "かいしゃ" },
+            { "value": "は", "key": "は" },
+            { "value": "IMC", "key": "IMC" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "かいしゃ は IMC です",
+          "options": [
+            "かいしゃ",
+            "は",
+            "IMC",
+            "です",
+            "ABC",
+            "XYZ",
+            "NTT",
+            "SONY",
+            "TOYOTA",
+            "HONDA"
+          ],
+          "question": "かいしゃ は IMC です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "かいしゃ は IMC です",
+          "question": {
+            "en": [
+              { "key": "かいしゃ", "value": "My Company" },
+              { "key": "は", "value": "is" },
+              { "key": "IMC", "value": "IMC" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "かいしゃ", "value": "Perusahaan saya" },
+              { "key": "は", "value": "adalah" },
+              { "key": "IMC", "value": "IMC" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "かいしゃ は IMC です",
+          "question": "かいしゃ は IMC です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "だいがく は さくらだいがく です",
+    "questions": [
+      {
+        "data": {
+          "answer": "だいがく は さくらだいがく です",
+          "options": [
+            "だいがく",
+            "は",
+            "さくらだいがく",
+            "です",
+            "とうきょうだいがく",
+            "きょうとだいがく",
+            "はちおうじだいがく",
+            "わーすだだいがく",
+            "めいじだいがく",
+            "けいおうだいがく"
+          ],
+          "question": {
+            "en": [
+              { "key": "だいがく", "value": "My university" },
+              { "key": "は", "value": "is" },
+              { "key": "さくらだいがく", "value": "Sakura University" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "だいがく", "value": "Universitas saya" },
+              { "key": "は", "value": "adalah" },
+              { "key": "さくらだいがく", "value": "Universitas Sakura" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "My university is Sakura University",
+            "id": "Universitas saya adalah Universitas Sakura"
+          },
+          "options": {
+            "en": [
+              "My university",
+              "is",
+              "Sakura University",
+              "Tokyo University",
+              "Kyoto University",
+              "Hachioji University",
+              "Waseda University",
+              "Meiji University",
+              "Keio University"
+            ],
+            "id": [
+              "Universitas saya",
+              "adalah",
+              "Universitas Sakura",
+              "Universitas Tokyo",
+              "Universitas Kyoto",
+              "Universitas Hachioji",
+              "Universitas Waseda",
+              "Universitas Meiji",
+              "Universitas Keio"
+            ]
+          },
+          "question": [
+            { "value": "だいがく", "key": "だいがく" },
+            { "value": "は", "key": "は" },
+            { "value": "さくらだいがく", "key": "さくらだいがく" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "だいがく は さくらだいがく です",
+          "options": [
+            "だいがく",
+            "は",
+            "さくらだいがく",
+            "です",
+            "とうきょうだいがく",
+            "きょうとだいがく",
+            "はちおうじだいがく",
+            "わーすだだいがく",
+            "めいじだいがく",
+            "けいおうだいがく"
+          ],
+          "question": "だいがく は さくらだいがく です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "だいがく は さくらだいがく です",
+          "question": {
+            "en": [
+              { "key": "だいがく", "value": "My university" },
+              { "key": "は", "value": "is" },
+              { "key": "さくらだいがく", "value": "Sakura University" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "だいがく", "value": "Universitas saya" },
+              { "key": "は", "value": "adalah" },
+              { "key": "さくらだいがく", "value": "Universitas Sakura" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "だいがく は さくらだいがく です",
+          "question": "だいがく は さくらだいがく です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "だいがく は どちら ですか",
+    "questions": [
+      {
+        "data": {
+          "answer": "だいがく は どちら ですか",
+          "options": [
+            "だいがく",
+            "は",
+            "どちら",
+            "です",
+            "か",
+            "さくらだいがく",
+            "とうきょうだいがく",
+            "きょうとだいがく",
+            "わーすだだいがく",
+            "めいじだいがく"
+          ],
+          "question": {
+            "en": [
+              { "key": "どちら", "value": "Where is" },
+              { "key": "だいがく", "value": "your university" },
+              { "key": "は", "value": "" },
+              { "key": "ですか", "value": "" }
+            ],
+            "id": [
+              { "key": "どちら", "value": "Dimana" },
+              { "key": "は", "value": "" },
+              { "key": "だいがく", "value": "universitas Anda" },
+              { "key": "ですか", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "Where is your university",
+            "id": "Di mana universitas Anda"
+          },
+          "options": {
+            "en": [
+              "Where",
+              "is",
+              "university",
+              "do you attend",
+              "Sakura University",
+              "Tokyo University",
+              "Kyoto University",
+              "Waseda University",
+              "Meiji University",
+              "is it",
+              "your"
+            ],
+            "id": [
+              "Universitas",
+              "Anda",
+              "Universitas Sakura",
+              "Universitas Tokyo",
+              "Universitas Kyoto",
+              "Universitas Waseda",
+              "Universitas Meiji",
+              "apakah",
+              "berada",
+              "Dimana"
+            ]
+          },
+          "question": [
+            { "value": "だいがく", "key": "だいがく" },
+            { "value": "は", "key": "は" },
+            { "value": "どちら", "key": "どちら" },
+            { "value": "ですか", "key": "ですか" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "だいがく は どちら ですか",
+          "options": [
+            "だいがく",
+            "は",
+            "どちら",
+            "です",
+            "か",
+            "さくらだいがく",
+            "とうきょうだいがく",
+            "きょうとだいがく",
+            "わーすだだいがく",
+            "めいじだいがく"
+          ],
+          "question": "だいがく は どちら ですか"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "だいがく は どちら ですか",
+        "question": {
+            "en": [
+              { "key": "どちら", "value": "Where is" },
+              { "key": "だいがく", "value": "your university" },
+              { "key": "は", "value": "" },
+              { "key": "ですか", "value": "" }
+            ],
+            "id": [
+              { "key": "どちら", "value": "Dimana" },
+              { "key": "は", "value": "" },
+              { "key": "だいがく", "value": "universitas Anda" },
+              { "key": "ですか", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "だいがく は どちら ですか",
+          "question": "だいがく は どちら ですか"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  }
+]

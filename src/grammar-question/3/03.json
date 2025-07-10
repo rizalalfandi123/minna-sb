@@ -1,0 +1,612 @@
+[
+  {
+    "key": "じどうはんばいき は ２かい です",
+    "questions": [
+      {
+        "data": {
+          "answer": "じどうはんばいき は ２かい です",
+          "options": [
+            "じどうはんばいき",
+            "は",
+            "２かい",
+            "です",
+            "１かい",
+            "３かい",
+            "トイレ",
+            "エレベーター",
+            "かいだん",
+            "ロビー"
+          ],
+          "question": {
+            "en": [
+              { "key": "じどうはんばいき", "value": "The vending machine" },
+              { "key": "は", "value": "is" },
+              { "key": "２かい", "value": "on the 2nd floor" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "じどうはんばいき", "value": "Mesin penjual otomatis" },
+              { "key": "は", "value": "ada" },
+              { "key": "２かい", "value": "di lantai 2" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "The vending machine is on the 2nd floor",
+            "id": "Mesin penjual otomatis ada di lantai 2"
+          },
+          "options": {
+            "en": [
+              "The vending machine",
+              "is",
+              "on the 2nd floor",
+              "on the 1st floor",
+              "on the 3rd floor",
+              "in the lobby",
+              "near the stairs",
+              "by the elevator",
+              "in the restroom"
+            ],
+            "id": [
+              "Mesin penjual otomatis",
+              "ada",
+              "di lantai 2",
+              "di lantai 1",
+              "di lantai 3",
+              "di lobi",
+              "dekat tangga",
+              "di dekat lift",
+              "di toilet"
+            ]
+          },
+          "question": [
+            { "value": "じどうはんばいき", "key": "じどうはんばいき" },
+            { "value": "は", "key": "は" },
+            { "value": "２かい", "key": "２かい" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "じどうはんばいき は ２かい です",
+          "options": [
+            "じどうはんばいき",
+            "は",
+            "２かい",
+            "です",
+            "１かい",
+            "３かい",
+            "トイレ",
+            "エレベーター",
+            "かいだん",
+            "ロビー"
+          ],
+          "question": "じどうはんばいき は ２かい です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "じどうはんばいき は ２かい です",
+          "question": {
+            "en": [
+              { "key": "じどうはんばいき", "value": "The vending machine" },
+              { "key": "は", "value": "is" },
+              { "key": "２かい", "value": "on the 2nd floor" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "じどうはんばいき", "value": "Mesin penjual otomatis" },
+              { "key": "は", "value": "ada" },
+              { "key": "２かい", "value": "di lantai 2" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "じどうはんばいき は ２かい です",
+          "question": "じどうはんばいき は ２かい です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "じどうはんばいき は ロビー です",
+    "questions": [
+      {
+        "data": {
+          "answer": "じどうはんばいき は ロビー です",
+          "options": [
+            "じどうはんばいき",
+            "は",
+            "ロビー",
+            "です",
+            "２かい",
+            "１かい",
+            "トイレ",
+            "エレベーター",
+            "かいだん",
+            "レストラン"
+          ],
+          "question": {
+            "en": [
+              { "key": "じどうはんばいき", "value": "The vending machine" },
+              { "key": "は", "value": "is" },
+              { "key": "ロビー", "value": "in the lobby" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "じどうはんばいき", "value": "Mesin penjual otomatis" },
+              { "key": "は", "value": "ada" },
+              { "key": "ロビー", "value": "di lobi" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "The vending machine is in the lobby",
+            "id": "Mesin penjual otomatis ada di lobi"
+          },
+          "options": {
+            "en": [
+              "The vending machine",
+              "is",
+              "in the lobby",
+              "on the 1st floor",
+              "on the 2nd floor",
+              "near the elevator",
+              "by the stairs",
+              "in the restroom",
+              "in the restaurant"
+            ],
+            "id": [
+              "Mesin penjual otomatis",
+              "ada",
+              "di lobi",
+              "di lantai 1",
+              "di lantai 2",
+              "dekat lift",
+              "di dekat tangga",
+              "di toilet",
+              "di restoran"
+            ]
+          },
+          "question": [
+            { "value": "じどうはんばいき", "key": "じどうはんばいき" },
+            { "value": "は", "key": "は" },
+            { "value": "ロビー", "key": "ロビー" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "じどうはんばいき は ロビー です",
+          "options": [
+            "じどうはんばいき",
+            "は",
+            "ロビー",
+            "です",
+            "２かい",
+            "１かい",
+            "トイレ",
+            "エレベーター",
+            "かいだん",
+            "レストラン"
+          ],
+          "question": "じどうはんばいき は ロビー です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "じどうはんばいき は ロビー です",
+          "question": {
+            "en": [
+              { "key": "じどうはんばいき", "value": "The vending machine" },
+              { "key": "は", "value": "is" },
+              { "key": "ロビー", "value": "in the lobby" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "じどうはんばいき", "value": "Mesin penjual otomatis" },
+              { "key": "は", "value": "ada" },
+              { "key": "ロビー", "value": "di lobi" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "じどうはんばいき は ロビー です",
+          "question": "じどうはんばいき は ロビー です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "さとうさん は じむしょ です",
+    "questions": [
+      {
+        "data": {
+          "answer": "さとうさん は じむしょ です",
+          "options": [
+            "さとうさん",
+            "は",
+            "じむしょ",
+            "です",
+            "ロビー",
+            "２かい",
+            "トイレ",
+            "きょうしつ",
+            "レストラン",
+            "としょかん"
+          ],
+          "question": {
+            "en": [
+              { "key": "さとうさん", "value": "Mr. Sato" },
+              { "key": "は", "value": "is" },
+              { "key": "じむしょ", "value": "in the office" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "さとうさん", "value": "Pak Sato" },
+              { "key": "は", "value": "ada" },
+              { "key": "じむしょ", "value": "di kantor" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "Mr. Sato is in the office",
+            "id": "Pak Sato ada di kantor"
+          },
+          "options": {
+            "en": [
+              "Mr. Sato",
+              "is",
+              "in the office",
+              "in the lobby",
+              "on the 2nd floor",
+              "in the restroom",
+              "in the classroom",
+              "in the restaurant",
+              "in the library"
+            ],
+            "id": [
+              "Pak Sato",
+              "ada",
+              "di kantor",
+              "di lobi",
+              "di lantai 2",
+              "di toilet",
+              "di ruang kelas",
+              "di restoran",
+              "di perpustakaan"
+            ]
+          },
+          "question": [
+            { "value": "さとうさん", "key": "さとうさん" },
+            { "value": "は", "key": "は" },
+            { "value": "じむしょ", "key": "じむしょ" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "さとうさん は じむしょ です",
+          "options": [
+            "さとうさん",
+            "は",
+            "じむしょ",
+            "です",
+            "ロビー",
+            "２かい",
+            "トイレ",
+            "きょうしつ",
+            "レストラン",
+            "としょかん"
+          ],
+          "question": "さとうさん は じむしょ です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "さとうさん は じむしょ です",
+          "question": {
+            "en": [
+              { "key": "さとうさん", "value": "Mr. Sato" },
+              { "key": "は", "value": "is" },
+              { "key": "じむしょ", "value": "in the office" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "さとうさん", "value": "Pak Sato" },
+              { "key": "は", "value": "ada" },
+              { "key": "じむしょ", "value": "di kantor" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "さとうさん は じむしょ です",
+          "question": "さとうさん は じむしょ です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "さとうさん は しょくどう です",
+    "questions": [
+      {
+        "data": {
+          "answer": "さとうさん は しょくどう です",
+          "options": [
+            "さとうさん",
+            "は",
+            "しょくどう",
+            "です",
+            "じむしょ",
+            "ロビー",
+            "２かい",
+            "トイレ",
+            "きょうしつ",
+            "としょかん"
+          ],
+          "question": {
+            "en": [
+              { "key": "さとうさん", "value": "Mr. Sato" },
+              { "key": "は", "value": "is" },
+              { "key": "しょくどう", "value": "in the cafeteria" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "さとうさん", "value": "Pak Sato" },
+              { "key": "は", "value": "ada" },
+              { "key": "しょくどう", "value": "di kantin" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "Mr. Sato is in the cafeteria",
+            "id": "Pak Sato ada di kantin"
+          },
+          "options": {
+            "en": [
+              "Mr. Sato",
+              "is",
+              "in the cafeteria",
+              "in the office",
+              "in the lobby",
+              "on the 2nd floor",
+              "in the restroom",
+              "in the classroom",
+              "in the library"
+            ],
+            "id": [
+              "Pak Sato",
+              "ada",
+              "di kantin",
+              "di kantor",
+              "di lobi",
+              "di lantai 2",
+              "di toilet",
+              "di ruang kelas",
+              "di perpustakaan"
+            ]
+          },
+          "question": [
+            { "value": "さとうさん", "key": "さとうさん" },
+            { "value": "は", "key": "は" },
+            { "value": "しょくどう", "key": "しょくどう" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "さとうさん は しょくどう です",
+          "options": [
+            "さとうさん",
+            "は",
+            "しょくどう",
+            "です",
+            "じむしょ",
+            "ロビー",
+            "２かい",
+            "トイレ",
+            "きょうしつ",
+            "としょかん"
+          ],
+          "question": "さとうさん は しょくどう です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "さとうさん は しょくどう です",
+          "question": {
+            "en": [
+              { "key": "さとうさん", "value": "Mr. Sato" },
+              { "key": "は", "value": "is" },
+              { "key": "しょくどう", "value": "in the cafeteria" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "さとうさん", "value": "Pak Sato" },
+              { "key": "は", "value": "ada" },
+              { "key": "しょくどう", "value": "di kantin" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "さとうさん は しょくどう です",
+          "question": "さとうさん は しょくどう です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "さとうさん は どこ です か",
+    "questions": [
+      {
+        "data": {
+          "answer": "さとうさん は どこ です か",
+          "options": [
+            "さとうさん",
+            "は",
+            "どこ",
+            "です",
+            "か",
+            "じむしょ",
+            "しょくどう",
+            "ロビー",
+            "２かい",
+            "トイレ"
+          ],
+          "question": {
+            "en": [
+              { "key": "どこ", "value": "Where" },
+              { "key": "は", "value": "is" },
+              { "key": "さとうさん", "value": "Mr. Sato" },
+              { "key": "ですか", "value": "" }
+            ],
+            "id": [
+              { "key": "さとうさん", "value": "Pak Sato" },
+              { "key": "は", "value": "ada" },
+              { "key": "どこ", "value": "di mana" },
+              { "key": "ですか", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "Where is Mr. Sato",
+            "id": "Pak Sato ada di mana"
+          },
+          "options": {
+            "en": [
+              "Where",
+              "is",
+              "Mr. Sato",
+              "in the office",
+              "in the cafeteria",
+              "in the lobby",
+              "on the 2nd floor",
+              "in the restroom",
+              "in the classroom"
+            ],
+            "id": [
+              "di mana",
+              "ada",
+              "Pak Sato",
+              "di kantor",
+              "di kantin",
+              "di lobi",
+              "di lantai 2",
+              "di toilet",
+              "di ruang kelas"
+            ]
+          },
+          "question": [
+            { "value": "さとうさん", "key": "さとうさん" },
+            { "value": "は", "key": "は" },
+            { "value": "どこ", "key": "どこ" },
+            { "value": "ですか", "key": "ですか" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "さとうさん は どこ です か",
+          "options": [
+            "さとうさん",
+            "は",
+            "どこ",
+            "です",
+            "か",
+            "じむしょ",
+            "しょくどう",
+            "ロビー",
+            "２かい",
+            "トイレ"
+          ],
+          "question": "さとうさん は どこ です か"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "さとうさん は どこ です か",
+          "question": {
+            "en": [
+              { "key": "どこ", "value": "Where" },
+              { "key": "は", "value": "is" },
+              { "key": "さとうさん", "value": "Mr. Sato" },
+              { "key": "ですか", "value": "" }
+            ],
+            "id": [
+              { "key": "さとうさん", "value": "Pak Sato" },
+              { "key": "は", "value": "ada" },
+              { "key": "どこ", "value": "di mana" },
+              { "key": "ですか", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "さとうさん は どこ です か",
+          "question": "さとうさん は どこ です か"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  }
+]

@@ -406,6 +406,15 @@
   },
   {
     "deleted": false,
+    "key": "せんまん",
+    "id": "10.000.000",
+    "en": "10,000,000",
+    "others": {
+      "kanji": "千万"
+    }
+  },
+  {
+    "deleted": false,
     "key": "あれ",
     "id": "itu (di sana)",
     "en": "that (over there)",
@@ -425,18 +434,6 @@
       "note": {
         "en": "さくらだいがく is a school name. の links it to せんせい (teacher).",
         "id": "さくらだいがく adalah nama universitas. の menghubungkan ke せんせい (dosen)."
-      }
-    }
-  },
-  {
-    "deleted": false,
-    "key": "も",
-    "id": "juga",
-    "en": "also / too",
-    "others": {
-      "note": {
-        "en": "も is a particle used to indicate 'also' or 'too' in a sentence.",
-        "id": "も adalah partikel yang digunakan untuk menyatakan 'juga' dalam kalimat."
       }
     }
   },
@@ -702,6 +699,27 @@
   },
   {
     "deleted": false,
+    "key": "も",
+    "id": "juga",
+    "en": "also",
+    "others": {
+      "note": {
+        "en": "も is a particle used to indicate 'also' or 'too' in a sentence.",
+        "id": "も adalah partikel yang digunakan untuk menyatakan 'juga' dalam kalimat."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "はっせん",
+    "id": "8.000",
+    "en": "8,000",
+    "others": {
+      "kanji": "八千"
+    }
+  },
+  {
+    "deleted": false,
     "key": "しんぶん",
     "id": "koran",
     "en": "newspaper",
@@ -749,6 +767,15 @@
   },
   {
     "deleted": false,
+    "key": "いちおく",
+    "id": "100.000.000",
+    "en": "100,000,000",
+    "others": {
+      "kanji": "一億"
+    }
+  },
+  {
+    "deleted": false,
     "key": "えんぴつ",
     "id": "pensil",
     "en": "pencil",
@@ -767,6 +794,15 @@
     "en": "key",
     "others": {
       "kanji": "鍵"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "よんせん",
+    "id": "4.000",
+    "en": "4,000",
+    "others": {
+      "kanji": "四千"
     }
   },
   {
@@ -792,6 +828,15 @@
   },
   {
     "deleted": false,
+    "key": "にせん",
+    "id": "2.000",
+    "en": "2,000",
+    "others": {
+      "kanji": "二千"
+    }
+  },
+  {
+    "deleted": false,
     "key": "ラジオ",
     "id": "radio",
     "en": "radio",
@@ -809,6 +854,48 @@
     "en": "chair",
     "others": {
       "kanji": "椅子"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "じむしょ",
+    "id": "kantor administrasi",
+    "en": "office",
+    "others": {
+      "kanji": "事務所"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "あそこ",
+    "id": "di sana",
+    "en": "over there",
+    "others": {
+      "note": {
+        "en": "Used to indicate a place far from both speaker and listener.",
+        "id": "Digunakan untuk menunjukkan tempat yang jauh dari pembicara dan lawan bicara."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "こちら",
+    "id": "sini",
+    "en": "this way",
+    "others": {
+      "note": {
+        "en": "Polite form of 'ここ' or 'これ', depending on context. Used for direction, location, or referring to people.",
+        "id": "Bentuk sopan dari 'ここ' atau 'これ', tergantung konteks. Bisa untuk arah, tempat, atau orang."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ななせん",
+    "id": "7.000",
+    "en": "7,000",
+    "others": {
+      "kanji": "七千"
     }
   },
   {
@@ -855,6 +942,37 @@
   },
   {
     "deleted": false,
+    "key": "ロビー",
+    "id": "lobi",
+    "en": "lobby",
+    "others": {}
+  },
+  {
+    "deleted": false,
+    "key": "ここ",
+    "id": "di sini",
+    "en": "here",
+    "others": {
+      "note": {
+        "en": "Used to indicate a place near the speaker.",
+        "id": "Digunakan untuk menunjukkan tempat yang dekat dengan pembicara."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "そちら",
+    "id": "situ",
+    "en": "that way",
+    "others": {
+      "note": {
+        "en": "Polite form of 'そこ' or 'それ'. Refers to things, people, or places near the listener.",
+        "id": "Bentuk sopan dari 'そこ' atau 'それ'. Mengacu pada hal, orang, atau tempat dekat lawan bicara."
+      }
+    }
+  },
+  {
+    "deleted": false,
     "key": "コンピューター",
     "id": "komputer",
     "en": "computer",
@@ -879,11 +997,122 @@
   },
   {
     "deleted": false,
+    "key": "かいぎしつ",
+    "id": "ruang rapat",
+    "en": "meeting room",
+    "others": {
+      "kanji": "会議室"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "へや",
+    "id": "kamar / ruangan",
+    "en": "room",
+    "others": {
+      "kanji": "部屋"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "しょくどう",
+    "id": "kantin",
+    "en": "cafeteria",
+    "others": {
+      "kanji": "食堂"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "うけつけ",
+    "id": "resepsionis",
+    "en": "reception",
+    "others": {
+      "kanji": "受付"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "どこ",
+    "id": "di mana",
+    "en": "where",
+    "others": {
+      "note": {
+        "en": "Used as an interrogative to ask about location.",
+        "id": "Digunakan sebagai kata tanya untuk menanyakan tempat."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "あちら",
+    "id": "sana",
+    "en": "that way (over there)",
+    "others": {
+      "note": {
+        "en": "Polite form of 'あそこ' or 'あれ'. Used for far locations or third persons.",
+        "id": "Bentuk sopan dari 'あそこ' atau 'あれ'. Digunakan untuk tempat jauh atau orang ketiga."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ごせん",
+    "id": "5.000",
+    "en": "5,000",
+    "others": {
+      "kanji": "五千"
+    }
+  },
+  {
+    "deleted": false,
     "key": "おみやげ",
     "id": "oleh-oleh",
     "en": "souvenir",
     "others": {
       "kanji": "お土産"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "きょうしつ",
+    "id": "ruang kelas",
+    "en": "classroom",
+    "others": {
+      "kanji": "教室"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "そこ",
+    "id": "di situ",
+    "en": "there (near you)",
+    "others": {
+      "note": {
+        "en": "Used to indicate a place near the listener.",
+        "id": "Digunakan untuk menunjukkan tempat yang dekat dengan lawan bicara."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "どちら",
+    "id": "yang mana",
+    "en": "which way",
+    "others": {
+      "note": {
+        "en": "Polite question word. Depending on context, can mean 'which direction', 'where', or 'who'.",
+        "id": "Kata tanya sopan. Tergantung konteks bisa berarti 'yang mana', 'di mana', atau 'siapa'."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "じゅうまん",
+    "id": "100.000",
+    "en": "100,000",
+    "others": {
+      "kanji": "十万"
     }
   },
   {
@@ -900,6 +1129,309 @@
   },
   {
     "deleted": false,
+    "key": "トイレ",
+    "id": "toilet / kamar kecil",
+    "en": "toilet",
+    "others": {}
+  },
+  {
+    "deleted": false,
+    "key": "にひゃく",
+    "id": "200",
+    "en": "200",
+    "others": {
+      "kanji": "二百"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "さんびゃく",
+    "id": "300",
+    "en": "300",
+    "others": {
+      "kanji": "三百"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "よんひゃく",
+    "id": "400",
+    "en": "400",
+    "others": {
+      "kanji": "四百"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ごひゃく",
+    "id": "500",
+    "en": "500",
+    "others": {
+      "kanji": "五百"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ろっぴゃく",
+    "id": "600",
+    "en": "600",
+    "others": {
+      "kanji": "六百"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ななひゃく",
+    "id": "700",
+    "en": "700",
+    "others": {
+      "kanji": "七百"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "はっぴゃく",
+    "id": "800",
+    "en": "800",
+    "others": {
+      "kanji": "八百"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "きゅうひゃく",
+    "id": "900",
+    "en": "900",
+    "others": {
+      "kanji": "九百"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ごじゅう",
+    "id": "50",
+    "en": "50",
+    "others": {
+      "kanji": "五十"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ろくじゅう",
+    "id": "60",
+    "en": "60",
+    "others": {
+      "kanji": "六十"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ななじゅう",
+    "id": "70",
+    "en": "70",
+    "others": {
+      "kanji": "七十"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "はちじゅう",
+    "id": "80",
+    "en": "80",
+    "others": {
+      "kanji": "八十"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "きゅうじゅう",
+    "id": "90",
+    "en": "90",
+    "others": {
+      "kanji": "九十"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "じゅう",
+    "id": "10",
+    "en": "10",
+    "others": {
+      "kanji": "十"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "じゅういち",
+    "id": "11",
+    "en": "11",
+    "others": {
+      "kanji": "十一"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "じゅうに",
+    "id": "12",
+    "en": "12",
+    "others": {
+      "kanji": "十二"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "じゅうさん",
+    "id": "13",
+    "en": "13",
+    "others": {
+      "kanji": "十三"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "じゅうよん",
+    "id": "14",
+    "en": "14",
+    "others": {
+      "kanji": "十四"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "じゅうご",
+    "id": "15",
+    "en": "15",
+    "others": {
+      "kanji": "十五"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "じゅうろく",
+    "id": "16",
+    "en": "16",
+    "others": {
+      "kanji": "十六"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "じゅうなな",
+    "id": "17",
+    "en": "17",
+    "others": {
+      "kanji": "十七"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "じゅうはち",
+    "id": "18",
+    "en": "18",
+    "others": {
+      "kanji": "十八"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "じゅうきゅう",
+    "id": "19",
+    "en": "19",
+    "others": {
+      "kanji": "十九"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "にじゅう",
+    "id": "20",
+    "en": "20",
+    "others": {
+      "kanji": "二十"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "さんじゅう",
+    "id": "30",
+    "en": "30",
+    "others": {
+      "kanji": "三十"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "よんじゅう",
+    "id": "40",
+    "en": "40",
+    "others": {
+      "kanji": "四十"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "しち",
+    "id": "7",
+    "en": "7",
+    "others": {
+      "note": {
+        "en": "Alternative for 'なな', sometimes used in formal contexts.",
+        "id": "Alternatif dari 'なな', kadang digunakan di konteks formal."
+      },
+      "kanji": "七"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "く",
+    "id": "9",
+    "en": "9",
+    "others": {
+      "note": {
+        "en": "Alternative for 'きゅう', sometimes avoided as it sounds like 'pain' (苦).",
+        "id": "Alternatif dari 'きゅう', namun bisa dihindari karena terdengar seperti 'rasa sakit' (苦)."
+      },
+      "kanji": "九"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ご",
+    "id": "5",
+    "en": "5",
+    "others": {
+      "kanji": "五"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ろく",
+    "id": "6",
+    "en": "6",
+    "others": {
+      "kanji": "六"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "なな",
+    "id": "7",
+    "en": "7",
+    "others": {
+      "kanji": "七"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "はち",
+    "id": "8",
+    "en": "8",
+    "others": {
+      "kanji": "八"
+    }
+  },
+  {
+    "deleted": false,
     "key": "コーヒー",
     "id": "kopi",
     "en": "coffee",
@@ -908,6 +1440,28 @@
         "en": "Loanword from 'coffee', written in katakana.",
         "id": "Kata serapan dari 'coffee', ditulis dalam katakana."
       }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "じどうはんばいき",
+    "id": "mesin penjual otomatis",
+    "en": "vending machine",
+    "others": {
+      "kanji": "自動販売機"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "うち",
+    "id": "rumah",
+    "en": "home",
+    "others": {
+      "note": {
+        "en": "Casual term for 'home' or referring to one's own household.",
+        "id": "Istilah kasual untuk 'rumah' atau merujuk pada rumah tangga sendiri."
+      },
+      "kanji": "内"
     }
   },
   {
@@ -943,6 +1497,22 @@
   },
   {
     "deleted": false,
+    "key": "エレベーター",
+    "id": "lift / elevator",
+    "en": "elevator",
+    "others": {}
+  },
+  {
+    "deleted": false,
+    "key": "でんわ",
+    "id": "telepon",
+    "en": "telephone",
+    "others": {
+      "kanji": "電話"
+    }
+  },
+  {
+    "deleted": false,
     "key": "なん",
     "id": "apa",
     "en": "what",
@@ -955,6 +1525,26 @@
   },
   {
     "deleted": false,
+    "key": "エスカレーター",
+    "id": "eskalator",
+    "en": "escalator",
+    "others": {}
+  },
+  {
+    "deleted": false,
+    "key": "おくに",
+    "id": "negara asal Anda",
+    "en": "your country",
+    "others": {
+      "note": {
+        "en": "Polite form of 'くに' (country), often used when asking about someone's origin.",
+        "id": "Bentuk sopan dari 'くに' (negara), sering digunakan saat menanyakan asal seseorang."
+      },
+      "kanji": "お国"
+    }
+  },
+  {
+    "deleted": false,
     "key": "そう",
     "id": "begitu",
     "en": "like that",
@@ -963,6 +1553,24 @@
         "en": "Demonstrative word used to refer to something near the listener or already mentioned.",
         "id": "Kata penunjuk untuk merujuk sesuatu yang dekat dengan lawan bicara atau sudah disebutkan."
       }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "かいだん",
+    "id": "tangga",
+    "en": "stairs",
+    "others": {
+      "kanji": "階段"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "かいしゃ",
+    "id": "perusahaan",
+    "en": "company",
+    "others": {
+      "kanji": "会社"
     }
   },
   {
@@ -980,6 +1588,19 @@
   },
   {
     "deleted": false,
+    "key": "なんがい",
+    "id": "lantai berapa",
+    "en": "what floor",
+    "others": {
+      "note": {
+        "en": "Question word for asking floor number in a building.",
+        "id": "Kata tanya untuk menanyakan lantai ke berapa di gedung."
+      },
+      "kanji": "何階"
+    }
+  },
+  {
+    "deleted": false,
     "key": "コンピューター の ほん",
     "id": "buku komputer",
     "en": "computer book",
@@ -989,6 +1610,15 @@
         "id": "Menggabungkan dua kata benda dengan partikel 'の' untuk menunjukkan kepemilikan atau deskripsi."
       },
       "kanji": "コンピューターの本"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "くつ",
+    "id": "sepatu",
+    "en": "shoes",
+    "others": {
+      "kanji": "靴"
     }
   },
   {
@@ -1006,6 +1636,15 @@
   },
   {
     "deleted": false,
+    "key": "まん",
+    "id": "sepuluh ribu",
+    "en": "ten thousand",
+    "others": {
+      "kanji": "万"
+    }
+  },
+  {
+    "deleted": false,
     "key": "なん の ほん",
     "id": "buku apa",
     "en": "what book",
@@ -1015,6 +1654,27 @@
         "id": "Frasa pertanyaan yang menggunakan 'の' untuk menanyakan jenis atau isi buku."
       },
       "kanji": "何の本"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "えん",
+    "id": "yen",
+    "en": "yen",
+    "others": {
+      "kanji": "円"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "いくら",
+    "id": "berapa",
+    "en": "how much",
+    "others": {
+      "note": {
+        "en": "Used to ask about price.",
+        "id": "Digunakan untuk menanyakan harga."
+      }
     }
   },
   {
@@ -1032,7 +1692,23 @@
   },
   {
     "deleted": false,
-    "key": "さとう さん の かばん",
+    "key": "ネクタイ",
+    "id": "dasi",
+    "en": "necktie",
+    "others": {}
+  },
+  {
+    "deleted": false,
+    "key": "ちか",
+    "id": "bawah tanah",
+    "en": "basement",
+    "others": {
+      "kanji": "地下"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "さとうさん の かばん",
     "id": "tas Bu Sato",
     "en": "Ms. Sato's bag",
     "others": {
@@ -1045,7 +1721,14 @@
   },
   {
     "deleted": false,
-    "key": "さとう さん",
+    "key": "ワイン",
+    "id": "anggur",
+    "en": "wine",
+    "others": {}
+  },
+  {
+    "deleted": false,
+    "key": "さとうさん",
     "id": "Bu Sato",
     "en": "Ms. Sato",
     "others": {
@@ -1096,6 +1779,28 @@
   },
   {
     "deleted": false,
+    "key": "いっかい",
+    "id": "lantai satu",
+    "en": "first floor",
+    "others": {
+      "note": {
+        "en": "In Japan, 'いっかい' refers to the ground floor.",
+        "id": "Di Jepang, 'いっかい' berarti lantai dasar."
+      },
+      "kanji": "一階"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ひゃく",
+    "id": "seratus",
+    "en": "hundred",
+    "others": {
+      "kanji": "百"
+    }
+  },
+  {
+    "deleted": false,
     "key": "わたし の",
     "id": "milik saya",
     "en": "my",
@@ -1118,6 +1823,222 @@
         "id": "'この' adalah kata penunjuk yang digunakan sebelum kata benda untuk merujuk sesuatu yang dekat dengan pembicara."
       },
       "kanji": "この手帳"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "せん",
+    "id": "seribu",
+    "en": "thousand",
+    "others": {
+      "kanji": "千"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "うりば",
+    "id": "loket penjualan",
+    "en": "sales counter",
+    "others": {
+      "note": {
+        "en": "Used for places where items are sold, like in department stores.",
+        "id": "Digunakan untuk menyebut tempat penjualan barang, seperti di toko besar."
+      },
+      "kanji": "売り場"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ひろしま",
+    "id": "Hiroshima",
+    "en": "Hiroshima",
+    "others": {
+      "note": {
+        "en": "A city in western Japan, historically known as the first city targeted by an atomic bomb.",
+        "id": "Sebuah kota di Jepang bagian barat, dikenal sebagai kota pertama yang dijatuhi bom atom."
+      },
+      "kanji": "広島"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "２かい",
+    "id": "lantai dua",
+    "en": "second floor",
+    "others": {
+      "note": {
+        "en": "Indicates the second floor of a building. In Japan, floors typically start from ground level as 1階.",
+        "id": "Menunjukkan lantai dua dalam sebuah bangunan. Di Jepang, lantai biasanya dihitung mulai dari lantai dasar sebagai 1階."
+      },
+      "kanji": "二階"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "フランス",
+    "id": "Prancis",
+    "en": "France",
+    "others": {}
+  },
+  {
+    "deleted": false,
+    "key": "さくらだいがく",
+    "id": "Universitas Sakura",
+    "en": "Sakura University",
+    "others": {
+      "note": {
+        "en": "A fictional or generic university name.",
+        "id": "Nama universitas fiktif atau umum."
+      },
+      "kanji": "さくら大学"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "くに",
+    "id": "negara",
+    "en": "country",
+    "others": {
+      "note": {
+        "en": "General term for 'country' in Japanese.",
+        "id": "Istilah umum untuk 'negara' dalam bahasa Jepang."
+      },
+      "kanji": "国"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "IMC",
+    "id": "IMC",
+    "en": "IMC",
+    "others": {
+      "note": {
+        "en": "A fictional company name.",
+        "id": "Nama perusahaan fiktif."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ゼロ",
+    "id": "0",
+    "en": "0",
+    "others": {
+      "note": {
+        "en": "Katakana form, used in modern and scientific contexts.",
+        "id": "Bentuk katakana, digunakan dalam konteks modern atau ilmiah."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "に",
+    "id": "2",
+    "en": "2",
+    "others": {
+      "kanji": "二"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "れい",
+    "id": "0",
+    "en": "0",
+    "others": {
+      "note": {
+        "en": "Native Japanese reading for zero, often used in formal or native counting.",
+        "id": "Pembacaan asli Jepang untuk nol, sering digunakan dalam konteks formal atau asli Jepang."
+      },
+      "kanji": "零"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "さん",
+    "id": "3",
+    "en": "3",
+    "others": {
+      "kanji": "三"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "し",
+    "id": "4",
+    "en": "4",
+    "others": {
+      "note": {
+        "en": "Alternative reading for '4', avoided in some contexts due to sounding like 'death' (死).",
+        "id": "Pembacaan alternatif untuk '4', kadang dihindari karena terdengar seperti kata 'kematian' (死)."
+      },
+      "kanji": "四"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "よん",
+    "id": "4",
+    "en": "4",
+    "others": {
+      "note": {
+        "en": "Safer reading for '4', commonly used in general counting.",
+        "id": "Pembacaan yang lebih aman untuk '4', umum digunakan dalam penghitungan sehari-hari."
+      },
+      "kanji": "四"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "いち",
+    "id": "1",
+    "en": "1",
+    "others": {
+      "kanji": "一"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ひゃくまん",
+    "id": "1.000.000",
+    "en": "1,000,000",
+    "others": {
+      "kanji": "百万"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "きゅうせん",
+    "id": "9.000",
+    "en": "9,000",
+    "others": {
+      "kanji": "九千"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "いちまん",
+    "id": "10.000",
+    "en": "10,000",
+    "others": {
+      "kanji": "一万"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "さんぜん",
+    "id": "3.000",
+    "en": "3,000",
+    "others": {
+      "kanji": "三千"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ろくせん",
+    "id": "6.000",
+    "en": "6,000",
+    "others": {
+      "kanji": "六千"
     }
   },
   {

@@ -120,11 +120,11 @@
     ]
   },
   {
-    "key": "あれ は さとう さん の かばん です",
+    "key": "あれ は さとうさん の かばん です",
     "questions": [
       {
         "data": {
-          "answer": "あれ は さとう さん の かばん です",
+          "answer": "あれ は さとうさん の かばん です",
           "options": [
             "あれ",
             "は",
@@ -141,13 +141,13 @@
             "en": [
               { "key": "あれ", "value": "That" },
               { "key": "は", "value": "is" },
-              { "key": "さとう さん の かばん", "value": "Ms. Sato's bag" },
+              { "key": "さとうさん の かばん", "value": "Ms. Sato's bag" },
               { "key": "です", "value": "" }
             ],
             "id": [
               { "key": "あれ", "value": "Itu" },
               { "key": "は", "value": "adalah" },
-              { "key": "さとう さん の かばん", "value": "tas Bu Sato" },
+              { "key": "さとうさん の かばん", "value": "tas Bu Sato" },
               { "key": "です", "value": "" }
             ]
           }
@@ -186,8 +186,8 @@
             { "value": "あれ", "key": "あれ" },
             { "value": "は", "key": "は" },
             {
-              "value": "さとう さん の かばん",
-              "key": "さとう さん の かばん"
+              "value": "さとうさん の かばん",
+              "key": "さとうさん の かばん"
             },
             { "value": "です", "key": "です" }
           ]
@@ -196,7 +196,7 @@
       },
       {
         "data": {
-          "answer": "あれ は さとう さん の かばん です",
+          "answer": "あれ は さとうさん の かばん です",
           "options": [
             "あれ",
             "は",
@@ -209,24 +209,24 @@
             "それ",
             "わたし"
           ],
-          "question": "あれ は さとう さん の かばん です"
+          "question": "あれ は さとうさん の かばん です"
         },
         "type": "SORT_THE_SYMBOLS_FROM_SOUND"
       },
       {
         "data": {
-          "answer": "あれ は さとう さん の かばん です",
+          "answer": "あれ は さとうさん の かばん です",
           "question": {
             "en": [
               { "key": "あれ", "value": "That" },
               { "key": "は", "value": "is" },
-              { "key": "さとう さん の かばん", "value": "Ms. Sato's bag" },
+              { "key": "さとうさん の かばん", "value": "Ms. Sato's bag" },
               { "key": "です", "value": "" }
             ],
             "id": [
               { "key": "あれ", "value": "Itu" },
               { "key": "は", "value": "adalah" },
-              { "key": "さとう さん の かばん", "value": "tas Bu Sato" },
+              { "key": "さとうさん の かばん", "value": "tas Bu Sato" },
               { "key": "です", "value": "" }
             ]
           }
@@ -235,8 +235,8 @@
       },
       {
         "data": {
-          "answer": "あれ は さとう さん の かばん です",
-          "question": "あれ は さとう さん の かばん です"
+          "answer": "あれ は さとうさん の かばん です",
+          "question": "あれ は さとうさん の かばん です"
         },
         "type": "WRITE_THE_SYMBOL_FROM_SOUND"
       }

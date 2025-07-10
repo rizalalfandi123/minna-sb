@@ -124,8 +124,8 @@ app.post("/generate-vocab-question-from-word-block", async (c) => {
             id: word.id,
           },
           options: {
-            en: words.map((item) => item.word.en),
-            id: words.map((item) => item.word.id),
+            en: Array.from(new Set(words.map((item) => item.word.en))),
+            id: Array.from(new Set(words.map((item) => item.word.id))),
           },
           question: [
             {
@@ -151,8 +151,8 @@ app.post("/generate-vocab-question-from-word-block", async (c) => {
             id: word.id,
           },
           options: {
-            en: words.map((item) => item.word.en),
-            id: words.map((item) => item.word.id),
+            en: Array.from(new Set(words.map((item) => item.word.en))),
+            id: Array.from(new Set(words.map((item) => item.word.id))),
           },
           question: [
             {
@@ -178,8 +178,8 @@ app.post("/generate-vocab-question-from-word-block", async (c) => {
             id: word.id,
           },
           options: {
-            en: words.map((item) => item.word.en),
-            id: words.map((item) => item.word.id),
+            en: Array.from(new Set(words.map((item) => item.word.en))),
+            id: Array.from(new Set(words.map((item) => item.word.id))),
           },
           question: key,
         },
@@ -196,7 +196,7 @@ app.post("/generate-vocab-question-from-word-block", async (c) => {
         type: "GUESS_THE_SYMBOL_FROM_MEAN",
         data: {
           answer: key,
-          options: words.map((item) => item.word.key),
+          options: Array.from(new Set(words.map((item) => item.word.key))),
           question: {
             en: [
               {
@@ -225,7 +225,7 @@ app.post("/generate-vocab-question-from-word-block", async (c) => {
         type: "SORT_THE_SYMBOLS_FROM_MEAN",
         data: {
           answer: key,
-          options: words.map((item) => item.word.key),
+          options: Array.from(new Set(words.map((item) => item.word.key))),
           question: {
             en: [
               {
@@ -254,7 +254,7 @@ app.post("/generate-vocab-question-from-word-block", async (c) => {
         type: "SORT_THE_SYMBOLS_FROM_SOUND",
         data: {
           answer: key,
-          options: words.map((item) => item.word.key),
+          options: Array.from(new Set(words.map((item) => item.word.key))),
           question: key,
         },
       };
@@ -597,18 +597,17 @@ app.post("/create-words", async (c) => {
 
     const validBody = schema.parse(body);
 
-    const res = await Promise.all(
-      validBody.map((word) =>
-        prisma.words.create({
-          data: {
-            en: word.en,
-            id: word.id,
-            key: word.key,
-            others: word.others,
-          },
-        })
-      )
-    );
+    const data = validBody.map((word) => ({
+      en: word.en,
+      id: word.id,
+      key: word.key,
+      others: word.others,
+    }));
+
+    const res = await prisma.words.createMany({
+      data,
+      skipDuplicates: true
+    })
 
     return c.json(res);
   } catch (error) {
