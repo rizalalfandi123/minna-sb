@@ -12,7 +12,6 @@
             "の",
             "です",
             "これ",
-            "それ",
             "あなた",
             "せんせい",
             "ともだち"
@@ -38,7 +37,7 @@
         "data": {
           "answer": {
             "en": "That is mine",
-            "id": "Itu milikku"
+            "id": "Itu adalah milikku"
           },
           "options": {
             "en": [
@@ -56,8 +55,7 @@
               "adalah",
               "milikku",
               "milikmu",
-              "miliknya (laki-laki)",
-              "miliknya (perempuan)",
+              "miliknya",
               "milik guru",
               "milik teman"
             ]
@@ -65,8 +63,7 @@
           "question": [
             { "value": "あれ", "key": "あれ" },
             { "value": "は", "key": "は" },
-            { "value": "わたし", "key": "わたし" },
-            { "value": "の", "key": "の" },
+            { "value": "わたし の", "key": "わたし の" },
             { "value": "です", "key": "です" }
           ]
         },
@@ -134,7 +131,6 @@
             "の",
             "です",
             "これ",
-            "それ",
             "わたし",
             "あなた"
           ],
@@ -159,7 +155,7 @@
         "data": {
           "answer": {
             "en": "That is Ms. Sato's",
-            "id": "Itu milik Bu Sato"
+            "id": "Itu adalah milik Bu Sato"
           },
           "options": {
             "en": [
@@ -186,8 +182,7 @@
           "question": [
             { "value": "あれ", "key": "あれ" },
             { "value": "は", "key": "は" },
-            { "value": "さとうさん", "key": "さとうさん" },
-            { "value": "の", "key": "の" },
+            { "value": "さとうさん の", "key": "さとうさん の" },
             { "value": "です", "key": "です" }
           ]
         },
@@ -254,7 +249,6 @@
             "の",
             "です",
             "これ",
-            "それ",
             "わたし",
             "あなた",
             "がくせい"
@@ -280,7 +274,7 @@
         "data": {
           "answer": {
             "en": "That is the teacher's",
-            "id": "Itu milik guru"
+            "id": "Itu adalah milik guru"
           },
           "options": {
             "en": [
@@ -307,8 +301,7 @@
           "question": [
             { "value": "あれ", "key": "あれ" },
             { "value": "は", "key": "は" },
-            { "value": "せんせい", "key": "せんせい" },
-            { "value": "の", "key": "の" },
+            { "value": "せんせい の", "key": "せんせい の" },
             { "value": "です", "key": "です" }
           ]
         },
@@ -376,7 +369,6 @@
             "です",
             "か",
             "これ",
-            "それ",
             "わたし",
             "あなた"
           ],
@@ -428,8 +420,7 @@
           "question": [
             { "value": "あれ", "key": "あれ" },
             { "value": "は", "key": "は" },
-            { "value": "だれ", "key": "だれ" },
-            { "value": "の", "key": "の" },
+            { "value": "だれ の", "key": "だれ の" },
             { "value": "です", "key": "です" },
             { "value": "か", "key": "か" }
           ]

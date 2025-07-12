@@ -1,0 +1,417 @@
+[
+  {
+    "key": "わたし は まいあさ ６じ に おきます",
+    "questions": [
+      {
+        "data": {
+          "answer": "わたし は まいあさ ６じ に おきます",
+          "options": [
+            "わたし",
+            "は",
+            "まいあさ",
+            "６じ",
+            "に",
+            "おきます",
+            "７じ",
+            "ごぜん",
+            "ごご",
+            "おそく"
+          ],
+          "question": {
+            "en": [
+              { "key": "わたし", "value": "I" },
+              { "key": "は", "value": "" },
+              { "key": "おきます", "value": "wake up" },
+              { "key": "に[particle]", "value": "at" },
+              { "key": "６じ", "value": "6:00" },
+              { "key": "まいあさ", "value": "every morning" }
+            ],
+            "id": [
+              { "key": "まいあさ", "value": "Setiap pagi" },
+              { "key": "わたし", "value": "saya" },
+              { "key": "は", "value": "" },
+              { "key": "おきます", "value": "bangun" },
+              { "key": "に[particle]", "value": "pada" },
+              { "key": "６じ", "value": "jam 6" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "I wake up at 6:00 every morning",
+            "id": "Setiap pagi saya bangun pada jam 6"
+          },
+          "options": {
+            "en": [
+              "I",
+              "wake up",
+              "at 6:00",
+              "every morning",
+              "at 7:00",
+              "early",
+              "late",
+              "AM",
+              "PM"
+            ],
+            "id": [
+              "saya",
+              "bangun",
+              "pada jam 6",
+              "Setiap pagi",
+              "pada jam 7",
+              "pagi",
+              "sore",
+              "awal",
+              "terlambat"
+            ]
+          },
+          "question": [
+            { "value": "わたし", "key": "わたし" },
+            { "value": "は", "key": "は" },
+            { "value": "まいあさ", "key": "まいあさ" },
+            { "value": "６じ", "key": "６じ" },
+            { "value": "に", "key": "に[particle]" },
+            { "value": "おきます", "key": "おきます" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "わたし は まいあさ ６じ に おきます",
+          "options": [
+            "わたし",
+            "は",
+            "まいあさ",
+            "６じ",
+            "に",
+            "おきます",
+            "７じ",
+            "ごぜん",
+            "ごご",
+            "おそく"
+          ],
+          "question": "わたし は まいあさ ６じ に おきます"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "わたし は まいあさ ６じ に おきます",
+          "question": {
+            "en": [
+              { "key": "わたし", "value": "I" },
+              { "key": "は", "value": "" },
+              { "key": "おきます", "value": "wake up" },
+              { "key": "に[particle]", "value": "at" },
+              { "key": "６じ", "value": "6:00" },
+              { "key": "まいあさ", "value": "every morning" }
+            ],
+            "id": [
+              { "key": "まいあさ", "value": "Setiap pagi" },
+              { "key": "わたし", "value": "saya" },
+              { "key": "は", "value": "" },
+              { "key": "おきます", "value": "bangun" },
+              { "key": "に[particle]", "value": "pada" },
+              { "key": "６じ", "value": "jam 6" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "わたし は まいあさ ６じ に おきます",
+          "question": "わたし は まいあさ ６じ に おきます"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "わたし は まいあさ ７じはん に おきます",
+    "questions": [
+      {
+        "data": {
+          "answer": "わたし は まいあさ ７じはん に おきます",
+          "options": [
+            "わたし",
+            "は",
+            "まいあさ",
+            "７じはん",
+            "に",
+            "おきます",
+            "６じ",
+            "８じ",
+            "１５ふん",
+            "ごぜん",
+            "おそく"
+          ],
+          "question": {
+            "en": [
+              { "key": "わたし", "value": "I" },
+              { "key": "は", "value": "" },
+              { "key": "おきます", "value": "wake up" },
+              { "key": "に[particle]", "value": "at" },
+              { "key": "７じはん", "value": "7:30" },
+              { "key": "まいあさ", "value": "every morning" }
+            ],
+            "id": [
+              { "key": "まいあさ", "value": "Setiap pagi" },
+              { "key": "わたし", "value": "saya" },
+              { "key": "は", "value": "" },
+              { "key": "おきます", "value": "bangun" },
+              { "key": "に[particle]", "value": "pada" },
+              { "key": "７じはん", "value": "jam 7 lewat 30" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "I wake up at 7:30 every morning",
+            "id": "Setiap pagi saya bangun pada jam 7 lewat 30"
+          },
+          "options": {
+            "en": [
+              "I",
+              "wake up",
+              "at 7:30",
+              "every morning",
+              "at 6:00",
+              "at 8:00",
+              "15 minutes",
+              "early",
+              "late"
+            ],
+            "id": [
+              "saya",
+              "bangun",
+              "pada jam 7 lewat 30",
+              "Setiap pagi",
+              "pada jam 6",
+              "pada jam 8",
+              "15 menit",
+              "awal",
+              "terlambat"
+            ]
+          },
+          "question": [
+            { "value": "わたし", "key": "わたし" },
+            { "value": "は", "key": "は" },
+            { "value": "まいあさ", "key": "まいあさ" },
+            { "value": "７じはん", "key": "７じはん" },
+            { "value": "に", "key": "に[particle]" },
+            { "value": "おきます", "key": "おきます" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "わたし は まいあさ ７じはん に おきます",
+          "options": [
+            "わたし",
+            "は",
+            "まいあさ",
+            "７じはん",
+            "に",
+            "おきます",
+            "６じ",
+            "８じ",
+            "１５ふん",
+            "ごぜん",
+            "おそく"
+          ],
+          "question": "わたし は まいあさ ７じはん に おきます"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "わたし は まいあさ ７じはん に おきます",
+          "question": {
+            "en": [
+              { "key": "わたし", "value": "I" },
+              { "key": "は", "value": "" },
+              { "key": "おきます", "value": "wake up" },
+              { "key": "に[particle]", "value": "at" },
+              { "key": "７じはん", "value": "7:30" },
+              { "key": "まいあさ", "value": "every morning" }
+            ],
+            "id": [
+              { "key": "まいあさ", "value": "Setiap pagi" },
+              { "key": "わたし", "value": "saya" },
+              { "key": "は", "value": "" },
+              { "key": "おきます", "value": "bangun" },
+              { "key": "に[particle]", "value": "pada" },
+              { "key": "７じはん", "value": "jam 7 lewat 30" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "わたし は まいあさ ７じはん に おきます",
+          "question": "わたし は まいあさ ７じはん に おきます"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "あなた は まいあさ なんじ に おきます か",
+    "questions": [
+      {
+        "data": {
+          "answer": "あなた は まいあさ なんじ に おきます か",
+          "options": [
+            "あなた",
+            "は",
+            "まいあさ",
+            "なんじ",
+            "に",
+            "おきます",
+            "か",
+            "６じ",
+            "７じ",
+            "７じはん",
+            "８じ",
+            "１５ふん",
+            "ごぜん",
+            "おそく"
+          ],
+          "question": {
+            "en": [
+              { "key": "なんじ に", "value": "What time" },
+              { "key": "に[particle]", "value": "" },
+              { "key": "は", "value": "" },
+              { "key": "か", "value": "do you" },
+              { "key": "おきます", "value": "wake up" },
+              { "key": "あなた", "value": "" },
+              { "key": "まいあさ", "value": "every morning" }
+            ],
+            "id": [
+              { "key": "まいあさ", "value": "Setiap pagi" },
+              { "key": "あなた", "value": "Anda" },
+              { "key": "は", "value": "" },
+              { "key": "おきます", "value": "bangun" },
+              { "key": "に[particle]", "value": "pada" },
+              { "key": "なんじ", "value": "jam" },
+              { "key": "か", "value": "berapa" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "What time do you wake up every morning",
+            "id": "Setiap pagi Anda bangun pada jam berapa"
+          },
+          "options": {
+            "en": [
+              "What time",
+              "do you",
+              "wake up",
+              "every morning",
+              "6:00",
+              "7:00",
+              "7:30",
+              "8:00",
+              "15 minutes",
+              "early",
+              "late"
+            ],
+            "id": [
+              "pada jam berapa",
+              "Anda",
+              "bangun",
+              "Setiap pagi",
+              "jam 6",
+              "jam 7",
+              "jam 7 lewat 30",
+              "jam 8",
+              "15 menit",
+              "awal",
+              "terlambat"
+            ]
+          },
+          "question": [
+            { "value": "あなた", "key": "あなた" },
+            { "value": "は", "key": "は" },
+            { "value": "まいあさ", "key": "まいあさ" },
+            { "value": "なんじ", "key": "なんじ" },
+            { "value": "に", "key": "に[particle]" },
+            { "value": "おきます", "key": "おきます" },
+            { "value": "か", "key": "か" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "あなた は まいあさ なんじ に おきます か",
+          "options": [
+            "あなた",
+            "は",
+            "まいあさ",
+            "なんじ",
+            "に",
+            "おきます",
+            "か",
+            "６じ",
+            "７じ",
+            "７じはん",
+            "８じ",
+            "１５ふん",
+            "ごぜん",
+            "おそく"
+          ],
+          "question": "あなた は まいあさ なんじ に おきます か"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "あなた は まいあさ なんじ に おきます か",
+          "question": {
+            "en": [
+              { "key": "なんじ に", "value": "What time" },
+              { "key": "に[particle]", "value": "" },
+              { "key": "は", "value": "" },
+              { "key": "か", "value": "do you" },
+              { "key": "おきます", "value": "wake up" },
+              { "key": "あなた", "value": "" },
+              { "key": "まいあさ", "value": "every morning" }
+            ],
+            "id": [
+              { "key": "まいあさ", "value": "Setiap pagi" },
+              { "key": "あなた", "value": "Anda" },
+              { "key": "は", "value": "" },
+              { "key": "おきます", "value": "bangun" },
+              { "key": "に[particle]", "value": "pada" },
+              { "key": "なんじ", "value": "jam" },
+              { "key": "か", "value": "berapa" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "あなた は まいあさ なんじ に おきます か",
+          "question": "あなた は まいあさ なんじ に おきます か"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  }
+]

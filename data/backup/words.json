@@ -296,19 +296,6 @@
   },
   {
     "deleted": false,
-    "key": "アメリカじん",
-    "id": "orang Amerika",
-    "en": "American",
-    "others": {
-      "note": {
-        "en": "じん (jin) is a suffix that means 'person from' a country.",
-        "id": "じん (jin) adalah akhiran yang berarti 'orang dari' suatu negara."
-      },
-      "kanji": "-"
-    }
-  },
-  {
-    "deleted": false,
     "key": "カリナさん",
     "id": "Nona Karina",
     "en": "Ms. Karina",
@@ -317,19 +304,6 @@
         "en": "カリナ is a foreign given name 'Karina' written in katakana. さん is a polite suffix.",
         "id": "カリナ adalah nama asing 'Karina' yang ditulis dalam katakana. さん adalah akhiran sopan."
       }
-    }
-  },
-  {
-    "deleted": false,
-    "key": "イーさん",
-    "id": "Nona Lee",
-    "en": "Ms Lee",
-    "others": {
-      "note": {
-        "en": "さん (san) is a polite suffix used after a person's name. イー is a katakana rendering of 'Yi'.",
-        "id": "さん (san) adalah akhiran sopan setelah nama orang. イー adalah ejaan katakana dari 'Yi'."
-      },
-      "kanji": "-"
     }
   },
   {
@@ -411,6 +385,30 @@
     "en": "10,000,000",
     "others": {
       "kanji": "千万"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "アメリカじん",
+    "id": "orang Amerika",
+    "en": "American",
+    "others": {
+      "note": {
+        "en": "じん (jin) is a suffix that means 'person from' a country.",
+        "id": "じん (jin) adalah akhiran yang berarti 'orang dari' suatu negara."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "イーさん",
+    "id": "Nona Lee",
+    "en": "Ms Lee",
+    "others": {
+      "note": {
+        "en": "さん (san) is a polite suffix used after a person's name. イー is a katakana rendering of 'Yi'.",
+        "id": "さん (san) adalah akhiran sopan setelah nama orang. イー adalah ejaan katakana dari 'Yi'."
+      }
     }
   },
   {
@@ -1466,6 +1464,108 @@
   },
   {
     "deleted": false,
+    "key": "おきます",
+    "id": "bangun tidur",
+    "en": "wake up",
+    "others": {
+      "kanji": "起きます"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ねます",
+    "id": "tidur",
+    "en": "sleep",
+    "others": {
+      "kanji": "寝ます"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "はたらきます",
+    "id": "bekerja",
+    "en": "work",
+    "others": {
+      "kanji": "働きます"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "やすみます",
+    "id": "istirahat",
+    "en": "rest",
+    "others": {
+      "kanji": "休みます"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "べんきょうします",
+    "id": "belajar",
+    "en": "study",
+    "others": {
+      "kanji": "勉強します"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "おわります",
+    "id": "selesai",
+    "en": "finish",
+    "others": {
+      "kanji": "終わります"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "でぱーと",
+    "id": "departemen store",
+    "en": "department store",
+    "others": {
+      "note": {
+        "en": "Written in katakana as it's a loanword.",
+        "id": "Ditulis dalam katakana karena serapan."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ぎんこう",
+    "id": "bank",
+    "en": "bank",
+    "others": {
+      "kanji": "銀行"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ゆうびんきょく",
+    "id": "kantor pos",
+    "en": "post office",
+    "others": {
+      "kanji": "郵便局"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "としょかん",
+    "id": "perpustakaan",
+    "en": "library",
+    "others": {
+      "kanji": "図書館"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "びじゅつかん",
+    "id": "museum seni",
+    "en": "art museum",
+    "others": {
+      "kanji": "美術館"
+    }
+  },
+  {
+    "deleted": false,
     "key": "にほんご",
     "id": "bahasa Jepang",
     "en": "Japanese",
@@ -1513,6 +1613,91 @@
   },
   {
     "deleted": false,
+    "key": "いま",
+    "id": "sekarang",
+    "en": "now",
+    "others": {
+      "kanji": "今"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "はん",
+    "id": "setengah jam",
+    "en": "half past",
+    "others": {
+      "note": {
+        "en": "Used to indicate half past the hour, e.g. 'いちじはん' = 1:30.",
+        "id": "Digunakan untuk menunjukkan setengah jam, misalnya 'いちじはん' = jam setengah dua."
+      },
+      "kanji": "半"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "なんじ",
+    "id": "jam berapa",
+    "en": "what time",
+    "others": {
+      "kanji": "何時"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "なんぷん",
+    "id": "berapa menit",
+    "en": "how many minutes",
+    "others": {
+      "kanji": "何分"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ごぜん",
+    "id": "AM",
+    "en": "AM",
+    "others": {
+      "kanji": "午前"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ごご",
+    "id": "PM",
+    "en": "PM",
+    "others": {
+      "kanji": "午後"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "あさ",
+    "id": "pagi",
+    "en": "morning",
+    "others": {
+      "kanji": "朝"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ひる",
+    "id": "siang",
+    "en": "midday",
+    "others": {
+      "kanji": "昼"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ばん",
+    "id": "malam",
+    "en": "evening",
+    "others": {
+      "kanji": "晩"
+    }
+  },
+  {
+    "deleted": false,
     "key": "なん",
     "id": "apa",
     "en": "what",
@@ -1541,6 +1726,87 @@
         "id": "Bentuk sopan dari 'くに' (negara), sering digunakan saat menanyakan asal seseorang."
       },
       "kanji": "お国"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "おととい",
+    "id": "kemarin lusa",
+    "en": "the day before yesterday",
+    "others": {
+      "kanji": "一昨日"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "きのう",
+    "id": "kemarin",
+    "en": "yesterday",
+    "others": {
+      "kanji": "昨日"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "きょう",
+    "id": "hari ini",
+    "en": "today",
+    "others": {
+      "kanji": "今日"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "あした",
+    "id": "besok",
+    "en": "tomorrow",
+    "others": {
+      "kanji": "明日"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "あさって",
+    "id": "lusa",
+    "en": "the day after tomorrow",
+    "others": {
+      "kanji": "明後日"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "けさ",
+    "id": "pagi ini",
+    "en": "this morning",
+    "others": {
+      "kanji": "今朝"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "こんばん",
+    "id": "malam ini",
+    "en": "this evening",
+    "others": {
+      "kanji": "今晩"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "やすみ",
+    "id": "libur",
+    "en": "holiday",
+    "others": {
+      "kanji": "休み"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "ひるやすみ",
+    "id": "istirahat siang",
+    "en": "lunch break",
+    "others": {
+      "kanji": "昼休み"
     }
   },
   {
@@ -1575,6 +1841,132 @@
   },
   {
     "deleted": false,
+    "key": "しけん",
+    "id": "ujian",
+    "en": "exam",
+    "others": {
+      "kanji": "試験"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "かいぎ",
+    "id": "rapat",
+    "en": "meeting",
+    "others": {
+      "kanji": "会議"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "えいが",
+    "id": "film",
+    "en": "movie",
+    "others": {
+      "kanji": "映画"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "まいあさ",
+    "id": "setiap pagi",
+    "en": "every morning",
+    "others": {
+      "kanji": "毎朝"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "まいばん",
+    "id": "setiap malam",
+    "en": "every night",
+    "others": {
+      "kanji": "毎晩"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "まいにち",
+    "id": "setiap hari",
+    "en": "every day",
+    "others": {
+      "kanji": "毎日"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "げつようび",
+    "id": "Senin",
+    "en": "Monday",
+    "others": {
+      "kanji": "月曜日"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "かようび",
+    "id": "Selasa",
+    "en": "Tuesday",
+    "others": {
+      "kanji": "火曜日"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "すいようび",
+    "id": "Rabu",
+    "en": "Wednesday",
+    "others": {
+      "kanji": "水曜日"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "もくようび",
+    "id": "Kamis",
+    "en": "Thursday",
+    "others": {
+      "kanji": "木曜日"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "きんようび",
+    "id": "Jumat",
+    "en": "Friday",
+    "others": {
+      "kanji": "金曜日"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "どようび",
+    "id": "Sabtu",
+    "en": "Saturday",
+    "others": {
+      "kanji": "土曜日"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "にちようび",
+    "id": "Minggu",
+    "en": "Sunday",
+    "others": {
+      "kanji": "日曜日"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "なんようび",
+    "id": "hari apa",
+    "en": "what day",
+    "others": {
+      "kanji": "何曜日"
+    }
+  },
+  {
+    "deleted": false,
     "key": "くるま の ほん",
     "id": "buku mobil",
     "en": "car book",
@@ -1601,6 +1993,42 @@
   },
   {
     "deleted": false,
+    "key": "から",
+    "id": "dari",
+    "en": "from",
+    "others": {
+      "note": {
+        "en": "Used to indicate the starting point of time, place, or condition.",
+        "id": "Digunakan untuk menunjukkan titik awal waktu, tempat, atau kondisi."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "まで",
+    "id": "sampai",
+    "en": "to",
+    "others": {
+      "note": {
+        "en": "Used to indicate the end point of time or place.",
+        "id": "Digunakan untuk menunjukkan batas akhir waktu atau tempat."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "と",
+    "id": "dan",
+    "en": "and",
+    "others": {
+      "note": {
+        "en": "Used to connect nouns or indicate companionship.",
+        "id": "Digunakan untuk menghubungkan kata benda atau menunjukkan kebersamaan."
+      }
+    }
+  },
+  {
+    "deleted": false,
     "key": "コンピューター の ほん",
     "id": "buku komputer",
     "en": "computer book",
@@ -1619,6 +2047,33 @@
     "en": "shoes",
     "others": {
       "kanji": "靴"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "4じ5ふん",
+    "id": "jam 4 lewat 5 menit",
+    "en": "4:05",
+    "others": {
+      "kanji": "4時5分"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "4じ",
+    "id": "jam 4",
+    "en": "4 o'clock",
+    "others": {
+      "kanji": "4時"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "5ふん",
+    "id": "5 menit",
+    "en": "5 minutes",
+    "others": {
+      "kanji": "5分"
     }
   },
   {
@@ -1645,6 +2100,28 @@
   },
   {
     "deleted": false,
+    "key": "9じはん",
+    "id": "jam setengah 10",
+    "en": "half past 9",
+    "others": {
+      "note": {
+        "en": "Indicates 9:30.",
+        "id": "Menunjukkan pukul 9 lewat 30 menit."
+      },
+      "kanji": "9時半"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "9じ",
+    "id": "jam 9",
+    "en": "9 o'clock",
+    "others": {
+      "kanji": "9時"
+    }
+  },
+  {
+    "deleted": false,
     "key": "なん の ほん",
     "id": "buku apa",
     "en": "what book",
@@ -1667,6 +2144,64 @@
   },
   {
     "deleted": false,
+    "key": "１２じ",
+    "id": "jam 12",
+    "en": "12 o'clock",
+    "others": {
+      "kanji": "12時"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "１じ",
+    "id": "jam 1",
+    "en": "1 o'clock",
+    "others": {
+      "kanji": "1時"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "１２じはん",
+    "id": "jam setengah 1",
+    "en": "half past 12",
+    "others": {
+      "note": {
+        "en": "Indicates 12:30",
+        "id": "Menunjukkan pukul 12:30"
+      },
+      "kanji": "12時半"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "１じ１５ふん",
+    "id": "jam 1 lewat 15 menit",
+    "en": "1:15",
+    "others": {
+      "kanji": "1時15分"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "なんじ から",
+    "id": "mulai jam berapa",
+    "en": "from what time",
+    "others": {
+      "kanji": "何時から"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "なんじ まで",
+    "id": "sampai jam berapa",
+    "en": "until what time",
+    "others": {
+      "kanji": "何時まで"
+    }
+  },
+  {
+    "deleted": false,
     "key": "いくら",
     "id": "berapa",
     "en": "how much",
@@ -1674,6 +2209,18 @@
       "note": {
         "en": "Used to ask about price.",
         "id": "Digunakan untuk menanyakan harga."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "か",
+    "id": "apakah / atau",
+    "en": "question marker / or",
+    "others": {
+      "note": {
+        "en": "Used at the end of a sentence to indicate a question, or to express choice (A or B).",
+        "id": "Digunakan di akhir kalimat untuk menandai pertanyaan, atau untuk menyatakan pilihan (A か B)."
       }
     }
   },
@@ -1699,6 +2246,37 @@
   },
   {
     "deleted": false,
+    "key": "６じ に",
+    "id": "pada jam 6",
+    "en": "at 6 o'clock",
+    "others": {
+      "note": {
+        "en": "The particle に marks the time when an action happens.",
+        "id": "Partikel に menunjukkan waktu terjadinya aksi."
+      },
+      "kanji": "6時に"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "７じはん に",
+    "id": "pada jam setengah 8",
+    "en": "at half past 7",
+    "others": {
+      "kanji": "7時半に"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "なんじ に",
+    "id": "pada jam berapa",
+    "en": "at what time",
+    "others": {
+      "kanji": "何時に"
+    }
+  },
+  {
+    "deleted": false,
     "key": "ちか",
     "id": "bawah tanah",
     "en": "basement",
@@ -1721,6 +2299,24 @@
   },
   {
     "deleted": false,
+    "key": "６じ",
+    "id": "jam 6",
+    "en": "6 o'clock",
+    "others": {
+      "kanji": "6時"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "７じはん",
+    "id": "jam setengah delapan",
+    "en": "half past 7",
+    "others": {
+      "kanji": "7時半"
+    }
+  },
+  {
+    "deleted": false,
     "key": "ワイン",
     "id": "anggur",
     "en": "wine",
@@ -1737,6 +2333,18 @@
         "id": "'さん' adalah akhiran kehormatan yang digunakan setelah nama untuk menunjukkan rasa hormat."
       },
       "kanji": "佐藤さん"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "に[particle]",
+    "id": "di / pada / ke",
+    "en": "at / on / to",
+    "others": {
+      "note": {
+        "en": "A particle used to indicate time, destination, or location.",
+        "id": "Partikel yang digunakan untuk menunjukkan waktu, tempat tujuan, atau lokasi keberadaan."
+      }
     }
   },
   {
@@ -1792,11 +2400,37 @@
   },
   {
     "deleted": false,
+    "key": "８さい",
+    "id": "8 tahun",
+    "en": "8 years old",
+    "others": {
+      "note": {
+        "en": "Used to express age. Special reading: はっさい (hassai).",
+        "id": "Digunakan untuk menyatakan umur anak-anak. Bacaan khusus: はっさい (hassai)."
+      },
+      "kanji": "8歳"
+    }
+  },
+  {
+    "deleted": false,
     "key": "ひゃく",
     "id": "seratus",
     "en": "hundred",
     "others": {
       "kanji": "百"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "だれの",
+    "id": "punya siapa",
+    "en": "whose",
+    "others": {
+      "note": {
+        "en": "Used to ask about the ownership of something.",
+        "id": "Digunakan untuk menanyakan kepemilikan suatu benda."
+      },
+      "kanji": "誰の"
     }
   },
   {
@@ -1836,6 +2470,31 @@
   },
   {
     "deleted": false,
+    "key": "さとうさん の",
+    "id": "punya Bu Sato",
+    "en": "Ms. Sato's",
+    "others": {
+      "note": {
+        "en": "Indicates something belongs to Ms. Sato.",
+        "id": "Menunjukkan bahwa sesuatu dimiliki oleh Bu Sato."
+      }
+    }
+  },
+  {
+    "deleted": false,
+    "key": "せんせい の",
+    "id": "punya guru",
+    "en": "teacher's",
+    "others": {
+      "note": {
+        "en": "Indicates something belongs to the teacher.",
+        "id": "Menunjukkan bahwa sesuatu dimiliki oleh seorang guru."
+      },
+      "kanji": "先生の"
+    }
+  },
+  {
+    "deleted": false,
     "key": "うりば",
     "id": "loket penjualan",
     "en": "sales counter",
@@ -1845,6 +2504,32 @@
         "id": "Digunakan untuk menyebut tempat penjualan barang, seperti di toko besar."
       },
       "kanji": "売り場"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "この かばん",
+    "id": "tas ini",
+    "en": "this bag",
+    "others": {
+      "note": {
+        "en": "Used to refer to a bag near the speaker.",
+        "id": "Digunakan untuk menyebut tas yang dekat dengan pembicara."
+      },
+      "kanji": "この鞄"
+    }
+  },
+  {
+    "deleted": false,
+    "key": "この かぎ",
+    "id": "kunci ini",
+    "en": "this key",
+    "others": {
+      "note": {
+        "en": "Used to refer to a key near the speaker.",
+        "id": "Digunakan untuk menyebut kunci yang dekat dengan pembicara."
+      },
+      "kanji": "この鍵"
     }
   },
   {

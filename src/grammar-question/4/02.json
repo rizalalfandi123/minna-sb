@@ -1,0 +1,384 @@
+[
+  {
+    "key": "やすみ は すいようび です",
+    "questions": [
+      {
+        "data": {
+          "answer": "やすみ は すいようび です",
+          "options": [
+            "やすみ",
+            "は",
+            "すいようび",
+            "です",
+            "げつようび",
+            "かようび",
+            "もくようび",
+            "きんようび",
+            "どようび",
+            "にちようび"
+          ],
+          "question": {
+            "en": [
+              { "key": "やすみ", "value": "My day off" },
+              { "key": "は", "value": "is" },
+              { "key": "すいようび", "value": "Wednesday" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "やすみ", "value": "Hari libur saya" },
+              { "key": "は", "value": "adalah" },
+              { "key": "すいようび", "value": "Rabu" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "My day off is Wednesday",
+            "id": "Hari libur saya adalah Rabu"
+          },
+          "options": {
+            "en": [
+              "My day off",
+              "is",
+              "Wednesday",
+              "Monday",
+              "Tuesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "id": [
+              "Hari libur saya",
+              "adalah",
+              "Rabu",
+              "Senin",
+              "Selasa",
+              "Kamis",
+              "Jumat",
+              "Sabtu",
+              "Minggu"
+            ]
+          },
+          "question": [
+            { "value": "やすみ", "key": "やすみ" },
+            { "value": "は", "key": "は" },
+            { "value": "すいようび", "key": "すいようび" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "やすみ は すいようび です",
+          "options": [
+            "やすみ",
+            "は",
+            "すいようび",
+            "です",
+            "げつようび",
+            "かようび",
+            "もくようび",
+            "きんようび",
+            "どようび",
+            "にちようび"
+          ],
+          "question": "やすみ は すいようび です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "やすみ は すいようび です",
+          "question": {
+            "en": [
+              { "key": "やすみ", "value": "My day off" },
+              { "key": "は", "value": "is" },
+              { "key": "すいようび", "value": "Wednesday" },
+              { "key": "です", "value": "" }
+            ],
+            "id": [
+              { "key": "やすみ", "value": "Hari libur saya" },
+              { "key": "は", "value": "adalah" },
+              { "key": "すいようび", "value": "Rabu" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "やすみ は すいようび です",
+          "question": "やすみ は すいようび です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "やすみ は どようび と にちようび です",
+    "questions": [
+      {
+        "data": {
+          "answer": "やすみ は どようび と にちようび です",
+          "options": [
+            "やすみ",
+            "は",
+            "どようび",
+            "と",
+            "にちようび",
+            "です",
+            "げつようび",
+            "かようび",
+            "すいようび",
+            "もくようび",
+            "きんようび"
+          ],
+          "question": {
+            "en": [
+              { "key": "やすみ", "value": "My days off" },
+              { "key": "は", "value": "are" },
+              { "key": "どようび", "value": "Saturday" },
+              { "key": "と", "value": "and" },
+              { "key": "にちようび", "value": "Sunday" }
+            ],
+            "id": [
+              { "key": "やすみ", "value": "Hari libur saya" },
+              { "key": "は", "value": "adalah" },
+              { "key": "どようび", "value": "Sabtu" },
+              { "key": "と", "value": "dan" },
+              { "key": "にちようび", "value": "Minggu" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "My days off are Saturday and Sunday",
+            "id": "Hari libur saya adalah Sabtu dan Minggu"
+          },
+          "options": {
+            "en": [
+              "My days off",
+              "are",
+              "Saturday",
+              "and",
+              "Sunday",
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "id": [
+              "Hari libur saya",
+              "adalah",
+              "Sabtu",
+              "dan",
+              "Minggu",
+              "Senin",
+              "Selasa",
+              "Rabu",
+              "Kamis",
+              "Jumat"
+            ]
+          },
+          "question": [
+            { "value": "やすみ", "key": "やすみ" },
+            { "value": "は", "key": "は" },
+            { "value": "どようび", "key": "どようび" },
+            { "value": "と", "key": "と" },
+            { "value": "にちようび", "key": "にちようび" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "やすみ は どようび と にちようび です",
+          "options": [
+            "やすみ",
+            "は",
+            "どようび",
+            "と",
+            "にちようび",
+            "です",
+            "げつようび",
+            "かようび",
+            "すいようび",
+            "もくようび",
+            "きんようび"
+          ],
+          "question": "やすみ は どようび と にちようび です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "やすみ は どようび と にちようび です",
+          "question": {
+            "en": [
+              { "key": "やすみ", "value": "My days off" },
+              { "key": "は", "value": "are" },
+              { "key": "どようび", "value": "Saturday" },
+              { "key": "と", "value": "and" },
+              { "key": "にちようび", "value": "Sunday" }
+            ],
+            "id": [
+              { "key": "やすみ", "value": "Hari libur saya" },
+              { "key": "は", "value": "adalah" },
+              { "key": "どようび", "value": "Sabtu" },
+              { "key": "と", "value": "dan" },
+              { "key": "にちようび", "value": "Minggu" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "やすみ は どようび と にちようび です",
+          "question": "やすみ は どようび と にちようび です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "やすみ は なんようび ですか",
+    "questions": [
+      {
+        "data": {
+          "answer": "やすみ は なんようび ですか",
+          "options": [
+            "やすみ",
+            "は",
+            "なんようび",
+            "です",
+            "か",
+            "げつようび",
+            "かようび",
+            "すいようび",
+            "もくようび",
+            "きんようび",
+            "どようび",
+            "にちようび"
+          ],
+          "question": {
+            "en": [
+              { "key": "なんようび", "value": "What day" },
+              { "key": "は", "value": "is" },
+              { "key": "やすみ", "value": "your day off" },
+              { "key": "ですか", "value": "" }
+            ],
+            "id": [
+              { "key": "やすみ", "value": "Hari liburmu" },
+              { "key": "は", "value": "" },
+              { "key": "なんようび", "value": "hari apa" },
+              { "key": "ですか", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "What day is your day off?",
+            "id": "Hari liburmu hari apa?"
+          },
+          "options": {
+            "en": [
+              "What day",
+              "is",
+              "your day off",
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "id": [
+              "hari apa",
+              "Hari liburmu",
+              "libur",
+              "Senin",
+              "Selasa",
+              "Rabu",
+              "Kamis",
+              "Jumat",
+              "Sabtu",
+              "Minggu"
+            ]
+          },
+          "question": [
+            { "value": "やすみ", "key": "やすみ" },
+            { "value": "は", "key": "は" },
+            { "value": "なんようび", "key": "なんようび" },
+            { "value": "ですか", "key": "ですか" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "やすみ は なんようび ですか",
+          "options": [
+            "やすみ",
+            "は",
+            "なんようび",
+            "です",
+            "か",
+            "げつようび",
+            "かようび",
+            "すいようび",
+            "もくようび",
+            "きんようび",
+            "どようび",
+            "にちようび"
+          ],
+          "question": "やすみ は なんようび ですか"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "やすみ は なんようび ですか",
+          "question": {
+            "en": [
+              { "key": "なんようび", "value": "What day" },
+              { "key": "は", "value": "is" },
+              { "key": "やすみ", "value": "your day off" },
+              { "key": "ですか", "value": "" }
+            ],
+            "id": [
+              { "key": "やすみ", "value": "Hari liburmu" },
+              { "key": "は", "value": "" },
+              { "key": "なんようび", "value": "hari apa" },
+              { "key": "ですか", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "やすみ は なんようび ですか",
+          "question": "やすみ は なんようび ですか"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  }
+]

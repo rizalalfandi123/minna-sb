@@ -48,7 +48,7 @@ const level4VocabBlocks: Array<{
   },
   {
     type: "vocabulary",
-    block: ["せん", "にせん", "さんぜん", "よんせん", "ごせん"],
+    block: ["にせん", "さんぜん", "よんせん", "ごせん"],
   },
   {
     type: "vocabulary",

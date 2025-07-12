@@ -38,7 +38,7 @@
         "data": {
           "answer": {
             "en": "This notebook is mine",
-            "id": "Buku catatan ini milikku"
+            "id": "Buku catatan ini adalah milikku"
           },
           "options": {
             "en": [
@@ -66,8 +66,7 @@
             { "value": "この", "key": "この" },
             { "value": "てちょう", "key": "てちょう" },
             { "value": "は", "key": "は" },
-            { "value": "わたし", "key": "わたし" },
-            { "value": "の", "key": "の" },
+            { "value": "わたし の", "key": "わたし の" },
             { "value": "です", "key": "です" }
           ]
         },
@@ -160,7 +159,7 @@
         "data": {
           "answer": {
             "en": "This key is mine",
-            "id": "Kunci ini milikku"
+            "id": "Kunci ini adalah milikku"
           },
           "options": {
             "en": [
@@ -188,8 +187,7 @@
             { "value": "この", "key": "この" },
             { "value": "かぎ", "key": "かぎ" },
             { "value": "は", "key": "は" },
-            { "value": "わたし", "key": "わたし" },
-            { "value": "の", "key": "の" },
+            { "value": "わたし の", "key": "わたし の" },
             { "value": "です", "key": "です" }
           ]
         },
@@ -282,7 +280,7 @@
         "data": {
           "answer": {
             "en": "This bag is mine",
-            "id": "Tas ini milikku"
+            "id": "Tas ini adalah milikku"
           },
           "options": {
             "en": [
@@ -310,8 +308,7 @@
             { "value": "この", "key": "この" },
             { "value": "かばん", "key": "かばん" },
             { "value": "は", "key": "は" },
-            { "value": "わたし", "key": "わたし" },
-            { "value": "の", "key": "の" },
+            { "value": "わたし の", "key": "わたし の" },
             { "value": "です", "key": "です" }
           ]
         },

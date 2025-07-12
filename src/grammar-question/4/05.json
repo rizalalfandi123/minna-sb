@@ -1,0 +1,272 @@
+[
+  {
+    "key": "わたし は ９じ から ５じ まで はたらきます",
+    "questions": [
+      {
+        "data": {
+          "answer": "わたし は ９じ から ５じ まで はたらきます",
+          "options": [
+            "わたし",
+            "は",
+            "９じ",
+            "から",
+            "５じ",
+            "まで",
+            "はたらきます",
+            "８じ",
+            "６じ",
+            "はん",
+            "１５ふん",
+            "ごぜん",
+            "ごご"
+          ],
+          "question": {
+            "en": [
+              { "key": "わたし", "value": "I" },
+              { "key": "は", "value": "" },
+              { "key": "はたらきます", "value": "work" },
+              { "key": "９じ から", "value": "from 9:00" },
+              { "key": "５じ まで", "value": "to 5:00" }
+            ],
+            "id": [
+              { "key": "わたし", "value": "Saya" },
+              { "key": "は", "value": "" },
+              { "key": "はたらきます", "value": "bekerja" },
+              { "key": "９じ から", "value": "dari jam 9" },
+              { "key": "５じ まで", "value": "sampai jam 5" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "I work from 9:00 to 5:00",
+            "id": "Saya bekerja dari jam 9 sampai jam 5"
+          },
+          "options": {
+            "en": [
+              "I",
+              "work",
+              "from 9:00",
+              "to 5:00",
+              "from 8:00",
+              "to 6:00",
+              "half",
+              "15 minutes",
+              "AM",
+              "PM"
+            ],
+            "id": [
+              "Saya",
+              "bekerja",
+              "dari jam 9",
+              "sampai jam 5",
+              "dari jam 8",
+              "sampai jam 6",
+              "setengah",
+              "15 menit",
+              "pagi",
+              "sore"
+            ]
+          },
+          "question": [
+            { "value": "わたし", "key": "わたし" },
+            { "value": "は", "key": "は" },
+            { "value": "９じ", "key": "９じ" },
+            { "value": "から", "key": "から" },
+            { "value": "５じ", "key": "５じ" },
+            { "value": "まで", "key": "まで" },
+            { "value": "はたらきます", "key": "はたらきます" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "わたし は ９じ から ５じ まで はたらきます",
+          "options": [
+            "わたし",
+            "は",
+            "９じ",
+            "から",
+            "５じ",
+            "まで",
+            "はたらきます",
+            "８じ",
+            "６じ",
+            "はん",
+            "１５ふん",
+            "ごぜん",
+            "ごご"
+          ],
+          "question": "わたし は ９じ から ５じ まで はたらきます"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "わたし は ９じ から ５じ まで はたらきます",
+          "question": {
+            "en": [
+              { "key": "わたし", "value": "I" },
+              { "key": "は", "value": "" },
+              { "key": "はたらきます", "value": "work" },
+              { "key": "９じ から", "value": "from 9:00" },
+              { "key": "５じ まで", "value": "to 5:00" }
+            ],
+            "id": [
+              { "key": "わたし", "value": "Saya" },
+              { "key": "は", "value": "" },
+              { "key": "はたらきます", "value": "bekerja" },
+              { "key": "９じ から", "value": "dari jam 9" },
+              { "key": "５じ まで", "value": "sampai jam 5" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "わたし は ９じ から ５じ まで はたらきます",
+          "question": "わたし は ９じ から ５じ まで はたらきます"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "わたし は げつようび から きんようび まで はたらきます",
+    "questions": [
+      {
+        "data": {
+          "answer": "わたし は げつようび から きんようび まで はたらきます",
+          "options": [
+            "わたし",
+            "は",
+            "げつようび",
+            "から",
+            "きんようび",
+            "まで",
+            "はたらきます",
+            "どようび",
+            "にちようび",
+            "かようび",
+            "すいようび",
+            "もくようび"
+          ],
+          "question": {
+            "en": [
+              { "key": "わたし", "value": "I" },
+              { "key": "は", "value": "" },
+              { "key": "はたらきます", "value": "work" },
+              { "key": "げつようび から", "value": "from Monday" },
+              { "key": "きんようび まで", "value": "to Friday" }
+            ],
+            "id": [
+              { "key": "わたし", "value": "Saya" },
+              { "key": "は", "value": "" },
+              { "key": "はたらきます", "value": "bekerja" },
+              { "key": "げつようび から", "value": "dari Senin" },
+              { "key": "きんようび まで", "value": "sampai Jumat" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "I work from Monday to Friday",
+            "id": "Saya bekerja dari Senin sampai Jumat"
+          },
+          "options": {
+            "en": [
+              "I",
+              "work",
+              "from Monday",
+              "to Friday",
+              "Saturday",
+              "Sunday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday"
+            ],
+            "id": [
+              "Saya",
+              "bekerja",
+              "dari Senin",
+              "sampai Jumat",
+              "Sabtu",
+              "Minggu",
+              "Selasa",
+              "Rabu",
+              "Kamis"
+            ]
+          },
+          "question": [
+            { "value": "わたし", "key": "わたし" },
+            { "value": "は", "key": "は" },
+            { "value": "げつようび", "key": "げつようび" },
+            { "value": "から", "key": "から" },
+            { "value": "きんようび", "key": "きんようび" },
+            { "value": "まで", "key": "まで" },
+            { "value": "はたらきます", "key": "はたらきます" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "わたし は げつようび から きんようび まで はたらきます",
+          "options": [
+            "わたし",
+            "は",
+            "げつようび",
+            "から",
+            "きんようび",
+            "まで",
+            "はたらきます",
+            "どようび",
+            "にちようび",
+            "かようび",
+            "すいようび",
+            "もくようび"
+          ],
+          "question": "わたし は げつようび から きんようび まで はたらきます"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "わたし は げつようび から きんようび まで はたらきます",
+          "question": {
+            "en": [
+              { "key": "わたし", "value": "I" },
+              { "key": "は", "value": "" },
+              { "key": "はたらきます", "value": "work" },
+              { "key": "げつようび から", "value": "from Monday" },
+              { "key": "きんようび まで", "value": "to Friday" }
+            ],
+            "id": [
+              { "key": "わたし", "value": "Saya" },
+              { "key": "は", "value": "" },
+              { "key": "はたらきます", "value": "bekerja" },
+              { "key": "げつようび から", "value": "dari Senin" },
+              { "key": "きんようび まで", "value": "sampai Jumat" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "わたし は げつようび から きんようび まで はたらきます",
+          "question": "わたし は げつようび から きんようび まで はたらきます"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  }
+]

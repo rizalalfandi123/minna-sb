@@ -1,0 +1,354 @@
+[
+  {
+    "key": "いま 4じ5ふん です",
+    "questions": [
+      {
+        "data": {
+          "answer": "いま 4じ5ふん です",
+          "options": [
+            "いま",
+            "4じ",
+            "5ふん",
+            "です",
+            "3じ",
+            "6ふん",
+            "7じ",
+            "10ふん",
+            "ごぜん",
+            "ごご"
+          ],
+          "question": {
+            "en": [
+              { "key": "です", "value": "It's" },
+              { "key": "4じ5ふん", "value": "4:05" },
+              { "key": "いま", "value": "now" }
+            ],
+            "id": [
+              { "key": "いま", "value": "Sekarang" },
+              { "key": "4じ5ふん", "value": "jam 4 lewat 5 menit" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "It's 4:05 now",
+            "id": "Sekarang jam 4 lewat 5 menit"
+          },
+          "options": {
+            "en": [
+              "It's",
+              "4:05",
+              "now",
+              "3:00",
+              "4:10",
+              "5:05",
+              "6:30",
+              "AM",
+              "PM"
+            ],
+            "id": [
+              "Sekarang",
+              "jam 4 lewat 5 menit",
+              "jam 3",
+              "jam 5 lewat 5",
+              "jam 6.30",
+              "pagi",
+              "sore"
+            ]
+          },
+          "question": [
+            { "value": "いま", "key": "いま" },
+            { "value": "4じ", "key": "4じ" },
+            { "value": "5ふん", "key": "5ふん" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "いま 4じ5ふん です",
+          "options": [
+            "いま",
+            "4じ",
+            "5ふん",
+            "です",
+            "3じ",
+            "6ふん",
+            "7じ",
+            "10ふん",
+            "ごぜん",
+            "ごご"
+          ],
+          "question": "いま 4じ5ふん です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "いま 4じ5ふん です",
+          "question": {
+            "en": [
+              { "key": "です", "value": "It's" },
+              { "key": "4じ5ふん", "value": "4:05" },
+              { "key": "いま", "value": "now" }
+            ],
+            "id": [
+              { "key": "いま", "value": "Sekarang" },
+              { "key": "4じ5ふん", "value": "jam 4 lewat 5 menit" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "いま 4じ5ふん です",
+          "question": "いま 4じ5ふん です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "いま 9じはん です",
+    "questions": [
+      {
+        "data": {
+          "answer": "いま 9じはん です",
+          "options": [
+            "いま",
+            "9じ",
+            "はん",
+            "です",
+            "8じ",
+            "10じ",
+            "15ふん",
+            "ごぜん",
+            "ごご",
+            "12じ"
+          ],
+          "question": {
+            "en": [
+              { "key": "です", "value": "It's" },
+              { "key": "9じはん", "value": "9:30" },
+              { "key": "いま", "value": "now" }
+            ],
+            "id": [
+              { "key": "いま", "value": "Sekarang" },
+              { "key": "9じはん", "value": "jam 9 lewat 30" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "It's 9:30 now",
+            "id": "Sekarang jam 9 lewat 30"
+          },
+          "options": {
+            "en": [
+              "It's",
+              "9:30",
+              "now",
+              "8:00",
+              "9:15",
+              "10:30",
+              "11:45",
+              "AM",
+              "PM",
+              "noon"
+            ],
+            "id": [
+              "Sekarang",
+              "jam 9 lewat 30",
+              "jam 8",
+              "jam 10 lewat 30",
+              "jam 11 lewat 45",
+              "pagi",
+              "sore",
+              "siang"
+            ]
+          },
+          "question": [
+            { "value": "いま", "key": "いま" },
+            { "value": "9じ", "key": "9じ" },
+            { "value": "はん", "key": "はん" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "いま 9じはん です",
+          "options": [
+            "いま",
+            "9じ",
+            "はん",
+            "です",
+            "8じ",
+            "10じ",
+            "15ふん",
+            "ごぜん",
+            "ごご",
+            "12じ"
+          ],
+          "question": "いま 9じはん です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "いま 9じはん です",
+          "question": {
+            "en": [
+              { "key": "です", "value": "It's" },
+              { "key": "9じはん", "value": "9:30" },
+              { "key": "いま", "value": "now" }
+            ],
+            "id": [
+              { "key": "いま", "value": "Sekarang" },
+              { "key": "9じはん", "value": "jam 9 lewat 30" },
+              { "key": "です", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "いま 9じはん です",
+          "question": "いま 9じはん です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "いま なんじ ですか",
+    "questions": [
+      {
+        "data": {
+          "answer": "いま なんじ ですか",
+          "options": [
+            "いま",
+            "なんじ",
+            "です",
+            "か",
+            "なんぷん",
+            "ごぜん",
+            "ごご",
+            "はん",
+            "よじ",
+            "じゅうじ"
+          ],
+          "question": {
+            "en": [
+              { "key": "なんじ", "value": "What time" },
+              { "key": "ですか", "value": "is it" },
+              { "key": "いま", "value": "now" }
+            ],
+            "id": [
+              { "key": "いま", "value": "Sekarang" },
+              { "key": "なんじ", "value": "jam berapa" },
+              { "key": "ですか", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "What time is it now",
+            "id": "Sekarang jam berapa"
+          },
+          "options": {
+            "en": [
+              "What time",
+              "is it",
+              "now",
+              "1:00",
+              "3:30",
+              "5:15",
+              "7:45",
+              "AM",
+              "PM",
+              "noon"
+            ],
+            "id": [
+              "Jam berapa",
+              "sekarang",
+              "jam 1",
+              "jam 3 lewat 30",
+              "jam 5 lewat 15",
+              "jam 7 lewat 45",
+              "pagi",
+              "sore",
+              "siang"
+            ]
+          },
+          "question": [
+            { "value": "いま", "key": "いま" },
+            { "value": "なんじ", "key": "なんじ" },
+            { "value": "ですか", "key": "ですか" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "いま なんじ ですか",
+          "options": [
+            "いま",
+            "なんじ",
+            "です",
+            "か",
+            "なんぷん",
+            "ごぜん",
+            "ごご",
+            "はん",
+            "よじ",
+            "じゅうじ"
+          ],
+          "question": "いま なんじ ですか"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "いま なんじ ですか",
+          "question": {
+            "en": [
+              { "key": "なんじ", "value": "What time" },
+              { "key": "ですか", "value": "is it" },
+              { "key": "いま", "value": "now" }
+            ],
+            "id": [
+              { "key": "いま", "value": "Sekarang" },
+              { "key": "なんじ", "value": "jam berapa" },
+              { "key": "ですか", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "いま なんじ ですか",
+          "question": "いま なんじ ですか"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  }
+]

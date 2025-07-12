@@ -1,0 +1,431 @@
+[
+  {
+    "key": "ひるやすみ は １２じ から １じ まで です",
+    "questions": [
+      {
+        "data": {
+          "answer": "ひるやすみ は １２じ から １じ まで です",
+          "options": [
+            "ひるやすみ",
+            "は",
+            "１２じ",
+            "から",
+            "１じ",
+            "まで",
+            "です",
+            "１１じ",
+            "２じ",
+            "３０ふん",
+            "ごぜん",
+            "ごご"
+          ],
+          "question": {
+            "en": [
+              { "key": "ひるやすみ", "value": "Lunch break" },
+              { "key": "は", "value": "is" },
+              { "key": "１２じ", "value": "from 12:00" },
+              { "key": "から", "value": "" },
+              { "key": "１じ", "value": "to 1:00" },
+              { "key": "まで", "value": "" }
+            ],
+            "id": [
+              { "key": "ひるやすみ", "value": "Istirahat siang" },
+              { "key": "は", "value": "" },
+              { "key": "１２じ", "value": "dari jam 12" },
+              { "key": "から", "value": "" },
+              { "key": "１じ", "value": "sampai jam 1" },
+              { "key": "まで", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "Lunch break is from 12:00 to 1:00",
+            "id": "Istirahat siang dari jam 12 sampai jam 1"
+          },
+          "options": {
+            "en": [
+              "Lunch break",
+              "is",
+              "from",
+              "12:00",
+              "to",
+              "1:00",
+              "11:00",
+              "2:00",
+              "30 minutes",
+              "AM",
+              "PM"
+            ],
+            "id": [
+              "Istirahat siang",
+              "adalah",
+              "dari",
+              "jam 12",
+              "sampai",
+              "jam 1",
+              "jam 11",
+              "jam 2",
+              "30 menit",
+              "pagi",
+              "sore"
+            ]
+          },
+          "question": [
+            { "value": "ひるやすみ", "key": "ひるやすみ" },
+            { "value": "は", "key": "は" },
+            { "value": "１２じ", "key": "１２じ" },
+            { "value": "から", "key": "から" },
+            { "value": "１じ", "key": "１じ" },
+            { "value": "まで", "key": "まで" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "ひるやすみ は １２じ から １じ まで です",
+          "options": [
+            "ひるやすみ",
+            "は",
+            "１２じ",
+            "から",
+            "１じ",
+            "まで",
+            "です",
+            "１１じ",
+            "２じ",
+            "３０ふん",
+            "ごぜん",
+            "ごご"
+          ],
+          "question": "ひるやすみ は １２じ から １じ まで です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "ひるやすみ は １２じ から １じ まで です",
+          "question": {
+            "en": [
+              { "key": "ひるやすみ", "value": "Lunch break" },
+              { "key": "は", "value": "is" },
+              { "key": "１２じ", "value": "from 12:00" },
+              { "key": "から", "value": "" },
+              { "key": "１じ", "value": "to 1:00" },
+              { "key": "まで", "value": "" }
+            ],
+            "id": [
+              { "key": "ひるやすみ", "value": "Istirahat siang" },
+              { "key": "は", "value": "" },
+              { "key": "１２じ", "value": "dari jam 12" },
+              { "key": "から", "value": "" },
+              { "key": "１じ", "value": "sampai jam 1" },
+              { "key": "まで", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "ひるやすみ は １２じ から １じ まで です",
+          "question": "ひるやすみ は １２じ から １じ まで です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "ひるやすみ は １２じはん から １じ１５ふん まで です",
+    "questions": [
+      {
+        "data": {
+          "answer": "ひるやすみ は １２じはん から １じ１５ふん まで です",
+          "options": [
+            "ひるやすみ",
+            "は",
+            "１２じはん",
+            "から",
+            "１じ１５ふん",
+            "まで",
+            "です",
+            "１２じ",
+            "１じ",
+            "１じはん",
+            "１５ふん",
+            "３０ふん",
+            "ごぜん",
+            "ごご"
+          ],
+          "question": {
+            "en": [
+              { "key": "ひるやすみ", "value": "Lunch break" },
+              { "key": "は", "value": "is" },
+              { "key": "１２じはん", "value": "from 12:30" },
+              { "key": "から", "value": "" },
+              { "key": "１じ１５ふん", "value": "to 1:15" },
+              { "key": "まで", "value": "" }
+            ],
+            "id": [
+              { "key": "ひるやすみ", "value": "Istirahat siang" },
+              { "key": "は", "value": "" },
+              { "key": "１２じはん", "value": "dari jam 12 lewat 30" },
+              { "key": "から", "value": "" },
+              { "key": "１じ１５ふん", "value": "sampai jam 1 lewat 15" },
+              { "key": "まで", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "Lunch break is from 12:30 to 1:15",
+            "id": "Istirahat siang dari jam 12 lewat 30 sampai jam 1 lewat 15"
+          },
+          "options": {
+            "en": [
+              "Lunch break",
+              "is",
+              "from",
+              "12:30",
+              "to",
+              "1:15",
+              "12:00",
+              "1:00",
+              "1:30",
+              "15 minutes",
+              "30 minutes",
+              "AM",
+              "PM"
+            ],
+            "id": [
+              "Istirahat siang",
+              "adalah",
+              "dari",
+              "jam 12 lewat 30",
+              "sampai",
+              "jam 1 lewat 15",
+              "jam 12",
+              "jam 1",
+              "jam 1 lewat 30",
+              "15 menit",
+              "30 menit",
+              "pagi",
+              "sore"
+            ]
+          },
+          "question": [
+            { "value": "ひるやすみ", "key": "ひるやすみ" },
+            { "value": "は", "key": "は" },
+            { "value": "１２じはん", "key": "１２じはん" },
+            { "value": "から", "key": "から" },
+            { "value": "１じ１５ふん", "key": "１じ１５ふん" },
+            { "value": "まで", "key": "まで" },
+            { "value": "です", "key": "です" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "ひるやすみ は １２じはん から １じ１５ふん まで です",
+          "options": [
+            "ひるやすみ",
+            "は",
+            "１２じはん",
+            "から",
+            "１じ１５ふん",
+            "まで",
+            "です",
+            "１２じ",
+            "１じ",
+            "１じはん",
+            "１５ふん",
+            "３０ふん",
+            "ごぜん",
+            "ごご"
+          ],
+          "question": "ひるやすみ は １２じはん から １じ１５ふん まで です"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "ひるやすみ は １２じはん から １じ１５ふん まで です",
+          "question": {
+            "en": [
+              { "key": "ひるやすみ", "value": "Lunch break" },
+              { "key": "は", "value": "is" },
+              { "key": "１２じはん", "value": "from 12:30" },
+              { "key": "から", "value": "" },
+              { "key": "１じ１５ふん", "value": "to 1:15" },
+              { "key": "まで", "value": "" }
+            ],
+            "id": [
+              { "key": "ひるやすみ", "value": "Istirahat siang" },
+              { "key": "は", "value": "" },
+              { "key": "１２じはん", "value": "dari jam 12 lewat 30" },
+              { "key": "から", "value": "" },
+              { "key": "１じ１５ふん", "value": "sampai jam 1 lewat 15" },
+              { "key": "まで", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "ひるやすみ は １２じはん から １じ１５ふん まで です",
+          "question": "ひるやすみ は １２じはん から １じ１５ふん まで です"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  },
+  {
+    "key": "ひるやすみ は なんじ から なんじ まで ですか",
+    "questions": [
+      {
+        "data": {
+          "answer": "ひるやすみ は なんじ から なんじ まで ですか",
+          "options": [
+            "ひるやすみ",
+            "は",
+            "なんじ",
+            "から",
+            "なんじ",
+            "まで",
+            "です",
+            "か",
+            "１２じ",
+            "１じ",
+            "３０ふん",
+            "はん",
+            "ごぜん",
+            "ごご"
+          ],
+          "question": {
+            "en": [
+              { "key": "なんじ から", "value": "From what time" },
+              { "key": "なんじ まで", "value": "to what time" },
+              { "key": "は", "value": "is" },
+              { "key": "ひるやすみ", "value": "lunch break" },
+              { "key": "ですか", "value": "" }
+            ],
+            "id": [
+              { "key": "ひるやすみ", "value": "Istirahat siang" },
+              { "key": "は", "value": "adalah" },
+              { "key": "なんじ から", "value": "dari jam berapa" },
+              { "key": "なんじ まで", "value": "sampai jam berapa" },
+              { "key": "ですか", "value": "" }
+            ]
+          }
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": {
+            "en": "From what time to what time is lunch break",
+            "id": "Dari jam berapa sampai jam berapa istirahat siang"
+          },
+          "options": {
+            "en": [
+              "From what time",
+              "to what time",
+              "is",
+              "lunch break",
+              "12:00",
+              "1:00",
+              "30 minutes",
+              "half",
+              "AM",
+              "PM"
+            ],
+            "id": [
+              "Dari jam berapa",
+              "sampai jam berapa",
+              "adalah",
+              "istirahat siang",
+              "jam 12",
+              "jam 1",
+              "30 menit",
+              "setengah",
+              "pagi",
+              "sore"
+            ]
+          },
+          "question": [
+            { "value": "ひるやすみ", "key": "ひるやすみ" },
+            { "value": "は", "key": "は" },
+            { "value": "なんじ", "key": "なんじ" },
+            { "value": "から", "key": "から" },
+            { "value": "なんじ", "key": "なんじ" },
+            { "value": "まで", "key": "まで" },
+            { "value": "ですか", "key": "ですか" }
+          ]
+        },
+        "type": "SORT_THE_MEAN"
+      },
+      {
+        "data": {
+          "answer": "ひるやすみ は なんじ から なんじ まで ですか",
+          "options": [
+            "ひるやすみ",
+            "は",
+            "なんじ",
+            "から",
+            "なんじ",
+            "まで",
+            "です",
+            "か",
+            "１２じ",
+            "１じ",
+            "３０ふん",
+            "はん",
+            "ごぜん",
+            "ごご"
+          ],
+          "question": "ひるやすみ は なんじ から なんじ まで ですか"
+        },
+        "type": "SORT_THE_SYMBOLS_FROM_SOUND"
+      },
+      {
+        "data": {
+          "answer": "ひるやすみ は なんじ から なんじ まで ですか",
+          "question": {
+            "en": [
+              { "key": "なんじ から", "value": "From what time" },
+              { "key": "なんじ まで", "value": "to what time" },
+              { "key": "は", "value": "is" },
+              { "key": "ひるやすみ", "value": "lunch break" },
+              { "key": "ですか", "value": "" }
+            ],
+            "id": [
+              { "key": "ひるやすみ", "value": "Istirahat siang" },
+              { "key": "は", "value": "adalah" },
+              { "key": "なんじ から", "value": "dari jam berapa" },
+              { "key": "なんじ まで", "value": "sampai jam berapa" },
+              { "key": "ですか", "value": "" }
+            ]
+          }
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_MEAN"
+      },
+      {
+        "data": {
+          "answer": "ひるやすみ は なんじ から なんじ まで ですか",
+          "question": "ひるやすみ は なんじ から なんじ まで ですか"
+        },
+        "type": "WRITE_THE_SYMBOL_FROM_SOUND"
+      }
+    ]
+  }
+]

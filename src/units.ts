@@ -606,8 +606,8 @@ app.post("/create-words", async (c) => {
 
     const res = await prisma.words.createMany({
       data,
-      skipDuplicates: true
-    })
+      skipDuplicates: true,
+    });
 
     return c.json(res);
   } catch (error) {
@@ -635,6 +635,35 @@ app.post("/delete-words", async (c) => {
     console.log(error);
     return c.json({ error });
   }
+});
+
+app.post("/fix", async (c) => {
+  // try {
+  //   const words = await prisma.words.findMany();
+
+  //   let data = words.filter((word) => {
+  //     if (!word.others || typeof word.others !== "object") {
+  //       return false;
+  //     }
+
+  //     if (!word.others.kanji) {
+  //       return false;
+  //     }
+
+  //     return word.others.kanji === "-";
+  //   });
+
+  //   await Promise.all(
+  //     data.map((item) =>
+  //       prisma.words.update({ where: { key: item.key }, data: ite })
+  //     )
+  //   );
+
+  //   return c.json(data);
+  // } catch (error) {
+  //   console.log(error);
+  //   return c.json({ error });
+  // }
 });
 
 export default app;
